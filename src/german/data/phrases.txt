@@ -1,0 +1,135 @@
+Lies den Text.|Прочитай текст.|Прочитай текст.
+Lies die Sätze.|Прочитай речення.|Прочитай предложения.
+Schreibe in dein Heft.|Напиши у свій зошит.|Напиши в свою тетрадь.
+Schreibe die Wörter ins Heft.|Запиши слова в зошит.|Запиши слова в тетрадь.
+Ergänze die fehlenden Wörter.|Доповни пропущені слова.|Дополни пропущенные слова.
+Finde eine passende Überschrift.|Знайди підходящий заголовок.|Найди подходящий заголовок.
+Ordne die Wörter in die Tabelle ein.|Розподіли слова в таблицю.|Распредели слова в таблицу.
+Unterstreiche alle Nomen.|Підкресли всі іменники.|Подчеркни все существительные.
+Kreuze die richtige Antwort an.|Познач правильну відповідь хрестиком.|Отметь правильный ответ крестиком.
+Sprecht darüber in der Klasse.|Обговоріть це в класі.|Обсудите это в классе.
+Sprecht über eure Erfahrungen.|Поговоріть про ваш досвід.|Поговорите о вашем опыте.
+Denke an die Satzzeichen.|Пам'ятай про розділові знаки.|Помни о знаках препинания.
+Denk an die Großschreibung.|Пам'ятай про великі літери.|Помни о заглавных буквах.
+Vergiss nicht die Überschrift.|Не забудь заголовок.|Не забудь заголовок.
+Vervollständige die Fragen.|Доповни запитання.|Дополни вопросы.
+Verwendet eure Stichworte für die Antworten.|Використайте ваші ключові слова для відповідей.|Используйте ваши ключевые слова для ответов.
+Lies zuerst die Vorgaben.|Спочатку прочитай умови.|Сначала прочитай условия.
+Was bedeuten die folgenden Sätze?|Що означають наступні речення?|Что означают следующие предложения?
+Wie heißt das Wort?|Як це слово називається?|Как называется это слово?
+Wie geht es weiter?|Що буде далі?|Что будет дальше?
+Wie sehen Tintenfische aus?|Як виглядають восьминоги?|Как выглядят осьминоги?
+Welcher Weg war der richtige?|Яка дорога була правильною?|Какой путь был правильным?
+Was kann es erzählen?|Що воно може розповісти?|Что оно может рассказать?
+Du kannst auch eines erfinden.|Ти також можеш вигадати одне.|Ты тоже можешь придумать одно.
+Gib den Personen Namen.|Дай людям імена.|Дай людям имена.
+Der kleine Herr Jakob.|Маленький пан Якоб.|Маленький господин Якоб.
+Wir gehen jetzt in den Park.|Ми зараз ідемо в парк.|Мы сейчас идём в парк.
+Wir kommen morgen spät an.|Ми приїдемо завтра пізно.|Мы приедем завтра поздно.
+Momo wohnt bei mir im Zimmer.|Момо живе в моїй кімнаті.|Момо живёт у меня в комнате.
+Mein Maskottchen ist ein Stofftier.|Мій талісман — м'яка іграшка.|Мой талисман — мягкая игрушка.
+Im Korb lagen drei junge Katzen.|У кошику лежали три молоді кішки.|В корзине лежали три молодых кошки.
+Pinguine jagen in Gruppen.|Пінгвіни полюють групами.|Пингвины охотятся группами.
+Tom hörte nichts mehr.|Том більше нічого не чув.|Том больше ничего не слышал.
+Nico sah sich um.|Ніко озирнувся.|Нико оглянулся.
+Dann konnte er nicht mehr.|Тоді він більше не міг.|Тогда он больше не мог.
+Es ging bis ans Ende der Welt.|Це дійшло до краю світу.|Это дошло до края света.
+Sein Griff wurde locker.|Його хватка ослабла.|Его хватка ослабла.
+Seitdem lebe ich bei ihr.|Відтоді я живу в неї.|С тех пор я живу у неё.
+Ich habe es nicht absichtlich getan.|Я зробив це не навмисне.|Я сделал это не нарочно.
+Ich suche gleich noch einmal.|Я зараз ще раз пошукаю.|Я сейчас поищу ещё раз.
+Hab dich schon gefunden.|Я тебе вже знайшов.|Я тебя уже нашёл.
+Für welchen Tag denn?|На який день, власне?|На какой день, собственно?
+Frage: Wann kommst du?|Питання: Коли ти прийдеш?|Вопрос: Когда ты придёшь?
+Liest du viel und gerne?|Ти читаєш багато і з задоволенням?|Ты читаешь много и охотно?
+Glaubst du alles, was deine Mutter sagt?|Ти віриш усьому, що каже твоя мама?|Ты веришь всему, что говорит твоя мама?
+Darf deine Mutter ihm nicht begegnen?|Твоїй мамі не можна з ним зустрічатися?|Твоей маме нельзя с ним встречаться?
+Du findest hier zwei Diagramme.|Тут ти знайдеш дві діаграми.|Здесь ты найдёшь две диаграммы.
+Ich darf oft aus dem Rucksack schauen.|Мені часто можна виглядати з рюкзака.|Мне часто можно выглядывать из рюкзака.
+Die Antwort ist oft kein ganzer Satz.|Відповідь часто не є цілим реченням.|Ответ часто не является целым предложением.
+Dein Text soll rund 150 Wörter haben.|Твій текст має містити близько 150 слів.|Твой текст должен содержать около 150 слов.
+Die Tintenfische sind Weichtiere, die im Meer leben.|Восьминоги — це молюски, які живуть у морі.|Осьминоги — это моллюски, которые живут в море.
+Das Netz ist ein wichtiges Hilfsmittel der Forscher.|Сітка — важливий інструмент дослідників.|Сеть — важное средство исследователей.
+Auch am Computer verbringt der Forscher viel Zeit.|Дослідник також проводить багато часу за комп'ютером.|Исследователь тоже проводит много времени за компьютером.
+Beginnen wir mit den Sprachen, die ihr sprecht.|Почнімо з мов, якими ви говорите.|Начнём с языков, на которых вы говорите.
+Bereitet euch gemeinsam vor.|Підготуйтеся разом.|Подготовьтесь вместе.
+Braucht ihr auch Bildmaterial?|Вам також потрібні ілюстрації?|Вам тоже нужен иллюстративный материал?
+Das beruhigt ihn, sagt Lenny.|Це його заспокоює, каже Ленні.|Это его успокаивает, говорит Ленни.
+Wie bewältigt er die erste Herausforderung?|Як він долає перший виклик?|Как он справляется с первым испытанием?
+Wie würdest du das Telefonat beginnen?|Як би ти почав цю телефонну розмову?|Как бы ты начал этот телефонный разговор?
+Was müsst ihr bei der Suche beachten?|На що ви маєте звернути увагу під час пошуку?|На что вы должны обратить внимание при поиске?
+Prüfe, ob die wichtigsten Wörter markiert sind.|Перевір, чи позначені найважливіші слова.|Проверь, отмечены ли самые важные слова.
+Wer hat aus meinem Becher getrunken?|Хто пив з моєї чашки?|Кто пил из моей чашки?
+Ich fühle mich richtig verdrängt.|Я почуваюся по-справжньому витісненим.|Я чувствую себя по-настоящему вытесненным.
+Wir sprechen über das Wetter.|Ми говоримо про погоду.|Мы говорим о погоде.
+Das Wort steht am Satzanfang.|Слово стоїть на початку речення.|Слово стоит в начале предложения.
+Nomen schreibt man groß.|Іменники пишуть з великої літери.|Существительные пишутся с большой буквы.
+Der Satz beginnt mit einem großen Buchstaben.|Речення починається з великої літери.|Предложение начинается с заглавной буквы.
+Am Ende steht ein Punkt.|Наприкінці стоїть крапка.|В конце стоит точка.
+Das Verb steht an zweiter Stelle.|Дієслово стоїть на другому місці.|Глагол стоит на втором месте.
+Der Artikel zeigt das Geschlecht an.|Артикль вказує на рід.|Артикль указывает на род.
+Es gibt drei Artikel: der, die und das.|Є три артиклі: der, die і das.|Есть три артикля: der, die и das.
+Im Plural heißt der Artikel immer die.|У множині артикль завжди die.|Во множественном числе артикль всегда die.
+Schreibe das Wort in der Einzahl und Mehrzahl.|Напиши слово в однині та множині.|Напиши слово в единственном и множественном числе.
+Bilde Sätze mit den Wörtern.|Склади речення з цими словами.|Составь предложения с этими словами.
+Ergänze die Endungen.|Доповни закінчення.|Дополни окончания.
+Setze das Verb in der richtigen Form ein.|Встав дієслово в правильній формі.|Вставь глагол в правильной форме.
+Was passt zusammen?|Що підходить одне до одного?|Что подходит друг к другу?
+Verbinde die Satzteile.|З'єднай частини речення.|Соедини части предложения.
+Erzähle die Geschichte nach.|Перекажи історію.|Перескажи историю.
+Schreibe eine kurze Geschichte.|Напиши коротку історію.|Напиши короткий рассказ.
+Male ein Bild dazu.|Намалюй до цього картинку.|Нарисуй к этому картинку.
+Lies den Brief vor.|Прочитай лист уголос.|Прочитай письмо вслух.
+Hört gut zu.|Слухайте уважно.|Слушайте внимательно.
+Sprich laut und deutlich.|Говори голосно і чітко.|Говори громко и чётко.
+Schlage das Wort im Wörterbuch nach.|Знайди слово в словнику.|Найди слово в словаре.
+Ich habe eine Frage.|У мене є питання.|У меня есть вопрос.
+Ich verstehe das nicht.|Я цього не розумію.|Я этого не понимаю.
+Kannst du das bitte wiederholen?|Ти можеш, будь ласка, повторити?|Можешь, пожалуйста, повторить?
+Wie schreibt man das?|Як це пишеться?|Как это пишется?
+Was bedeutet das Wort?|Що означає це слово?|Что значит это слово?
+Wie spät ist es?|Котра година?|Который час?
+Wie heißt du?|Як тебе звати?|Как тебя зовут?
+Wie alt bist du?|Скільки тобі років?|Сколько тебе лет?
+Woher kommst du?|Звідки ти?|Откуда ты?
+Wo wohnst du?|Де ти живеш?|Где ты живёшь?
+Ich wohne in einem Haus.|Я живу в будинку.|Я живу в доме.
+Ich habe einen Bruder und eine Schwester.|У мене є брат і сестра.|У меня есть брат и сестра.
+Mein Vater arbeitet viel.|Мій батько багато працює.|Мой отец много работает.
+Meine Mutter kocht gern.|Моя мама любить готувати.|Моя мама любит готовить.
+Ich gehe in die Schule.|Я ходжу до школи.|Я хожу в школу.
+Ich lese gern Bücher.|Я люблю читати книжки.|Я люблю читать книги.
+Wir spielen im Park Fußball.|Ми граємо в парку у футбол.|Мы играем в парке в футбол.
+Der Hund läuft im Garten.|Собака біжить у саду.|Собака бежит в саду.
+Die Katze schläft auf dem Bett.|Кішка спить на ліжку.|Кошка спит на кровати.
+Das Wetter ist heute schön.|Погода сьогодні гарна.|Погода сегодня хорошая.
+Es regnet schon den ganzen Tag.|Дощ іде вже цілий день.|Дождь идёт уже целый день.
+Im Sommer ist es warm.|Влітку тепло.|Летом тепло.
+Im Winter liegt Schnee.|Взимку лежить сніг.|Зимой лежит снег.
+Ich habe Hunger und Durst.|Я голодний і хочу пити.|Я голоден и хочу пить.
+Ich esse gern einen Apfel.|Я люблю їсти яблуко.|Я люблю есть яблоко.
+Das Frühstück ist fertig.|Сніданок готовий.|Завтрак готов.
+Wir fahren mit dem Zug.|Ми їдемо потягом.|Мы едем на поезде.
+Der Bus kommt gleich.|Автобус зараз приїде.|Автобус сейчас приедет.
+Ich nehme meinen Rucksack mit.|Я беру з собою рюкзак.|Я беру с собой рюкзак.
+Er steht früh auf.|Він рано встає.|Он рано встаёт.
+Sie ruft ihre Freundin an.|Вона телефонує подрузі.|Она звонит своей подруге.
+Wir laden Freunde ein.|Ми запрошуємо друзів.|Мы приглашаем друзей.
+Ich räume mein Zimmer auf.|Я прибираю свою кімнату.|Я убираю свою комнату.
+Die Schule fängt um acht Uhr an.|Школа починається о восьмій.|Школа начинается в восемь часов.
+Das Kind hört dem Lehrer zu.|Дитина слухає вчителя.|Ребёнок слушает учителя.
+Danke für deine Hilfe.|Дякую за твою допомогу.|Спасибо за твою помощь.
+Entschuldigung, wo ist die Toilette?|Вибачте, де туалет?|Извините, где туалет?
+Gute Nacht und schlaf gut.|На добраніч і спи добре.|Спокойной ночи и спи хорошо.
+Bis morgen!|До завтра!|До завтра!
+Viel Spaß!|Гарної розваги!|Приятного веселья!
+Ich freue mich auf die Ferien.|Я чекаю канікул.|Я радуюсь каникулам.
+Das ist ein gutes Beispiel.|Це гарний приклад.|Это хороший пример.
+Das ist falsch, das ist richtig.|Це неправильно, це правильно.|Это неверно, это верно.
+Ich bin fertig.|Я закінчив.|Я закончил.
+Ich brauche Hilfe.|Мені потрібна допомога.|Мне нужна помощь.
+Kannst du mir helfen?|Ти можеш мені допомогти?|Ты можешь мне помочь?
+Ich weiß es nicht.|Я цього не знаю.|Я этого не знаю.
+Ich habe keine Zeit.|У мене немає часу.|У меня нет времени.
+Das gefällt mir sehr.|Мені це дуже подобається.|Мне это очень нравится.
+Was machst du am Wochenende?|Що ти робиш на вихідних?|Что ты делаешь на выходных?
