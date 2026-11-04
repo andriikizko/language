@@ -2,6 +2,7 @@ import nounsRaw from './data/nouns.txt?raw'
 import verbsRaw from './data/verbs.txt?raw'
 import sepRaw from './data/separable.txt?raw'
 import wordsRaw from './data/words.txt?raw'
+import extraRaw from './data/extra_nouns.txt?raw'
 import phrasesRaw from './data/phrases.txt?raw'
 
 export const PRONOUNS = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie']
@@ -79,7 +80,10 @@ const MODAL_RAW = [
 
 // ---------- Дані ----------
 export const DATA = (() => {
-  const nouns = rows(nounsRaw).map(([g, de, pl, ua, ru]) => ({ id: de, g, de, pl, ua, ru }))
+  const nouns = [
+    ...rows(nounsRaw).map(([g, de, pl, ua, ru]) => ({ id: de, g, de, pl, ua, ru })),
+    ...rows(extraRaw).map(([g, de, pl, ua, ru]) => ({ id: de, g, de, pl, ua, ru, extra: true })),
+  ]
   const verbs = rows(verbsRaw).map(([inf, ua, ru]) => ({ id: inf, inf, ua, ru, forms: conj(inf) }))
   const sep = rows(sepRaw).map(([pre, base, ua, ru]) => ({
     id: pre + base, pre, base, inf: pre + base, ua, ru,

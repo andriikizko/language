@@ -1,10 +1,14 @@
+import extraRaw from './data/extra_nouns.txt?raw'
 // Теми іменників (кожне слово належить одній темі)
 export const NOUN_TOPICS = [
+  { id: "days", ua: "Дні тижня й місяці", ru: "Дни недели и месяцы", words: [] },
   { id: "family", ua: "Сім'я й люди", ru: "Семья и люди", words: ["Vater", "Mutter", "Bruder", "Schwester", "Sohn", "Tochter", "Familie", "Papa", "Mama", "Cousine", "Kind", "Mädchen", "Junge", "Mann", "Frau", "Herr", "Dame", "Freund", "Freundin", "Freundschaft", "Nachbar", "Nachbarin", "Mensch", "Person", "Besitzer", "Prinzessin", "König", "Fee", "Dieb", "Beruf", "Gruppe", "Team", "Empfänger"] },
   { id: "body", ua: "Тіло й здоров'я", ru: "Тело и здоровье", words: ["Auge", "Hand", "Kopf", "Arm", "Fuß", "Gesicht", "Mund", "Ohr", "Finger", "Körper", "Zahn", "Nase", "Bein", "Haar", "Zunge", "Rücken", "Herz", "Haut", "Stirn", "Magen", "Stimme", "Atem", "Blick"] },
   { id: "animals", ua: "Тварини", ru: "Животные", words: ["Tier", "Hund", "Katze", "Pferd", "Vogel", "Adler", "Fisch", "Pinguin", "Eisbär", "Wal", "Tiger", "Haustier", "Lebewesen", "Fell", "Schnabel"] },
   { id: "clothes", ua: "Одяг", ru: "Одежда", words: ["Mantel", "Hut", "Mütze", "Hose", "Jacke", "Kleidung", "Schal", "Tuch"] },
-  { id: "food", ua: "Їжа", ru: "Еда", words: ["Frühstück", "Fleisch", "Obst", "Apfel", "Nahrung", "Hunger", "Eis", "Glas"] },
+  { id: "food", ua: "Їжа й продукти", ru: "Еда и продукты", words: ["Frühstück", "Fleisch", "Obst", "Apfel", "Nahrung", "Hunger", "Eis", "Glas"] },
+  { id: "dishes", ua: "Посуд", ru: "Посуда", words: [] },
+  { id: "jobs", ua: "Професії", ru: "Профессии", words: [] },
   { id: "home", ua: "Дім і меблі", ru: "Дом и мебель", words: ["Haus", "Wohnung", "Zimmer", "Küche", "Keller", "Tür", "Fenster", "Tisch", "Bett", "Spiegel", "Wand", "Mauer", "Boden", "Gang", "Geländer", "Saal", "Tor", "Schlüssel", "Korb", "Müll"] },
   { id: "transport", ua: "Транспорт і подорожі", ru: "Транспорт и путешествия", words: ["Auto", "Zug", "Schiff", "Boot", "Rad", "Straße", "Weg", "Reise", "Radfahrer", "Tunnel", "Richtung", "Paket", "Koffer", "Rucksack"] },
   { id: "time", ua: "Час і дати", ru: "Время и даты", words: ["Zeit", "Jahr", "Tag", "Abend", "Nachmittag", "Morgen", "Nacht", "Woche", "Monat", "Minute", "Stunde", "Uhr", "Moment", "Augenblick", "Datum", "Zukunft", "Sommer", "Winter", "Mal", "Anfang", "Ende", "Beginn", "Mitte", "Pause"] },
@@ -18,3 +22,5 @@ export const NOUN_TOPICS = [
   { id: "places", ua: "Місто, місця й дозвілля", ru: "Город, места и досуг", words: ["Stadt", "Park", "Platz", "Ort", "Stelle", "Gegend", "Region", "Bereich", "Party", "Fußball", "Ball", "Geräusch"] },
 ]
 export const TOPIC_OF = Object.fromEntries(NOUN_TOPICS.flatMap((t) => t.words.map((w) => [w, t.id])))
+// додаткові слова: тема у 6-й колонці
+extraRaw.split('\n').filter(Boolean).forEach((ln) => { const c = ln.split('|'); TOPIC_OF[c[1]] = c[5] })

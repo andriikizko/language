@@ -1,0 +1,318 @@
+m|Montag|Montage|понеділок|понедельник|days
+m|Dienstag|Dienstage|вівторок|вторник|days
+m|Mittwoch|Mittwoche|середа|среда|days
+m|Donnerstag|Donnerstage|четвер|четверг|days
+m|Freitag|Freitage|п'ятниця|пятница|days
+m|Samstag|Samstage|субота|суббота|days
+m|Sonntag|Sonntage|неділя|воскресенье|days
+n|Wochenende|Wochenenden|вихідні|выходные|days
+m|Januar|-|січень|январь|days
+m|Februar|-|лютий|февраль|days
+m|März|-|березень|март|days
+m|April|-|квітень|апрель|days
+m|Mai|-|травень|май|days
+m|Juni|-|червень|июнь|days
+m|Juli|-|липень|июль|days
+m|August|-|серпень|август|days
+m|September|-|вересень|сентябрь|days
+m|Oktober|-|жовтень|октябрь|days
+m|November|-|листопад|ноябрь|days
+m|Dezember|-|грудень|декабрь|days
+m|Frühling|Frühlinge|весна|весна|days
+m|Herbst|Herbste|осінь|осень|days
+f|Jahreszeit|Jahreszeiten|пора року|время года|days
+m|Mittag|Mittage|полудень, обід|полдень, обед|time
+m|Vormittag|Vormittage|час до обіду|время до обеда|time
+m|Feiertag|Feiertage|святковий день|праздничный день|time
+m|Geburtstag|Geburtstage|день народження|день рождения|time
+m|Urlaub|Urlaube|відпустка|отпуск|time
+m|Termin|Termine|зустріч, запис (на час)|встреча, запись (на время)|time
+f|Sekunde|Sekunden|секунда|секунда|time
+n|Jahrhundert|Jahrhunderte|століття|столетие|time
+n|Brot|Brote|хліб|хлеб|food
+n|Brötchen|Brötchen|булочка|булочка|food
+f|Butter|-|масло (вершкове)|масло (сливочное)|food
+f|Milch|-|молоко|молоко|food
+m|Käse|Käse|сир|сыр|food
+n|Ei|Eier|яйце|яйцо|food
+f|Wurst|Würste|ковбаса|колбаса|food
+m|Zucker|-|цукор|сахар|food
+n|Salz|-|сіль|соль|food
+m|Reis|-|рис|рис|food
+f|Nudel|Nudeln|локшина, макарони|лапша, макароны|food
+f|Kartoffel|Kartoffeln|картопля|картофель|food
+f|Tomate|Tomaten|помідор|помидор|food
+f|Gurke|Gurken|огірок|огурец|food
+f|Zwiebel|Zwiebeln|цибуля|лук|food
+f|Karotte|Karotten|морква|морковь|food
+m|Salat|Salate|салат|салат|food
+n|Gemüse|-|овочі|овощи|food
+f|Banane|Bananen|банан|банан|food
+f|Orange|Orangen|апельсин|апельсин|food
+f|Birne|Birnen|груша|груша|food
+f|Erdbeere|Erdbeeren|полуниця|клубника|food
+f|Kirsche|Kirschen|вишня, черешня|вишня, черешня|food
+f|Zitrone|Zitronen|лимон|лимон|food
+m|Kuchen|Kuchen|пиріг, торт|пирог, торт|food
+f|Schokolade|Schokoladen|шоколад|шоколад|food
+m|Saft|Säfte|сік|сок|food
+m|Kaffee|Kaffees|кава|кофе|food
+m|Tee|Tees|чай|чай|food
+n|Bier|Biere|пиво|пиво|food
+m|Wein|Weine|вино|вино|food
+f|Suppe|Suppen|суп|суп|food
+n|Getränk|Getränke|напій|напиток|food
+f|Marmelade|Marmeladen|варення, джем|варенье, джем|food
+m|Honig|-|мед|мёд|food
+n|Mehl|-|борошно|мука|food
+n|Mittagessen|Mittagessen|обід|обед|food
+n|Abendessen|Abendessen|вечеря|ужин|food
+n|Essen|-|їжа, страва|еда, блюдо|food
+n|Gericht|Gerichte|страва|блюдо|food
+n|Sofa|Sofas|диван|диван|home
+m|Stuhl|Stühle|стілець|стул|home
+m|Schrank|Schränke|шафа|шкаф|home
+n|Regal|Regale|полиця, стелаж|полка, стеллаж|home
+f|Lampe|Lampen|лампа|лампа|home
+m|Teppich|Teppiche|килим|ковёр|home
+m|Sessel|Sessel|крісло|кресло|home
+m|Vorhang|Vorhänge|штора, завіса|штора, занавеска|home
+f|Treppe|Treppen|сходи|лестница|home
+n|Dach|Dächer|дах|крыша|home
+m|Garten|Gärten|сад|сад|home
+n|Bad|Bäder|ванна кімната|ванная|home
+n|Wohnzimmer|Wohnzimmer|вітальня|гостиная|home
+n|Schlafzimmer|Schlafzimmer|спальня|спальня|home
+n|Kinderzimmer|Kinderzimmer|дитяча кімната|детская комната|home
+m|Flur|Flure|коридор, передпокій|коридор, прихожая|home
+f|Toilette|Toiletten|туалет|туалет|home
+f|Dusche|Duschen|душ|душ|home
+m|Herd|Herde|плита|плита|home
+m|Kühlschrank|Kühlschränke|холодильник|холодильник|home
+f|Waschmaschine|Waschmaschinen|пральна машина|стиральная машина|home
+m|Fernseher|Fernseher|телевізор|телевизор|home
+f|Decke|Decken|ковдра, стеля|одеяло, потолок|home
+n|Kissen|Kissen|подушка|подушка|home
+m|Schreibtisch|Schreibtische|письмовий стіл|письменный стол|home
+m|Teller|Teller|тарілка|тарелка|dishes
+f|Tasse|Tassen|чашка|чашка|dishes
+m|Löffel|Löffel|ложка|ложка|dishes
+f|Gabel|Gabeln|виделка|вилка|dishes
+n|Messer|Messer|ніж|нож|dishes
+f|Flasche|Flaschen|пляшка|бутылка|dishes
+f|Pfanne|Pfannen|сковорідка|сковорода|dishes
+m|Topf|Töpfe|каструля, горщик|кастрюля, горшок|dishes
+f|Schüssel|Schüsseln|миска|миска|dishes
+m|Becher|Becher|кухоль, стаканчик|кружка, стаканчик|dishes
+f|Serviette|Servietten|серветка|салфетка|dishes
+m|Arzt|Ärzte|лікар|врач|jobs
+f|Ärztin|Ärztinnen|лікарка|врач (женщина)|jobs
+m|Polizist|Polizisten|поліцейський|полицейский|jobs
+m|Koch|Köche|кухар|повар|jobs
+f|Köchin|Köchinnen|кухарка|повариха|jobs
+m|Verkäufer|Verkäufer|продавець|продавец|jobs
+f|Verkäuferin|Verkäuferinnen|продавчиня|продавщица|jobs
+m|Bäcker|Bäcker|пекар|пекарь|jobs
+m|Bauer|Bauern|фермер, селянин|фермер, крестьянин|jobs
+m|Pilot|Piloten|пілот|пилот|jobs
+m|Student|Studenten|студент|студент|jobs
+f|Studentin|Studentinnen|студентка|студентка|jobs
+m|Schauspieler|Schauspieler|актор|актёр|jobs
+m|Sänger|Sänger|співак|певец|jobs
+m|Friseur|Friseure|перукар|парикмахер|jobs
+m|Kellner|Kellner|офіціант|официант|jobs
+m|Journalist|Journalisten|журналіст|журналист|jobs
+m|Ingenieur|Ingenieure|інженер|инженер|jobs
+m|Soldat|Soldaten|солдат|солдат|jobs
+m|Chef|Chefs|начальник, шеф|начальник, шеф|jobs
+m|Kunde|Kunden|клієнт, покупець|клиент, покупатель|jobs
+m|Gast|Gäste|гість|гость|jobs
+m|Bus|Busse|автобус|автобус|transport
+f|Straßenbahn|Straßenbahnen|трамвай|трамвай|transport
+f|U-Bahn|U-Bahnen|метро|метро|transport
+m|Flug|Flüge|переліт, рейс|перелёт, рейс|transport
+n|Flugzeug|Flugzeuge|літак|самолёт|transport
+m|Flughafen|Flughäfen|аеропорт|аэропорт|transport
+m|Bahnhof|Bahnhöfe|вокзал|вокзал|transport
+f|Haltestelle|Haltestellen|зупинка|остановка|transport
+n|Fahrrad|Fahrräder|велосипед|велосипед|transport
+n|Motorrad|Motorräder|мотоцикл|мотоцикл|transport
+n|Ticket|Tickets|квиток|билет|transport
+f|Fahrkarte|Fahrkarten|проїзний квиток|проездной билет|transport
+f|Ampel|Ampeln|світлофор|светофор|transport
+f|Brücke|Brücken|міст|мост|transport
+m|Parkplatz|Parkplätze|парковка|парковка|transport
+f|Tankstelle|Tankstellen|заправка|заправка|transport
+m|Reisepass|Reisepässe|закордонний паспорт|загранпаспорт|transport
+n|Gepäck|-|багаж|багаж|transport
+n|Hotel|Hotels|готель|гостиница, отель|transport
+n|Gleis|Gleise|колія, платформа|путь, платформа|transport
+n|Taxi|Taxis|таксі|такси|transport
+f|Apotheke|Apotheken|аптека|аптека|places
+n|Krankenhaus|Krankenhäuser|лікарня|больница|places
+f|Kirche|Kirchen|церква|церковь|places
+n|Museum|Museen|музей|музей|places
+n|Theater|Theater|театр|театр|places
+n|Restaurant|Restaurants|ресторан|ресторан|places
+n|Café|Cafés|кафе|кафе|places
+m|Supermarkt|Supermärkte|супермаркет|супермаркет|places
+m|Markt|Märkte|ринок|рынок|places
+n|Geschäft|Geschäfte|магазин|магазин|places
+f|Bibliothek|Bibliotheken|бібліотека|библиотека|places
+n|Schwimmbad|Schwimmbäder|басейн|бассейн|places
+m|Spielplatz|Spielplätze|дитячий майданчик|детская площадка|places
+f|Bäckerei|Bäckereien|пекарня|пекарня|places
+n|Dorf|Dörfer|село|деревня|places
+f|Hauptstadt|Hauptstädte|столиця|столица|places
+n|Zentrum|Zentren|центр|центр|places
+f|Ecke|Ecken|ріг, кут|угол|places
+m|Eingang|Eingänge|вхід|вход|places
+m|Ausgang|Ausgänge|вихід|выход|places
+n|Büro|Büros|офіс|офис|places
+f|Fabrik|Fabriken|фабрика|фабрика|places
+m|Turm|Türme|вежа|башня|places
+f|Burg|Burgen|фортеця, замок|крепость, замок|places
+n|Schloss|Schlösser|палац, замок|дворец, замок|places
+m|Zoo|Zoos|зоопарк|зоопарк|places
+m|Ausflug|Ausflüge|екскурсія, поїздка|экскурсия, поездка|places
+m|Spaziergang|Spaziergänge|прогулянка|прогулка|places
+n|Konzert|Konzerte|концерт|концерт|places
+f|Mannschaft|Mannschaften|команда|команда|places
+m|Sport|-|спорт|спорт|places
+m|Hals|Hälse|шия, горло|шея, горло|body
+f|Schulter|Schultern|плече|плечо|body
+m|Bauch|Bäuche|живіт|живот|body
+m|Daumen|Daumen|великий палець|большой палец|body
+n|Knie|Knie|коліно|колено|body
+m|Ellbogen|Ellbogen|лікоть|локоть|body
+f|Lippe|Lippen|губа|губа|body
+m|Bart|Bärte|борода|борода|body
+m|Zeh|Zehen|палець на нозі|палец на ноге|body
+f|Brust|Brüste|груди|грудь|body
+m|Knochen|Knochen|кістка|кость|body
+n|Blut|-|кров|кровь|body
+m|Schmerz|Schmerzen|біль|боль|body
+f|Krankheit|Krankheiten|хвороба|болезнь|body
+n|Fieber|-|температура, гарячка|температура, жар|body
+f|Tablette|Tabletten|таблетка|таблетка|body
+f|Gesundheit|-|здоров'я|здоровье|body
+m|Pullover|Pullover|светр|свитер|clothes
+n|Hemd|Hemden|сорочка|рубашка|clothes
+n|T-Shirt|T-Shirts|футболка|футболка|clothes
+n|Kleid|Kleider|сукня|платье|clothes
+m|Rock|Röcke|спідниця|юбка|clothes
+m|Schuh|Schuhe|черевик, туфля|ботинок, туфля|clothes
+m|Stiefel|Stiefel|чобіт|сапог|clothes
+f|Socke|Socken|шкарпетка|носок|clothes
+m|Handschuh|Handschuhe|рукавичка|перчатка, варежка|clothes
+f|Brille|Brillen|окуляри|очки|clothes
+m|Gürtel|Gürtel|пасок|ремень|clothes
+m|Anzug|Anzüge|костюм|костюм|clothes
+f|Bluse|Blusen|блузка|блузка|clothes
+m|Regenschirm|Regenschirme|парасолька|зонт|clothes
+f|Oma|Omas|бабуся|бабушка|family
+m|Opa|Opas|дідусь|дедушка|family
+f|Großmutter|Großmütter|бабуся|бабушка|family
+m|Großvater|Großväter|дід|дедушка|family
+f|Tante|Tanten|тітка|тётя|family
+m|Onkel|Onkel|дядько|дядя|family
+m|Cousin|Cousins|двоюрідний брат|двоюродный брат|family
+n|Baby|Babys|немовля|младенец|family
+m|Enkel|Enkel|онук|внук|family
+m|Ehemann|Ehemänner|чоловік (одружений)|муж|family
+f|Ehefrau|Ehefrauen|дружина|жена|family
+m|Zwilling|Zwillinge|близнюк|близнец|family
+m|Kollege|Kollegen|колега|коллега|family
+f|Kollegin|Kolleginnen|колега (жін.)|коллега (жен.)|family
+m|Besucher|Besucher|відвідувач|посетитель|family
+f|Kuh|Kühe|корова|корова|animals
+n|Schwein|Schweine|свиня|свинья|animals
+n|Schaf|Schafe|вівця|овца|animals
+n|Huhn|Hühner|курка|курица|animals
+f|Ente|Enten|качка|утка|animals
+f|Maus|Mäuse|миша|мышь|animals
+m|Hase|Hasen|заєць|заяц|animals
+m|Bär|Bären|ведмідь|медведь|animals
+m|Wolf|Wölfe|вовк|волк|animals
+m|Fuchs|Füchse|лисиця|лиса|animals
+m|Löwe|Löwen|лев|лев|animals
+m|Affe|Affen|мавпа|обезьяна|animals
+m|Elefant|Elefanten|слон|слон|animals
+f|Schlange|Schlangen|змія|змея|animals
+m|Frosch|Frösche|жаба|лягушка|animals
+f|Biene|Bienen|бджола|пчела|animals
+f|Spinne|Spinnen|павук|паук|animals
+f|Fliege|Fliegen|муха|муха|animals
+m|Schmetterling|Schmetterlinge|метелик|бабочка|animals
+f|Gans|Gänse|гуска|гусь|animals
+f|Ziege|Ziegen|коза|коза|animals
+n|Kaninchen|Kaninchen|кролик|кролик|animals
+m|Esel|Esel|осел|осёл|animals
+m|Hamster|Hamster|хом'як|хомяк|animals
+m|Papagei|Papageien|папуга|попугай|animals
+m|Berg|Berge|гора|гора|nature
+m|Hügel|Hügel|пагорб|холм|nature
+f|Insel|Inseln|острів|остров|nature
+m|Strand|Strände|пляж|пляж|nature
+f|Wolke|Wolken|хмара|облако|nature
+m|Himmel|Himmel|небо|небо|nature
+m|Mond|Monde|місяць (небесне тіло)|луна|nature
+n|Gewitter|Gewitter|гроза|гроза|nature
+m|Sturm|Stürme|буря|буря|nature
+m|Nebel|Nebel|туман|туман|nature
+f|Wiese|Wiesen|луг|луг|nature
+n|Gras|Gräser|трава|трава|nature
+f|Rose|Rosen|троянда|роза|nature
+m|Blitz|Blitze|блискавка|молния|nature
+m|Tropfen|Tropfen|крапля|капля|nature
+f|Landschaft|Landschaften|краєвид, ландшафт|пейзаж, ландшафт|nature
+n|Tal|Täler|долина|долина|nature
+m|Gipfel|Gipfel|вершина|вершина|nature
+f|Tafel|Tafeln|дошка|доска|school
+n|Lineal|Lineale|лінійка|линейка|school
+m|Kugelschreiber|Kugelschreiber|кулькова ручка|шариковая ручка|school
+m|Stundenplan|Stundenpläne|розклад уроків|расписание уроков|school
+n|Zeugnis|Zeugnisse|табель, свідоцтво|табель, свидетельство|school
+f|Prüfung|Prüfungen|іспит|экзамен|school
+f|Note|Noten|оцінка|оценка|school
+f|Hausaufgabe|Hausaufgaben|домашнє завдання|домашнее задание|school
+m|Unterricht|-|урок, навчання|урок, обучение|school
+f|Universität|Universitäten|університет|университет|school
+m|Kurs|Kurse|курс|курс|school
+m|Stift|Stifte|ручка, олівець|ручка, карандаш|school
+m|Ordner|Ordner|папка (для паперів)|папка (для бумаг)|school
+f|Kerze|Kerzen|свічка|свеча|things
+f|Briefmarke|Briefmarken|поштова марка|почтовая марка|things
+n|Geschenk|Geschenke|подарунок|подарок|things
+n|Spielzeug|Spielzeuge|іграшка|игрушка|things
+f|Puppe|Puppen|лялька|кукла|things
+n|Spiel|Spiele|гра|игра|things
+n|Lied|Lieder|пісня|песня|things
+f|Musik|-|музика|музыка|things
+f|Gitarre|Gitarren|гітара|гитара|things
+n|Klavier|Klaviere|піаніно|пианино|things
+n|Radio|Radios|радіо|радио|things
+f|Batterie|Batterien|батарейка|батарейка|things
+m|Drucker|Drucker|принтер|принтер|things
+f|Tastatur|Tastaturen|клавіатура|клавиатура|things
+m|Bildschirm|Bildschirme|екран|экран|things
+f|Münze|Münzen|монета|монета|things
+n|Portemonnaie|Portemonnaies|гаманець|кошелёк|things
+f|Rechnung|Rechnungen|рахунок|счёт|things
+m|Preis|Preise|ціна|цена|things
+f|Kasse|Kassen|каса|касса|things
+f|Tüte|Tüten|пакет|пакет|things
+n|Angebot|Angebote|пропозиція, акція|предложение, акция|things
+m|Streit|Streite|сварка|ссора|feelings
+f|Hoffnung|Hoffnungen|надія|надежда|feelings
+f|Geduld|-|терпіння|терпение|feelings
+f|Überraschung|Überraschungen|сюрприз|сюрприз|feelings
+n|Glück|-|щастя, удача|счастье, удача|feelings
+n|Prozent|Prozente|відсоток|процент|numbers
+f|Hälfte|Hälften|половина|половина|numbers
+n|Paar|Paare|пара|пара|numbers
+f|Million|Millionen|мільйон|миллион|numbers
+m|Kilometer|Kilometer|кілометр|километр|numbers
+f|Größe|Größen|розмір, величина|размер, величина|numbers
+f|Höhe|Höhen|висота|высота|numbers
+n|Gewicht|Gewichte|вага|вес|numbers

@@ -44,13 +44,24 @@ const Art = ({ set, kein }) => (
 
 // ---------- Навчання ----------
 const topicName = (t, lang) => (lang === 'ua' ? t.ua : t.ru)
-const nounCount = (id, testOnly) => DATA.nouns.filter((n) => (id === 'all' || TOPIC_OF[n.de] === id) && (!testOnly || n.pl !== '-')).length
-const TopicChips = ({ topic, onPick, lang, testOnly }) => {
+const srcOk = (n, src) => src === 'all' || (src === 'extra') === !!n.extra
+const nounCount = (id, testOnly, src = 'all') => DATA.nouns.filter((n) => (id === 'all' || TOPIC_OF[n.de] === id) && (!testOnly || n.pl !== '-') && srcOk(n, src)).length
+const SrcSeg = ({ src, onPick, lang }) => {
+  const L = mk(lang)
+  return (
+    <div className="de-seg de-scope">
+      <button className={src === 'all' ? 'on' : ''} onClick={() => onPick('all')}>{L('Усі слова', 'Все слова')}</button>
+      <button className={src === 'book' ? 'on' : ''} onClick={() => onPick('book')}>{L('З підручника', 'Из учебника')}</button>
+      <button className={src === 'extra' ? 'on' : ''} onClick={() => onPick('extra')}>{L('Додаткові', 'Дополнительные')}</button>
+    </div>
+  )
+}
+const TopicChips = ({ topic, onPick, lang, testOnly, src }) => {
   const L = mk(lang)
   return (
     <div className="de-topics">
-      <button className={topic === 'all' ? 'on' : ''} onClick={() => onPick('all')}>{L('Усі теми', 'Все темы')} <i>{nounCount('all', testOnly)}</i></button>
-      {NOUN_TOPICS.map((t) => <button key={t.id} className={topic === t.id ? 'on' : ''} onClick={() => onPick(t.id)}>{topicName(t, lang)} <i>{nounCount(t.id, testOnly)}</i></button>)}
+      <button className={topic === 'all' ? 'on' : ''} onClick={() => onPick('all')}>{L('Усі теми', 'Все темы')} <i>{nounCount('all', testOnly, src)}</i></button>
+      {NOUN_TOPICS.filter((t) => nounCount(t.id, testOnly, src) > 0 || topic === t.id).map((t) => <button key={t.id} className={topic === t.id ? 'on' : ''} onClick={() => onPick(t.id)}>{topicName(t, lang)} <i>{nounCount(t.id, testOnly, src)}</i></button>)}
     </div>
   )
 }
@@ -59,32 +70,35 @@ const Learn = ({ tab, trans, lang, want, onWant }) => {
   const L = mk(lang)
   const [scope, setScope] = useState('all')
   const [topic, setTopic] = useState('all')
+  const [src, setSrc] = useState('all')
   const [q, setQ] = useState('')
   const mine = useMemo(() => mineIds(want, tab), [want, tab])
   const [shown, setShown] = useState(PAGE)
-  useEffect(() => { setShown(PAGE); setQ(''); setScope('all'); setTopic('all') }, [tab])
+  useEffect(() => { setShown(PAGE); setQ(''); setScope('all'); setTopic('all'); setSrc('all') }, [tab])
   const items = useMemo(() => {
     const s = q.trim().toLowerCase()
     const base = tab === 'past' ? PAST : DATA[tab]
     let all = scope === 'mine' ? base.filter((it) => mine.has(String(it.id))) : base
     if (tab === 'nouns' && topic !== 'all') all = all.filter((it) => TOPIC_OF[it.de] === topic)
+    if (tab === 'nouns') all = all.filter((it) => srcOk(it, src))
     if (!s) return all
     return all.filter((it) => (it.de || it.inf || '').toLowerCase().includes(s) || (it[lang] || '').toLowerCase().includes(s))
-  }, [tab, q, lang, scope, mine, topic])
+  }, [tab, q, lang, scope, mine, topic, src])
   return (
     <div className="de-learn">
       <div className="de-seg de-scope">
         <button className={scope === 'all' ? 'on' : ''} onClick={() => { setScope('all'); setShown(PAGE) }}>{L('Усі', 'Все')}</button>
         <button className={scope === 'mine' ? 'on' : ''} onClick={() => { setScope('mine'); setShown(PAGE) }}>{L('Хочу вивчити', 'Хочу выучить')} · {mine.size}</button>
       </div>
-      {tab === 'nouns' && <TopicChips topic={topic} lang={lang} onPick={(t) => { setTopic(t); setShown(PAGE) }} />}
+      {tab === 'nouns' && <SrcSeg src={src} lang={lang} onPick={(v) => { setSrc(v); setShown(PAGE) }} />}
+      {tab === 'nouns' && <TopicChips topic={topic} src={src} lang={lang} onPick={(t) => { setTopic(t); setShown(PAGE) }} />}
       <input className="de-search" placeholder={L('Пошук…', 'Поиск…')} value={q} onChange={(e) => { setQ(e.target.value); setShown(PAGE) }} />
       {items.slice(0, shown).map((it) => (
         <div className="de-item" key={it.id}>
           <div className="de-item-body">
           {tab === 'nouns' ? (
             <>
-              <div className="de-card-title"><span className={'de-g ' + GCOL[it.g]}>{GLAB[it.g]}</span> {it.de}<small className="de-pl"> · die {it.pl === '-' ? '—' : it.pl}</small></div>
+              <div className="de-card-title"><span className={'de-g ' + GCOL[it.g]}>{GLAB[it.g]}</span> {it.de}<small className="de-pl"> · die {it.pl === '-' ? '—' : it.pl}</small>{it.extra && <em className="de-extra">{L('додаткове', 'дополнительное')}</em>}</div>
               <Art set={articleSet(it.g)} kein={keinSet(articleSet(it.g))} />
             </>
           ) : tab === 'past' ? (
@@ -150,15 +164,16 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onSta
   const [n, setN] = useState(() => ls.get('de:n', 20))
   const [scope, setScope] = useState('all')
   const [topic, setTopic] = useState('all')
+  const [src, setSrc] = useState('all')
   const mine = useMemo(() => mineIds(want, tab), [want, tab])
   const only = useMemo(() => {
     let set = scope === 'mine' ? mine : null
-    if (tab === 'nouns' && topic !== 'all') {
-      const ids = DATA.nouns.filter((n) => TOPIC_OF[n.de] === topic && n.pl !== '-' && (!set || set.has(String(n.id)))).map((n) => String(n.id))
+    if (tab === 'nouns' && (topic !== 'all' || src !== 'all')) {
+      const ids = DATA.nouns.filter((n) => (topic === 'all' || TOPIC_OF[n.de] === topic) && srcOk(n, src) && n.pl !== '-' && (!set || set.has(String(n.id)))).map((n) => String(n.id))
       set = new Set(ids)
     }
     return set
-  }, [scope, mine, tab, topic])
+  }, [scope, mine, tab, topic, src])
   const canMine = !exam && !errs && tab !== 'cases'
   const stripRef = useRef(null)
   const pool = useMemo(() => (only ? only.size : tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab, only])
@@ -229,7 +244,8 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onSta
         ) : (
           <>
             <div className="de-start-p">{L(`${only ? 'У вибраному' : 'У розділі'} ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `${only ? 'В выбранном' : 'В разделе'} ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
-            {tab === 'nouns' && !exam && <TopicChips topic={topic} lang={lang} onPick={setTopic} testOnly />}
+            {tab === 'nouns' && !exam && <SrcSeg src={src} lang={lang} onPick={setSrc} />}
+            {tab === 'nouns' && !exam && <TopicChips topic={topic} src={src} lang={lang} onPick={setTopic} testOnly />}
             {canMine && mine.size > 0 && (
               <div className="de-seg de-scope">
                 <button className={scope === 'all' ? 'on' : ''} onClick={() => setScope('all')}>{L('Усі слова', 'Все слова')}</button>
