@@ -174,3 +174,43 @@
 .de-nav.compact small{opacity:0;max-height:0;overflow:hidden}
 .de-nav.compact .de-round{width:38px;height:38px}
 .de-head-row .de-title.row{flex-direction:row;align-items:center;justify-content:center}
+
+/* ---- Тест: шапка, номери, старт, результат ---- */
+.de-qtop{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.de-qtop b{flex:1;font-size:15px;font-weight:800}
+.de-pill{background:var(--o-500);color:#fff;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.de-timer{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:800;color:var(--o-700);background:var(--o-50);border:1px solid var(--line);padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.de-strip{display:flex;gap:6px;overflow-x:auto;padding:8px 2px 10px;margin-bottom:4px;scrollbar-width:none}
+.de-strip::-webkit-scrollbar{display:none}
+.de-strip.result{flex-wrap:wrap;justify-content:center;overflow:visible}
+.de-chip{flex:none;width:34px;height:34px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--dim);font-size:13px;font-weight:800}
+.de-chip.cur{border-color:var(--o-500);color:var(--o-700);box-shadow:0 0 0 3px var(--o-100)}
+.de-chip.done{background:var(--o-100);border-color:var(--o-300);color:var(--o-700)}
+.de-chip.ok{background:#E8F7EE;border-color:#7DD3A0;color:#15803D}
+.de-chip.bad{background:#FDECEC;border-color:#F4A3A3;color:#B91C1C}
+.de-chip.skip{border-style:dashed}
+.de-opt.picked{border-color:var(--o-500);background:var(--o-50)}
+.de-hintline{font-size:13px;font-weight:600;color:var(--dim)}
+.de-foot .de-btn.ghost{display:inline-flex;align-items:center;gap:6px;width:auto}
+.de-foot .de-btn.ghost:disabled{opacity:.4}
+.de-endrow{margin-top:10px;text-align:center}
+.de-link{border:0;background:transparent;color:var(--dim);font-size:13px;font-weight:700;text-decoration:underline;padding:6px}
+.de-confirm{display:flex;align-items:center;gap:8px;justify-content:center;flex-wrap:wrap;font-size:13px;font-weight:700}
+.de-confirm .de-btn{width:auto;padding:8px 16px;margin:0}
+.de-start{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:18px 4px}
+.de-start-ic,.de-result-ic{width:64px;height:64px;border-radius:20px;background:linear-gradient(145deg,var(--o-400),var(--o-600));color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(234,88,12,.3)}
+.de-start-t{font-size:24px;font-weight:800}
+.de-start-p{font-size:14px;line-height:1.55;color:var(--dim);font-weight:500;max-width:420px}
+.de-start-l{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);margin-top:6px}
+.de-sizes{display:flex;gap:10px}
+.de-sizes button{width:64px;height:48px;border-radius:16px;border:1.5px solid var(--line);background:#fff;font-size:18px;font-weight:800;color:var(--ink)}
+.de-sizes button.on{border-color:var(--o-500);background:var(--o-50);color:var(--o-700)}
+.de-start .de-btn{width:100%;max-width:360px}
+.de-best{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--o-700);background:var(--o-50);border:1px solid var(--line);padding:8px 14px;border-radius:999px}
+.de-result{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 4px}
+.de-result .de-btn{width:100%;max-width:360px}
+.de-result-meta{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.de-result-meta span{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:800;color:var(--o-700);background:var(--o-50);border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+.de-card.exam{background:linear-gradient(135deg,var(--o-400),var(--o-600));color:#fff}
+.de-card.exam .de-ic{background:rgba(255,255,255,.22);color:#fff}
+.de-card.exam small,.de-card.exam em,.de-card.exam .de-chev{color:rgba(255,255,255,.92)}

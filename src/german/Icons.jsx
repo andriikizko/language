@@ -11,6 +11,10 @@ const P = {
   person: <><circle cx="12" cy="8" r="3.4" /><path d="M5 20c0-3.6 3.1-6.5 7-6.5s7 2.9 7 6.5" /></>,
   learn: <><path d="M3 7.5L12 4l9 3.5-9 3.5-9-3.5z" /><path d="M7 10v5c0 1.4 2.2 2.6 5 2.6s5-1.2 5-2.6v-5" /><path d="M21 8v6" /></>,
   alert: <><path d="M12 3.5l9.5 16.5h-19L12 3.5z" /><path d="M12 10v4.5" /><circle cx="12" cy="17.2" r=".6" /></>,
+  exam: <><path d="M6 3h12v4a6 6 0 0 1-12 0V3z" /><path d="M6 5H3.5v1.5A3 3 0 0 0 6.5 9.5" /><path d="M18 5h2.5v1.5a3 3 0 0 1-3 3" /><path d="M12 13v4" /><path d="M8.5 21h7" /><path d="M9.5 17h5v4h-5z" /></>,
+  timer: <><circle cx="12" cy="13.5" r="7" /><path d="M12 10v3.8l2.4 1.4" /><path d="M9.5 3h5" /></>,
+  skip: <><path d="M5 5l9 7-9 7V5z" /><path d="M18 5v14" /></>,
+  check: <path d="M5 12.5l4.5 4.5L19 7.5" />,
   chev: <path d="M9 6l6 6-6 6" />,
 }
 const Ic = ({ id, size = 24 }) => (

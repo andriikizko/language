@@ -213,7 +213,7 @@ export const pickItems = (tab, stats, n = 10, ext) => {
   if (prev && pool.length - prev.size >= n) pool = pool.filter((it) => !prev.has(it.id))
   const weighted = pool.map((it) => {
     const s = stats[tab + ':' + it.id] || { ok: 0, bad: 0 }
-    return { it, w: Math.max(0.3, 1 + s.bad * 2 - s.ok * 0.5) }
+    return { it, w: 1 }
   })
   const out = []
   const cp = weighted.slice()
@@ -228,3 +228,6 @@ export const pickItems = (tab, stats, n = 10, ext) => {
   LAST[tab] = new Set(out.map((x) => x.id))
   return shuffle(out)
 }
+
+// кількість різних питань у базі розділу
+export const poolSize = (tab, ext) => (ext ? ext.length : tab === 'nouns' ? DATA.nouns.filter((n) => n.pl !== '-').length : (DATA[tab] || []).length)

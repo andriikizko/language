@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useCallback, useRef } from 'react'
 import './german.css'
 import {
-  DATA, TABS, PRONOUNS, makeQuestion, pickItems, conj, articleSet, keinSet,
+  DATA, TABS, PRONOUNS, makeQuestion, pickItems, poolSize, conj, articleSet, keinSet,
 } from './lib'
 import { makeCaseRound, ruleLines } from './cases'
 import { PAST, PAST_LABELS, makePastQuestion } from './past'
@@ -87,53 +87,154 @@ const Learn = ({ tab, trans, lang }) => {
 }
 
 // ---------- Тест ----------
-const buildRound = (tab, stats, mistakes, lang) => (tab === 'errors' ? buildErrorRound(mistakes, lang) : tab === 'cases' ? makeCaseRound(10).map((q) => ({ ...q, tab: 'cases' })) : tab === 'past' ? pickItems('past', stats, 10, PAST).map((it) => ({ ...makePastQuestion(it, lang), tab })) : pickItems(tab, stats, 10).map((it) => ({ ...makeQuestion(tab, it, lang), tab })))
+const EXAM_N = 30
+const fmt = (t) => String(Math.floor(t / 60)).padStart(2, '0') + ':' + String(t % 60).padStart(2, '0')
+const withTab = (qs, tab) => qs.map((q) => ({ ...q, tab }))
+const roundOf = (tab, stats, lang, n) => (tab === 'cases'
+  ? withTab(makeCaseRound(n), 'cases')
+  : tab === 'past'
+    ? pickItems('past', stats, n, PAST).map((it) => ({ ...makePastQuestion(it, lang), tab }))
+    : pickItems(tab, stats, n).map((it) => ({ ...makeQuestion(tab, it, lang), tab })))
+// іспит: мікс з усіх розділів
+const buildExam = (stats, lang, n = EXAM_N) => {
+  const per = Math.ceil(n / TABS.length) + 1
+  const all = []
+  for (const t of TABS) all.push(...roundOf(t.id, stats, lang, per))
+  return all.sort(() => Math.random() - 0.5).slice(0, n)
+}
+const buildRound = (tab, stats, mistakes, lang, n) => (tab === 'errors' ? buildErrorRound(mistakes, lang, n) : tab === 'exam' ? buildExam(stats, lang) : roundOf(tab, stats, lang, n))
+const examPoints = (qs, ans) => {
+  let ok = 0; let bad = 0
+  qs.forEach((q, k) => { if (ans[k] != null) { if (ans[k] === q.correct) ok++; else bad++ } })
+  return { ok, bad, pts: Math.max(0, ok * 2 - bad * 2) }
+}
 
-const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, onStat, onResult, onRun, onRoundDone, onExit }) => {
+const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, onStat, onResult, onRun, onRoundDone, onExamDone, onGoErrors, onExit }) => {
   const L = mk(lang)
-  const [questions, setQuestions] = useState(() => (initialRun && initialRun.qs ? initialRun.qs : buildRound(tab, stats, mistakes, lang)))
-  const [i, setI] = useState(() => (initialRun ? initialRun.i : 0))
-  const [sel, setSel] = useState(null)
-  const [score, setScore] = useState(() => (initialRun ? initialRun.score : 0))
-  useEffect(() => { if (!initialRun && tab !== 'errors') onRun({ qs: questions, i: 0, score: 0 }) /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [])
-  const q = questions[i]
-  const done = i >= questions.length
+  const exam = tab === 'exam'
+  const errs = tab === 'errors'
+  const init = initialRun && initialRun.qs ? initialRun : null
+  const [questions, setQuestions] = useState(() => (init ? init.qs : errs ? buildRound('errors', stats, mistakes, lang, 20) : null))
+  const [ans, setAns] = useState(() => (init ? (init.ans || init.qs.map(() => null)) : (questions ? questions.map(() => null) : [])))
+  const [i, setI] = useState(() => (init ? Math.min(init.i || 0, init.qs.length - 1) : 0))
+  const [t, setT] = useState(() => (init ? init.t || 0 : 0))
+  const [finished, setFinished] = useState(false)
+  const [review, setReview] = useState(false)
+  const [confirmEnd, setConfirmEnd] = useState(false)
+  const [n, setN] = useState(() => ls.get('de:n', 20))
+  const stripRef = useRef(null)
+  const pool = useMemo(() => (tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab])
+  const total = questions ? questions.length : 0
 
+  useEffect(() => {
+    if (!questions || finished) return undefined
+    const id = setInterval(() => setT((x) => x + 1), 1000)
+    return () => clearInterval(id)
+  }, [questions, finished])
+  useEffect(() => {
+    const el = stripRef.current && stripRef.current.children[i]
+    if (el && el.scrollIntoView) el.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+  }, [i, questions])
+
+  useEffect(() => { const m = document.querySelector('.de-main'); if (m) m.scrollTo(0, 0) }, [i, finished, review, !!questions])
+  const save = (qs, an, ci, tt) => { if (!errs) onRun({ qs, ans: an, i: ci, t: tt }) }
+  const start = (size) => {
+    ls.set('de:n', size)
+    const qs = buildRound(tab, stats, mistakes, lang, exam ? EXAM_N : size)
+    const an = qs.map(() => null)
+    setQuestions(qs); setAns(an); setI(0); setT(0); setFinished(false); setReview(false)
+    save(qs, an, 0, 0)
+  }
+
+  const nextFree = (from, an = ans) => {
+    for (let k = 1; k <= total; k++) { const idx = (from + k) % total; if (an[idx] == null) return idx }
+    return -1
+  }
+  const go = (idx) => { setI(idx); setConfirmEnd(false); save(questions, ans, idx, t) }
+  const finish = (an = ans) => {
+    setFinished(true); setReview(false); setConfirmEnd(false)
+    if (!errs) onRun(null)
+    const ok = questions.reduce((a, q, k) => a + (an[k] === q.correct ? 1 : 0), 0)
+    onRoundDone(ok, total)
+    if (exam) onExamDone(examPoints(questions, an).pts, t, ok, total)
+  }
   const choose = (idx) => {
-    if (sel !== null) return
-    setSel(idx)
+    if (ans[i] != null || finished) return
+    const q = questions[i]
+    const an = ans.slice(); an[i] = idx
+    setAns(an)
     const ok = idx === q.correct
-    if (ok) setScore((s) => s + 1)
     onStat(q.tab + ':' + (q.item ? q.item.id : q.key), ok)
-    onResult(q, ok, tab === 'errors')
+    onResult(q, ok, errs)
+    save(questions, an, i, t)
   }
-  const next = () => {
-    setSel(null)
-    const ni = i + 1
-    setI(ni)
-    if (tab !== 'errors') {
-      if (ni >= questions.length) { onRun(null); onRoundDone(score, questions.length) } else onRun({ qs: questions, i: ni, score })
-    } else if (ni >= questions.length) onRoundDone(score, questions.length)
-  }
-  const again = () => {
-    const qs = buildRound(tab, stats, mistakes, lang)
-    setQuestions(qs); setI(0); setSel(null); setScore(0)
-    if (tab !== 'errors') onRun({ qs, i: 0, score: 0 })
+  const forward = () => {
+    const nx = nextFree(i)
+    if (nx < 0) finish(); else go(nx)
   }
 
-  if (tab === 'errors' && !questions.length) {
-    return <div className="de-empty">{L('Помилок немає. Так тримати!', 'Ошибок нет. Так держать!')}</div>
+  // ---- старт ----
+  if (!questions) {
+    const sizes = [10, 20, 30].filter((x) => x <= pool)
+    const opts = sizes.length ? sizes : [pool]
+    const size = opts.includes(n) ? n : opts[opts.length - 1]
+    return (
+      <div className="de-start">
+        <div className="de-start-ic"><Ic id={exam ? 'exam' : 'timer'} size={30} /></div>
+        <div className="de-start-t">{exam ? L('Іспит', 'Экзамен') : L('Тест', 'Тест')}</div>
+        {exam ? (
+          <>
+            <div className="de-start-p">{L(`${EXAM_N} питань з усіх розділів у випадковому порядку. Час іде, відповіді та правильні варіанти видно лише в кінці. За вірну відповідь +2 бали, за невірну −2.`, `${EXAM_N} вопросов из всех разделов в случайном порядке. Время идёт, ответы и правильные варианты видны только в конце. За верный ответ +2 балла, за неверный −2.`)}</div>
+            {best && <div className="de-best"><Ic id="exam" size={18} /> {L('Кращий результат', 'Лучший результат')}: <b>{best.pts} {L('балів', 'баллов')}</b> · {fmt(best.time)}</div>}
+            <button className="de-btn" onClick={() => start(EXAM_N)}>{L('Почати іспит', 'Начать экзамен')}</button>
+          </>
+        ) : (
+          <>
+            <div className="de-start-p">{L(`У розділі ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `В разделе ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
+            <div className="de-start-l">{L('Скільки питань у тесті', 'Сколько вопросов в тесте')}</div>
+            <div className="de-sizes">
+              {opts.map((x) => <button key={x} className={x === size ? 'on' : ''} onClick={() => setN(x)}>{x}</button>)}
+            </div>
+            <button className="de-btn" onClick={() => start(size)}>{L('Почати тест', 'Начать тест')}</button>
+          </>
+        )}
+      </div>
+    )
   }
-  if (done) {
+  if (errs && !questions.length) return <div className="de-empty">{L('Помилок немає. Так тримати!', 'Ошибок нет. Так держать!')}</div>
+
+  const okN = questions.reduce((a, q, k) => a + (ans[k] === q.correct ? 1 : 0), 0)
+  const answered = ans.filter((x) => x != null).length
+  const ex = exam ? examPoints(questions, ans) : null
+
+  // ---- результат ----
+  if (finished && !review) {
+    const pct = okN / total
     return (
       <div className="de-result">
-        <div className="de-result-n">{score}<small>/{questions.length}</small></div>
-        <div className="de-result-t">{score === questions.length ? L('Бездоганно!', 'Безупречно!') : score >= questions.length * 0.7 ? L('Дуже добре!', 'Очень хорошо!') : L('Ще потренуємось', 'Ещё потренируемся')}</div>
-        <button className="de-btn" onClick={again}>{L('Ще раз', 'Ещё раз')}</button>
+        <div className="de-result-ic"><Ic id={exam ? 'exam' : 'check'} size={30} /></div>
+        <div className="de-result-n">{okN}<small>/{total}</small></div>
+        <div className="de-result-t">{pct === 1 ? L('Бездоганно!', 'Безупречно!') : pct >= 0.7 ? L('Дуже добре!', 'Очень хорошо!') : L('Ще потренуємось', 'Ещё потренируемся')}</div>
+        <div className="de-result-meta">
+          <span><Ic id="timer" size={16} /> {fmt(t)}</span>
+          {exam && <span><Ic id="exam" size={16} /> {ex.pts} {L('балів', 'баллов')}</span>}
+          {answered < total && <span>{L(`Без відповіді: ${total - answered}`, `Без ответа: ${total - answered}`)}</span>}
+        </div>
+        {exam && best && ex.pts < best.pts && <div className="de-tr">{L(`Кращий результат: ${best.pts} балів · ${fmt(best.time)}`, `Лучший результат: ${best.pts} баллов · ${fmt(best.time)}`)}</div>}
+        <div className="de-strip result">
+          {questions.map((q, k) => <button key={k} className={'de-chip ' + (ans[k] == null ? 'skip' : ans[k] === q.correct ? 'ok' : 'bad')} onClick={() => { setI(k); setReview(true) }}>{k + 1}</button>)}
+        </div>
+        <div className="de-tr" style={{ textAlign: 'center' }}>{L('Натисніть номер, щоб переглянути питання', 'Нажмите номер, чтобы посмотреть вопрос')}</div>
+        {total - okN > 0 && !errs && <button className="de-btn" onClick={onGoErrors}>{L('Відпрацювати помилки', 'Отработать ошибки')}</button>}
+        <button className={'de-btn' + (total - okN > 0 && !errs ? ' ghost' : '')} onClick={() => { if (errs) { const qs = buildRound('errors', stats, mistakes, lang, 20); setQuestions(qs); setAns(qs.map(() => null)); setI(0); setT(0); setFinished(false) } else { setQuestions(null); setFinished(false) } }}>{L('Ще раз', 'Ещё раз')}</button>
         <button className="de-btn ghost" onClick={onExit}>{L('На головну', 'На главную')}</button>
       </div>
     )
   }
+
+  const q = questions[i]
+  const sel = ans[i]
+  const reveal = sel != null && (!exam || finished)
   const hint = {
     tr: q.prompt && q.prompt.hideTrans ? L('Оберіть німецьке слово', 'Выберите немецкое слово') : L('Оберіть переклад', 'Выберите перевод'),
     art: L('Оберіть артиклі: Nominativ · Akkusativ · Plural', 'Выберите артикли: Nominativ · Akkusativ · Plural'),
@@ -144,15 +245,31 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, onStat, onResult,
     tbl: L('Оберіть правильні форми: Nom · Akk · Dat · Gen', 'Выберите правильные формы: Nom · Akk · Dat · Gen'),
     forms: q.tab === 'past' ? L('Оберіть форми: Präteritum · Partizip II · Perfekt', 'Выберите формы: Präteritum · Partizip II · Perfekt') : q.tab === 'sep' ? L('Оберіть форми Präsens (префікс у кінці)', 'Выберите формы Präsens (приставка в конце)') : L('Оберіть правильні 6 форм Präsens', 'Выберите правильные 6 форм Präsens'),
   }[q.kind]
+  const label = exam ? L('Іспит', 'Экзамен') : errs ? L('Помилки', 'Ошибки') : L('Тест', 'Тест')
+  const chipCls = (k) => {
+    const a = ans[k]
+    const base = k === i ? ' cur' : ''
+    if (a == null) return 'de-chip' + base
+    if (exam && !finished) return 'de-chip done' + base
+    return 'de-chip ' + (a === questions[k].correct ? 'ok' : 'bad') + base
+  }
   return (
     <div className="de-quiz">
-      <div className="de-bar"><div style={{ width: `${(i / questions.length) * 100}%` }} /></div>
+      <div className="de-qtop">
+        <span className="de-pill">{label}</span>
+        <b>{L(`Питання ${i + 1} з ${total}`, `Вопрос ${i + 1} из ${total}`)}</b>
+        <span className="de-timer"><Ic id="timer" size={15} /> {fmt(t)}</span>
+      </div>
+      <div className="de-bar"><div style={{ width: `${(answered / total) * 100}%` }} /></div>
+      <div className="de-strip" ref={stripRef}>
+        {questions.map((_, k) => <button key={k} className={chipCls(k)} onClick={() => go(k)}>{k + 1}</button>)}
+      </div>
       <div className="de-q-card">
         <div className="de-q-hint">{hint}</div>
         {q.parts ? (
           <div className="de-q-main de-sentence">
             {q.parts.map((pt, k) => {
-              if (pt.t === 'gap') return <span key={k} className={'de-gap' + (sel !== null ? ' filled' : '')}>{sel !== null ? pt.v : (q.kind === 'end' ? '__' : '___')}</span>
+              if (pt.t === 'gap') return <span key={k} className={'de-gap' + (reveal ? ' filled' : '')}>{reveal ? pt.v : (q.kind === 'end' ? '__' : '___')}</span>
               if (pt.t === 'mark') return <mark key={k} className="de-mark">{pt.v}</mark>
               return <span key={k}>{pt.v}</span>
             })}
@@ -164,12 +281,12 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, onStat, onResult,
         {trans && q.prompt && q.prompt.sub && q.kind !== 'tr' && <div className="de-tr">{q.prompt.sub}</div>}
         {q.item && q.item.g && <div className="de-pl">Plural: die {q.item.pl === '-' ? '—' : q.item.pl}</div>}
         {trans && q.tr && <div className="de-tr">{q.tr[lang === 'ua' ? 0 : 1]}</div>}
-        {tab === 'errors' && <div className="de-tip">{L('Прогрес', 'Прогресс')}: {q.mdone}/{NEED_OK}</div>}
+        {errs && <div className="de-tip">{L('Прогрес', 'Прогресс')}: {q.mdone}/{NEED_OK}</div>}
         {q.kind === 'pron' && <div className="de-tip">{L('Кому? → Dativ: mir, dir, ihm, ihr · Кого? → Akkusativ: mich, dich, ihn, sie', 'Кому? → Dativ: mir, dir, ihm, ihr · Кого? → Akkusativ: mich, dich, ihn, sie')}</div>}
       </div>
       <div className={'de-opts ' + q.kind}>
         {q.options.map((o, k) => {
-          const cls = 'de-opt' + (sel !== null ? (k === q.correct ? ' ok' : k === sel ? ' bad' : ' dim') : '')
+          const cls = 'de-opt' + (reveal ? (k === q.correct ? ' ok' : k === sel ? ' bad' : ' dim') : sel === k ? ' picked' : sel != null ? ' dim' : '')
           return (
             <button key={k} className={cls} onClick={() => choose(k)}>
               {['tr', 'sent', 'end', 'case', 'pron'].includes(q.kind) && <span>{o.label}{o.sub && <small className="de-sub">{o.sub}</small>}</span>}
@@ -180,13 +297,33 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, onStat, onResult,
           )
         })}
       </div>
-      {sel !== null && (
+      {finished ? (
+        <div className="de-foot"><span className={sel == null ? '' : sel === q.correct ? 'ok-t' : 'bad-t'}>{sel == null ? L('Без відповіді', 'Без ответа') : sel === q.correct ? L('Правильно!', 'Правильно!') : L('Неправильно', 'Неправильно')}</span><button className="de-btn" onClick={() => setReview(false)}>{L('До результату', 'К результату')}</button></div>
+      ) : (
         <div className="de-foot">
-          <span className={sel === q.correct ? 'ok-t' : 'bad-t'}>{sel === q.correct ? L('Правильно!', 'Правильно!') : L('Неправильно', 'Неправильно')}</span>
-          <button className="de-btn" onClick={next}>{i + 1 === questions.length ? L('Результат', 'Результат') : L('Далі', 'Далее')}</button>
+          {sel == null
+            ? <span className="de-hintline">{L('Оберіть відповідь або пропустіть питання', 'Выберите ответ или пропустите вопрос')}</span>
+            : exam ? <span className="de-hintline">{L('Відповідь збережено', 'Ответ сохранён')}</span>
+              : <span className={sel === q.correct ? 'ok-t' : 'bad-t'}>{sel === q.correct ? L('Правильно!', 'Правильно!') : L('Неправильно', 'Неправильно')}</span>}
+          {sel == null
+            ? <button className="de-btn ghost" disabled={nextFree(i) < 0} onClick={() => go(nextFree(i))}><Ic id="skip" size={16} /> {L('Пропустити', 'Пропустить')}</button>
+            : <button className="de-btn" onClick={forward}>{nextFree(i) < 0 ? L('Результат', 'Результат') : L('Далі', 'Далее')}</button>}
         </div>
       )}
-      {sel !== null && q.tab === 'cases' && (
+      {!finished && (
+        <div className="de-endrow">
+          {!confirmEnd
+            ? <button className="de-link" onClick={() => (answered === total ? finish() : setConfirmEnd(true))}>{L('Завершити тест', 'Завершить тест')}</button>
+            : (
+              <div className="de-confirm">
+                <span>{L(`Без відповіді: ${total - answered}. Завершити?`, `Без ответа: ${total - answered}. Завершить?`)}</span>
+                <button className="de-btn" onClick={() => finish()}>{L('Так', 'Да')}</button>
+                <button className="de-btn ghost" onClick={() => setConfirmEnd(false)}>{L('Ні', 'Нет')}</button>
+              </div>
+            )}
+        </div>
+      )}
+      {reveal && q.tab === 'cases' && (
         <div className={'de-rule ' + (sel === q.correct ? 'ok' : 'bad')}>
           <div className="de-rule-top">{sel === q.correct ? L('Правильно, і ось чому', 'Правильно, и вот почему') : L('Помилка. Розберемо правило', 'Ошибка. Разберём правило')}</div>
           {ruleLines(q, sel, lang).map((ln, k) => (ln.k === 'row'
@@ -211,9 +348,12 @@ const DESC = {
   modals: ['können, müssen, wollen та інші: форми й речення', 'können, müssen, wollen и другие: формы и предложения'],
   sep: ['Дієслова з відокремлюваним префіксом: aufstehen → ich stehe auf', 'Глаголы с отделяемой приставкой: aufstehen → ich stehe auf'],
   past: ['Минулий час: Präteritum, Partizip II і Perfekt', 'Прошедшее время: Präteritum, Partizip II и Perfekt'],
+  exam: ['Змішаний тест з усіх розділів: 30 питань, таймер, бали. Відповіді видно в кінці', 'Смешанный тест из всех разделов: 30 вопросов, таймер, баллы. Ответы видны в конце'],
   cases: ['Тести на 4 відмінки з поясненням правила до кожного завдання', 'Тесты на 4 падежа с объяснением правила к каждому заданию'],
 }
-const secTitle = (id, lang) => { const t = TABS.find((x) => x.id === id); return t ? t[lang] : id }
+const EXAM_T = { id: 'exam', ua: 'Іспит', ru: 'Экзамен' }
+const ALL = [EXAM_T, ...TABS]
+const secTitle = (id, lang) => { const t = ALL.find((x) => x.id === id); return t ? t[lang] : id }
 const secStats = (stats, id) => {
   let ok = 0; let bad = 0
   for (const [k, v] of Object.entries(stats)) if (k.startsWith(id + ':')) { ok += v.ok; bad += v.bad }
@@ -221,6 +361,8 @@ const secStats = (stats, id) => {
 }
 const mergeProg = (a, b) => {
   const out = { sections: { ...((a && a.sections) || {}) }, last: (a && a.last) || null }
+  const ea = a && a.exam; const eb = b && b.exam
+  if (ea || eb) out.exam = !ea ? eb : !eb ? ea : (eb.pts > ea.pts || (eb.pts === ea.pts && eb.time < ea.time) ? eb : ea)
   const bs = (b && b.sections) || {}
   for (const [id, v] of Object.entries(bs)) if (!out.sections[id] || (v.last || 0) > (out.sections[id].last || 0)) out.sections[id] = v
   const la = out.sections[out.last] ? out.sections[out.last].last || 0 : 0
@@ -361,8 +503,18 @@ const GermanApp = () => {
     touch()
   }, [touch])
 
+  const onExamDone = useCallback((pts, time) => {
+    setProg((p) => {
+      const cur = p.exam
+      const n = cur && (cur.pts > pts || (cur.pts === pts && cur.time <= time)) ? p : { ...p, exam: { pts, time } }
+      if (n !== p) ls.set(dnsRef.current + 'prog', n)
+      return n
+    })
+    touch()
+  }, [touch])
+
   const openSection = (id, m) => {
-    setSec(id); setMode(id === 'cases' ? 'quiz' : m); setView('section'); setOpenN((x) => x + 1)
+    setSec(id); setMode(id === 'cases' || id === 'exam' ? 'quiz' : m); setView('section'); setOpenN((x) => x + 1)
     updProg(id, () => ({}))
   }
 
@@ -418,9 +570,8 @@ const GermanApp = () => {
   }
 
   const L = mk(lang)
-  const totals = useMemo(() => Object.values(stats).reduce((a, s) => ({ ok: a.ok + s.ok, bad: a.bad + s.bad }), { ok: 0, bad: 0 }), [stats])
   const errN = Object.keys(mistakes).length
-  const started = TABS.filter((t) => prog.sections[t.id] || secStats(stats, t.id).n > 0).sort((x, y) => ((prog.sections[y.id] || {}).last || 0) - ((prog.sections[x.id] || {}).last || 0))
+  const started = ALL.filter((t) => prog.sections[t.id] || secStats(stats, t.id).n > 0).sort((x, y) => ((prog.sections[y.id] || {}).last || 0) - ((prog.sections[x.id] || {}).last || 0))
 
   if (splash) return <Splash onDone={() => setSplash(false)} />
   if (!acct && !skipped) {
@@ -439,19 +590,21 @@ const GermanApp = () => {
 
   const runInfo = (id) => {
     const r = prog.sections[id] && prog.sections[id].run
-    return r ? L(`Тест: питання ${r.i + 1} з ${r.qs.length}`, `Тест: вопрос ${r.i + 1} из ${r.qs.length}`) : null
+    if (!r || !r.qs) return null
+    const a = (r.ans || []).filter((x) => x != null).length
+    const w = id === 'exam' ? L('Іспит', 'Экзамен') : L('Тест', 'Тест')
+    return L(`${w}: відповідей ${a} з ${r.qs.length}`, `${w}: ответов ${a} из ${r.qs.length}`)
   }
   const resume = (id) => openSection(id, prog.sections[id] && prog.sections[id].run ? 'quiz' : 'learn')
 
   const SecCard = ({ id, big }) => {
-    const st = secStats(stats, id); const ri = runInfo(id)
+    const ri = runInfo(id); const ex = id === 'exam' && prog.exam
     return (
       <div className={'de-sec' + (big ? ' big' : '')}>
         <div className="de-sec-top"><span className="de-ic"><Ic id={id} size={20} /></span><b>{secTitle(id, lang)}</b></div>
-        <div className="de-sec-sub">{st.n ? L(`Відповідей: ${st.n} · ${st.pct}%`, `Ответов: ${st.n} · ${st.pct}%`) : L('Ще не починали', 'Ещё не начинали')}</div>
-        {st.n > 0 && <div className="de-bar small"><div style={{ width: st.pct + '%' }} /></div>}
-        {ri && <div className="de-sec-sub run">{ri}</div>}
-        <button className="de-btn" onClick={() => resume(id)}>{ri ? L('Продовжити', 'Продолжить') : st.n || prog.sections[id] ? L('Відкрити', 'Открыть') : L('Почати', 'Начать')}</button>
+        <div className="de-sec-sub">{ri || (ex ? L(`Кращий результат: ${ex.pts} балів · ${fmt(ex.time)}`, `Лучший результат: ${ex.pts} баллов · ${fmt(ex.time)}`) : prog.sections[id] ? L('Відкривали, тест не розпочато', 'Открывали, тест не начат') : L('Ще не починали', 'Ещё не начинали'))}</div>
+        {ri && ex && <div className="de-sec-sub">{L(`Кращий результат: ${ex.pts} балів · ${fmt(ex.time)}`, `Лучший результат: ${ex.pts} баллов · ${fmt(ex.time)}`)}</div>}
+        <button className="de-btn" onClick={() => resume(id)}>{ri ? L('Продовжити', 'Продолжить') : prog.sections[id] ? L('Відкрити', 'Открыть') : L('Почати', 'Начать')}</button>
       </div>
     )
   }
@@ -482,10 +635,10 @@ const GermanApp = () => {
           <div className="de-head-row">
             <button className="de-back" onClick={() => setView('home')} aria-label="back">←</button>
             <div className="de-title row"><span className="de-ic"><Ic id={sec} size={20} /></span><b>{secTitle(sec, lang)}</b></div>
-            <div className="de-score" title={L('Правильних відповідей', 'Правильных ответов')}>✓ {totals.ok}</div>
+            <span style={{ width: 36 }} />
           </div>
           <div className="de-ctrl">
-            {sec !== 'cases' ? (
+            {sec !== 'cases' && sec !== 'exam' ? (
               <div className="de-seg">
                 <button className={mode === 'learn' ? 'on' : ''} onClick={() => setMode('learn')}>{L('Вчити', 'Учить')}</button>
                 <button className={mode === 'quiz' ? 'on' : ''} onClick={() => setMode('quiz')}>{L('Тест', 'Тест')}</button>
@@ -512,12 +665,16 @@ const GermanApp = () => {
             )}
             <div className="de-intro">{L('Тут ви вивчаєте німецьку за шкільним підручником. Відкрийте розділ, оберіть «Вчити» щоб прочитати матеріал або «Тест» щоб перевірити себе. Помилки потрапляють у «Помилки», а прогрес зберігається в «Профілі».', 'Здесь вы учите немецкий по школьному учебнику. Откройте раздел, выберите «Учить» чтобы прочитать материал или «Тест» чтобы проверить себя. Ошибки попадают в «Ошибки», а прогресс сохраняется в «Профиле».')}</div>
             <div className="de-list">
+              <button className="de-card exam" onClick={() => openSection('exam', 'quiz')}>
+                <span className="de-ic"><Ic id="exam" size={22} /></span>
+                <span className="de-card-t"><b>{L('Іспит', 'Экзамен')}</b><small>{DESC.exam[lang === 'ua' ? 0 : 1]}</small>{prog.exam && <em>{L(`Кращий результат: ${prog.exam.pts} балів · ${fmt(prog.exam.time)}`, `Лучший результат: ${prog.exam.pts} баллов · ${fmt(prog.exam.time)}`)}</em>}</span>
+                <span className="de-chev"><Ic id="chev" size={18} /></span>
+              </button>
               {TABS.map((t) => {
-                const st = secStats(stats, t.id)
                 return (
                   <button key={t.id} className="de-card" onClick={() => openSection(t.id, 'learn')}>
                     <span className="de-ic"><Ic id={t.id} size={22} /></span>
-                    <span className="de-card-t"><b>{t[lang]}</b><small>{DESC[t.id][lang === 'ua' ? 0 : 1]}</small>{st.n > 0 && <em>{L(`Відповідей: ${st.n} · ${st.pct}%`, `Ответов: ${st.n} · ${st.pct}%`)}</em>}</span>
+                    <span className="de-card-t"><b>{t[lang]}</b><small>{DESC[t.id][lang === 'ua' ? 0 : 1]}</small></span>
                     <span className="de-chev"><Ic id="chev" size={18} /></span>
                   </button>
                 )
@@ -527,10 +684,10 @@ const GermanApp = () => {
         )}
 
         {view === 'section' && (
-          mode === 'learn' && sec !== 'cases'
+          mode === 'learn' && sec !== 'cases' && sec !== 'exam'
             ? <Learn tab={sec} trans={trans} lang={lang} />
             : <Quiz key={sec + ':' + openN + ':' + mode} tab={sec} trans={trans} lang={lang} stats={stats} mistakes={mistakes}
-                initialRun={prog.sections[sec] && prog.sections[sec].run} onStat={onStat} onResult={onResult}
+                initialRun={prog.sections[sec] && prog.sections[sec].run} best={prog.exam} onStat={onStat} onResult={onResult} onExamDone={onExamDone} onGoErrors={() => { setView('errors'); setOpenN((x) => x + 1) }}
                 onRun={(run) => updProg(sec, () => ({ run }))}
                 onRoundDone={(score, total) => updProg(sec, (c) => ({ rounds: (c.rounds || 0) + 1, lastScore: `${score}/${total}`, run: null }))}
                 onExit={() => setView('home')} />
@@ -541,7 +698,7 @@ const GermanApp = () => {
             <div className="de-hello">{L('Робота над помилками', 'Работа над ошибками')}</div>
             <div className="de-tr" style={{ marginBottom: 12 }}>{L(`Питання зникає після ${NEED_OK} правильних відповідей тут. Залишилось: ${errN}`, `Вопрос исчезает после ${NEED_OK} правильных ответов здесь. Осталось: ${errN}`)}</div>
             <Quiz key={'errors:' + errN + ':' + openN} tab="errors" trans={trans} lang={lang} stats={stats} mistakes={mistakes} initialRun={null}
-              onStat={onStat} onResult={onResult} onRun={() => {}} onRoundDone={() => {}} onExit={() => setView('home')} />
+              onStat={onStat} onResult={onResult} onRun={() => {}} onRoundDone={() => {}} onExamDone={() => {}} onGoErrors={() => {}} onExit={() => setView('home')} />
           </>
         )}
 
@@ -559,11 +716,6 @@ const GermanApp = () => {
             <div className="de-hello">{acct ? acct.name : L('Профіль', 'Профиль')}</div>
             {!acct ? <AuthForm lang={lang} onAuth={onAuth} /> : (
               <>
-                <div className="de-stats">
-                  <div><b>{totals.ok}</b><small>{L('вірно', 'верно')}</small></div>
-                  <div><b>{totals.bad}</b><small>{L('помилок', 'ошибок')}</small></div>
-                  <div><b>{totals.ok + totals.bad ? Math.round((totals.ok * 100) / (totals.ok + totals.bad)) : 0}%</b><small>{L('точність', 'точность')}</small></div>
-                </div>
                 {sync && <div className={'de-acct-st ' + sync}>{{ ok: L('Збережено на сервері', 'Сохранено на сервере'), busy: L('Зберігаю…', 'Сохраняю…'), err: L('Не вдалося зберегти. Повторю пізніше', 'Не удалось сохранить. Повторю позже') }[sync]}</div>}
                 <div className="de-h2">{L('Мій прогрес', 'Мой прогресс')}</div>
                 {started.length === 0 && <div className="de-empty">{L('Поки що порожньо', 'Пока пусто')}</div>}
