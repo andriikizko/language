@@ -223,3 +223,12 @@
 .de-scope{margin:0 0 10px;align-self:stretch}
 .de-scope button{flex:1}
 .de-start .de-scope{width:100%;max-width:360px}
+
+/* ---- Теми іменників ---- */
+.de-topics{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;margin:0 -2px 4px;scrollbar-width:none}
+.de-topics::-webkit-scrollbar{display:none}
+.de-topics button{flex:none;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:#fff;color:var(--ink);font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;white-space:nowrap}
+.de-topics button i{font-style:normal;font-size:11px;font-weight:800;color:var(--dim);background:var(--o-50);border-radius:999px;padding:1px 7px}
+.de-topics button.on{background:var(--o-500);border-color:var(--o-500);color:#fff}
+.de-topics button.on i{background:rgba(255,255,255,.25);color:#fff}
+.de-start .de-topics{width:100%;justify-content:flex-start}

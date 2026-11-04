@@ -8,6 +8,7 @@ import { PAST, PAST_LABELS, makePastQuestion } from './past'
 import { NEED_OK, toMistake, buildErrorRound, mergeState } from './errors'
 
 import Ic from './Icons.jsx'
+import { NOUN_TOPICS, TOPIC_OF } from './topics'
 import Splash from './Splash'
 import { post } from './api'
 
@@ -42,27 +43,41 @@ const Art = ({ set, kein }) => (
 )
 
 // ---------- Навчання ----------
+const topicName = (t, lang) => (lang === 'ua' ? t.ua : t.ru)
+const nounCount = (id, testOnly) => DATA.nouns.filter((n) => (id === 'all' || TOPIC_OF[n.de] === id) && (!testOnly || n.pl !== '-')).length
+const TopicChips = ({ topic, onPick, lang, testOnly }) => {
+  const L = mk(lang)
+  return (
+    <div className="de-topics">
+      <button className={topic === 'all' ? 'on' : ''} onClick={() => onPick('all')}>{L('Усі теми', 'Все темы')} <i>{nounCount('all', testOnly)}</i></button>
+      {NOUN_TOPICS.map((t) => <button key={t.id} className={topic === t.id ? 'on' : ''} onClick={() => onPick(t.id)}>{topicName(t, lang)} <i>{nounCount(t.id, testOnly)}</i></button>)}
+    </div>
+  )
+}
 const mineIds = (want, tab) => new Set(Object.entries(want || {}).filter(([k, v]) => v.on && k.startsWith(tab + ':')).map(([k]) => k.slice(tab.length + 1)))
 const Learn = ({ tab, trans, lang, want, onWant }) => {
   const L = mk(lang)
   const [scope, setScope] = useState('all')
+  const [topic, setTopic] = useState('all')
   const [q, setQ] = useState('')
   const mine = useMemo(() => mineIds(want, tab), [want, tab])
   const [shown, setShown] = useState(PAGE)
-  useEffect(() => { setShown(PAGE); setQ(''); setScope('all') }, [tab])
+  useEffect(() => { setShown(PAGE); setQ(''); setScope('all'); setTopic('all') }, [tab])
   const items = useMemo(() => {
     const s = q.trim().toLowerCase()
     const base = tab === 'past' ? PAST : DATA[tab]
-    const all = scope === 'mine' ? base.filter((it) => mine.has(String(it.id))) : base
+    let all = scope === 'mine' ? base.filter((it) => mine.has(String(it.id))) : base
+    if (tab === 'nouns' && topic !== 'all') all = all.filter((it) => TOPIC_OF[it.de] === topic)
     if (!s) return all
     return all.filter((it) => (it.de || it.inf || '').toLowerCase().includes(s) || (it[lang] || '').toLowerCase().includes(s))
-  }, [tab, q, lang, scope, mine])
+  }, [tab, q, lang, scope, mine, topic])
   return (
     <div className="de-learn">
       <div className="de-seg de-scope">
         <button className={scope === 'all' ? 'on' : ''} onClick={() => { setScope('all'); setShown(PAGE) }}>{L('Усі', 'Все')}</button>
         <button className={scope === 'mine' ? 'on' : ''} onClick={() => { setScope('mine'); setShown(PAGE) }}>{L('Хочу вивчити', 'Хочу выучить')} · {mine.size}</button>
       </div>
+      {tab === 'nouns' && <TopicChips topic={topic} lang={lang} onPick={(t) => { setTopic(t); setShown(PAGE) }} />}
       <input className="de-search" placeholder={L('Пошук…', 'Поиск…')} value={q} onChange={(e) => { setQ(e.target.value); setShown(PAGE) }} />
       {items.slice(0, shown).map((it) => (
         <div className="de-item" key={it.id}>
@@ -134,10 +149,19 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onSta
   const [confirmEnd, setConfirmEnd] = useState(false)
   const [n, setN] = useState(() => ls.get('de:n', 20))
   const [scope, setScope] = useState('all')
+  const [topic, setTopic] = useState('all')
   const mine = useMemo(() => mineIds(want, tab), [want, tab])
+  const only = useMemo(() => {
+    let set = scope === 'mine' ? mine : null
+    if (tab === 'nouns' && topic !== 'all') {
+      const ids = DATA.nouns.filter((n) => TOPIC_OF[n.de] === topic && n.pl !== '-' && (!set || set.has(String(n.id)))).map((n) => String(n.id))
+      set = new Set(ids)
+    }
+    return set
+  }, [scope, mine, tab, topic])
   const canMine = !exam && !errs && tab !== 'cases'
   const stripRef = useRef(null)
-  const pool = useMemo(() => (scope === 'mine' ? mine.size : tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab, scope, mine])
+  const pool = useMemo(() => (only ? only.size : tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab, only])
   const total = questions ? questions.length : 0
 
   useEffect(() => {
@@ -154,7 +178,7 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onSta
   const save = (qs, an, ci, tt) => { if (!errs) onRun({ qs, ans: an, i: ci, t: tt }) }
   const start = (size) => {
     ls.set('de:n', size)
-    const qs = buildRound(tab, stats, mistakes, lang, exam ? EXAM_N : size, scope === 'mine' ? mine : undefined)
+    const qs = buildRound(tab, stats, mistakes, lang, exam ? EXAM_N : size, only || undefined)
     const an = qs.map(() => null)
     setQuestions(qs); setAns(an); setI(0); setT(0); setFinished(false); setReview(false)
     save(qs, an, 0, 0)
@@ -204,7 +228,8 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onSta
           </>
         ) : (
           <>
-            <div className="de-start-p">{L(`${scope === 'mine' ? 'У вашому списку' : 'У розділі'} ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `${scope === 'mine' ? 'В вашем списке' : 'В разделе'} ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
+            <div className="de-start-p">{L(`${only ? 'У вибраному' : 'У розділі'} ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `${only ? 'В выбранном' : 'В разделе'} ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
+            {tab === 'nouns' && !exam && <TopicChips topic={topic} lang={lang} onPick={setTopic} testOnly />}
             {canMine && mine.size > 0 && (
               <div className="de-seg de-scope">
                 <button className={scope === 'all' ? 'on' : ''} onClick={() => setScope('all')}>{L('Усі слова', 'Все слова')}</button>
