@@ -206,10 +206,11 @@ export const makeQuestion = (tab, item, lang) => {
 
 // ---------- Вибір питань за статистикою ----------
 const LAST = {}
-export const pickItems = (tab, stats, n = 10, ext) => {
+export const pickItems = (tab, stats, n = 10, ext, only) => {
   let pool = ext || (tab === 'nouns' ? DATA.nouns.filter((n) => n.pl !== '-') : DATA[tab])
+  if (only) pool = pool.filter((it) => only.has(String(it.id)))
   // не повторюємо попередній раунд, якщо є з чого вибирати
-  const prev = LAST[tab]
+  const prev = only ? null : LAST[tab]
   if (prev && pool.length - prev.size >= n) pool = pool.filter((it) => !prev.has(it.id))
   const weighted = pool.map((it) => {
     const s = stats[tab + ':' + it.id] || { ok: 0, bad: 0 }
@@ -217,7 +218,8 @@ export const pickItems = (tab, stats, n = 10, ext) => {
   })
   const out = []
   const cp = weighted.slice()
-  while (out.length < Math.min(n, cp.length)) {
+  const target = Math.min(n, cp.length)
+  while (out.length < target) {
     const tot = cp.reduce((a, b) => a + b.w, 0)
     let r = Math.random() * tot
     let idx = 0

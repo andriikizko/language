@@ -42,22 +42,31 @@ const Art = ({ set, kein }) => (
 )
 
 // ---------- Навчання ----------
-const Learn = ({ tab, trans, lang }) => {
+const mineIds = (want, tab) => new Set(Object.entries(want || {}).filter(([k, v]) => v.on && k.startsWith(tab + ':')).map(([k]) => k.slice(tab.length + 1)))
+const Learn = ({ tab, trans, lang, want, onWant }) => {
   const L = mk(lang)
+  const [scope, setScope] = useState('all')
   const [q, setQ] = useState('')
+  const mine = useMemo(() => mineIds(want, tab), [want, tab])
   const [shown, setShown] = useState(PAGE)
-  useEffect(() => { setShown(PAGE); setQ('') }, [tab])
+  useEffect(() => { setShown(PAGE); setQ(''); setScope('all') }, [tab])
   const items = useMemo(() => {
     const s = q.trim().toLowerCase()
-    const all = tab === 'past' ? PAST : DATA[tab]
+    const base = tab === 'past' ? PAST : DATA[tab]
+    const all = scope === 'mine' ? base.filter((it) => mine.has(String(it.id))) : base
     if (!s) return all
     return all.filter((it) => (it.de || it.inf || '').toLowerCase().includes(s) || (it[lang] || '').toLowerCase().includes(s))
-  }, [tab, q, lang])
+  }, [tab, q, lang, scope, mine])
   return (
     <div className="de-learn">
+      <div className="de-seg de-scope">
+        <button className={scope === 'all' ? 'on' : ''} onClick={() => { setScope('all'); setShown(PAGE) }}>{L('Усі', 'Все')}</button>
+        <button className={scope === 'mine' ? 'on' : ''} onClick={() => { setScope('mine'); setShown(PAGE) }}>{L('Хочу вивчити', 'Хочу выучить')} · {mine.size}</button>
+      </div>
       <input className="de-search" placeholder={L('Пошук…', 'Поиск…')} value={q} onChange={(e) => { setQ(e.target.value); setShown(PAGE) }} />
       {items.slice(0, shown).map((it) => (
-        <div className="de-card" key={it.id}>
+        <div className="de-item" key={it.id}>
+          <div className="de-item-body">
           {tab === 'nouns' ? (
             <>
               <div className="de-card-title"><span className={'de-g ' + GCOL[it.g]}>{GLAB[it.g]}</span> {it.de}<small className="de-pl"> · die {it.pl === '-' ? '—' : it.pl}</small></div>
@@ -78,10 +87,12 @@ const Learn = ({ tab, trans, lang }) => {
             <div className="de-card-title">{it.de}</div>
           )}
           {trans && <div className="de-tr">{it[lang]}</div>}
+          </div>
+          <button className={'de-check' + (mine.has(String(it.id)) ? ' on' : '')} onClick={() => onWant(tab + ':' + it.id)} aria-label={L('Хочу вивчити', 'Хочу выучить')} aria-pressed={mine.has(String(it.id))}><Ic id="check" size={18} /></button>
         </div>
       ))}
       {shown < items.length && <button className="de-btn ghost" onClick={() => setShown(shown + PAGE)}>{L('Показати ще', 'Показать ещё')} ({items.length - shown})</button>}
-      {!items.length && <div className="de-empty">{L('Нічого не знайдено', 'Ничего не найдено')}</div>}
+      {!items.length && <div className="de-empty">{scope === 'mine' && !q ? L('Поки порожньо. Відмітьте слова галочкою у вкладці «Усі».', 'Пока пусто. Отметьте слова галочкой во вкладке «Все».') : L('Нічого не знайдено', 'Ничего не найдено')}</div>}
     </div>
   )
 }
@@ -90,11 +101,11 @@ const Learn = ({ tab, trans, lang }) => {
 const EXAM_N = 30
 const fmt = (t) => String(Math.floor(t / 60)).padStart(2, '0') + ':' + String(t % 60).padStart(2, '0')
 const withTab = (qs, tab) => qs.map((q) => ({ ...q, tab }))
-const roundOf = (tab, stats, lang, n) => (tab === 'cases'
+const roundOf = (tab, stats, lang, n, only) => (tab === 'cases'
   ? withTab(makeCaseRound(n), 'cases')
   : tab === 'past'
-    ? pickItems('past', stats, n, PAST).map((it) => ({ ...makePastQuestion(it, lang), tab }))
-    : pickItems(tab, stats, n).map((it) => ({ ...makeQuestion(tab, it, lang), tab })))
+    ? pickItems('past', stats, n, PAST, only).map((it) => ({ ...makePastQuestion(it, lang), tab }))
+    : pickItems(tab, stats, n, undefined, only).map((it) => ({ ...makeQuestion(tab, it, lang), tab })))
 // іспит: мікс з усіх розділів
 const buildExam = (stats, lang, n = EXAM_N) => {
   const per = Math.ceil(n / TABS.length) + 1
@@ -102,14 +113,14 @@ const buildExam = (stats, lang, n = EXAM_N) => {
   for (const t of TABS) all.push(...roundOf(t.id, stats, lang, per))
   return all.sort(() => Math.random() - 0.5).slice(0, n)
 }
-const buildRound = (tab, stats, mistakes, lang, n) => (tab === 'errors' ? buildErrorRound(mistakes, lang, n) : tab === 'exam' ? buildExam(stats, lang) : roundOf(tab, stats, lang, n))
+const buildRound = (tab, stats, mistakes, lang, n, only) => (tab === 'errors' ? buildErrorRound(mistakes, lang, n) : tab === 'exam' ? buildExam(stats, lang) : roundOf(tab, stats, lang, n, only))
 const examPoints = (qs, ans) => {
   let ok = 0; let bad = 0
   qs.forEach((q, k) => { if (ans[k] != null) { if (ans[k] === q.correct) ok++; else bad++ } })
   return { ok, bad, pts: Math.max(0, ok * 2 - bad * 2) }
 }
 
-const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, onStat, onResult, onRun, onRoundDone, onExamDone, onGoErrors, onExit }) => {
+const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, want, onStat, onResult, onRun, onRoundDone, onExamDone, onGoErrors, onExit }) => {
   const L = mk(lang)
   const exam = tab === 'exam'
   const errs = tab === 'errors'
@@ -122,8 +133,11 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, onStat, onR
   const [review, setReview] = useState(false)
   const [confirmEnd, setConfirmEnd] = useState(false)
   const [n, setN] = useState(() => ls.get('de:n', 20))
+  const [scope, setScope] = useState('all')
+  const mine = useMemo(() => mineIds(want, tab), [want, tab])
+  const canMine = !exam && !errs && tab !== 'cases'
   const stripRef = useRef(null)
-  const pool = useMemo(() => (tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab])
+  const pool = useMemo(() => (scope === 'mine' ? mine.size : tab === 'cases' ? 999 : tab === 'past' ? poolSize('past', PAST) : poolSize(tab)), [tab, scope, mine])
   const total = questions ? questions.length : 0
 
   useEffect(() => {
@@ -140,7 +154,7 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, onStat, onR
   const save = (qs, an, ci, tt) => { if (!errs) onRun({ qs, ans: an, i: ci, t: tt }) }
   const start = (size) => {
     ls.set('de:n', size)
-    const qs = buildRound(tab, stats, mistakes, lang, exam ? EXAM_N : size)
+    const qs = buildRound(tab, stats, mistakes, lang, exam ? EXAM_N : size, scope === 'mine' ? mine : undefined)
     const an = qs.map(() => null)
     setQuestions(qs); setAns(an); setI(0); setT(0); setFinished(false); setReview(false)
     save(qs, an, 0, 0)
@@ -190,12 +204,18 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, best, onStat, onR
           </>
         ) : (
           <>
-            <div className="de-start-p">{L(`У розділі ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `В разделе ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
+            <div className="de-start-p">{L(`${scope === 'mine' ? 'У вашому списку' : 'У розділі'} ${tab === 'cases' ? 'безліч' : pool} різних питань. Кожен тест бере випадкові, щоразу інші. Помилки потрапляють у «Помилки».`, `${scope === 'mine' ? 'В вашем списке' : 'В разделе'} ${tab === 'cases' ? 'множество' : pool} разных вопросов. Каждый тест берёт случайные, каждый раз другие. Ошибки попадают в «Ошибки».`)}</div>
+            {canMine && mine.size > 0 && (
+              <div className="de-seg de-scope">
+                <button className={scope === 'all' ? 'on' : ''} onClick={() => setScope('all')}>{L('Усі слова', 'Все слова')}</button>
+                <button className={scope === 'mine' ? 'on' : ''} onClick={() => setScope('mine')}>{L('Хочу вивчити', 'Хочу выучить')} · {mine.size}</button>
+              </div>
+            )}
             <div className="de-start-l">{L('Скільки питань у тесті', 'Сколько вопросов в тесте')}</div>
             <div className="de-sizes">
               {opts.map((x) => <button key={x} className={x === size ? 'on' : ''} onClick={() => setN(x)}>{x}</button>)}
             </div>
-            <button className="de-btn" onClick={() => start(size)}>{L('Почати тест', 'Начать тест')}</button>
+            <button className="de-btn" disabled={pool < 1} onClick={() => start(size)}>{L('Почати тест', 'Начать тест')}</button>
           </>
         )}
       </div>
@@ -361,6 +381,10 @@ const secStats = (stats, id) => {
 }
 const mergeProg = (a, b) => {
   const out = { sections: { ...((a && a.sections) || {}) }, last: (a && a.last) || null }
+  if ((a && a.want) || (b && b.want)) {
+    out.want = { ...((a && a.want) || {}) }
+    for (const [k, v] of Object.entries((b && b.want) || {})) if (!out.want[k] || v.t > out.want[k].t) out.want[k] = v
+  }
   const ea = a && a.exam; const eb = b && b.exam
   if (ea || eb) out.exam = !ea ? eb : !eb ? ea : (eb.pts > ea.pts || (eb.pts === ea.pts && eb.time < ea.time) ? eb : ea)
   const bs = (b && b.sections) || {}
@@ -497,6 +521,16 @@ const GermanApp = () => {
     setProg((p) => {
       const cur = (p.sections && p.sections[id]) || { rounds: 0, run: null }
       const n = { sections: { ...p.sections, [id]: { ...cur, ...fn(cur), last: Date.now() } }, last: id }
+      ls.set(dnsRef.current + 'prog', n)
+      return n
+    })
+    touch()
+  }, [touch])
+
+  const onWant = useCallback((key) => {
+    setProg((p) => {
+      const cur = p.want && p.want[key]
+      const n = { ...p, want: { ...(p.want || {}), [key]: { on: !(cur && cur.on), t: Date.now() } } }
       ls.set(dnsRef.current + 'prog', n)
       return n
     })
@@ -685,9 +719,9 @@ const GermanApp = () => {
 
         {view === 'section' && (
           mode === 'learn' && sec !== 'cases' && sec !== 'exam'
-            ? <Learn tab={sec} trans={trans} lang={lang} />
+            ? <Learn tab={sec} trans={trans} lang={lang} want={prog.want} onWant={onWant} />
             : <Quiz key={sec + ':' + openN + ':' + mode} tab={sec} trans={trans} lang={lang} stats={stats} mistakes={mistakes}
-                initialRun={prog.sections[sec] && prog.sections[sec].run} best={prog.exam} onStat={onStat} onResult={onResult} onExamDone={onExamDone} onGoErrors={() => { setView('errors'); setOpenN((x) => x + 1) }}
+                initialRun={prog.sections[sec] && prog.sections[sec].run} best={prog.exam} want={prog.want} onStat={onStat} onResult={onResult} onExamDone={onExamDone} onGoErrors={() => { setView('errors'); setOpenN((x) => x + 1) }}
                 onRun={(run) => updProg(sec, () => ({ run }))}
                 onRoundDone={(score, total) => updProg(sec, (c) => ({ rounds: (c.rounds || 0) + 1, lastScore: `${score}/${total}`, run: null }))}
                 onExit={() => setView('home')} />

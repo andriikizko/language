@@ -214,3 +214,12 @@
 .de-card.exam{background:linear-gradient(135deg,var(--o-400),var(--o-600));color:#fff}
 .de-card.exam .de-ic{background:rgba(255,255,255,.22);color:#fff}
 .de-card.exam small,.de-card.exam em,.de-card.exam .de-chev{color:rgba(255,255,255,.92)}
+
+/* ---- Хочу вивчити ---- */
+.de-item{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:10px;background:#fff}
+.de-item-body{flex:1;min-width:0}
+.de-check{flex:none;width:34px;height:34px;border-radius:11px;border:2px solid var(--line);background:#fff;color:transparent;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.de-check.on{background:var(--o-500);border-color:var(--o-500);color:#fff}
+.de-scope{margin:0 0 10px;align-self:stretch}
+.de-scope button{flex:1}
+.de-start .de-scope{width:100%;max-width:360px}
