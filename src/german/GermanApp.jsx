@@ -7,6 +7,7 @@ import { makeCaseRound, ruleLines } from './cases'
 import { PAST, PAST_LABELS, makePastQuestion } from './past'
 import { NEED_OK, toMistake, buildErrorRound, mergeState } from './errors'
 
+import Ic from './Icons.jsx'
 import Splash from './Splash'
 import { post } from './api'
 
@@ -202,7 +203,16 @@ const Quiz = ({ tab, trans, lang, stats, mistakes, initialRun, onStat, onResult,
 }
 
 // ---------- Розділи, прогрес ----------
-const ICON = { words: '📖', phrases: '💬', nouns: '🏷️', verbs: '⚡', modals: '🔑', sep: '✂️', past: '⏪', cases: '🎯' }
+const DESC = {
+  words: ['Слова з підручника з перекладом: картки для вивчення й тест', 'Слова из учебника с переводом: карточки для изучения и тест'],
+  phrases: ['Готові фрази для розмови. Вчіть і перевіряйте себе', 'Готовые фразы для разговора. Учите и проверяйте себя'],
+  nouns: ['Рід і артикль: der, die, das, kein. Тест на відмінювання', 'Род и артикль: der, die, das, kein. Тест на склонение'],
+  verbs: ['Дієслова в теперішньому часі (Präsens): усі 6 форм', 'Глаголы в настоящем времени (Präsens): все 6 форм'],
+  modals: ['können, müssen, wollen та інші: форми й речення', 'können, müssen, wollen и другие: формы и предложения'],
+  sep: ['Дієслова з відокремлюваним префіксом: aufstehen → ich stehe auf', 'Глаголы с отделяемой приставкой: aufstehen → ich stehe auf'],
+  past: ['Минулий час: Präteritum, Partizip II і Perfekt', 'Прошедшее время: Präteritum, Partizip II и Perfekt'],
+  cases: ['Тести на 4 відмінки з поясненням правила до кожного завдання', 'Тесты на 4 падежа с объяснением правила к каждому заданию'],
+}
 const secTitle = (id, lang) => { const t = TABS.find((x) => x.id === id); return t ? t[lang] : id }
 const secStats = (stats, id) => {
   let ok = 0; let bad = 0
@@ -278,9 +288,17 @@ const GermanApp = () => {
   const [mode, setMode] = useState('learn')
   const [openN, setOpenN] = useState(0)
   const [trans, setTrans] = useState(() => ls.get('de:trans', true))
-  const [lang, setLang] = useState(() => ls.get('de:lang', 'ru'))
+  const [lang, setLang] = useState(() => ls.get('de:lang', 'ua'))
   const [acct, setAcct] = useState(() => ls.get('de:session', null))
   const [sync, setSync] = useState('')
+  const [navCompact, setNavCompact] = useState(false)
+  const lastTop = useRef(0)
+  const onScrollCap = (e) => {
+    const top = e.target.scrollTop || 0; const d = top - lastTop.current
+    if (top < 24) setNavCompact(false); else if (d > 8) setNavCompact(true); else if (d < -8) setNavCompact(false)
+    if (Math.abs(d) > 8 || top < 24) lastTop.current = top
+  }
+  useEffect(() => { lastTop.current = 0; setNavCompact(false) }, [view, sec])
 
   // дані: окремо для кожного акаунта; без входу — локальні для пристрою
   const dns = acct ? 'de:acct:' + acct.login + ':' : 'de:anon:'
@@ -429,7 +447,7 @@ const GermanApp = () => {
     const st = secStats(stats, id); const ri = runInfo(id)
     return (
       <div className={'de-sec' + (big ? ' big' : '')}>
-        <div className="de-sec-top"><span className="de-sec-ic">{ICON[id]}</span><b>{secTitle(id, lang)}</b></div>
+        <div className="de-sec-top"><span className="de-ic"><Ic id={id} size={20} /></span><b>{secTitle(id, lang)}</b></div>
         <div className="de-sec-sub">{st.n ? L(`Відповідей: ${st.n} · ${st.pct}%`, `Ответов: ${st.n} · ${st.pct}%`) : L('Ще не починали', 'Ещё не начинали')}</div>
         {st.n > 0 && <div className="de-bar small"><div style={{ width: st.pct + '%' }} /></div>}
         {ri && <div className="de-sec-sub run">{ri}</div>}
@@ -440,14 +458,14 @@ const GermanApp = () => {
 
   const navIn = view === 'section' ? 'home' : view
   const NAV = [
-    ['home', '🏠', L('Головна', 'Главная')],
-    ['profile', '👤', L('Профіль', 'Профиль')],
-    ['current', '📚', L('Навчання', 'Обучение')],
-    ['errors', '⚠️', L('Помилки', 'Ошибки')],
+    ['home', 'home', L('Головна', 'Главная')],
+    ['profile', 'person', L('Профіль', 'Профиль')],
+    ['current', 'learn', L('Навчання', 'Обучение')],
+    ['errors', 'alert', L('Помилки', 'Ошибки')],
   ]
 
   return (
-    <div className="de-app">
+    <div className="de-app" onScrollCapture={onScrollCap}>
       {view !== 'section' ? (
         <header className="de-head">
           <div className="de-head-row">
@@ -463,7 +481,7 @@ const GermanApp = () => {
         <header className="de-head">
           <div className="de-head-row">
             <button className="de-back" onClick={() => setView('home')} aria-label="back">←</button>
-            <div className="de-title"><b>{ICON[sec]} {secTitle(sec, lang)}</b></div>
+            <div className="de-title row"><span className="de-ic"><Ic id={sec} size={20} /></span><b>{secTitle(sec, lang)}</b></div>
             <div className="de-score" title={L('Правильних відповідей', 'Правильных ответов')}>✓ {totals.ok}</div>
           </div>
           <div className="de-ctrl">
@@ -492,14 +510,18 @@ const GermanApp = () => {
                 <button className="de-btn" onClick={() => resume(prog.last)}>▶</button>
               </div>
             )}
-            <div className="de-grid">
-              {TABS.map((t) => (
-                <button key={t.id} className="de-tile" onClick={() => openSection(t.id, 'learn')}>
-                  <span className="de-tile-ic">{ICON[t.id]}</span>
-                  <b>{t[lang]}</b>
-                  <small>{secStats(stats, t.id).n ? `${secStats(stats, t.id).pct}% · ${secStats(stats, t.id).n}` : L('почати', 'начать')}</small>
-                </button>
-              ))}
+            <div className="de-intro">{L('Тут ви вивчаєте німецьку за шкільним підручником. Відкрийте розділ, оберіть «Вчити» щоб прочитати матеріал або «Тест» щоб перевірити себе. Помилки потрапляють у «Помилки», а прогрес зберігається в «Профілі».', 'Здесь вы учите немецкий по школьному учебнику. Откройте раздел, выберите «Учить» чтобы прочитать материал или «Тест» чтобы проверить себя. Ошибки попадают в «Ошибки», а прогресс сохраняется в «Профиле».')}</div>
+            <div className="de-list">
+              {TABS.map((t) => {
+                const st = secStats(stats, t.id)
+                return (
+                  <button key={t.id} className="de-card" onClick={() => openSection(t.id, 'learn')}>
+                    <span className="de-ic"><Ic id={t.id} size={22} /></span>
+                    <span className="de-card-t"><b>{t[lang]}</b><small>{DESC[t.id][lang === 'ua' ? 0 : 1]}</small>{st.n > 0 && <em>{L(`Відповідей: ${st.n} · ${st.pct}%`, `Ответов: ${st.n} · ${st.pct}%`)}</em>}</span>
+                    <span className="de-chev"><Ic id="chev" size={18} /></span>
+                  </button>
+                )
+              })}
             </div>
           </>
         )}
@@ -553,10 +575,10 @@ const GermanApp = () => {
         )}
       </main>
 
-      <nav className="de-nav">
+      <nav className={'de-nav' + (navCompact ? ' compact' : '')}>
         {NAV.map(([id, ic, label]) => (
           <button key={id} className={navIn === id ? 'on' : ''} onClick={() => { setView(id); if (id === 'errors') setOpenN((x) => x + 1) }}>
-            <span>{ic}{id === 'errors' && errN > 0 && <i>{errN}</i>}</span>
+            <span className={id === 'current' ? 'de-round' : 'de-navic'}><Ic id={ic} size={id === 'current' ? 21 : 24} />{id === 'errors' && errN > 0 && <i>{errN}</i>}</span>
             <small>{label}</small>
           </button>
         ))}
