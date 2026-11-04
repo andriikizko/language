@@ -272,6 +272,7 @@ const AuthForm = ({ lang, onAuth }) => {
 // ---------- Застосунок ----------
 const GermanApp = () => {
   const [splash, setSplash] = useState(true)
+  const [skipped, setSkipped] = useState(false)
   const [view, setView] = useState('home') // home | profile | current | errors | section
   const [sec, setSec] = useState(null)
   const [mode, setMode] = useState('learn')
@@ -404,6 +405,19 @@ const GermanApp = () => {
   const started = TABS.filter((t) => prog.sections[t.id] || secStats(stats, t.id).n > 0).sort((x, y) => ((prog.sections[y.id] || {}).last || 0) - ((prog.sections[x.id] || {}).last || 0))
 
   if (splash) return <Splash onDone={() => setSplash(false)} />
+  if (!acct && !skipped) {
+    return (
+      <div className="de-app">
+        <main className="de-main de-gate">
+          <div className="de-logo big">L</div>
+          <div className="de-hello">{L('Створіть акаунт', 'Создайте аккаунт')}</div>
+          <AuthForm lang={lang} onAuth={(a, st) => { onAuth(a, st); setView('home') }} />
+          <button className="de-btn ghost" onClick={() => setSkipped(true)}>{L('Пропустити', 'Пропустить')}</button>
+          <div className="de-tr" style={{ textAlign: 'center', marginTop: 8 }}>{L('Без акаунта прогрес зберігається лише на цьому пристрої.', 'Без аккаунта прогресс сохраняется только на этом устройстве.')}</div>
+        </main>
+      </div>
+    )
+  }
 
   const runInfo = (id) => {
     const r = prog.sections[id] && prog.sections[id].run

@@ -152,3 +152,6 @@
 .de-nav button small{font-size:10px;font-weight:700}
 .de-nav button.on{color:var(--o-600)}
 .de-nav button i{position:absolute;top:-4px;right:-12px;background:var(--o-500);color:#fff;font-style:normal;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px}
+.de-gate{display:flex;flex-direction:column;justify-content:center;gap:10px;padding-top:40px}
+.de-gate .de-hello{text-align:center}
+.de-logo.big{width:64px;height:64px;font-size:30px;border-radius:20px;margin:0 auto 8px}
