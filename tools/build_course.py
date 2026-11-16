@@ -4,18 +4,27 @@ CD='content/course/'+('' if LV=='a1' else LV+'/')
 SUF='' if LV=='a1' else '_'+LV
 B=[]
 def blk(**k): B.append(k)
-for p in ('part1','part2','part3'):
-    exec(open(f'{CD}{p}.py',encoding='utf8').read())
+import os
+for p in ('part1','part2','part3','part4'):
+    if os.path.exists(f'{CD}{p}.py'): exec(open(f'{CD}{p}.py',encoding='utf8').read())
 exec(open(CD+'topics.py',encoding='utf8').read())
 exec(open(CD+'explain_ru.py',encoding='utf8').read())
 EXTRA={}
 import os
 if os.path.exists(CD+'gaps_extra.py'): exec(open(CD+'gaps_extra.py',encoding='utf8').read())
 out=[]
+def a2words(tid):
+    return [l.split('|')[1] for l in open(f'content/nouns/a2/{tid[3:]}.tsv',encoding='utf8') if l.strip()]
+def a2adjs(tid):
+    return [l.split('|')[0] for l in open('content/dict/adjectives_a2.tsv',encoding='utf8') if l.strip() and l.split('|')[3]==tid]
 for b in B:
+    if LV=='a2':
+        b['nouns']=a2words(b['id']); b['adjlist']=a2adjs(b['id']); b['adjs']=[]
     gaps=[]
     for g in b['gaps']+EXTRA.get(b['id'],[]):
-        s,a,w,uk,ru=g.split('|')
+        f=g.split('|')
+        if len(f)==6: f=[f[0],f[1],f[2]+','+f[3],f[4],f[5]]
+        s,a,w,uk,ru=f
         assert '___' in s and uk and ru, g
         wr=w.split(',')
         assert a not in wr, g

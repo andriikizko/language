@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+T = {}
+T['a2_health'] = dict(title='Beim Arzt', note='Тут використовуємо Perfekt: haben + Partizip II.', s=[
+ 'Ich habe Kopfschmerzen und Fieber.|У мене болить голова й температура.|У меня болит голова и температура.',
+ 'Gestern bin ich zum Arzt gegangen.|Вчора я пішов до лікаря.|Вчера я пошёл к врачу.',
+ 'Die Ärztin hat mich gründlich untersucht.|Лікарка ретельно мене обстежила.|Врач тщательно меня обследовала.',
+ 'Sie hat gesagt: Sie haben eine Erkältung.|Вона сказала: у вас застуда.|Она сказала: у вас простуда.',
+ 'Ich habe ein Rezept bekommen.|Я отримав рецепт.|Я получил рецепт.',
+ 'In der Apotheke habe ich Tropfen gekauft.|В аптеці я купив краплі.|В аптеке я купил капли.',
+ 'Ich muss dreimal am Tag zehn Tropfen nehmen.|Я маю приймати тричі на день по десять крапель.|Я должен принимать три раза в день по десять капель.',
+ 'Der Arzt hat mir eine Krankschreibung gegeben.|Лікар дав мені лікарняний.|Врач дал мне больничный.',
+ 'Ich bleibe eine Woche zu Hause im Bett.|Я залишаюся тиждень вдома в ліжку.|Я остаюсь неделю дома в постели.',
+ 'Ich trinke viel Tee und ruhe mich aus.|Я п\'ю багато чаю й відпочиваю.|Я пью много чая и отдыхаю.',
+ 'Nächste Woche gehe ich wieder zur Arbeit.|Наступного тижня я знову йду на роботу.|На следующей неделе я снова иду на работу.',
+ 'Gute Besserung!|Одужуй!|Выздоравливай!'])
+T['a2_travel'] = dict(title='Meine Reise nach Wien', note='Perfekt з sein: ich bin gefahren. Präteritum: war, hatte.', s=[
+ 'Letzten Sommer bin ich nach Wien gereist.|Минулого літа я їздив до Відня.|Прошлым летом я ездил в Вену.',
+ 'Ich habe das Hotel im Internet gebucht.|Я забронював готель в інтернеті.|Я забронировал отель в интернете.',
+ 'Wir sind mit dem Zug gefahren.|Ми їхали потягом.|Мы ехали на поезде.',
+ 'Der Zug hatte eine Stunde Verspätung.|Потяг запізнився на годину.|Поезд опоздал на час.',
+ 'Am Abend sind wir im Hotel angekommen.|Ввечері ми приїхали в готель.|Вечером мы приехали в отель.',
+ 'Das Zimmer war klein, aber sehr sauber.|Номер був малий, але дуже чистий.|Номер был маленький, но очень чистый.',
+ 'Wir haben viele Sehenswürdigkeiten besichtigt.|Ми оглянули багато памʼяток.|Мы осмотрели много достопримечательностей.',
+ 'Das Wetter war schön und warm.|Погода була гарна й тепла.|Погода была хорошая и тёплая.',
+ 'Ich habe viele Fotos gemacht.|Я зробив багато фото.|Я сделал много фото.',
+ 'Nach vier Tagen sind wir nach Hause zurückgekommen.|Через чотири дні ми повернулися додому.|Через четыре дня мы вернулись домой.',
+ 'Die Reise hat mir sehr gut gefallen.|Поїздка мені дуже сподобалася.|Поездка мне очень понравилась.'])
+T['a2_shopping'] = dict(title='Im Kaufhaus', note='Komparativ: -er; Superlativ: am -sten. Dativ: mir, dir, ihm.', s=[
+ 'Ich brauche eine neue Jacke für den Winter.|Мені потрібна нова куртка на зиму.|Мне нужна новая куртка на зиму.',
+ 'Im Kaufhaus gibt es eine große Auswahl.|В універмазі великий вибір.|В универмаге большой выбор.',
+ 'Diese Jacke ist schöner als die andere.|Ця куртка гарніша за іншу.|Эта куртка красивее другой.',
+ 'Aber sie ist auch teurer.|Але вона й дорожча.|Но она и дороже.',
+ 'Die Verkäuferin zeigt mir die billigste Jacke.|Продавчиня показує мені найдешевшу куртку.|Продавщица показывает мне самую дешёвую куртку.',
+ 'Ich probiere die blaue Jacke an.|Я приміряю синю куртку.|Я примеряю синюю куртку.',
+ 'Sie passt mir gut und gefällt mir sehr.|Вона мені добре підходить і дуже подобається.|Она мне хорошо подходит и очень нравится.',
+ 'Zum Glück gibt es heute 20 Prozent Rabatt.|На щастя, сьогодні знижка 20 відсотків.|К счастью, сегодня скидка 20 процентов.',
+ 'Ich bezahle mit Karte.|Я плачу карткою.|Я плачу картой.',
+ 'Den Kassenbon stecke ich in die Tasche.|Чек я кладу в сумку.|Чек я кладу в сумку.',
+ 'Wenn sie nicht passt, kann ich sie umtauschen.|Якщо вона не підійде, я можу її обміняти.|Если она не подойдёт, я могу её обменять.'])
+T['a2_feste'] = dict(title='Mein Geburtstag', note='Dativ: кому? Ich schenke meiner Mutter eine Torte. Gern — lieber — am liebsten.', s=[
+ 'Am Samstag habe ich Geburtstag.|У суботу в мене день народження.|В субботу у меня день рождения.',
+ 'Ich lade zehn Freunde zur Party ein.|Я запрошую десять друзів на вечірку.|Я приглашаю десять друзей на вечеринку.',
+ 'Meine Mutter backt eine Torte für mich.|Мама пече для мене торт.|Мама печёт для меня торт.',
+ 'Die Gäste bringen Geschenke mit.|Гості приносять подарунки.|Гости приносят подарки.',
+ 'Mein Bruder schenkt mir ein Buch.|Мій брат дарує мені книгу.|Мой брат дарит мне книгу.',
+ 'Wir essen, trinken und tanzen zusammen.|Ми їмо, п\'ємо й танцюємо разом.|Мы едим, пьём и танцуем вместе.',
+ 'Alle singen ein Geburtstagslied.|Усі співають пісню на день народження.|Все поют песню на день рождения.',
+ 'Ich puste die Kerzen aus und wünsche mir etwas.|Я задуваю свічки й загадую бажання.|Я задуваю свечи и загадываю желание.',
+ 'Meine Freunde gratulieren mir herzlich.|Мої друзі щиро вітають мене.|Мои друзья сердечно меня поздравляют.',
+ 'Am liebsten feiere ich zu Hause mit der Familie.|Найбільше я люблю святкувати вдома з родиною.|Больше всего я люблю праздновать дома с семьёй.',
+ 'Es war ein schöner Abend.|Це був гарний вечір.|Это был хороший вечер.'])
+T['a2_arbeit'] = dict(title='Meine Bewerbung', note='weil/dass: дієслово в кінець. Präteritum модальних: musste, konnte.', s=[
+ 'Ich suche eine neue Stelle als Verkäufer.|Я шукаю нову роботу продавцем.|Я ищу новую работу продавцом.',
+ 'Ich habe die Anzeige im Internet gefunden.|Я знайшов оголошення в інтернеті.|Я нашёл объявление в интернете.',
+ 'Ich bewerbe mich, weil die Arbeitszeiten gut sind.|Я подаю заявку, бо робочий час хороший.|Я подаю заявку, потому что рабочее время хорошее.',
+ 'Ich schicke meinen Lebenslauf und mein Zeugnis.|Я надсилаю своє резюме й атестат.|Я отправляю своё резюме и аттестат.',
+ 'Am Montag habe ich ein Vorstellungsgespräch.|У понеділок у мене співбесіда.|В понедельник у меня собеседование.',
+ 'Früher musste ich viele Überstunden machen.|Раніше мені доводилося працювати багато понаднормово.|Раньше мне приходилось работать много сверхурочно.',
+ 'Ich hoffe, dass ich die Stelle bekomme.|Я сподіваюся, що отримаю цю роботу.|Я надеюсь, что получу эту работу.',
+ 'Der Arbeitsvertrag hat eine Probezeit von sechs Monaten.|Трудовий договір має випробувальний термін шість місяців.|Трудовой договор имеет испытательный срок шесть месяцев.',
+ 'Ich möchte in Vollzeit arbeiten.|Я хочу працювати на повний робочий день.|Я хочу работать полный рабочий день.',
+ 'Das Gehalt ist gut, und das Team ist nett.|Зарплата хороша, і команда приємна.|Зарплата хорошая, и команда приятная.',
+ 'Ich kann am ersten Mai anfangen.|Я можу почати першого травня.|Я могу начать первого мая.'])
+T['a2_wohnen'] = dict(title='Unsere neue Wohnung', note='Wo? — Dativ, Wohin? — Akkusativ. Прикметники перед іменником мають закінчення.', s=[
+ 'Wir haben endlich eine neue Wohnung gefunden.|Ми нарешті знайшли нову квартиру.|Мы наконец нашли новую квартиру.',
+ 'Sie liegt im dritten Stock und hat einen großen Balkon.|Вона на третьому поверсі й має великий балкон.|Она на третьем этаже и имеет большой балкон.',
+ 'Die Küche ist hell und sehr modern.|Кухня світла й дуже сучасна.|Кухня светлая и очень современная.',
+ 'Die Kaltmiete beträgt 750 Euro.|Холодна оренда становить 750 євро.|Холодная аренда составляет 750 евро.',
+ 'Am Samstag ziehen wir um.|У суботу ми переїжджаємо.|В субботу мы переезжаем.',
+ 'Meine Freunde helfen uns beim Umzug.|Мої друзі допомагають нам з переїздом.|Мои друзья помогают нам с переездом.',
+ 'Wir stellen das Sofa ins Wohnzimmer.|Ми ставимо диван у вітальню.|Мы ставим диван в гостиную.',
+ 'Das Bild hängt an der Wand neben dem Fenster.|Картина висить на стіні біля вікна.|Картина висит на стене рядом с окном.',
+ 'Die Lampe steht auf dem Tisch.|Лампа стоїть на столі.|Лампа стоит на столе.',
+ 'Nach dem Umzug melde ich mich im Bürgeramt an.|Після переїзду я реєструюся в бюрґерамті.|После переезда я регистрируюсь в бюргерамте.',
+ 'Wir fühlen uns schon richtig wohl.|Ми вже почуваємо себе дуже затишно.|Мы уже чувствуем себя очень уютно.'])
