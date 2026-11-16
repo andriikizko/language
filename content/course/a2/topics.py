@@ -73,3 +73,51 @@ T['a2_wohnen'] = dict(title='Unsere neue Wohnung', note='Wo? — Dativ, Wohin? �
  'Die Lampe steht auf dem Tisch.|Лампа стоїть на столі.|Лампа стоит на столе.',
  'Nach dem Umzug melde ich mich im Bürgeramt an.|Після переїзду я реєструюся в бюрґерамті.|После переезда я регистрируюсь в бюргерамте.',
  'Wir fühlen uns schon richtig wohl.|Ми вже почуваємо себе дуже затишно.|Мы уже чувствуем себя очень уютно.'])
+T['a2_schule'] = dict(title='Mein Deutschkurs', note='dass/ob: дієслово в кінець. Perfekt відокремлюваних: aufgestanden, angerufen.', s=[
+ 'Ich besuche seit drei Monaten einen Deutschkurs.|Я вже три місяці відвідую курс німецької.|Я уже три месяца посещаю курс немецкого.',
+ 'Der Unterricht findet dreimal pro Woche statt.|Заняття проходять тричі на тиждень.|Занятия проходят три раза в неделю.',
+ 'Unsere Lehrerin erklärt die Grammatik sehr gut.|Наша вчителька дуже добре пояснює граматику.|Наша учительница очень хорошо объясняет грамматику.',
+ 'Ich mache jeden Tag die Hausaufgaben.|Я щодня роблю домашнє завдання.|Я каждый день делаю домашнее задание.',
+ 'Ich übe neue Wörter und wiederhole sie am Abend.|Я вчу нові слова й повторюю їх увечері.|Я учу новые слова и повторяю их вечером.',
+ 'Die Lehrerin sagt, dass wir viel sprechen sollen.|Вчителька каже, що ми маємо багато говорити.|Учительница говорит, что мы должны много говорить.',
+ 'Ich weiß nicht, ob ich die Prüfung bestehe.|Я не знаю, чи складу я іспит.|Я не знаю, сдам ли я экзамен.',
+ 'Deshalb bereite ich mich gut vor.|Тому я добре готуюся.|Поэтому я хорошо готовлюсь.',
+ 'Ich würde gern auch einen Kurs für Fortgeschrittene besuchen.|Я б хотів відвідувати ще й курс для просунутих.|Я бы хотел посещать ещё и курс для продвинутых.',
+ 'Nach der Prüfung bekomme ich ein Zertifikat.|Після іспиту я отримаю сертифікат.|После экзамена я получу сертификат.',
+ 'Ich hoffe, dass ich bald besser Deutsch spreche.|Я сподіваюся, що скоро краще говоритиму німецькою.|Я надеюсь, что скоро буду лучше говорить по-немецки.'])
+T['a2_medien'] = dict(title='Mein Medientag', note='Futur I: werden + інфінітив. Займенники в Akkusativ і Dativ.', s=[
+ 'Am Morgen lese ich die Nachrichten auf dem Handy.|Вранці я читаю новини на телефоні.|Утром я читаю новости на телефоне.',
+ 'Ich schicke meiner Schwester eine Nachricht.|Я надсилаю своїй сестрі повідомлення.|Я отправляю сестре сообщение.',
+ 'Sie antwortet mir sofort.|Вона відповідає мені одразу.|Она отвечает мне сразу.',
+ 'Im Büro schreibe ich viele E-Mails.|В офісі я пишу багато листів.|В офисе я пишу много писем.',
+ 'Ich speichere die Dateien in einem Ordner.|Я зберігаю файли в папці.|Я сохраняю файлы в папке.',
+ 'In der Pause sehe ich ein kurzes Video.|У перерві я дивлюся коротке відео.|В перерыве я смотрю короткое видео.',
+ 'Meiner Meinung nach ist die Werbung zu laut.|На мою думку, реклама занадто гучна.|По моему мнению, реклама слишком громкая.',
+ 'Am Abend sehe ich mit meiner Frau einen Film.|Увечері я дивлюся з дружиною фільм.|Вечером я смотрю с женой фильм.',
+ 'Morgen werde ich die Zeitung abonnieren.|Завтра я оформлю підписку на газету.|Завтра я оформлю подписку на газету.',
+ 'Ich werde auch mehr Bücher lesen.|Я теж читатиму більше книжок.|Я тоже буду читать больше книг.',
+ 'Das Internet ist nützlich, aber man sollte nicht zu viel surfen.|Інтернет корисний, але не слід занадто багато серфити.|Интернет полезен, но не стоит слишком много сёрфить.'])
+T['a2_natur'] = dict(title='Wetter und Umwelt', note='wenn — дієслово в кінець. deshalb/trotzdem — дієслово на другому місці.', s=[
+ 'Heute ist das Wetter schön, die Sonne scheint.|Сьогодні гарна погода, світить сонце.|Сегодня хорошая погода, светит солнце.',
+ 'Morgen soll es regnen.|Завтра має бути дощ.|Завтра должен быть дождь.',
+ 'Wenn es regnet, bleibe ich zu Hause.|Якщо йде дощ, я залишаюся вдома.|Если идёт дождь, я остаюсь дома.',
+ 'Wenn die Sonne scheint, gehe ich in den Park.|Якщо світить сонце, я йду в парк.|Если светит солнце, я иду в парк.',
+ 'Im Winter ist es kalt, deshalb trage ich eine warme Jacke.|Взимку холодно, тому я ношу теплу куртку.|Зимой холодно, поэтому я ношу тёплую куртку.',
+ 'Es regnet, trotzdem gehe ich spazieren.|Іде дощ, проте я йду гуляти.|Идёт дождь, тем не менее я иду гулять.',
+ 'Ich trenne den Müll und fahre oft Fahrrad.|Я сортую сміття й часто їжджу на велосипеді.|Я сортирую мусор и часто езжу на велосипеде.',
+ 'Wir sparen Wasser und Energie.|Ми економимо воду й енергію.|Мы экономим воду и энергию.',
+ 'Der Klimawandel ist ein großes Problem.|Зміна клімату — велика проблема.|Изменение климата — большая проблема.',
+ 'Man muss die Natur schützen.|Треба захищати природу.|Нужно защищать природу.',
+ 'Im Wald kann ich mich wunderbar erholen.|У лісі я чудово відпочиваю.|В лесу я прекрасно отдыхаю.'])
+T['a2_amt'] = dict(title='Beim Amt', note='Konjunktiv II: könnten, würden, hätte — ввічливо. um ... zu: щоб.', s=[
+ 'Ich muss ein Formular beim Amt abgeben.|Я мушу подати бланк у відомстві.|Я должен подать бланк в ведомстве.',
+ 'Zuerst vereinbare ich einen Termin.|Спочатку я домовляюся про прийом.|Сначала я договариваюсь о приёме.',
+ 'Guten Tag, ich hätte gern einen Termin für nächste Woche.|Добрий день, я хотів би запис на наступний тиждень.|Добрый день, я хотел бы записаться на следующую неделю.',
+ 'Könnten Sie mir bitte sagen, welche Unterlagen ich brauche?|Чи не могли б ви сказати, які документи мені потрібні?|Не могли бы вы сказать, какие документы мне нужны?',
+ 'Ich brauche meinen Ausweis und eine Kopie.|Мені потрібні моє посвідчення й копія.|Мне нужны моё удостоверение и копия.',
+ 'Ich fülle das Formular aus und unterschreibe es.|Я заповнюю бланк і підписую його.|Я заполняю бланк и подписываю его.',
+ 'Ich gehe zum Amt, um einen Antrag zu stellen.|Я йду у відомство, щоб подати заяву.|Я иду в ведомство, чтобы подать заявление.',
+ 'Danach gehe ich zur Post, um ein Paket zu schicken.|Потім я йду на пошту, щоб відправити посилку.|Потом я иду на почту, чтобы отправить посылку.',
+ 'Die Gebühr beträgt 20 Euro.|Збір становить 20 євро.|Сбор составляет 20 евро.',
+ 'Würden Sie das bitte noch einmal wiederholen?|Чи не повторили б ви це ще раз?|Не повторили бы вы это ещё раз?',
+ 'Vielen Dank für Ihre Hilfe!|Щиро дякую за вашу допомогу!|Большое спасибо за вашу помощь!'])
