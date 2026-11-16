@@ -21,7 +21,17 @@ const Row = ({ w, lang, on, toggle }) => (
   </div>
 )
 
-export default function Nouns({ lang, want, setWant, onBack, guest, onGate }) {
+const FREE_PER_TOPIC = 50
+// слова теми: спочатку core, далі решта; перші 50 безкоштовні, решта — після відео
+const ranks = (() => {
+  const by = {}; const r = {}
+  data.words.forEach((w) => { (by[w.topic] = by[w.topic] || []).push(w) })
+  Object.values(by).forEach((a) => { [...a.filter((w) => w.core), ...a.filter((w) => !w.core)].forEach((w, i) => { r[w.de + '|' + w.g] = i }) })
+  return r
+})()
+const topicSize = (() => { const c = {}; data.words.forEach((w) => { c[w.topic] = (c[w.topic] || 0) + 1 }); return c })()
+
+export default function Nouns({ lang, want, setWant, onBack, guest, onGate, unl = {}, setUnl, full }) {
   const [view, setView] = useState('abc')
   const [only, setOnly] = useState('all')
   const [topic, setTopic] = useState('all')
@@ -31,13 +41,20 @@ export default function Nouns({ lang, want, setWant, onBack, guest, onGate }) {
     const s = q.trim().toLowerCase()
     return data.words.filter((w) =>
       (!guest || GUEST.nouns.has(keyOf(w))) &&
+      (guest || full || ranks[keyOf(w)] < FREE_PER_TOPIC || unl[w.topic]) &&
       (only === 'all' || want[keyOf(w)]) &&
       (topic === 'all' || w.topic === topic) &&
       (!s || w.de.toLowerCase().includes(s) || w.uk.toLowerCase().includes(s) || w.ru.toLowerCase().includes(s)))
-  }, [q, only, topic, want])
+  }, [q, only, topic, want, unl, full])
 
   const toggle = (w) => { if (guest) return onGate(); const k = keyOf(w); const n = { ...want }; if (n[k]) delete n[k]; else n[k] = 1; setWant(n) }
   const row = (w) => <Row key={keyOf(w)} w={w} lang={lang} on={!!want[keyOf(w)]} toggle={() => toggle(w)} />
+
+  const watch = (t) => {
+    // заглушка: після публікації тут буде відеореклама AdMob
+    if (window.confirm('Тут буде коротке відео-реклама. Подивитися й відкрити решту слів теми?')) setUnl && setUnl({ ...unl, [t]: 1 })
+  }
+  const lockedTopics = guest || full ? [] : Object.keys(data.topics).filter((t) => topicSize[t] > FREE_PER_TOPIC && !unl[t] && (topic === 'all' || topic === t))
 
   let body
   if (view === 'abc') {
@@ -78,6 +95,13 @@ export default function Nouns({ lang, want, setWant, onBack, guest, onGate }) {
         {Object.entries(data.topics).map(([k, v]) => <button key={k} className={'de-tab' + (topic === k ? ' on' : '')} onClick={() => setTopic(k)}>{v}</button>)}
       </div>
       {body.length ? body : <div className="de-empty">Нічого не знайдено</div>}
+      {lockedTopics.map((t) => (
+        <div key={t} className="de-card" style={{ marginTop: 10 }}>
+          <b>{data.topics[t]}</b>
+          <div className="de-dim">Відкрито {FREE_PER_TOPIC} з {topicSize[t]} слів. Ще {topicSize[t] - FREE_PER_TOPIC} відкриються після відео, або купи повний словник за 4,90 €.</div>
+          <button className="de-btn" onClick={() => watch(t)}>Відкрити за відео</button>
+        </div>
+      ))}
       {guest && <div className="de-card" style={{ marginTop: 12 }}><div className="de-dim">{GUEST_TEXT}</div><button className="de-btn" onClick={onGate}>Зареєструватися</button></div>}
     </>
   )

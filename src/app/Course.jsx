@@ -55,10 +55,12 @@ export function Course({ st, update, lang, tr, onAns }) {
       <>
         <div className="de-row"><button className="de-back" onClick={() => setPrem(false)}>‹</button><b style={{ fontSize: 17 }}>Premium</b><span /></div>
         <div className="de-card">
-          <h4>Повний доступ до курсу</h4>
-          <p>Усі 12 блоків курсу, уся граматика, іспит у стилі Goethe A1 і фінальний тест.</p>
-          <p><b>9,90 € на місяць.</b> Скасувати можна будь-коли в Google Play.</p>
-          <button className="de-btn" disabled>Оформити підписку</button>
+          <h4>Тарифи</h4>
+          <p><b>Безкоштовно.</b> 50 слів на кожну тему, решта слів теми відкривається після відео. Перші блоки курсу.</p>
+          <p><b>4,90 €.</b> Повний словник без реклами.</p>
+          <p><b>9,90 €.</b> Слова, речення, повторення за розкладом, робота над помилками.</p>
+          <p><b>19,90 €.</b> Повний курс-репетитор: 12 тижнів, урок за уроком із домашкою й тестами, доступ на півроку.</p>
+          <button className="de-btn" disabled>Купити</button>
           <div className="de-dim" style={{ marginTop: 6 }}>Оплата зʼявиться в Android-версії застосунку після публікації в Google Play.</div>
         </div>
       </>

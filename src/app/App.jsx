@@ -17,7 +17,7 @@ const ERR = {
 const SLIDES = [
   ['Курс німецької A1 для українців', 'Пояснення рідною мовою, власні тексти й діалоги, 12 тем із життя: від чисел і родини до роботи й лікаря.'],
   ['Три місяці до результату', '12 тижнів по одній темі, 13-й тиждень на повторення й фінальний тест. 3 заняття на тиждень, розклад у календарі.'],
-  ['Безкоштовно і Premium', 'Безкоштовно: перші 3 блоки курсу, весь Словник, робота над помилками. Premium: усі 12 блоків і фінальний тест. Без реклами.'],
+  ['Безкоштовно і Premium', 'Безкоштовно: 50 слів на кожну тему (решта за відео), перші 3 блоки курсу. Повний словник 4,90 €, слова й речення 9,90 €, повний курс 19,90 € (доступ півроку).'],
   ['Натисни на слово', 'У тексті й діалогах тапни будь-яке слово: побачиш переклад і транскрипцію та почуєш озвучення. Вид транскрипції змінюється в Профілі.'],
 ]
 const Intro = ({ onDone }) => {
@@ -200,7 +200,7 @@ export default function App() {
         )}
         {tab === 'home' && screen && (() => {
           if (screen === 'gate') return <Gate />
-          const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null), guest: isGuest, onGate: () => setScreen('gate') }
+          const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null), guest: isGuest, onGate: () => setScreen('gate'), unl: st.unl || {}, setUnl: (u) => update({ unl: u }), full: !!st.dev || !!st.fullDict }
           const M = { cal: (q) => <Calendar st={st} update={update} onBack={q.onBack} />, nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
           return screen === 'cal' ? M(p) : <M {...p} />
         })()}
