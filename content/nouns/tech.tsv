@@ -1,0 +1,53 @@
+n|Handy|Handys|мобільний телефон|мобильный телефон|1
+n|Telefon|Telefone|телефон|телефон|1
+m|Computer|Computer|комп'ютер|компьютер|1
+m|Laptop|Laptops|ноутбук|ноутбук|1
+n|Internet|-|інтернет|интернет|1
+f|E-Mail|E-Mails|електронна пошта; лист|электронная почта; письмо|1
+f|Nachricht|Nachrichten|повідомлення|сообщение|1
+m|Anruf|Anrufe|дзвінок|звонок|1
+n|Passwort|Passwörter|пароль|пароль|1
+n|Foto|Fotos|фото|фото|1
+n|Video|Videos|відео|видео|1
+f|Kamera|Kameras|камера|камера|1
+m|Fernseher|Fernseher|телевізор|телевизор|1
+n|Radio|Radios|радіо|радио|1
+m|Bildschirm|Bildschirme|екран|экран|1
+f|Tastatur|Tastaturen|клавіатура|клавиатура|1
+f|Maus|Mäuse|миша|мышь|1
+m|Drucker|Drucker|принтер|принтер|1
+m|Akku|Akkus|акумулятор|аккумулятор|1
+n|Ladegerät|Ladegeräte|зарядний пристрій|зарядное устройство|1
+n|Kabel|Kabel|кабель|кабель|1
+f|Datei|Dateien|файл|файл|1
+f|App|Apps|застосунок|приложение|1
+f|Seite|Seiten|сторінка; сторона|страница; сторона|1
+f|Webseite|Webseiten|вебсайт|веб-сайт|0
+n|Netz|Netze|мережа|сеть|0
+n|WLAN|-|вай-фай|вай-фай|0
+n|Programm|Programme|програма|программа|0
+n|Gerät|Geräte|пристрій|устройство|0
+f|Maschine|Maschinen|машина, верстат|машина, станок|0
+n|Smartphone|Smartphones|смартфон|смартфон|0
+n|Tablet|Tablets|планшет|планшет|0
+m|Kopfhörer|Kopfhörer|навушники|наушники|0
+m|Lautsprecher|Lautsprecher|динамік|динамик|0
+n|Mikrofon|Mikrofone|мікрофон|микрофон|0
+f|Batterie|Batterien|батарейка|батарейка|0
+m|Strom|-|електрострум|электричество|0
+m|Stecker|Stecker|вилка (електрична)|вилка (электрическая)|0
+f|Taste|Tasten|кнопка, клавіша|кнопка, клавиша|0
+f|Uhr|Uhren|годинник|часы|0
+m|Wecker|Wecker|будильник|будильник|0
+m|Text|Texte|текст|текст|0
+m|Link|Links|посилання|ссылка|0
+m|Account|Accounts|акаунт|аккаунт|0
+n|Konto|Konten|рахунок; акаунт|счёт; аккаунт|0
+f|Verbindung|Verbindungen|з'єднання|соединение|0
+n|Signal|Signale|сигнал|сигнал|0
+m|Empfang|-|прийом (сигналу)|приём (сигнала)|0
+n|Display|Displays|дисплей|дисплей|0
+f|Software|Softwares|програмне забезпечення|программное обеспечение|0
+n|Update|Updates|оновлення|обновление|0
+m|Chat|Chats|чат|чат|0
+f|Suche|Suchen|пошук|поиск|0

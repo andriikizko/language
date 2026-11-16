@@ -1,0 +1,61 @@
+n|Haus|Häuser|будинок|дом|1
+f|Wohnung|Wohnungen|квартира|квартира|1
+n|Zimmer|Zimmer|кімната|комната|1
+f|Küche|Küchen|кухня|кухня|1
+n|Bad|Bäder|ванна кімната|ванная|1
+n|Wohnzimmer|Wohnzimmer|вітальня|гостиная|1
+n|Schlafzimmer|Schlafzimmer|спальня|спальня|1
+f|Tür|Türen|двері|дверь|1
+n|Fenster|Fenster|вікно|окно|1
+m|Tisch|Tische|стіл|стол|1
+m|Stuhl|Stühle|стілець|стул|1
+n|Bett|Betten|ліжко|кровать|1
+m|Schrank|Schränke|шафа|шкаф|1
+n|Sofa|Sofas|диван|диван|1
+f|Lampe|Lampen|лампа|лампа|1
+n|Regal|Regale|полиця, стелаж|полка, стеллаж|1
+p|Möbel|Möbel|меблі|мебель|1
+m|Schlüssel|Schlüssel|ключ|ключ|1
+f|Miete|Mieten|оренда, орендна плата|аренда, арендная плата|1
+m|Garten|Gärten|сад, город|сад, огород|1
+m|Balkon|Balkone|балкон|балкон|1
+n|Kinderzimmer|Kinderzimmer|дитяча кімната|детская комната|0
+n|Badezimmer|Badezimmer|ванна кімната|ванная комната|0
+f|Toilette|Toiletten|туалет|туалет|0
+m|Flur|Flure|коридор, передпокій|коридор, прихожая|0
+f|Garage|Garagen|гараж|гараж|0
+m|Keller|Keller|підвал|подвал|0
+f|Treppe|Treppen|сходи|лестница|0
+m|Aufzug|Aufzüge|ліфт|лифт|0
+f|Etage|Etagen|поверх|этаж|0
+n|Erdgeschoss|Erdgeschosse|перший поверх|первый этаж|0
+n|Dach|Dächer|дах|крыша|0
+f|Wand|Wände|стіна|стена|0
+m|Boden|Böden|підлога; ґрунт|пол; почва|0
+f|Decke|Decken|стеля; ковдра|потолок; одеяло|0
+m|Sessel|Sessel|крісло|кресло|0
+m|Spiegel|Spiegel|дзеркало|зеркало|0
+m|Teppich|Teppiche|килим|ковёр|0
+m|Vorhang|Vorhänge|штора, завіса|штора, занавеска|0
+n|Kissen|Kissen|подушка|подушка|0
+m|Herd|Herde|плита (кухонна)|плита (кухонная)|0
+m|Kühlschrank|Kühlschränke|холодильник|холодильник|0
+f|Waschmaschine|Waschmaschinen|пральна машина|стиральная машина|0
+f|Spülmaschine|Spülmaschinen|посудомийна машина|посудомоечная машина|0
+f|Dusche|Duschen|душ|душ|0
+f|Badewanne|Badewannen|ванна (місткість)|ванна (ёмкость)|0
+n|Waschbecken|Waschbecken|умивальник, раковина|умывальник, раковина|0
+f|Heizung|Heizungen|опалення|отопление|0
+f|Steckdose|Steckdosen|розетка|розетка|0
+n|Licht|Lichter|світло|свет|0
+f|Pflanze|Pflanzen|рослина|растение|0
+m|Besen|Besen|мітла|метла|0
+m|Mülleimer|Mülleimer|відро для сміття|мусорное ведро|0
+m|Müll|-|сміття|мусор|0
+m|Umzug|Umzüge|переїзд|переезд|0
+f|Adresse|Adressen|адреса|адрес|0
+m|Vermieter|Vermieter|орендодавець|арендодатель|0
+m|Mieter|Mieter|орендар|арендатор, жилец|0
+p|Nebenkosten|Nebenkosten|комунальні витрати|коммунальные расходы|0
+f|Kaution|Kautionen|застава (депозит)|залог (депозит)|0
+f|Hausordnung|Hausordnungen|правила проживання в будинку|правила проживания в доме|0

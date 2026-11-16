@@ -2,19 +2,14 @@
 import crypto from 'node:crypto'
 import { cmd, dbReady } from './_db.js'
 
-// Початкові акаунти (sha256 від "логін:пароль"); створюються в базі при першому вході.
-const SEED = {
-  platon: { name: 'Platon', hash: 'a4b80ffb5761a33128d4199d32d24e6517774e0b6b04fbefa14d5b1aa418cf31' },
-  anna: { name: 'Anna Oleksandrovna❤️', hash: 'bf4281c9e33af49fbe1f1390f51aa89b6dd05a55f2052223ea6f72545ffe1f9d' },
-  andrii: { name: 'Andrii', hash: '24c9e12839d61e13cc7fd34c718e5d188094048582b7cbac36a5c5c075457adf' },
-}
-
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 const scrypt = (pw, salt) => crypto.scryptSync(pw, salt, 64).toString('hex')
 const same = (a, b) => {
   const x = Buffer.from(a, 'hex'); const y = Buffer.from(b, 'hex')
   return x.length === y.length && crypto.timingSafeEqual(x, y)
 }
+const validEmail = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e) && e.length <= 120
+const validPhone = (p) => /^\+?[0-9 ()\-]{7,20}$/.test(p)
 const validLogin = (l) => /^[\p{L}\p{N}_.\-]{3,32}$/u.test(l)
 
 export default async function handler(req, res) {
@@ -30,9 +25,13 @@ export default async function handler(req, res) {
     const token = crypto.randomBytes(32).toString('hex')
 
     if (action === 'register') {
-      if (SEED[login]) return res.status(409).json({ error: 'exists' })
+      const email = String((req.body || {}).email || '').trim().toLowerCase()
+      const phone = String((req.body || {}).phone || '').trim()
+      if (!validEmail(email)) return res.status(400).json({ error: 'bad_email' })
+      if (phone && !validPhone(phone)) return res.status(400).json({ error: 'bad_phone' })
+      const consent = (req.body || {}).consent === true
       const salt = crypto.randomBytes(16).toString('hex')
-      const rec = { login, name: raw, salt, hash: scrypt(password, salt), tokens: [sha(token)], created: Date.now() }
+      const rec = { login, name: raw, salt, hash: scrypt(password, salt), email, phone, consent, tokens: [sha(token)], created: Date.now() }
       const ok = await cmd('SET', key, JSON.stringify(rec), 'NX')
       if (!ok) return res.status(409).json({ error: 'exists' })
       return res.status(200).json({ token, login, name: raw, state: null })
@@ -42,13 +41,8 @@ export default async function handler(req, res) {
       const fk = 'f:' + login
       const fails = Number(await cmd('GET', fk)) || 0
       if (fails >= 5) return res.status(429).json({ error: 'locked' })
-      let rec = null
       const cur = await cmd('GET', key)
-      if (cur) rec = JSON.parse(cur)
-      else if (SEED[login] && sha(login + ':' + password) === SEED[login].hash) {
-        const salt = crypto.randomBytes(16).toString('hex')
-        rec = { login, name: SEED[login].name, salt, hash: scrypt(password, salt), tokens: [], created: Date.now() }
-      }
+      const rec = cur ? JSON.parse(cur) : null
       if (!rec || !same(scrypt(password, rec.salt), rec.hash)) {
         await cmd('INCR', fk)
         await cmd('EXPIRE', fk, 60)

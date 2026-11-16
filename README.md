@@ -1,13 +1,7 @@
-# Deutsch
+# LANGUAGES
 
-PWA для изучения немецкого по школьному учебнику: словарь, фразы, существительные с артиклями, глаголы (Präsens), модальные, отделяемые, прошедшее время (Präteritum, Partizip II, Perfekt), падежи с разбором правил, работа над ошибками, аккаунты.
+Застосунок для вивчення німецької (рівень A1). React + Vite, Vercel serverless (`api/`), Upstash Redis.
 
-React 18 + Vite. Данные: `src/german/data/`. Логика: `src/german/lib.js`, `cases.js`, `past.js`, `errors.js`. Интерфейс: `src/german/GermanApp.jsx`.
-
-```
-npm install
-npm run dev
-npm run build
-```
-
-Прогресс хранится в localStorage браузера (отдельно для каждого аккаунта). Сервера нет.
+- `src/app` — застосунок
+- `src/app/data/nouns.json` — словник іменників (генерується `python3 tools/build_nouns.py` з `content/nouns/*.tsv`)
+- `content/review.txt` — слова, де рід/множина розійшлися зі словником (на перевірку)

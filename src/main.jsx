@@ -1,9 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import GermanApp from './german/GermanApp'
+import { createRoot } from 'react-dom/client'
+import App from './app/App.jsx'
+import './app/app.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <GermanApp />
-  </React.StrictMode>,
-)
+createRoot(document.getElementById('root')).render(<App />)

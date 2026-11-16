@@ -1,0 +1,79 @@
+n|Brot|Brote|хліб|хлеб|1
+n|Brötchen|Brötchen|булочка|булочка|1
+f|Butter|-|масло (вершкове)|сливочное масло|1
+m|Käse|Käse|сир|сыр|1
+f|Wurst|Würste|ковбаса|колбаса|1
+n|Fleisch|-|м'ясо|мясо|1
+n|Ei|Eier|яйце|яйцо|1
+m|Fisch|Fische|риба|рыба|1
+m|Reis|-|рис|рис|1
+f|Kartoffel|Kartoffeln|картопля|картофель|1
+n|Gemüse|Gemüse|овочі|овощи|1
+n|Obst|-|фрукти|фрукты|1
+m|Apfel|Äpfel|яблуко|яблоко|1
+f|Tomate|Tomaten|помідор|помидор|1
+f|Suppe|Suppen|суп|суп|1
+m|Salat|Salate|салат|салат|1
+m|Kuchen|Kuchen|пиріг, торт|пирог, торт|1
+f|Milch|-|молоко|молоко|1
+n|Wasser|Wasser|вода|вода|1
+m|Saft|Säfte|сік|сок|1
+m|Tee|Tees|чай|чай|1
+m|Kaffee|Kaffees|кава|кофе|1
+n|Bier|Biere|пиво|пиво|1
+m|Wein|Weine|вино|вино|1
+m|Zucker|-|цукор|сахар|1
+n|Salz|-|сіль|соль|1
+n|Frühstück|Frühstücke|сніданок|завтрак|1
+n|Mittagessen|Mittagessen|обід|обед|1
+n|Abendessen|Abendessen|вечеря|ужин|1
+m|Hunger|-|голод|голод|1
+m|Durst|-|спрага|жажда|1
+n|Essen|Essen|їжа; страва|еда; блюдо|0
+n|Getränk|Getränke|напій|напиток|0
+f|Mahlzeit|Mahlzeiten|прийом їжі|приём пищи|0
+n|Lebensmittel|Lebensmittel|продукти харчування|продукты питания|0
+n|Hähnchen|Hähnchen|курча (м'ясо)|курица (мясо)|0
+n|Schweinefleisch|-|свинина|свинина|0
+n|Rindfleisch|-|яловичина|говядина|0
+m|Schinken|Schinken|шинка|ветчина|0
+f|Nudel|Nudeln|локшина, макарони|лапша, макароны|0
+f|Pizza|Pizzen|піца|пицца|0
+f|Pommes|-|картопля фрі|картофель фри|0
+f|Birne|Birnen|груша|груша|0
+f|Banane|Bananen|банан|банан|0
+f|Orange|Orangen|апельсин|апельсин|0
+f|Zitrone|Zitronen|лимон|лимон|0
+f|Erdbeere|Erdbeeren|полуниця|клубника|0
+f|Traube|Trauben|виноград (ягода)|виноград (ягода)|0
+f|Gurke|Gurken|огірок|огурец|0
+f|Karotte|Karotten|морква|морковь|0
+f|Zwiebel|Zwiebeln|цибуля|лук|0
+m|Knoblauch|-|часник|чеснок|0
+f|Paprika|Paprikas|перець (овоч)|перец (овощ)|0
+m|Pilz|Pilze|гриб|гриб|0
+f|Nuss|Nüsse|горіх|орех|0
+f|Schokolade|Schokoladen|шоколад|шоколад|0
+n|Eis|-|морозиво|мороженое|0
+f|Marmelade|Marmeladen|джем|джем|0
+m|Honig|-|мед|мёд|0
+n|Müsli|Müslis|мюслі|мюсли|0
+m|Joghurt|Joghurts|йогурт|йогурт|0
+f|Sahne|-|вершки|сливки|0
+n|Öl|Öle|олія|масло (растительное)|0
+m|Essig|-|оцет|уксус|0
+m|Pfeffer|-|перець (спеція)|перец (специя)|0
+f|Limonade|Limonaden|лимонад|лимонад|0
+f|Cola|Colas|кола|кола|0
+m|Teller|Teller|тарілка|тарелка|0
+n|Glas|Gläser|склянка|стакан|0
+f|Tasse|Tassen|чашка|чашка|0
+m|Löffel|Löffel|ложка|ложка|0
+f|Gabel|Gabeln|виделка|вилка|0
+n|Messer|Messer|ніж|нож|0
+f|Flasche|Flaschen|пляшка|бутылка|0
+f|Speisekarte|Speisekarten|меню|меню|0
+n|Restaurant|Restaurants|ресторан|ресторан|0
+n|Café|Cafés|кафе|кафе|0
+f|Bäckerei|Bäckereien|пекарня|пекарня|0
+f|Metzgerei|Metzgereien|м'ясна крамниця|мясная лавка|0

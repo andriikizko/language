@@ -1,0 +1,50 @@
+f|Zahl|Zahlen|число|число|1
+f|Ziffer|Ziffern|цифра|цифра|1
+f|Nummer|Nummern|номер|номер|1
+f|Null|Nullen|нуль|ноль|1
+f|Hälfte|Hälften|половина|половина|1
+n|Viertel|Viertel|чверть|четверть|1
+n|Dutzend|Dutzende|дюжина|дюжина|1
+n|Paar|Paare|пара|пара|1
+n|Tausend|Tausende|тисяча|тысяча|1
+f|Million|Millionen|мільйон|миллион|1
+f|Milliarde|Milliarden|мільярд|миллиард|1
+n|Prozent|Prozente|відсоток|процент|1
+f|Summe|Summen|сума|сумма|1
+m|Preis|Preise|ціна|цена|1
+m|Euro|Euro|євро|евро|1
+m|Cent|Cent|цент|цент|1
+n|Geld|-|гроші|деньги|1
+f|Rechnung|Rechnungen|рахунок|счёт|1
+m|Betrag|Beträge|сума (платежу)|сумма (платежа)|0
+n|Mal|Male|раз|раз|0
+f|Menge|Mengen|кількість|количество|0
+n|Stück|Stücke|штука, шматок|штука, кусок|0
+m|Meter|Meter|метр|метр|0
+m|Kilometer|Kilometer|кілометр|километр|0
+m|Zentimeter|Zentimeter|сантиметр|сантиметр|0
+m|Liter|Liter|літр|литр|0
+n|Kilo|Kilos|кілограм (розм.)|килограмм (разг.)|0
+n|Kilogramm|Kilogramme|кілограм|килограмм|0
+n|Gramm|Gramme|грам|грамм|0
+f|Münze|Münzen|монета|монета|0
+m|Schein|Scheine|банкнота|банкнота|0
+n|Kleingeld|-|дрібні гроші, решта|мелочь|0
+m|Rabatt|Rabatte|знижка|скидка|0
+f|Ermäßigung|Ermäßigungen|пільга, знижка|льгота, скидка|0
+f|Quittung|Quittungen|квитанція, чек|квитанция, чек|0
+m|Kassenbon|Kassenbons|касовий чек|кассовый чек|0
+f|Kasse|Kassen|каса|касса|0
+f|Karte|Karten|картка|карта|0
+f|Bezahlung|Bezahlungen|оплата|оплата|0
+f|Zahlung|Zahlungen|платіж|платёж|0
+n|Ergebnis|Ergebnisse|результат|результат|0
+f|Rechenaufgabe|Rechenaufgaben|математична задача|арифметическая задача|0
+f|Reihenfolge|Reihenfolgen|порядок, послідовність|порядок, последовательность|0
+m|Durchschnitt|Durchschnitte|середнє значення|среднее значение|0
+f|Mehrheit|Mehrheiten|більшість|большинство|0
+f|Minderheit|Minderheiten|меншість|меньшинство|0
+n|Drittel|Drittel|третина|треть|0
+n|Hundert|Hunderte|сотня|сотня|0
+m|Rest|Reste|залишок|остаток|0
+f|Zeile|Zeilen|рядок|строка|0

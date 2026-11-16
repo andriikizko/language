@@ -1,0 +1,81 @@
+m|Körper|Körper|тіло|тело|1
+m|Kopf|Köpfe|голова|голова|1
+n|Gesicht|Gesichter|обличчя|лицо|1
+n|Auge|Augen|око, очі|глаз, глаза|1
+n|Ohr|Ohren|вухо|ухо|1
+f|Nase|Nasen|ніс|нос|1
+m|Mund|Münder|рот|рот|1
+m|Zahn|Zähne|зуб|зуб|1
+n|Haar|Haare|волосся (волосина)|волосы (волос)|1
+m|Hals|Hälse|шия; горло|шея; горло|1
+f|Schulter|Schultern|плече|плечо|1
+m|Arm|Arme|рука (від плеча)|рука (от плеча)|1
+f|Hand|Hände|рука (кисть)|рука (кисть)|1
+m|Finger|Finger|палець (руки)|палец (руки)|1
+m|Rücken|Rücken|спина|спина|1
+m|Bauch|Bäuche|живіт|живот|1
+f|Brust|Brüste|груди|грудь|1
+n|Bein|Beine|нога|нога|1
+n|Knie|Knie|коліно|колено|1
+m|Fuß|Füße|стопа, нога|ступня, нога|1
+n|Herz|Herzen|серце|сердце|1
+f|Haut|Häute|шкіра|кожа|1
+n|Blut|-|кров|кровь|1
+m|Kopfschmerz|Kopfschmerzen|головний біль|головная боль|1
+p|Schmerzen|Schmerzen|біль|боль|1
+f|Gesundheit|-|здоров'я|здоровье|1
+f|Krankheit|Krankheiten|хвороба|болезнь|1
+n|Fieber|-|температура (жар)|температура (жар)|1
+f|Erkältung|Erkältungen|застуда|простуда|1
+n|Medikament|Medikamente|ліки|лекарство|1
+f|Tablette|Tabletten|таблетка|таблетка|1
+n|Gehirn|Gehirne|мозок|мозг|0
+f|Stirn|Stirnen|лоб|лоб|0
+f|Wange|Wangen|щока|щека|0
+n|Kinn|Kinne|підборіддя|подбородок|0
+f|Lippe|Lippen|губа|губа|0
+f|Zunge|Zungen|язик|язык|0
+m|Bart|Bärte|борода|борода|0
+f|Augenbraue|Augenbrauen|брова|бровь|0
+f|Wimper|Wimpern|вія|ресница|0
+m|Ellbogen|Ellbogen|лікоть|локоть|0
+n|Handgelenk|Handgelenke|зап'ястя|запястье|0
+m|Daumen|Daumen|великий палець|большой палец|0
+m|Nagel|Nägel|ніготь|ноготь|0
+f|Hüfte|Hüften|стегно (бік)|бедро (бок)|0
+m|Oberschenkel|Oberschenkel|стегно|бедро|0
+n|Gelenk|Gelenke|суглоб|сустав|0
+m|Knochen|Knochen|кістка|кость|0
+m|Muskel|Muskeln|м'яз|мышца|0
+m|Magen|Mägen|шлунок|желудок|0
+f|Lunge|Lungen|легеня|лёгкое|0
+f|Leber|Lebern|печінка|печень|0
+f|Niere|Nieren|нирка|почка|0
+m|Atem|-|подих|дыхание|0
+f|Stimme|Stimmen|голос|голос|0
+m|Husten|-|кашель|кашель|0
+m|Schnupfen|-|нежить|насморк|0
+f|Grippe|Grippen|грип|грипп|0
+f|Allergie|Allergien|алергія|аллергия|0
+f|Verletzung|Verletzungen|травма|травма|0
+f|Wunde|Wunden|рана|рана|0
+m|Unfall|Unfälle|нещасний випадок, аварія|несчастный случай, авария|0
+m|Notfall|Notfälle|надзвичайна ситуація|экстренный случай|0
+m|Krankenwagen|Krankenwagen|швидка допомога|скорая помощь|0
+f|Praxis|Praxen|лікарський кабінет|врачебный кабинет|0
+m|Patient|Patienten|пацієнт|пациент|0
+f|Patientin|Patientinnen|пацієнтка|пациентка|0
+n|Rezept|Rezepte|рецепт|рецепт|0
+f|Salbe|Salben|мазь|мазь|0
+n|Pflaster|Pflaster|пластир|пластырь|0
+f|Versicherung|Versicherungen|страхування|страховка|0
+f|Krankenkasse|Krankenkassen|лікарняна каса|больничная касса|0
+f|Untersuchung|Untersuchungen|обстеження|обследование|0
+f|Behandlung|Behandlungen|лікування|лечение|0
+m|Schlaf|-|сон|сон|0
+f|Müdigkeit|-|втома|усталость|0
+f|Kraft|Kräfte|сила|сила|0
+f|Zahnbürste|Zahnbürsten|зубна щітка|зубная щётка|0
+f|Seife|Seifen|мило|мыло|0
+n|Handtuch|Handtücher|рушник|полотенце|0
+f|Zahnpasta|Zahnpasten|зубна паста|зубная паста|0

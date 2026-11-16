@@ -1,0 +1,74 @@
+f|Stadt|Städte|місто|город|1
+n|Dorf|Dörfer|село|деревня|1
+f|Straße|Straßen|вулиця|улица|1
+m|Platz|Plätze|площа; місце|площадь; место|1
+f|Ecke|Ecken|ріг, кут|угол|1
+f|Brücke|Brücken|міст|мост|1
+m|Park|Parks|парк|парк|1
+n|Zentrum|Zentren|центр|центр|1
+m|Bahnhof|Bahnhöfe|вокзал|вокзал|1
+f|Haltestelle|Haltestellen|зупинка|остановка|1
+m|Bus|Busse|автобус|автобус|1
+f|Bahn|Bahnen|залізниця; потяг|железная дорога; поезд|1
+m|Zug|Züge|потяг|поезд|1
+f|U-Bahn|U-Bahnen|метро|метро|1
+f|Straßenbahn|Straßenbahnen|трамвай|трамвай|1
+n|Auto|Autos|автомобіль|автомобиль|1
+n|Fahrrad|Fahrräder|велосипед|велосипед|1
+n|Taxi|Taxis|таксі|такси|1
+n|Flugzeug|Flugzeuge|літак|самолёт|1
+m|Flughafen|Flughäfen|аеропорт|аэропорт|1
+f|Fahrkarte|Fahrkarten|квиток (проїзний)|билет (проездной)|1
+n|Ticket|Tickets|квиток|билет|1
+m|Fahrplan|Fahrpläne|розклад руху|расписание движения|1
+n|Gleis|Gleise|колія, платформа|путь, платформа|1
+f|Ampel|Ampeln|світлофор|светофор|1
+m|Weg|Wege|шлях, дорога|путь, дорога|1
+f|Kreuzung|Kreuzungen|перехрестя|перекрёсток|0
+m|Bürgersteig|Bürgersteige|тротуар|тротуар|0
+f|Autobahn|Autobahnen|автомагістраль|автомагистраль|0
+f|Tankstelle|Tankstellen|заправка|заправка|0
+m|Parkplatz|Parkplätze|парковка|парковка|0
+n|Motorrad|Motorräder|мотоцикл|мотоцикл|0
+m|Lastwagen|Lastwagen|вантажівка|грузовик|0
+m|Zebrastreifen|Zebrastreifen|пішохідний перехід|пешеходный переход|0
+n|Schiff|Schiffe|корабель|корабль|0
+f|Fähre|Fähren|пором|паром|0
+m|Hafen|Häfen|порт|порт|0
+f|Reise|Reisen|подорож|поездка, путешествие|0
+f|Fahrt|Fahrten|поїздка|поездка|0
+m|Fahrer|Fahrer|водій|водитель|0
+m|Fußgänger|Fußgänger|пішохід|пешеход|0
+m|Stau|Staus|затор|пробка|0
+f|Verbindung|Verbindungen|сполучення, зв'язок|сообщение, связь|0
+f|Abfahrt|Abfahrten|відправлення|отправление|0
+f|Ankunft|Ankünfte|прибуття|прибытие|0
+f|Richtung|Richtungen|напрямок|направление|0
+f|Entfernung|Entfernungen|відстань|расстояние|0
+m|Stadtplan|Stadtpläne|план міста|план города|0
+f|Karte|Karten|карта|карта|0
+n|Geschäft|Geschäfte|магазин; справа|магазин; дело|0
+m|Supermarkt|Supermärkte|супермаркет|супермаркет|0
+m|Markt|Märkte|ринок|рынок|0
+f|Apotheke|Apotheken|аптека|аптека|0
+f|Bank|Banken|банк|банк|0
+f|Post|-|пошта|почта|0
+f|Schule|Schulen|школа|школа|0
+f|Universität|Universitäten|університет|университет|0
+n|Krankenhaus|Krankenhäuser|лікарня|больница|0
+f|Kirche|Kirchen|церква, костел|церковь|0
+n|Museum|Museen|музей|музей|0
+n|Kino|Kinos|кінотеатр|кинотеатр|0
+n|Theater|Theater|театр|театр|0
+n|Hotel|Hotels|готель|отель|0
+n|Rathaus|Rathäuser|ратуша|ратуша|0
+f|Polizei|-|поліція|полиция|0
+n|Amt|Ämter|установа, відомство|учреждение, ведомство|0
+n|Büro|Büros|офіс|офис|0
+f|Fabrik|Fabriken|фабрика, завод|фабрика, завод|0
+f|Baustelle|Baustellen|будівельний майданчик|стройка|0
+n|Land|Länder|країна; село (місцевість)|страна; деревня (местность)|0
+f|Grenze|Grenzen|кордон|граница|0
+f|Hauptstadt|Hauptstädte|столиця|столица|0
+f|Gegend|Gegenden|місцевість, район|местность, район|0
+f|Nähe|-|близькість, околиця|близость, окрестность|0

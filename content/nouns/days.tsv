@@ -1,0 +1,60 @@
+m|Montag|Montage|понеділок|понедельник|1
+m|Dienstag|Dienstage|вівторок|вторник|1
+m|Mittwoch|Mittwoche|середа|среда|1
+m|Donnerstag|Donnerstage|четвер|четверг|1
+m|Freitag|Freitage|п'ятниця|пятница|1
+m|Samstag|Samstage|субота|суббота|1
+m|Sonntag|Sonntage|неділя|воскресенье|1
+m|Tag|Tage|день|день|1
+f|Woche|Wochen|тиждень|неделя|1
+m|Monat|Monate|місяць|месяц|1
+n|Jahr|Jahre|рік|год|1
+n|Wochenende|Wochenenden|вихідні (сб–нд)|выходные (сб–вс)|1
+m|Morgen|Morgen|ранок|утро|1
+m|Abend|Abende|вечір|вечер|1
+f|Nacht|Nächte|ніч|ночь|1
+f|Uhr|Uhren|годинник; година|часы; час (по часам)|1
+f|Stunde|Stunden|година|час|1
+f|Minute|Minuten|хвилина|минута|1
+f|Sekunde|Sekunden|секунда|секунда|1
+m|Januar|-|січень|январь|1
+m|Februar|-|лютий|февраль|1
+m|März|-|березень|март|1
+m|April|-|квітень|апрель|1
+m|Mai|-|травень|май|1
+m|Juni|-|червень|июнь|1
+m|Juli|-|липень|июль|1
+m|August|-|серпень|август|1
+m|September|-|вересень|сентябрь|1
+m|Oktober|-|жовтень|октябрь|1
+m|November|-|листопад|ноябрь|1
+m|Dezember|-|грудень|декабрь|1
+m|Vormittag|Vormittage|час до обіду|время до обеда|0
+m|Mittag|Mittage|обід, полудень|полдень|0
+m|Nachmittag|Nachmittage|час після обіду|время после обеда|0
+f|Mitternacht|-|північ|полночь|0
+f|Mittagspause|Mittagspausen|обідня перерва|обеденный перерыв|0
+n|Datum|Daten|дата|дата|0
+m|Kalender|Kalender|календар|календарь|0
+m|Termin|Termine|зустріч, запис (на час)|встреча, запись (на время)|0
+f|Jahreszeit|Jahreszeiten|пора року|время года|0
+m|Frühling|Frühlinge|весна|весна|0
+m|Sommer|Sommer|літо|лето|0
+m|Herbst|Herbste|осінь|осень|0
+m|Winter|Winter|зима|зима|0
+m|Feiertag|Feiertage|святковий день|праздничный день|0
+m|Geburtstag|Geburtstage|день народження|день рождения|0
+n|Neujahr|-|Новий рік|Новый год|0
+p|Ferien|Ferien|канікули|каникулы|0
+m|Anfang|Anfänge|початок|начало|0
+n|Ende|Enden|кінець|конец|0
+m|Moment|Momente|момент|момент|0
+n|Jahrhundert|Jahrhunderte|століття|век, столетие|0
+n|Halbjahr|Halbjahre|півріччя|полугодие|0
+n|Quartal|Quartale|квартал|квартал|0
+f|Zeit|Zeiten|час (проміжок)|время|0
+f|Verspätung|Verspätungen|запізнення|опоздание|0
+f|Dauer|-|тривалість|продолжительность|0
+f|Gegenwart|-|теперішнє|настоящее|0
+f|Vergangenheit|-|минуле|прошлое|0
+f|Zukunft|-|майбутнє|будущее|0

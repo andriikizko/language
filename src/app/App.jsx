@@ -1,0 +1,119 @@
+import { useEffect, useMemo, useRef, useState } from 'react'
+import Splash from './Splash.jsx'
+import Ic from './Icons.jsx'
+import { post } from './api.js'
+import Nouns from './Nouns.jsx'
+
+const SKEY = 'languages.session'
+const ERR = {
+  exists: 'Такий логін уже зайнятий', wrong: 'Невірний логін або пароль', locked: 'Забагато спроб. Зачекайте хвилину',
+  bad_login: 'Логін: 3–32 символи (літери, цифри, _ . -)', bad_password: 'Пароль: від 4 символів',
+  bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний',
+}
+
+const Auth = ({ onAuth }) => {
+  const [mode, setMode] = useState('login')
+  const [f, setF] = useState({ login: '', password: '', email: '', phone: '', consent: false })
+  const [err, setErr] = useState('')
+  const [busy, setBusy] = useState(false)
+  const set = (k) => (e) => setF({ ...f, [k]: e.target.type === 'checkbox' ? e.target.checked : e.target.value })
+  const go = async () => {
+    setErr(''); setBusy(true)
+    const body = mode === 'login' ? { action: 'login', login: f.login, password: f.password } : { action: 'register', ...f }
+    const r = await post('/api/auth', body)
+    setBusy(false)
+    if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
+    onAuth({ token: r.token, login: r.login, name: r.name }, r.state)
+  }
+  return (
+    <div className="de-auth">
+      <h1>LANGUAGES</h1>
+      <p>{mode === 'login' ? 'Увійдіть у свій акаунт' : 'Створіть акаунт, щоб зберігати прогрес'}</p>
+      <input className="de-search" placeholder="Логін" autoCapitalize="none" value={f.login} onChange={set('login')} />
+      {mode === 'register' && <input className="de-search" type="email" placeholder="Email (обовʼязково)" value={f.email} onChange={set('email')} />}
+      {mode === 'register' && <input className="de-search" type="tel" placeholder="Телефон (необовʼязково)" value={f.phone} onChange={set('phone')} />}
+      <input className="de-search" type="password" placeholder="Пароль" value={f.password} onChange={set('password')} />
+      {mode === 'register' && (
+        <label className="de-chk"><input type="checkbox" checked={f.consent} onChange={set('consent')} />
+          <span>Погоджуюсь отримувати повідомлення, листи та дзвінки щодо навчання й пропозицій (можна вимкнути в профілі)</span></label>
+      )}
+      {err && <div className="de-err">{err}</div>}
+      <button className="de-btn" disabled={busy} onClick={go}>{mode === 'login' ? 'Увійти' : 'Зареєструватися'}</button>
+      <button className="de-btn ghost" onClick={() => { setMode(mode === 'login' ? 'register' : 'login'); setErr('') }}>
+        {mode === 'login' ? 'Створити акаунт' : 'Вже є акаунт'}
+      </button>
+    </div>
+  )
+}
+
+const Soon = ({ title, text }) => (
+  <div className="de-empty"><b>{title}</b><div style={{ marginTop: 6 }}>{text}</div></div>
+)
+
+export default function App() {
+  const [splash, setSplash] = useState(true)
+  const [sess, setSess] = useState(() => { try { return JSON.parse(localStorage.getItem(SKEY)) } catch { return null } })
+  const [st, setSt] = useState(() => { try { return JSON.parse(localStorage.getItem('languages.state')) || {} } catch { return {} } })
+  const [tab, setTab] = useState('home')
+  const [screen, setScreen] = useState(null)
+  const timer = useRef(null)
+
+  const update = (patch) => setSt((s) => ({ ...s, ...patch }))
+  useEffect(() => {
+    localStorage.setItem('languages.state', JSON.stringify(st))
+    if (!sess) return
+    clearTimeout(timer.current)
+    timer.current = setTimeout(() => post('/api/sync', { login: sess.login, token: sess.token, state: st }), 1200)
+  }, [st]) // eslint-disable-line
+
+  const onAuth = (s, remote) => {
+    localStorage.setItem(SKEY, JSON.stringify(s)); setSess(s)
+    if (remote) setSt(remote)
+  }
+  const logout = () => { localStorage.removeItem(SKEY); setSess(null) }
+  const lang = st.lang || 'uk'
+  const wantCount = useMemo(() => Object.keys(st.want || {}).length, [st.want])
+
+  if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
+  if (!sess) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} /></div></div>
+
+  const nav = [['home', 'Головна', 'home'], ['learn', 'Поточне навчання', 'learn'], ['errors', 'Робота над помилками', 'alert'], ['profile', 'Профіль', 'person']]
+  const go = (t) => { setTab(t); setScreen(null) }
+
+  return (
+    <div className="de-app">
+      <div className="de-main">
+        {tab === 'home' && !screen && (
+          <>
+            <div className="de-hello">Привіт, {sess.name}!</div>
+            <div className="de-grid">
+              <button className="de-tile" onClick={() => setScreen('nouns')}><span className="de-tile-ic">📘</span><b>Словник</b><small>Іменники · {wantCount} до вивчення</small></button>
+              <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🎓</span><b>Курс</b><small>Скоро</small></button>
+            </div>
+          </>
+        )}
+        {tab === 'home' && screen === 'nouns' && <Nouns lang={lang} want={st.want || {}} setWant={(w) => update({ want: w })} onBack={() => setScreen(null)} />}
+        {tab === 'learn' && <Soon title="Поточне навчання" text="Тут буде курс по блоках. Зʼявиться на наступному етапі." />}
+        {tab === 'errors' && <Soon title="Робота над помилками" text="Помилки з вправ збиратимуться тут." />}
+        {tab === 'profile' && (
+          <>
+            <div className="de-hello">{sess.name}</div>
+            <div className="de-h2">Мова перекладу</div>
+            <div className="de-seg" style={{ width: 'fit-content' }}>
+              <button className={lang === 'uk' ? 'on' : ''} onClick={() => update({ lang: 'uk' })}>UA</button>
+              <button className={lang === 'ru' ? 'on' : ''} onClick={() => update({ lang: 'ru' })}>RU</button>
+            </div>
+            <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
+          </>
+        )}
+      </div>
+      <nav className="de-nav">
+        {nav.map(([id, label, ic]) => (
+          <button key={id} className={tab === id ? 'on' : ''} onClick={() => go(id)}>
+            <span className="de-navic"><Ic id={ic} size={24} /></span><small>{label}</small>
+          </button>
+        ))}
+      </nav>
+    </div>
+  )
+}

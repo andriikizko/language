@@ -1,0 +1,77 @@
+n|Hobby|Hobbys|хобі|хобби|1
+f|Freizeit|-|вільний час|свободное время|1
+m|Sport|-|спорт|спорт|1
+m|Fußball|-|футбол|футбол|1
+n|Spiel|Spiele|гра; матч|игра; матч|1
+f|Musik|-|музика|музыка|1
+n|Lied|Lieder|пісня|песня|1
+n|Konzert|Konzerte|концерт|концерт|1
+m|Film|Filme|фільм|фильм|1
+n|Buch|Bücher|книга|книга|1
+f|Zeitung|Zeitungen|газета|газета|1
+f|Zeitschrift|Zeitschriften|журнал|журнал|1
+n|Bild|Bilder|картина; зображення|картина; изображение|1
+f|Party|Partys|вечірка|вечеринка|1
+m|Ausflug|Ausflüge|екскурсія, вилазка|экскурсия, вылазка|1
+m|Spaziergang|Spaziergänge|прогулянка|прогулка|1
+f|Wanderung|Wanderungen|похід (пішки)|поход (пешком)|1
+n|Schwimmbad|Schwimmbäder|басейн|бассейн|1
+n|Meer|Meere|море|море|1
+m|Strand|Strände|пляж|пляж|1
+m|Berg|Berge|гора|гора|1
+m|See|Seen|озеро|озеро|1
+m|Wald|Wälder|ліс|лес|1
+m|Fluss|Flüsse|річка|река|1
+f|Sonne|Sonnen|сонце|солнце|1
+m|Regen|-|дощ|дождь|1
+m|Schnee|-|сніг|снег|1
+n|Wetter|-|погода|погода|1
+m|Wind|Winde|вітер|ветер|1
+f|Katze|Katzen|кішка|кошка|1
+m|Hund|Hunde|собака|собака|1
+n|Tier|Tiere|тварина|животное|1
+m|Vogel|Vögel|птах|птица|0
+n|Pferd|Pferde|кінь|лошадь|0
+f|Kuh|Kühe|корова|корова|0
+n|Schwein|Schweine|свиня|свинья|0
+n|Huhn|Hühner|курка|курица|0
+f|Blume|Blumen|квітка|цветок|0
+m|Baum|Bäume|дерево|дерево|0
+n|Gras|Gräser|трава|трава|0
+f|Gitarre|Gitarren|гітара|гитара|0
+n|Klavier|Klaviere|піаніно|пианино|0
+n|Instrument|Instrumente|інструмент (музичний)|инструмент (музыкальный)|0
+m|Tanz|Tänze|танець|танец|0
+n|Theaterstück|Theaterstücke|п'єса, вистава|пьеса, спектакль|0
+f|Ausstellung|Ausstellungen|виставка|выставка|0
+m|Verein|Vereine|клуб, товариство|клуб, общество|0
+n|Fitnessstudio|Fitnessstudios|фітнес-зал|фитнес-зал|0
+n|Training|Trainings|тренування|тренировка|0
+m|Trainer|Trainer|тренер|тренер|0
+f|Mannschaft|Mannschaften|команда|команда|0
+n|Tor|Tore|ворота; гол|ворота; гол|0
+m|Ball|Bälle|м'яч|мяч|0
+n|Tennis|-|теніс|теннис|0
+n|Schach|-|шахи|шахматы|0
+f|Karte|Karten|карта (гральна)|карта (игральная)|0
+n|Brettspiel|Brettspiele|настільна гра|настольная игра|0
+n|Rätsel|Rätsel|загадка, головоломка|загадка, головоломка|0
+m|Witz|Witze|жарт, анекдот|шутка, анекдот|0
+m|Spaß|-|задоволення, веселощі|удовольствие, веселье|0
+f|Freude|Freuden|радість|радость|0
+f|Lust|-|бажання, охота|желание, охота|0
+f|Langeweile|-|нудьга|скука|0
+f|Erholung|-|відпочинок|отдых|0
+f|Ruhe|-|спокій, тиша|покой, тишина|0
+f|Fotografie|Fotografien|фотографія (мистецтво)|фотография (искусство)|0
+n|Zelt|Zelte|намет|палатка|0
+m|Campingplatz|Campingplätze|кемпінг|кемпинг|0
+f|Insel|Inseln|острів|остров|0
+f|Landschaft|Landschaften|краєвид|пейзаж|0
+m|Himmel|Himmel|небо|небо|0
+m|Stern|Sterne|зірка|звезда|0
+m|Mond|Monde|місяць (небесне тіло)|луна|0
+f|Wolke|Wolken|хмара|облако|0
+n|Gewitter|Gewitter|гроза|гроза|0
+f|Temperatur|Temperaturen|температура|температура|0
+m|Urlauber|Urlauber|відпочивальник|отдыхающий|0

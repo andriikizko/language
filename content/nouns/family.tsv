@@ -1,0 +1,56 @@
+m|Vater|Väter|батько, тато|отец, папа|1
+f|Mutter|Mütter|мати, мама|мать, мама|1
+p|Eltern|Eltern|батьки|родители|1
+m|Sohn|Söhne|син|сын|1
+f|Tochter|Töchter|донька|дочь|1
+m|Bruder|Brüder|брат|брат|1
+f|Schwester|Schwestern|сестра|сестра|1
+p|Geschwister|Geschwister|брати й сестри|братья и сёстры|1
+m|Großvater|Großväter|дідусь|дедушка|1
+f|Großmutter|Großmütter|бабуся|бабушка|1
+m|Onkel|Onkel|дядько|дядя|1
+f|Tante|Tanten|тітка|тётя|1
+n|Kind|Kinder|дитина|ребёнок|1
+f|Familie|Familien|сім'я|семья|1
+m|Mann|Männer|чоловік; мужчина|муж; мужчина|1
+f|Frau|Frauen|жінка; дружина|женщина; жена|1
+m|Junge|Jungen|хлопчик|мальчик|1
+n|Mädchen|Mädchen|дівчинка|девочка|1
+m|Freund|Freunde|друг; хлопець|друг; парень|1
+f|Freundin|Freundinnen|подруга; дівчина|подруга; девушка|1
+p|Großeltern|Großeltern|дідусь і бабуся|бабушка и дедушка|0
+m|Opa|Opas|дідусь (розм.)|дедушка (разг.)|0
+f|Oma|Omas|бабуся (розм.)|бабушка (разг.)|0
+m|Papa|Papas|тато|папа|0
+f|Mama|Mamas|мама|мама|0
+m|Cousin|Cousins|двоюрідний брат|двоюродный брат|0
+f|Cousine|Cousinen|двоюрідна сестра|двоюродная сестра|0
+m|Enkel|Enkel|онук|внук|0
+f|Enkelin|Enkelinnen|онука|внучка|0
+m|Neffe|Neffen|племінник|племянник|0
+f|Nichte|Nichten|племінниця|племянница|0
+m|Ehemann|Ehemänner|чоловік (у шлюбі)|муж|0
+f|Ehefrau|Ehefrauen|дружина|жена|0
+m|Partner|Partner|партнер|партнёр|0
+f|Partnerin|Partnerinnen|партнерка|партнёрша|0
+m|Schwiegervater|Schwiegerväter|свекор; тесть|свёкор; тесть|0
+f|Schwiegermutter|Schwiegermütter|свекруха; теща|свекровь; тёща|0
+m|Schwager|Schwäger|зять, шурин, дівер|зять, шурин, деверь|0
+f|Schwägerin|Schwägerinnen|невістка, зовиця, ятрівка|невестка, золовка, свояченица|0
+m|Zwilling|Zwillinge|близнюк|близнец|0
+n|Baby|Babys|немовля|младенец|0
+m|Mensch|Menschen|людина|человек|0
+f|Person|Personen|особа|персона|0
+p|Leute|Leute|люди|люди|0
+m|Herr|Herren|пан, чоловік (ввічл.)|господин, мужчина (вежл.)|0
+f|Dame|Damen|пані, жінка (ввічл.)|дама, женщина (вежл.)|0
+m|Nachbar|Nachbarn|сусід|сосед|0
+f|Nachbarin|Nachbarinnen|сусідка|соседка|0
+m|Gast|Gäste|гість|гость|0
+m|Name|Namen|ім'я|имя|0
+m|Vorname|Vornamen|ім'я (особисте)|имя (личное)|0
+m|Nachname|Nachnamen|прізвище|фамилия|0
+n|Alter|-|вік|возраст|0
+f|Hochzeit|Hochzeiten|весілля|свадьба|0
+f|Witwe|Witwen|вдова|вдова|0
+m|Witwer|Witwer|вдівець|вдовец|0

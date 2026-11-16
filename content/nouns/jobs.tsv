@@ -1,0 +1,69 @@
+m|Arzt|Ärzte|лікар|врач|1
+f|Ärztin|Ärztinnen|лікарка|врач (жен.)|1
+m|Lehrer|Lehrer|учитель|учитель|1
+f|Lehrerin|Lehrerinnen|учителька|учительница|1
+m|Verkäufer|Verkäufer|продавець|продавец|1
+f|Verkäuferin|Verkäuferinnen|продавчиня|продавщица|1
+m|Koch|Köche|кухар|повар|1
+f|Köchin|Köchinnen|кухарка|повариха|1
+m|Ingenieur|Ingenieure|інженер|инженер|1
+f|Ingenieurin|Ingenieurinnen|інженерка|инженер (жен.)|0
+m|Polizist|Polizisten|поліцейський|полицейский|1
+m|Student|Studenten|студент|студент|1
+f|Studentin|Studentinnen|студентка|студентка|1
+m|Kellner|Kellner|офіціант|официант|1
+f|Kellnerin|Kellnerinnen|офіціантка|официантка|1
+m|Friseur|Friseure|перукар|парикмахер|1
+m|Bäcker|Bäcker|пекар|пекарь|1
+m|Arbeiter|Arbeiter|робітник|рабочий|1
+m|Chef|Chefs|керівник, шеф|начальник, шеф|1
+m|Beruf|Berufe|професія|профессия|1
+f|Arbeit|Arbeiten|робота|работа|1
+f|Firma|Firmen|фірма|фирма|1
+m|Kollege|Kollegen|колега|коллега|1
+f|Kollegin|Kolleginnen|колежанка|коллега (жен.)|1
+m|Lohn|Löhne|заробітна плата (погодинна)|зарплата (почасовая)|0
+n|Gehalt|Gehälter|оклад|оклад|0
+m|Vertrag|Verträge|договір|договор|0
+f|Bewerbung|Bewerbungen|заява на роботу|заявка на работу|0
+m|Lebenslauf|Lebensläufe|резюме|резюме|0
+n|Praktikum|Praktika|практика|практика|0
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|0
+f|Stelle|Stellen|вакансія, місце|вакансия, место|0
+f|Schicht|Schichten|зміна|смена|0
+m|Feierabend|Feierabende|кінець робочого дня|конец рабочего дня|0
+m|Urlaub|Urlaube|відпустка|отпуск|0
+f|Pause|Pausen|перерва|перерыв|0
+f|Besprechung|Besprechungen|нарада|совещание|0
+m|Kunde|Kunden|клієнт|клиент|0
+f|Kundin|Kundinnen|клієнтка|клиентка|0
+m|Mitarbeiter|Mitarbeiter|працівник|сотрудник|0
+f|Mitarbeiterin|Mitarbeiterinnen|працівниця|сотрудница|0
+m|Elektriker|Elektriker|електрик|электрик|0
+m|Mechaniker|Mechaniker|механік|механик|0
+m|Maurer|Maurer|муляр|каменщик|0
+m|Maler|Maler|маляр; художник|маляр; художник|0
+m|Schlosser|Schlosser|слюсар|слесарь|0
+m|Tischler|Tischler|столяр|столяр|0
+m|Gärtner|Gärtner|садівник|садовник|0
+m|Bauer|Bauern|фермер, селянин|фермер, крестьянин|0
+m|Krankenpfleger|Krankenpfleger|медбрат|медбрат|0
+f|Krankenschwester|Krankenschwestern|медсестра|медсестра|0
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|0
+m|Apotheker|Apotheker|аптекар|аптекарь|0
+m|Rechtsanwalt|Rechtsanwälte|адвокат|адвокат|0
+m|Richter|Richter|суддя|судья|0
+m|Journalist|Journalisten|журналіст|журналист|0
+m|Künstler|Künstler|художник, митець|художник, артист|0
+m|Sänger|Sänger|співак|певец|0
+m|Schauspieler|Schauspieler|актор|актёр|0
+m|Programmierer|Programmierer|програміст|программист|0
+m|Buchhalter|Buchhalter|бухгалтер|бухгалтер|0
+m|Manager|Manager|менеджер|менеджер|0
+m|Sekretär|Sekretäre|секретар|секретарь|0
+f|Sekretärin|Sekretärinnen|секретарка|секретарша|0
+m|Soldat|Soldaten|військовий|военный|0
+m|Reiseleiter|Reiseleiter|гід|гид|0
+m|Busfahrer|Busfahrer|водій автобуса|водитель автобуса|0
+m|Lagerarbeiter|Lagerarbeiter|складський працівник|складской рабочий|0
+f|Reinigungskraft|Reinigungskräfte|прибиральник/-ця|уборщик/-ца|0
