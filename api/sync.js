@@ -6,6 +6,7 @@ const MAX = 400 * 1024
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 
 export default async function handler(req, res) {
+  if (req.method === 'OPTIONS') return res.status(204).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'method' })
   if (!dbReady()) return res.status(503).json({ error: 'no_db' })
   try {

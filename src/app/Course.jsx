@@ -37,6 +37,7 @@ export function Course({ st, update, lang, tr, onAns }) {
   const [cur, setCur] = useState(null)
   const [open, setOpen] = useState('expl')
   const [run, setRun] = useState(null)
+  const [prem, setPrem] = useState(false)
   const done = st.done || {}
   const mark = (id, patch) => update({ done: { ...done, [id]: { ...(done[id] || {}), ...patch } } })
 
@@ -45,6 +46,21 @@ export function Course({ st, update, lang, tr, onAns }) {
   if (run) {
     return <Practice ids={run.ids} lang={lang} tr={tr} title={run.title} onAnswer={onAns}
       onBack={() => setRun(null)} onDone={(sc, n) => { run.after && run.after(sc, n); setRun(null) }} />
+  }
+
+  if (prem) {
+    return (
+      <>
+        <div className="de-row"><button className="de-back" onClick={() => setPrem(false)}>‹</button><b style={{ fontSize: 17 }}>Premium</b><span /></div>
+        <div className="de-card">
+          <h4>Повний доступ до курсу</h4>
+          <p>Усі 12 блоків курсу, уся граматика, іспит у стилі Goethe A1 і фінальний тест.</p>
+          <p><b>9,90 € на місяць.</b> Скасувати можна будь-коли в Google Play.</p>
+          <button className="de-btn" disabled>Оформити підписку</button>
+          <div className="de-dim" style={{ marginTop: 6 }}>Оплата зʼявиться в Android-версії застосунку після публікації в Google Play.</div>
+        </div>
+      </>
+    )
   }
 
   if (!cur) {
@@ -56,7 +72,7 @@ export function Course({ st, update, lang, tr, onAns }) {
         {BLOCKS.map((b, i) => {
           const d = done[b.id] || {}
           return (
-            <button key={b.id} className={'de-blk' + (locked(i) ? ' lock' : '')} onClick={() => !locked(i) && (setCur(b.id), setOpen('expl'))}>
+            <button key={b.id} className={'de-blk' + (locked(i) ? ' lock' : '')} onClick={() => (locked(i) ? setPrem(true) : (setCur(b.id), setOpen('expl')))}>
               <span className="n">{i + 1}</span><span><b>{b.title}</b><small>{b.sub}</small></span>
               <span className="de-pill">{locked(i) ? '🔒 Premium' : d.test != null ? 'тест ' + d.test + '%' : 'почати'}</span>
             </button>
@@ -66,7 +82,7 @@ export function Course({ st, update, lang, tr, onAns }) {
         {GRAMMAR.map((g, i) => {
           const d = done[g.id] || {}; const lk = i >= FREE_GRAMMAR && !st.dev
           return (
-            <button key={g.id} className={'de-blk' + (lk ? ' lock' : '')} onClick={() => !lk && setCur(g.id)}>
+            <button key={g.id} className={'de-blk' + (lk ? ' lock' : '')} onClick={() => (lk ? setPrem(true) : setCur(g.id))}>
               <span className="n">{i + 1}</span><span><b>{lang === 'ru' ? g.title_ru : g.title}</b><small>{g.sub}</small></span>
               <span className="de-pill">{lk ? '🔒 Premium' : d.test != null ? d.test + '/6' : 'почати'}</span>
             </button>
@@ -74,13 +90,13 @@ export function Course({ st, update, lang, tr, onAns }) {
         })}
         <div className="de-h2">Іспит у стилі Goethe A1</div>
         {[['lesen', 'Lesen · читання', '15 завдань'], ['schreiben', 'Schreiben · письмо', 'анкета й повідомлення'], ['hoeren', 'Hören · слухання', '8 завдань, озвучення тимчасове']].map(([k, t, sub]) => (
-          <button key={k} className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: examIds(k), title: t, after: (sc, n) => update({ exam: { ...(st.exam || {}), [k]: Math.round(sc / n * 100) } }) })}>
+          <button key={k} className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: examIds(k), title: t, after: (sc, n) => update({ exam: { ...(st.exam || {}), [k]: Math.round(sc / n * 100) } }) })}>
             <span className="n">✎</span><span><b>{t}</b><small>{sub}</small></span>
             <span className="de-pill">{st.dev ? ((st.exam || {})[k] != null ? st.exam[k] + '%' : 'почати') : '🔒 Premium'}</span>
           </button>
         ))}
         <div className="de-dim" style={{ margin: '4px 0 10px' }}>Складено, якщо кожна частина від 60%. Говоріння застосунок не перевіряє: тренуй діалоги з уроків вголос.</div>
-        <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
+        <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
           <span className="n">★</span><span><b>Фінальний тест</b><small>основні слова з усіх блоків</small></span>
           <span className="de-pill">{st.dev ? (st.final != null ? st.final + '%' : 'почати') : '🔒 Premium'}</span>
         </button>

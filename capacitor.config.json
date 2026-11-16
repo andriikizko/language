@@ -1,0 +1,6 @@
+{
+  "appId": "com.dijix.languages",
+  "appName": "LANGUAGES",
+  "webDir": "dist",
+  "server": { "androidScheme": "https" }
+}

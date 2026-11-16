@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Splash from './Splash.jsx'
 import Ic from './Icons.jsx'
-import { post } from './api.js'
+import { post, BASE } from './api.js'
 import Nouns from './Nouns.jsx'
 import { Course, Errors, Calendar } from './Course.jsx'
 import { srsUpdate } from './engine.js'
@@ -37,7 +37,7 @@ const GoogleBtn = ({ onCred }) => {
   const [ok, setOk] = useState(null)
   useEffect(() => {
     let dead = false
-    fetch('/api/config').then((r) => r.json()).then((c) => {
+    fetch(BASE + '/api/config').then((r) => r.json()).then((c) => {
       if (dead || !c.googleClientId) return setOk(false)
       const init = () => {
         window.google.accounts.id.initialize({ client_id: c.googleClientId, callback: (r) => onCred(r.credential) })
@@ -115,7 +115,7 @@ const Auth = ({ onAuth, onGuest }) => {
         {mode === 'login' ? 'Створити акаунт' : 'Вже є акаунт'}
       </button>
       <div className="de-dim" style={{ textAlign: 'center', margin: '6px 0' }}>або</div>
-      <a className="de-dim" style={{ display: 'block', textAlign: 'center', margin: '0 0 8px' }} href="/privacy.html" target="_blank" rel="noreferrer">Політика конфіденційності</a>
+      <a className="de-dim" style={{ display: 'block', textAlign: 'center', margin: '0 0 8px' }} href={BASE + '/privacy.html'} target="_blank" rel="noreferrer">Політика конфіденційності</a>
       <GoogleBtn onCred={onCred} />
       <button className="de-btn ghost" onClick={onGuest}>Продовжити як гість</button>
     </div>
@@ -224,7 +224,7 @@ export default function App() {
             <div className="de-dim" style={{ marginTop: 6 }}>Транскрипція наближена й не замінює озвучення.</div>
             <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.consent} onChange={(e) => { update({ consent: e.target.checked }); post('/api/auth', { action: 'consent', login: sess.login, token: sess.token, consent: e.target.checked }) }} /><span>Отримувати повідомлення, листи та пропозиції</span></label>
             <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
-            <a className="de-dim" style={{ display: 'block', marginTop: 16 }} href="/privacy.html" target="_blank" rel="noreferrer">Політика конфіденційності</a>
+            <a className="de-dim" style={{ display: 'block', marginTop: 16 }} href={BASE + '/privacy.html'} target="_blank" rel="noreferrer">Політика конфіденційності</a>
             <button className="de-btn ghost" style={{ marginTop: 12, color: '#c0392b' }} onClick={async () => {
               if (!window.confirm('Видалити акаунт і весь прогрес? Це безповоротно.')) return
               const r = await post('/api/auth', { action: 'delete', login: sess.login, token: sess.token })

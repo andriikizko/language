@@ -13,6 +13,7 @@ const validPhone = (p) => /^\+?[0-9 ()\-]{7,20}$/.test(p)
 const validLogin = (l) => /^[\p{L}\p{N}_.\-]{3,32}$/u.test(l)
 
 export default async function handler(req, res) {
+  if (req.method === 'OPTIONS') return res.status(204).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'method' })
   if (!dbReady()) return res.status(503).json({ error: 'no_db' })
   try {
