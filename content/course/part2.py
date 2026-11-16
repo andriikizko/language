@@ -34,7 +34,7 @@ blk(id='clothes', title='Одяг', sub='що носити, розмір, маг
  adjs=[], adjlist=['neu','alt','lang','kurz','teuer','billig','eng','breit','hell','dunkel'], verbs=['tragen','anziehen','ausziehen','kaufen','gefallen'],
  explain=[
  ('Носити й вдягати', 'tragen (du trägst, er trägt) — носити, мати на собі: Ich trage eine Jacke. Anziehen — вдягати, і це відокремлюване дієслово: Ich ziehe den Mantel an. Ausziehen — знімати: Ich ziehe die Schuhe aus.'),
- ('Одяг у множині й однині', 'Ukrainian «штани» — множина, а німецьке die Hose — однина: Die Hose ist neu. Також die Jeans (мн. Jeans) і die Kleidung (однина, без множини): Die Kleidung ist teuer.'),
+ ('Одяг у множині й однині', 'Українське «штани» — множина, а німецьке die Hose — однина: Die Hose ist neu. Також die Jeans (мн. Jeans) і die Kleidung (однина, без множини): Die Kleidung ist teuer.'),
  ('Розмір і колір', 'Welche Größe haben Sie? — Ich habe Größe 38. Welche Farbe? — Blau. Якщо річ не підходить: Das ist zu klein, zu groß, zu eng, zu lang. Слово zu перед прикметником означає «занадто».'),
  ('passen і gefallen', 'Die Hose passt mir — штани мені підходять за розміром. Das Kleid gefällt mir — сукня мені подобається. Після цих дієслів «мені, тобі, йому» стоїть у Dativ: mir, dir, ihm. Запам\'ятай як готові звороти: gefällt mir, passt mir.'),
  ('Одяг і пори року', 'Im Winter: der Mantel, die Mütze, der Schal, die Handschuhe. Im Sommer: das T-Shirt, das Kleid, die Sandalen. Bei Regen: der Regenmantel, der Regenschirm. Усі ці слова є у списку «Слова блоку».'),

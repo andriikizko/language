@@ -95,7 +95,7 @@ blk(id='hobby', title='Хобі й вільний час', sub='спорт, му
  ('gern', 'Ich spiele gern Fußball — я люблю грати у футбол. Слово gern ставимо після дієслова: Ich höre gern Musik. Ich lese gern Bücher. Не люблю — nicht gern: Ich koche nicht gern.'),
  ('spielen', 'Spielen вживається зі спортом і інструментами: Fußball spielen, Tennis spielen, Gitarre spielen, Klavier spielen. Також Karten spielen, Schach spielen. Du spielst, er spielt — правильне дієслово.'),
  ('gehen + інфінітив', 'Для руху «йду займатися» німці кажуть gehen + інфінітив у кінці: Ich gehe schwimmen. Wir gehen wandern. Ich gehe einkaufen. Дієслово gehen змінюється, інфінітив залишається в кінці речення.'),
- ('Погода', 'Es regnet. Es schneit. Die Sonne scheint. Es ist kalt, warm, heiß. Das Wetter ist schön. Der Wind — der Wind. Слово es у «Es regnet» — формальний підмет, його завжди треба ставити.'),
+ ('Погода', 'Es regnet. Es schneit. Die Sonne scheint. Es ist kalt, warm, heiß. Das Wetter ist schön. Слово es у «Es regnet» — формальний підмет, його завжди треба ставити.'),
  ('Як часто', 'immer (завжди), oft (часто), manchmal (іноді), selten (рідко), nie (ніколи). Слово стоїть після дієслова: Ich gehe oft schwimmen. Ich spiele manchmal Gitarre.'),
  ],
  gaps=[
