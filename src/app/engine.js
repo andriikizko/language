@@ -94,6 +94,17 @@ export const makeQuestion = (id, lang) => {
     return { id, de: true, type: 'choice', hint: 'Встав пропущене слово', prompt: g.s, sub: g[lang], opts, correct: opts.indexOf(g.a),
       explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, block: b.id }
   }
+  if (t === 'e') {
+    const b = blockById(r[0]); const g = b.gaps[+r[1]]
+    const fill = (x) => g.s.replace('___', x).replace(/\s*\([^)]*\)/g, '').trim()
+    const opts = shuffle([fill(g.a), ...g.w.map(fill)])
+    return { id, type: 'choice', hint: 'Яке речення правильне?', prompt: g[lang].replace('___', '…'), opts, correct: opts.indexOf(fill(g.a)),
+      explain: `${fill(g.a)} — ${g[lang]}`, block: b.id }
+  }
+  if (t === 'd') {
+    const b = blockById(r[0]); const sn = b.topic.s[+r[1]]; const clean = cleanDe(sn.de)
+    return { id, type: 'type', hint: 'Диктант: прослухай і напиши німецькою', prompt: '', audio: [clean], audioLabel: '▶ Прослухати речення', answer: clean, explain: `${sn.de} — ${sn[lang]}`, block: b.id }
+  }
   if (t === 'o') {
     const b = blockById(r[0]); const sn = b.topic.s[+r[1]]; const clean = cleanDe(sn.de)
     return { id, type: 'order', hint: 'Склади речення', prompt: sn[lang], tokens: shuffle(clean.split(' ')), answer: clean, explain: `${sn.de} — ${sn[lang]}`, block: b.id }
@@ -122,7 +133,7 @@ export const makeQuestion = (id, lang) => {
 
 const wid = (mode, kind, it) => `w|${mode}|${idOf(kind, it)}`
 export const poolFor = (b, mode) => {
-  if (b.kind === 'grammar') return mode === 'gap' ? b.gaps.map((_, i) => `g|${b.id}|${i}`) : []
+  if (b.kind === 'grammar') return mode === 'gap' ? b.gaps.map((_, i) => `g|${b.id}|${i}`) : mode === 'err' ? b.gaps.map((_, i) => `e|${b.id}|${i}`) : []
   const w = blockWords(b)
   const core = (x) => x.filter((i) => i.core)
   const nn = core(w.nouns).length >= 4 ? core(w.nouns) : w.nouns
@@ -131,6 +142,8 @@ export const poolFor = (b, mode) => {
   if (mode === 'art') return w.nouns.filter((i) => i.g !== 'p').map((i) => wid('art', 'n', i))
   if (mode === 'pl') return w.nouns.filter((i) => i.pl && i.g !== 'p').map((i) => wid('pl', 'n', i))
   if (mode === 'gap') return b.gaps.map((_, i) => `g|${b.id}|${i}`)
+  if (mode === 'err') return b.gaps.map((_, i) => `e|${b.id}|${i}`)
+  if (mode === 'dict') return b.topic.s.map((x, i) => [x, i]).filter(([x]) => { const n = cleanDe(x.de).split(' ').length; return n >= 3 && n <= 9 }).map(([, i]) => `d|${b.id}|${i}`)
   if (mode === 'num') return Array.from({ length: 30 }, () => 'n|' + (13 + Math.floor(Math.random() * 87)))
   if (mode === 'order') return b.topic.s.map((x, i) => [x, i]).filter(([x]) => { const n = cleanDe(x.de).split(' ').length; return n >= 3 && n <= 9 }).map(([, i]) => `o|${b.id}|${i}`)
   if (mode === 'listen') return b.dialogs.flatMap((d, di) => d.qs.map((_, qi) => `l|${b.id}|${di}|${qi}`))

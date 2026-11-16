@@ -14,7 +14,7 @@ const Acc = ({ title, badge, open, onToggle, children }) => (
   </div>
 )
 
-const MODES = [['order', 'Склади речення (з топіку)'], ['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина (вписати)'], ['gap', 'Речення з пропуском']]
+const MODES = [['order', 'Склади речення (з топіку)'], ['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина (вписати)'], ['gap', 'Речення з пропуском'], ['err', 'Яке речення правильне?'], ['dict', 'Диктант (на слух)']]
 
 export function Course({ st, update, lang, tr, onAns }) {
   const [cur, setCur] = useState(null)

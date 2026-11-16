@@ -37,7 +37,8 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
   const [tsec, setTsec] = useTimer(stage === 'test' && !!run)
 
   const lessonOf = (n) => { const w = Math.floor((n - 1) / 3); return { w, k: (n - 1) % 3 + 1, b: L.blocks[w] } }
-  const total = L.blocks.length * 3
+  const pts = (n) => { const d_ = get(n); return d_.done && !d_.weak ? (d_.hwPct || 0) : 0 }
+  const totalPts = Array.from({ length: L.blocks.length * 3 }, (_, i) => pts(i + 1)).reduce((a, x) => a + x, 0)
   const isOpen = (n) => n === 1 || !!get(n - 1).done
   const isLocked = (n) => lessonOf(n).w >= FREE_WEEKS && !st.dev
 
@@ -47,7 +48,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
       <>
         <div className="de-row"><button className="de-back" onClick={onBack}>‹</button><b style={{ fontSize: 17 }}>Курс-репетитор {L.name}</b><span /></div>
         <div className="de-card" style={{ marginBottom: 12 }}>
-          <b>Як це працює</b>
+          <b>Бали: {totalPts} з {L.blocks.length * 300}</b><div className="de-dim" style={{ marginBottom: 6 }}>За урок до 100 балів: це результат домашки. Якщо пішов далі з тестом нижче 70%, бали за попередній урок зараховуються, лише коли повториш його.</div><b>Як це працює</b>
           <div className="de-dim">12 тижнів, у кожному 3 уроки. Урок: тест по домашці з минулого уроку (таймер без пауз, зараховано від {PASS}%), нове, вправи й домашка. Наступний урок відкривається, коли здана домашка. Повертатися до пройдених можна завжди. Рекомендований час уроку: 3 години (година із застосунком і дві самостійно), таймер можна ставити на паузу.</div>
         </div>
         {L.blocks.map((b, w) => (
@@ -58,7 +59,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
               return (
                 <button key={n} className={'de-blk' + (!open_ || lk ? ' lock' : '')} onClick={() => lk ? onPrem() : open_ ? (setCur(n), setStage(null), setOpen(null), setSec(d.sec || 0)) : alert('Спершу заверши попередній урок і здай домашку.')}>
                   <span className="n">{n}</span><span><b>Урок {n}</b><small>{KINDS[k - 1]}</small></span>
-                  <span className="de-pill">{lk ? '🔒 Premium' : d.done ? '✓ ' + (d.best != null ? d.best + '%' : 'пройдено') : open_ ? 'почати' : '🔒'}</span>
+                  <span className="de-pill">{lk ? '🔒 Premium' : d.done ? (d.weak ? '⚠ повтори' : '✓ ' + pts(n) + ' б.') : open_ ? 'почати' : '🔒'}</span>
                 </button>
               )
             })}
@@ -108,7 +109,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
           <h4>Результат: {d.test}%</h4>
           <p>Ти не засвоїв попередній урок. Далі буде важче. Повторити чи продовжити? Бали за урок не нараховуються, поки не повториш.</p>
           <button className="de-btn" onClick={() => { set(n, { test: null }); setCur(n - 1); setStage(null); setSec(get(n - 1).sec || 0) }}>Повторити урок {n - 1}</button>
-          <button className="de-btn ghost" onClick={() => { set(n, { ack: 1 }); setStage(null) }}>Продовжити все одно</button>
+          <button className="de-btn ghost" onClick={() => { set(n, { ack: 1 }); set(n - 1, { weak: 1 }); setStage(null) }}>Продовжити все одно</button>
         </div>
       </>
     )
@@ -119,13 +120,13 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
   const homework = () => {
     let ids = []
     if (k === 1) ids = [...pick(poolFor(b, 'tr'), 5), ...pick(poolFor(b, 'art'), 3), ...pick(poolFor(b, 'pl'), 2)]
-    else if (k === 2) ids = [...grams.flatMap((g) => pick(poolFor(g, 'gap'), 8)), ...pick(poolFor(b, 'gap'), 4)]
-    else ids = [...pick(poolFor(b, 'listen'), 2), ...pick(poolFor(b, 'order'), 3), ...pick(poolFor(b, 'tr'), 3)]
+    else if (k === 2) ids = [...grams.flatMap((g) => [...pick(poolFor(g, 'gap'), 5), ...pick(poolFor(g, 'err'), 3)]), ...pick(poolFor(b, 'gap'), 3)]
+    else ids = [...pick(poolFor(b, 'listen'), 2), ...pick(poolFor(b, 'order'), 3), ...pick(poolFor(b, 'dict'), 2), ...pick(poolFor(b, 'tr'), 3)]
     ids = [...ids, ...pick(srsDue(st.srs), 3)]
     return shuffle(ids).slice(0, 12)
   }
   const hw = d.hw || null
-  const modes = [['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина'], ['order', 'Склади речення'], ['gap', 'Речення з пропуском']].filter(([m]) => poolFor(b, m).length >= 3)
+  const modes = [['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина'], ['order', 'Склади речення'], ['gap', 'Речення з пропуском'], ['err', 'Яке речення правильне?'], ['dict', 'Диктант (на слух)']].filter(([m]) => poolFor(b, m).length >= 3)
   const exTask = (ids, title) => setRun({ ids, title, after: () => mark({ ex: (d.ex || 0) + 1 }) })
   const t = (key_, title, badge, children) => (
     <div className="de-acc"><button onClick={() => setOpen(open === key_ ? null : key_)}><span>{open === key_ ? '▾' : '▸'}</span>{title}{badge && <small>{badge}</small>}</button>{open === key_ && <div className="de-acc-b">{children}</div>}</div>
@@ -170,11 +171,13 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
           {k === 1 && modes.map(([m, tt]) => <button key={m} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, m, 10), tt)}>{tt}</button>)}
           {k === 2 && <>
             {grams.map((g) => <button key={g.id} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(g, 'gap', 10), g.title)}>Вправи: {g.title}</button>)}
+            {grams.map((g) => <button key={'e' + g.id} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(g, 'err', 10), 'Яке речення правильне?')}>Яке речення правильне: {g.title}</button>)}
             <button className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, 'gap', 10), 'Речення з пропуском')}>Речення з теми «{b.title}»</button>
           </>}
           {k === 3 && <>
             <button className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(poolFor(b, 'listen'), 'Питання до діалогів')}>Питання до діалогів</button>
             <button className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, 'order', 8), 'Склади речення')}>Склади речення</button>
+            <button className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, 'dict', 6), 'Диктант')}>Диктант: напиши, що почуєш</button>
             <button className="de-btn" style={{ margin: 0 }} onClick={() => setRun({ ids: testSet(b), title: 'Тест по блоку', after: (sc, cnt) => mark({ ex: (d.ex || 0) + 1, best: Math.max(Math.round(sc / cnt * 100), d.best || 0) }) })}>Тест по блоку «{b.title}»</button>
           </>}
         </div>
@@ -183,7 +186,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
           <div className="de-h2">Домашка {d.hwDone ? '✓' : ''}</div>
           <div className="de-card">
             <p>1) Вправи на повторення слів і граматики цього уроку. 2) Напиши 3 речення із новими словами, кожне з нового рядка. Зразок: застосунок не перевіряє письмо, звір себе.</p>
-            <button className="de-btn" onClick={() => { const ids = hw || homework(); if (!hw) mark({ hw: ids }); setRun({ ids, title: 'Домашка', after: () => mark({ hwDone: 1, hw: ids }) }) }}>{d.hwDone ? 'Пройти домашку ще раз' : 'Виконати вправи домашки'}</button>
+            <button className="de-btn" onClick={() => { const ids = hw || homework(); if (!hw) mark({ hw: ids }); setRun({ ids, title: 'Домашка', after: (sc, cnt) => { const pct = Math.round(sc / cnt * 100); mark({ hwDone: 1, hw: ids, hwPct: Math.max(pct, d.hwPct || 0), weak: 0 }) } }) }}>{d.hwDone ? 'Пройти домашку ще раз' : 'Виконати вправи домашки'}</button>
             <textarea className="de-search" rows={4} placeholder="Склади 3 речення (кожне з нового рядка)" value={d.write || ''} onChange={(e) => mark({ write: e.target.value })} style={{ width: '100%', marginTop: 8 }} />
             {(d.write || '').trim().split('\n').filter(Boolean).length >= 3 && <div className="de-dim" style={{ marginTop: 6 }}>Зразок для звірки:<br />{sample.map((x, i) => <div key={i}>{x.de}</div>)}</div>}
           </div>

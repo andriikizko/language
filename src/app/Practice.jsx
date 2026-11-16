@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { makeQuestion, speakAll } from './engine.js'
 import Tap from './Tap.jsx'
 
-const norm = (s) => s.trim().toLowerCase().replace(/^die\s+/, '')
+const norm = (s) => s.trim().toLowerCase().replace(/[.,!?;:«»"„“]/g, '').replace(/\s+/g, ' ').replace(/^die\s+/, '')
 
 export default function Practice({ ids, lang, tr = 'off', title, onAnswer, onDone, onBack }) {
   const qs = useMemo(() => ids.map((id) => makeQuestion(id, lang)).filter(Boolean), []) // eslint-disable-line
@@ -39,7 +39,7 @@ export default function Practice({ ids, lang, tr = 'off', title, onAnswer, onDon
       <div className="de-q-card">
         <div className="de-q-hint">{q.hint}</div>
         {q.text && <div className="de-card" style={{ whiteSpace: 'pre-line', marginBottom: 10 }}>{q.text}</div>}
-        {q.audio && <button className="de-btn ghost" style={{ margin: '0 0 10px' }} onClick={() => speakAll(q.audio)}>▶ Прослухати діалог (можна кілька разів)</button>}
+        {q.audio && <button className="de-btn ghost" style={{ margin: '0 0 10px' }} onClick={() => speakAll(q.audio)}>{q.audioLabel || '▶ Прослухати діалог (можна кілька разів)'}</button>}
         <div style={{ fontSize: 22, fontWeight: 800 }}>{q.de ? <Tap text={q.prompt} lang={lang} tr={tr} /> : q.prompt}</div>
         {q.sub && <div className="de-dim" style={{ marginTop: 6 }}>{q.sub}</div>}
       </div>
