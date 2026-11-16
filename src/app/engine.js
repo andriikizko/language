@@ -2,8 +2,11 @@ import nounsData from './data/nouns.json'
 import verbs from './data/verbs.json'
 import dict from './data/dict.json'
 import course from './data/course.json'
+import grammar from './data/grammar.json'
 
 export const BLOCKS = course
+export const GRAMMAR = grammar
+export const FREE_GRAMMAR = 4
 export const cleanDe = (s) => s.replace(/\d[\d,.\s]*[€%]?\s*\(([^)]+)\)/g, '$1').replace(/\s+/g, ' ').trim()
 export const FREE_BLOCKS = 3
 const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
@@ -15,7 +18,7 @@ const adjByDe = Object.fromEntries(dict.adj.map((a) => [a.de, a]))
 
 export const shuffle = (a) => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]] } return r }
 export const pick = (a, n) => shuffle(a).slice(0, n)
-export const blockById = (id) => BLOCKS.find((b) => b.id === id)
+export const blockById = (id) => BLOCKS.find((b) => b.id === id) || GRAMMAR.find((b) => b.id === id)
 
 export const blockWords = (b) => {
   const nouns = typeof b.nouns === 'string' ? nounsData.words.filter((w) => w.topic === b.nouns) : b.nouns.map((d) => byDe[d]).filter(Boolean)
@@ -103,6 +106,7 @@ export const makeQuestion = (id, lang) => {
 
 const wid = (mode, kind, it) => `w|${mode}|${idOf(kind, it)}`
 export const poolFor = (b, mode) => {
+  if (b.kind === 'grammar') return mode === 'gap' ? b.gaps.map((_, i) => `g|${b.id}|${i}`) : []
   const w = blockWords(b)
   const core = (x) => x.filter((i) => i.core)
   const nn = core(w.nouns).length >= 4 ? core(w.nouns) : w.nouns

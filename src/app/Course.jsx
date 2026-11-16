@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BLOCKS, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet } from './engine.js'
+import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet } from './engine.js'
 import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
 
@@ -62,6 +62,16 @@ export function Course({ st, update, lang, tr, onAns }) {
             </button>
           )
         })}
+        <div className="de-h2">Граматика A1</div>
+        {GRAMMAR.map((g, i) => {
+          const d = done[g.id] || {}; const lk = i >= FREE_GRAMMAR && !st.dev
+          return (
+            <button key={g.id} className={'de-blk' + (lk ? ' lock' : '')} onClick={() => !lk && setCur(g.id)}>
+              <span className="n">{i + 1}</span><span><b>{lang === 'ru' ? g.title_ru : g.title}</b><small>{g.sub}</small></span>
+              <span className="de-pill">{lk ? '🔒 Premium' : d.test != null ? d.test + '/6' : 'почати'}</span>
+            </button>
+          )
+        })}
         <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
           <span className="n">★</span><span><b>Фінальний тест</b><small>основні слова з усіх блоків</small></span>
           <span className="de-pill">{st.dev ? (st.final != null ? st.final + '%' : 'почати') : '🔒 Premium'}</span>
@@ -72,6 +82,16 @@ export function Course({ st, update, lang, tr, onAns }) {
 
   const b = blockById(cur)
   const d = done[b.id] || {}
+  if (b.kind === 'grammar') {
+    const ex = lang === 'ru' ? b.explain_ru : b.explain
+    return (
+      <>
+        <div className="de-row"><button className="de-back" onClick={() => setCur(null)}>‹</button><b style={{ fontSize: 17 }}>{lang === 'ru' ? b.title_ru : b.title}</b><span /></div>
+        <div className="de-card">{ex.map((x, i) => <div key={i}><h4>{x.h}</h4><p>{x.p}</p></div>)}</div>
+        <button className="de-btn" onClick={() => setRun({ ids: session(b, 'gap', 6), title: b.title, after: (sc) => mark(b.id, { test: Math.max(sc, d.test || 0) }) })}>Вправа: речення з пропуском</button>
+      </>
+    )
+  }
   const modes = [...MODES, ...(b.numq ? [['num', 'Числа цифрами']] : [])].filter(([m]) => poolFor(b, m).length >= 3)
   const start = (mode, title) => setRun({ ids: session(b, mode, 10), title, after: (sc, n) => mark(b.id, { ex: { ...(d.ex || {}), [mode]: Math.max(sc, (d.ex || {})[mode] || 0) } }) })
   const tog = (k) => { setOpen(open === k ? null : k); if (k === 'expl' || k === 'words') mark(b.id, { [k]: 1 }) }
@@ -80,8 +100,7 @@ export function Course({ st, update, lang, tr, onAns }) {
     <>
       <div className="de-row"><button className="de-back" onClick={() => setCur(null)}>‹</button><b style={{ fontSize: 17 }}>{b.title}</b><span /></div>
       <Acc title="Урок 1 · Пояснення" badge={d.expl ? '✓' : ''} open={open === 'expl'} onToggle={() => tog('expl')}>
-        {b.explain.map((s, i) => <div key={i}><h4>{s.h}</h4><p>{s.p}</p></div>)}
-        {lang === 'ru' && <div className="de-dim" style={{ marginTop: 10 }}>Російська версія пояснень буде додана пізніше.</div>}
+        {(lang === 'ru' && b.explain_ru ? b.explain_ru : b.explain).map((s, i) => <div key={i}><h4>{s.h}</h4><p>{s.p}</p></div>)}
       </Acc>
       <Acc title="Урок 1 · Слова блоку" badge={d.words ? '✓' : ''} open={open === 'words'} onToggle={() => tog('words')}><Words b={b} lang={lang} /></Acc>
       <Acc title="Урок 1 · Топік (вивчити напам'ять)" badge={d.topic ? '✓' : ''} open={open === 'topic'} onToggle={() => tog('topic')}>
