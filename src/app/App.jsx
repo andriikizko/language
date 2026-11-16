@@ -62,7 +62,7 @@ const ProfileSetup = ({ sess, onDone }) => {
     setErr('')
     const r = await post('/api/auth', { action: 'profile', login: sess.login, token: sess.token, ...f })
     if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
-    onDone(r.name)
+    onDone(r.name, f.consent)
   }
   return (
     <div className="de-auth">
@@ -82,7 +82,7 @@ const Auth = ({ onAuth, onGuest }) => {
   const onCred = async (credential) => {
     const r = await post('/api/auth', { action: 'google', credential })
     if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
-    onAuth({ token: r.token, login: r.login, name: r.name }, r.state, r.needProfile)
+    onAuth({ token: r.token, login: r.login, name: r.name }, r.state, r.needProfile, r.consent)
   }
   const [mode, setMode] = useState('login')
   const [f, setF] = useState({ login: '', password: '', email: '', phone: '', consent: false })
@@ -95,7 +95,7 @@ const Auth = ({ onAuth, onGuest }) => {
     const r = await post('/api/auth', body)
     setBusy(false)
     if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
-    onAuth({ token: r.token, login: r.login, name: r.name }, r.state)
+    onAuth({ token: r.token, login: r.login, name: r.name }, r.state, false, r.consent)
   }
   return (
     <div className="de-auth">
@@ -140,10 +140,10 @@ export default function App() {
     timer.current = setTimeout(() => post('/api/sync', { login: sess.login, token: sess.token, state: st }), 1200)
   }, [st]) // eslint-disable-line
 
-  const onAuth = (s, remote, np) => {
+  const onAuth = (s, remote, np, consent) => {
     localStorage.setItem(SKEY, JSON.stringify(s)); setSess(s)
     localStorage.removeItem('languages.guest'); setGuest(false)
-    if (remote) setSt(remote)
+    setSt({ ...(remote || {}), consent: !!consent })
     setNeedProfile(!!np)
   }
   const startGuest = () => { localStorage.setItem('languages.guest', '1'); setGuest(true) }
@@ -162,7 +162,7 @@ export default function App() {
 
   if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
   if (!sess && !guest) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} onGuest={startGuest} /></div></div>
-  if (sess && needProfile) return <div className="de-app"><div className="de-main"><ProfileSetup sess={sess} onDone={(name) => { const n = { ...sess, name }; localStorage.setItem(SKEY, JSON.stringify(n)); setSess(n); setNeedProfile(false) }} /></div></div>
+  if (sess && needProfile) return <div className="de-app"><div className="de-main"><ProfileSetup sess={sess} onDone={(name, c) => { update({ consent: !!c }); const n = { ...sess, name }; localStorage.setItem(SKEY, JSON.stringify(n)); setSess(n); setNeedProfile(false) }} /></div></div>
   const isGuest = !sess
   const Gate = () => (
     <div className="de-empty">

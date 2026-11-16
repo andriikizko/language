@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       rec.tokens = [...(rec.tokens || []), sha(token)].slice(-10)
       await cmd('SET', gkey, JSON.stringify(rec))
       const st = await cmd('GET', 's:' + email)
-      return res.status(200).json({ token, login: email, name: rec.name || '', needProfile: !rec.name || rec.consent === null, state: st ? JSON.parse(st) : null })
+      return res.status(200).json({ token, login: email, name: rec.name || '', needProfile: !rec.name || rec.consent === null, consent: rec.consent === true, state: st ? JSON.parse(st) : null })
     }
 
     // Дозаповнення профілю після Google-входу: ім'я, телефон, згода.
@@ -55,7 +55,7 @@ export default async function handler(req, res) {
       if (phone && !validPhone(phone)) return res.status(400).json({ error: 'bad_phone' })
       rec.name = name; rec.phone = phone; rec.consent = b.consent === true
       await cmd('SET', 'u:' + lg, JSON.stringify(rec))
-      return res.status(200).json({ ok: true, name })
+      return res.status(200).json({ ok: true, name, consent: rec.consent })
     }
     const raw = String((req.body || {}).login || '').trim()
     const login = raw.toLowerCase()
@@ -88,7 +88,7 @@ export default async function handler(req, res) {
       const rec = { login, name: raw, salt, hash: scrypt(password, salt), email, phone, consent, tokens: [sha(token)], created: Date.now() }
       const ok = await cmd('SET', key, JSON.stringify(rec), 'NX')
       if (!ok) return res.status(409).json({ error: 'exists' })
-      return res.status(200).json({ token, login, name: raw, state: null })
+      return res.status(200).json({ token, login, name: raw, consent, state: null })
     }
 
     if (action === 'login') {
@@ -106,7 +106,7 @@ export default async function handler(req, res) {
       rec.tokens = [...(rec.tokens || []), sha(token)].slice(-10)
       await cmd('SET', key, JSON.stringify(rec))
       const st = await cmd('GET', 's:' + login)
-      return res.status(200).json({ token, login, name: rec.name, state: st ? JSON.parse(st) : null })
+      return res.status(200).json({ token, login, name: rec.name, consent: rec.consent === true, state: st ? JSON.parse(st) : null })
     }
     return res.status(400).json({ error: 'bad_action' })
   } catch (e) {

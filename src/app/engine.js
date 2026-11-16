@@ -3,6 +3,9 @@ import verbs from './data/verbs.json'
 import dict from './data/dict.json'
 import course from './data/course.json'
 import grammar from './data/grammar.json'
+import exam from './data/exam.json'
+
+export const EXAM = exam
 
 export const BLOCKS = course
 export const GRAMMAR = grammar
@@ -101,6 +104,12 @@ export const makeQuestion = (id, lang) => {
     return { id, type: 'choice', hint: 'Діалог: «' + d.title + '»', prompt: q[lang], opts: idx.map((i) => q.o[i][lang]), correct: idx.indexOf(q.c),
       explain: `Правильна відповідь: ${q.o[q.c][lang]}.`, block: b.id, dialog: +r[1] }
   }
+  if (t === 'x') {
+    const x = exam[+r[0]]
+    const idx = x.o.length === 3 ? shuffle(x.o.map((_, i) => i)) : x.o.map((_, i) => i)
+    return { id, type: 'choice', hint: { lesen: 'Lesen', schreiben: 'Schreiben', hoeren: 'Hören' }[x.sec], prompt: x.q, text: x.text, audio: x.audio,
+      opts: idx.map((i) => x.o[i]), correct: idx.indexOf(x.c), explain: `Правильна відповідь: ${x.o[x.c]}.` }
+  }
   return null
 }
 
@@ -150,3 +159,4 @@ export const srsUpdate = (srs, id, ok) => {
   return { ...(srs || {}), [id]: { b: box, d: Date.now() + GAP[box] * 864e5 } }
 }
 export const srsDue = (srs) => Object.entries(srs || {}).filter(([, v]) => v.d <= Date.now()).map(([k]) => k)
+export const examIds = (sec) => EXAM.map((x, i) => [x, i]).filter(([x]) => x.sec === sec).map(([, i]) => 'x|' + i)

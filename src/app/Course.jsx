@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue } from './engine.js'
+import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue, examIds } from './engine.js'
 import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
 
@@ -72,6 +72,14 @@ export function Course({ st, update, lang, tr, onAns }) {
             </button>
           )
         })}
+        <div className="de-h2">Іспит у стилі Goethe A1</div>
+        {[['lesen', 'Lesen · читання', '15 завдань'], ['schreiben', 'Schreiben · письмо', 'анкета й повідомлення'], ['hoeren', 'Hören · слухання', '8 завдань, озвучення тимчасове']].map(([k, t, sub]) => (
+          <button key={k} className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: examIds(k), title: t, after: (sc, n) => update({ exam: { ...(st.exam || {}), [k]: Math.round(sc / n * 100) } }) })}>
+            <span className="n">✎</span><span><b>{t}</b><small>{sub}</small></span>
+            <span className="de-pill">{st.dev ? ((st.exam || {})[k] != null ? st.exam[k] + '%' : 'почати') : '🔒 Premium'}</span>
+          </button>
+        ))}
+        <div className="de-dim" style={{ margin: '4px 0 10px' }}>Складено, якщо кожна частина від 60%. Говоріння застосунок не перевіряє: тренуй діалоги з уроків вголос.</div>
         <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
           <span className="n">★</span><span><b>Фінальний тест</b><small>основні слова з усіх блоків</small></span>
           <span className="de-pill">{st.dev ? (st.final != null ? st.final + '%' : 'почати') : '🔒 Premium'}</span>
