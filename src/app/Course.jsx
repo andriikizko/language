@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { LEVELS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue, examIds } from './engine.js'
 import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
+import Words from './Words.jsx'
+import Tutor from './Tutor.jsx'
 
 const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
 
@@ -12,25 +14,6 @@ const Acc = ({ title, badge, open, onToggle, children }) => (
   </div>
 )
 
-const Words = ({ b, lang }) => {
-  const w = blockWords(b)
-  return (
-    <>
-      {w.nouns.length > 0 && <div className="de-h2">Іменники</div>}
-      {w.nouns.map((n) => (
-        <div key={n.de + n.g} className={'de-w' + (n.core ? ' core' : '')}><div className="de-w-t">
-          <div className="de-w-de"><span className={'de-g g-' + (n.g === 'p' ? 'f' : n.g)}>{ART[n.g]}</span><span>{n.de}</span>
-            <span className="de-w-pl">{n.g === 'p' ? '(лише мн.)' : n.pl ? 'die ' + n.pl : '—'}</span></div>
-          <div className="de-w-tr">{n[lang]}</div></div></div>
-      ))}
-      {w.adjs.length > 0 && <div className="de-h2">Прикметники</div>}
-      {w.adjs.map((a) => <div key={a.de} className={'de-w' + (a.core ? ' core' : '')}><div className="de-w-t"><div className="de-w-de"><span>{a.de}</span>{a.opp && <span className="de-w-pl">↔ {a.opp}</span>}</div><div className="de-w-tr">{a[lang]}</div></div></div>)}
-      {w.verbs.length > 0 && <div className="de-h2">Дієслова</div>}
-      {w.verbs.map((v) => <div key={v.de} className="de-w"><div className="de-w-t"><div className="de-w-de"><span>{v.de}</span></div><div className="de-w-tr">{v[lang]}</div><div className="de-w-pl" style={{ marginTop: 2 }}>{v.f[0]} · {v.f[1]} · {v.f[2]}</div></div></div>)}
-    </>
-  )
-}
-
 const MODES = [['order', 'Склади речення (з топіку)'], ['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина (вписати)'], ['gap', 'Речення з пропуском']]
 
 export function Course({ st, update, lang, tr, onAns }) {
@@ -38,6 +21,7 @@ export function Course({ st, update, lang, tr, onAns }) {
   const [open, setOpen] = useState('expl')
   const [run, setRun] = useState(null)
   const [prem, setPrem] = useState(false)
+  const [tutor, setTutor] = useState(false)
   const done = st.done || {}
   const mark = (id, patch) => update({ done: { ...done, [id]: { ...(done[id] || {}), ...patch } } })
 
@@ -49,6 +33,8 @@ export function Course({ st, update, lang, tr, onAns }) {
     return <Practice ids={run.ids} lang={lang} tr={tr} title={run.title} onAnswer={onAns}
       onBack={() => setRun(null)} onDone={(sc, n) => { run.after && run.after(sc, n); setRun(null) }} />
   }
+
+  if (tutor) return <Tutor st={st} update={update} lang={lang} tr={tr} onAns={onAns} level={level} onBack={() => setTutor(false)} onPrem={() => { setTutor(false); setPrem(true) }} />
 
   if (prem) {
     return (
@@ -73,7 +59,7 @@ export function Course({ st, update, lang, tr, onAns }) {
         <div className="de-hello">Курс німецької {L.name}</div>
         {LEVELS.a2.blocks.length > 0 && <div className="de-seg" style={{ width: 'fit-content', marginBottom: 10 }}>{Object.entries(LEVELS).filter(([, v]) => v.blocks.length).map(([k, v]) => <button key={k} className={level === k ? 'on' : ''} onClick={() => update({ level: k })}>{v.name}</button>)}</div>}
         <div className="de-dim" style={{ marginBottom: 12 }}>{L.free ? `Перші ${L.free} блоки безкоштовні, решта — за підпискою.` : 'Рівень доступний за підпискою.'}</div>
-        <div className="de-card" style={{ marginBottom: 12 }}><b>План на 13 тижнів</b><div className="de-dim">Тиждень на блок, 3 уроки: 1) пояснення, слова, топік; 2) вправи; 3) аудіювання й тест. 13-й тиждень — повторення й фінальний тест. Дивись у «Календарі».</div></div>
+        <button className="de-btn" style={{ marginBottom: 12 }} onClick={() => setTutor(true)}>▶ Курс-репетитор {L.name}: урок за уроком</button>
         {L.blocks.map((b, i) => {
           const d = done[b.id] || {}
           return (
