@@ -79,3 +79,68 @@ f|Zahnbürste|Zahnbürsten|зубна щітка|зубная щётка|0
 f|Seife|Seifen|мило|мыло|0
 n|Handtuch|Handtücher|рушник|полотенце|0
 f|Zahnpasta|Zahnpasten|зубна паста|зубная паста|0
+m|Körper|Körper|тіло|тело|0
+m|Kopf|Köpfe|голова|голова|0
+n|Gesicht|Gesichter|обличчя|лицо|0
+n|Auge|Augen|око|глаз|0
+f|Nase|Nasen|ніс|нос|0
+m|Mund|Münder|рот|рот|0
+n|Ohr|Ohren|вухо|ухо|0
+m|Zahn|Zähne|зуб|зуб|0
+f|Zunge|Zungen|язик|язык|0
+f|Lippe|Lippen|губа|губа|0
+n|Haar|Haare|волосся (волосина)|волос|0
+f|Stirn|Stirnen|лоб|лоб|0
+f|Wange|Wangen|щока|щека|0
+n|Kinn|Kinne|підборіддя|подбородок|0
+m|Hals|Hälse|шия|шея|0
+f|Schulter|Schultern|плече|плечо|0
+m|Arm|Arme|рука (від плеча)|рука (от плеча)|0
+m|Ellbogen|Ellbogen|лікоть|локоть|0
+f|Hand|Hände|кисть; рука|кисть; рука|0
+m|Finger|Finger|палець (руки)|палец (руки)|0
+m|Daumen|Daumen|великий палець|большой палец|0
+m|Rücken|Rücken|спина|спина|0
+f|Brust|Brüste|груди|грудь|0
+m|Bauch|Bäuche|живіт|живот|0
+n|Bein|Beine|нога|нога|0
+n|Knie|Knie|коліно|колено|0
+m|Fuß|Füße|стопа; нога (ступня)|ступня; нога|0
+m|Zeh|Zehen|палець (ноги)|палец (ноги)|0
+f|Haut|Häute|шкіра|кожа|0
+m|Knochen|Knochen|кістка|кость|0
+n|Herz|Herzen|серце|сердце|0
+f|Lunge|Lungen|легеня|лёгкое|0
+m|Magen|Mägen|шлунок|желудок|0
+n|Blut|-|кров|кровь|0
+n|Gehirn|Gehirne|мозок|мозг|0
+f|Stimme|Stimmen|голос|голос|0
+f|Gesundheit|-|здоровʼя|здоровье|0
+f|Krankheit|Krankheiten|хвороба|болезнь|0
+m|Schmerz|Schmerzen|біль|боль|0
+f|Erkältung|Erkältungen|застуда|простуда|0
+m|Husten|-|кашель|кашель|0
+m|Schnupfen|-|нежить|насморк|0
+n|Fieber|-|температура (жар)|температура (жар)|0
+f|Grippe|-|грип|грипп|0
+f|Allergie|Allergien|алергія|аллергия|0
+n|Medikament|Medikamente|ліки|лекарство|0
+f|Tablette|Tabletten|таблетка|таблетка|0
+n|Rezept|Rezepte|рецепт (лікарський)|рецепт (врачебный)|0
+f|Salbe|Salben|мазь|мазь|0
+m|Verband|Verbände|пов'язка|повязка|0
+f|Spritze|Spritzen|укол; шприц|укол; шприц|0
+m|Termin|Termine|прийом; зустріч|приём; встреча|0
+m|Arzt|Ärzte|лікар|врач|0
+f|Ärztin|Ärztinnen|лікарка|врач (жен.)|0
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|0
+f|Praxis|Praxen|лікарський кабінет|врачебный кабинет|0
+m|Notfall|Notfälle|невідкладний випадок|неотложный случай|0
+m|Unfall|Unfälle|нещасний випадок; аварія|несчастный случай; авария|0
+f|Verletzung|Verletzungen|травма|травма|0
+f|Wunde|Wunden|рана|рана|0
+m|Schlaf|-|сон|сон|0
+f|Ruhe|-|спокій; відпочинок|покой; отдых|0
+f|Kraft|Kräfte|сила|сила|0
+n|Gewicht|Gewichte|вага|вес|0
+f|Größe|Größen|зріст; розмір|рост; размер|0

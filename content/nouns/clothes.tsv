@@ -50,3 +50,61 @@ n|Muster|Muster|візерунок|узор|0
 f|Mode|Moden|мода|мода|0
 m|Helm|Helme|шолом, каска|шлем, каска|0
 f|Schutzbrille|Schutzbrillen|захисні окуляри|защитные очки|0
+f|Kleidung|-|одяг|одежда|0
+n|Hemd|Hemden|сорочка|рубашка|0
+f|Bluse|Blusen|блузка|блузка|0
+n|T-Shirt|T-Shirts|футболка|футболка|0
+m|Pullover|Pullover|светр|свитер|0
+f|Jacke|Jacken|куртка; піджак|куртка; пиджак|0
+m|Mantel|Mäntel|пальто|пальто|0
+m|Anzug|Anzüge|костюм|костюм|0
+n|Kleid|Kleider|сукня|платье|0
+m|Rock|Röcke|спідниця|юбка|0
+f|Hose|Hosen|штани|брюки|0
+f|Jeans|Jeans|джинси|джинсы|0
+p|Shorts|-|шорти|шорты|0
+m|Schal|Schals|шарф|шарф|0
+f|Mütze|Mützen|шапка|шапка|0
+m|Handschuh|Handschuhe|рукавичка|перчатка|0
+f|Socke|Socken|шкарпетка|носок|0
+m|Strumpf|Strümpfe|панчоха|чулок|0
+m|Schuh|Schuhe|взуття (черевик)|туфля; ботинок|0
+m|Stiefel|Stiefel|чобіт|сапог|0
+m|Turnschuh|Turnschuhe|кросівок|кроссовка|0
+f|Sandale|Sandalen|сандалія|сандалия|0
+m|Gürtel|Gürtel|ремінь|ремень|0
+f|Krawatte|Krawatten|краватка|галстук|0
+f|Unterwäsche|-|нижня білизна|нижнее бельё|0
+m|Pyjama|Pyjamas|піжама|пижама|0
+m|Badeanzug|Badeanzüge|купальник|купальник|0
+f|Badehose|Badehosen|плавки|плавки|0
+f|Brille|Brillen|окуляри|очки|0
+f|Sonnenbrille|Sonnenbrillen|сонцезахисні окуляри|солнцезащитные очки|0
+f|Tasche|Taschen|сумка|сумка|0
+m|Rucksack|Rucksäcke|рюкзак|рюкзак|0
+f|Handtasche|Handtaschen|жіноча сумка|женская сумка|0
+m|Koffer|Koffer|валіза|чемодан|0
+m|Regenschirm|Regenschirme|парасолька|зонт|0
+f|Uhr|Uhren|годинник|часы|0
+m|Ring|Ringe|перстень; каблучка|кольцо|0
+f|Kette|Ketten|ланцюжок; намисто|цепочка; ожерелье|0
+n|Armband|Armbänder|браслет|браслет|0
+m|Ohrring|Ohrringe|сережка|серьга|0
+f|Größe|Größen|розмір|размер|0
+f|Farbe|Farben|колір|цвет|0
+m|Stoff|Stoffe|тканина|ткань|0
+f|Wolle|-|вовна|шерсть|0
+f|Baumwolle|-|бавовна|хлопок|0
+n|Leder|-|шкіра (матеріал)|кожа (материал)|0
+f|Tasche|Taschen|кишеня; сумка|карман; сумка|0
+m|Knopf|Knöpfe|ґудзик|пуговица|0
+m|Reißverschluss|Reißverschlüsse|блискавка (застібка)|молния (застёжка)|0
+m|Kragen|Kragen|комір|воротник|0
+m|Ärmel|Ärmel|рукав|рукав|0
+f|Umkleidekabine|Umkleidekabinen|примірювальна|примерочная|0
+n|Sonderangebot|Sonderangebote|акція; спецпропозиція|акция; спецпредложение|0
+m|Preis|Preise|ціна|цена|0
+m|Rabatt|Rabatte|знижка|скидка|0
+f|Mode|Moden|мода|мода|0
+m|Geschmack|Geschmäcke|смак (уподобання)|вкус (предпочтения)|0
+n|Paar|Paare|пара (взуття)|пара (обуви)|0

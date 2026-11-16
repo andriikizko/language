@@ -58,3 +58,53 @@ f|Dauer|-|тривалість|продолжительность|0
 f|Gegenwart|-|теперішнє|настоящее|0
 f|Vergangenheit|-|минуле|прошлое|0
 f|Zukunft|-|майбутнє|будущее|0
+m|Tag|Tage|день|день|0
+f|Woche|Wochen|тиждень|неделя|0
+m|Monat|Monate|місяць|месяц|0
+n|Jahr|Jahre|рік|год|0
+n|Wochenende|Wochenenden|вихідні|выходные|0
+m|Morgen|Morgen|ранок|утро|0
+m|Vormittag|Vormittage|час до обіду|время до обеда|0
+m|Mittag|Mittage|полудень|полдень|0
+m|Nachmittag|Nachmittage|післяобідній час|время после обеда|0
+m|Abend|Abende|вечір|вечер|0
+f|Nacht|Nächte|ніч|ночь|0
+f|Mitternacht|-|північ|полночь|0
+f|Stunde|Stunden|година|час (60 хв)|0
+f|Minute|Minuten|хвилина|минута|0
+f|Sekunde|Sekunden|секунда|секунда|0
+f|Uhrzeit|Uhrzeiten|час (на годиннику)|время (по часам)|0
+f|Zeit|Zeiten|час; час (поняття)|время|0
+n|Datum|Daten|дата|дата|0
+m|Kalender|Kalender|календар|календарь|0
+m|Termin|Termine|термін; зустріч|срок; встреча|0
+m|Frühling|Frühlinge|весна|весна|0
+m|Sommer|Sommer|літо|лето|0
+m|Herbst|Herbste|осінь|осень|0
+m|Winter|Winter|зима|зима|0
+f|Jahreszeit|Jahreszeiten|пора року|время года|0
+m|Feiertag|Feiertage|святковий день|праздничный день|0
+m|Urlaubstag|Urlaubstage|день відпустки|день отпуска|0
+n|Weihnachten|-|Різдво (католицьке)|Рождество (католическое)|0
+n|Ostern|-|Великдень|Пасха|0
+n|Neujahr|-|Новий рік|Новый год|0
+m|Silvester|-|Новорічна ніч (31 грудня)|Новогодняя ночь (31 декабря)|0
+f|Vergangenheit|-|минуле|прошлое|0
+f|Gegenwart|-|теперішнє|настоящее|0
+f|Zukunft|-|майбутнє|будущее|0
+m|Anfang|Anfänge|початок|начало|0
+n|Ende|Enden|кінець|конец|0
+f|Mitte|-|середина|середина|0
+f|Pause|Pausen|перерва|перерыв|0
+m|Feierabend|Feierabende|кінець робочого дня|конец рабочего дня|0
+m|Stundenplan|Stundenpläne|розклад (уроків)|расписание (уроков)|0
+m|Zeitplan|Zeitpläne|графік; план за часом|график; план по времени|0
+f|Verspätung|Verspätungen|запізнення|опоздание|0
+n|Wetter|-|погода|погода|0
+f|Sonne|Sonnen|сонце|солнце|0
+m|Regen|-|дощ|дождь|0
+m|Schnee|-|сніг|снег|0
+m|Wind|Winde|вітер|ветер|0
+f|Wolke|Wolken|хмара|облако|0
+f|Temperatur|Temperaturen|температура|температура|0
+m|Grad|Grade|градус|градус|0

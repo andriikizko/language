@@ -6,8 +6,8 @@ export default function Words({ b, lang }) {
   const w = blockWords(b)
   return (
     <>
-      {w.nouns.length > 0 && <div className="de-h2">Іменники</div>}
-      {w.nouns.map((n) => (
+      {w.nouns.length > 0 && <div className="de-h2">Іменники · основні</div>}
+      {[...w.nouns.filter((n) => n.core), ...(w.nouns.some((n) => n.core) && w.nouns.some((n) => !n.core) ? [{ sep: 1 }] : []), ...w.nouns.filter((n) => !n.core)].map((n) => n.sep ? <div key="sep" className="de-h2">Іменники · додаткові</div> : (
         <div key={n.de + n.g} className={'de-w' + (n.core ? ' core' : '')}><div className="de-w-t">
           <div className="de-w-de"><span className={'de-g g-' + (n.g === 'p' ? 'f' : n.g)}>{ART[n.g]}</span><span>{n.de}</span>
             <span className="de-w-pl">{n.g === 'p' ? '(лише мн.)' : n.pl ? 'die ' + n.pl : '—'}</span></div>

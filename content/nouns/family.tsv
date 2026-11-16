@@ -54,3 +54,63 @@ n|Alter|-|вік|возраст|0
 f|Hochzeit|Hochzeiten|весілля|свадьба|0
 f|Witwe|Witwen|вдова|вдова|0
 m|Witwer|Witwer|вдівець|вдовец|0
+p|Geschwister|-|брати й сестри|братья и сёстры|0
+f|Oma|Omas|бабуся|бабушка|0
+m|Opa|Opas|дідусь|дедушка|0
+f|Großmutter|Großmütter|бабуся (повне слово)|бабушка (полное слово)|0
+m|Großvater|Großväter|дідусь (повне слово)|дедушка (полное слово)|0
+m|Enkel|Enkel|онук|внук|0
+f|Enkelin|Enkelinnen|онука|внучка|0
+m|Onkel|Onkel|дядько|дядя|0
+f|Tante|Tanten|тітка|тётя|0
+m|Cousin|Cousins|двоюрідний брат|двоюродный брат|0
+f|Cousine|Cousinen|двоюрідна сестра|двоюродная сестра|0
+m|Neffe|Neffen|племінник|племянник|0
+f|Nichte|Nichten|племінниця|племянница|0
+m|Ehemann|Ehemänner|чоловік (у шлюбі)|муж|0
+f|Ehefrau|Ehefrauen|дружина|жена|0
+n|Baby|Babys|немовля|младенец|0
+m|Junge|Jungen|хлопчик|мальчик|0
+n|Mädchen|Mädchen|дівчинка|девочка|0
+m|Nachbar|Nachbarn|сусід|сосед|0
+f|Nachbarin|Nachbarinnen|сусідка|соседка|0
+f|Schwiegermutter|Schwiegermütter|свекруха; теща|свекровь; тёща|0
+m|Schwiegervater|Schwiegerväter|свекор; тесть|свёкор; тесть|0
+m|Schwager|Schwäger|шурин; зять (брат чоловіка/дружини)|шурин; свояк|0
+f|Schwägerin|Schwägerinnen|невістка (сестра чоловіка/дружини)|золовка; свояченица|0
+m|Zwilling|Zwillinge|близнюк|близнец|0
+n|Paar|Paare|пара|пара|0
+f|Hochzeit|Hochzeiten|весілля|свадьба|0
+m|Geburtstag|Geburtstage|день народження|день рождения|0
+n|Alter|-|вік|возраст|0
+n|Leben|Leben|життя|жизнь|0
+f|Kindheit|-|дитинство|детство|0
+f|Jugend|-|молодість|молодость|0
+m|Name|Namen|імʼя|имя|0
+m|Vorname|Vornamen|імʼя (особисте)|имя (личное)|0
+m|Nachname|Nachnamen|прізвище|фамилия|0
+n|Haustier|Haustiere|домашня тварина|домашнее животное|0
+m|Vogel|Vögel|птах|птица|0
+n|Pferd|Pferde|кінь|лошадь|0
+n|Kaninchen|Kaninchen|кролик|кролик|0
+m|Hamster|Hamster|хомʼяк|хомяк|0
+m|Gast|Gäste|гість|гость|0
+m|Besuch|Besuche|візит; гості|визит; гости|0
+m|Mitbewohner|Mitbewohner|сусід по квартирі|сосед по квартире|0
+m|Partner|Partner|партнер|партнёр|0
+f|Partnerin|Partnerinnen|партнерка|партнёрша|0
+m|Kollege|Kollegen|колега|коллега|0
+f|Kollegin|Kolleginnen|колега (жін.)|коллега (жен.)|0
+m|Chef|Chefs|начальник|начальник|0
+f|Beziehung|Beziehungen|стосунки|отношения|0
+f|Liebe|-|кохання|любовь|0
+m|Streit|-|сварка|ссора|0
+n|Geschenk|Geschenke|подарунок|подарок|0
+f|Einladung|Einladungen|запрошення|приглашение|0
+f|Feier|Feiern|святкування|праздник; вечеринка|0
+f|Party|Partys|вечірка|вечеринка|0
+m|Wunsch|Wünsche|бажання|желание|0
+m|Spaß|-|задоволення; веселощі|удовольствие; веселье|0
+m|Freundeskreis|Freundeskreise|коло друзів|круг друзей|0
+f|Heimat|-|батьківщина; рідні краї|родина; родные края|0
+f|Generation|Generationen|покоління|поколение|0

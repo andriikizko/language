@@ -75,3 +75,77 @@ f|Wolke|Wolken|хмара|облако|0
 n|Gewitter|Gewitter|гроза|гроза|0
 f|Temperatur|Temperaturen|температура|температура|0
 m|Urlauber|Urlauber|відпочивальник|отдыхающий|0
+n|Hobby|Hobbys|хобі|хобби|0
+f|Freizeit|-|вільний час|свободное время|0
+m|Sport|-|спорт|спорт|0
+n|Training|Trainings|тренування|тренировка|0
+m|Verein|Vereine|клуб; товариство|клуб; общество|0
+f|Mannschaft|Mannschaften|команда|команда|0
+m|Fußball|Fußbälle|футбол; футбольний мʼяч|футбол; футбольный мяч|0
+m|Ball|Bälle|мʼяч|мяч|0
+n|Tennis|-|теніс|теннис|0
+n|Schwimmen|-|плавання|плавание|0
+n|Laufen|-|біг|бег|0
+n|Joggen|-|джогінг|джоггинг|0
+n|Radfahren|-|їзда на велосипеді|езда на велосипеде|0
+n|Wandern|-|піший похід|пеший поход|0
+n|Skifahren|-|катання на лижах|катание на лыжах|0
+n|Yoga|-|йога|йога|0
+n|Fitnessstudio|Fitnessstudios|фітнес-зал|фитнес-зал|0
+f|Musik|-|музика|музыка|0
+n|Konzert|Konzerte|концерт|концерт|0
+n|Lied|Lieder|пісня|песня|0
+f|Band|Bands|гурт|группа|0
+f|Gitarre|Gitarren|гітара|гитара|0
+n|Klavier|Klaviere|піаніно|пианино|0
+f|Geige|Geigen|скрипка|скрипка|0
+n|Instrument|Instrumente|інструмент (музичний)|инструмент (музыкальный)|0
+m|Tanz|Tänze|танець|танец|0
+n|Buch|Bücher|книга|книга|0
+m|Roman|Romane|роман|роман|0
+f|Zeitung|Zeitungen|газета|газета|0
+f|Zeitschrift|Zeitschriften|журнал|журнал|0
+m|Film|Filme|фільм|фильм|0
+f|Serie|Serien|серіал|сериал|0
+f|Sendung|Sendungen|передача|передача|0
+n|Programm|Programme|програма (ТБ)|программа (ТВ)|0
+n|Theater|Theater|театр|театр|0
+f|Ausstellung|Ausstellungen|виставка|выставка|0
+n|Museum|Museen|музей|музей|0
+n|Foto|Fotos|фото|фото|0
+n|Gemälde|Gemälde|картина (живопис)|картина (живопись)|0
+f|Kunst|Künste|мистецтво|искусство|0
+n|Spiel|Spiele|гра|игра|0
+n|Brettspiel|Brettspiele|настільна гра|настольная игра|0
+n|Schach|-|шахи|шахматы|0
+f|Karte|Karten|карта; картка|карта; карточка|0
+n|Rätsel|Rätsel|загадка; головоломка|загадка; головоломка|0
+m|Garten|Gärten|сад|сад|0
+f|Pflanze|Pflanzen|рослина|растение|0
+n|Kochen|-|готування їжі|приготовление пищи|0
+n|Backen|-|випікання|выпечка|0
+f|Reise|Reisen|подорож|путешествие|0
+m|Urlaub|Urlaube|відпустка|отпуск|0
+m|Ausflug|Ausflüge|екскурсія; поїздка|экскурсия; поездка|0
+m|Strand|Strände|пляж|пляж|0
+n|Meer|Meere|море|море|0
+m|See|Seen|озеро|озеро|0
+m|Berg|Berge|гора|гора|0
+m|Wald|Wälder|ліс|лес|0
+m|Fluss|Flüsse|річка|река|0
+f|Natur|-|природа|природа|0
+n|Zelt|Zelte|намет|палатка|0
+n|Camping|-|кемпінг|кемпинг|0
+f|Angel|Angeln|вудка|удочка|0
+n|Angeln|-|риболовля|рыбалка|0
+m|Spaziergang|Spaziergänge|прогулянка|прогулка|0
+f|Party|Partys|вечірка|вечеринка|0
+n|Fest|Feste|свято|праздник|0
+f|Veranstaltung|Veranstaltungen|захід; подія|мероприятие; событие|0
+f|Einladung|Einladungen|запрошення|приглашение|0
+f|Lust|-|бажання; охота|желание; охота|0
+m|Spaß|-|задоволення|удовольствие|0
+f|Langeweile|-|нудьга|скука|0
+m|Wunsch|Wünsche|бажання|желание|0
+m|Traum|Träume|мрія; сон|мечта; сон|0
+f|Idee|Ideen|ідея|идея|0

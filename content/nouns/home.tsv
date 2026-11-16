@@ -59,3 +59,82 @@ m|Mieter|Mieter|орендар|арендатор, жилец|0
 p|Nebenkosten|Nebenkosten|комунальні витрати|коммунальные расходы|0
 f|Kaution|Kautionen|застава (депозит)|залог (депозит)|0
 f|Hausordnung|Hausordnungen|правила проживання в будинку|правила проживания в доме|0
+n|Haus|Häuser|будинок|дом|0
+f|Wohnung|Wohnungen|квартира|квартира|0
+n|Zimmer|Zimmer|кімната|комната|0
+n|Wohnzimmer|Wohnzimmer|вітальня|гостиная|0
+n|Schlafzimmer|Schlafzimmer|спальня|спальня|0
+n|Kinderzimmer|Kinderzimmer|дитяча кімната|детская комната|0
+n|Badezimmer|Badezimmer|ванна кімната|ванная комната|0
+f|Küche|Küchen|кухня|кухня|0
+f|Toilette|Toiletten|туалет|туалет|0
+m|Flur|Flure|коридор|коридор|0
+m|Balkon|Balkone|балкон|балкон|0
+m|Keller|Keller|підвал|подвал|0
+m|Dachboden|Dachböden|горище|чердак|0
+f|Garage|Garagen|гараж|гараж|0
+m|Garten|Gärten|сад|сад|0
+f|Treppe|Treppen|сходи|лестница|0
+m|Aufzug|Aufzüge|ліфт|лифт|0
+f|Tür|Türen|двері|дверь|0
+n|Fenster|Fenster|вікно|окно|0
+f|Wand|Wände|стіна|стена|0
+m|Boden|Böden|підлога; ґрунт|пол; почва|0
+f|Decke|Decken|стеля; ковдра|потолок; одеяло|0
+n|Dach|Dächer|дах|крыша|0
+m|Schlüssel|Schlüssel|ключ|ключ|0
+f|Klingel|Klingeln|дзвінок (дверний)|звонок (дверной)|0
+m|Briefkasten|Briefkästen|поштова скринька|почтовый ящик|0
+m|Tisch|Tische|стіл|стол|0
+m|Stuhl|Stühle|стілець|стул|0
+n|Sofa|Sofas|диван|диван|0
+m|Sessel|Sessel|крісло|кресло|0
+n|Bett|Betten|ліжко|кровать|0
+m|Schrank|Schränke|шафа|шкаф|0
+n|Regal|Regale|полиця|полка|0
+f|Kommode|Kommoden|комод|комод|0
+m|Spiegel|Spiegel|дзеркало|зеркало|0
+m|Teppich|Teppiche|килим|ковёр|0
+m|Vorhang|Vorhänge|штора|штора|0
+f|Lampe|Lampen|лампа|лампа|0
+n|Licht|Lichter|світло|свет|0
+f|Kerze|Kerzen|свічка|свеча|0
+n|Kissen|Kissen|подушка|подушка|0
+f|Decke|Decken|ковдра|одеяло|0
+f|Pflanze|Pflanzen|рослина|растение|0
+f|Blume|Blumen|квітка|цветок|0
+f|Vase|Vasen|ваза|ваза|0
+n|Bild|Bilder|картина; фото|картина; фото|0
+f|Uhr|Uhren|годинник|часы|0
+m|Herd|Herde|плита|плита|0
+m|Backofen|Backöfen|духовка|духовка|0
+f|Mikrowelle|Mikrowellen|мікрохвильовка|микроволновка|0
+m|Kühlschrank|Kühlschränke|холодильник|холодильник|0
+m|Gefrierschrank|Gefrierschränke|морозильник|морозильник|0
+f|Spülmaschine|Spülmaschinen|посудомийна машина|посудомоечная машина|0
+f|Waschmaschine|Waschmaschinen|пральна машина|стиральная машина|0
+m|Staubsauger|Staubsauger|пилосос|пылесос|0
+m|Wasserkocher|Wasserkocher|електрочайник|электрочайник|0
+f|Kaffeemaschine|Kaffeemaschinen|кавоварка|кофеварка|0
+m|Topf|Töpfe|каструля|кастрюль|0
+f|Pfanne|Pfannen|сковорідка|сковорода|0
+f|Schüssel|Schüsseln|миска|миска|0
+n|Besteck|Besteck|столові прибори|столовые приборы|0
+n|Geschirr|-|посуд|посуда|0
+n|Handtuch|Handtücher|рушник|полотенце|0
+f|Seife|Seifen|мило|мыло|0
+n|Shampoo|Shampoos|шампунь|шампунь|0
+f|Zahnbürste|Zahnbürsten|зубна щітка|зубная щётка|0
+f|Zahnpasta|Zahnpasten|зубна паста|зубная паста|0
+f|Dusche|Duschen|душ|душ|0
+f|Badewanne|Badewannen|ванна|ванна|0
+n|Waschbecken|Waschbecken|умивальник|раковина|0
+f|Heizung|Heizungen|опалення|отопление|0
+f|Miete|Mieten|оренда; квартплата|аренда; квартплата|0
+m|Vermieter|Vermieter|орендодавець|арендодатель|0
+m|Mieter|Mieter|орендар|арендатор; жилец|0
+m|Umzug|Umzüge|переїзд|переезд|0
+f|Möbel|-|меблі|мебель|0
+m|Müll|-|сміття|мусор|0
+m|Eimer|Eimer|відро|ведро|0
+m|Besen|Besen|мітла|метла|0

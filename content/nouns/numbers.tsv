@@ -48,3 +48,47 @@ n|Drittel|Drittel|третина|треть|0
 n|Hundert|Hunderte|сотня|сотня|0
 m|Rest|Reste|залишок|остаток|0
 f|Zeile|Zeilen|рядок|строка|0
+f|Zahl|Zahlen|число|число|0
+f|Ziffer|Ziffern|цифра|цифра|0
+f|Nummer|Nummern|номер|номер|0
+n|Mal|Male|раз|раз|0
+f|Hälfte|Hälften|половина|половина|0
+n|Viertel|Viertel|чверть|четверть|0
+n|Drittel|Drittel|третина|треть|0
+n|Dutzend|Dutzende|десяток; дюжина|дюжина|0
+n|Paar|Paare|пара|пара|0
+f|Menge|Mengen|кількість|количество|0
+f|Summe|Summen|сума|сумма|0
+f|Rechnung|Rechnungen|рахунок (до оплати)|счёт (к оплате)|0
+m|Preis|Preise|ціна|цена|0
+m|Euro|Euro|євро|евро|0
+m|Cent|Cent|цент|цент|0
+n|Geld|Gelder|гроші|деньги|0
+n|Kleingeld|-|дрібні гроші|мелочь|0
+m|Schein|Scheine|банкнота|банкнота|0
+f|Münze|Münzen|монета|монета|0
+f|Karte|Karten|картка (банківська)|карта (банковская)|0
+f|Bezahlung|-|оплата|оплата|0
+m|Rabatt|Rabatte|знижка|скидка|0
+n|Prozent|Prozente|відсоток|процент|0
+f|Steuer|Steuern|податок|налог|0
+m|Gewinn|Gewinne|прибуток; виграш|прибыль; выигрыш|0
+m|Verlust|Verluste|втрата; збиток|потеря; убыток|0
+n|Gewicht|Gewichte|вага|вес|0
+n|Kilo|Kilos|кілограм|килограмм|0
+n|Gramm|Gramme|грам|грамм|0
+n|Pfund|Pfunde|півкілограма (фунт)|полкило (фунт)|0
+m|Liter|Liter|літр|литр|0
+m|Meter|Meter|метр|метр|0
+m|Kilometer|Kilometer|кілометр|километр|0
+m|Zentimeter|Zentimeter|сантиметр|сантиметр|0
+f|Länge|Längen|довжина|длина|0
+f|Breite|Breiten|ширина|ширина|0
+f|Höhe|Höhen|висота|высота|0
+f|Entfernung|Entfernungen|відстань|расстояние|0
+m|Quadratmeter|Quadratmeter|квадратний метр|квадратный метр|0
+f|Temperatur|Temperaturen|температура|температура|0
+m|Durchschnitt|Durchschnitte|середнє значення|среднее значение|0
+f|Mehrheit|Mehrheiten|більшість|большинство|0
+f|Reihenfolge|Reihenfolgen|черга; послідовність|очерёдность; последовательность|0
+m|Rest|Reste|залишок|остаток|0

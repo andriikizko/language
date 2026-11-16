@@ -77,3 +77,93 @@ n|Restaurant|Restaurants|ресторан|ресторан|0
 n|Café|Cafés|кафе|кафе|0
 f|Bäckerei|Bäckereien|пекарня|пекарня|0
 f|Metzgerei|Metzgereien|м'ясна крамниця|мясная лавка|0
+n|Gemüse|-|овочі|овощи|0
+n|Obst|-|фрукти|фрукты|0
+f|Gurke|Gurken|огірок|огурец|0
+f|Paprika|Paprikas|перець (болгарський)|перец (болгарский)|0
+f|Zwiebel|Zwiebeln|цибуля|лук|0
+m|Knoblauch|-|часник|чеснок|0
+m|Pilz|Pilze|гриб|гриб|0
+m|Salat|Salate|салат|салат|0
+m|Spinat|-|шпинат|шпинат|0
+m|Kohl|-|капуста|капуста|0
+f|Erbse|Erbsen|горошок|горох|0
+f|Bohne|Bohnen|квасоля|фасоль|0
+m|Mais|-|кукурудза|кукуруза|0
+f|Karotte|Karotten|морква|морковь|0
+f|Zitrone|Zitronen|лимон|лимон|0
+f|Orange|Orangen|апельсин|апельсин|0
+f|Birne|Birnen|груша|груша|0
+f|Erdbeere|Erdbeeren|полуниця|клубника|0
+f|Kirsche|Kirschen|вишня; черешня|вишня; черешня|0
+f|Pflaume|Pflaumen|слива|слива|0
+f|Traube|Trauben|виноград (ягода)|виноград (ягода)|0
+f|Melone|Melonen|диня|дыня|0
+f|Ananas|Ananas|ананас|ананас|0
+m|Pfirsich|Pfirsiche|персик|персик|0
+f|Mandarine|Mandarinen|мандарин|мандарин|0
+f|Nuss|Nüsse|горіх|орех|0
+m|Honig|-|мед|мёд|0
+f|Marmelade|Marmeladen|джем|варенье; джем|0
+m|Zucker|-|цукор|сахар|0
+n|Salz|-|сіль|соль|0
+m|Pfeffer|-|перець (чорний)|перец (чёрный)|0
+n|Öl|Öle|олія|масло (растительное)|0
+m|Essig|-|оцет|уксус|0
+f|Soße|Soßen|соус|соус|0
+m|Ketchup|Ketchups|кетчуп|кетчуп|0
+m|Senf|-|гірчиця|горчица|0
+n|Mehl|-|борошно|мука|0
+f|Nudel|Nudeln|макарони; локшина|макароны; лапша|0
+m|Reis|-|рис|рис|0
+f|Kartoffel|Kartoffeln|картопля|картофель|0
+p|Pommes|-|картопля фрі|картофель фри|0
+f|Suppe|Suppen|суп|суп|0
+m|Eintopf|Eintöpfe|густий суп; рагу|густой суп; рагу|0
+n|Fleisch|-|м'ясо|мясо|0
+n|Rindfleisch|-|яловичина|говядина|0
+n|Schweinefleisch|-|свинина|свинина|0
+n|Hähnchen|Hähnchen|курча|курица|0
+m|Schinken|Schinken|шинка|ветчина|0
+n|Hackfleisch|-|фарш|фарш|0
+m|Fisch|Fische|риба|рыба|0
+m|Lachs|Lachse|лосось|лосось|0
+f|Garnele|Garnelen|креветка|креветка|0
+n|Ei|Eier|яйце|яйцо|0
+f|Milch|-|молоко|молоко|0
+f|Sahne|-|вершки|сливки|0
+m|Quark|-|сир кисломолочний|творог|0
+m|Jogurt|Jogurts|йогурт|йогурт|0
+n|Eis|-|морозиво; лід|мороженое; лёд|0
+m|Kuchen|Kuchen|пиріг; торт|пирог; торт|0
+f|Torte|Torten|торт|торт|0
+m|Keks|Kekse|печиво|печенье|0
+f|Schokolade|Schokoladen|шоколад|шоколад|0
+n|Bonbon|Bonbons|цукерка|конфета|0
+p|Chips|-|чипси|чипсы|0
+f|Pizza|Pizzen|піца|пицца|0
+m|Burger|Burger|бургер|бургер|0
+n|Sandwich|Sandwiches|сендвіч|сэндвич|0
+n|Frühstück|Frühstücke|сніданок|завтрак|0
+n|Mittagessen|Mittagessen|обід|обед|0
+n|Abendessen|Abendessen|вечеря|ужин|0
+f|Vorspeise|Vorspeisen|закуска|закуска|0
+m|Nachtisch|Nachtische|десерт|десерт|0
+n|Getränk|Getränke|напій|напиток|0
+n|Mineralwasser|-|мінеральна вода|минеральная вода|0
+f|Limonade|Limonaden|лимонад|лимонад|0
+n|Bier|Biere|пиво|пиво|0
+m|Wein|Weine|вино|вино|0
+m|Saft|Säfte|сік|сок|0
+m|Kakao|-|какао|какао|0
+n|Glas|Gläser|склянка; скло|стакан; стекло|0
+f|Tasse|Tassen|чашка|чашка|0
+m|Teller|Teller|тарілка|тарелка|0
+m|Löffel|Löffel|ложка|ложка|0
+f|Gabel|Gabeln|виделка|вилка|0
+n|Messer|Messer|ніж|нож|0
+f|Flasche|Flaschen|пляшка|бутылка|0
+f|Dose|Dosen|консервна банка|консервная банка|0
+f|Packung|Packungen|пачка; упаковка|пачка; упаковка|0
+m|Hunger|-|голод|голод|0
+m|Durst|-|спрага|жажда|0
