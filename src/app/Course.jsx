@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet } from './engine.js'
+import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue } from './engine.js'
 import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
 
@@ -145,18 +145,25 @@ export function Errors({ st, update, lang, tr }) {
   const ids = Object.keys(err)
   const onAnswer = (id, ok) => {
     const e = { ...(st.err || {}) }
+    if (id in e || run?.srs) update({ srs: srsUpdate(st.srs, id, ok) })
     if (!(id in e)) return
     if (ok) { e[id] = (e[id] || 0) + 1; if (e[id] >= 5) delete e[id] } else e[id] = 0
     update({ err: e })
   }
-  if (run) return <Practice ids={run} lang={lang} tr={tr} title="Робота над помилками" onAnswer={onAnswer} onBack={() => setRun(null)} onDone={() => setRun(null)} />
+  const due = srsDue(st.srs)
+  if (run) return <Practice ids={run.ids} lang={lang} tr={tr} title={run.srs ? 'Повторення' : 'Робота над помилками'} onAnswer={onAnswer} onBack={() => setRun(null)} onDone={() => setRun(null)} />
   return (
     <>
-      <div className="de-hello">Робота над помилками</div>
+      <div className="de-hello">Повторення й помилки</div>
+      <div className="de-card" style={{ marginBottom: 12 }}><b>Повторення за розкладом: {due.length}</b>
+        <div className="de-dim">Слова й завдання, які пора повторити: через 1, 3, 7, 14 і 30 днів після правильної відповіді.</div>
+        {due.length > 0 && <button className="de-btn" onClick={() => setRun({ srs: 1, ids: due.sort(() => Math.random() - 0.5).slice(0, 10) })}>Повторити ({Math.min(due.length, 10)})</button>}
+      </div>
+      <div className="de-h2" style={{ marginTop: 0 }}>Робота над помилками</div>
       {!ids.length ? <div className="de-empty">Помилок немає. Вони з'являться тут після вправ і тестів.</div> : (
         <>
           <div className="de-dim" style={{ marginBottom: 10 }}>У списку: {ids.length}. Завдання зникає після 5 правильних відповідей; помилка скидає лічильник.</div>
-          <button className="de-btn" onClick={() => setRun(ids.sort(() => Math.random() - 0.5).slice(0, 10))}>Тренувати ({Math.min(ids.length, 10)})</button>
+          <button className="de-btn" onClick={() => setRun({ ids: ids.sort(() => Math.random() - 0.5).slice(0, 10) })}>Тренувати ({Math.min(ids.length, 10)})</button>
         </>
       )}
     </>

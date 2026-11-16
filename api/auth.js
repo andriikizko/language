@@ -64,6 +64,20 @@ export default async function handler(req, res) {
     const key = 'u:' + login
     const token = crypto.randomBytes(32).toString('hex')
 
+    // Видалення акаунта й усіх даних (вимога Google Play) та зміна згоди на розсилку.
+    if (action === 'delete' || action === 'consent') {
+      const b = req.body || {}
+      const lg = String(b.login || '').trim().toLowerCase()
+      const raw = lg ? await cmd('GET', 'u:' + lg) : null
+      if (!raw) return res.status(401).json({ error: 'auth' })
+      const rec = JSON.parse(raw)
+      if (!(rec.tokens || []).includes(sha(String(b.token || '')))) return res.status(401).json({ error: 'auth' })
+      if (action === 'delete') { await cmd('DEL', 'u:' + lg); await cmd('DEL', 's:' + lg); return res.status(200).json({ ok: true }) }
+      rec.consent = b.consent === true
+      await cmd('SET', 'u:' + lg, JSON.stringify(rec))
+      return res.status(200).json({ ok: true })
+    }
+
     if (action === 'register') {
       const email = String((req.body || {}).email || '').trim().toLowerCase()
       const phone = String((req.body || {}).phone || '').trim()

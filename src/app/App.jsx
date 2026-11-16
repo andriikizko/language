@@ -4,6 +4,7 @@ import Ic from './Icons.jsx'
 import { post } from './api.js'
 import Nouns from './Nouns.jsx'
 import { Course, Errors, Calendar } from './Course.jsx'
+import { srsUpdate } from './engine.js'
 import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
 
 const SKEY = 'languages.session'
@@ -114,6 +115,7 @@ const Auth = ({ onAuth, onGuest }) => {
         {mode === 'login' ? 'Створити акаунт' : 'Вже є акаунт'}
       </button>
       <div className="de-dim" style={{ textAlign: 'center', margin: '6px 0' }}>або</div>
+      <a className="de-dim" style={{ display: 'block', textAlign: 'center', margin: '0 0 8px' }} href="/privacy.html" target="_blank" rel="noreferrer">Політика конфіденційності</a>
       <GoogleBtn onCred={onCred} />
       <button className="de-btn ghost" onClick={onGuest}>Продовжити як гість</button>
     </div>
@@ -150,9 +152,12 @@ export default function App() {
   const lang = st.lang || 'uk'
   const tr = st.trans || lang
   const knownCount = Object.keys(st.known || {}).length
-  const onAns = (id, ok) => setSt((s) => (ok
-    ? (id.startsWith('w|') ? { ...s, known: { ...(s.known || {}), [id.split('|')[2]]: 1 } } : s)
-    : { ...s, err: { ...(s.err || {}), [id]: 0 } }))
+  const onAns = (id, ok) => setSt((s0) => {
+    const s = { ...s0, srs: srsUpdate(s0.srs, id, ok) }
+    return ok
+      ? (id.startsWith('w|') ? { ...s, known: { ...(s.known || {}), [id.split('|')[2]]: 1 } } : s)
+      : { ...s, err: { ...(s.err || {}), [id]: 0 } }
+  })
   const wantCount = useMemo(() => Object.keys(st.want || {}).length, [st.want])
 
   if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
@@ -217,7 +222,15 @@ export default function App() {
               {[['off', 'Вимкнена'], ['uk', 'Українськими'], ['ru', 'Російськими']].map(([k, l]) => <button key={k} className={tr === k ? 'on' : ''} onClick={() => update({ trans: k })}>{l}</button>)}
             </div>
             <div className="de-dim" style={{ marginTop: 6 }}>Транскрипція наближена й не замінює озвучення.</div>
+            <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.consent} onChange={(e) => { update({ consent: e.target.checked }); post('/api/auth', { action: 'consent', login: sess.login, token: sess.token, consent: e.target.checked }) }} /><span>Отримувати повідомлення, листи та пропозиції</span></label>
             <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
+            <a className="de-dim" style={{ display: 'block', marginTop: 16 }} href="/privacy.html" target="_blank" rel="noreferrer">Політика конфіденційності</a>
+            <button className="de-btn ghost" style={{ marginTop: 12, color: '#c0392b' }} onClick={async () => {
+              if (!window.confirm('Видалити акаунт і весь прогрес? Це безповоротно.')) return
+              const r = await post('/api/auth', { action: 'delete', login: sess.login, token: sess.token })
+              if (!r.ok) return window.alert('Не вдалося видалити. Спробуйте ще раз')
+              localStorage.removeItem('languages.state'); setSt({}); logout()
+            }}>Видалити акаунт</button>
           </>
         )}
       </div>

@@ -142,3 +142,11 @@ export const speakAll = (texts) => {
   } catch { /* ignore */ }
 }
 export { L }
+
+// Інтервальне повторення: коробки 0..5, інтервали в днях.
+const GAP = [0, 1, 3, 7, 14, 30]
+export const srsUpdate = (srs, id, ok) => {
+  const box = ok ? Math.min(5, ((srs || {})[id]?.b ?? -1) + 1) : 0
+  return { ...(srs || {}), [id]: { b: box, d: Date.now() + GAP[box] * 864e5 } }
+}
+export const srsDue = (srs) => Object.entries(srs || {}).filter(([, v]) => v.d <= Date.now()).map(([k]) => k)
