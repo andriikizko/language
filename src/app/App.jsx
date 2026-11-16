@@ -3,6 +3,7 @@ import Splash from './Splash.jsx'
 import Ic from './Icons.jsx'
 import { post } from './api.js'
 import Nouns from './Nouns.jsx'
+import { Course, Errors, Calendar } from './Course.jsx'
 import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
 
 const SKEY = 'languages.session'
@@ -47,10 +48,6 @@ const Auth = ({ onAuth }) => {
   )
 }
 
-const Soon = ({ title, text }) => (
-  <div className="de-empty"><b>{title}</b><div style={{ marginTop: 6 }}>{text}</div></div>
-)
-
 export default function App() {
   const [splash, setSplash] = useState(true)
   const [sess, setSess] = useState(() => { try { return JSON.parse(localStorage.getItem(SKEY)) } catch { return null } })
@@ -73,6 +70,7 @@ export default function App() {
   }
   const logout = () => { localStorage.removeItem(SKEY); setSess(null) }
   const lang = st.lang || 'uk'
+  const addErr = (id) => setSt((s) => ({ ...s, err: { ...(s.err || {}), [id]: 0 } }))
   const wantCount = useMemo(() => Object.keys(st.want || {}).length, [st.want])
 
   if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
@@ -100,11 +98,11 @@ export default function App() {
         )}
         {tab === 'home' && screen && (() => {
           const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null) }
-          const M = { nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
-          return <M {...p} />
+          const M = { cal: (q) => <Calendar st={st} update={update} onBack={q.onBack} />, nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
+          return screen === 'cal' ? M(p) : <M {...p} />
         })()}
-        {tab === 'learn' && <Soon title="Поточне навчання" text="Тут буде курс по блоках. Зʼявиться на наступному етапі." />}
-        {tab === 'errors' && <Soon title="Робота над помилками" text="Помилки з вправ збиратимуться тут." />}
+        {tab === 'learn' && <Course st={st} update={update} lang={lang} onErr={addErr} />}
+        {tab === 'errors' && <Errors st={st} update={update} lang={lang} />}
         {tab === 'profile' && (
           <>
             <div className="de-hello">{sess.name}</div>
@@ -113,6 +111,7 @@ export default function App() {
               <button className={lang === 'uk' ? 'on' : ''} onClick={() => update({ lang: 'uk' })}>UA</button>
               <button className={lang === 'ru' ? 'on' : ''} onClick={() => update({ lang: 'ru' })}>RU</button>
             </div>
+            <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.dev} onChange={(e) => update({ dev: e.target.checked })} /><span>Тестовий режим: відкрити всі блоки курсу (буде прибрано перед релізом)</span></label>
             <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
           </>
         )}
