@@ -49,6 +49,7 @@ blk(id='days', title='Дні тижня й місяці', sub='час, дата,
  ('Місяці й пори року', 'Усі місяці теж чоловічого роду: der Januar, der Februar, der März, der April, der Mai, der Juni, der Juli, der August, der September, der Oktober, der November, der Dezember. Пори року: der Frühling, der Sommer, der Herbst, der Winter. «У січні, влітку» — im Januar, im Sommer.'),
  ('am, im, um — коли?', 'am + день і частина дня: am Montag, am Morgen, am Abend, am Wochenende. im + місяць і пора року: im Mai, im Winter. um + година: um acht Uhr. Виняток: ніч — in der Nacht (або просто nachts).'),
  ('Година', 'Wie spät ist es? — Es ist acht Uhr. Viertel nach acht = 8:15, Viertel vor neun = 8:45. Увага: halb neun = 8:30. Німці рахують «пів до наступної години», тобто halb neun — це пів на дев\'яту. 14:30 в офіційній мові — vierzehn Uhr dreißig.'),
+ ('Рік і вік', 'Вік: Ich bin 35 (fünfunddreißig) Jahre alt. Рік народження: Ich bin 1991 geboren. Роки до 2000 читають «сотнями»: 1991 — neunzehnhunderteinundneunzig (дев\'ятнадцять сотень і дев\'яносто один). Дату народження — порядковим: am sechsten Januar.'),
  ('Дата', 'Der Wievielte ist heute? — Heute ist der fünfte Mai. Дату читають порядковим числівником із артиклем: der erste, der zweite, der dritte, der siebte. «П\'ятого травня» — am fünften Mai.'),
  ],
  gaps=[

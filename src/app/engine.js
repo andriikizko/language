@@ -4,6 +4,7 @@ import dict from './data/dict.json'
 import course from './data/course.json'
 
 export const BLOCKS = course
+export const cleanDe = (s) => s.replace(/\d[\d,.\s]*[€%]?\s*\(([^)]+)\)/g, '$1').replace(/\s+/g, ' ').trim()
 export const FREE_BLOCKS = 3
 const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
 const byDe = {}
@@ -56,18 +57,18 @@ export const makeQuestion = (id, lang) => {
     const [kind, ...rest] = key.split(':')
     const it = itemOf(kind, rest.join(':'))
     if (mode === 'art') {
-      return { id, type: 'choice', hint: 'Який артикль?', prompt: it.de, sub: it[lang], opts: ['der', 'die', 'das'], correct: ['m', 'f', 'n'].indexOf(it.g),
+      return { id, de: true, type: 'choice', hint: 'Який артикль?', prompt: it.de, sub: it[lang], opts: ['der', 'die', 'das'], correct: ['m', 'f', 'n'].indexOf(it.g),
         explain: `${withArt(it)} — ${it[lang]}.${it.pl ? ' Множина: die ' + it.pl + '.' : ''}` }
     }
     if (mode === 'pl') {
-      return { id, type: 'type', hint: 'Напиши множину (die …)', prompt: withArt(it), sub: it[lang], answer: it.pl,
+      return { id, de: true, type: 'type', hint: 'Напиши множину (die …)', prompt: withArt(it), sub: it[lang], answer: it.pl,
         explain: `${withArt(it)} → die ${it.pl} (${it[lang]}).` }
     }
     const pool = kind === 'n' ? nounsData.words : kind === 'a' ? dict.adj : verbs
     const others = shuffle(pool.filter((x) => x.de !== it.de && x[lang] !== it[lang])).slice(0, 3)
     if (mode === 'tr') {
       const opts = shuffle([it[lang], ...others.map((o) => o[lang])])
-      return { id, type: 'choice', hint: 'Обери переклад', prompt: labelDe(it), opts, correct: opts.indexOf(it[lang]),
+      return { id, de: true, type: 'choice', hint: 'Обери переклад', prompt: labelDe(it), opts, correct: opts.indexOf(it[lang]),
         explain: `${labelDe(it)} — ${it[lang]}.${it.f ? ' ' + it.f[0] + ', ' + it.f[1] + ', ' + it.f[2] + '…' : ''}` }
     }
     const lab = (x) => labelDe({ kind, ...x })
@@ -77,8 +78,12 @@ export const makeQuestion = (id, lang) => {
   if (t === 'g') {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]
     const opts = shuffle([g.a, ...g.w])
-    return { id, type: 'choice', hint: 'Встав пропущене слово', prompt: g.s, sub: g[lang], opts, correct: opts.indexOf(g.a),
+    return { id, de: true, type: 'choice', hint: 'Встав пропущене слово', prompt: g.s, sub: g[lang], opts, correct: opts.indexOf(g.a),
       explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, block: b.id }
+  }
+  if (t === 'o') {
+    const b = blockById(r[0]); const sn = b.topic.s[+r[1]]; const clean = cleanDe(sn.de)
+    return { id, type: 'order', hint: 'Склади речення', prompt: sn[lang], tokens: shuffle(clean.split(' ')), answer: clean, explain: `${sn.de} — ${sn[lang]}`, block: b.id }
   }
   if (t === 'n') {
     const n = +r[0]
@@ -107,6 +112,7 @@ export const poolFor = (b, mode) => {
   if (mode === 'pl') return w.nouns.filter((i) => i.pl && i.g !== 'p').map((i) => wid('pl', 'n', i))
   if (mode === 'gap') return b.gaps.map((_, i) => `g|${b.id}|${i}`)
   if (mode === 'num') return Array.from({ length: 30 }, () => 'n|' + (13 + Math.floor(Math.random() * 87)))
+  if (mode === 'order') return b.topic.s.map((x, i) => [x, i]).filter(([x]) => { const n = cleanDe(x.de).split(' ').length; return n >= 3 && n <= 9 }).map(([, i]) => `o|${b.id}|${i}`)
   if (mode === 'listen') return b.dialogs.flatMap((d, di) => d.qs.map((_, qi) => `l|${b.id}|${di}|${qi}`))
   return []
 }
@@ -116,6 +122,11 @@ export const testSet = (b) => {
   if (b.numq) parts.push(...pick(poolFor(b, 'num'), 3))
   return shuffle(parts)
 }
+export const finalSet = () => shuffle(BLOCKS.flatMap((b) => {
+  const w = blockWords(b); const core = w.nouns.filter((n) => n.core && n.g !== 'p')
+  const ids = pick(core, 4).flatMap((n, i) => [`w|${i % 2 ? 'art' : 'tr'}|n:${n.de}:${n.g}`])
+  return ids
+}))
 export const speak = (text) => {
   try { if (!('speechSynthesis' in window)) return; const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9; window.speechSynthesis.cancel(); window.speechSynthesis.speak(u) } catch { /* ignore */ }
 }

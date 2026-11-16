@@ -61,7 +61,7 @@ blk(id='clothes', title='Одяг', sub='що носити, розмір, маг
  ])
 
 blk(id='home', title='Дім і меблі', sub='кімнати, де і куди, оренда', nouns='home',
- adjs=[], adjlist=['groß','klein','sauber','schmutzig','hell','dunkel','leise','laut','neu','alt'], verbs=['wohnen','schlafen','aufräumen','putzen','öffnen','schließen'],
+ adjs=[], adjlist=['groß','klein','sauber','schmutzig','hell','dunkel','leise','laut','neu','alt','schön','schlecht','teuer','billig'], verbs=['wohnen','schlafen','aufräumen','putzen','öffnen','schließen'],
  explain=[
  ('Кімнати', 'das Zimmer, die Küche, das Bad, das Wohnzimmer, das Schlafzimmer, das Kinderzimmer, der Flur. «На кухні» — in der Küche, «у ванній» — im Bad, «у вітальні» — im Wohnzimmer. Im = in dem.'),
  ('Wo? і Wohin?', 'На питання wo? (де) після in стоїть Dativ: Ich bin in der Küche. Ich bin im Bad. На питання wohin? (куди) — Akkusativ: Ich gehe in die Küche. Ich gehe ins Bad (ins = in das). Для жіночого роду це різниця der/die, для середнього — dem/das.'),

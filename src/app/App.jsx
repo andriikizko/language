@@ -13,6 +13,24 @@ const ERR = {
   bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний',
 }
 
+const SLIDES = [
+  ['Курс німецької A1 для українців', 'Пояснення рідною мовою, власні тексти й діалоги, 12 тем із життя: від чисел і родини до роботи й лікаря.'],
+  ['Три місяці до результату', '12 тижнів по одній темі, 13-й тиждень на повторення й фінальний тест. 3 заняття на тиждень, розклад у календарі.'],
+  ['Безкоштовно і Premium', 'Безкоштовно: перші 3 блоки курсу, весь Словник, робота над помилками. Premium: усі 12 блоків і фінальний тест. Без реклами.'],
+  ['Натисни на слово', 'У тексті й діалогах тапни будь-яке слово: побачиш переклад і транскрипцію та почуєш озвучення. Вид транскрипції змінюється в Профілі.'],
+]
+const Intro = ({ onDone }) => {
+  const [i, setI] = useState(0)
+  return (
+    <div className="de-intro">
+      <h2>{SLIDES[i][0]}</h2><p>{SLIDES[i][1]}</p>
+      <div className="de-dots">{SLIDES.map((_, k) => <span key={k} className={k === i ? 'on' : ''} />)}</div>
+      <button className="de-btn" onClick={() => (i + 1 < SLIDES.length ? setI(i + 1) : onDone())}>{i + 1 < SLIDES.length ? 'Далі' : 'Почати'}</button>
+      <button className="de-btn ghost" onClick={onDone}>Пропустити</button>
+    </div>
+  )
+}
+
 const Auth = ({ onAuth }) => {
   const [mode, setMode] = useState('login')
   const [f, setF] = useState({ login: '', password: '', email: '', phone: '', consent: false })
@@ -70,17 +88,23 @@ export default function App() {
   }
   const logout = () => { localStorage.removeItem(SKEY); setSess(null) }
   const lang = st.lang || 'uk'
-  const addErr = (id) => setSt((s) => ({ ...s, err: { ...(s.err || {}), [id]: 0 } }))
+  const tr = st.trans || lang
+  const knownCount = Object.keys(st.known || {}).length
+  const onAns = (id, ok) => setSt((s) => (ok
+    ? (id.startsWith('w|') ? { ...s, known: { ...(s.known || {}), [id.split('|')[2]]: 1 } } : s)
+    : { ...s, err: { ...(s.err || {}), [id]: 0 } }))
   const wantCount = useMemo(() => Object.keys(st.want || {}).length, [st.want])
 
   if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
   if (!sess) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} /></div></div>
 
+  const showIntro = !st.intro
   const nav = [['home', 'Головна', 'home'], ['learn', 'Поточне навчання', 'learn'], ['errors', 'Робота над помилками', 'alert'], ['profile', 'Профіль', 'person']]
   const go = (t) => { setTab(t); setScreen(null) }
 
   return (
     <div className="de-app">
+      {showIntro && <Intro onDone={() => update({ intro: 1 })} />}
       <div className="de-main">
         {tab === 'home' && !screen && (
           <>
@@ -101,17 +125,23 @@ export default function App() {
           const M = { cal: (q) => <Calendar st={st} update={update} onBack={q.onBack} />, nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
           return screen === 'cal' ? M(p) : <M {...p} />
         })()}
-        {tab === 'learn' && <Course st={st} update={update} lang={lang} onErr={addErr} />}
-        {tab === 'errors' && <Errors st={st} update={update} lang={lang} />}
+        {tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
+        {tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
         {tab === 'profile' && (
           <>
             <div className="de-hello">{sess.name}</div>
+            <div className="de-card"><b>Вивчено слів: {knownCount} / 500</b><div className="de-bar" style={{ marginTop: 8, marginBottom: 0 }}><div style={{ width: Math.min(100, knownCount / 5) + '%' }} /></div><div className="de-dim" style={{ marginTop: 6 }}>Слово зараховується, коли ти правильно відповів на нього у вправі.</div></div>
             <div className="de-h2">Мова перекладу</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>
               <button className={lang === 'uk' ? 'on' : ''} onClick={() => update({ lang: 'uk' })}>UA</button>
               <button className={lang === 'ru' ? 'on' : ''} onClick={() => update({ lang: 'ru' })}>RU</button>
             </div>
             <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.dev} onChange={(e) => update({ dev: e.target.checked })} /><span>Тестовий режим: відкрити всі блоки курсу (буде прибрано перед релізом)</span></label>
+            <div className="de-h2">Транскрипція при натисканні на слово</div>
+            <div className="de-seg" style={{ width: 'fit-content' }}>
+              {[['off', 'Вимкнена'], ['uk', 'Українськими'], ['ru', 'Російськими']].map(([k, l]) => <button key={k} className={tr === k ? 'on' : ''} onClick={() => update({ trans: k })}>{l}</button>)}
+            </div>
+            <div className="de-dim" style={{ marginTop: 6 }}>Транскрипція наближена й не замінює озвучення.</div>
             <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
           </>
         )}

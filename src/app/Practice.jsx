@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react'
 import { makeQuestion } from './engine.js'
+import Tap from './Tap.jsx'
 
 const norm = (s) => s.trim().toLowerCase().replace(/^die\s+/, '')
 
-export default function Practice({ ids, lang, title, onAnswer, onDone, onBack }) {
+export default function Practice({ ids, lang, tr = 'off', title, onAnswer, onDone, onBack }) {
   const qs = useMemo(() => ids.map((id) => makeQuestion(id, lang)).filter(Boolean), []) // eslint-disable-line
   const [i, setI] = useState(0)
   const [sel, setSel] = useState(null)
@@ -11,6 +12,7 @@ export default function Practice({ ids, lang, title, onAnswer, onDone, onBack })
   const [score, setScore] = useState(0)
   const [wrong, setWrong] = useState([])
   const [fin, setFin] = useState(false)
+  const [built, setBuilt] = useState([])
   if (!qs.length) return <div className="de-empty">Немає завдань<button className="de-btn" onClick={onBack}>Назад</button></div>
   if (fin) {
     return (
@@ -28,18 +30,24 @@ export default function Practice({ ids, lang, title, onAnswer, onDone, onBack })
     if (ok) setScore((s) => s + 1); else setWrong((w) => [...w, q.id])
     onAnswer && onAnswer(q.id, ok)
   }
-  const ok = answered && (q.type === 'choice' ? sel === q.correct : norm(sel) === norm(q.answer))
-  const next = () => { setSel(null); setTxt(''); if (i + 1 >= qs.length) setFin(true); else setI(i + 1) }
+  const ok = answered && (q.type === 'choice' ? sel === q.correct : q.type === 'order' ? sel === q.answer : norm(sel) === norm(q.answer))
+  const next = () => { setSel(null); setTxt(''); setBuilt([]); if (i + 1 >= qs.length) setFin(true); else setI(i + 1) }
   return (
     <>
       <div className="de-row"><button className="de-back" onClick={onBack}>‹</button><b>{title}</b><span className="de-dim">{i + 1}/{qs.length}</span></div>
       <div className="de-bar"><div style={{ width: ((i + (answered ? 1 : 0)) / qs.length * 100) + '%' }} /></div>
       <div className="de-q-card">
         <div className="de-q-hint">{q.hint}</div>
-        <div style={{ fontSize: 22, fontWeight: 800 }}>{q.prompt}</div>
+        <div style={{ fontSize: 22, fontWeight: 800 }}>{q.de ? <Tap text={q.prompt} lang={lang} tr={tr} /> : q.prompt}</div>
         {q.sub && <div className="de-dim" style={{ marginTop: 6 }}>{q.sub}</div>}
       </div>
-      {q.type === 'choice' ? (
+      {q.type === 'order' ? (
+        <>
+          <div className="de-built">{built.map((k) => <button key={k} className="de-tok" disabled={answered} onClick={() => setBuilt(built.filter((x) => x !== k))}>{q.tokens[k]}</button>)}</div>
+          <div>{q.tokens.map((t, k) => <button key={k} className={'de-tok' + (built.includes(k) ? ' used' : '')} disabled={built.includes(k) || answered} onClick={() => setBuilt([...built, k])}>{t}</button>)}</div>
+          {!answered && <button className="de-btn" disabled={built.length !== q.tokens.length} onClick={() => { const a = built.map((k) => q.tokens[k]).join(' '); check(a === q.answer, a) }}>Перевірити</button>}
+        </>
+      ) : q.type === 'choice' ? (
         <div style={{ display: 'grid', gap: 8 }}>
           {q.opts.map((o, k) => {
             const st = answered ? (k === q.correct ? ' right' : k === sel ? ' bad' : '') : ''

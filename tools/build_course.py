@@ -3,6 +3,7 @@ B=[]
 def blk(**k): B.append(k)
 for p in ('part1','part2','part3'):
     exec(open(f'content/course/{p}.py',encoding='utf8').read())
+exec(open('content/course/topics.py',encoding='utf8').read())
 out=[]
 for b in B:
     gaps=[]
@@ -21,6 +22,6 @@ for b in B:
             qs.append({'uk':quk,'ru':qru,'o':o,'c':ci})
         dl.append({'title':d['title'],'lines':lines,'qs':qs})
     out.append({'id':b['id'],'title':b['title'],'sub':b['sub'],'nouns':b['nouns'],'adjs':b.get('adjs') or [],'adjlist':b.get('adjlist') or [],
-      'verbs':b['verbs'],'numq':b.get('numq',False),'explain':[{'h':h,'p':p} for h,p in b['explain']],'gaps':gaps,'dialogs':dl})
+      'verbs':b['verbs'],'topic':{'title':T[b['id']]['title'],'note':T[b['id']]['note'],'s':[dict(zip(('de','uk','ru'),x.split('|'))) for x in T[b['id']]['s']]},'numq':b.get('numq',False),'explain':[{'h':h,'p':p} for h,p in b['explain']],'gaps':gaps,'dialogs':dl})
 json.dump(out,open('src/app/data/course.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 print(len(out),'блоків',sum(len(b['gaps']) for b in out),'речень')

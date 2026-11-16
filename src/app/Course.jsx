@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { BLOCKS, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll } from './engine.js'
+import { BLOCKS, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet } from './engine.js'
+import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
 
 const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
@@ -30,9 +31,9 @@ const Words = ({ b, lang }) => {
   )
 }
 
-const MODES = [['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина (вписати)'], ['gap', 'Речення з пропуском']]
+const MODES = [['order', 'Склади речення (з топіку)'], ['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина (вписати)'], ['gap', 'Речення з пропуском']]
 
-export function Course({ st, update, lang, onErr }) {
+export function Course({ st, update, lang, tr, onAns }) {
   const [cur, setCur] = useState(null)
   const [open, setOpen] = useState('expl')
   const [run, setRun] = useState(null)
@@ -42,7 +43,7 @@ export function Course({ st, update, lang, onErr }) {
   const locked = (i) => i >= FREE_BLOCKS && !st.dev
 
   if (run) {
-    return <Practice ids={run.ids} lang={lang} title={run.title} onAnswer={(id, ok) => !ok && onErr(id, false)}
+    return <Practice ids={run.ids} lang={lang} tr={tr} title={run.title} onAnswer={onAns}
       onBack={() => setRun(null)} onDone={(sc, n) => { run.after && run.after(sc, n); setRun(null) }} />
   }
 
@@ -51,6 +52,7 @@ export function Course({ st, update, lang, onErr }) {
       <>
         <div className="de-hello">Курс німецької A1</div>
         <div className="de-dim" style={{ marginBottom: 12 }}>Перші {FREE_BLOCKS} блоки безкоштовні, решта — за підпискою.</div>
+        <div className="de-card" style={{ marginBottom: 12 }}><b>План на 13 тижнів</b><div className="de-dim">Тиждень на блок, 3 уроки: 1) пояснення, слова, топік; 2) вправи; 3) аудіювання й тест. 13-й тиждень — повторення й фінальний тест. Дивись у «Календарі».</div></div>
         {BLOCKS.map((b, i) => {
           const d = done[b.id] || {}
           return (
@@ -60,6 +62,10 @@ export function Course({ st, update, lang, onErr }) {
             </button>
           )
         })}
+        <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => st.dev && setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
+          <span className="n">★</span><span><b>Фінальний тест</b><small>основні слова з усіх блоків</small></span>
+          <span className="de-pill">{st.dev ? (st.final != null ? st.final + '%' : 'почати') : '🔒 Premium'}</span>
+        </button>
       </>
     )
   }
@@ -73,30 +79,40 @@ export function Course({ st, update, lang, onErr }) {
   return (
     <>
       <div className="de-row"><button className="de-back" onClick={() => setCur(null)}>‹</button><b style={{ fontSize: 17 }}>{b.title}</b><span /></div>
-      <Acc title="1. Пояснення" badge={d.expl ? '✓' : ''} open={open === 'expl'} onToggle={() => tog('expl')}>
+      <Acc title="Урок 1 · Пояснення" badge={d.expl ? '✓' : ''} open={open === 'expl'} onToggle={() => tog('expl')}>
         {b.explain.map((s, i) => <div key={i}><h4>{s.h}</h4><p>{s.p}</p></div>)}
         {lang === 'ru' && <div className="de-dim" style={{ marginTop: 10 }}>Російська версія пояснень буде додана пізніше.</div>}
       </Acc>
-      <Acc title="2. Слова блоку" badge={d.words ? '✓' : ''} open={open === 'words'} onToggle={() => tog('words')}><Words b={b} lang={lang} /></Acc>
-      <Acc title="3. Вправи" open={open === 'ex'} onToggle={() => tog('ex')}>
+      <Acc title="Урок 1 · Слова блоку" badge={d.words ? '✓' : ''} open={open === 'words'} onToggle={() => tog('words')}><Words b={b} lang={lang} /></Acc>
+      <Acc title="Урок 1 · Топік (вивчити напам'ять)" badge={d.topic ? '✓' : ''} open={open === 'topic'} onToggle={() => tog('topic')}>
+        <div className="de-h2" style={{ marginTop: 0 }}>{b.topic.title}</div>
+        {b.topic.note && <div className="de-dim" style={{ marginBottom: 8 }}>{b.topic.note}</div>}
+        <button className="de-btn ghost" style={{ margin: '0 0 6px' }} onClick={() => speakAll(b.topic.s.map((x) => cleanDe(x.de)))}>▶ Прослухати топік</button>
+        {b.topic.s.map((x, k) => (
+          <div key={k} className="de-line"><div className="de"><Tap text={x.de} lang={lang} tr={tr} /> <span style={{ cursor: 'pointer' }} onClick={() => speak(cleanDe(x.de))}>🔊</span></div><div className="de-w-tr">{x[lang]}</div></div>
+        ))}
+        <div className="de-dim" style={{ margin: '8px 0' }}>Натисни на будь-яке слово — побачиш переклад і транскрипцію.</div>
+        <button className="de-btn" onClick={() => setRun({ ids: session(b, 'order', 8), title: 'Склади речення', after: () => mark(b.id, { topic: 1 }) })}>Вправа: склади речення</button>
+      </Acc>
+      <Acc title="Урок 2 · Вправи" open={open === 'ex'} onToggle={() => tog('ex')}>
         <div style={{ display: 'grid', gap: 8 }}>
           {modes.map(([m, t]) => <button key={m} className="de-btn ghost" style={{ margin: 0 }} onClick={() => start(m, t)}>{t}{(d.ex || {})[m] != null ? ' · найкращий ' + d.ex[m] : ''}</button>)}
         </div>
       </Acc>
-      <Acc title="4. Аудіювання" badge={d.listen ? '✓' : ''} open={open === 'listen'} onToggle={() => tog('listen')}>
+      <Acc title="Урок 3 · Аудіювання" badge={d.listen ? '✓' : ''} open={open === 'listen'} onToggle={() => tog('listen')}>
         {b.dialogs.map((dl, di) => (
           <div key={di} style={{ marginBottom: 14 }}>
             <div className="de-h2" style={{ marginTop: 8 }}>{dl.title}</div>
             <button className="de-btn ghost" style={{ margin: '0 0 6px' }} onClick={() => speakAll(dl.lines.map((l) => l.de))}>▶ Прослухати діалог</button>
             {dl.lines.map((l, k) => (
-              <div key={k} className="de-line"><b>{l.who}</b><div className="de" onClick={() => speak(l.de)} style={{ cursor: 'pointer' }}>{l.de} 🔊</div><div className="de-w-tr">{l[lang]}</div></div>
+              <div key={k} className="de-line"><b>{l.who}</b><div className="de"><Tap text={l.de} lang={lang} tr={tr} /> <span style={{ cursor: 'pointer' }} onClick={() => speak(l.de)}>🔊</span></div><div className="de-w-tr">{l[lang]}</div></div>
             ))}
             <button className="de-btn" onClick={() => setRun({ ids: dl.qs.map((_, qi) => `l|${b.id}|${di}|${qi}`), title: dl.title, after: () => mark(b.id, { listen: 1 }) })}>Питання до діалогу</button>
           </div>
         ))}
         <div className="de-dim">Озвучення тимчасове (голос браузера). Професійні аудіо додамо пізніше.</div>
       </Acc>
-      <Acc title="5. Тест" badge={d.test != null ? d.test + '%' : ''} open={open === 'test'} onToggle={() => tog('test')}>
+      <Acc title="Урок 3 · Тест" badge={d.test != null ? d.test + '%' : ''} open={open === 'test'} onToggle={() => tog('test')}>
         <p className="de-dim" style={{ marginBottom: 8 }}>Мікс завдань по блоку. Зараховано від 70%.</p>
         <button className="de-btn" onClick={() => setRun({ ids: testSet(b), title: 'Тест: ' + b.title, after: (sc, n) => mark(b.id, { test: Math.max(Math.round(sc / n * 100), d.test || 0) }) })}>Почати тест</button>
       </Acc>
@@ -104,7 +120,7 @@ export function Course({ st, update, lang, onErr }) {
   )
 }
 
-export function Errors({ st, update, lang }) {
+export function Errors({ st, update, lang, tr }) {
   const [run, setRun] = useState(null)
   const err = st.err || {}
   const ids = Object.keys(err)
@@ -114,7 +130,7 @@ export function Errors({ st, update, lang }) {
     if (ok) { e[id] = (e[id] || 0) + 1; if (e[id] >= 5) delete e[id] } else e[id] = 0
     update({ err: e })
   }
-  if (run) return <Practice ids={run} lang={lang} title="Робота над помилками" onAnswer={onAnswer} onBack={() => setRun(null)} onDone={() => setRun(null)} />
+  if (run) return <Practice ids={run} lang={lang} tr={tr} title="Робота над помилками" onAnswer={onAnswer} onBack={() => setRun(null)} onDone={() => setRun(null)} />
   return (
     <>
       <div className="de-hello">Робота над помилками</div>
@@ -129,21 +145,47 @@ export function Errors({ st, update, lang }) {
 }
 
 const DAYS = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд']
+const monday = (d) => { const x = new Date(d); const k = (x.getDay() + 6) % 7; x.setDate(x.getDate() - k); x.setHours(0, 0, 0, 0); return x }
+const fmt = (d) => d.toLocaleDateString('uk-UA', { day: 'numeric', month: 'short' })
 export function Calendar({ st, update, onBack }) {
+  const today = new Date().toISOString().slice(0, 10)
   const cal = st.cal || { days: [0, 2, 4], time: '19:00' }
+  const start = cal.start || today
   const set = (p) => update({ cal: { ...cal, ...p } })
   const tog = (i) => set({ days: cal.days.includes(i) ? cal.days.filter((x) => x !== i) : [...cal.days, i].sort() })
-  const wk = cal.days.length
+  const done = st.done || {}
+  const m0 = monday(start)
+  const now = new Date()
+  const days = cal.days.length ? cal.days : [0, 2, 4]
+  const lessonsDone = (b) => { const d = done[b.id] || {}; return [d.expl && d.words && d.topic, d.ex && Object.keys(d.ex).length > 0, d.listen && d.test != null] }
   return (
     <>
-      <div className="de-row"><button className="de-back" onClick={onBack}>‹</button><b style={{ fontSize: 17 }}>Календар навчання</b><span /></div>
-      <div className="de-dim" style={{ marginBottom: 10 }}>Рекомендовано: 3 заняття на тиждень по 60 хвилин, плюс 30 хвилин на слова з останнього заняття.</div>
+      <div className="de-row"><button className="de-back" onClick={onBack}>‹</button><b style={{ fontSize: 17 }}>Календар: 13 тижнів</b><span /></div>
+      <div className="de-dim" style={{ marginBottom: 10 }}>Тиждень на блок, 3 уроки по 60 хвилин, плюс 30 хвилин слів з останнього уроку. На 13-му тижні — повторення й фінальний тест.</div>
+      <div className="de-h2">Початок курсу</div>
+      <input className="de-search" type="date" value={start} onChange={(e) => set({ start: e.target.value })} />
       <div className="de-h2">Дні занять</div>
       <div className="de-chips">{DAYS.map((d, i) => <button key={d} className={'de-day' + (cal.days.includes(i) ? ' on' : '')} onClick={() => tog(i)}>{d}</button>)}</div>
       <div className="de-h2">Час</div>
       <input className="de-search" type="time" value={cal.time} onChange={(e) => set({ time: e.target.value })} />
-      <div className="de-card"><b>{wk} {wk === 1 ? 'заняття' : 'занять'} на тиждень</b><div className="de-dim">≈ {wk} год занять{wk < 3 ? ' (менше рекомендованого)' : ''}</div></div>
-      <div className="de-dim">Нагадування на пошту й у Telegram підключимо разом із серверною частиною; у застосунку на Android будуть пуш-сповіщення.</div>
+      {BLOCKS.map((b, i) => {
+        const ws = new Date(m0); ws.setDate(ws.getDate() + i * 7)
+        const we = new Date(ws); we.setDate(we.getDate() + 6)
+        const cur = now >= ws && now <= new Date(we.getTime() + 86399000)
+        const ld = lessonsDone(b)
+        const dayName = (k) => DAYS[days[k % days.length]]
+        return (
+          <div key={b.id} className={'de-week' + (cur ? ' now' : '')}>
+            <b>Тиждень {i + 1}: {b.title}</b><small>{fmt(ws)} — {fmt(we)}</small>
+            {['Пояснення, слова, топік', 'Вправи', 'Аудіювання й тест'].map((t, k) => (
+              <small key={k}>{ld[k] ? '✓' : '○'} Урок {k + 1} · {dayName(k)} {cal.time} · {t}</small>
+            ))}
+          </div>
+        )
+      })}
+      {(() => { const ws = new Date(m0); ws.setDate(ws.getDate() + 12 * 7); const we = new Date(ws); we.setDate(we.getDate() + 6)
+        return <div className="de-week"><b>Тиждень 13: повторення й фінальний тест</b><small>{fmt(ws)} — {fmt(we)}</small><small>{st.final != null ? '✓ фінальний тест ' + st.final + '%' : '○ Фінальний тест'}</small></div> })()}
+      <div className="de-dim" style={{ marginTop: 8 }}>Нагадування на пошту й у Telegram підключимо разом із серверною частиною; в Android будуть пуш-сповіщення.</div>
     </>
   )
 }
