@@ -110,3 +110,55 @@ m|Schaden|Schäden|шкода; пошкодження|ущерб; поврежд
 f|Renovierung|Renovierungen|ремонт (косметичний)|ремонт (косметический)|0
 f|Tapete|Tapeten|шпалери|обои|0
 f|Farbe|Farben|фарба; колір|краска; цвет|0
+n|Haus|Häuser|будинок|дом|0
+n|Apartment|Apartments|апартаменти|апартаменты|0
+n|Studio|Studios|студія|студия|0
+f|Dachwohnung|Dachwohnungen|мансардна квартира|мансардная квартира|0
+f|Neubauwohnung|Neubauwohnungen|квартира в новобудові|квартира в новостройке|0
+f|Zwischenmiete|Zwischenmieten|піднайм|субаренда|0
+f|Untermiete|Untermieten|піднайм (кімнати)|поднайм (комнаты)|0
+m|Untermieter|Untermieter|піднаймач|субарендатор|0
+m|Mitbewohner|Mitbewohner|співмешканець|сосед по квартире|0
+f|Mitbewohnerin|Mitbewohnerinnen|співмешканка|соседка по квартире|0
+f|Lage|Lagen|розташування|расположение|0
+f|Gegend|Gegenden|район; місцевість|район; местность|0
+n|Viertel|Viertel|квартал; район|квартал; район|0
+f|Verkehrsanbindung|Verkehrsanbindungen|транспортне сполучення|транспортная доступность|0
+f|Ausstattung|Ausstattungen|комплектація|оснащение|0
+f|Einbauküche|Einbauküchen|вбудована кухня|встроенная кухня|0
+m|Abstellraum|Abstellräume|комора|кладовка|0
+m|Wäscheraum|Wäschekeller|пральня (в будинку)|прачечная (в доме)|0
+m|Wäscheständer|Wäscheständer|сушарка для білизни|сушилка для белья|0
+m|Trockner|Trockner|сушильна машина|сушильная машина|0
+m|Staubsauger|Staubsauger|пилосос|пылесос|0
+m|Besen|Besen|мітла; віник|метла; веник|0
+m|Eimer|Eimer|відро|ведро|0
+m|Müllsack|Müllsäcke|мішок для сміття|мешок для мусора|0
+f|Mülltrennung|-|сортування сміття|сортировка мусора|0
+m|Briefkasten|Briefkästen|поштова скринька|почтовый ящик|0
+f|Klingel|Klingeln|дзвінок (на дверях)|звонок (на двери)|0
+n|Namensschild|Namensschilder|табличка з імʼям|табличка с именем|0
+f|Haustür|Haustüren|вхідні двері|входная дверь|0
+f|Wohnungstür|Wohnungstüren|двері квартири|дверь квартиры|0
+m|Schlüsselbund|Schlüsselbunde|звʼязка ключів|связка ключей|0
+n|Schloss|Schlösser|замок (дверний)|замок (дверной)|0
+n|Fenster|Fenster|вікно|окно|0
+f|Gardine|Gardinen|завіска|занавеска|0
+m|Rollladen|Rollläden|жалюзі (рулонні)|рольставни|0
+m|Fußboden|Fußböden|підлога|пол|0
+m|Parkettboden|Parkettböden|паркет|паркет|0
+f|Wand|Wände|стіна|стена|0
+f|Decke|Decken|стеля; ковдра|потолок; одеяло|0
+n|Kissen|Kissen|подушка|подушка|0
+f|Decke|Decken|ковдра|одеяло|0
+n|Bild|Bilder|картина|картина|0
+f|Pflanze|Pflanzen|рослина|растение|0
+f|Heizkostenabrechnung|Heizkostenabrechnungen|розрахунок за опалення|расчёт за отопление|0
+f|Nebenkostenabrechnung|Nebenkostenabrechnungen|розрахунок комуналки|расчёт коммуналки|0
+f|Mieterhöhung|Mieterhöhungen|підвищення оренди|повышение аренды|0
+f|Mietschuld|Mietschulden|борг за оренду|долг по аренде|0
+f|Wohnungsübergabe|Wohnungsübergaben|передача квартири|передача квартиры|0
+n|Übergabeprotokoll|Übergabeprotokolle|акт передачі|акт передачи|0
+m|Mangel|Mängel|недолік|недостаток|0
+m|Schimmel|-|пліснява|плесень|0
+f|Feuchtigkeit|-|вологість|сырость|0

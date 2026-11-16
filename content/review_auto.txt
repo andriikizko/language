@@ -82,19 +82,48 @@ Krankengymnastik — немає у словнику
 Laboruntersuchung — немає у словнику
 Thermometer — рід: у мене n, у словнику []
 Podcast — рід: у мене m, у словнику []
+Sportteil — немає у словнику
+Wirtschaftsteil — немає у словнику
+Videoanruf — немає у словнику
+Handyvertrag — немає у словнику
+Datenvolumen — немає у словнику
 Fels — рід: у мене m, у словнику []
 Hirsch — рід: у мене m, у словнику []
 Gulasch — рід: у мене n, у словнику []
 Mitnehmen — немає у словнику
+Pilzsuppe — немає у словнику
 Radiergummi — рід: у мене m, у словнику []
 Gruppenarbeit — немає у словнику
 Elektrogeschäft — немає у словнику
 Gebrauchtwarenladen — немає у словнику
 Pfand — рід: у мене n, у словнику []
 Zutatenliste — немає у словнику
+Tiefkühlware — немає у словнику
+Damenabteilung — немає у словнику
+Herrenabteilung — немає у словнику
+Kinderabteilung — немає у словнику
+Spielwarenabteilung — немає у словнику
+Selbstbedienungskasse — немає у словнику
+EC-Karte — множина: у мене EC-Karten, у словнику ['ec-Karten']
+Girokarte — немає у словнику
+Rabattaktion — немає у словнику
+Gratisprobe — немає у словнику
+Geschenkverpackung — немає у словнику
+Lieferadresse — немає у словнику
+Rechnungsadresse — немає у словнику
+Sendungsnummer — немає у словнику
+Paketstation — немає у словнику
 Städtereise — немає у словнику
 Umsteigen — немає у словнику
 Reisepartner — немає у словнику
 Reiseversicherung — немає у словнику
 Stornierung — немає у словнику
 Umzugswagen — немає у словнику
+Zwischenmiete — немає у словнику
+Untermiete — немає у словнику
+Verkehrsanbindung — немає у словнику
+Wäscheraum — немає у словнику
+Schlüsselbund — рід: у мене m, у словнику []
+Mietschuld — немає у словнику
+Wohnungsübergabe — немає у словнику
+Übergabeprotokoll — немає у словнику

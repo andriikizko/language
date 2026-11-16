@@ -132,3 +132,42 @@ langweilig|нудний|скучный|a2_freizeit|0|interessant|langweiliger|am
 kreativ|творчий|творческий|a2_freizeit|0|||
 entspannt|розслаблений|расслабленный|a2_freizeit|0|||
 gesellig|товариський|общительный|a2_freizeit|0|||
+renoviert|відремонтований|отремонтированный|a2_wohnen|0||renovierter|am renoviertesten
+teuer|дорогий|дорогой|a2_wohnen|0|billig|teurer|am teuersten
+gepflegt|доглянутий|ухоженный|a2_wohnen|0||gepflegter|am gepflegtesten
+kaputt|зламаний|сломанный|a2_wohnen|1||kaputter|am kaputtesten
+gemietet|орендований|арендованный|a2_wohnen|0|||
+bequem|зручний|удобный|a2_wohnen|0|unbequem|bequemer|am bequemsten
+ruhig|тихий|тихий|a2_wohnen|0|laut|ruhiger|am ruhigsten
+knusprig|хрусткий|хрустящий|a2_restaurant|0||knuspriger|am knusprigsten
+saftig|соковитий|сочный|a2_restaurant|0||saftiger|am saftigsten
+zart|ніжний|нежный|a2_restaurant|0||zarter|am zartesten
+fett|жирний|жирный|a2_restaurant|0|mager|fetter|am fettesten
+mager|пісний|постный|a2_restaurant|0|fett|magerer|am magersten
+würzig|пряний|пряный|a2_restaurant|0||würziger|am würzigsten
+kalt|холодний|холодный|a2_restaurant|0|warm|kälter|am kältesten
+bestellt|замовлений|заказанный|a2_restaurant|0|||
+reserviert|зарезервований|зарезервированный|a2_restaurant|0|frei||
+glutenfrei|безглютеновий|безглютеновый|a2_restaurant|0|||
+neu|новий|новый|a2_medien|0|alt|neuer|am neuesten
+täglich|щоденний|ежедневный|a2_medien|0|||
+wöchentlich|щотижневий|еженедельный|a2_medien|0|||
+glaubwürdig|вірогідний|достоверный|a2_medien|0|unglaubwürdig|glaubwürdiger|am glaubwürdigsten
+wahr|правдивий|правдивый|a2_medien|0|falsch||
+objektiv|обʼєктивний|объективный|a2_medien|0||objektiver|am objektivsten
+informativ|інформативний|информативный|a2_medien|0||informativer|am informativsten
+verfügbar|доступний|доступный|a2_medien|0|||
+kostenlos|безкоштовний|бесплатный|a2_medien|0|||
+gedruckt|надрукований|напечатанный|a2_medien|0|||
+live|наживо|вживую|a2_medien|0|||
+sichtbar|видимий|видимый|a2_medien|0|||
+teuer|дорогий|дорогой|a2_shopping|0|billig|teurer|am teuersten
+reduziert|зі знижкою|со скидкой|a2_shopping|0|||
+ausverkauft|розпроданий|распродан|a2_shopping|0|||
+gebraucht|вживаний|подержанный|a2_shopping|0|neu||
+passend|підходящий|подходящий|a2_shopping|0||passender|am passendsten
+elegant|елегантний|элегантный|a2_shopping|0||eleganter|am elegantesten
+bequem|зручний|удобный|a2_shopping|0|unbequem|bequemer|am bequemsten
+eng|вузький; тісний|узкий; тесный|a2_shopping|0|weit|enger|am engsten
+weit|широкий; далекий|широкий; далёкий|a2_shopping|0|eng|weiter|am weitesten
+beschädigt|пошкоджений|повреждённый|a2_shopping|0|||

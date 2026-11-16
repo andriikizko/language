@@ -121,3 +121,56 @@ m|Hunger|-|голод|голод|0
 m|Durst|-|спрага|жажда|0
 m|Appetit|-|апетит|аппетит|0
 m|Geschmack|Geschmäcke|смак|вкус|0
+n|Restaurant|Restaurants|ресторан|ресторан|0
+n|Gericht|Gerichte|страва|блюдо|0
+n|Frühstück|Frühstücke|сніданок|завтрак|0
+f|Mahlzeit|Mahlzeiten|прийом їжі|приём пищи|0
+n|Essen|Essen|їжа; обід|еда; обед|0
+n|Getränk|Getränke|напій|напиток|0
+f|Rechnung|Rechnungen|рахунок|счёт|0
+f|Gabel|Gabeln|виделка|вилка|0
+n|Kännchen|Kännchen|чайничок (кави)|кофейничек|0
+m|Tee|Tees|чай|чай|0
+m|Saft|Säfte|сік|сок|0
+f|Milch|-|молоко|молоко|0
+m|Zucker|-|цукор|сахар|0
+n|Salz|-|сіль|соль|0
+m|Pfeffer|-|перець|перец|0
+n|Öl|Öle|олія|масло (растительное)|0
+m|Essig|-|оцет|уксус|0
+m|Senf|-|гірчиця|горчица|0
+m|Ketchup|-|кетчуп|кетчуп|0
+m|Käse|Käse|сир|сыр|0
+n|Brötchen|Brötchen|булочка|булочка|0
+n|Brot|Brote|хліб|хлеб|0
+n|Ei|Eier|яйце|яйцо|0
+n|Spiegelei|Spiegeleier|яєчня|яичница|0
+n|Rührei|Rühreier|яєчня-болтанка|яичница-болтунья|0
+n|Hähnchen|Hähnchen|курча|цыплёнок|0
+n|Schweinefleisch|-|свинина|свинина|0
+n|Rindfleisch|-|яловичина|говядина|0
+m|Schinken|Schinken|шинка|ветчина|0
+f|Wurst|Würste|ковбаса|колбаса|0
+m|Lachs|Lachse|лосось|лосось|0
+f|Garnele|Garnelen|креветка|креветка|0
+f|Pizza|Pizzen|піца|пицца|0
+m|Burger|Burger|бургер|бургер|0
+f|Lasagne|Lasagnen|лазанья|лазанья|0
+f|Pilzsuppe|Pilzsuppen|грибний суп|грибной суп|0
+f|Gemüsesuppe|Gemüsesuppen|овочевий суп|овощной суп|0
+m|Obstsalat|Obstsalate|фруктовий салат|фруктовый салат|0
+m|Apfelkuchen|Apfelkuchen|яблучний пиріг|яблочный пирог|0
+f|Sahne|-|вершки|сливки|0
+f|Schokolade|Schokoladen|шоколад|шоколад|0
+f|Portion|Portionen|порція|порция|0
+f|Speise|Speisen|страва|кушанье|0
+f|Zubereitung|-|приготування|приготовление|0
+f|Würze|Würzen|приправа|приправа|0
+n|Rezept|Rezepte|рецепт|рецепт|0
+f|Kellnerin|Kellnerinnen|офіціантка|официантка|0
+m|Kellner|Kellner|офіціант|официант|0
+m|Barkeeper|Barkeeper|бармен|бармен|0
+f|Theke|Theken|барна стійка|барная стойка|0
+m|Stammgast|Stammgäste|постійний гість|постоянный гость|0
+f|Gruppe|Gruppen|група|группа|0
+f|Feier|Feiern|святкування|празднование|0

@@ -119,3 +119,60 @@ f|Dose|Dosen|консервна банка|консервная банка|0
 n|Mindesthaltbarkeitsdatum|-|термін придатності|срок годности|0
 m|Inhalt|Inhalte|вміст|содержимое|0
 f|Zutatenliste|Zutatenlisten|список інгредієнтів|список ингредиентов|0
+n|Lebensmittel|Lebensmittel|продукти харчування|продукты питания|0
+n|Obst|-|фрукти|фрукты|0
+n|Gemüse|-|овочі|овощи|0
+n|Fleisch|-|мʼясо|мясо|0
+m|Fisch|Fische|риба|рыба|0
+p|Milchprodukte|-|молочні продукти|молочные продукты|0
+f|Tiefkühlware|-|заморожені продукти|замороженные продукты|0
+n|Getränk|Getränke|напій|напиток|0
+f|Süßigkeit|Süßigkeiten|солодощі|сладости|0
+m|Snack|Snacks|перекус|снэк|0
+n|Reinigungsmittel|Reinigungsmittel|засіб для чищення|чистящее средство|0
+n|Waschmittel|Waschmittel|пральний засіб|стиральное средство|0
+f|Seife|Seifen|мило|мыло|0
+n|Shampoo|Shampoos|шампунь|шампунь|0
+f|Zahnpasta|Zahnpasten|зубна паста|зубная паста|0
+f|Windel|Windeln|памперс|подгузник|0
+f|Batterie|Batterien|батарейка|батарейка|0
+f|Glühbirne|Glühbirnen|лампочка|лампочка|0
+n|Kleidungsstück|Kleidungsstücke|предмет одягу|предмет одежды|0
+f|Konfektionsgröße|Konfektionsgrößen|розмір одягу|размер одежды|0
+f|Schuhgröße|Schuhgrößen|розмір взуття|размер обуви|0
+f|Damenabteilung|Damenabteilungen|жіночий відділ|женский отдел|0
+f|Herrenabteilung|Herrenabteilungen|чоловічий відділ|мужской отдел|0
+f|Kinderabteilung|Kinderabteilungen|дитячий відділ|детский отдел|0
+f|Spielwarenabteilung|Spielwarenabteilungen|відділ іграшок|отдел игрушек|0
+n|Erdgeschoss|-|перший поверх|первый этаж|0
+f|Rolltreppe|Rolltreppen|ескалатор|эскалатор|0
+m|Ausgang|Ausgänge|вихід|выход|0
+m|Parkplatz|Parkplätze|парковка|парковка|0
+f|Selbstbedienung|-|самообслуговування|самообслуживание|0
+f|Selbstbedienungskasse|Selbstbedienungskassen|каса самообслуговування|касса самообслуживания|0
+f|Bezahlung|Bezahlungen|оплата|оплата|0
+f|EC-Karte|EC-Karten|банківська картка (EC)|банковская карта (EC)|0
+f|Girokarte|Girokarten|дебетова картка|дебетовая карта|0
+m|Bon|Bons|чек|чек|0
+m|Preisvergleich|Preisvergleiche|порівняння цін|сравнение цен|0
+f|Bewertung|Bewertungen|відгук; оцінка|отзыв; оценка|0
+f|Empfehlung|Empfehlungen|рекомендація|рекомендация|0
+f|Wahl|Wahlen|вибір|выбор|0
+m|Wunsch|Wünsche|бажання|желание|0
+m|Bedarf|-|потреба|потребность|0
+n|Schnäppchen|Schnäppchen|вигідна покупка|выгодная покупка|0
+f|Aktion|Aktionen|акція|акция|0
+f|Rabattaktion|Rabattaktionen|акція зі знижками|акция со скидками|0
+f|Gratisprobe|Gratisproben|безкоштовна проба|бесплатный пробник|0
+n|Geschenk|Geschenke|подарунок|подарок|0
+f|Geschenkverpackung|Geschenkverpackungen|подарункова упаковка|подарочная упаковка|0
+f|Lieferadresse|Lieferadressen|адреса доставки|адрес доставки|0
+f|Rechnungsadresse|Rechnungsadressen|адреса для рахунку|адрес для счёта|0
+f|Sendungsnummer|Sendungsnummern|номер відстеження|номер отслеживания|0
+n|Paket|Pakete|посилка|посылка|0
+f|Paketstation|Paketstationen|поштомат|постамат|0
+f|Retoure|Retouren|повернення (товару)|возврат (товара)|0
+f|Rückerstattung|Rückerstattungen|повернення коштів|возврат средств|0
+m|Ersatz|-|заміна|замена|0
+m|Defekt|Defekte|дефект|дефект|0
+f|Bedienungsanleitung|Bedienungsanleitungen|інструкція з експлуатації|инструкция по эксплуатации|0

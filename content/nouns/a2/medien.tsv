@@ -108,3 +108,59 @@ f|Lüge|Lügen|брехня|ложь|0
 n|Gerücht|Gerüchte|чутка|слух|0
 f|Presse|-|преса|пресса|0
 f|Öffentlichkeit|-|громадськість|общественность|0
+m|Fernsehsender|Fernsehsender|телеканал|телеканал|0
+n|Fernsehen|-|телебачення|телевидение|0
+n|Radio|Radios|радіо|радио|0
+m|Film|Filme|фільм|фильм|0
+m|Spielfilm|Spielfilme|художній фільм|художественный фильм|0
+m|Zeichentrickfilm|Zeichentrickfilme|мультфільм|мультфильм|0
+f|Nachrichtensendung|Nachrichtensendungen|випуск новин|выпуск новостей|0
+f|Talkshow|Talkshows|ток-шоу|ток-шоу|0
+f|Quizshow|Quizshows|вікторина (шоу)|викторина (шоу)|0
+f|Wettervorhersage|Wettervorhersagen|прогноз погоди|прогноз погоды|0
+m|Sportteil|Sportteile|спортивний розділ|спортивный раздел|0
+m|Wirtschaftsteil|Wirtschaftsteile|економічний розділ|экономический раздел|0
+n|Feuilleton|Feuilletons|культурний розділ|культурный раздел|0
+m|Leserbrief|Leserbriefe|лист читача|письмо читателя|0
+n|Titelbild|Titelbilder|обкладинка (зображення)|обложка (изображение)|0
+f|Auflage|Auflagen|наклад|тираж|0
+f|Ausgabe|Ausgaben|випуск; видання|выпуск; издание|0
+m|Verlag|Verlage|видавництво|издательство|0
+m|Herausgeber|Herausgeber|видавець|издатель|0
+m|Autor|Autoren|автор|автор|0
+f|Rubrik|Rubriken|рубрика|рубрика|0
+n|Thema|Themen|тема|тема|0
+n|Detail|Details|деталь|деталь|0
+f|Behauptung|Behauptungen|твердження|утверждение|0
+f|Fälschung|Fälschungen|підробка|подделка|0
+f|Falschmeldung|Falschmeldungen|фейкова новина|фейковая новость|0
+f|Werbepause|Werbepausen|рекламна пауза|рекламная пауза|0
+m|Werbespot|Werbespots|рекламний ролик|рекламный ролик|0
+m|Trailer|Trailer|трейлер|трейлер|0
+f|Folge|Folgen|серія|серия|0
+f|Staffel|Staffeln|сезон (серіалу)|сезон (сериала)|0
+m|Streamingdienst|Streamingdienste|стрімінговий сервіс|стриминговый сервис|0
+n|Konto|Konten|акаунт; рахунок|аккаунт; счёт|0
+n|Profil|Profile|профіль|профиль|0
+m|Follower|Follower|підписник|подписчик|0
+m|Influencer|Influencer|інфлюенсер|инфлюенсер|0
+n|Foto|Fotos|фото|фото|0
+n|Selfie|Selfies|селфі|селфи|0
+f|Story|Storys|історія (в соцмережі)|история (в соцсети)|0
+f|Nachricht|Nachrichten|повідомлення|сообщение|0
+m|Chat|Chats|чат|чат|0
+f|Gruppe|Gruppen|група|группа|0
+m|Anruf|Anrufe|дзвінок|звонок|0
+m|Videoanruf|Videoanrufe|відеодзвінок|видеозвонок|0
+f|Sprachnachricht|Sprachnachrichten|голосове повідомлення|голосовое сообщение|0
+f|Telefonnummer|Telefonnummern|номер телефону|номер телефона|0
+f|Handynummer|Handynummern|номер мобільного|номер мобильного|0
+m|Handyvertrag|Handyverträge|мобільний контракт|мобильный контракт|0
+f|Prepaidkarte|Prepaidkarten|передплачена картка|предоплаченная карта|0
+f|SIM-Karte|SIM-Karten|SIM-картка|SIM-карта|0
+n|Guthaben|Guthaben|баланс; залишок коштів|баланс; остаток средств|0
+n|Datenvolumen|Datenvolumen|обсяг трафіку|объём трафика|0
+f|Flatrate|Flatrates|безлімітний тариф|безлимитный тариф|0
+n|Roaming|-|роумінг|роуминг|0
+n|WLAN|WLANs|вай-фай|вай-фай|0
+n|Internetcafé|Internetcafés|інтернет-кафе|интернет-кафе|0
