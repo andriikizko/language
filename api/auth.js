@@ -17,6 +17,46 @@ export default async function handler(req, res) {
   if (!dbReady()) return res.status(503).json({ error: 'no_db' })
   try {
     const { action, password } = req.body || {}
+
+    // Вхід через Google: перевіряємо ID-токен, беремо лише email.
+    if (action === 'google') {
+      const cid = process.env.GOOGLE_CLIENT_ID
+      if (!cid) return res.status(503).json({ error: 'no_google' })
+      const credential = String((req.body || {}).credential || '')
+      if (!credential) return res.status(400).json({ error: 'bad_request' })
+      const r = await fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + encodeURIComponent(credential))
+      const g = await r.json()
+      const okAud = g.aud === cid
+      const email = String(g.email || '').toLowerCase()
+      if (!r.ok || !okAud || String(g.email_verified) !== 'true' || !validEmail(email)) return res.status(401).json({ error: 'google_failed' })
+      const gkey = 'u:' + email
+      const token = crypto.randomBytes(32).toString('hex')
+      const cur = await cmd('GET', gkey)
+      let rec
+      if (cur) rec = JSON.parse(cur)
+      else rec = { login: email, name: '', email, google: true, phone: '', consent: null, tokens: [], created: Date.now() }
+      rec.tokens = [...(rec.tokens || []), sha(token)].slice(-10)
+      await cmd('SET', gkey, JSON.stringify(rec))
+      const st = await cmd('GET', 's:' + email)
+      return res.status(200).json({ token, login: email, name: rec.name || '', needProfile: !rec.name || rec.consent === null, state: st ? JSON.parse(st) : null })
+    }
+
+    // Дозаповнення профілю після Google-входу: ім'я, телефон, згода.
+    if (action === 'profile') {
+      const b = req.body || {}
+      const lg = String(b.login || '').trim().toLowerCase()
+      const raw = await cmd('GET', 'u:' + lg)
+      if (!raw) return res.status(401).json({ error: 'auth' })
+      const rec = JSON.parse(raw)
+      if (!(rec.tokens || []).includes(sha(String(b.token || '')))) return res.status(401).json({ error: 'auth' })
+      const name = String(b.name || '').trim().slice(0, 60)
+      const phone = String(b.phone || '').trim()
+      if (!name) return res.status(400).json({ error: 'bad_name' })
+      if (phone && !validPhone(phone)) return res.status(400).json({ error: 'bad_phone' })
+      rec.name = name; rec.phone = phone; rec.consent = b.consent === true
+      await cmd('SET', 'u:' + lg, JSON.stringify(rec))
+      return res.status(200).json({ ok: true, name })
+    }
     const raw = String((req.body || {}).login || '').trim()
     const login = raw.toLowerCase()
     if (!validLogin(login)) return res.status(400).json({ error: 'bad_login' })

@@ -2,6 +2,7 @@ import json,sys,glob,os
 from german_nouns.lookup import Nouns
 N=Nouns()
 BL={'numbers':'Цифри й числа','days':'Дні тижня й місяці','family':'Родина','food':'Їжа й напої','clothes':'Одяг','home':'Дім і меблі','city':'Місто й транспорт','jobs':'Професії','tech':'Техніка й телефон','body':'Тіло','hobby':'Хобі й вільний час'}
+ALT={'Cola':'також das Cola','Joghurt':'також das Joghurt','Gehalt':'в Австрії також der Gehalt'}
 words={};review=[]
 for f in sorted(glob.glob('content/nouns/*.tsv')):
     topic=os.path.basename(f)[:-4]
@@ -25,6 +26,7 @@ for f in sorted(glob.glob('content/nouns/*.tsv')):
                     pls={r['flexion'].get('nominativ plural') for r in res if r.get('genus')==g}
                     pls.discard(None)
                     if pl!='-' and pls and pl not in pls: review.append((de,f'множина: у мене {pl}, у словнику {sorted(pls)}'))
+        if de in ALT: rec['alt']=ALT[de]
         words[key]=rec
 out=sorted(words.values(),key=lambda r:r['de'].lower())
 json.dump({'topics':BL,'words':out},open('src/app/data/nouns.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))

@@ -1,25 +1,28 @@
 import { useMemo, useState } from 'react'
 import verbs from './data/verbs.json'
 import dict from './data/dict.json'
+import { GUEST, GUEST_TEXT } from './guest.js'
+
+const GuestFoot = ({ onGate }) => <div className="de-card" style={{ marginTop: 12 }}><div className="de-dim">{GUEST_TEXT}</div><button className="de-btn" onClick={onGate}>Зареєструватися</button></div>
 
 const Back = ({ title, onBack, extra }) => (
   <div className="de-row"><button className="de-back" onClick={onBack}>‹</button><b style={{ fontSize: 17 }}>{title}</b><span className="de-dim">{extra}</span></div>
 )
-const Want = ({ k, want, setWant }) => (
-  <input type="checkbox" checked={!!want[k]} aria-label="хочу вивчити" onChange={() => { const n = { ...want }; if (n[k]) delete n[k]; else n[k] = 1; setWant(n) }} />
+const Want = ({ k, want, setWant, guest, onGate }) => (
+  <input type="checkbox" checked={!!want[k]} aria-label="хочу вивчити" onChange={() => { if (guest) return onGate(); const n = { ...want }; if (n[k]) delete n[k]; else n[k] = 1; setWant(n) }} />
 )
 const Filter = ({ only, setOnly }) => (
   <div className="de-seg"><button className={only === 'all' ? 'on' : ''} onClick={() => setOnly('all')}>Усі</button><button className={only === 'want' ? 'on' : ''} onClick={() => setOnly('want')}>Хочу вивчити</button></div>
 )
 
-export const Verbs = ({ lang, want, setWant, onBack }) => {
+export const Verbs = ({ lang, want, setWant, onBack, guest, onGate }) => {
   const [type, setType] = useState('all')
   const [only, setOnly] = useState('all')
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(null)
   const list = useMemo(() => {
     const s = q.trim().toLowerCase()
-    return verbs.filter((v) => (type === 'all' || v.type === type || (type === 'regular' && v.type === 'aux' && false)) &&
+    return verbs.filter((v) => (!guest || GUEST.verbs.has(v.de)) && (type === 'all' || v.type === type || (type === 'regular' && v.type === 'aux' && false)) &&
       (only === 'all' || want['v:' + v.de]) && (!s || v.de.includes(s) || v.uk.toLowerCase().includes(s) || v.ru.toLowerCase().includes(s)))
   }, [type, only, q, want])
   const T = [['regular', 'Звичайні'], ['modal', 'Модальні'], ['sep', 'Відокремлювані'], ['all', 'Усі']]
@@ -35,7 +38,7 @@ export const Verbs = ({ lang, want, setWant, onBack }) => {
             <div className="de-w-de"><span>{v.de}</span></div>
             <div className="de-w-tr">{v[lang]}</div>
           </div>
-          <Want k={'v:' + v.de} want={want} setWant={setWant} />
+          <Want k={'v:' + v.de} want={want} setWant={setWant} guest={guest} onGate={onGate} />
           {open === v.de && (
             <div className="de-forms">
               {v.f.map((f, i) => <div key={i} className={v.irr[i] ? 'irr' : ''}>{f}</div>)}
@@ -44,16 +47,17 @@ export const Verbs = ({ lang, want, setWant, onBack }) => {
         </div>
       ))}
       {!list.length && <div className="de-empty">Нічого не знайдено</div>}
+      {guest && <GuestFoot onGate={onGate} />}
     </>
   )
 }
 
-export const Adjectives = ({ lang, want, setWant, onBack }) => {
+export const Adjectives = ({ lang, want, setWant, onBack, guest, onGate }) => {
   const [only, setOnly] = useState('all')
   const [topic, setTopic] = useState('all')
   const [q, setQ] = useState('')
   const TP = [['all', 'Усі'], ['colors', 'Кольори'], ['basic', 'Основні'], ['feel', 'Стани й характер'], ['food', 'Смак']]
-  const list = dict.adj.filter((a) => (topic === 'all' || a.topic === topic) && (only === 'all' || want['a:' + a.de]) &&
+  const list = dict.adj.filter((a) => (!guest || GUEST.adj.has(a.de)) && (topic === 'all' || a.topic === topic) && (only === 'all' || want['a:' + a.de]) &&
     (!q.trim() || a.de.includes(q.trim().toLowerCase()) || a.uk.toLowerCase().includes(q.trim().toLowerCase()) || a.ru.toLowerCase().includes(q.trim().toLowerCase())))
   return (
     <>
@@ -67,9 +71,10 @@ export const Adjectives = ({ lang, want, setWant, onBack }) => {
             <div className="de-w-de"><span>{a.de}</span>{a.opp && <span className="de-w-pl">↔ {a.opp}</span>}</div>
             <div className="de-w-tr">{a[lang]}</div>
           </div>
-          <Want k={'a:' + a.de} want={want} setWant={setWant} />
+          <Want k={'a:' + a.de} want={want} setWant={setWant} guest={guest} onGate={onGate} />
         </div>
       ))}
+      {guest && <GuestFoot onGate={onGate} />}
     </>
   )
 }

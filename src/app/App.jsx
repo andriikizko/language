@@ -10,7 +10,7 @@ const SKEY = 'languages.session'
 const ERR = {
   exists: 'Такий логін уже зайнятий', wrong: 'Невірний логін або пароль', locked: 'Забагато спроб. Зачекайте хвилину',
   bad_login: 'Логін: 3–32 символи (літери, цифри, _ . -)', bad_password: 'Пароль: від 4 символів',
-  bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний',
+  bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний', google_failed: 'Не вдалося увійти через Google', no_google: 'Вхід через Google ще не налаштований', bad_name: 'Вкажіть імʼя',
 }
 
 const SLIDES = [
@@ -31,7 +31,58 @@ const Intro = ({ onDone }) => {
   )
 }
 
-const Auth = ({ onAuth }) => {
+const GoogleBtn = ({ onCred }) => {
+  const ref = useRef(null)
+  const [ok, setOk] = useState(null)
+  useEffect(() => {
+    let dead = false
+    fetch('/api/config').then((r) => r.json()).then((c) => {
+      if (dead || !c.googleClientId) return setOk(false)
+      const init = () => {
+        window.google.accounts.id.initialize({ client_id: c.googleClientId, callback: (r) => onCred(r.credential) })
+        window.google.accounts.id.renderButton(ref.current, { theme: 'outline', size: 'large', width: 300, text: 'continue_with', locale: 'uk' })
+        setOk(true)
+      }
+      if (window.google?.accounts?.id) return init()
+      const sc = document.createElement('script')
+      sc.src = 'https://accounts.google.com/gsi/client'; sc.async = true; sc.onload = init; sc.onerror = () => setOk(false)
+      document.head.appendChild(sc)
+    }).catch(() => setOk(false))
+    return () => { dead = true }
+  }, []) // eslint-disable-line
+  return <div style={{ display: ok === false ? 'none' : 'flex', justifyContent: 'center', minHeight: 44 }} ref={ref} />
+}
+
+const ProfileSetup = ({ sess, onDone }) => {
+  const [f, setF] = useState({ name: '', phone: '', consent: false })
+  const [err, setErr] = useState('')
+  const set = (k) => (e) => setF({ ...f, [k]: e.target.type === 'checkbox' ? e.target.checked : e.target.value })
+  const go = async () => {
+    setErr('')
+    const r = await post('/api/auth', { action: 'profile', login: sess.login, token: sess.token, ...f })
+    if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
+    onDone(r.name)
+  }
+  return (
+    <div className="de-auth">
+      <h1>Майже готово</h1>
+      <p>Вкажіть, як до вас звертатися. Email {sess.login} підтверджено через Google.</p>
+      <input className="de-search" placeholder="Імʼя" value={f.name} onChange={set('name')} />
+      <input className="de-search" type="tel" placeholder="Телефон (необовʼязково)" value={f.phone} onChange={set('phone')} />
+      <label className="de-chk"><input type="checkbox" checked={f.consent} onChange={set('consent')} />
+        <span>Погоджуюсь отримувати повідомлення, листи та дзвінки щодо навчання й пропозицій (можна вимкнути в профілі)</span></label>
+      {err && <div className="de-err">{err}</div>}
+      <button className="de-btn" onClick={go}>Продовжити</button>
+    </div>
+  )
+}
+
+const Auth = ({ onAuth, onGuest }) => {
+  const onCred = async (credential) => {
+    const r = await post('/api/auth', { action: 'google', credential })
+    if (!r.ok) return setErr(ERR[r.error] || 'Помилка. Спробуйте ще раз')
+    onAuth({ token: r.token, login: r.login, name: r.name }, r.state, r.needProfile)
+  }
   const [mode, setMode] = useState('login')
   const [f, setF] = useState({ login: '', password: '', email: '', phone: '', consent: false })
   const [err, setErr] = useState('')
@@ -62,6 +113,9 @@ const Auth = ({ onAuth }) => {
       <button className="de-btn ghost" onClick={() => { setMode(mode === 'login' ? 'register' : 'login'); setErr('') }}>
         {mode === 'login' ? 'Створити акаунт' : 'Вже є акаунт'}
       </button>
+      <div className="de-dim" style={{ textAlign: 'center', margin: '6px 0' }}>або</div>
+      <GoogleBtn onCred={onCred} />
+      <button className="de-btn ghost" onClick={onGuest}>Продовжити як гість</button>
     </div>
   )
 }
@@ -70,6 +124,8 @@ export default function App() {
   const [splash, setSplash] = useState(true)
   const [sess, setSess] = useState(() => { try { return JSON.parse(localStorage.getItem(SKEY)) } catch { return null } })
   const [st, setSt] = useState(() => { try { return JSON.parse(localStorage.getItem('languages.state')) || {} } catch { return {} } })
+  const [guest, setGuest] = useState(() => localStorage.getItem('languages.guest') === '1')
+  const [needProfile, setNeedProfile] = useState(false)
   const [tab, setTab] = useState('home')
   const [screen, setScreen] = useState(null)
   const timer = useRef(null)
@@ -82,10 +138,14 @@ export default function App() {
     timer.current = setTimeout(() => post('/api/sync', { login: sess.login, token: sess.token, state: st }), 1200)
   }, [st]) // eslint-disable-line
 
-  const onAuth = (s, remote) => {
+  const onAuth = (s, remote, np) => {
     localStorage.setItem(SKEY, JSON.stringify(s)); setSess(s)
+    localStorage.removeItem('languages.guest'); setGuest(false)
     if (remote) setSt(remote)
+    setNeedProfile(!!np)
   }
+  const startGuest = () => { localStorage.setItem('languages.guest', '1'); setGuest(true) }
+  const toAuth = () => { localStorage.removeItem('languages.guest'); setGuest(false); setTab('home'); setScreen(null) }
   const logout = () => { localStorage.removeItem(SKEY); setSess(null) }
   const lang = st.lang || 'uk'
   const tr = st.trans || lang
@@ -96,7 +156,16 @@ export default function App() {
   const wantCount = useMemo(() => Object.keys(st.want || {}).length, [st.want])
 
   if (splash) return <div className="de-app"><Splash onDone={() => setSplash(false)} /></div>
-  if (!sess) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} /></div></div>
+  if (!sess && !guest) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} onGuest={startGuest} /></div></div>
+  if (sess && needProfile) return <div className="de-app"><div className="de-main"><ProfileSetup sess={sess} onDone={(name) => { const n = { ...sess, name }; localStorage.setItem(SKEY, JSON.stringify(n)); setSess(n); setNeedProfile(false) }} /></div></div>
+  const isGuest = !sess
+  const Gate = () => (
+    <div className="de-empty">
+      <b>Тільки для зареєстрованих</b>
+      <div style={{ margin: '8px 0 14px' }}>{'Щоб бачити весь словник і користуватися всіма перевагами застосунку, зареєструйтесь.'}</div>
+      <button className="de-btn" onClick={toAuth}>Увійти або зареєструватися</button>
+    </div>
+  )
 
   const showIntro = !st.intro
   const nav = [['home', 'Головна', 'home'], ['learn', 'Поточне навчання', 'learn'], ['errors', 'Робота над помилками', 'alert'], ['profile', 'Профіль', 'person']]
@@ -108,26 +177,32 @@ export default function App() {
       <div className="de-main">
         {tab === 'home' && !screen && (
           <>
-            <div className="de-hello">Привіт, {sess.name}!</div>
-            <div className="de-h2" style={{ marginTop: 0 }}>Словник · {wantCount} до вивчення</div>
+            <div className="de-hello">{isGuest ? 'Привіт!' : 'Привіт, ' + sess.name + '!'}</div>
+            <div className="de-grid" style={{ marginBottom: 6 }}>
+              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
+              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('cal'))}><span className="de-tile-ic">📅</span><b>Календар</b><small>13 тижнів</small></button>
+            </div>
+            <div className="de-h2">Словник{isGuest ? ' · 50 слів' : ' · ' + wantCount + ' до вивчення'}</div>
             <div className="de-grid">
               <button className="de-tile" onClick={() => setScreen('nouns')}><span className="de-tile-ic">📘</span><b>Іменники</b><small>з артиклями</small></button>
               <button className="de-tile" onClick={() => setScreen('verbs')}><span className="de-tile-ic">⚡</span><b>Дієслова</b><small>6 форм</small></button>
               <button className="de-tile" onClick={() => setScreen('adj')}><span className="de-tile-ic">🎨</span><b>Прикметники</b><small>і кольори</small></button>
-              <button className="de-tile" onClick={() => setScreen('pron')}><span className="de-tile-ic">👤</span><b>Займенники</b><small>і питання</small></button>
-              <button className="de-tile" onClick={() => setScreen('nums')}><span className="de-tile-ic">🔢</span><b>Числівники</b><small>0–100, порядкові</small></button>
-              <button className="de-tile" onClick={() => setScreen('preps')}><span className="de-tile-ic">🧭</span><b>Прийменники</b><small>з відмінками</small></button>
+              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('pron'))}><span className="de-tile-ic">👤</span><b>Займенники</b><small>і питання</small></button>
+              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('nums'))}><span className="de-tile-ic">🔢</span><b>Числівники</b><small>0–100, порядкові</small></button>
+              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('preps'))}><span className="de-tile-ic">🧭</span><b>Прийменники</b><small>з відмінками</small></button>
             </div>
           </>
         )}
         {tab === 'home' && screen && (() => {
-          const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null) }
+          if (screen === 'gate') return <Gate />
+          const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null), guest: isGuest, onGate: () => setScreen('gate') }
           const M = { cal: (q) => <Calendar st={st} update={update} onBack={q.onBack} />, nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
           return screen === 'cal' ? M(p) : <M {...p} />
         })()}
-        {tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
-        {tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
-        {tab === 'profile' && (
+        {isGuest && tab !== 'home' && <Gate />}
+        {!isGuest && tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
+        {!isGuest && tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
+        {!isGuest && tab === 'profile' && (
           <>
             <div className="de-hello">{sess.name}</div>
             <div className="de-card"><b>Вивчено слів: {knownCount} / 500</b><div className="de-bar" style={{ marginTop: 8, marginBottom: 0 }}><div style={{ width: Math.min(100, knownCount / 5) + '%' }} /></div><div className="de-dim" style={{ marginTop: 6 }}>Слово зараховується, коли ти правильно відповів на нього у вправі.</div></div>
