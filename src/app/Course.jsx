@@ -103,7 +103,7 @@ export function Course({ st, update, lang, tr, onAns }) {
       <>
         <div className="de-row"><button className="de-back" onClick={() => setCur(null)}>‹</button><b style={{ fontSize: 17 }}>{lang === 'ru' ? b.title_ru : b.title}</b><span /></div>
         <div className="de-card">{ex.map((x, i) => <div key={i}><h4>{x.h}</h4><p>{x.p}</p></div>)}</div>
-        <button className="de-btn" onClick={() => setRun({ ids: session(b, 'gap', 6), title: b.title, after: (sc) => mark(b.id, { test: Math.max(sc, d.test || 0) }) })}>Вправа: речення з пропуском</button>
+        <button className="de-btn" onClick={() => setRun({ ids: session(b, 'gap', 10), title: b.title, after: (sc) => mark(b.id, { test: Math.max(sc, d.test || 0) }) })}>Вправа: речення з пропуском</button>
       </>
     )
   }

@@ -119,7 +119,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
   const homework = () => {
     let ids = []
     if (k === 1) ids = [...pick(poolFor(b, 'tr'), 5), ...pick(poolFor(b, 'art'), 3), ...pick(poolFor(b, 'pl'), 2)]
-    else if (k === 2) ids = [...grams.flatMap((g) => pick(poolFor(g, 'gap'), 5)), ...pick(poolFor(b, 'gap'), 4)]
+    else if (k === 2) ids = [...grams.flatMap((g) => pick(poolFor(g, 'gap'), 8)), ...pick(poolFor(b, 'gap'), 4)]
     else ids = [...pick(poolFor(b, 'listen'), 2), ...pick(poolFor(b, 'order'), 3), ...pick(poolFor(b, 'tr'), 3)]
     ids = [...ids, ...pick(srsDue(st.srs), 3)]
     return shuffle(ids).slice(0, 12)
@@ -169,7 +169,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
         <div style={{ display: 'grid', gap: 8 }}>
           {k === 1 && modes.map(([m, tt]) => <button key={m} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, m, 10), tt)}>{tt}</button>)}
           {k === 2 && <>
-            {grams.map((g) => <button key={g.id} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(g, 'gap', 6), g.title)}>Вправи: {g.title}</button>)}
+            {grams.map((g) => <button key={g.id} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(g, 'gap', 10), g.title)}>Вправи: {g.title}</button>)}
             <button className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, 'gap', 10), 'Речення з пропуском')}>Речення з теми «{b.title}»</button>
           </>}
           {k === 3 && <>
