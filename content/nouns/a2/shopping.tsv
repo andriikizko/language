@@ -1,0 +1,41 @@
+n|Geschäft|Geschäfte|магазин, справа|магазин, дело|1
+m|Laden|Läden|крамниця|лавка, магазин|0
+n|Kaufhaus|Kaufhäuser|універмаг|универмаг|0
+n|Einkaufszentrum|Einkaufszentren|торговий центр|торговый центр|1
+m|Markt|Märkte|ринок|рынок|0
+m|Supermarkt|Supermärkte|супермаркет|супермаркет|0
+f|Bäckerei|Bäckereien|пекарня|пекарня|0
+f|Metzgerei|Metzgereien|мʼясна крамниця|мясная лавка|0
+f|Drogerie|Drogerien|дрогері|дрогерия|0
+m|Einkaufswagen|Einkaufswagen|візок для покупок|тележка для покупок|0
+f|Tüte|Tüten|пакет|пакет|0
+f|Kasse|Kassen|каса|касса|1
+m|Kassenbon|Kassenbons|чек|чек|1
+f|Quittung|Quittungen|квитанція|квитанция|0
+f|Rechnung|Rechnungen|рахунок|счёт|1
+m|Preis|Preise|ціна|цена|1
+n|Angebot|Angebote|пропозиція, акція|предложение, акция|1
+m|Rabatt|Rabatte|знижка|скидка|1
+m|Schlussverkauf|Schlussverkäufe|розпродаж|распродажа|0
+f|Qualität|Qualitäten|якість|качество|1
+f|Größe|Größen|розмір|размер|0
+f|Auswahl|-|вибір|выбор|1
+f|Marke|Marken|марка, бренд|марка, бренд|0
+f|Garantie|Garantien|гарантія|гарантия|1
+f|Reklamation|Reklamationen|рекламація, скарга|рекламация, жалоба|0
+m|Umtausch|-|обмін (товару)|обмен (товара)|0
+f|Rückgabe|Rückgaben|повернення (товару)|возврат (товара)|0
+n|Geld|Gelder|гроші|деньги|1
+n|Bargeld|-|готівка|наличные|1
+f|Karte|Karten|картка|карта|0
+f|Kreditkarte|Kreditkarten|кредитна картка|кредитная карта|1
+n|Wechselgeld|-|решта|сдача|0
+m|Kunde|Kunden|клієнт, покупець|клиент, покупатель|1
+f|Kundin|Kundinnen|клієнтка, покупчиня|клиентка, покупательница|0
+m|Verkäufer|Verkäufer|продавець|продавец|0
+f|Liste|Listen|список|список|0
+f|Ware|Waren|товар|товар|0
+m|Artikel|Artikel|товар, стаття|товар, статья|0
+m|Onlineshop|Onlineshops|інтернет-магазин|интернет-магазин|0
+f|Lieferung|Lieferungen|доставка|доставка|1
+f|Bestellung|Bestellungen|замовлення|заказ|1

@@ -1,0 +1,41 @@
+f|Schule|Schulen|школа|школа|0
+f|Grundschule|Grundschulen|початкова школа|начальная школа|0
+f|Universität|Universitäten|університет|университет|1
+f|Hochschule|Hochschulen|вищий навчальний заклад|высшее учебное заведение|0
+n|Studium|Studien|навчання в університеті|учёба в университете|1
+m|Student|Studenten|студент|студент|0
+m|Schüler|Schüler|учень|ученик|0
+m|Lehrer|Lehrer|вчитель|учитель|0
+m|Dozent|Dozenten|викладач (вишу)|преподаватель (вуза)|0
+m|Unterricht|-|урок, заняття|урок, занятие|1
+m|Kurs|Kurse|курс|курс|1
+m|Sprachkurs|Sprachkurse|мовний курс|языковой курс|1
+m|Integrationskurs|Integrationskurse|інтеграційний курс|интеграционный курс|1
+f|Prüfung|Prüfungen|іспит|экзамен|1
+n|Zertifikat|Zertifikate|сертифікат|сертификат|1
+f|Note|Noten|оцінка|оценка|1
+f|Hausaufgabe|Hausaufgaben|домашнє завдання|домашнее задание|1
+f|Aufgabe|Aufgaben|завдання|задача|0
+f|Übung|Übungen|вправа|упражнение|0
+f|Frage|Fragen|питання|вопрос|0
+f|Antwort|Antworten|відповідь|ответ|0
+m|Fehler|Fehler|помилка|ошибка|1
+f|Grammatik|-|граматика|грамматика|1
+m|Wortschatz|-|словниковий запас|словарный запас|1
+n|Wörterbuch|Wörterbücher|словник|словарь|0
+m|Text|Texte|текст|текст|0
+m|Satz|Sätze|речення|предложение|0
+f|Aussprache|-|вимова|произношение|0
+f|Bibliothek|Bibliotheken|бібліотека|библиотека|0
+n|Heft|Hefte|зошит|тетрадь|0
+m|Stundenplan|Stundenpläne|розклад уроків|расписание уроков|0
+f|Pause|Pausen|перерва|перерыв|0
+f|Klasse|Klassen|клас, група|класс, группа|0
+f|Anmeldung|Anmeldungen|запис, реєстрація|запись, регистрация|0
+f|Weiterbildung|Weiterbildungen|підвищення кваліфікації|повышение квалификации|0
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|0
+n|Abitur|-|атестат про середню освіту|аттестат о среднем образовании|0
+f|Prüfungsangst|-|страх перед іспитом|страх перед экзаменом|0
+n|Lernen|-|навчання|учение|0
+f|Konzentration|-|концентрація, зосередженість|концентрация, сосредоточенность|0
+m|Erfolg|Erfolge|успіх|успех|1

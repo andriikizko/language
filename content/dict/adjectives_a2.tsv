@@ -1,0 +1,134 @@
+gesund|здоровий|здоровый|a2_health|1|krank|gesünder|am gesündesten
+krank|хворий|больной|a2_health|1|gesund|kränker|am kränksten
+fit|у формі|в форме|a2_health|0||fitter|am fittesten
+müde|втомлений|уставший|a2_health|0|wach|müder|am müdesten
+stark|сильний|сильный|a2_health|1|schwach|stärker|am stärksten
+schwach|слабкий|слабый|a2_health|0|stark|schwächer|am schwächsten
+erkältet|застуджений|простуженный|a2_health|1|||
+schmerzhaft|болісний|болезненный|a2_health|0|||
+gefährlich|небезпечний|опасный|a2_health|0|ungefährlich|gefährlicher|am gefährlichsten
+ernst|серйозний|серьёзный|a2_health|0||ernster|am ernstesten
+teuer|дорогий|дорогой|a2_travel|1|billig|teurer|am teuersten
+billig|дешевий|дешёвый|a2_travel|1|teuer|billiger|am billigsten
+weit|далекий|далёкий|a2_travel|1|nah|weiter|am weitesten
+nah|близький|близкий|a2_travel|1|weit|näher|am nächsten
+schnell|швидкий|быстрый|a2_travel|1|langsam|schneller|am schnellsten
+langsam|повільний|медленный|a2_travel|0|schnell|langsamer|am langsamsten
+bequem|зручний|удобный|a2_travel|1|unbequem|bequemer|am bequemsten
+anstrengend|виснажливий|утомительный|a2_travel|1|||
+ruhig|спокійний, тихий|спокойный, тихий|a2_travel|0|laut|ruhiger|am ruhigsten
+voll|повний, переповнений|полный, переполненный|a2_travel|0|leer|voller|am vollsten
+leer|порожній|пустой|a2_travel|0|voll||
+frei|вільний|свободный|a2_travel|0|besetzt||
+besetzt|зайнятий|занятый|a2_travel|0|frei||
+sicher|безпечний, впевнений|безопасный, уверенный|a2_travel|0|unsicher|sicherer|am sichersten
+interessant|цікавий|интересный|a2_travel|0|langweilig|interessanter|am interessantesten
+sonnig|сонячний|солнечный|a2_natur|1|||
+regnerisch|дощовий|дождливый|a2_natur|0|||
+windig|вітряний|ветреный|a2_natur|0|||
+bewölkt|хмарний|облачный|a2_natur|1|||
+stürmisch|штормовий|штормовой|a2_natur|0|||
+neblig|туманний|туманный|a2_natur|0|||
+nass|мокрий|мокрый|a2_natur|0|trocken|nasser|am nassesten
+trocken|сухий|сухой|a2_natur|0|nass|trockener|am trockensten
+kühl|прохолодний|прохладный|a2_natur|0||kühler|am kühlsten
+mild|м'який (про клімат)|мягкий (о климате)|a2_natur|0||milder|am mildesten
+warm|теплий|тёплый|a2_natur|1|kalt|wärmer|am wärmsten
+kalt|холодний|холодный|a2_natur|1|warm|kälter|am kältesten
+heiß|гарячий, спекотний|горячий, жаркий|a2_natur|1|kalt|heißer|am heißesten
+umweltfreundlich|екологічний|экологичный|a2_natur|1|||
+neu|новий|новый|a2_shopping|0|alt|neuer|am neuesten
+alt|старий|старый|a2_shopping|0|neu|älter|am ältesten
+modern|сучасний|современный|a2_shopping|0|altmodisch|moderner|am modernsten
+praktisch|практичний|практичный|a2_shopping|1|||
+günstig|вигідний, недорогий|выгодный, недорогой|a2_shopping|1||günstiger|am günstigsten
+preiswert|недорогий, вигідний|недорогой, выгодный|a2_shopping|0|||
+kostenlos|безкоштовний|бесплатный|a2_shopping|1|||
+gut|добрий, гарний|хороший|a2_shopping|1|schlecht|besser|am besten
+schlecht|поганий|плохой|a2_shopping|0|gut|schlechter|am schlechtesten
+groß|великий|большой|a2_shopping|0|klein|größer|am größten
+klein|малий|маленький|a2_shopping|0|groß|kleiner|am kleinsten
+lang|довгий|длинный|a2_shopping|0|kurz|länger|am längsten
+kurz|короткий|короткий|a2_shopping|0|lang|kürzer|am kürzesten
+hoch|високий|высокий|a2_shopping|0|niedrig|höher|am höchsten
+breit|широкий|широкий|a2_shopping|0|schmal|breiter|am breitesten
+schmal|вузький|узкий|a2_shopping|0|breit|schmaler|am schmalsten
+dünn|тонкий|тонкий|a2_shopping|0|dick|dünner|am dünnsten
+dick|товстий|толстый|a2_shopping|0|dünn|dicker|am dicksten
+schwer|важкий, складний|тяжёлый, трудный|a2_shopping|0|leicht|schwerer|am schwersten
+leicht|легкий|лёгкий|a2_shopping|0|schwer|leichter|am leichtesten
+fröhlich|веселий|весёлый|a2_feste|1|traurig|fröhlicher|am fröhlichsten
+lustig|кумедний, веселий|смешной, весёлый|a2_feste|0|||
+festlich|святковий|праздничный|a2_feste|0|||
+herzlich|сердечний|сердечный|a2_feste|1|||
+traurig|сумний|грустный|a2_feste|0|fröhlich|trauriger|am traurigsten
+glücklich|щасливий|счастливый|a2_feste|1|unglücklich|glücklicher|am glücklichsten
+überrascht|здивований|удивлённый|a2_feste|0|||
+nett|милий, приємний|милый, приятный|a2_feste|0|||
+freundlich|привітний|приветливый|a2_feste|0|unfreundlich|freundlicher|am freundlichsten
+höflich|ввічливий|вежливый|a2_feste|0|unhöflich|höflicher|am höflichsten
+beliebt|популярний, улюблений|популярный, любимый|a2_feste|0||beliebter|am beliebtesten
+typisch|типовий|типичный|a2_feste|0|||
+traditionell|традиційний|традиционный|a2_feste|1|||
+pünktlich|пунктуальний|пунктуальный|a2_arbeit|1|unpünktlich|pünktlicher|am pünktlichsten
+zuverlässig|надійний|надёжный|a2_arbeit|1|||
+flexibel|гнучкий|гибкий|a2_arbeit|1|||
+erfahren|досвідчений|опытный|a2_arbeit|0|||
+qualifiziert|кваліфікований|квалифицированный|a2_arbeit|0|||
+selbstständig|самостійний|самостоятельный|a2_arbeit|0|||
+fleißig|працьовитий|трудолюбивый|a2_arbeit|0|faul|fleißiger|am fleißigsten
+beschäftigt|зайнятий|занятый|a2_arbeit|0|||
+arbeitslos|безробітний|безработный|a2_arbeit|1|||
+zufrieden|задоволений|довольный|a2_arbeit|0|unzufrieden|zufriedener|am zufriedensten
+verantwortlich|відповідальний|ответственный|a2_arbeit|0|||
+notwendig|необхідний|необходимый|a2_arbeit|0|||
+wichtig|важливий|важный|a2_arbeit|1|unwichtig|wichtiger|am wichtigsten
+hell|світлий|светлый|a2_wohnen|1|dunkel|heller|am hellsten
+dunkel|темний|тёмный|a2_wohnen|0|hell|dunkler|am dunkelsten
+gemütlich|затишний|уютный|a2_wohnen|1||gemütlicher|am gemütlichsten
+geräumig|просторий|просторный|a2_wohnen|0|||
+sauber|чистий|чистый|a2_wohnen|1|schmutzig|sauberer|am saubersten
+schmutzig|брудний|грязный|a2_wohnen|0|sauber|schmutziger|am schmutzigsten
+ordentlich|охайний|аккуратный|a2_wohnen|0|unordentlich|ordentlicher|am ordentlichsten
+laut|гучний|громкий|a2_wohnen|0|leise|lauter|am lautesten
+leise|тихий|тихий|a2_wohnen|0|laut|leiser|am leisesten
+zentral|центральний|центральный|a2_wohnen|1|||
+möbliert|мебльований|меблированный|a2_wohnen|1|||
+einfach|простий|простой|a2_schule|1|schwierig|einfacher|am einfachsten
+schwierig|складний|сложный|a2_schule|1|einfach|schwieriger|am schwierigsten
+klar|зрозумілий, ясний|ясный, понятный|a2_schule|0|unklar|klarer|am klarsten
+deutlich|чіткий|отчётливый|a2_schule|0|||
+richtig|правильний|правильный|a2_schule|0|falsch||
+falsch|неправильний|неправильный|a2_schule|0|richtig||
+neugierig|цікавий (допитливий)|любопытный|a2_schule|0|||
+aktuell|актуальний|актуальный|a2_medien|1|||
+bekannt|відомий|известный|a2_medien|0|unbekannt|bekannter|am bekanntesten
+berühmt|знаменитий|знаменитый|a2_medien|0||berühmter|am berühmtesten
+digital|цифровий|цифровой|a2_medien|0|||
+online|онлайн|онлайн|a2_medien|0|offline||
+offiziell|офіційний|официальный|a2_amt|1|inoffiziell||
+gültig|дійсний|действительный|a2_amt|1|ungültig||
+persönlich|особистий|личный|a2_amt|0|||
+kostenpflichtig|платний|платный|a2_amt|0|||
+fertig|готовий|готовый|a2_amt|0|||
+lecker|смачний|вкусный|a2_restaurant|1||leckerer|am leckersten
+frisch|свіжий|свежий|a2_restaurant|0||frischer|am frischesten
+scharf|гострий|острый|a2_restaurant|0|mild|schärfer|am schärfsten
+süß|солодкий|сладкий|a2_restaurant|0|sauer|süßer|am süßesten
+sauer|кислий|кислый|a2_restaurant|0|süß|saurer|am sauersten
+salzig|солоний|солёный|a2_restaurant|0|||
+bitter|гіркий|горький|a2_restaurant|0|||
+gebraten|смажений|жареный|a2_restaurant|1|||
+gekocht|варений|варёный|a2_restaurant|1|||
+vegetarisch|вегетаріанський|вегетарианский|a2_restaurant|1|||
+roh|сирий|сырой|a2_restaurant|0|||
+satt|ситий|сытый|a2_restaurant|0|hungrig||
+hungrig|голодний|голодный|a2_restaurant|0|satt|hungriger|am hungrigsten
+durstig|спраглий|жаждущий|a2_restaurant|0|||
+sportlich|спортивний|спортивный|a2_freizeit|1||sportlicher|am sportlichsten
+aktiv|активний|активный|a2_freizeit|1|passiv|aktiver|am aktivsten
+spannend|захоплюючий|захватывающий|a2_freizeit|1||spannender|am spannendsten
+langweilig|нудний|скучный|a2_freizeit|0|interessant|langweiliger|am langweiligsten
+kreativ|творчий|творческий|a2_freizeit|0|||
+entspannt|розслаблений|расслабленный|a2_freizeit|0|||
+gesellig|товариський|общительный|a2_freizeit|0|||

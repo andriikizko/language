@@ -1,0 +1,41 @@
+n|Wetter|-|погода|погода|1
+f|Temperatur|Temperaturen|температура|температура|1
+m|Grad|Grade|градус|градус|0
+f|Wettervorhersage|Wettervorhersagen|прогноз погоди|прогноз погоды|1
+f|Sonne|Sonnen|сонце|солнце|0
+m|Regen|-|дощ|дождь|0
+m|Schnee|-|сніг|снег|0
+m|Wind|Winde|вітер|ветер|0
+n|Gewitter|Gewitter|гроза|гроза|1
+m|Sturm|Stürme|буря|буря|1
+m|Nebel|Nebel|туман|туман|0
+n|Eis|-|лід|лёд|0
+f|Wolke|Wolken|хмара|облако|1
+m|Himmel|Himmel|небо|небо|0
+f|Hitze|-|спека|жара|1
+f|Kälte|-|холод|холод|0
+f|Luft|-|повітря|воздух|0
+f|Natur|-|природа|природа|1
+f|Umwelt|-|довкілля|окружающая среда|1
+m|Wald|Wälder|ліс|лес|1
+m|Baum|Bäume|дерево|дерево|0
+f|Blume|Blumen|квітка|цветок|0
+n|Gras|Gräser|трава|трава|0
+m|Fluss|Flüsse|річка|река|1
+f|Wiese|Wiesen|луг|луг|0
+n|Feld|Felder|поле|поле|0
+m|Park|Parks|парк|парк|0
+n|Tier|Tiere|тварина|животное|1
+m|Vogel|Vögel|птах|птица|0
+m|Fisch|Fische|риба|рыба|0
+f|Katze|Katzen|кішка|кошка|0
+m|Hund|Hunde|собака|собака|0
+f|Jahreszeit|Jahreszeiten|пора року|время года|0
+f|Klimaanlage|Klimaanlagen|кондиціонер|кондиционер|0
+n|Klima|-|клімат|климат|0
+m|Klimawandel|-|зміна клімату|изменение климата|1
+m|Umweltschutz|-|захист довкілля|охрана окружающей среды|1
+f|Verschmutzung|Verschmutzungen|забруднення|загрязнение|0
+m|Abfall|Abfälle|відходи|отходы|0
+f|Energie|Energien|енергія|энергия|0
+f|Mülltonne|Mülltonnen|сміттєвий бак|мусорный бак|0

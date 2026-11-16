@@ -1,11 +1,12 @@
 import json,sys,glob,os
 from german_nouns.lookup import Nouns
 N=Nouns()
-BL={'numbers':'Цифри й числа','days':'Дні тижня й місяці','family':'Родина','food':'Їжа й напої','clothes':'Одяг','home':'Дім і меблі','city':'Місто й транспорт','jobs':'Професії','tech':'Техніка й телефон','body':'Тіло','hobby':'Хобі й вільний час'}
+BL={'numbers':'Цифри й числа','days':'Дні тижня й місяці','family':'Родина','food':'Їжа й напої','clothes':'Одяг','home':'Дім і меблі','city':'Місто й транспорт','jobs':'Професії','tech':'Техніка й телефон','body':'Тіло','hobby':'Хобі й вільний час',
+ 'a2_health':'A2 · Здоров\'я й лікар','a2_travel':'A2 · Подорожі','a2_shopping':'A2 · Покупки','a2_feste':'A2 · Свята','a2_arbeit':'A2 · Робота й резюме','a2_wohnen':'A2 · Пошук житла','a2_schule':'A2 · Школа й навчання','a2_medien':'A2 · Медіа й звʼязок','a2_natur':'A2 · Погода й природа','a2_amt':'A2 · Установи, пошта, банк','a2_restaurant':'A2 · Ресторан і кухня','a2_freizeit':'A2 · Дозвілля й спорт'}
 ALT={'Cola':'також das Cola','Joghurt':'також das Joghurt','Gehalt':'в Австрії також der Gehalt'}
 words={};review=[]
-for f in sorted(glob.glob('content/nouns/*.tsv')):
-    topic=os.path.basename(f)[:-4]
+for f in sorted(glob.glob('content/nouns/*.tsv'))+sorted(glob.glob('content/nouns/a2/*.tsv')):
+    topic=('a2_' if '/a2/' in f else '')+os.path.basename(f)[:-4]
     for ln in open(f,encoding='utf8'):
         ln=ln.strip()
         if not ln: continue
@@ -30,5 +31,5 @@ for f in sorted(glob.glob('content/nouns/*.tsv')):
         words[key]=rec
 out=sorted(words.values(),key=lambda r:r['de'].lower())
 json.dump({'topics':BL,'words':out},open('src/app/data/nouns.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
-open('content/review.txt','w',encoding='utf8').write('\n'.join(f'{a} — {b}' for a,b in review))
+open('content/review_auto.txt','w',encoding='utf8').write('\n'.join(f'{a} — {b}' for a,b in review))
 print(len(out),'слів;',len(review),'на перевірку')

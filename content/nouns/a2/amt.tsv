@@ -1,0 +1,39 @@
+n|Amt|Ämter|відомство, установа|ведомство, учреждение|1
+f|Behörde|Behörden|орган влади|орган власти|1
+n|Rathaus|Rathäuser|ратуша|ратуша|0
+n|Bürgeramt|Bürgerämter|громадянський офіс (реєстрація)|гражданский офис (регистрация)|1
+f|Ausländerbehörde|Ausländerbehörden|відомство у справах іноземців|ведомство по делам иностранцев|1
+n|Jobcenter|Jobcenter|центр зайнятості|центр занятости|0
+f|Agentur für Arbeit|Agenturen für Arbeit|агентство зайнятості|агентство занятости|0
+n|Formular|Formulare|бланк, форма|бланк, форма|1
+m|Antrag|Anträge|заява|заявление|1
+f|Unterschrift|Unterschriften|підпис|подпись|1
+n|Dokument|Dokumente|документ|документ|1
+f|Kopie|Kopien|копія|копия|0
+n|Original|Originale|оригінал|оригинал|0
+f|Bescheinigung|Bescheinigungen|довідка|справка|1
+f|Genehmigung|Genehmigungen|дозвіл|разрешение|0
+f|Aufenthaltserlaubnis|Aufenthaltserlaubnisse|посвідка на проживання|вид на жительство|1
+m|Ausweis|Ausweise|посвідчення особи|удостоверение личности|1
+m|Personalausweis|Personalausweise|ідентифікаційна картка|удостоверение личности (ID)|0
+f|Adresse|Adressen|адреса|адрес|0
+f|Postleitzahl|Postleitzahlen|поштовий індекс|почтовый индекс|1
+n|Geburtsdatum|Geburtsdaten|дата народження|дата рождения|0
+m|Geburtsort|Geburtsorte|місце народження|место рождения|0
+m|Familienstand|-|сімейний стан|семейное положение|0
+f|Staatsangehörigkeit|Staatsangehörigkeiten|громадянство|гражданство|0
+f|Post|-|пошта|почта|0
+n|Paket|Pakete|посилка|посылка|1
+m|Brief|Briefe|лист|письмо|0
+f|Briefmarke|Briefmarken|поштова марка|почтовая марка|1
+m|Umschlag|Umschläge|конверт|конверт|0
+f|Sendung|Sendungen|відправлення|отправление|0
+f|Bank|Banken|банк|банк|0
+n|Konto|Konten|рахунок|счёт|0
+f|Überweisung|Überweisungen|переказ|перевод|1
+m|Betrag|Beträge|сума|сумма|1
+m|Geldautomat|Geldautomaten|банкомат|банкомат|0
+f|Gebühr|Gebühren|збір, плата|сбор, плата|1
+f|Steuer|Steuern|податок|налог|1
+f|Frist|Fristen|термін, строк|срок|0
+f|Öffnungszeit|Öffnungszeiten|години роботи|часы работы|0

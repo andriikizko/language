@@ -1,0 +1,43 @@
+f|Reise|Reisen|подорож|путешествие|1
+m|Urlaub|Urlaube|відпустка|отпуск|1
+m|Flug|Flüge|переліт, рейс|перелёт, рейс|1
+m|Flughafen|Flughäfen|аеропорт|аэропорт|1
+n|Flugzeug|Flugzeuge|літак|самолёт|1
+m|Koffer|Koffer|валіза|чемодан|1
+n|Gepäck|-|багаж|багаж|1
+m|Reisepass|Reisepässe|закордонний паспорт|загранпаспорт|1
+n|Visum|Visa|віза|виза|0
+f|Grenze|Grenzen|кордон|граница|1
+m|Zoll|-|митниця|таможня|0
+n|Hotel|Hotels|готель|гостиница, отель|1
+n|Zimmer|Zimmer|номер, кімната|номер, комната|0
+f|Buchung|Buchungen|бронювання|бронирование|1
+f|Reservierung|Reservierungen|резервація|резервация|0
+f|Rezeption|Rezeptionen|рецепція|ресепшен|0
+m|Schlüssel|Schlüssel|ключ|ключ|0
+n|Frühstücksbuffet|Frühstücksbuffets|шведський стіл на сніданок|шведский стол на завтрак|0
+m|Strand|Strände|пляж|пляж|1
+n|Meer|Meere|море|море|1
+m|Berg|Berge|гора|гора|1
+m|See|Seen|озеро|озеро|0
+f|Insel|Inseln|острів|остров|0
+f|Sehenswürdigkeit|Sehenswürdigkeiten|визначна памʼятка|достопримечательность|1
+n|Museum|Museen|музей|музей|0
+f|Stadtführung|Stadtführungen|екскурсія містом|экскурсия по городу|0
+f|Landkarte|Landkarten|мапа|карта|0
+m|Reiseführer|Reiseführer|путівник|путеводитель|0
+n|Ticket|Tickets|квиток|билет|0
+f|Fahrkarte|Fahrkarten|квиток (на транспорт)|билет (на транспорт)|0
+f|Verspätung|Verspätungen|запізнення|опоздание|1
+f|Haltestelle|Haltestellen|зупинка|остановка|0
+m|Bahnsteig|Bahnsteige|перон|платформа|0
+m|Fahrer|Fahrer|водій|водитель|0
+f|Autobahn|Autobahnen|автобан|автобан|0
+m|Stau|Staus|затор|пробка|1
+f|Tankstelle|Tankstellen|заправка|заправка|0
+n|Benzin|-|бензин|бензин|0
+m|Ausflug|Ausflüge|екскурсія, вилазка|экскурсия, поездка|1
+f|Erinnerung|Erinnerungen|спогад|воспоминание|0
+n|Souvenir|Souvenirs|сувенір|сувенир|0
+m|Tourist|Touristen|турист|турист|0
+f|Unterkunft|Unterkünfte|житло (на час поїздки)|жильё (на время поездки)|1

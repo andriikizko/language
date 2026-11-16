@@ -1,0 +1,39 @@
+f|Arbeit|Arbeiten|робота|работа|1
+f|Stelle|Stellen|вакансія, місце роботи|вакансия, место работы|1
+f|Stellenanzeige|Stellenanzeigen|оголошення про вакансію|объявление о вакансии|1
+f|Bewerbung|Bewerbungen|заявка, подання документів на роботу|заявка, подача документов на работу|1
+m|Lebenslauf|Lebensläufe|резюме|резюме|1
+n|Anschreiben|-|супровідний лист|сопроводительное письмо|0
+n|Zeugnis|Zeugnisse|атестат, характеристика|аттестат, характеристика|1
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|1
+f|Erfahrung|Erfahrungen|досвід|опыт|1
+f|Qualifikation|Qualifikationen|кваліфікація|квалификация|0
+n|Vorstellungsgespräch|Vorstellungsgespräche|співбесіда|собеседование|1
+m|Bewerber|Bewerber|кандидат|кандидат|0
+m|Arbeitgeber|Arbeitgeber|роботодавець|работодатель|1
+m|Arbeitnehmer|Arbeitnehmer|найманий працівник|наёмный работник|0
+m|Arbeitsvertrag|Arbeitsverträge|трудовий договір|трудовой договор|1
+n|Gehalt|Gehälter|зарплата|зарплата|0
+m|Lohn|Löhne|заробітна плата (погодинна)|заработная плата (почасовая)|0
+f|Probezeit|Probezeiten|випробувальний термін|испытательный срок|0
+f|Kündigung|Kündigungen|звільнення, розірвання договору|увольнение, расторжение договора|1
+f|Arbeitszeit|Arbeitszeiten|робочий час|рабочее время|1
+f|Überstunde|Überstunden|понаднормова година|сверхурочный час|0
+f|Teilzeit|-|неповний робочий день|неполный рабочий день|0
+f|Vollzeit|-|повний робочий день|полный рабочий день|0
+f|Firma|Firmen|фірма|фирма|0
+n|Unternehmen|Unternehmen|підприємство|предприятие|0
+f|Abteilung|Abteilungen|відділ|отдел|0
+f|Aufgabe|Aufgaben|завдання|задача|1
+f|Verantwortung|-|відповідальність|ответственность|0
+n|Team|Teams|команда|команда|0
+f|Besprechung|Besprechungen|нарада|совещание|0
+n|Büro|Büros|офіс|офис|0
+f|Pause|Pausen|перерва|перерыв|0
+f|Krankmeldung|Krankmeldungen|повідомлення про хворобу|уведомление о болезни|0
+m|Beruf|Berufe|професія|профессия|0
+f|Kenntnis|Kenntnisse|знання|знание|0
+f|Sprachkenntnis|Sprachkenntnisse|знання мови|знание языка|0
+n|Praktikum|Praktika|практика, стажування|практика, стажировка|0
+m|Praktikant|Praktikanten|практикант|практикант|0
+f|Karriere|Karrieren|кар’єра|карьера|0

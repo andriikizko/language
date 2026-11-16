@@ -1,0 +1,42 @@
+p|Medien|-|медіа, ЗМІ|медиа, СМИ|1
+f|Zeitung|Zeitungen|газета|газета|1
+f|Zeitschrift|Zeitschriften|журнал|журнал|1
+f|Nachricht|Nachrichten|повідомлення, новина|сообщение, новость|1
+p|Nachrichten|-|новини (передача)|новости (передача)|0
+m|Artikel|Artikel|стаття|статья|0
+f|Meldung|Meldungen|повідомлення, звістка|сообщение, известие|0
+n|Fernsehen|-|телебачення|телевидение|1
+m|Fernseher|Fernseher|телевізор|телевизор|1
+f|Sendung|Sendungen|передача|передача|1
+m|Film|Filme|фільм|фильм|0
+f|Serie|Serien|серіал|сериал|0
+n|Radio|Radios|радіо|радио|0
+m|Sender|Sender|канал, радіостанція|канал, радиостанция|0
+n|Programm|Programme|програма|программа|0
+f|Werbung|Werbungen|реклама|реклама|1
+m|Kanal|Kanäle|канал|канал|0
+n|Internet|-|інтернет|интернет|0
+f|Webseite|Webseiten|вебсайт|веб-сайт|1
+f|Suchmaschine|Suchmaschinen|пошукова система|поисковая система|0
+f|Anwendung|Anwendungen|застосунок, використання|приложение, применение|0
+n|Netzwerk|Netzwerke|мережа|сеть|0
+f|Verbindung|Verbindungen|зʼєднання|соединение|0
+f|Datei|Dateien|файл|файл|1
+m|Ordner|Ordner|папка|папка|0
+n|Bild|Bilder|зображення, картина|изображение, картина|0
+n|Video|Videos|відео|видео|0
+n|Konto|Konten|акаунт, рахунок|аккаунт, счёт|1
+n|Passwort|Passwörter|пароль|пароль|0
+m|Nutzer|Nutzer|користувач|пользователь|0
+m|Kommentar|Kommentare|коментар|комментарий|0
+f|Meinung|Meinungen|думка|мнение|1
+f|Information|Informationen|інформація|информация|1
+n|Gespräch|Gespräche|розмова|разговор|0
+m|Brief|Briefe|лист|письмо|1
+f|Postkarte|Postkarten|листівка|открытка|0
+n|Telefonat|Telefonate|телефонна розмова|телефонный разговор|0
+f|Mailbox|Mailboxen|голосова пошта|голосовая почта|0
+f|Sprachnachricht|Sprachnachrichten|голосове повідомлення|голосовое сообщение|0
+m|Anhang|Anhänge|вкладення|вложение|0
+m|Empfänger|Empfänger|одержувач|получатель|0
+m|Absender|Absender|відправник|отправитель|0

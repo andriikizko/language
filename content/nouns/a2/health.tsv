@@ -1,0 +1,41 @@
+m|Arzt|Ärzte|лікар|врач|1
+f|Ärztin|Ärztinnen|лікарка|женщина-врач|0
+f|Praxis|Praxen|лікарський кабінет, практика|врачебный кабинет, практика|1
+n|Krankenhaus|Krankenhäuser|лікарня|больница|1
+f|Apotheke|Apotheken|аптека|аптека|1
+n|Medikament|Medikamente|ліки|лекарство|1
+f|Tablette|Tabletten|таблетка|таблетка|1
+n|Rezept|Rezepte|рецепт|рецепт|1
+m|Termin|Termine|запис, прийом, зустріч|приём, встреча, запись|1
+f|Krankheit|Krankheiten|хвороба|болезнь|1
+f|Erkältung|Erkältungen|застуда|простуда|1
+f|Grippe|-|грип|грипп|0
+n|Fieber|-|температура (жар)|температура (жар)|1
+m|Husten|-|кашель|кашель|0
+m|Schnupfen|-|нежить|насморк|0
+f|Allergie|Allergien|алергія|аллергия|0
+m|Schmerz|Schmerzen|біль|боль|1
+f|Verletzung|Verletzungen|травма|травма|0
+m|Unfall|Unfälle|нещасний випадок, ДТП|несчастный случай, авария|1
+m|Notfall|Notfälle|невідкладний випадок|неотложный случай|1
+m|Krankenwagen|Krankenwagen|швидка допомога (авто)|скорая помощь (машина)|1
+f|Versicherung|Versicherungen|страхування, страхова|страховка, страхование|1
+f|Krankenkasse|Krankenkassen|лікарняна каса|больничная касса|1
+f|Untersuchung|Untersuchungen|обстеження|обследование|0
+n|Blut|-|кров|кровь|0
+m|Verband|Verbände|пов'язка|повязка|0
+f|Spritze|Spritzen|укол, шприц|укол, шприц|0
+f|Impfung|Impfungen|щеплення|прививка|0
+f|Salbe|Salben|мазь|мазь|0
+m|Tropfen|Tropfen|краплі, крапля|капли, капля|0
+n|Pflaster|Pflaster|пластир|пластырь|0
+f|Gesundheit|-|здоров'я|здоровье|1
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|1
+f|Sprechstunde|Sprechstunden|години прийому|часы приёма|0
+f|Behandlung|Behandlungen|лікування|лечение|0
+f|Diät|Diäten|дієта|диета|0
+m|Schlaf|-|сон|сон|0
+n|Gewicht|Gewichte|вага|вес|0
+f|Wunde|Wunden|рана|рана|0
+m|Patient|Patienten|пацієнт|пациент|1
+f|Patientin|Patientinnen|пацієнтка|пациентка|0

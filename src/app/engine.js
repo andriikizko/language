@@ -4,12 +4,19 @@ import dict from './data/dict.json'
 import course from './data/course.json'
 import grammar from './data/grammar.json'
 import exam from './data/exam.json'
+import course2 from './data/course_a2.json'
+import grammar2 from './data/grammar_a2.json'
+import exam2 from './data/exam_a2.json'
 
 export const EXAM = exam
 
 export const BLOCKS = course
 export const GRAMMAR = grammar
 export const FREE_GRAMMAR = 4
+export const LEVELS = {
+  a1: { name: 'A1', blocks: course, grammar, exam, xp: 'x', free: 3, freeG: 4 },
+  a2: { name: 'A2', blocks: course2, grammar: grammar2, exam: exam2, xp: 'y', free: 0, freeG: 0 },
+}
 export const cleanDe = (s) => s.replace(/\d[\d,.\s]*[€%]?\s*\(([^)]+)\)/g, '$1').replace(/\s+/g, ' ').trim()
 export const FREE_BLOCKS = 3
 const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
@@ -21,7 +28,7 @@ const adjByDe = Object.fromEntries(dict.adj.map((a) => [a.de, a]))
 
 export const shuffle = (a) => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]] } return r }
 export const pick = (a, n) => shuffle(a).slice(0, n)
-export const blockById = (id) => BLOCKS.find((b) => b.id === id) || GRAMMAR.find((b) => b.id === id)
+export const blockById = (id) => { for (const L of Object.values(LEVELS)) { const f = L.blocks.find((b) => b.id === id) || L.grammar.find((b) => b.id === id); if (f) return f } return undefined }
 
 export const blockWords = (b) => {
   const nouns = typeof b.nouns === 'string' ? nounsData.words.filter((w) => w.topic === b.nouns) : b.nouns.map((d) => byDe[d]).filter(Boolean)
@@ -104,8 +111,8 @@ export const makeQuestion = (id, lang) => {
     return { id, type: 'choice', hint: 'Діалог: «' + d.title + '»', prompt: q[lang], opts: idx.map((i) => q.o[i][lang]), correct: idx.indexOf(q.c),
       explain: `Правильна відповідь: ${q.o[q.c][lang]}.`, block: b.id, dialog: +r[1] }
   }
-  if (t === 'x') {
-    const x = exam[+r[0]]
+  if (t === 'x' || t === 'y') {
+    const x = (t === 'x' ? exam : exam2)[+r[0]]
     const idx = x.o.length === 3 ? shuffle(x.o.map((_, i) => i)) : x.o.map((_, i) => i)
     return { id, type: 'choice', hint: { lesen: 'Lesen', schreiben: 'Schreiben', hoeren: 'Hören' }[x.sec], prompt: x.q, text: x.text, audio: x.audio,
       opts: idx.map((i) => x.o[i]), correct: idx.indexOf(x.c), explain: `Правильна відповідь: ${x.o[x.c]}.` }
@@ -135,7 +142,7 @@ export const testSet = (b) => {
   if (b.numq) parts.push(...pick(poolFor(b, 'num'), 3))
   return shuffle(parts)
 }
-export const finalSet = () => shuffle(BLOCKS.flatMap((b) => {
+export const finalSet = (level = 'a1') => shuffle(LEVELS[level].blocks.flatMap((b) => {
   const w = blockWords(b); const core = w.nouns.filter((n) => n.core && n.g !== 'p')
   const ids = pick(core, 4).flatMap((n, i) => [`w|${i % 2 ? 'art' : 'tr'}|n:${n.de}:${n.g}`])
   return ids
@@ -159,4 +166,4 @@ export const srsUpdate = (srs, id, ok) => {
   return { ...(srs || {}), [id]: { b: box, d: Date.now() + GAP[box] * 864e5 } }
 }
 export const srsDue = (srs) => Object.entries(srs || {}).filter(([, v]) => v.d <= Date.now()).map(([k]) => k)
-export const examIds = (sec) => EXAM.map((x, i) => [x, i]).filter(([x]) => x.sec === sec).map(([, i]) => 'x|' + i)
+export const examIds = (sec, level = 'a1') => LEVELS[level].exam.map((x, i) => [x, i]).filter(([x]) => x.sec === sec).map(([, i]) => LEVELS[level].xp + '|' + i)

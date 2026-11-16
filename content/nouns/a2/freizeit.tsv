@@ -1,0 +1,41 @@
+f|Freizeit|-|вільний час|свободное время|1
+n|Hobby|Hobbys|хобі|хобби|0
+m|Sport|-|спорт|спорт|0
+n|Training|Trainings|тренування|тренировка|1
+n|Fitnessstudio|Fitnessstudios|фітнес-зал|фитнес-зал|1
+m|Verein|Vereine|клуб, товариство|клуб, общество|1
+f|Mannschaft|Mannschaften|команда|команда|1
+n|Spiel|Spiele|гра, матч|игра, матч|1
+m|Ball|Bälle|мʼяч|мяч|0
+n|Schwimmbad|Schwimmbäder|басейн|бассейн|0
+n|Fahrrad|Fahrräder|велосипед|велосипед|0
+f|Radtour|Radtouren|велопоїздка|велопоездка|0
+f|Wanderung|Wanderungen|похід|поход|1
+m|Spaziergang|Spaziergänge|прогулянка|прогулка|1
+n|Konzert|Konzerte|концерт|концерт|1
+n|Theater|Theater|театр|театр|0
+n|Kino|Kinos|кінотеатр|кинотеатр|0
+f|Ausstellung|Ausstellungen|виставка|выставка|1
+n|Buch|Bücher|книга|книга|0
+m|Roman|Romane|роман|роман|0
+f|Veranstaltung|Veranstaltungen|захід, подія|мероприятие, событие|1
+f|Eintrittskarte|Eintrittskarten|вхідний квиток|входной билет|0
+m|Eintritt|-|вхід, вартість входу|вход, стоимость входа|0
+n|Programm|Programme|програма|программа|0
+m|Gitarrist|Gitarristen|гітарист|гитарист|0
+m|Maler|Maler|художник|художник|0
+n|Bild|Bilder|картина|картина|0
+n|Foto|Fotos|фото|фото|0
+f|Kamera|Kameras|камера|камера|0
+f|Sammlung|Sammlungen|колекція|коллекция|0
+m|Garten|Gärten|сад|сад|0
+n|Brettspiel|Brettspiele|настільна гра|настольная игра|0
+f|Gesellschaft|Gesellschaften|товариство, суспільство|общество|0
+m|Freund|Freunde|друг|друг|0
+f|Freundin|Freundinnen|подруга|подруга|0
+m|Urlaub|Urlaube|відпустка|отпуск|0
+m|Ausflug|Ausflüge|екскурсія|экскурсия|0
+f|Erholung|-|відпочинок|отдых|1
+m|Spaß|-|задоволення, веселощі|удовольствие, веселье|1
+f|Langeweile|-|нудьга|скука|0
+f|Verabredung|Verabredungen|зустріч, домовленість|встреча, договорённость|0

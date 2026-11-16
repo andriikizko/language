@@ -1,0 +1,39 @@
+n|Fest|Feste|свято|праздник|1
+m|Feiertag|Feiertage|святковий день|праздничный день|1
+m|Geburtstag|Geburtstage|день народження|день рождения|1
+f|Party|Partys|вечірка|вечеринка|1
+f|Feier|Feiern|святкування|торжество, празднование|1
+f|Hochzeit|Hochzeiten|весілля|свадьба|1
+f|Taufe|Taufen|хрестини|крестины|0
+n|Weihnachten|-|Різдво|Рождество|1
+n|Ostern|-|Великдень|Пасха|1
+n|Silvester|-|Новий рік (31 грудня)|канун Нового года|0
+n|Neujahr|-|Новий рік|Новый год|0
+m|Heiligabend|-|святвечір|сочельник|0
+m|Weihnachtsbaum|Weihnachtsbäume|ялинка|ёлка|0
+n|Geschenk|Geschenke|подарунок|подарок|1
+f|Überraschung|Überraschungen|сюрприз|сюрприз|0
+f|Einladung|Einladungen|запрошення|приглашение|1
+m|Gast|Gäste|гість|гость|1
+m|Gastgeber|Gastgeber|господар (на святі)|хозяин (на празднике)|0
+f|Torte|Torten|торт|торт|1
+m|Kuchen|Kuchen|пиріг, кекс|пирог, кекс|0
+f|Kerze|Kerzen|свічка|свеча|0
+m|Luftballon|Luftballons|повітряна кулька|воздушный шарик|0
+m|Wunsch|Wünsche|побажання|пожелание|1
+m|Glückwunsch|Glückwünsche|вітання|поздравление|1
+f|Glückwunschkarte|Glückwunschkarten|вітальна листівка|поздравительная открытка|0
+m|Gruß|Grüße|привіт, вітання|привет, поздравление|0
+f|Musik|-|музика|музыка|0
+m|Tanz|Tänze|танець|танец|0
+m|Sekt|-|ігристе вино|игристое вино|0
+n|Feuerwerk|Feuerwerke|феєрверк|фейерверк|0
+m|Brauch|Bräuche|звичай|обычай|1
+f|Tradition|Traditionen|традиція|традиция|1
+m|Urlaubstag|Urlaubstage|день відпустки|день отпуска|0
+n|Jubiläum|Jubiläen|ювілей|юбилей|0
+f|Verabredung|Verabredungen|домовленість, зустріч|договорённость, встреча|0
+n|Treffen|Treffen|зустріч|встреча|0
+f|Stimmung|Stimmungen|настрій, атмосфера|настроение, атмосфера|0
+n|Foto|Fotos|фото|фото|0
+f|Erinnerung|Erinnerungen|спогад|воспоминание|0

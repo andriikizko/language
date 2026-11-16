@@ -22,10 +22,10 @@ export const Verbs = ({ lang, want, setWant, onBack, guest, onGate }) => {
   const [open, setOpen] = useState(null)
   const list = useMemo(() => {
     const s = q.trim().toLowerCase()
-    return verbs.filter((v) => (!guest || GUEST.verbs.has(v.de)) && (type === 'all' || v.type === type || (type === 'regular' && v.type === 'aux' && false)) &&
+    return verbs.filter((v) => (!guest || GUEST.verbs.has(v.de)) && (type === 'all' || (type === 'refl' ? v.refl : type === 'a2' ? v.lvl === 'a2' : v.type === type)) &&
       (only === 'all' || want['v:' + v.de]) && (!s || v.de.includes(s) || v.uk.toLowerCase().includes(s) || v.ru.toLowerCase().includes(s)))
   }, [type, only, q, want])
-  const T = [['regular', 'Звичайні'], ['modal', 'Модальні'], ['sep', 'Відокремлювані'], ['all', 'Усі']]
+  const T = [['regular', 'Звичайні'], ['modal', 'Модальні'], ['sep', 'Відокремлювані'], ['refl', 'Зворотні'], ['a2', 'Рівень A2'], ['all', 'Усі']]
   return (
     <>
       <Back title="Дієслова" onBack={onBack} extra={list.length + ' слів'} />
@@ -42,6 +42,7 @@ export const Verbs = ({ lang, want, setWant, onBack, guest, onGate }) => {
           {open === v.de && (
             <div className="de-forms">
               {v.f.map((f, i) => <div key={i} className={v.irr[i] ? 'irr' : ''}>{f}</div>)}
+              {v.p2 && <div style={{ gridColumn: '1 / -1', marginTop: 6 }}><b>Perfekt:</b> {v.aux === 'sein' ? 'ist' : 'hat'} {v.p2} · <b>Präteritum:</b> {v.pr}</div>}
             </div>
           )}
         </div>
@@ -69,6 +70,7 @@ export const Adjectives = ({ lang, want, setWant, onBack, guest, onGate }) => {
         <div key={a.de} className={'de-w' + (a.core ? ' core' : '')}>
           <div className="de-w-t">
             <div className="de-w-de"><span>{a.de}</span>{a.opp && <span className="de-w-pl">↔ {a.opp}</span>}</div>
+            {a.komp && <div className="de-w-pl">{a.komp} · {a.sup}</div>}
             <div className="de-w-tr">{a[lang]}</div>
           </div>
           <Want k={'a:' + a.de} want={want} setWant={setWant} guest={guest} onGate={onGate} />

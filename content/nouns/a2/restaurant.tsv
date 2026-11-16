@@ -1,0 +1,42 @@
+n|Restaurant|Restaurants|ресторан|ресторан|1
+n|Café|Cafés|кафе|кафе|0
+f|Kantine|Kantinen|їдальня|столовая|0
+f|Speisekarte|Speisekarten|меню|меню|1
+f|Getränkekarte|Getränkekarten|карта напоїв|карта напитков|0
+f|Bedienung|-|обслуговування, офіціант|обслуживание, официант|0
+m|Kellner|Kellner|офіціант|официант|1
+f|Kellnerin|Kellnerinnen|офіціантка|официантка|0
+m|Tisch|Tische|стіл|стол|0
+f|Reservierung|Reservierungen|резервація|резервация|0
+f|Bestellung|Bestellungen|замовлення|заказ|0
+f|Vorspeise|Vorspeisen|закуска|закуска|1
+f|Hauptspeise|Hauptspeisen|основна страва|основное блюдо|1
+n|Hauptgericht|Hauptgerichte|основна страва|основное блюдо|0
+f|Nachspeise|Nachspeisen|десерт|десерт|0
+m|Nachtisch|Nachtische|десерт|десерт|1
+n|Gericht|Gerichte|страва|блюдо|1
+f|Spezialität|Spezialitäten|фірмова страва, делікатес|фирменное блюдо, деликатес|0
+f|Portion|Portionen|порція|порция|1
+n|Trinkgeld|Trinkgelder|чайові|чаевые|1
+f|Rechnung|Rechnungen|рахунок|счёт|0
+f|Zutat|Zutaten|інгредієнт|ингредиент|1
+n|Rezept|Rezepte|рецепт (кулінарний)|рецепт (кулинарный)|0
+m|Teig|Teige|тісто|тесто|0
+n|Mehl|-|борошно|мука|0
+n|Ei|Eier|яйце|яйцо|0
+m|Zucker|-|цукор|сахар|0
+n|Salz|-|сіль|соль|0
+m|Pfeffer|-|перець|перец|0
+n|Öl|Öle|олія|масло (растительное)|0
+m|Essig|-|оцет|уксус|0
+f|Soße|Soßen|соус|соус|0
+f|Pfanne|Pfannen|сковорідка|сковорода|1
+m|Topf|Töpfe|каструля|кастрюля|1
+m|Ofen|Öfen|піч, духовка|печь, духовка|0
+f|Mikrowelle|Mikrowellen|мікрохвильовка|микроволновка|0
+m|Schneebesen|Schneebesen|віничок|венчик|0
+f|Zubereitung|-|приготування|приготовление|0
+n|Fleisch|-|мʼясо|мясо|0
+n|Gemüse|-|овочі|овощи|0
+n|Obst|-|фрукти|фрукты|0
+f|Beilage|Beilagen|гарнір|гарнир|0

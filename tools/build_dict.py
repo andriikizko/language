@@ -21,7 +21,15 @@ def reg(inf, over=None):
     er=st+('et' if est else 't')
     return [st+'e',du,er,inf,er,inf]
 verbs=[]
-for inf,kind,uk,ru,extra,core in rows('verbs.tsv'):
+PERF={r[0]:r[1:] for r in rows('perfekt.tsv')}
+REFL=['mich','dich','sich','uns','euch','sich']
+ALLV=[(*r,'a1') for r in rows('verbs.tsv')]+[(r[0],r[1],r[2],r[3],r[4],r[5],'a2',r[6],r[7],r[8]) for r in rows('verbs_a2.tsv')]
+CORE_A2=set('sich freuen,sich treffen,bekommen,erzählen,erklären,verdienen,verlieren,versuchen,mieten,umziehen,anmelden,kündigen,unterschreiben,ausfüllen,schicken,schenken,feiern,reservieren,passen,sparen,untersuchen,wehtun,buchen,packen,besichtigen,fotografieren,üben,wiederholen,übersetzen,bestehen,regnen,schneien,planen,informieren,sich vorstellen,sich bewerben,sich interessieren,sich fühlen,sich entscheiden,sich verabreden'.split(','))
+for rec in ALLV:
+    if rec[6]=='a2': inf,kind,uk,ru,extra,core,lvl,p2,pr,aux=rec; core='1' if inf in CORE_A2 else '0'
+    else: inf,kind,uk,ru,extra,core,lvl=rec; p2=pr=aux=None
+    refl=inf.startswith('sich '); orig=inf
+    if refl: inf=inf[5:]
     irr=[False]*6; sep=None
     if kind=='m' or (kind=='i' and extra.count(',')==5):
         f=extra.split(','); irr=[True]*6
@@ -36,16 +44,25 @@ for inf,kind,uk,ru,extra,core in rows('verbs.tsv'):
         if len(parts)>1:
             du,er=parts[1].split(','); f[1]=du; f[2]=er; irr[1]=irr[2]=True
         f=[x+' '+sep for x in f]
+    if refl:
+        f=[(x.split(' ',1)[0]+' '+rp+(' '+x.split(' ',1)[1] if ' ' in x else '')) for x,rp in zip(f,REFL)]
     forms=[p+' '+x for p,x in zip(['ich','du','er/sie/es','wir','ihr','sie/Sie'],f)]
+    if p2 is None and inf in PERF: p2,pr,aux=PERF[inf]
     typ={'m':'modal','r':'regular','i':'regular','s':'sep'}[kind]
     if kind=='m' and inf in('sein','haben','werden'): typ='aux'
     if kind=='i' and extra.count(',')==5: typ='modal'
-    verbs.append({'de':inf,'type':typ,'uk':uk,'ru':ru,'f':forms,'irr':irr,'core':core=='1','sep':sep})
+    verbs.append({'de':orig,'lvl':lvl,'p2':p2,'pr':pr,'aux':aux,'type':typ,'uk':uk,'ru':ru,'f':forms,'irr':irr,'core':core=='1','sep':sep,'refl':refl})
+for v in verbs:
+    if v['de']=='wehtun': v['f']=['ich tue weh','du tust weh','er/sie/es tut weh','wir tun weh','ihr tut weh','sie/Sie tun weh']; v['irr']=[True]*6
 verbs.sort(key=lambda v:v['de'].lower())
 json.dump(verbs,open('src/app/data/verbs.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 
 # ---- adjectives ----
 adj=[{'de':a,'uk':u,'ru':r,'topic':t,'core':c=='1','opp':o} for a,u,r,t,c,o in rows('adjectives.tsv')]
+for a,u,r,t,c,o,k,su in rows('adjectives_a2.tsv'):
+    ex=[x for x in adj if x['de']==a]
+    if ex: ex[0]['komp']=ex[0].get('komp') or k or None; ex[0]['sup']=ex[0].get('sup') or su or None; continue
+    adj.append({'de':a,'uk':u,'ru':r,'topic':t,'core':c=='1','opp':o,'komp':k or None,'sup':su or None,'lvl':'a2'})
 adj.sort(key=lambda x:x['de'].lower())
 # ---- pronouns ----
 pron=[{'cat':c,'de':d,'uk':u,'ru':r,'note':n} for c,d,u,r,n in rows('pronouns.tsv')]

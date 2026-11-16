@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BLOCKS, GRAMMAR, FREE_GRAMMAR, FREE_BLOCKS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue, examIds } from './engine.js'
+import { LEVELS, blockWords, blockById, poolFor, session, testSet, speak, speakAll, cleanDe, finalSet, srsUpdate, srsDue, examIds } from './engine.js'
 import Tap from './Tap.jsx'
 import Practice from './Practice.jsx'
 
@@ -41,7 +41,9 @@ export function Course({ st, update, lang, tr, onAns }) {
   const done = st.done || {}
   const mark = (id, patch) => update({ done: { ...done, [id]: { ...(done[id] || {}), ...patch } } })
 
-  const locked = (i) => i >= FREE_BLOCKS && !st.dev
+  const level = st.level && LEVELS[st.level]?.blocks.length ? st.level : 'a1'
+  const L = LEVELS[level]
+  const locked = (i) => i >= L.free && !st.dev
 
   if (run) {
     return <Practice ids={run.ids} lang={lang} tr={tr} title={run.title} onAnswer={onAns}
@@ -66,10 +68,11 @@ export function Course({ st, update, lang, tr, onAns }) {
   if (!cur) {
     return (
       <>
-        <div className="de-hello">Курс німецької A1</div>
-        <div className="de-dim" style={{ marginBottom: 12 }}>Перші {FREE_BLOCKS} блоки безкоштовні, решта — за підпискою.</div>
+        <div className="de-hello">Курс німецької {L.name}</div>
+        {LEVELS.a2.blocks.length > 0 && <div className="de-seg" style={{ width: 'fit-content', marginBottom: 10 }}>{Object.entries(LEVELS).filter(([, v]) => v.blocks.length).map(([k, v]) => <button key={k} className={level === k ? 'on' : ''} onClick={() => update({ level: k })}>{v.name}</button>)}</div>}
+        <div className="de-dim" style={{ marginBottom: 12 }}>{L.free ? `Перші ${L.free} блоки безкоштовні, решта — за підпискою.` : 'Рівень доступний за підпискою.'}</div>
         <div className="de-card" style={{ marginBottom: 12 }}><b>План на 13 тижнів</b><div className="de-dim">Тиждень на блок, 3 уроки: 1) пояснення, слова, топік; 2) вправи; 3) аудіювання й тест. 13-й тиждень — повторення й фінальний тест. Дивись у «Календарі».</div></div>
-        {BLOCKS.map((b, i) => {
+        {L.blocks.map((b, i) => {
           const d = done[b.id] || {}
           return (
             <button key={b.id} className={'de-blk' + (locked(i) ? ' lock' : '')} onClick={() => (locked(i) ? setPrem(true) : (setCur(b.id), setOpen('expl')))}>
@@ -78,9 +81,9 @@ export function Course({ st, update, lang, tr, onAns }) {
             </button>
           )
         })}
-        <div className="de-h2">Граматика A1</div>
-        {GRAMMAR.map((g, i) => {
-          const d = done[g.id] || {}; const lk = i >= FREE_GRAMMAR && !st.dev
+        <div className="de-h2">Граматика {L.name}</div>
+        {L.grammar.map((g, i) => {
+          const d = done[g.id] || {}; const lk = i >= L.freeG && !st.dev
           return (
             <button key={g.id} className={'de-blk' + (lk ? ' lock' : '')} onClick={() => (lk ? setPrem(true) : setCur(g.id))}>
               <span className="n">{i + 1}</span><span><b>{lang === 'ru' ? g.title_ru : g.title}</b><small>{g.sub}</small></span>
@@ -88,15 +91,15 @@ export function Course({ st, update, lang, tr, onAns }) {
             </button>
           )
         })}
-        <div className="de-h2">Іспит у стилі Goethe A1</div>
+        <div className="de-h2">Іспит у стилі Goethe {L.name}</div>
         {[['lesen', 'Lesen · читання', '15 завдань'], ['schreiben', 'Schreiben · письмо', 'анкета й повідомлення'], ['hoeren', 'Hören · слухання', '8 завдань, озвучення тимчасове']].map(([k, t, sub]) => (
-          <button key={k} className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: examIds(k), title: t, after: (sc, n) => update({ exam: { ...(st.exam || {}), [k]: Math.round(sc / n * 100) } }) })}>
+          <button key={k} className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: examIds(k, level), title: t, after: (sc, n) => update({ exam: { ...(st.exam || {}), [k]: Math.round(sc / n * 100) } }) })}>
             <span className="n">✎</span><span><b>{t}</b><small>{sub}</small></span>
             <span className="de-pill">{st.dev ? ((st.exam || {})[k] != null ? st.exam[k] + '%' : 'почати') : '🔒 Premium'}</span>
           </button>
         ))}
         <div className="de-dim" style={{ margin: '4px 0 10px' }}>Складено, якщо кожна частина від 60%. Говоріння застосунок не перевіряє: тренуй діалоги з уроків вголос.</div>
-        <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: finalSet(), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
+        <button className={'de-blk' + (st.dev ? '' : ' lock')} onClick={() => !st.dev ? setPrem(true) : setRun({ ids: finalSet(level), title: 'Фінальний тест', after: (sc, n) => update({ final: Math.max(Math.round(sc / n * 100), st.final || 0) }) })}>
           <span className="n">★</span><span><b>Фінальний тест</b><small>основні слова з усіх блоків</small></span>
           <span className="de-pill">{st.dev ? (st.final != null ? st.final + '%' : 'почати') : '🔒 Premium'}</span>
         </button>
@@ -218,7 +221,7 @@ export function Calendar({ st, update, onBack }) {
       <div className="de-chips">{DAYS.map((d, i) => <button key={d} className={'de-day' + (cal.days.includes(i) ? ' on' : '')} onClick={() => tog(i)}>{d}</button>)}</div>
       <div className="de-h2">Час</div>
       <input className="de-search" type="time" value={cal.time} onChange={(e) => set({ time: e.target.value })} />
-      {BLOCKS.map((b, i) => {
+      {LEVELS[(st.level && LEVELS[st.level]?.blocks.length) ? st.level : 'a1'].blocks.map((b, i) => {
         const ws = new Date(m0); ws.setDate(ws.getDate() + i * 7)
         const we = new Date(ws); we.setDate(we.getDate() + 6)
         const cur = now >= ws && now <= new Date(we.getTime() + 86399000)

@@ -1,15 +1,20 @@
-import json
+import json,sys
+LV=sys.argv[1] if len(sys.argv)>1 else 'a1'
+CD='content/course/'+('' if LV=='a1' else LV+'/')
+SUF='' if LV=='a1' else '_'+LV
 B=[]
 def blk(**k): B.append(k)
 for p in ('part1','part2','part3'):
-    exec(open(f'content/course/{p}.py',encoding='utf8').read())
-exec(open('content/course/topics.py',encoding='utf8').read())
-exec(open('content/course/explain_ru.py',encoding='utf8').read())
-exec(open('content/course/gaps_extra.py',encoding='utf8').read())
+    exec(open(f'{CD}{p}.py',encoding='utf8').read())
+exec(open(CD+'topics.py',encoding='utf8').read())
+exec(open(CD+'explain_ru.py',encoding='utf8').read())
+EXTRA={}
+import os
+if os.path.exists(CD+'gaps_extra.py'): exec(open(CD+'gaps_extra.py',encoding='utf8').read())
 out=[]
 for b in B:
     gaps=[]
-    for g in b['gaps']+EXTRA[b['id']]:
+    for g in b['gaps']+EXTRA.get(b['id'],[]):
         s,a,w,uk,ru=g.split('|')
         assert '___' in s and uk and ru, g
         wr=w.split(',')
@@ -26,5 +31,5 @@ for b in B:
     assert len(RU[b['id']])==len(b['explain']),b['id']
     out.append({'id':b['id'],'title':b['title'],'sub':b['sub'],'nouns':b['nouns'],'adjs':b.get('adjs') or [],'adjlist':b.get('adjlist') or [],
       'verbs':b['verbs'],'topic':{'title':T[b['id']]['title'],'note':T[b['id']]['note'],'s':[dict(zip(('de','uk','ru'),x.split('|'))) for x in T[b['id']]['s']]},'numq':b.get('numq',False),'explain':[{'h':h,'p':p} for h,p in b['explain']],'explain_ru':[{'h':h,'p':p} for h,p in RU[b['id']]],'gaps':gaps,'dialogs':dl})
-json.dump(out,open('src/app/data/course.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
+json.dump(out,open(f'src/app/data/course{SUF}.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 print(len(out),'блоків',sum(len(b['gaps']) for b in out),'речень')
