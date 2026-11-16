@@ -54,6 +54,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
         {L.blocks.map((b, w) => (
           <div key={b.id}>
             <div className="de-h2">Тиждень {w + 1} · {b.title}</div>
+            <div className="de-dim" style={{ margin: '-4px 0 6px' }}>Граматика: {(sched[w] || []).map((id) => { const g = blockById(id); return g ? (lang === 'ru' ? g.title_ru : g.title) : '' }).join(', ')}{w > 0 ? '. З повторенням слів минулих тижнів.' : '.'}</div>
             {[1, 2, 3].map((k) => {
               const n = w * 3 + k; const d = get(n); const open_ = isOpen(n); const lk = isLocked(n)
               return (
@@ -122,8 +123,9 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
     if (k === 1) ids = [...pick(poolFor(b, 'tr'), 5), ...pick(poolFor(b, 'art'), 3), ...pick(poolFor(b, 'pl'), 2)]
     else if (k === 2) ids = [...grams.flatMap((g) => [...pick(poolFor(g, 'gap'), 5), ...pick(poolFor(g, 'err'), 3)]), ...pick(poolFor(b, 'gap'), 3)]
     else ids = [...pick(poolFor(b, 'listen'), 2), ...pick(poolFor(b, 'order'), 3), ...pick(poolFor(b, 'dict'), 2), ...pick(poolFor(b, 'tr'), 3)]
-    ids = [...ids, ...pick(srsDue(st.srs), 3)]
-    return shuffle(ids).slice(0, 12)
+    const old = [L.blocks[w - 1], L.blocks[w - 2]].filter(Boolean)
+    ids = [...ids, ...old.flatMap((ob) => [...pick(poolFor(ob, 'tr'), 2), ...pick(poolFor(ob, 'gap'), 1)]), ...pick(srsDue(st.srs), 3)]
+    return shuffle(ids).slice(0, 14)
   }
   const hw = d.hw || null
   const modes = [['tr', 'Слово → переклад'], ['de', 'Переклад → слово'], ['art', 'Артикль'], ['pl', 'Множина'], ['order', 'Склади речення'], ['gap', 'Речення з пропуском'], ['err', 'Яке речення правильне?'], ['dict', 'Диктант (на слух)']].filter(([m]) => poolFor(b, m).length >= 3)
@@ -168,6 +170,7 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
       {d.content && <>
         <div className="de-h2">Вправи {d.ex ? '✓' : ''}</div>
         <div style={{ display: 'grid', gap: 8 }}>
+          {k === 1 && w > 0 && <button className="de-btn" style={{ margin: 0 }} onClick={() => exTask(shuffle(L.blocks.slice(Math.max(0, w - 3), w).flatMap((ob) => [...pick(poolFor(ob, 'tr'), 3), ...pick(poolFor(ob, 'art'), 2), ...pick(poolFor(ob, 'gap'), 2)])).slice(0, 14), 'Повторення минулих тижнів')}>Повторення минулих тижнів</button>}
           {k === 1 && modes.map(([m, tt]) => <button key={m} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(b, m, 10), tt)}>{tt}</button>)}
           {k === 2 && <>
             {grams.map((g) => <button key={g.id} className="de-btn ghost" style={{ margin: 0 }} onClick={() => exTask(session(g, 'gap', 10), g.title)}>Вправи: {g.title}</button>)}
