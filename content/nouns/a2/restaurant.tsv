@@ -40,3 +40,84 @@ n|Fleisch|-|мʼясо|мясо|0
 n|Gemüse|-|овочі|овощи|0
 n|Obst|-|фрукти|фрукты|0
 f|Beilage|Beilagen|гарнір|гарнир|0
+f|Speisekarte|Speisekarten|меню (картка)|меню (карта)|0
+f|Getränkekarte|Getränkekarten|карта напоїв|карта напитков|0
+n|Tagesgericht|Tagesgerichte|страва дня|блюдо дня|0
+f|Spezialität|Spezialitäten|фірмова страва|фирменное блюдо|0
+f|Empfehlung|Empfehlungen|рекомендація|рекомендация|0
+f|Bestellung|Bestellungen|замовлення|заказ|0
+f|Reservierung|Reservierungen|бронювання|бронирование|0
+m|Gast|Gäste|гість; відвідувач|гость; посетитель|0
+m|Ober|Ober|офіціант (звертання)|официант (обращение)|0
+f|Bedienung|-|обслуговування; офіціант|обслуживание; официант|0
+n|Service|-|сервіс|сервис|0
+f|Küche|Küchen|кухня|кухня|0
+m|Koch|Köche|кухар|повар|0
+m|Gastwirt|Gastwirte|власник закладу|хозяин заведения|0
+n|Lokal|Lokale|заклад|заведение|0
+n|Café|Cafés|кафе|кафе|0
+f|Kneipe|Kneipen|пивна; паб|пивная; паб|0
+f|Terrasse|Terrassen|тераса|терраса|0
+m|Außenbereich|Außenbereiche|літня зона|летняя зона|0
+f|Ecke|Ecken|кут|угол|0
+n|Fenster|Fenster|вікно|окно|0
+m|Stuhl|Stühle|стілець|стул|0
+n|Besteck|Bestecke|столові прилади|столовые приборы|0
+n|Geschirr|-|посуд|посуда|0
+m|Teller|Teller|тарілка|тарелка|0
+f|Tasse|Tassen|чашка|чашка|0
+n|Glas|Gläser|склянка|стакан|0
+f|Flasche|Flaschen|пляшка|бутылка|0
+f|Karaffe|Karaffen|графин|графин|0
+m|Krug|Krüge|глек|кувшин|0
+m|Löffel|Löffel|ложка|ложка|0
+f|Gabel|Gabeln|виделка|вилка|0
+n|Messer|Messer|ніж|нож|0
+f|Serviette|Servietten|серветка|салфетка|0
+m|Zahnstocher|Zahnstocher|зубочистка|зубочистка|0
+m|Aschenbecher|Aschenbecher|попільничка|пепельница|0
+f|Suppe|Suppen|суп|суп|0
+m|Salat|Salate|салат|салат|0
+n|Schnitzel|Schnitzel|шніцель|шницель|0
+n|Gulasch|-|гуляш|гуляш|0
+m|Braten|Braten|печеня|жаркое|0
+m|Eintopf|Eintöpfe|рагу; густий суп|рагу; густой суп|0
+f|Beilage|Beilagen|гарнір|гарнир|0
+f|Kartoffel|Kartoffeln|картопля|картофель|0
+f|Pommes|-|картопля фрі|картофель фри|0
+f|Nudel|Nudeln|локшина; макарони|лапша; макароны|0
+m|Reis|-|рис|рис|0
+f|Soße|Soßen|соус|соус|0
+f|Nachspeise|Nachspeisen|десерт|десерт|0
+n|Eis|-|морозиво|мороженое|0
+m|Kuchen|Kuchen|пиріг; торт|пирог; торт|0
+f|Torte|Torten|торт|торт|0
+m|Wein|Weine|вино|вино|0
+n|Bier|Biere|пиво|пиво|0
+f|Limonade|Limonaden|лимонад|лимонад|0
+n|Mineralwasser|-|мінеральна вода|минеральная вода|0
+m|Kaffee|Kaffees|кава|кофе|0
+f|Allergie|Allergien|алергія|аллергия|0
+f|Zutat|Zutaten|інгредієнт|ингредиент|0
+f|Vegetarierin|Vegetarierinnen|вегетаріанка|вегетарианка|0
+m|Vegetarier|Vegetarier|вегетаріанець|вегетарианец|0
+f|Beschwerde|Beschwerden|скарга|жалоба|0
+f|Wartezeit|Wartezeiten|час очікування|время ожидания|0
+f|Kreditkarte|Kreditkarten|кредитна картка|кредитная карта|0
+n|Trinkgeld|Trinkgelder|чайові|чаевые|0
+f|Quittung|Quittungen|квитанція; чек|квитанция; чек|0
+m|Beleg|Belege|чек; документ|чек; документ|0
+f|Kasse|Kassen|каса|касса|0
+p|Reste|-|залишки|остатки|0
+f|Tüte|Tüten|пакет|пакет|0
+m|Lieferdienst|Lieferdienste|служба доставки|служба доставки|0
+f|Abholung|Abholungen|самовивіз|самовывоз|0
+n|Mitnehmen|-|на винос|на вынос|0
+f|Gaststätte|Gaststätten|ресторан; їдальня|ресторан; харчевня|0
+n|Frühstücksbuffet|Frühstücksbuffets|сніданок шведський стіл|завтрак шведский стол|0
+n|Mittagessen|Mittagessen|обід|обед|0
+n|Abendessen|Abendessen|вечеря|ужин|0
+m|Hunger|-|голод|голод|0
+m|Durst|-|спрага|жажда|0
+m|Appetit|-|апетит|аппетит|0
+m|Geschmack|Geschmäcke|смак|вкус|0

@@ -39,3 +39,73 @@ f|Erholung|-|відпочинок|отдых|1
 m|Spaß|-|задоволення, веселощі|удовольствие, веселье|1
 f|Langeweile|-|нудьга|скука|0
 f|Verabredung|Verabredungen|зустріч, домовленість|встреча, договорённость|0
+f|Beschäftigung|Beschäftigungen|заняття|занятие|0
+f|Abwechslung|Abwechslungen|розмаїття; зміна|разнообразие; смена|0
+f|Entspannung|-|розслаблення|расслабление|0
+f|Ruhe|-|спокій; тиша|покой; тишина|0
+f|Lust|-|бажання; охота|желание; охота|0
+n|Interesse|Interessen|інтерес|интерес|0
+f|Leidenschaft|Leidenschaften|пристрасть|страсть|0
+m|Anfänger|Anfänger|початківець|новичок|0
+m|Fortgeschrittene|Fortgeschrittene|просунутий (рівень)|продвинутый (уровень)|0
+f|Übung|Übungen|вправа|упражнение|0
+f|Probe|Proben|репетиція; проба|репетиция; проба|0
+m|Wettbewerb|Wettbewerbe|конкурс|конкурс|0
+n|Turnier|Turniere|турнір|турнир|0
+n|Ergebnis|Ergebnisse|результат|результат|0
+n|Tor|Tore|гол; ворота|гол; ворота|0
+m|Torwart|Torwarte|воротар|вратарь|0
+m|Spieler|Spieler|гравець|игрок|0
+m|Gegner|Gegner|суперник|соперник|0
+f|Gruppe|Gruppen|група|группа|0
+f|Mitgliedschaft|Mitgliedschaften|членство|членство|0
+m|Beitrag|Beiträge|внесок; стаття|взнос; статья|0
+m|Trainingsplan|Trainingspläne|план тренувань|план тренировок|0
+n|Gewicht|Gewichte|вага; гиря|вес; гиря|0
+n|Laufband|Laufbänder|бігова доріжка|беговая дорожка|0
+m|Lauf|Läufe|біг; забіг|бег; забег|0
+m|Marathon|Marathons|марафон|марафон|0
+f|Strecke|Strecken|маршрут; відстань|маршрут; дистанция|0
+m|Wanderweg|Wanderwege|туристична стежка|туристическая тропа|0
+m|Rucksack|Rucksäcke|рюкзак|рюкзак|0
+n|Zelt|Zelte|намет|палатка|0
+m|Campingplatz|Campingplätze|кемпінг|кемпинг|0
+m|Schlafsack|Schlafsäcke|спальний мішок|спальный мешок|0
+m|Fluss|Flüsse|річка|река|0
+m|See|Seen|озеро|озеро|0
+n|Meer|Meere|море|море|0
+m|Strand|Strände|пляж|пляж|0
+m|Berg|Berge|гора|гора|0
+m|Wald|Wälder|ліс|лес|0
+m|Park|Parks|парк|парк|0
+f|Liege|Liegen|шезлонг; лежак|шезлонг; лежак|0
+m|Sonnenschirm|Sonnenschirme|парасоля від сонця|зонт от солнца|0
+m|Badeanzug|Badeanzüge|купальник|купальник|0
+f|Badehose|Badehosen|плавки|плавки|0
+n|Handtuch|Handtücher|рушник|полотенце|0
+m|Kinofilm|Kinofilme|кінофільм|кинофильм|0
+f|Vorstellung|Vorstellungen|сеанс; вистава|сеанс; представление|0
+f|Kasse|Kassen|каса|касса|0
+f|Reihe|Reihen|ряд|ряд|0
+m|Platz|Plätze|місце; площа|место; площадь|0
+m|Schauspieler|Schauspieler|актор|актёр|0
+f|Hauptrolle|Hauptrollen|головна роль|главная роль|0
+f|Komödie|Komödien|комедія|комедия|0
+m|Krimi|Krimis|детектив|детектив|0
+m|Horrorfilm|Horrorfilme|фільм жахів|фильм ужасов|0
+f|Serie|Serien|серіал|сериал|0
+f|Folge|Folgen|серія; наслідок|серия; следствие|0
+f|Bibliothek|Bibliotheken|бібліотека|библиотека|0
+f|Leseratte|Leseratten|книголюб|книгочей|0
+m|Autor|Autoren|автор|автор|0
+f|Geschichte|Geschichten|історія; оповідання|история; рассказ|0
+n|Märchen|Märchen|казка|сказка|0
+n|Gedicht|Gedichte|вірш|стихотворение|0
+f|Zeitschrift|Zeitschriften|журнал|журнал|0
+n|Rätsel|Rätsel|загадка; головоломка|загадка; головоломка|0
+n|Schach|-|шахи|шахматы|0
+n|Kartenspiel|Kartenspiele|карткова гра|карточная игра|0
+f|Gartenarbeit|-|робота в саду|работа в саду|0
+n|Beet|Beete|грядка; клумба|грядка; клумба|0
+n|Handwerk|-|ремесло|ремесло|0
+f|Bastelei|Basteleien|рукоділля|поделки|0

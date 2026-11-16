@@ -59,5 +59,42 @@ Virus — рід: у мене m, у словнику []
 Hintergrundbild — немає у словнику
 Bürgeramt — немає у словнику
 Agentur für Arbeit — немає у словнику
+Meldebescheinigung — немає у словнику
+Versicherungsnummer — немає у словнику
+Bürgergeld — немає у словнику
+Abholung — немає у словнику
+Stellenbeschreibung — немає у словнику
+Fortbildung — немає у словнику
+Umschulung — немає у словнику
+Gleitzeit — немає у словнику
+Urlaubsanspruch — немає у словнику
+Brutto — немає у словнику
+Netto — немає у словнику
 Silvester — рід: у мене n, у словнику []
+Einladungskarte — немає у словнику
+Tischreservierung — немає у словнику
+Fotoausstellung — немає у словнику
+Nachbarschaftsfeier — немає у словнику
+Lampion — рід: у мене m, у словнику []
+Kostümparty — немає у словнику
+Trainingsplan — немає у словнику
+Krankengymnastik — немає у словнику
+Laboruntersuchung — немає у словнику
+Thermometer — рід: у мене n, у словнику []
+Podcast — рід: у мене m, у словнику []
+Fels — рід: у мене m, у словнику []
+Hirsch — рід: у мене m, у словнику []
+Gulasch — рід: у мене n, у словнику []
+Mitnehmen — немає у словнику
+Radiergummi — рід: у мене m, у словнику []
+Gruppenarbeit — немає у словнику
+Elektrogeschäft — немає у словнику
+Gebrauchtwarenladen — немає у словнику
+Pfand — рід: у мене n, у словнику []
+Zutatenliste — немає у словнику
+Städtereise — немає у словнику
+Umsteigen — немає у словнику
+Reisepartner — немає у словнику
+Reiseversicherung — немає у словнику
+Stornierung — немає у словнику
 Umzugswagen — немає у словнику

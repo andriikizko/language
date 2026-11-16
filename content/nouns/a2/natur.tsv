@@ -39,3 +39,77 @@ f|Verschmutzung|Verschmutzungen|забруднення|загрязнение|0
 m|Abfall|Abfälle|відходи|отходы|0
 f|Energie|Energien|енергія|энергия|0
 f|Mülltonne|Mülltonnen|сміттєвий бак|мусорный бак|0
+f|Umwelt|-|довкілля|окружающая среда|0
+f|Landschaft|Landschaften|ландшафт|пейзаж|0
+n|Gebirge|Gebirge|гори (масив)|горы (массив)|0
+m|Gipfel|Gipfel|вершина|вершина|0
+n|Tal|Täler|долина|долина|0
+m|Hügel|Hügel|пагорб|холм|0
+f|Wiese|Wiesen|луг|луг|0
+n|Feld|Felder|поле|поле|0
+m|Acker|Äcker|рілля|пашня|0
+f|Insel|Inseln|острів|остров|0
+f|Küste|Küsten|узбережжя|побережье|0
+f|Welle|Wellen|хвиля|волна|0
+n|Ufer|Ufer|берег|берег|0
+m|Teich|Teiche|ставок|пруд|0
+m|Bach|Bäche|струмок|ручей|0
+m|Wasserfall|Wasserfälle|водоспад|водопад|0
+f|Quelle|Quellen|джерело (води)|источник (воды)|0
+f|Höhle|Höhlen|печера|пещера|0
+m|Stein|Steine|камінь|камень|0
+m|Fels|Felsen|скеля|скала|0
+m|Sand|-|пісок|песок|0
+f|Erde|-|земля; Земля|земля; Земля|0
+m|Boden|Böden|ґрунт; підлога|почва; пол|0
+n|Gras|Gräser|трава|трава|0
+n|Blatt|Blätter|листок|лист|0
+m|Ast|Äste|гілка|ветка|0
+m|Zweig|Zweige|гілка (тонка)|веточка|0
+f|Wurzel|Wurzeln|корінь|корень|0
+f|Rose|Rosen|троянда|роза|0
+f|Tulpe|Tulpen|тюльпан|тюльпан|0
+f|Pflanze|Pflanzen|рослина|растение|0
+m|Strauch|Sträucher|кущ|куст|0
+f|Eiche|Eichen|дуб|дуб|0
+f|Birke|Birken|береза|берёза|0
+f|Tanne|Tannen|ялиця|пихта|0
+m|Pilz|Pilze|гриб|гриб|0
+f|Beere|Beeren|ягода|ягода|0
+f|Tierwelt|-|тваринний світ|животный мир|0
+n|Wildtier|Wildtiere|дика тварина|дикое животное|0
+m|Vogel|Vögel|птах|птица|0
+m|Fisch|Fische|риба|рыба|0
+m|Hirsch|Hirsche|олень|олень|0
+n|Reh|Rehe|козуля|косуля|0
+m|Fuchs|Füchse|лисиця|лиса|0
+m|Wolf|Wölfe|вовк|волк|0
+m|Bär|Bären|ведмідь|медведь|0
+m|Hase|Hasen|заєць|заяц|0
+n|Eichhörnchen|Eichhörnchen|білка|белка|0
+f|Biene|Bienen|бджола|пчела|0
+f|Mücke|Mücken|комар|комар|0
+f|Spinne|Spinnen|павук|паук|0
+m|Schmetterling|Schmetterlinge|метелик|бабочка|0
+m|Frosch|Frösche|жаба|лягушка|0
+f|Schlange|Schlangen|змія; черга|змея; очередь|0
+m|Nationalpark|Nationalparks|національний парк|национальный парк|0
+n|Naturschutzgebiet|Naturschutzgebiete|заповідник|заповедник|0
+m|Klimawandel|-|зміна клімату|изменение климата|0
+n|Klima|-|клімат|климат|0
+f|Temperatur|Temperaturen|температура|температура|0
+f|Dürre|Dürren|посуха|засуха|0
+n|Hochwasser|-|повінь|наводнение|0
+f|Überschwemmung|Überschwemmungen|затоплення|затопление|0
+n|Erdbeben|Erdbeben|землетрус|землетрясение|0
+m|Vulkan|Vulkane|вулкан|вулкан|0
+f|Verschmutzung|-|забруднення|загрязнение|0
+m|Müll|-|сміття|мусор|0
+f|Mülltrennung|-|сортування сміття|сортировка мусора|0
+n|Recycling|-|переробка|переработка|0
+m|Strom|Ströme|електрика; потік|электричество; поток|0
+f|Energie|Energien|енергія|энергия|0
+f|Sonnenenergie|-|сонячна енергія|солнечная энергия|0
+f|Windkraft|-|енергія вітру|энергия ветра|0
+m|Umweltschutz|-|охорона довкілля|охрана окружающей среды|0
+f|Zukunft|-|майбутнє|будущее|0

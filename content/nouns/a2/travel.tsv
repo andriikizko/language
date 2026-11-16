@@ -41,3 +41,78 @@ f|Erinnerung|Erinnerungen|спогад|воспоминание|0
 n|Souvenir|Souvenirs|сувенір|сувенир|0
 m|Tourist|Touristen|турист|турист|0
 f|Unterkunft|Unterkünfte|житло (на час поїздки)|жильё (на время поездки)|1
+f|Reise|Reisen|подорож|путешествие|0
+f|Reiseplanung|-|планування подорожі|планирование поездки|0
+m|Reiseführer|Reiseführer|путівник|путеводитель|0
+n|Reiseziel|Reiseziele|місце призначення|пункт назначения|0
+f|Rundreise|Rundreisen|подорож по колу|круговой тур|0
+f|Städtereise|Städtereisen|міська подорож|городской тур|0
+f|Pauschalreise|Pauschalreisen|пакетний тур|пакетный тур|0
+f|Dienstreise|Dienstreisen|відрядження|командировка|0
+f|Reisezeit|Reisezeiten|час подорожі|время поездки|0
+f|Hauptsaison|-|високий сезон|высокий сезон|0
+f|Nebensaison|-|низький сезон|низкий сезон|0
+f|Hinfahrt|Hinfahrten|поїздка туди|поездка туда|0
+f|Rückfahrt|Rückfahrten|поїздка назад|поездка обратно|0
+m|Rückflug|Rückflüge|рейс назад|обратный рейс|0
+m|Hinflug|Hinflüge|рейс туди|рейс туда|0
+m|Flug|Flüge|рейс; політ|рейс; полёт|0
+m|Flughafen|Flughäfen|аеропорт|аэропорт|0
+n|Flugzeug|Flugzeuge|літак|самолёт|0
+m|Flugsteig|Flugsteige|вихід на посадку|выход на посадку|0
+f|Abflugzeit|Abflugzeiten|час вильоту|время вылета|0
+f|Ankunftszeit|Ankunftszeiten|час прибуття|время прибытия|0
+f|Verspätung|Verspätungen|запізнення|опоздание|0
+f|Verbindung|Verbindungen|звʼязок; пересадка|связь; пересадка|0
+n|Umsteigen|-|пересадка|пересадка|0
+f|Haltestelle|Haltestellen|зупинка|остановка|0
+m|Fahrplan|Fahrpläne|розклад руху|расписание движения|0
+f|Fahrkarte|Fahrkarten|квиток (проїзний)|проездной билет|0
+n|Ticket|Tickets|квиток|билет|0
+f|Platzreservierung|Platzreservierungen|резервація місця|резервация места|0
+m|Fensterplatz|Fensterplätze|місце біля вікна|место у окна|0
+m|Gangplatz|Gangplätze|місце біля проходу|место у прохода|0
+f|Klasse|Klassen|клас|класс|0
+m|Zug|Züge|потяг|поезд|0
+m|Hauptbahnhof|Hauptbahnhöfe|центральний вокзал|центральный вокзал|0
+n|Gleis|Gleise|колія; платформа|путь; платформа|0
+m|Reisebus|Reisebusse|туристичний автобус|туристический автобус|0
+m|Busbahnhof|Busbahnhöfe|автовокзал|автовокзал|0
+m|Fernbus|Fernbusse|міжміський автобус|междугородный автобус|0
+n|Schiff|Schiffe|корабель|корабль|0
+f|Fähre|Fähren|пором|паром|0
+m|Hafen|Häfen|порт|порт|0
+f|Kreuzfahrt|Kreuzfahrten|круїз|круиз|0
+m|Mietwagen|Mietwagen|орендоване авто|арендованный автомобиль|0
+f|Autobahn|Autobahnen|автобан|автобан|0
+f|Raststätte|Raststätten|стоянка (на трасі)|стоянка (на трассе)|0
+f|Tankstelle|Tankstellen|заправка|заправка|0
+m|Stau|Staus|затор|пробка|0
+f|Grenze|Grenzen|кордон|граница|0
+f|Grenzkontrolle|Grenzkontrollen|прикордонний контроль|пограничный контроль|0
+m|Zoll|Zölle|митниця|таможня|0
+f|Passkontrolle|Passkontrollen|паспортний контроль|паспортный контроль|0
+n|Handgepäck|-|ручна поклажа|ручная кладь|0
+m|Koffer|Koffer|валіза|чемодан|0
+f|Reisetasche|Reisetaschen|дорожня сумка|дорожная сумка|0
+m|Gepäckwagen|Gepäckwagen|багажний візок|багажная тележка|0
+f|Unterkunft|Unterkünfte|житло (на час подорожі)|жильё (на время поездки)|0
+n|Hotel|Hotels|готель|отель|0
+n|Hostel|Hostels|хостел|хостел|0
+f|Ferienwohnung|Ferienwohnungen|апартаменти на відпустку|апартаменты для отпуска|0
+n|Doppelzimmer|Doppelzimmer|двомісний номер|двухместный номер|0
+n|Einzelzimmer|Einzelzimmer|одномісний номер|одноместный номер|0
+f|Rezeption|Rezeptionen|рецепція|ресепшн|0
+m|Schlüssel|Schlüssel|ключ|ключ|0
+f|Übernachtung|Übernachtungen|ночівля|ночёвка|0
+n|Frühstück|Frühstücke|сніданок|завтрак|0
+f|Halbpension|-|напівпансіон|полупансион|0
+f|Vollpension|-|повний пансіон|полный пансион|0
+f|Sehenswürdigkeit|Sehenswürdigkeiten|памʼятка (визначне місце)|достопримечательность|0
+f|Führung|Führungen|екскурсія з гідом|экскурсия с гидом|0
+m|Stadtplan|Stadtpläne|план міста|план города|0
+n|Andenken|Andenken|сувенір (памʼять)|сувенир (память)|0
+m|Reisepartner|Reisepartner|попутник|попутчик|0
+f|Reiseversicherung|Reiseversicherungen|страхування подорожі|страхование поездки|0
+f|Stornierung|Stornierungen|скасування (бронювання)|отмена (бронирования)|0
+f|Buchung|Buchungen|бронювання|бронирование|0

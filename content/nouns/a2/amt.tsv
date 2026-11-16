@@ -37,3 +37,66 @@ f|Gebühr|Gebühren|збір, плата|сбор, плата|1
 f|Steuer|Steuern|податок|налог|1
 f|Frist|Fristen|термін, строк|срок|0
 f|Öffnungszeit|Öffnungszeiten|години роботи|часы работы|0
+f|Anmeldung|Anmeldungen|реєстрація (за місцем)|регистрация (по месту)|0
+f|Abmeldung|Abmeldungen|зняття з реєстрації|снятие с регистрации|0
+m|Wohnsitz|Wohnsitze|місце проживання|место жительства|0
+f|Meldebescheinigung|Meldebescheinigungen|довідка про реєстрацію|справка о регистрации|0
+n|Visum|Visa|віза|виза|0
+m|Pass|Pässe|паспорт|паспорт|0
+m|Reisepass|Reisepässe|закордонний паспорт|загранпаспорт|0
+f|Aufenthaltsgenehmigung|Aufenthaltsgenehmigungen|дозвіл на проживання|разрешение на проживание|0
+f|Verlängerung|Verlängerungen|продовження|продление|0
+m|Termin|Termine|запис; зустріч|запись; встреча|0
+f|Wartezeit|Wartezeiten|час очікування|время ожидания|0
+f|Nummer|Nummern|номер|номер|0
+f|Gebühr|Gebühren|збір|сбор|0
+f|Steuernummer|Steuernummern|податковий номер|налоговый номер|0
+f|Steuererklärung|Steuererklärungen|податкова декларація|налоговая декларация|0
+n|Finanzamt|Finanzämter|податкова інспекція|налоговая инспекция|0
+f|Versicherungsnummer|Versicherungsnummern|номер страхування|номер страхования|0
+f|Krankenversicherung|Krankenversicherungen|медичне страхування|медицинская страховка|0
+f|Rentenversicherung|Rentenversicherungen|пенсійне страхування|пенсионное страхование|0
+n|Kindergeld|-|допомога на дитину|пособие на ребёнка|0
+n|Arbeitslosengeld|-|допомога по безробіттю|пособие по безработице|0
+n|Bürgergeld|-|громадянська допомога|гражданское пособие|0
+m|Sachbearbeiter|Sachbearbeiter|співробітник відділу|сотрудник отдела|0
+f|Sachbearbeiterin|Sachbearbeiterinnen|співробітниця відділу|сотрудница отдела|0
+n|Schreiben|Schreiben|лист (офіційний)|письмо (официальное)|0
+m|Bescheid|Bescheide|повідомлення (рішення)|уведомление (решение)|0
+m|Widerspruch|Widersprüche|заперечення; оскарження|возражение; обжалование|0
+f|Beratung|Beratungen|консультація|консультация|0
+f|Auskunft|Auskünfte|довідка; інформація|справка; информация|0
+f|Anfrage|Anfragen|запит|запрос|0
+f|Voraussetzung|Voraussetzungen|умова; передумова|условие; предпосылка|0
+f|Bedingung|Bedingungen|умова|условие|0
+f|Vorschrift|Vorschriften|припис; правило|предписание; правило|0
+n|Gesetz|Gesetze|закон|закон|0
+f|Regel|Regeln|правило|правило|0
+n|Recht|Rechte|право|право|0
+f|Pflicht|Pflichten|обовʼязок|обязанность|0
+f|Erlaubnis|Erlaubnisse|дозвіл|разрешение|0
+n|Verbot|Verbote|заборона|запрет|0
+f|Strafe|Strafen|штраф; покарання|штраф; наказание|0
+m|Nachweis|Nachweise|підтвердження|подтверждение|0
+f|Bestätigung|Bestätigungen|підтвердження|подтверждение|0
+f|Angabe|Angaben|дані; відомості|данные; сведения|0
+m|Einwohner|Einwohner|мешканець|житель|0
+m|Bürger|Bürger|громадянин|гражданин|0
+m|Ausländer|Ausländer|іноземець|иностранец|0
+m|Antragsteller|Antragsteller|заявник|заявитель|0
+f|Geburtsurkunde|Geburtsurkunden|свідоцтво про народження|свидетельство о рождении|0
+f|Heiratsurkunde|Heiratsurkunden|свідоцтво про шлюб|свидетельство о браке|0
+f|Übersetzung|Übersetzungen|переклад|перевод|0
+f|Beglaubigung|Beglaubigungen|засвідчення|заверение|0
+n|Einschreiben|Einschreiben|рекомендований лист|заказное письмо|0
+f|Filiale|Filialen|відділення|отделение|0
+m|Schalter|Schalter|віконце (каса)|окошко (касса)|0
+m|Briefkasten|Briefkästen|поштова скринька|почтовый ящик|0
+m|Absender|Absender|відправник|отправитель|0
+f|Zustellung|Zustellungen|доставка|доставка|0
+f|Abholung|Abholungen|отримання; забирання|получение; забор|0
+f|Sparkasse|Sparkassen|ощадна каса (банк)|сберкасса (банк)|0
+n|Girokonto|Girokonten|поточний рахунок|текущий счёт|0
+f|Lastschrift|Lastschriften|прямий дебет|прямое дебетование|0
+f|Rechnung|Rechnungen|рахунок (до сплати)|счёт (к оплате)|0
+f|Mahnung|Mahnungen|нагадування про борг|напоминание о долге|0

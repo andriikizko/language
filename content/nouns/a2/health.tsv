@@ -39,3 +39,80 @@ n|Gewicht|Gewichte|вага|вес|0
 f|Wunde|Wunden|рана|рана|0
 m|Patient|Patienten|пацієнт|пациент|1
 f|Patientin|Patientinnen|пацієнтка|пациентка|0
+m|Patient|Patienten|пацієнт|пациент|0
+f|Patientin|Patientinnen|пацієнтка|пациентка|0
+f|Krankenschwester|Krankenschwestern|медсестра|медсестра|0
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|0
+f|Zahnärztin|Zahnärztinnen|стоматологиня|стоматолог (жен.)|0
+f|Überweisung|Überweisungen|направлення (до лікаря)|направление (к врачу)|0
+f|Behandlung|Behandlungen|лікування|лечение|0
+f|Therapie|Therapien|терапія|терапия|0
+f|Krankengymnastik|-|лікувальна гімнастика|лечебная гимнастика|0
+f|Massage|Massagen|масаж|массаж|0
+f|Reha|-|реабілітація|реабилитация|0
+f|Kur|Kuren|курорт; курс лікування|курорт; курс лечения|0
+f|Heilung|Heilungen|одужання; загоєння|выздоровление; заживление|0
+f|Besserung|-|покращення|улучшение|0
+f|Ursache|Ursachen|причина|причина|0
+f|Folge|Folgen|наслідок|последствие|0
+f|Beschwerde|Beschwerden|скарга; недуга|жалоба; недуг|0
+f|Entzündung|Entzündungen|запалення|воспаление|0
+f|Infektion|Infektionen|інфекція|инфекция|0
+f|Bronchitis|-|бронхіт|бронхит|0
+f|Lungenentzündung|Lungenentzündungen|пневмонія|пневмония|0
+p|Magenschmerzen|-|біль у шлунку|боль в желудке|0
+f|Verstopfung|Verstopfungen|закреп|запор|0
+f|Vergiftung|Vergiftungen|отруєння|отравление|0
+f|Verbrennung|Verbrennungen|опік|ожог|0
+f|Prellung|Prellungen|забій|ушиб|0
+f|Verstauchung|Verstauchungen|розтягнення|растяжение|0
+m|Bruch|Brüche|перелом|перелом|0
+f|Wunde|Wunden|рана|рана|0
+f|Narbe|Narben|шрам|шрам|0
+m|Biss|Bisse|укус|укус|0
+m|Ausschlag|Ausschläge|висип|сыпь|0
+m|Juckreiz|-|свербіж|зуд|0
+f|Migräne|Migränen|мігрень|мигрень|0
+f|Schlaflosigkeit|-|безсоння|бессонница|0
+f|Müdigkeit|-|втома|усталость|0
+f|Erschöpfung|-|виснаження|истощение|0
+f|Angst|Ängste|страх; тривога|страх; тревога|0
+n|Gewissen|-|сумління|совесть|0
+f|Depression|Depressionen|депресія|депрессия|0
+f|Sucht|Süchte|залежність|зависимость|0
+n|Rauchen|-|паління|курение|0
+m|Raucher|Raucher|курець|курильщик|0
+m|Alkohol|-|алкоголь|алкоголь|0
+f|Ernährung|-|харчування|питание|0
+f|Bewegung|Bewegungen|рух; фізична активність|движение; физическая активность|0
+f|Vorsorge|-|профілактика|профилактика|0
+f|Vorsorgeuntersuchung|Vorsorgeuntersuchungen|профілактичний огляд|профилактический осмотр|0
+n|Ergebnis|Ergebnisse|результат (аналізу)|результат (анализа)|0
+f|Laboruntersuchung|Laboruntersuchungen|лабораторне дослідження|лабораторное исследование|0
+f|Blutabnahme|Blutabnahmen|забір крові|забор крови|0
+f|Blutgruppe|Blutgruppen|група крові|группа крови|0
+n|Thermometer|Thermometer|термометр|термометр|0
+f|Temperatur|Temperaturen|температура|температура|0
+f|Maske|Masken|маска|маска|0
+n|Desinfektionsmittel|Desinfektionsmittel|дезінфікуючий засіб|дезинфицирующее средство|0
+f|Hygiene|-|гігієна|гигиена|0
+f|Zahnbürste|Zahnbürsten|зубна щітка|зубная щётка|0
+f|Zahnpasta|Zahnpasten|зубна паста|зубная паста|0
+f|Füllung|Füllungen|пломба|пломба|0
+f|Brille|Brillen|окуляри|очки|0
+f|Kontaktlinse|Kontaktlinsen|контактна лінза|контактная линза|0
+n|Hörgerät|Hörgeräte|слуховий апарат|слуховой аппарат|0
+m|Rollstuhl|Rollstühle|інвалідний візок|инвалидная коляска|0
+f|Krücke|Krücken|милиця|костыль|0
+m|Notarzt|Notärzte|лікар швидкої|врач скорой|0
+f|Notaufnahme|Notaufnahmen|приймальне відділення|приёмное отделение|0
+f|Station|Stationen|відділення (лікарні)|отделение (больницы)|0
+n|Bett|Betten|ліжко|кровать|0
+m|Besuch|Besuche|візит; відвідування|визит; посещение|0
+f|Entlassung|Entlassungen|виписка (з лікарні)|выписка (из больницы)|0
+m|Arztbrief|Arztbriefe|лікарський висновок|врачебное заключение|0
+f|Packungsbeilage|Packungsbeilagen|інструкція до ліків|инструкция к лекарству|0
+f|Einnahme|Einnahmen|прийом (ліків)|приём (лекарств)|0
+f|Kapsel|Kapseln|капсула|капсула|0
+m|Saft|Säfte|сироп; сік|сироп; сок|0
+f|Salbe|Salben|мазь|мазь|0

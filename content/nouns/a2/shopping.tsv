@@ -39,3 +39,83 @@ m|Artikel|Artikel|товар, стаття|товар, статья|0
 m|Onlineshop|Onlineshops|інтернет-магазин|интернет-магазин|0
 f|Lieferung|Lieferungen|доставка|доставка|1
 f|Bestellung|Bestellungen|замовлення|заказ|1
+n|Geschäft|Geschäfte|магазин|магазин|0
+m|Laden|Läden|крамниця|лавка|0
+m|Supermarkt|Supermärkte|супермаркет|супермаркет|0
+m|Markt|Märkte|ринок|рынок|0
+m|Wochenmarkt|Wochenmärkte|тижневий ринок|еженедельный рынок|0
+n|Kaufhaus|Kaufhäuser|універмаг|универмаг|0
+n|Einkaufszentrum|Einkaufszentren|торговий центр|торговый центр|0
+f|Drogerie|Drogerien|дрогерія|дрогерия|0
+f|Bäckerei|Bäckereien|пекарня|пекарня|0
+f|Metzgerei|Metzgereien|мʼясна крамниця|мясная лавка|0
+m|Blumenladen|Blumenläden|квіткова крамниця|цветочный магазин|0
+f|Buchhandlung|Buchhandlungen|книгарня|книжный магазин|0
+n|Elektrogeschäft|Elektrogeschäfte|магазин електроніки|магазин электроники|0
+m|Baumarkt|Baumärkte|будівельний магазин|строительный магазин|0
+m|Gebrauchtwarenladen|Gebrauchtwarenläden|секонд-хенд|секонд-хенд|0
+m|Flohmarkt|Flohmärkte|блошиний ринок|блошиный рынок|0
+m|Online-Shop|Online-Shops|інтернет-магазин|интернет-магазин|0
+f|Bestellung|Bestellungen|замовлення|заказ|0
+f|Lieferung|Lieferungen|доставка|доставка|0
+f|Lieferzeit|Lieferzeiten|час доставки|срок доставки|0
+p|Versandkosten|-|вартість доставки|стоимость доставки|0
+f|Rücksendung|Rücksendungen|повернення (поштою)|возврат (почтой)|0
+f|Rückgabe|Rückgaben|повернення|возврат|0
+m|Umtausch|-|обмін|обмен|0
+f|Garantie|Garantien|гарантія|гарантия|0
+f|Reklamation|Reklamationen|рекламація|рекламация|0
+m|Kassenzettel|Kassenzettel|касовий чек|кассовый чек|0
+f|Quittung|Quittungen|квитанція|квитанция|0
+f|Tüte|Tüten|пакет|пакет|0
+f|Tasche|Taschen|сумка|сумка|0
+m|Einkaufswagen|Einkaufswagen|кошик (візок)|тележка|0
+m|Einkaufskorb|Einkaufskörbe|кошик|корзина|0
+m|Einkaufszettel|Einkaufszettel|список покупок|список покупок|0
+f|Auswahl|-|вибір|выбор|0
+f|Größe|Größen|розмір|размер|0
+f|Farbe|Farben|колір|цвет|0
+n|Material|Materialien|матеріал|материал|0
+f|Qualität|Qualitäten|якість|качество|0
+f|Marke|Marken|марка; бренд|марка; бренд|0
+f|Ware|Waren|товар|товар|0
+n|Produkt|Produkte|продукт; товар|продукт; товар|0
+m|Preis|Preise|ціна|цена|0
+f|Preiserhöhung|Preiserhöhungen|підвищення цін|повышение цен|0
+m|Rabatt|Rabatte|знижка|скидка|0
+n|Sonderangebot|Sonderangebote|спеціальна пропозиція|специальное предложение|0
+m|Ausverkauf|Ausverkäufe|розпродаж|распродажа|0
+m|Schlussverkauf|Schlussverkäufe|кінцевий розпродаж|заключительная распродажа|0
+m|Gutschein|Gutscheine|ваучер|ваучер|0
+f|Kundenkarte|Kundenkarten|картка клієнта|карта клиента|0
+f|Zahlung|Zahlungen|оплата|оплата|0
+f|Kartenzahlung|Kartenzahlungen|оплата карткою|оплата картой|0
+f|Barzahlung|Barzahlungen|готівкова оплата|наличная оплата|0
+f|Ratenzahlung|Ratenzahlungen|оплата частинами|оплата в рассрочку|0
+f|Mehrwertsteuer|-|ПДВ|НДС|0
+f|Kasse|Kassen|каса|касса|0
+m|Kassierer|Kassierer|касир|кассир|0
+f|Schlange|Schlangen|черга|очередь|0
+f|Öffnungszeit|Öffnungszeiten|години роботи|часы работы|0
+m|Verkäufer|Verkäufer|продавець|продавец|0
+m|Kunde|Kunden|клієнт|клиент|0
+f|Beratung|Beratungen|консультація|консультация|0
+f|Anprobe|Anproben|примірка|примерка|0
+f|Umkleidekabine|Umkleidekabinen|примірювальна|примерочная|0
+m|Spiegel|Spiegel|дзеркало|зеркало|0
+n|Regal|Regale|полиця|полка|0
+f|Abteilung|Abteilungen|відділ|отдел|0
+f|Theke|Theken|прилавок|прилавок|0
+f|Verpackung|Verpackungen|упаковка|упаковка|0
+n|Pfand|-|заставна вартість (тара)|залог (тара)|0
+f|Pfandflasche|Pfandflaschen|тара (пляшка)|тара (бутылка)|0
+n|Gewicht|Gewichte|вага|вес|0
+n|Kilo|Kilos|кілограм|килограмм|0
+n|Pfund|Pfunde|півкілограма (фунт)|полкилограмма (фунт)|0
+m|Liter|Liter|літр|литр|0
+n|Stück|Stücke|штука; шматок|штука; кусок|0
+f|Packung|Packungen|пачка|пачка|0
+f|Dose|Dosen|консервна банка|консервная банка|0
+n|Mindesthaltbarkeitsdatum|-|термін придатності|срок годности|0
+m|Inhalt|Inhalte|вміст|содержимое|0
+f|Zutatenliste|Zutatenlisten|список інгредієнтів|список ингредиентов|0

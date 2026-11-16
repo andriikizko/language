@@ -37,3 +37,68 @@ f|Sprachkenntnis|Sprachkenntnisse|знання мови|знание языка|
 n|Praktikum|Praktika|практика, стажування|практика, стажировка|0
 m|Praktikant|Praktikanten|практикант|практикант|0
 f|Karriere|Karrieren|кар’єра|карьера|0
+f|Branche|Branchen|галузь|отрасль|0
+m|Betrieb|Betriebe|підприємство|предприятие|0
+m|Konzern|Konzerne|концерн|концерн|0
+f|Zentrale|Zentralen|центральний офіс|центральный офис|0
+f|Filiale|Filialen|філія|филиал|0
+f|Geschäftsführung|Geschäftsführungen|керівництво|руководство|0
+m|Geschäftsführer|Geschäftsführer|директор|директор|0
+m|Vorgesetzte|Vorgesetzte|керівник|руководитель|0
+m|Kollege|Kollegen|колега|коллега|0
+m|Lehrling|Lehrlinge|учень (ремісничий)|ученик (ремесленный)|0
+f|Fachkraft|Fachkräfte|кваліфікований працівник|квалифицированный работник|0
+m|Fachkräftemangel|-|брак фахівців|нехватка специалистов|0
+p|Bewerbungsunterlagen|-|документи для заявки|документы для заявки|0
+f|Referenz|Referenzen|рекомендація|рекомендация|0
+f|Stellenbeschreibung|Stellenbeschreibungen|опис вакансії|описание вакансии|0
+n|Angebot|Angebote|пропозиція|предложение|0
+f|Zusage|Zusagen|згода; позитивна відповідь|согласие; положительный ответ|0
+f|Absage|Absagen|відмова|отказ|0
+m|Einstieg|Einstiege|початок кар'єри; вхід|начало карьеры; вход|0
+f|Einarbeitung|Einarbeitungen|введення в посаду|введение в должность|0
+f|Weiterbildung|Weiterbildungen|підвищення кваліфікації|повышение квалификации|0
+f|Fortbildung|Fortbildungen|курси підвищення|курсы повышения|0
+f|Umschulung|Umschulungen|перекваліфікація|переквалификация|0
+m|Abschluss|Abschlüsse|диплом; завершення|диплом; завершение|0
+f|Anerkennung|Anerkennungen|визнання (диплома)|признание (диплома)|0
+m|Nebenjob|Nebenjobs|підробіток|подработка|0
+m|Minijob|Minijobs|мініджоб|миниджоб|0
+f|Schichtarbeit|-|змінна робота|сменная работа|0
+f|Nachtschicht|Nachtschichten|нічна зміна|ночная смена|0
+f|Gleitzeit|-|гнучкий графік|гибкий график|0
+n|Homeoffice|Homeoffices|віддалена робота|удалённая работа|0
+m|Urlaubsanspruch|Urlaubsansprüche|право на відпустку|право на отпуск|0
+m|Urlaubsantrag|Urlaubsanträge|заява на відпустку|заявление на отпуск|0
+f|Elternzeit|-|декретна відпустка|декретный отпуск|0
+f|Gehaltserhöhung|Gehaltserhöhungen|підвищення зарплати|повышение зарплаты|0
+n|Brutto|-|брутто|брутто|0
+n|Netto|-|нетто|нетто|0
+f|Abrechnung|Abrechnungen|розрахунковий листок|расчётный листок|0
+f|Lohnsteuer|Lohnsteuern|податок із зарплати|налог с зарплаты|0
+f|Sozialversicherung|Sozialversicherungen|соціальне страхування|социальное страхование|0
+f|Kündigungsfrist|Kündigungsfristen|строк попередження про звільнення|срок предупреждения об увольнении|0
+f|Entlassung|Entlassungen|звільнення (роботодавцем)|увольнение (работодателем)|0
+m|Termin|Termine|термін; зустріч|срок; встреча|0
+f|Sitzung|Sitzungen|нарада|совещание|0
+f|Präsentation|Präsentationen|презентація|презентация|0
+m|Bericht|Berichte|звіт|отчёт|0
+m|Vertrag|Verträge|договір|договор|0
+f|Zusammenarbeit|-|співпраця|сотрудничество|0
+f|Leistung|Leistungen|результат; продуктивність|результат; производительность|0
+m|Erfolg|Erfolge|успіх|успех|0
+m|Druck|-|тиск|давление|0
+m|Stress|-|стрес|стресс|0
+f|Kantine|Kantinen|їдальня|столовая|0
+m|Arbeitsplatz|Arbeitsplätze|робоче місце|рабочее место|0
+m|Schreibtisch|Schreibtische|письмовий стіл|письменный стол|0
+m|Kopierer|Kopierer|копіювальний апарат|копир|0
+m|Drucker|Drucker|принтер|принтер|0
+f|Maschine|Maschinen|машина; верстат|машина; станок|0
+f|Baustelle|Baustellen|будмайданчик|стройплощадка|0
+f|Lieferung|Lieferungen|поставка|поставка|0
+n|Lager|Lager|склад|склад|0
+m|Auftrag|Aufträge|замовлення; доручення|заказ; поручение|0
+m|Umsatz|Umsätze|оборот|оборот|0
+m|Gewinn|Gewinne|прибуток|прибыль|0
+m|Verlust|Verluste|збиток|убыток|0

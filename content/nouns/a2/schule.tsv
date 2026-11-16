@@ -39,3 +39,77 @@ f|Prüfungsangst|-|страх перед іспитом|страх перед э
 n|Lernen|-|навчання|учение|0
 f|Konzentration|-|концентрація, зосередженість|концентрация, сосредоточенность|0
 m|Erfolg|Erfolge|успіх|успех|1
+f|Grundschule|Grundschulen|початкова школа|начальная школа|0
+f|Realschule|Realschulen|реальна школа|реальная школа|0
+n|Gymnasium|Gymnasien|гімназія|гимназия|0
+f|Hauptschule|Hauptschulen|основна школа|основная школа|0
+f|Gesamtschule|Gesamtschulen|загальна школа|общая школа|0
+f|Berufsschule|Berufsschulen|професійне училище|профессиональное училище|0
+f|Hochschule|Hochschulen|вищий навчальний заклад|высшее учебное заведение|0
+f|Universität|Universitäten|університет|университет|0
+n|Studium|Studien|навчання (в універі)|учёба (в вузе)|0
+n|Semester|Semester|семестр|семестр|0
+n|Schuljahr|Schuljahre|навчальний рік|учебный год|0
+f|Klasse|Klassen|клас|класс|0
+n|Klassenzimmer|Klassenzimmer|клас (кімната)|классная комната|0
+m|Klassenlehrer|Klassenlehrer|класний керівник|классный руководитель|0
+m|Direktor|Direktoren|директор|директор|0
+f|Direktorin|Direktorinnen|директорка|директор (жен.)|0
+n|Fach|Fächer|предмет|предмет|0
+n|Hauptfach|Hauptfächer|основний предмет|основной предмет|0
+m|Stundenplan|Stundenpläne|розклад|расписание|0
+f|Stunde|Stunden|урок; година|урок; час|0
+f|Pause|Pausen|перерва|перемена|0
+m|Unterricht|-|заняття|занятия|0
+m|Kurs|Kurse|курс|курс|0
+m|Sprachkurs|Sprachkurse|мовний курс|языковой курс|0
+m|Deutschkurs|Deutschkurse|курс німецької|курс немецкого|0
+f|Prüfung|Prüfungen|іспит|экзамен|0
+f|Klassenarbeit|Klassenarbeiten|контрольна робота|контрольная работа|0
+m|Test|Tests|тест|тест|0
+f|Note|Noten|оцінка|оценка|0
+n|Zeugnis|Zeugnisse|табель; атестат|табель; аттестат|0
+f|Hausaufgabe|Hausaufgaben|домашнє завдання|домашнее задание|0
+f|Aufgabe|Aufgaben|завдання|задание|0
+f|Frage|Fragen|питання|вопрос|0
+f|Antwort|Antworten|відповідь|ответ|0
+m|Fehler|Fehler|помилка|ошибка|0
+f|Lösung|Lösungen|рішення|решение|0
+n|Beispiel|Beispiele|приклад|пример|0
+f|Regel|Regeln|правило|правило|0
+f|Grammatik|Grammatiken|граматика|грамматика|0
+m|Wortschatz|-|словниковий запас|словарный запас|0
+n|Wort|Wörter|слово|слово|0
+m|Satz|Sätze|речення|предложение|0
+m|Text|Texte|текст|текст|0
+m|Absatz|Absätze|абзац|абзац|0
+f|Aussprache|-|вимова|произношение|0
+f|Rechtschreibung|-|правопис|правописание|0
+n|Diktat|Diktate|диктант|диктант|0
+f|Übersetzung|Übersetzungen|переклад|перевод|0
+n|Wörterbuch|Wörterbücher|словник|словарь|0
+n|Lehrbuch|Lehrbücher|підручник|учебник|0
+n|Heft|Hefte|зошит|тетрадь|0
+m|Kugelschreiber|Kugelschreiber|кулькова ручка|шариковая ручка|0
+m|Bleistift|Bleistifte|олівець|карандаш|0
+m|Radiergummi|Radiergummis|гумка|ластик|0
+n|Lineal|Lineale|лінійка|линейка|0
+m|Taschenrechner|Taschenrechner|калькулятор|калькулятор|0
+f|Tafel|Tafeln|дошка|доска|0
+f|Kreide|Kreiden|крейда|мел|0
+m|Schulhof|Schulhöfe|шкільне подвір'я|школьный двор|0
+f|Schulpflicht|-|обов'язкове навчання|обязательное обучение|0
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|0
+m|Abschluss|Abschlüsse|випуск; диплом|выпуск; диплом|0
+n|Abitur|-|атестат зрілості|аттестат зрелости|0
+f|Bewerbung|Bewerbungen|вступна заява|заявка на поступление|0
+n|Stipendium|Stipendien|стипендія|стипендия|0
+f|Studiengebühr|Studiengebühren|плата за навчання|плата за обучение|0
+f|Vorlesung|Vorlesungen|лекція|лекция|0
+n|Seminar|Seminare|семінар|семинар|0
+n|Referat|Referate|доповідь|доклад|0
+f|Gruppenarbeit|Gruppenarbeiten|групова робота|групповая работа|0
+m|Elternabend|Elternabende|батьківські збори|родительское собрание|0
+f|Mitschülerin|Mitschülerinnen|однокласниця|одноклассница|0
+m|Mitschüler|Mitschüler|однокласник|одноклассник|0
+m|Kommilitone|Kommilitonen|одногрупник|однокурсник|0

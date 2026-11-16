@@ -40,3 +40,71 @@ f|Sprachnachricht|Sprachnachrichten|голосове повідомлення|г
 m|Anhang|Anhänge|вкладення|вложение|0
 m|Empfänger|Empfänger|одержувач|получатель|0
 m|Absender|Absender|відправник|отправитель|0
+f|Zeitung|Zeitungen|газета|газета|0
+f|Nachricht|Nachrichten|новина; повідомлення|новость; сообщение|0
+f|Schlagzeile|Schlagzeilen|заголовок|заголовок|0
+m|Artikel|Artikel|стаття|статья|0
+m|Beitrag|Beiträge|публікація; допис|публикация; пост|0
+m|Bericht|Berichte|репортаж; звіт|репортаж; отчёт|0
+f|Meldung|Meldungen|повідомлення|сообщение|0
+f|Reportage|Reportagen|репортаж|репортаж|0
+n|Interview|Interviews|інтервʼю|интервью|0
+f|Dokumentation|Dokumentationen|документальний фільм|документальный фильм|0
+f|Sendung|Sendungen|передача|передача|0
+n|Programm|Programme|програма (ТБ)|программа (ТВ)|0
+m|Sender|Sender|телеканал; радіостанція|телеканал; радиостанция|0
+m|Fernseher|Fernseher|телевізор|телевизор|0
+f|Fernbedienung|Fernbedienungen|пульт|пульт|0
+f|Werbung|Werbungen|реклама|реклама|0
+f|Anzeige|Anzeigen|оголошення|объявление|0
+n|Plakat|Plakate|плакат|плакат|0
+f|Überschrift|Überschriften|заголовок (розділу)|заголовок (раздела)|0
+m|Leser|Leser|читач|читатель|0
+m|Journalist|Journalisten|журналіст|журналист|0
+m|Redakteur|Redakteure|редактор|редактор|0
+f|Redaktion|Redaktionen|редакція|редакция|0
+m|Moderator|Moderatoren|ведучий|ведущий|0
+m|Hörer|Hörer|слухач|слушатель|0
+m|Podcast|Podcasts|подкаст|подкаст|0
+n|Video|Videos|відео|видео|0
+m|Kanal|Kanäle|канал|канал|0
+m|Abonnent|Abonnenten|підписник|подписчик|0
+n|Abonnement|Abonnements|підписка|подписка|0
+f|Mediathek|Mediatheken|медіатека|медиатека|0
+m|Livestream|Livestreams|пряма трансляція|прямая трансляция|0
+f|Übertragung|Übertragungen|трансляція|трансляция|0
+n|Netzwerk|Netzwerke|мережа|сеть|0
+
+m|Kommentar|Kommentare|коментар|комментарий|0
+m|Link|Links|посилання|ссылка|0
+n|Passwort|Passwörter|пароль|пароль|0
+m|Benutzername|Benutzernamen|імʼя користувача|имя пользователя|0
+f|Verbindung|Verbindungen|звʼязок; зʼєднання|связь; соединение|0
+n|Netz|Netze|мережа; мобільний звʼязок|сеть; мобильная связь|0
+m|Empfang|-|прийом (сигналу)|приём (сигнала)|0
+m|Akku|Akkus|акумулятор|аккумулятор|0
+n|Ladekabel|Ladekabel|кабель для зарядки|кабель для зарядки|0
+f|Ladestation|Ladestationen|зарядна станція|зарядная станция|0
+m|Bildschirm|Bildschirme|екран|экран|0
+f|Tastatur|Tastaturen|клавіатура|клавиатура|0
+f|Maus|Mäuse|миша|мышь|0
+m|Kopfhörer|Kopfhörer|навушники|наушники|0
+m|Lautsprecher|Lautsprecher|гучномовець|динамик|0
+n|Mikrofon|Mikrofone|мікрофон|микрофон|0
+f|Aufnahme|Aufnahmen|запис|запись|0
+f|Datei|Dateien|файл|файл|0
+m|Ordner|Ordner|папка|папка|0
+n|Dokument|Dokumente|документ|документ|0
+f|Sicherung|Sicherungen|резервна копія|резервная копия|0
+n|Update|Updates|оновлення|обновление|0
+f|Software|-|програмне забезпечення|программное обеспечение|0
+n|Programm|Programme|програма (комп'ютерна)|программа (компьютерная)|0
+n|Spiel|Spiele|гра (комп'ютерна)|игра (компьютерная)|0
+f|Meinung|Meinungen|думка|мнение|0
+f|Information|Informationen|інформація|информация|0
+f|Quelle|Quellen|джерело|источник|0
+f|Wahrheit|-|правда|правда|0
+f|Lüge|Lügen|брехня|ложь|0
+n|Gerücht|Gerüchte|чутка|слух|0
+f|Presse|-|преса|пресса|0
+f|Öffentlichkeit|-|громадськість|общественность|0

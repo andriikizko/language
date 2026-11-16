@@ -39,3 +39,74 @@ m|Karton|Kartons|картонна коробка|картонная коробк
 f|Kündigungsfrist|Kündigungsfristen|термін попередження про розірвання|срок уведомления о расторжении|0
 f|Anmeldung|Anmeldungen|реєстрація (за місцем проживання)|регистрация (по месту жительства)|1
 m|Eigentümer|Eigentümer|власник|собственник|0
+f|Wohnung|Wohnungen|квартира|квартира|0
+f|Mietwohnung|Mietwohnungen|орендована квартира|съёмная квартира|0
+f|Eigentumswohnung|Eigentumswohnungen|власна квартира|собственная квартира|0
+f|Wohngemeinschaft|Wohngemeinschaften|спільне житло (WG)|совместное жильё (WG)|0
+n|Zimmer|Zimmer|кімната|комната|0
+n|Wohnzimmer|Wohnzimmer|вітальня|гостиная|0
+n|Schlafzimmer|Schlafzimmer|спальня|спальня|0
+n|Kinderzimmer|Kinderzimmer|дитяча|детская|0
+f|Küche|Küchen|кухня|кухня|0
+n|Badezimmer|Badezimmer|ванна кімната|ванная комната|0
+n|WC|WCs|туалет|туалет|0
+m|Flur|Flure|коридор|коридор|0
+m|Balkon|Balkone|балкон|балкон|0
+m|Keller|Keller|підвал|подвал|0
+m|Dachboden|Dachböden|горище|чердак|0
+f|Garage|Garagen|гараж|гараж|0
+m|Aufzug|Aufzüge|ліфт|лифт|0
+f|Treppe|Treppen|сходи|лестница|0
+f|Etage|Etagen|поверх|этаж|0
+n|Erdgeschoss|Erdgeschosse|перший поверх|первый этаж|0
+f|Wohnfläche|Wohnflächen|житлова площа|жилая площадь|0
+m|Quadratmeter|Quadratmeter|квадратний метр|квадратный метр|0
+f|Miete|Mieten|оренда|аренда|0
+f|Kaltmiete|Kaltmieten|оренда без комуналки|аренда без коммуналки|0
+f|Warmmiete|Warmmieten|оренда з комуналкою|аренда с коммуналкой|0
+p|Nebenkosten|-|комунальні витрати|коммунальные расходы|0
+f|Kaution|Kautionen|застава|залог|0
+m|Mieter|Mieter|орендар|арендатор|0
+f|Mieterin|Mieterinnen|орендарка|арендаторша|0
+m|Vermieter|Vermieter|орендодавець|арендодатель|0
+f|Vermieterin|Vermieterinnen|орендодавиця|арендодательница|0
+m|Eigentümer|Eigentümer|власник|собственник|0
+m|Nachbar|Nachbarn|сусід|сосед|0
+f|Nachbarin|Nachbarinnen|сусідка|соседка|0
+f|Hausordnung|Hausordnungen|правила будинку|правила дома|0
+f|Ruhezeit|Ruhezeiten|час тиші|время тишины|0
+m|Lärm|-|шум|шум|0
+f|Besichtigung|Besichtigungen|огляд (житла)|осмотр (жилья)|0
+f|Wohnungssuche|Wohnungssuchen|пошук житла|поиск жилья|0
+f|Anzeige|Anzeigen|оголошення|объявление|0
+m|Umzug|Umzüge|переїзд|переезд|0
+m|Karton|Kartons|картонна коробка|картонная коробка|0
+m|Möbelwagen|Möbelwagen|меблевий фургон|мебельный фургон|0
+f|Einrichtung|Einrichtungen|обстановка|обстановка|0
+n|Möbelstück|Möbelstücke|предмет меблів|предмет мебели|0
+m|Schrank|Schränke|шафа|шкаф|0
+n|Regal|Regale|полиця; стелаж|полка; стеллаж|0
+n|Sofa|Sofas|диван|диван|0
+m|Sessel|Sessel|крісло|кресло|0
+m|Teppich|Teppiche|килим|ковёр|0
+m|Vorhang|Vorhänge|штора|штора|0
+f|Lampe|Lampen|лампа|лампа|0
+f|Heizung|Heizungen|опалення|отопление|0
+m|Heizkörper|Heizkörper|радіатор|радиатор|0
+f|Klimaanlage|Klimaanlagen|кондиціонер|кондиционер|0
+m|Strom|-|електрика|электричество|0
+n|Gas|Gase|газ|газ|0
+n|Wasser|-|вода|вода|0
+f|Steckdose|Steckdosen|розетка|розетка|0
+f|Waschmaschine|Waschmaschinen|пральна машина|стиральная машина|0
+m|Kühlschrank|Kühlschränke|холодильник|холодильник|0
+m|Herd|Herde|плита|плита|0
+f|Spülmaschine|Spülmaschinen|посудомийна машина|посудомоечная машина|0
+f|Dusche|Duschen|душ|душ|0
+f|Badewanne|Badewannen|ванна|ванна|0
+n|Waschbecken|Waschbecken|умивальник|раковина|0
+f|Reparatur|Reparaturen|ремонт|ремонт|0
+m|Schaden|Schäden|шкода; пошкодження|ущерб; повреждение|0
+f|Renovierung|Renovierungen|ремонт (косметичний)|ремонт (косметический)|0
+f|Tapete|Tapeten|шпалери|обои|0
+f|Farbe|Farben|фарба; колір|краска; цвет|0
