@@ -95,3 +95,5 @@
 .de-tab{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13px;padding:7px 12px;border-radius:999px}
 .de-tab.on{background:var(--o-500);border-color:var(--o-500);color:#fff}
 .de-dim{color:var(--dim);font-size:13px}
+.de-forms{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;border-top:1px dashed var(--line);padding-top:8px;margin-top:4px;font-size:14px;font-weight:600}
+.de-forms .irr{color:#C2410C;font-weight:800}

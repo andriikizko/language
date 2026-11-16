@@ -1,0 +1,102 @@
+rot|червоний|красный|colors|1|
+blau|синій, блакитний|синий, голубой|colors|1|
+gelb|жовтий|жёлтый|colors|1|
+grün|зелений|зелёный|colors|1|
+schwarz|чорний|чёрный|colors|1|
+weiß|білий|белый|colors|1|
+grau|сірий|серый|colors|1|
+braun|коричневий|коричневый|colors|1|
+orange|помаранчевий|оранжевый|colors|1|
+rosa|рожевий|розовый|colors|1|
+lila|ліловий, фіолетовий|сиреневый, фиолетовый|colors|1|
+beige|бежевий|бежевый|colors|0|
+hell|світлий|светлый|colors|0|dunkel
+dunkel|темний|тёмный|colors|0|hell
+groß|великий; високий|большой; высокий|basic|1|klein
+klein|малий, маленький|маленький|basic|1|groß
+lang|довгий|длинный|basic|1|kurz
+kurz|короткий|короткий|basic|1|lang
+neu|новий|новый|basic|1|alt
+alt|старий|старый|basic|1|neu
+jung|молодий|молодой|basic|1|alt
+gut|добрий, хороший|хороший|basic|1|schlecht
+schlecht|поганий|плохой|basic|1|gut
+schön|гарний|красивый|basic|1|hässlich
+hässlich|негарний, бридкий|некрасивый, уродливый|basic|0|schön
+teuer|дорогий (за ціною)|дорогой (по цене)|basic|1|billig
+billig|дешевий|дешёвый|basic|1|teuer
+günstig|вигідний, недорогий|выгодный, недорогой|basic|0|
+schnell|швидкий|быстрый|basic|1|langsam
+langsam|повільний|медленный|basic|1|schnell
+heiß|гарячий, спекотний|горячий, жаркий|basic|1|kalt
+kalt|холодний|холодный|basic|1|heiß
+warm|теплий|тёплый|basic|1|kühl
+kühl|прохолодний|прохладный|basic|0|warm
+laut|гучний|громкий|basic|1|leise
+leise|тихий|тихий|basic|1|laut
+leicht|легкий (за вагою); простий|лёгкий (по весу); простой|basic|1|schwer
+schwer|важкий; складний|тяжёлый; сложный|basic|1|leicht
+einfach|простий|простой|basic|1|schwierig
+schwierig|складний|сложный|basic|1|einfach
+richtig|правильний|правильный|basic|1|falsch
+falsch|неправильний|неправильный|basic|1|richtig
+wichtig|важливий|важный|basic|1|
+interessant|цікавий|интересный|basic|1|langweilig
+langweilig|нудний|скучный|basic|0|interessant
+müde|втомлений, сонний|уставший, сонный|feel|1|
+gesund|здоровий|здоровый|feel|1|krank
+krank|хворий|больной|feel|1|gesund
+hungrig|голодний|голодный|feel|0|satt
+satt|ситий|сытый|feel|0|hungrig
+glücklich|щасливий|счастливый|feel|1|traurig
+traurig|сумний|грустный|feel|1|glücklich
+fröhlich|веселий, радісний|весёлый, радостный|feel|0|
+zufrieden|задоволений|довольный|feel|0|
+freundlich|привітний, дружній|приветливый, дружелюбный|feel|1|
+nett|милий, приємний|милый, приятный|feel|1|
+lustig|смішний, веселий|смешной, весёлый|feel|0|
+ernst|серйозний|серьёзный|feel|0|
+reich|багатий|богатый|basic|0|arm
+arm|бідний|бедный|basic|0|reich
+voll|повний|полный|basic|1|leer
+leer|порожній|пустой|basic|1|voll
+offen|відкритий|открытый|basic|1|geschlossen
+geschlossen|закритий|закрытый|basic|1|offen
+frei|вільний|свободный|basic|1|besetzt
+besetzt|зайнятий (місце)|занятый (место)|basic|0|frei
+sauber|чистий|чистый|basic|1|schmutzig
+schmutzig|брудний|грязный|basic|0|sauber
+nass|мокрий|мокрый|basic|0|trocken
+trocken|сухий|сухой|basic|0|nass
+dick|товстий|толстый|basic|0|dünn
+dünn|тонкий, худий|тонкий, худой|basic|0|dick
+stark|сильний|сильный|basic|0|schwach
+schwach|слабкий|слабый|basic|0|stark
+breit|широкий|широкий|basic|0|eng
+eng|вузький, тісний|узкий, тесный|basic|0|breit
+hoch|високий (про предмет)|высокий (о предмете)|basic|0|niedrig
+niedrig|низький|низкий|basic|0|hoch
+weit|далекий; широкий|далёкий; широкий|basic|0|nah
+nah|близький|близкий|basic|0|weit
+früh|ранній|ранний|basic|1|spät
+spät|пізній|поздний|basic|1|früh
+fertig|готовий (закінчений)|готовый (законченный)|basic|1|
+bereit|готовий (до чогось)|готовый (к чему-то)|basic|0|
+verheiratet|одружений, заміжня|женатый, замужняя|feel|0|ledig
+ledig|неодружений, незаміжня|холостой, незамужняя|feel|0|verheiratet
+berühmt|відомий (знаменитий)|знаменитый|basic|0|
+möglich|можливий|возможный|basic|0|unmöglich
+unmöglich|неможливий|невозможный|basic|0|möglich
+gleich|однаковий; рівний|одинаковый; равный|basic|0|
+ganz|цілий, весь|целый, весь|basic|0|halb
+halb|половинний|половинный|basic|0|ganz
+lecker|смачний|вкусный|food|1|
+süß|солодкий|сладкий|food|1|sauer
+sauer|кислий|кислый|food|1|süß
+salzig|солоний|солёный|food|1|
+bitter|гіркий|горький|food|0|
+scharf|гострий (на смак); різкий|острый (на вкус); резкий|food|1|
+frisch|свіжий|свежий|food|1|
+rund|круглий|круглый|basic|0|eckig
+eckig|кутастий, квадратний|угловатый, квадратный|basic|0|rund
+sicher|безпечний; упевнений|безопасный; уверенный|basic|0|

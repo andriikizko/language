@@ -3,6 +3,7 @@ import Splash from './Splash.jsx'
 import Ic from './Icons.jsx'
 import { post } from './api.js'
 import Nouns from './Nouns.jsx'
+import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
 
 const SKEY = 'languages.session'
 const ERR = {
@@ -86,13 +87,22 @@ export default function App() {
         {tab === 'home' && !screen && (
           <>
             <div className="de-hello">Привіт, {sess.name}!</div>
+            <div className="de-h2" style={{ marginTop: 0 }}>Словник · {wantCount} до вивчення</div>
             <div className="de-grid">
-              <button className="de-tile" onClick={() => setScreen('nouns')}><span className="de-tile-ic">📘</span><b>Словник</b><small>Іменники · {wantCount} до вивчення</small></button>
-              <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🎓</span><b>Курс</b><small>Скоро</small></button>
+              <button className="de-tile" onClick={() => setScreen('nouns')}><span className="de-tile-ic">📘</span><b>Іменники</b><small>з артиклями</small></button>
+              <button className="de-tile" onClick={() => setScreen('verbs')}><span className="de-tile-ic">⚡</span><b>Дієслова</b><small>6 форм</small></button>
+              <button className="de-tile" onClick={() => setScreen('adj')}><span className="de-tile-ic">🎨</span><b>Прикметники</b><small>і кольори</small></button>
+              <button className="de-tile" onClick={() => setScreen('pron')}><span className="de-tile-ic">👤</span><b>Займенники</b><small>і питання</small></button>
+              <button className="de-tile" onClick={() => setScreen('nums')}><span className="de-tile-ic">🔢</span><b>Числівники</b><small>0–100, порядкові</small></button>
+              <button className="de-tile" onClick={() => setScreen('preps')}><span className="de-tile-ic">🧭</span><b>Прийменники</b><small>з відмінками</small></button>
             </div>
           </>
         )}
-        {tab === 'home' && screen === 'nouns' && <Nouns lang={lang} want={st.want || {}} setWant={(w) => update({ want: w })} onBack={() => setScreen(null)} />}
+        {tab === 'home' && screen && (() => {
+          const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null) }
+          const M = { nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
+          return <M {...p} />
+        })()}
         {tab === 'learn' && <Soon title="Поточне навчання" text="Тут буде курс по блоках. Зʼявиться на наступному етапі." />}
         {tab === 'errors' && <Soon title="Робота над помилками" text="Помилки з вправ збиратимуться тут." />}
         {tab === 'profile' && (

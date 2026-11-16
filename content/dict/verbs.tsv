@@ -1,0 +1,121 @@
+sein|m|бути|быть|bin,bist,ist,sind,seid,sind|1
+haben|m|мати|иметь|habe,hast,hat,haben,habt,haben|1
+werden|m|ставати|становиться|werde,wirst,wird,werden,werdet,werden|1
+können|m|могти, вміти|мочь, уметь|kann,kannst,kann,können,könnt,können|1
+müssen|m|мусити|должен, обязан|muss,musst,muss,müssen,müsst,müssen|1
+wollen|m|хотіти|хотеть|will,willst,will,wollen,wollt,wollen|1
+sollen|m|мати (повинен за порадою/наказом)|быть должным (по поручению/совету)|soll,sollst,soll,sollen,sollt,sollen|1
+dürfen|m|мати дозвіл|мочь, иметь разрешение|darf,darfst,darf,dürfen,dürft,dürfen|1
+mögen|m|любити, подобатися|любить, нравиться|mag,magst,mag,mögen,mögt,mögen|1
+möchten|m|хотіти б (ввічливо)|хотел бы (вежливо)|möchte,möchtest,möchte,möchten,möchtet,möchten|1
+wissen|i|знати (факт)|знать (факт)|weiß,weißt,weiß,wissen,wisst,wissen|1
+kommen|r|приходити, приїжджати|приходить, приезжать||1
+gehen|r|йти, ходити|идти, ходить||1
+machen|r|робити|делать||1
+sagen|r|казати|говорить, сказать||1
+fragen|r|питати|спрашивать||1
+antworten|r|відповідати|отвечать||1
+heißen|r|називатися|называться||1
+wohnen|r|жити (мешкати)|жить (проживать)||1
+leben|r|жити (існувати)|жить (существовать)||1
+arbeiten|r|працювати|работать||1
+lernen|r|вчити, вчитися|учить, учиться||1
+spielen|r|грати|играть||1
+kaufen|r|купувати|покупать||1
+brauchen|r|потребувати|нуждаться, нужно||1
+suchen|r|шукати|искать||1
+finden|r|знаходити; вважати|находить; считать||1
+kochen|r|готувати (їжу), варити|готовить (еду), варить||1
+trinken|r|пити|пить||1
+essen|i|їсти|есть|isst,isst|1
+schlafen|i|спати|спать|schläfst,schläft|1
+sehen|i|бачити|видеть|siehst,sieht|1
+lesen|i|читати|читать|liest,liest|1
+sprechen|i|розмовляти|говорить, разговаривать|sprichst,spricht|1
+geben|i|давати|давать|gibst,gibt|1
+nehmen|i|брати|брать|nimmst,nimmt|1
+fahren|i|їхати|ехать|fährst,fährt|1
+laufen|i|бігти, ходити пішки|бежать, ходить пешком|läufst,läuft|0
+helfen|i|допомагати|помогать|hilfst,hilft|1
+treffen|i|зустрічати|встречать|triffst,trifft|0
+schreiben|r|писати|писать||1
+hören|r|слухати, чути|слушать, слышать||1
+verstehen|r|розуміти|понимать||1
+lieben|r|кохати, любити|любить||1
+bleiben|r|залишатися|оставаться||1
+stehen|r|стояти|стоять||1
+sitzen|r|сидіти|сидеть||1
+liegen|r|лежати|лежать||1
+tragen|i|носити, нести|носить, нести|trägst,trägt|1
+waschen|i|мити, прати|мыть, стирать|wäschst,wäscht|0
+halten|i|тримати; зупинятися|держать; останавливаться|hältst,hält|0
+lassen|i|залишати; дозволяти|оставлять; позволять|lässt,lässt|0
+vergessen|i|забувати|забывать|vergisst,vergisst|0
+empfehlen|i|рекомендувати|рекомендовать|empfiehlst,empfiehlt|0
+gefallen|i|подобатися|нравиться|gefällst,gefällt|0
+bringen|r|приносити|приносить||1
+holen|r|приносити, забирати|принести, забрать||0
+zeigen|r|показувати|показывать||0
+öffnen|r|відкривати|открывать||0
+schließen|r|закривати|закрывать||0
+bezahlen|r|платити|платить||1
+bestellen|r|замовляти|заказывать||1
+kosten|r|коштувати|стоить||1
+besuchen|r|відвідувати|посещать||0
+reisen|r|подорожувати|путешествовать||0
+fliegen|r|літати|летать||0
+tanzen|r|танцювати|танцевать||0
+singen|r|співати|петь||0
+schwimmen|r|плавати|плавать||0
+lachen|r|сміятися|смеяться||0
+weinen|r|плакати|плакать||0
+denken|r|думати|думать||0
+glauben|r|вірити; вважати|верить; считать||0
+meinen|r|мати на увазі; вважати|иметь в виду; считать||0
+wünschen|r|бажати|желать||0
+hoffen|r|сподіватися|надеяться||0
+warten|r|чекати|ждать||1
+zählen|r|рахувати|считать||1
+rechnen|r|обчислювати|вычислять||0
+heiraten|r|одружуватися|жениться, выходить замуж||0
+kennen|r|знати (когось)|знать (кого-то)||1
+duschen|r|приймати душ|принимать душ||0
+baden|r|купатися|купаться||0
+putzen|r|прибирати, чистити|убирать, чистить||0
+telefonieren|r|телефонувати|звонить, говорить по телефону||0
+studieren|r|навчатися (в універ.)|учиться (в вузе)||0
+verkaufen|r|продавати|продавать||0
+gewinnen|r|вигравати|выигрывать||0
+beginnen|r|починати|начинать||0
+benutzen|r|користуватися|пользоваться||0
+wandern|r|ходити в похід|ходить в поход||0
+sammeln|r|збирати|собирать||0
+aufstehen|s|вставати|вставать|auf|1
+anfangen|s|починати|начинать|an;fängst,fängt|1
+ankommen|s|прибувати|прибывать|an|1
+abfahren|s|відправлятися|отправляться|ab;fährst,fährt|1
+einsteigen|s|сідати (в транспорт)|садиться (в транспорт)|ein|1
+aussteigen|s|виходити (з транспорту)|выходить (из транспорта)|aus|1
+umsteigen|s|пересідати|пересаживаться|um|1
+einkaufen|s|робити покупки|делать покупки|ein|1
+anrufen|s|телефонувати (комусь)|звонить (кому-то)|an|1
+aufmachen|s|відкривати|открывать|auf|1
+zumachen|s|закривати|закрывать|zu|1
+mitkommen|s|йти разом|идти вместе|mit|1
+mitbringen|s|приносити з собою|приносить с собой|mit|1
+mitnehmen|s|брати з собою|брать с собой|mit;nimmst,nimmt|0
+zurückkommen|s|повертатися|возвращаться|zurück|0
+fernsehen|s|дивитися телевізор|смотреть телевизор|fern;siehst,sieht|1
+aufräumen|s|прибирати (наводити лад)|убирать (наводить порядок)|auf|0
+einladen|s|запрошувати|приглашать|ein;lädst,lädt|0
+abholen|s|забирати (зустрічати)|забирать (встречать)|ab|0
+ausgehen|s|виходити (гуляти)|выходить (гулять)|aus|0
+anziehen|s|одягати|надевать|an|0
+ausziehen|s|знімати (одяг); виїжджати|снимать (одежду); съезжать|aus|0
+aussehen|s|мати вигляд|выглядеть|aus;siehst,sieht|0
+anmachen|s|вмикати|включать|an|0
+ausmachen|s|вимикати|выключать|aus|0
+aufhören|s|припиняти|прекращать|auf|0
+zuhören|s|слухати (уважно)|слушать (внимательно)|zu|0
+abwaschen|s|мити посуд|мыть посуду|ab;wäschst,wäscht|0
+weggehen|s|йти геть|уходить|weg|0

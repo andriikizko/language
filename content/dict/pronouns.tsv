@@ -1,0 +1,40 @@
+personal|ich|я|я|ich · mich · mir
+personal|du|ти|ты|du · dich · dir
+personal|er|він|он|er · ihn · ihm
+personal|sie|вона|она|sie · sie · ihr
+personal|es|воно|оно|es · es · ihm
+personal|wir|ми|мы|wir · uns · uns
+personal|ihr|ви (до друзів)|вы (к друзьям)|ihr · euch · euch
+personal|sie (Pl.)|вони|они|sie · sie · ihnen
+personal|Sie|Ви (ввічливо)|Вы (вежливо)|Sie · Sie · Ihnen
+poss|mein|мій|мой|mein Vater, meine Mutter, mein Kind
+poss|dein|твій|твой|dein Vater, deine Mutter, dein Kind
+poss|sein|його|его|sein Vater, seine Mutter, sein Kind
+poss|ihr|її; їхній|её; их|ihr Vater, ihre Mutter, ihr Kind
+poss|unser|наш|наш|unser Vater, unsere Mutter, unser Kind
+poss|euer|ваш (до друзів)|ваш (к друзьям)|euer Vater, eure Mutter, euer Kind
+poss|Ihr|Ваш (ввічливо)|Ваш (вежливо)|Ihr Vater, Ihre Mutter, Ihr Kind
+quest|wer|хто|кто|Wer ist das?
+quest|was|що|что|Was machst du?
+quest|wo|де|где|Wo wohnst du?
+quest|wohin|куди|куда|Wohin gehst du?
+quest|woher|звідки|откуда|Woher kommst du?
+quest|wann|коли|когда|Wann kommst du?
+quest|warum|чому|почему|Warum lernst du Deutsch?
+quest|wie|як|как|Wie heißt du?
+quest|wie viel|скільки (не лічиться)|сколько (неисчисляемое)|Wie viel kostet das?
+quest|wie viele|скільки (лічиться)|сколько (исчисляемое)|Wie viele Kinder hast du?
+quest|welcher|який (з-поміж)|какой (из)|Welcher Bus fährt zum Bahnhof?
+quest|wie lange|як довго|как долго|Wie lange wartest du schon?
+quest|wie oft|як часто|как часто|Wie oft gehst du schwimmen?
+quest|wem|кому|кому|Wem gehört das Buch?
+quest|wen|кого|кого|Wen suchst du?
+other|man|(безособове) люди, ми|(безличное) люди, мы|Hier spricht man Deutsch.
+other|jemand|хтось|кто-то|Ist jemand zu Hause?
+other|niemand|ніхто|никто|Niemand ist da.
+other|etwas|щось|что-то|Ich brauche etwas Zeit.
+other|nichts|нічого|ничего|Ich habe nichts gesehen.
+other|alles|все|всё|Das ist alles.
+other|alle|усі|все|Alle sind hier.
+other|dieser|цей|этот|Dieser Tisch ist neu.
+other|jeder|кожний|каждый|Jeder Tag ist anders.
