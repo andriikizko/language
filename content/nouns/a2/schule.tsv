@@ -113,3 +113,61 @@ m|Elternabend|Elternabende|батьківські збори|родительс�
 f|Mitschülerin|Mitschülerinnen|однокласниця|одноклассница|0
 m|Mitschüler|Mitschüler|однокласник|одноклассник|0
 m|Kommilitone|Kommilitonen|одногрупник|однокурсник|0
+m|Schulweg|Schulwege|дорога до школи|дорога в школу|0
+m|Schulbus|Schulbusse|шкільний автобус|школьный автобус|0
+f|Schultasche|Schultaschen|шкільна сумка|школьная сумка|0
+m|Schulranzen|Schulranzen|ранець|ранец|0
+f|Federtasche|Federtaschen|пенал|пенал|0
+m|Füller|Füller|авторучка|авторучка|0
+m|Filzstift|Filzstifte|фломастер|фломастер|0
+m|Buntstift|Buntstifte|кольоровий олівець|цветной карандаш|0
+m|Textmarker|Textmarker|маркер|маркер|0
+m|Spitzer|Spitzer|стругачка|точилка|0
+m|Zirkel|Zirkel|циркуль|циркуль|0
+n|Geodreieck|Geodreiecke|косинець|угольник|0
+m|Ordner|Ordner|папка|папка|0
+n|Blatt|Blätter|аркуш|лист|0
+n|Papier|Papiere|папір|бумага|0
+m|Zettel|Zettel|папірець|бумажка|0
+f|Mappe|Mappen|тека|папка|0
+f|Schulbibliothek|Schulbibliotheken|шкільна бібліотека|школьная библиотека|0
+f|Aula|Aulen|актова зала|актовый зал|0
+f|Sporthalle|Sporthallen|спортивний зал|спортивный зал|0
+n|Lehrerzimmer|Lehrerzimmer|вчительська|учительская|0
+n|Sekretariat|Sekretariate|секретаріат|секретариат|0
+m|Pausenhof|Pausenhöfe|двір для перерв|двор для перемен|0
+f|Schulordnung|Schulordnungen|шкільні правила|школьные правила|0
+f|Anwesenheit|-|присутність|присутствие|0
+n|Fehlen|-|відсутність|отсутствие|0
+f|Entschuldigung|Entschuldigungen|пояснювальна записка|объяснительная записка|0
+f|Verspätung|Verspätungen|запізнення|опоздание|0
+f|Mitarbeit|-|участь на уроці|участие на уроке|0
+f|Leistung|Leistungen|успішність|успеваемость|0
+f|Zensur|Zensuren|оцінка|отметка|0
+f|Eins|Einsen|одиниця (найкраща оцінка)|единица (лучшая оценка)|0
+f|Sechs|Sechsen|шістка (найгірша оцінка)|шестёрка (худшая оценка)|0
+n|Halbjahr|Halbjahre|півріччя|полугодие|0
+f|Wiederholung|Wiederholungen|повторення|повторение|0
+f|Nachhilfe|-|репетиторство|репетиторство|0
+m|Nachhilfelehrer|Nachhilfelehrer|репетитор|репетитор|0
+f|Hausaufgabenbetreuung|Hausaufgabenbetreuungen|допомога з домашнім|помощь с домашними заданиями|0
+f|Ganztagsschule|Ganztagsschulen|школа повного дня|школа полного дня|0
+m|Hort|Horte|група продовженого дня|группа продлённого дня|0
+f|Einschulung|Einschulungen|перший шкільний день|первый школьный день|0
+f|Schultüte|Schultüten|шкільний кулик (подарунок)|школьный кулёк (подарок)|0
+f|Abschlussfeier|Abschlussfeiern|випускний|выпускной|0
+f|Mittlere Reife|-|середня освіта (атестат)|среднее образование (аттестат)|0
+f|Fachhochschule|Fachhochschulen|вищий фаховий заклад|высшая специальная школа|0
+m|Bachelor|Bachelor|бакалавр|бакалавр|0
+m|Master|Master|магістр|магистр|0
+f|Doktorarbeit|Doktorarbeiten|докторська робота|докторская работа|0
+f|Bewerbungsfrist|Bewerbungsfristen|строк подачі заяв|срок подачи заявок|0
+f|Zulassung|Zulassungen|допуск; зарахування|допуск; зачисление|0
+f|Immatrikulation|Immatrikulationen|зарахування до університету|зачисление в университет|0
+m|Studienplatz|Studienplätze|місце в університеті|место в университете|0
+m|Studiengang|Studiengänge|напрям навчання|направление обучения|0
+m|Studentenausweis|Studentenausweise|студентський квиток|студенческий билет|0
+f|Prüfungsangst|Prüfungsängste|страх перед іспитом|страх перед экзаменом|0
+f|Lerngruppe|Lerngruppen|група для навчання|учебная группа|0
+f|Lernmethode|Lernmethoden|метод навчання|метод обучения|0
+f|Merkhilfe|Merkhilfen|мнемонічна підказка|мнемоническая подсказка|0

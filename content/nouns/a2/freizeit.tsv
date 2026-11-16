@@ -109,3 +109,117 @@ f|Gartenarbeit|-|робота в саду|работа в саду|0
 n|Beet|Beete|грядка; клумба|грядка; клумба|0
 n|Handwerk|-|ремесло|ремесло|0
 f|Bastelei|Basteleien|рукоділля|поделки|0
+n|Wochenende|Wochenenden|вихідні|выходные|0
+m|Feierabend|Feierabende|кінець робочого дня|конец рабочего дня|0
+m|Sonntagsausflug|Sonntagsausflüge|недільна прогулянка|воскресная прогулка|0
+f|Freizeitgestaltung|-|організація дозвілля|организация досуга|0
+n|Angebot|Angebote|пропозиція|предложение|0
+f|Volkshochschule|Volkshochschulen|народний університет (курси)|народный университет (курсы)|0
+m|Tanzkurs|Tanzkurse|курс танців|курс танцев|0
+m|Kochkurs|Kochkurse|кулінарні курси|кулинарные курсы|0
+m|Malkurs|Malkurse|курс малювання|курс рисования|0
+m|Yogakurs|Yogakurse|курс йоги|курс йоги|0
+n|Yoga|-|йога|йога|0
+n|Pilates|-|пілатес|пилатес|0
+n|Joggen|-|біг підтюпцем|бег трусцой|0
+n|Radfahren|-|їзда на велосипеді|езда на велосипеде|0
+n|Schwimmen|-|плавання|плавание|0
+n|Wandern|-|піший туризм|пеший туризм|0
+n|Angeln|-|риболовля|рыбалка|0
+f|Angel|Angeln|вудка|удочка|0
+n|Skifahren|-|катання на лижах|катание на лыжах|0
+f|Skipiste|Skipisten|лижна траса|лыжная трасса|0
+f|Rodelbahn|Rodelbahnen|санна траса|санная трасса|0
+m|Schlitten|Schlitten|санки|санки|0
+m|Schneemann|Schneemänner|сніговик|снеговик|0
+f|Schneeballschlacht|Schneeballschlachten|гра в сніжки|игра в снежки|0
+m|Spielplatz|Spielplätze|дитячий майданчик|детская площадка|0
+f|Schaukel|Schaukeln|гойдалка|качели|0
+f|Rutsche|Rutschen|гірка|горка|0
+m|Zoobesuch|Zoobesuche|похід у зоопарк|поход в зоопарк|0
+m|Tierpark|Tierparks|тваринний парк|парк животных|0
+n|Aquarium|Aquarien|акваріум|аквариум|0
+n|Museum|Museen|музей|музей|0
+f|Galerie|Galerien|галерея|галерея|0
+f|Führung|Führungen|екскурсія|экскурсия|0
+n|Schwimmbecken|Schwimmbecken|басейн (чаша)|бассейн (чаша)|0
+f|Sauna|Saunen|сауна|сауна|0
+n|Freibad|Freibäder|відкритий басейн|открытый бассейн|0
+n|Hallenbad|Hallenbäder|закритий басейн|закрытый бассейн|0
+m|Bademeister|Bademeister|рятувальник у басейні|спасатель в бассейне|0
+m|Eintrittspreis|Eintrittspreise|вартість входу|стоимость входа|0
+f|Mitgliedskarte|Mitgliedskarten|членська картка|членская карточка|0
+f|Jahreskarte|Jahreskarten|річний квиток|годовой билет|0
+f|Tageskarte|Tageskarten|денний квиток|дневной билет|0
+f|Ermäßigung|Ermäßigungen|пільга; знижка|льгота; скидка|0
+m|Student|Studenten|студент|студент|0
+m|Rentner|Rentner|пенсіонер|пенсионер|0
+f|Verabredung|Verabredungen|зустріч; домовленість|встреча; договорённость|0
+f|Einladung|Einladungen|запрошення|приглашение|0
+m|Besuch|Besuche|візит|визит|0
+m|Grillabend|Grillabende|вечір з грилем|вечер с грилем|0
+m|Spieleabend|Spieleabende|вечір настільних ігор|вечер настольных игр|0
+m|Filmabend|Filmabende|вечір кіно|вечер кино|0
+m|Kneipenabend|Kneipenabende|вечір у пабі|вечер в пабе|0
+m|Stammtisch|Stammtische|постійна зустріч за столом|постоянная встреча за столом|0
+f|Clique|Cliquen|компанія друзів|компания друзей|0
+m|Bekannte|Bekannte|знайомий|знакомый|0
+f|Langeweile|-|нудьга|скука|0
+m|Spaziergänger|Spaziergänger|перехожий (на прогулянці)|гуляющий|0
+f|Parkbank|Parkbänke|лавка в парку|скамейка в парке|0
+f|Hängematte|Hängematten|гамак|гамак|0
+n|Fernglas|Ferngläser|бінокль|бинокль|0
+f|Kamera|Kameras|камера|камера|0
+n|Fotoalbum|Fotoalben|фотоальбом|фотоальбом|0
+n|Instrument|Instrumente|інструмент (музичний)|инструмент (музыкальный)|0
+f|Gitarre|Gitarren|гітара|гитара|0
+n|Klavier|Klaviere|піаніно|пианино|0
+f|Geige|Geigen|скрипка|скрипка|0
+m|Musikunterricht|-|урок музики|урок музыки|0
+f|Chorprobe|Chorproben|репетиція хору|репетиция хора|0
+f|Radtour|Radtouren|велопрогулянка|велопрогулка|0
+f|Bergtour|Bergtouren|гірський маршрут|горный маршрут|0
+f|Tagestour|Tagestouren|одноденний маршрут|однодневный маршрут|0
+f|Kanufahrt|Kanufahrten|сплав на каное|сплав на каноэ|0
+n|Kanu|Kanus|каное|каноэ|0
+n|Ruderboot|Ruderboote|весловий човен|гребная лодка|0
+n|Tretboot|Tretboote|водний велосипед|водный велосипед|0
+f|Bootsfahrt|Bootsfahrten|прогулянка на човні|прогулка на лодке|0
+m|Segelverein|Segelvereine|яхт-клуб|яхт-клуб|0
+m|Tennisplatz|Tennisplätze|тенісний корт|теннисный корт|0
+m|Fußballplatz|Fußballplätze|футбольне поле|футбольное поле|0
+m|Fußballverein|Fußballvereine|футбольний клуб|футбольный клуб|0
+n|Fußballspiel|Fußballspiele|футбольний матч|футбольный матч|0
+f|Bundesliga|-|Бундесліга|Бундеслига|0
+f|Weltmeisterschaft|Weltmeisterschaften|чемпіонат світу|чемпионат мира|0
+m|Meister|Meister|чемпіон; майстер|чемпион; мастер|0
+f|Medaille|Medaillen|медаль|медаль|0
+m|Rekord|Rekorde|рекорд|рекорд|0
+m|Trainer|Trainer|тренер|тренер|0
+f|Trainerin|Trainerinnen|тренерка|тренерша|0
+f|Mannschaftssportart|Mannschaftssportarten|командний вид спорту|командный вид спорта|0
+f|Ballsportart|Ballsportarten|вид спорту з м'ячем|вид спорта с мячом|0
+m|Sportverein|Sportvereine|спортивний клуб|спортивный клуб|0
+m|Sportunterricht|-|урок фізкультури|урок физкультуры|0
+f|Sporttasche|Sporttaschen|спортивна сумка|спортивная сумка|0
+m|Sportschuh|Sportschuhe|кросівки|кроссовки|0
+f|Sportkleidung|-|спортивний одяг|спортивная одежда|0
+f|Laufstrecke|Laufstrecken|бігова траса|беговая трасса|0
+f|Fitnessuhr|Fitnessuhren|фітнес-годинник|фитнес-часы|0
+m|Schrittzähler|Schrittzähler|крокомір|шагомер|0
+n|Lieblingslied|Lieblingslieder|улюблена пісня|любимая песня|0
+n|Lieblingsbuch|Lieblingsbücher|улюблена книга|любимая книга|0
+m|Lieblingsfilm|Lieblingsfilme|улюблений фільм|любимый фильм|0
+m|Lieblingssport|-|улюблений спорт|любимый спорт|0
+n|Hobbyzimmer|Hobbyzimmer|кімната для хобі|комната для хобби|0
+f|Modelleisenbahn|Modelleisenbahnen|модель залізниці|модель железной дороги|0
+f|Bastelarbeit|Bastelarbeiten|саморобка|самоделка|0
+f|Häkelarbeit|Häkelarbeiten|вʼязання гачком|вязание крючком|0
+f|Stickerei|Stickereien|вишивка|вышивка|0
+f|Töpferei|Töpfereien|гончарство|гончарство|0
+f|Holzarbeit|Holzarbeiten|робота з деревом|работа с деревом|0
+f|Fotografie|Fotografien|фотографія|фотография|0
+m|Fotokurs|Fotokurse|курс фотографії|курс фотографии|0
+n|Blumenbeet|Blumenbeete|клумба|клумба|0
+m|Schrebergarten|Schrebergärten|дачна ділянка|дачный участок|0
+m|Gartenzwerg|Gartenzwerge|садовий гном|садовый гном|0

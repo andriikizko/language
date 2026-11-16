@@ -100,3 +100,59 @@ n|Girokonto|Girokonten|поточний рахунок|текущий счёт|0
 f|Lastschrift|Lastschriften|прямий дебет|прямое дебетование|0
 f|Rechnung|Rechnungen|рахунок (до сплати)|счёт (к оплате)|0
 f|Mahnung|Mahnungen|нагадування про борг|напоминание о долге|0
+f|Gemeinde|Gemeinden|громада|община|0
+f|Stadtverwaltung|Stadtverwaltungen|міська адміністрація|городская администрация|0
+m|Bürgermeister|Bürgermeister|мер|мэр|0
+f|Verwaltung|Verwaltungen|адміністрація|администрация|0
+f|Zuständigkeit|Zuständigkeiten|компетенція|компетенция|0
+m|Zuständige|Zuständige|відповідальний|ответственный|0
+f|Ansprechperson|Ansprechpersonen|контактна особа|контактное лицо|0
+f|Sprechzeit|Sprechzeiten|години прийому|часы приёма|0
+n|Wartezimmer|Wartezimmer|зала очікування|зал ожидания|0
+f|Wartenummer|Wartenummern|номер у черзі|номер в очереди|0
+f|Terminvergabe|-|запис на прийом|запись на приём|0
+f|Terminvereinbarung|Terminvereinbarungen|домовленість про зустріч|договорённость о встрече|0
+f|Online-Terminbuchung|-|онлайн-запис|онлайн-запись|0
+n|Antragsformular|Antragsformulare|бланк заяви|бланк заявления|0
+f|Antragstellung|Antragstellungen|подання заяви|подача заявления|0
+f|Bearbeitung|Bearbeitungen|обробка|обработка|0
+f|Bearbeitungszeit|Bearbeitungszeiten|час обробки|время обработки|0
+f|Entscheidung|Entscheidungen|рішення|решение|0
+f|Ablehnung|Ablehnungen|відмова|отказ|0
+f|Zustimmung|Zustimmungen|згода|согласие|0
+f|Einwilligung|Einwilligungen|згода (письмова)|согласие (письменное)|0
+f|Datenschutzerklärung|Datenschutzerklärungen|політика конфіденційності|политика конфиденциальности|0
+f|Unterschriftenliste|Unterschriftenlisten|список підписів|список подписей|0
+f|Vollmacht|Vollmachten|довіреність|доверенность|0
+n|Passfoto|Passfotos|фото на документи|фото на документы|0
+n|Lichtbild|Lichtbilder|фотографія (офіційна)|фотография (официальная)|0
+m|Fingerabdruck|Fingerabdrücke|відбиток пальця|отпечаток пальца|0
+f|Staatsbürgerschaft|Staatsbürgerschaften|громадянство|гражданство|0
+f|Einbürgerung|Einbürgerungen|натуралізація|натурализация|0
+m|Integrationskurs|Integrationskurse|інтеграційний курс|интеграционный курс|0
+m|Einbürgerungstest|Einbürgerungstests|тест на громадянство|тест на гражданство|0
+m|Sprachnachweis|Sprachnachweise|мовний сертифікат|языковой сертификат|0
+n|Zertifikat|Zertifikate|сертифікат|сертификат|0
+f|Anerkennungsstelle|Anerkennungsstellen|орган визнання|орган признания|0
+m|Flüchtling|Flüchtlinge|біженець|беженец|0
+m|Schutzsuchende|Schutzsuchende|той, хто шукає захисту|ищущий защиты|0
+f|Unterkunft|Unterkünfte|житло|жильё|0
+f|Erstaufnahme|Erstaufnahmen|первинний прийом|первичный приём|0
+f|Fiktionsbescheinigung|Fiktionsbescheinigungen|довідка про продовження статусу|справка о продлении статуса|0
+f|Duldung|Duldungen|терпимість (статус)|терпимость (статус)|0
+m|Arbeitgeberbescheinigung|-|довідка від роботодавця|справка от работодателя|0
+f|Lohnabrechnung|Lohnabrechnungen|розрахунковий листок|расчётный листок|0
+f|Steuer-ID|Steuer-IDs|податковий ідентифікатор|налоговый идентификатор|0
+n|Elterngeld|-|допомога батькам|пособие родителям|0
+n|Wohngeldamt|Wohngeldämter|відділ житлової допомоги|отдел жилищного пособия|0
+n|Standesamt|Standesämter|РАЦС|ЗАГС|0
+n|Gesundheitsamt|Gesundheitsämter|відділ охорони здоровʼя|отдел здравоохранения|0
+n|Jugendamt|Jugendämter|служба у справах молоді|служба по делам молодёжи|0
+n|Sozialamt|Sozialämter|соціальна служба|социальная служба|0
+n|Ordnungsamt|Ordnungsämter|управління порядку|управление порядка|0
+f|Polizeiwache|Polizeiwachen|поліцейський відділок|полицейский участок|0
+f|Anzeige|Anzeigen|заява (до поліції)|заявление (в полицию)|0
+n|Protokoll|Protokolle|протокол|протокол|0
+f|Zeugenaussage|Zeugenaussagen|свідчення|свидетельские показания|0
+n|Bußgeld|Bußgelder|штраф|штраф|0
+n|Knöllchen|Knöllchen|штраф за паркування (розм.)|штраф за парковку (разг.)|0

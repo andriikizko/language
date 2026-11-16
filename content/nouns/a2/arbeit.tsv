@@ -102,3 +102,64 @@ m|Auftrag|Aufträge|замовлення; доручення|заказ; пор�
 m|Umsatz|Umsätze|оборот|оборот|0
 m|Gewinn|Gewinne|прибуток|прибыль|0
 m|Verlust|Verluste|збиток|убыток|0
+f|Berufserfahrung|Berufserfahrungen|досвід роботи|опыт работы|0
+f|Berufsausbildung|Berufsausbildungen|професійна освіта|профессиональное образование|0
+f|Berufsgruppe|Berufsgruppen|професійна група|профессиональная группа|0
+f|Berufswahl|-|вибір професії|выбор профессии|0
+m|Berufsalltag|-|робочі будні|рабочие будни|0
+m|Quereinsteiger|Quereinsteiger|той, хто змінив сферу|сменивший сферу|0
+f|Probearbeit|Probearbeiten|пробний день роботи|пробный рабочий день|0
+n|Probearbeitsverhältnis|-|випробувальні відносини|испытательные отношения|0
+f|Befristung|Befristungen|строковість (договору)|срочность (договора)|0
+m|Aufhebungsvertrag|Aufhebungsverträge|угода про розірвання|соглашение о расторжении|0
+n|Arbeitszeugnis|Arbeitszeugnisse|характеристика з роботи|рабочая характеристика|0
+f|Arbeitsstelle|Arbeitsstellen|робоче місце|рабочее место|0
+f|Arbeitssuche|-|пошук роботи|поиск работы|0
+m|Arbeitsweg|Arbeitswege|дорога на роботу|дорога на работу|0
+m|Arbeitsbeginn|-|початок роботи|начало работы|0
+n|Arbeitsende|-|кінець роботи|конец работы|0
+f|Arbeitsatmosphäre|-|атмосфера на роботі|атмосфера на работе|0
+f|Arbeitsbedingung|Arbeitsbedingungen|умова праці|условие труда|0
+f|Arbeitserlaubnis|Arbeitserlaubnisse|дозвіл на роботу|разрешение на работу|0
+f|Arbeitsagentur|Arbeitsagenturen|агентство з працевлаштування|агентство по трудоустройству|0
+f|Zeitarbeit|-|тимчасова робота|временная работа|0
+f|Leiharbeit|-|робота через агентство|работа через агентство|0
+m|Stundenlohn|Stundenlöhne|погодинна оплата|почасовая оплата|0
+m|Mindestlohn|Mindestlöhne|мінімальна зарплата|минимальная зарплата|0
+n|Weihnachtsgeld|-|різдвяна премія|рождественская премия|0
+f|Prämie|Prämien|премія|премия|0
+m|Bonus|Bonusse|бонус|бонус|0
+f|Zulage|Zulagen|надбавка|надбавка|0
+m|Zuschuss|Zuschüsse|субсидія|субсидия|0
+m|Dienstwagen|Dienstwagen|службове авто|служебный автомобиль|0
+n|Diensthandy|Diensthandys|службовий телефон|служебный телефон|0
+f|Fahrtkosten|-|витрати на проїзд|расходы на проезд|0
+f|Spesen|-|відрядні витрати|командировочные расходы|0
+m|Feiertagszuschlag|Feiertagszuschläge|доплата за свята|доплата за праздники|0
+f|Betriebsversammlung|Betriebsversammlungen|збори колективу|собрание коллектива|0
+m|Betriebsrat|Betriebsräte|робоча рада|рабочий совет|0
+f|Gewerkschaft|Gewerkschaften|профспілка|профсоюз|0
+m|Tarifvertrag|Tarifverträge|колективний договір|коллективный договор|0
+f|Personalabteilung|Personalabteilungen|відділ кадрів|отдел кадров|0
+m|Personalchef|Personalchefs|начальник відділу кадрів|начальник отдела кадров|0
+f|Buchhaltung|-|бухгалтерія|бухгалтерия|0
+m|Einkauf|Einkäufe|відділ закупівель|отдел закупок|0
+m|Vertrieb|-|відділ продажів|отдел продаж|0
+n|Marketing|-|маркетинг|маркетинг|0
+f|Produktion|Produktionen|виробництво|производство|0
+f|Werkstatt|Werkstätten|майстерня|мастерская|0
+f|Fabrik|Fabriken|фабрика|фабрика|0
+f|Halle|Hallen|цех; зал|цех; зал|0
+m|Lieferant|Lieferanten|постачальник|поставщик|0
+f|Kundenbetreuung|-|робота з клієнтами|работа с клиентами|0
+m|Kundendienst|Kundendienste|сервіс для клієнтів|сервис для клиентов|0
+f|Terminplanung|-|планування зустрічей|планирование встреч|0
+m|Kalender|Kalender|календар|календарь|0
+f|Tagesordnung|Tagesordnungen|порядок денний|повестка дня|0
+n|Protokoll|Protokolle|протокол|протокол|0
+f|Notiz|Notizen|нотатка|заметка|0
+f|Unterlage|Unterlagen|документи|документы|0
+f|Vollmacht|Vollmachten|довіреність|доверенность|0
+f|Dienstanweisung|Dienstanweisungen|службова інструкція|служебная инструкция|0
+f|Schulung|Schulungen|навчання (на роботі)|обучение (на работе)|0
+n|Betriebsfest|Betriebsfeste|корпоратив|корпоратив|0

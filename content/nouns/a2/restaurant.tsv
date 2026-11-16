@@ -174,3 +174,99 @@ f|Theke|Theken|барна стійка|барная стойка|0
 m|Stammgast|Stammgäste|постійний гість|постоянный гость|0
 f|Gruppe|Gruppen|група|группа|0
 f|Feier|Feiern|святкування|празднование|0
+n|Abendbrot|-|вечеря (хліб)|ужин (хлеб)|0
+f|Vesper|Vesper|полуденок (півд.)|полдник (южн.)|0
+f|Brotzeit|Brotzeiten|перекус (півд.)|перекус (южн.)|0
+n|Gedeck|Gedecke|прибір (на одну особу)|прибор (на одного)|0
+m|Tischnachbar|Tischnachbarn|сусід за столом|сосед по столу|0
+f|Tischdecke|Tischdecken|скатертина|скатерть|0
+n|Salzfass|Salzfässer|сільничка|солонка|0
+m|Pfefferstreuer|Pfefferstreuer|перечниця|перечница|0
+m|Korkenzieher|Korkenzieher|штопор|штопор|0
+m|Flaschenöffner|Flaschenöffner|відкривачка|открывалка|0
+m|Strohhalm|Strohhalme|соломинка|соломинка|0
+m|Eiswürfel|Eiswürfel|кубик льоду|кубик льда|0
+f|Zitrone|Zitronen|лимон|лимон|0
+f|Scheibe|Scheiben|скибка|ломтик|0
+n|Stück|Stücke|шматок|кусок|0
+f|Hälfte|Hälften|половина|половина|0
+f|Kleinigkeit|Kleinigkeiten|дрібниця; легка закуска|мелочь; лёгкая закуска|0
+f|Hausmannskost|-|домашня кухня|домашняя кухня|0
+f|Spezialität|Spezialitäten|фірмова страва|фирменное блюдо|0
+m|Küchenchef|-|шеф-кухар|шеф-повар|0
+n|Fleischgericht|Fleischgerichte|мʼясна страва|мясное блюдо|0
+n|Fischgericht|Fischgerichte|рибна страва|рыбное блюдо|0
+n|Nudelgericht|Nudelgerichte|страва з макаронами|блюдо из макарон|0
+n|Reisgericht|Reisgerichte|страва з рису|блюдо из риса|0
+n|Gemüsegericht|Gemüsegerichte|овочева страва|овощное блюдо|0
+m|Kinderteller|Kinderteller|дитяча порція|детская порция|0
+m|Mittagstisch|Mittagstische|бізнес-ланч|бизнес-ланч|0
+f|Tageskarte|Tageskarten|меню дня|меню дня|0
+f|Weinkarte|Weinkarten|винна карта|винная карта|0
+m|Rotwein|Rotweine|червоне вино|красное вино|0
+m|Weißwein|Weißweine|біле вино|белое вино|0
+m|Hauswein|Hausweine|домашнє вино (закладу)|домашнее вино (заведения)|0
+n|Fassbier|Fassbiere|розливне пиво|разливное пиво|0
+n|Weizenbier|Weizenbiere|пшеничне пиво|пшеничное пиво|0
+m|Radler|Radler|радлер (пиво з лимонадом)|радлер (пиво с лимонадом)|0
+f|Cola|Colas|кола|кола|0
+f|Schorle|Schorlen|шорле|шорле|0
+f|Heiße Schokolade|-|гарячий шоколад|горячий шоколад|0
+m|Milchkaffee|Milchkaffees|кава з молоком|кофе с молоком|0
+f|Kaffeekanne|Kaffeekannen|кавник|кофейник|0
+f|Teekanne|Teekannen|чайник (для заварювання)|заварочный чайник|0
+m|Zuckerstreuer|Zuckerstreuer|цукорниця|сахарница|0
+f|Bestellung|Bestellungen|замовлення|заказ|0
+f|Zahlungsart|Zahlungsarten|спосіб оплати|способ оплаты|0
+f|Getrenntzahlung|-|роздільна оплата|раздельная оплата|0
+f|Kellneraufgabe|-|обовʼязок офіціанта|обязанность официанта|0
+f|Mundart|Mundarten|діалект|диалект|0
+m|Wunsch|Wünsche|побажання|пожелание|0
+m|Lieblingsplatz|Lieblingsplätze|улюблене місце|любимое место|0
+f|Atmosphäre|Atmosphären|атмосфера|атмосфера|0
+f|Musik|-|музика|музыка|0
+f|Lautstärke|-|гучність|громкость|0
+n|Preis-Leistungs-Verhältnis|-|співвідношення ціна–якість|соотношение цена–качество|0
+f|Bratkartoffel|Bratkartoffeln|смажена картопля|жареная картошка|0
+m|Kartoffelsalat|Kartoffelsalate|картопляний салат|картофельный салат|0
+m|Kartoffelbrei|-|картопляне пюре|картофельное пюре|0
+n|Sauerkraut|-|квашена капуста|квашеная капуста|0
+m|Rotkohl|-|червона капуста|краснокочанная капуста|0
+m|Blumenkohl|-|цвітна капуста|цветная капуста|0
+f|Bohne|Bohnen|квасоля|фасоль|0
+f|Erbse|Erbsen|горох|горох|0
+f|Linse|Linsen|сочевиця|чечевица|0
+m|Mais|-|кукурудза|кукуруза|0
+f|Zwiebelsuppe|Zwiebelsuppen|цибулевий суп|луковый суп|0
+f|Hühnersuppe|Hühnersuppen|курячий суп|куриный суп|0
+f|Tomatensuppe|Tomatensuppen|томатний суп|томатный суп|0
+f|Linsensuppe|Linsensuppen|сочевичний суп|чечевичный суп|0
+m|Gurkensalat|Gurkensalate|огірковий салат|салат из огурцов|0
+m|Tomatensalat|Tomatensalate|салат з помідорів|салат из помидоров|0
+m|Nudelsalat|Nudelsalate|макаронний салат|салат из макарон|0
+m|Wurstsalat|Wurstsalate|ковбасний салат|колбасный салат|0
+f|Currywurst|Currywürste|карівурст|карривурст|0
+m|Döner|Döner|донер|донер|0
+f|Frikadelle|Frikadellen|фрикаделька|котлета (фрикаделька)|0
+m|Rinderbraten|Rinderbraten|яловича печеня|говяжье жаркое|0
+m|Schweinebraten|Schweinebraten|свиняча печеня|свиное жаркое|0
+f|Roulade|Rouladen|рулет (мʼясний)|рулет (мясной)|0
+f|Leberwurst|Leberwürste|ліверна ковбаса|ливерная колбаса|0
+f|Weißwurst|Weißwürste|біла ковбаска|белая колбаска|0
+f|Maultasche|Maultaschen|мульташе (пельмені)|мульташе (пельмени)|0
+m|Kartoffelpuffer|Kartoffelpuffer|деруни|драники|0
+m|Kaiserschmarrn|-|кайзершмарн|кайзершмарн|0
+m|Strudel|Strudel|штрудель|штрудель|0
+m|Apfelstrudel|Apfelstrudel|яблучний штрудель|яблочный штрудель|0
+f|Schwarzwälder Kirschtorte|-|шварцвальдський торт|шварцвальдский торт|0
+f|Sachertorte|Sachertorten|торт Захер|торт Захер|0
+m|Quark|-|сир (кисломолочний)|творог|0
+m|Joghurt|Joghurts|йогурт|йогурт|0
+m|Pudding|Puddinge|пудинг|пудинг|0
+f|Marmelade|Marmeladen|мармелад; джем|мармелад; джем|0
+n|Müsli|Müslis|мюслі|мюсли|0
+f|Haferflocken|-|вівсяні пластівці|овсяные хлопья|0
+f|Cornflakes|-|кукурудзяні пластівці|кукурузные хлопья|0
+f|Margarine|Margarinen|маргарин|маргарин|0
+n|Gebäck|Gebäcke|випічка|выпечка|0
+f|Brezel|Brezeln|брецель|брецель|0

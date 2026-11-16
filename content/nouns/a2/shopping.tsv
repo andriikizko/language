@@ -176,3 +176,52 @@ f|Rückerstattung|Rückerstattungen|повернення коштів|возвр
 m|Ersatz|-|заміна|замена|0
 m|Defekt|Defekte|дефект|дефект|0
 f|Bedienungsanleitung|Bedienungsanleitungen|інструкція з експлуатації|инструкция по эксплуатации|0
+m|Einkauf|Einkäufe|покупка|покупка|0
+m|Wocheneinkauf|Wocheneinkäufe|тижневі закупи|недельные закупки|0
+m|Großeinkauf|Großeinkäufe|великі закупи|большие закупки|0
+f|Einkaufsliste|Einkaufslisten|список покупок|список покупок|0
+f|Einkaufstasche|Einkaufstaschen|сумка для покупок|сумка для покупок|0
+f|Einkaufsstraße|Einkaufsstraßen|торгова вулиця|торговая улица|0
+f|Einkaufstour|Einkaufstouren|шопінг-тур|шопинг-тур|0
+n|Warenhaus|Warenhäuser|універмаг|универмаг|0
+m|Discounter|Discounter|дискаунтер|дискаунтер|0
+m|Bioladen|Bioläden|біомагазин|биомагазин|0
+m|Hofladen|Hofläden|фермерська крамниця|фермерская лавка|0
+f|Konditorei|Konditoreien|кондитерська|кондитерская|0
+f|Apotheke|Apotheken|аптека|аптека|0
+f|Parfümerie|Parfümerien|парфумерна крамниця|парфюмерный магазин|0
+m|Optiker|Optiker|оптик|оптик|0
+n|Schuhgeschäft|Schuhgeschäfte|взуттєвий магазин|обувной магазин|0
+n|Bekleidungsgeschäft|Bekleidungsgeschäfte|магазин одягу|магазин одежды|0
+n|Sportgeschäft|Sportgeschäfte|спортивний магазин|спортивный магазин|0
+m|Zeitungskiosk|Zeitungskioske|газетний кіоск|газетный киоск|0
+m|Tabakladen|Tabakläden|тютюновий магазин|табачный магазин|0
+m|Gemüsestand|Gemüsestände|овочевий лоток|овощной прилавок|0
+m|Marktstand|Marktstände|ринковий лоток|рыночный прилавок|0
+m|Händler|Händler|торговець|торговец|0
+m|Preisunterschied|Preisunterschiede|різниця в ціні|разница в цене|0
+f|Preisgrenze|Preisgrenzen|цінова межа|ценовая граница|0
+m|Höchstpreis|Höchstpreise|максимальна ціна|максимальная цена|0
+m|Festpreis|Festpreise|фіксована ціна|фиксированная цена|0
+m|Originalpreis|Originalpreise|початкова ціна|начальная цена|0
+m|Gesamtpreis|Gesamtpreise|загальна ціна|общая цена|0
+m|Einzelpreis|Einzelpreise|ціна за одиницю|цена за единицу|0
+f|Zahlungsfrist|Zahlungsfristen|строк оплати|срок оплаты|0
+f|Anzahlung|Anzahlungen|аванс; завдаток|аванс; задаток|0
+f|Rate|Raten|внесок (частина)|взнос (часть)|0
+m|Kredit|Kredite|кредит|кредит|0
+f|Finanzierung|Finanzierungen|фінансування|финансирование|0
+f|Bonuskarte|Bonuskarten|бонусна картка|бонусная карта|0
+f|Treuekarte|Treuekarten|картка лояльності|карта лояльности|0
+m|Kundenservice|-|сервіс для клієнтів|сервис для клиентов|0
+f|Hotline|Hotlines|гаряча лінія|горячая линия|0
+f|Kundenberatung|Kundenberatungen|консультація клієнтів|консультация клиентов|0
+f|Geschenkkarte|Geschenkkarten|подарункова картка|подарочная карта|0
+m|Warenkorb|Warenkörbe|кошик (онлайн)|корзина (онлайн)|0
+f|Wunschliste|Wunschlisten|список бажань|список желаний|0
+f|Artikelnummer|Artikelnummern|артикул|артикул|0
+f|Produktbeschreibung|Produktbeschreibungen|опис товару|описание товара|0
+f|Kundenbewertung|Kundenbewertungen|відгук клієнта|отзыв клиента|0
+f|Lieferbestätigung|Lieferbestätigungen|підтвердження доставки|подтверждение доставки|0
+f|Zustellzeit|Zustellzeiten|час доставки|время доставки|0
+f|Abholstation|Abholstationen|пункт видачі|пункт выдачи|0

@@ -101,3 +101,55 @@ f|Laterne|Laternen|ліхтар|фонарь|0
 m|Umzug|Umzüge|хода; переїзд|шествие; переезд|0
 f|Parade|Paraden|парад|парад|0
 f|Kostümparty|Kostümpartys|вечірка в костюмах|вечеринка в костюмах|0
+m|Geburtstagsgruß|Geburtstagsgrüße|привітання з днем народження|поздравление с днём рождения|0
+m|Geburtstagswunsch|Geburtstagswünsche|побажання на день народження|пожелание на день рождения|0
+f|Geburtstagsparty|Geburtstagspartys|вечірка на день народження|вечеринка на день рождения|0
+f|Geburtstagskerze|Geburtstagskerzen|свічка на торті|свеча на торте|0
+n|Alter|-|вік|возраст|0
+f|Überraschungsparty|Überraschungspartys|вечірка-сюрприз|вечеринка-сюрприз|0
+f|Einweihungsparty|Einweihungspartys|новосілля|новоселье|0
+f|Abschiedsparty|Abschiedspartys|прощальна вечірка|прощальная вечеринка|0
+f|Willkommensfeier|Willkommensfeiern|вечірка на привітання|приветственная вечеринка|0
+f|Silvesterparty|Silvesterpartys|новорічна вечірка|новогодняя вечеринка|0
+n|Silvesterfeuerwerk|-|новорічний феєрверк|новогодний фейерверк|0
+f|Rakete|Raketen|ракета (феєрверк)|ракета (фейерверк)|0
+m|Knallkörper|Knallkörper|петарда|петарда|0
+f|Wunderkerze|Wunderkerzen|бенгальський вогонь|бенгальский огонь|0
+m|Vorsatz|Vorsätze|новорічна обіцянка|новогоднее обещание|0
+m|Neujahrstag|Neujahrstage|Новий рік (день)|Новый год (день)|0
+m|Dreikönigstag|-|свято трьох королів|праздник трёх королей|0
+m|Rosenmontag|-|Рожевий понеділок|Розовый понедельник|0
+m|Aschermittwoch|-|Попелеста середа|Пепельная среда|0
+m|Karfreitag|Karfreitage|Страсна пʼятниця|Страстная пятница|0
+m|Ostersonntag|Ostersonntage|Великодня неділя|Пасхальное воскресенье|0
+m|Ostermontag|Ostermontage|Великодній понеділок|Пасхальный понедельник|0
+m|Maifeiertag|-|свято 1 травня|праздник 1 мая|0
+m|Himmelfahrtstag|-|Вознесіння|Вознесение|0
+m|Pfingstmontag|Pfingstmontage|Трійцин понеділок|Троицкий понедельник|0
+m|Reformationstag|-|День Реформації|День Реформации|0
+m|Martinstag|-|День святого Мартіна|День святого Мартина|0
+m|Laternenumzug|Laternenumzüge|хід з ліхтариками|шествие с фонариками|0
+m|Nikolaustag|-|день Миколая|день Николая|0
+m|Stiefel|Stiefel|чобіт (для подарунків)|сапог (для подарков)|0
+f|Bescherung|Bescherungen|вручення подарунків|вручение подарков|0
+m|Weihnachtsabend|Weihnachtsabende|різдвяний вечір|рождественский вечер|0
+m|Weihnachtsbraten|Weihnachtsbraten|різдвяна печеня|рождественское жаркое|0
+f|Weihnachtsgans|Weihnachtsgänse|різдвяна гуска|рождественский гусь|0
+m|Weihnachtsstern|Weihnachtssterne|різдвяна зірка|рождественская звезда|0
+m|Christbaumschmuck|-|ялинкові прикраси|ёлочные украшения|0
+f|Lichterkette|Lichterketten|гірлянда зі світлом|гирлянда со светом|0
+m|Glühwein|Glühweine|глінтвейн|глинтвейн|0
+f|Bratwurstbude|Bratwurstbuden|ятка з ковбасками|ларёк с колбасками|0
+n|Lebkuchenherz|Lebkuchenherzen|пряникове серце|пряничное сердце|0
+n|Backen|-|випікання|выпечка|0
+f|Backform|Backformen|форма для випічки|форма для выпечки|0
+m|Teig|Teige|тісто|тесто|0
+n|Muttertagsgeschenk|Muttertagsgeschenke|подарунок до Дня матері|подарок ко Дню матери|0
+f|Hochzeitseinladung|Hochzeitseinladungen|весільне запрошення|свадебное приглашение|0
+f|Hochzeitsreise|Hochzeitsreisen|весільна подорож|свадебное путешествие|0
+f|Hochzeitstorte|Hochzeitstorten|весільний торт|свадебный торт|0
+f|Hochzeitsgesellschaft|Hochzeitsgesellschaften|весільні гості|свадебные гости|0
+n|Hochzeitskleid|Hochzeitskleider|весільна сукня|свадебное платье|0
+n|Standesamt|Standesämter|РАЦС|ЗАГС|0
+f|Kirche|Kirchen|церква|церковь|0
+f|Glückwunschrede|Glückwunschreden|вітальна промова|поздравительная речь|0

@@ -113,3 +113,70 @@ f|Sonnenenergie|-|сонячна енергія|солнечная энерги�
 f|Windkraft|-|енергія вітру|энергия ветра|0
 m|Umweltschutz|-|охорона довкілля|охрана окружающей среды|0
 f|Zukunft|-|майбутнє|будущее|0
+f|Jahreszeit|Jahreszeiten|пора року|время года|0
+m|Frühling|Frühlinge|весна|весна|0
+m|Sommer|Sommer|літо|лето|0
+m|Herbst|Herbste|осінь|осень|0
+m|Winter|Winter|зима|зима|0
+m|Regen|-|дощ|дождь|0
+m|Schnee|-|сніг|снег|0
+m|Wind|Winde|вітер|ветер|0
+f|Wolke|Wolken|хмара|облако|0
+f|Sonne|Sonnen|сонце|солнце|0
+m|Mond|Monde|місяць|луна|0
+m|Stern|Sterne|зірка|звезда|0
+m|Himmel|-|небо|небо|0
+m|Regenbogen|Regenbogen|веселка|радуга|0
+m|Tau|-|роса|роса|0
+m|Reif|-|паморозь|иней|0
+n|Eis|-|лід|лёд|0
+f|Pfütze|Pfützen|калюжа|лужа|0
+m|Regenschirm|Regenschirme|парасоля|зонт|0
+m|Regenmantel|Regenmäntel|плащ від дощу|дождевик|0
+m|Nebelscheinwerfer|Nebelscheinwerfer|протитуманна фара|противотуманная фара|0
+f|Glätte|-|ожеледиця|гололёд|0
+n|Streusalz|-|сіль для посипання|соль для посыпки|0
+m|Schneepflug|Schneepflüge|снігоприбирач|снегоуборщик|0
+f|Lawine|Lawinen|лавина|лавина|0
+f|Sturmwarnung|Sturmwarnungen|штормове попередження|штормовое предупреждение|0
+f|Wetterlage|Wetterlagen|погодні умови|погодные условия|0
+f|Luftfeuchtigkeit|-|вологість повітря|влажность воздуха|0
+m|Luftdruck|-|атмосферний тиск|атмосферное давление|0
+n|Hoch|Hochs|антициклон|антициклон|0
+n|Tief|Tiefs|циклон|циклон|0
+m|Wald|Wälder|ліс|лес|0
+m|Waldweg|Waldwege|лісова стежка|лесная тропа|0
+f|Lichtung|Lichtungen|галявина|поляна|0
+m|Baum|Bäume|дерево|дерево|0
+m|Stamm|Stämme|стовбур|ствол|0
+f|Rinde|Rinden|кора|кора|0
+m|Zapfen|Zapfen|шишка|шишка|0
+f|Eichel|Eicheln|жолудь|жёлудь|0
+f|Kastanie|Kastanien|каштан|каштан|0
+f|Blüte|Blüten|квітка (цвіт)|цветок (цвет)|0
+f|Knospe|Knospen|бруньки|почка|0
+m|Samen|Samen|насіння|семя|0
+f|Ernte|Ernten|врожай|урожай|0
+m|Bauernhof|Bauernhöfe|ферма|ферма|0
+f|Kuh|Kühe|корова|корова|0
+n|Schwein|Schweine|свиня|свинья|0
+n|Schaf|Schafe|вівця|овца|0
+f|Ziege|Ziegen|коза|коза|0
+n|Pferd|Pferde|кінь|лошадь|0
+n|Huhn|Hühner|курка|курица|0
+f|Ente|Enten|качка|утка|0
+f|Gans|Gänse|гуска|гусь|0
+m|Esel|Esel|осел|осёл|0
+m|Stall|Ställe|стайня; хлів|конюшня; хлев|0
+f|Weide|Weiden|пасовище|пастбище|0
+m|Imker|Imker|бджоляр|пчеловод|0
+m|Honig|-|мед|мёд|0
+f|Taube|Tauben|голуб|голубь|0
+f|Möwe|Möwen|чайка|чайка|0
+m|Schwan|Schwäne|лебідь|лебедь|0
+f|Eule|Eulen|сова|сова|0
+m|Adler|Adler|орел|орёл|0
+m|Käfer|Käfer|жук|жук|0
+f|Ameise|Ameisen|мураха|муравей|0
+f|Fliege|Fliegen|муха|муха|0
+f|Wespe|Wespen|оса|оса|0

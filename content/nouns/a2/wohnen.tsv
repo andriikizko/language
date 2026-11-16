@@ -162,3 +162,59 @@ n|Übergabeprotokoll|Übergabeprotokolle|акт передачі|акт пере
 m|Mangel|Mängel|недолік|недостаток|0
 m|Schimmel|-|пліснява|плесень|0
 f|Feuchtigkeit|-|вологість|сырость|0
+n|Wohnheim|Wohnheime|гуртожиток|общежитие|0
+n|Studentenwohnheim|Studentenwohnheime|студентський гуртожиток|студенческое общежитие|0
+n|Altenheim|Altenheime|будинок для літніх|дом престарелых|0
+n|Eigenheim|Eigenheime|власний будинок|собственный дом|0
+n|Grundstück|Grundstücke|земельна ділянка|земельный участок|0
+m|Vorgarten|Vorgärten|палісадник|палисадник|0
+m|Hinterhof|Hinterhöfe|внутрішній двір|задний двор|0
+m|Carport|Carports|навіс для авто|навес для авто|0
+m|Stellplatz|Stellplätze|парко-місце|парковочное место|0
+f|Einfahrt|Einfahrten|в'їзд (до будинку)|въезд (к дому)|0
+f|Hecke|Hecken|живопліт|живая изгородь|0
+m|Rasen|Rasen|газон|газон|0
+m|Rasenmäher|Rasenmäher|газонокосарка|газонокосилка|0
+m|Gartenschlauch|Gartenschläuche|садовий шланг|садовый шланг|0
+m|Gartenstuhl|Gartenstühle|садовий стілець|садовый стул|0
+m|Grill|Grills|гриль|гриль|0
+m|Briefträger|Briefträger|листоноша|почтальон|0
+m|Schornsteinfeger|Schornsteinfeger|трубочист|трубочист|0
+m|Handwerker|Handwerker|майстер|мастер|0
+m|Installateur|Installateure|монтажник|монтажник|0
+m|Elektriker|Elektriker|електрик|электрик|0
+f|Handwerkerrechnung|Handwerkerrechnungen|рахунок майстра|счёт мастера|0
+n|Kostenvoranschlag|Kostenvoranschläge|кошторис|смета|0
+f|Hausverwaltung|Hausverwaltungen|управляюча компанія|управляющая компания|0
+m|Verwalter|Verwalter|управитель|управляющий|0
+f|Eigentümerversammlung|Eigentümerversammlungen|збори власників|собрание собственников|0
+n|Wohngeld|-|житлова допомога|жилищное пособие|0
+f|Wohnberechtigungsschein|Wohnberechtigungsscheine|ордер на соціальне житло|ордер на социальное жильё|0
+f|Sozialwohnung|Sozialwohnungen|соціальне житло|социальное жильё|0
+f|Maklergebühr|Maklergebühren|комісія рієлтора|комиссия риелтора|0
+f|Courtage|Courtagen|комісія (посередника)|комиссия (посредника)|0
+f|Schufa|-|кредитна історія (Schufa)|кредитная история (Schufa)|0
+f|Mietschuldenfreiheit|-|довідка про відсутність боргів|справка об отсутствии долгов|0
+f|Selbstauskunft|Selbstauskünfte|анкета орендаря|анкета арендатора|0
+n|Gehaltsnachweis|Gehaltsnachweise|довідка про доходи|справка о доходах|0
+f|Bürgschaft|Bürgschaften|поручительство|поручительство|0
+m|Zählerstand|Zählerstände|показання лічильника|показания счётчика|0
+m|Stromzähler|Stromzähler|лічильник електрики|счётчик электричества|0
+m|Wasserzähler|Wasserzähler|лічильник води|счётчик воды|0
+m|Stromanbieter|Stromanbieter|постачальник електрики|поставщик электричества|0
+m|Stromverbrauch|-|споживання електрики|потребление электричества|0
+f|Stromrechnung|Stromrechnungen|рахунок за електрику|счёт за электричество|0
+f|Internetverbindung|Internetverbindungen|інтернет-зʼєднання|интернет-соединение|0
+m|Internetanschluss|Internetanschlüsse|підключення до інтернету|подключение к интернету|0
+m|Rundfunkbeitrag|-|збір на мовлення|сбор на вещание|0
+f|Hausratversicherung|Hausratversicherungen|страхування майна|страхование имущества|0
+f|Haftpflichtversicherung|Haftpflichtversicherungen|страхування відповідальності|страхование ответственности|0
+n|Vorkaufsrecht|-|право першої купівлі|право первой покупки|0
+f|Eigenbedarfskündigung|-|розірвання через власну потребу|расторжение из-за собственной нужды|0
+m|Auszug|Auszüge|виїзд (з квартири)|выезд (из квартиры)|0
+m|Einzug|Einzüge|в'їзд (у квартиру)|въезд (в квартиру)|0
+f|Schlüsselübergabe|Schlüsselübergaben|передача ключів|передача ключей|0
+m|Nachmieter|Nachmieter|наступний орендар|следующий арендатор|0
+m|Vormieter|Vormieter|попередній орендар|предыдущий арендатор|0
+f|Möblierung|Möblierungen|меблювання|меблировка|0
+n|Zubehör|-|приладдя|принадлежности|0

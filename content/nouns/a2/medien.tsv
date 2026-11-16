@@ -164,3 +164,53 @@ f|Flatrate|Flatrates|безлімітний тариф|безлимитный т
 n|Roaming|-|роумінг|роуминг|0
 n|WLAN|WLANs|вай-фай|вай-фай|0
 n|Internetcafé|Internetcafés|інтернет-кафе|интернет-кафе|0
+f|Tageszeitung|Tageszeitungen|щоденна газета|ежедневная газета|0
+f|Wochenzeitung|Wochenzeitungen|тижнева газета|еженедельная газета|0
+f|Illustrierte|Illustrierten|ілюстрований журнал|иллюстрированный журнал|0
+n|Magazin|Magazine|журнал|журнал|0
+n|Comic|Comics|комікс|комикс|0
+m|Roman|Romane|роман|роман|0
+f|Kurzgeschichte|Kurzgeschichten|оповідання|рассказ|0
+m|Krimiroman|Krimiromane|детективний роман|детективный роман|0
+n|Hörbuch|Hörbücher|аудіокнига|аудиокнига|0
+n|E-Book|E-Books|електронна книга|электронная книга|0
+m|E-Reader|E-Reader|електронна читалка|электронная читалка|0
+f|Buchmesse|Buchmessen|книжковий ярмарок|книжная ярмарка|0
+f|Lesung|Lesungen|літературний вечір|литературный вечер|0
+f|Buchbesprechung|Buchbesprechungen|рецензія на книгу|рецензия на книгу|0
+f|Filmkritik|Filmkritiken|рецензія на фільм|рецензия на фильм|0
+m|Kritiker|Kritiker|критик|критик|0
+f|Kritik|Kritiken|критика; рецензія|критика; рецензия|0
+f|Zusammenfassung|Zusammenfassungen|стисле викладення|краткое изложение|0
+m|Inhalt|Inhalte|зміст|содержание|0
+m|Verlauf|Verläufe|перебіг|ход|0
+n|Ende|Enden|кінець|конец|0
+n|Fernsehprogramm|Fernsehprogramme|телепрограма|телепрограмма|0
+f|Zeitschriftenabo|Zeitschriftenabos|підписка на журнал|подписка на журнал|0
+m|Medienkonsum|-|споживання медіа|потребление медиа|0
+f|Bildschirmzeit|-|екранний час|экранное время|0
+f|Mediennutzung|-|використання медіа|использование медиа|0
+f|Nachrichtenseite|Nachrichtenseiten|новинний сайт|новостной сайт|0
+f|Webseite|Webseiten|веб-сайт|веб-сайт|0
+f|Homepage|Homepages|домашня сторінка|домашняя страница|0
+f|Startseite|Startseiten|головна сторінка|главная страница|0
+n|Menü|Menüs|меню (програми)|меню (программы)|0
+f|Schaltfläche|Schaltflächen|кнопка|кнопка|0
+m|Suchbegriff|Suchbegriffe|пошуковий запит|поисковый запрос|0
+n|Suchergebnis|Suchergebnisse|результат пошуку|результат поиска|0
+m|Treffer|Treffer|збіг; влучання|совпадение; попадание|0
+n|Lesezeichen|Lesezeichen|закладка|закладка|0
+m|Tab|Tabs|вкладка|вкладка|0
+m|Verlauf|Verläufe|історія (браузера)|история (браузера)|0
+n|Formular|Formulare|форма (онлайн)|форма (онлайн)|0
+n|Feld|Felder|поле|поле|0
+f|Eingabe|Eingaben|введення|ввод|0
+f|Bestätigungs-E-Mail|-|лист із підтвердженням|письмо с подтверждением|0
+f|Registrierung|Registrierungen|реєстрація (онлайн)|регистрация (онлайн)|0
+f|Anmeldung|Anmeldungen|вхід (в акаунт)|вход (в аккаунт)|0
+f|Abmeldung|Abmeldungen|вихід (з акаунта)|выход (из аккаунта)|0
+f|Datensicherheit|-|безпека даних|безопасность данных|0
+n|Cookie|Cookies|куки|куки|0
+f|Fehlermeldung|Fehlermeldungen|повідомлення про помилку|сообщение об ошибке|0
+f|Störung|Störungen|збій|сбой|0
+f|Internetstörung|Internetstörungen|збій інтернету|сбой интернета|0

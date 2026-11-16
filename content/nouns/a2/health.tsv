@@ -116,3 +116,59 @@ f|Einnahme|Einnahmen|прийом (ліків)|приём (лекарств)|0
 f|Kapsel|Kapseln|капсула|капсула|0
 m|Saft|Säfte|сироп; сік|сироп; сок|0
 f|Salbe|Salben|мазь|мазь|0
+f|Krankheit|Krankheiten|хвороба|болезнь|0
+n|Leiden|Leiden|страждання; недуга|страдание; недуг|0
+f|Allergie|Allergien|алергія|аллергия|0
+m|Heuschnupfen|-|сінна лихоманка|сенная лихорадка|0
+f|Gesundheitskarte|Gesundheitskarten|медична картка|медицинская карта|0
+m|Krankenschein|Krankenscheine|лікарняний лист|больничный лист|0
+f|Krankmeldung|Krankmeldungen|повідомлення про хворобу|уведомление о болезни|0
+n|Attest|Atteste|медична довідка|медицинская справка|0
+f|Praxisgebühr|Praxisgebühren|плата за візит|плата за приём|0
+f|Zuzahlung|Zuzahlungen|доплата|доплата|0
+f|Hausapotheke|Hausapotheken|домашня аптечка|домашняя аптечка|0
+n|Schmerzmittel|Schmerzmittel|знеболювальне|обезболивающее|0
+m|Hustensaft|Hustensäfte|сироп від кашлю|сироп от кашля|0
+n|Fieberthermometer|Fieberthermometer|градусник|градусник|0
+m|Hustenbonbon|Hustenbonbons|льодяник від кашлю|леденец от кашля|0
+n|Antibiotikum|Antibiotika|антибіотик|антибиотик|0
+f|Nasentropfen|-|краплі для носа|капли для носа|0
+f|Augentropfen|-|краплі для очей|глазные капли|0
+f|Wundsalbe|Wundsalben|мазь для ран|мазь для ран|0
+n|Heftpflaster|Heftpflaster|лейкопластир|лейкопластырь|0
+f|Mullbinde|Mullbinden|марлевий бинт|марлевый бинт|0
+f|Schiene|Schienen|шина|шина|0
+f|Erste Hilfe|-|перша допомога|первая помощь|0
+m|Verbandskasten|Verbandskästen|аптечка (автомобільна)|автомобильная аптечка|0
+m|Notruf|Notrufe|екстрений виклик|экстренный вызов|0
+m|Krankentransport|Krankentransporte|медичне перевезення|медицинская перевозка|0
+m|Unfallort|Unfallorte|місце аварії|место аварии|0
+m|Zeuge|Zeugen|свідок|свидетель|0
+p|Herzschmerzen|-|біль у серці|боль в сердце|0
+m|Herzinfarkt|Herzinfarkte|інфаркт|инфаркт|0
+m|Schlaganfall|Schlaganfälle|інсульт|инсульт|0
+n|Asthma|-|астма|астма|0
+m|Diabetes|-|діабет|диабет|0
+m|Bluthochdruck|-|гіпертонія|гипертония|0
+n|Übergewicht|-|надмірна вага|избыточный вес|0
+f|Abnahme|-|схуднення|похудение|0
+f|Zunahme|-|набір ваги|набор веса|0
+n|Körpergewicht|-|вага тіла|вес тела|0
+f|Körpergröße|Körpergrößen|зріст|рост|0
+n|Alter|-|вік|возраст|0
+f|Geburt|Geburten|народження; пологи|рождение; роды|0
+f|Schwangerschaft|Schwangerschaften|вагітність|беременность|0
+f|Hebamme|Hebammen|акушерка|акушерка|0
+m|Kinderwagen|Kinderwagen|дитячий візок|детская коляска|0
+n|Babyfläschchen|Babyfläschchen|пляшечка для немовляти|бутылочка для младенца|0
+f|Babynahrung|-|дитяче харчування|детское питание|0
+f|Muskulatur|-|мускулатура|мускулатура|0
+m|Muskelkater|-|біль у м'язах після тренування|мышечная боль после тренировки|0
+f|Dehnung|Dehnungen|розтяжка|растяжка|0
+f|Rückenschule|Rückenschulen|школа спини|школа спины|0
+f|Haltung|Haltungen|поза; постава|поза; осанка|0
+f|Sehkraft|-|зір|зрение|0
+n|Gehör|-|слух|слух|0
+m|Geruchssinn|-|нюх|обоняние|0
+m|Geschmackssinn|-|смак (чуття)|вкус (чувство)|0
+m|Tastsinn|-|дотик (чуття)|осязание|0

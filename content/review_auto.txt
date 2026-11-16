@@ -63,6 +63,21 @@ Meldebescheinigung — немає у словнику
 Versicherungsnummer — немає у словнику
 Bürgergeld — немає у словнику
 Abholung — немає у словнику
+Ansprechperson — немає у словнику
+Sprechzeit — немає у словнику
+Wartenummer — немає у словнику
+Terminvergabe — немає у словнику
+Terminvereinbarung — немає у словнику
+Online-Terminbuchung — немає у словнику
+Antragsformular — немає у словнику
+Datenschutzerklärung — немає у словнику
+Unterschriftenliste — немає у словнику
+Sprachnachweis — немає у словнику
+Anerkennungsstelle — немає у словнику
+Schutzsuchende — немає у словнику
+Arbeitgeberbescheinigung — немає у словнику
+Steuer-ID — немає у словнику
+Wohngeldamt — немає у словнику
 Stellenbeschreibung — немає у словнику
 Fortbildung — немає у словнику
 Umschulung — немає у словнику
@@ -70,6 +85,20 @@ Gleitzeit — немає у словнику
 Urlaubsanspruch — немає у словнику
 Brutto — немає у словнику
 Netto — немає у словнику
+Berufsalltag — немає у словнику
+Probearbeit — немає у словнику
+Probearbeitsverhältnis — немає у словнику
+Arbeitsweg — немає у словнику
+Arbeitsbeginn — немає у словнику
+Arbeitsende — немає у словнику
+Arbeitsatmosphäre — немає у словнику
+Fahrtkosten — немає у словнику
+Spesen — рід: у мене f, у словнику []
+Feiertagszuschlag — немає у словнику
+Betriebsversammlung — немає у словнику
+Kundenbetreuung — немає у словнику
+Terminplanung — немає у словнику
+Dienstanweisung — немає у словнику
 Silvester — рід: у мене n, у словнику []
 Einladungskarte — немає у словнику
 Tischreservierung — немає у словнику
@@ -77,23 +106,82 @@ Fotoausstellung — немає у словнику
 Nachbarschaftsfeier — немає у словнику
 Lampion — рід: у мене m, у словнику []
 Kostümparty — немає у словнику
+Geburtstagsgruß — немає у словнику
+Geburtstagswunsch — немає у словнику
+Geburtstagskerze — немає у словнику
+Überraschungsparty — немає у словнику
+Abschiedsparty — немає у словнику
+Weihnachtsbraten — немає у словнику
+Bratwurstbude — немає у словнику
+Hochzeitseinladung — немає у словнику
+Glückwunschrede — немає у словнику
 Trainingsplan — немає у словнику
+Pilates — немає у словнику
+Skipiste — немає у словнику
+Zoobesuch — немає у словнику
+Grillabend — немає у словнику
+Filmabend — немає у словнику
+Kneipenabend — немає у словнику
+Chorprobe — немає у словнику
+Sportkleidung — немає у словнику
+Laufstrecke — немає у словнику
+Fitnessuhr — немає у словнику
+Lieblingssport — немає у словнику
+Hobbyzimmer — немає у словнику
+Bastelarbeit — немає у словнику
+Häkelarbeit — немає у словнику
+Holzarbeit — немає у словнику
+Fotokurs — немає у словнику
 Krankengymnastik — немає у словнику
 Laboruntersuchung — немає у словнику
 Thermometer — рід: у мене n, у словнику []
+Gesundheitskarte — немає у словнику
+Praxisgebühr — немає у словнику
+Hausapotheke — немає у словнику
+Nasentropfen — немає у словнику
+Augentropfen — рід: у мене f, у словнику []
+Babyfläschchen — немає у словнику
+Rückenschule — немає у словнику
 Podcast — рід: у мене m, у словнику []
 Sportteil — немає у словнику
 Wirtschaftsteil — немає у словнику
 Videoanruf — немає у словнику
 Handyvertrag — немає у словнику
 Datenvolumen — немає у словнику
+Wochenzeitung — немає у словнику
+Comic — рід: у мене n, у словнику []
+Krimiroman — немає у словнику
+Filmkritik — немає у словнику
+Zeitschriftenabo — немає у словнику
+Medienkonsum — немає у словнику
+Bildschirmzeit — немає у словнику
+Mediennutzung — немає у словнику
+Nachrichtenseite — немає у словнику
+Suchergebnis — немає у словнику
+Bestätigungs-E-Mail — немає у словнику
+Datensicherheit — немає у словнику
+Cookie — рід: у мене n, у словнику []
+Internetstörung — немає у словнику
 Fels — рід: у мене m, у словнику []
 Hirsch — рід: у мене m, у словнику []
 Gulasch — рід: у мене n, у словнику []
 Mitnehmen — немає у словнику
 Pilzsuppe — немає у словнику
+Vesper — множина: у мене Vesper, у словнику ['Vespern']
+Heiße Schokolade — немає у словнику
+Zahlungsart — немає у словнику
+Getrenntzahlung — немає у словнику
+Kellneraufgabe — немає у словнику
+Rinderbraten — немає у словнику
+Schwarzwälder Kirschtorte — немає у словнику
+Cornflakes — рід: у мене f, у словнику []
 Radiergummi — рід: у мене m, у словнику []
 Gruppenarbeit — немає у словнику
+Hausaufgabenbetreuung — немає у словнику
+Bachelor — множина: у мене Bachelor, у словнику ['Bachelors']
+Lerngruppe — немає у словнику
+Lernmethode — немає у словнику
+Merkhilfe — немає у словнику
 Elektrogeschäft — немає у словнику
 Gebrauchtwarenladen — немає у словнику
 Pfand — рід: у мене n, у словнику []
@@ -113,11 +201,34 @@ Lieferadresse — немає у словнику
 Rechnungsadresse — немає у словнику
 Sendungsnummer — немає у словнику
 Paketstation — немає у словнику
+Großeinkauf — немає у словнику
+Sportgeschäft — немає у словнику
+Gemüsestand — немає у словнику
+Preisunterschied — немає у словнику
+Preisgrenze — немає у словнику
+Festpreis — немає у словнику
+Originalpreis — немає у словнику
+Gesamtpreis — немає у словнику
+Einzelpreis — немає у словнику
+Bonuskarte — немає у словнику
+Treuekarte — немає у словнику
+Kundenservice — рід: у мене m, у словнику []
+Geschenkkarte — немає у словнику
+Kundenbewertung — немає у словнику
+Lieferbestätigung — немає у словнику
+Zustellzeit — немає у словнику
+Abholstation — немає у словнику
 Städtereise — немає у словнику
 Umsteigen — немає у словнику
 Reisepartner — немає у словнику
 Reiseversicherung — немає у словнику
 Stornierung — немає у словнику
+Ferien — рід: у мене f, у словнику []
+Sommerferien — рід: у мене f, у словнику []
+Campingurlaub — немає у словнику
+Direktflug — немає у словнику
+Check-in — рід: у мене m, у словнику []
+Gepäckausgabe — немає у словнику
 Umzugswagen — немає у словнику
 Zwischenmiete — немає у словнику
 Untermiete — немає у словнику
@@ -127,3 +238,16 @@ Schlüsselbund — рід: у мене m, у словнику []
 Mietschuld — немає у словнику
 Wohnungsübergabe — немає у словнику
 Übergabeprotokoll — немає у словнику
+Stellplatz — немає у словнику
+Handwerkerrechnung — немає у словнику
+Kostenvoranschlag — немає у словнику
+Wohnberechtigungsschein — немає у словнику
+Maklergebühr — немає у словнику
+Schufa — немає у словнику
+Mietschuldenfreiheit — немає у словнику
+Gehaltsnachweis — немає у словнику
+Stromanbieter — немає у словнику
+Internetverbindung — немає у словнику
+Internetanschluss — немає у словнику
+Eigenbedarfskündigung — немає у словнику
+Möblierung — немає у словнику

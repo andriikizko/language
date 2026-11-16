@@ -116,3 +116,59 @@ m|Reisepartner|Reisepartner|попутник|попутчик|0
 f|Reiseversicherung|Reiseversicherungen|страхування подорожі|страхование поездки|0
 f|Stornierung|Stornierungen|скасування (бронювання)|отмена (бронирования)|0
 f|Buchung|Buchungen|бронювання|бронирование|0
+m|Urlaub|Urlaube|відпустка|отпуск|0
+f|Ferien|-|канікули|каникулы|0
+f|Sommerferien|-|літні канікули|летние каникулы|0
+f|Urlaubsreise|Urlaubsreisen|відпустка (подорож)|отпускная поездка|0
+m|Urlaubsort|Urlaubsorte|місце відпустки|место отпуска|0
+m|Badeurlaub|Badeurlaube|пляжний відпочинок|пляжный отдых|0
+m|Skiurlaub|Skiurlaube|лижна відпустка|лыжный отпуск|0
+m|Campingurlaub|Campingurlaube|відпустка в кемпінгу|отпуск в кемпинге|0
+m|Wanderurlaub|Wanderurlaube|піший відпочинок|пеший отдых|0
+m|Wochenendausflug|Wochenendausflüge|поїздка на вихідні|поездка на выходные|0
+f|Tagesreise|Tagesreisen|одноденна поїздка|однодневная поездка|0
+f|Klassenfahrt|Klassenfahrten|шкільна поїздка|школьная поездка|0
+f|Busreise|Busreisen|автобусна подорож|автобусная поездка|0
+f|Bahnreise|Bahnreisen|залізнична подорож|железнодорожное путешествие|0
+f|Flugreise|Flugreisen|подорож літаком|путешествие на самолёте|0
+n|Reisegepäck|-|багаж (подорож)|багаж (поездка)|0
+f|Reiseapotheke|Reiseapotheken|дорожня аптечка|дорожная аптечка|0
+n|Reisedokument|Reisedokumente|документ для подорожі|документ для поездки|0
+m|Personalausweis|Personalausweise|посвідчення особи|удостоверение личности|0
+f|Einreise|Einreisen|в'їзд|въезд|0
+f|Ausreise|Ausreisen|виїзд (з країни)|выезд (из страны)|0
+f|Durchreise|Durchreisen|транзитний проїзд|транзитный проезд|0
+n|Transit|-|транзит|транзит|0
+f|Zwischenlandung|Zwischenlandungen|проміжна посадка|промежуточная посадка|0
+m|Direktflug|Direktflüge|прямий рейс|прямой рейс|0
+f|Fluggesellschaft|Fluggesellschaften|авіакомпанія|авиакомпания|0
+m|Flugschein|Flugscheine|авіаквиток|авиабилет|0
+f|Bordkarte|Bordkarten|посадковий талон|посадочный талон|0
+f|Sicherheitskontrolle|Sicherheitskontrollen|контроль безпеки|контроль безопасности|0
+m|Check-in|Check-ins|реєстрація (на рейс)|регистрация (на рейс)|0
+m|Schalter|Schalter|стійка|стойка|0
+f|Gepäckausgabe|Gepäckausgaben|видача багажу|выдача багажа|0
+m|Gepäckschein|Gepäckscheine|багажна квитанція|багажная квитанция|0
+n|Übergepäck|-|надлишковий багаж|сверхнормативный багаж|0
+n|Gepäckstück|Gepäckstücke|місце багажу|место багажа|0
+m|Fahrgast|Fahrgäste|пасажир|пассажир|0
+m|Passagier|Passagiere|пасажир|пассажир|0
+m|Schaffner|Schaffner|провідник|кондуктор|0
+m|Zugbegleiter|Zugbegleiter|провідник (потяга)|проводник (поезда)|0
+m|Speisewagen|Speisewagen|вагон-ресторан|вагон-ресторан|0
+m|Liegewagen|Liegewagen|купейний вагон|купейный вагон|0
+m|Schlafwagen|Schlafwagen|спальний вагон|спальный вагон|0
+m|Anschluss|Anschlüsse|пересадка; зʼєднання|пересадка; стыковка|0
+f|Bahnhofshalle|Bahnhofshallen|вокзальний зал|вокзальный зал|0
+f|Auskunft|Auskünfte|довідкове бюро|справочное бюро|0
+f|Fundsache|Fundsachen|знайдена річ|найденная вещь|0
+n|Fundbüro|Fundbüros|бюро знахідок|бюро находок|0
+m|Reisebegleiter|Reisebegleiter|супутник|спутник|0
+m|Reiseleiter|Reiseleiter|гід-супровідник|гид-сопровождающий|0
+m|Stadtführer|Stadtführer|гід по місту|городской гид|0
+n|Stadtzentrum|Stadtzentren|центр міста|центр города|0
+n|Wahrzeichen|Wahrzeichen|символ міста|символ города|0
+f|Aussicht|Aussichten|вид; краєвид|вид; панорама|0
+m|Aussichtsturm|Aussichtstürme|оглядова вежа|смотровая башня|0
+f|Strandpromenade|Strandpromenaden|приморська набережна|приморская набережная|0
+f|Jahreszeit|Jahreszeiten|пора року|время года|0
