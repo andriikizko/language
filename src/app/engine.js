@@ -78,7 +78,7 @@ export const makeQuestion = (id, lang) => {
         explain: `${withArt(it)} → die ${it.pl} (${it[lang]}).` }
     }
     const pool = kind === 'n' ? nounsData.words : kind === 'a' ? dict.adj : verbs
-    const others = shuffle(pool.filter((x) => x.de !== it.de && x[lang] !== it[lang])).slice(0, 3)
+    const seen = new Set([it[lang]]); const others = shuffle(pool.filter((x) => x.de !== it.de && x[lang] !== it[lang])).filter((x) => { if (seen.has(x[lang])) return false; seen.add(x[lang]); return true }).slice(0, 3)
     if (mode === 'tr') {
       const opts = shuffle([it[lang], ...others.map((o) => o[lang])])
       return { id, de: true, type: 'choice', hint: 'Обери переклад', prompt: labelDe(it), opts, correct: opts.indexOf(it[lang]),
