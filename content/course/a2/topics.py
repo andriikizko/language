@@ -121,3 +121,27 @@ T['a2_amt'] = dict(title='Beim Amt', note='Konjunktiv II: könnten, würden, hä
  'Die Gebühr beträgt 20 Euro.|Збір становить 20 євро.|Сбор составляет 20 евро.',
  'Würden Sie das bitte noch einmal wiederholen?|Чи не повторили б ви це ще раз?|Не повторили бы вы это ещё раз?',
  'Vielen Dank für Ihre Hilfe!|Щиро дякую за вашу допомогу!|Большое спасибо за вашу помощь!'])
+T['a2_restaurant'] = dict(title='Ein Abend im Restaurant', note='Imperativ: Komm! Nimm! Kommen Sie! Прийменники з Dativ: mit dem, nach dem.', s=[
+ 'Wir haben einen Tisch für vier Personen reserviert.|Ми забронювали столик на чотирьох.|Мы забронировали столик на четверых.',
+ 'Der Kellner bringt uns die Speisekarte.|Офіціант приносить нам меню.|Официант приносит нам меню.',
+ 'Als Vorspeise nehme ich eine Suppe.|На закуску я беру суп.|На закуску я беру суп.',
+ 'Als Hauptgericht empfehle ich das Schnitzel.|Як основну страву я раджу шніцель.|Как основное блюдо я рекомендую шницель.',
+ 'Dazu gibt es einen Salat als Beilage.|До нього подається салат як гарнір.|К нему подаётся салат в качестве гарнира.',
+ 'Wir essen mit dem Messer und mit der Gabel.|Ми їмо ножем і виделкою.|Мы едим ножом и вилкой.',
+ 'Zum Nachtisch gibt es ein Eis.|На десерт є морозиво.|На десерт есть мороженое.',
+ 'Es hat uns sehr gut geschmeckt.|Нам було дуже смачно.|Нам было очень вкусно.',
+ 'Wir bezahlen zusammen mit Karte.|Ми платимо разом карткою.|Мы платим вместе картой.',
+ 'Das Trinkgeld lassen wir auf dem Tisch.|Чайові ми залишаємо на столі.|Чаевые мы оставляем на столе.',
+ 'Zu Hause koche ich nach dem Rezept meiner Oma.|Вдома я готую за рецептом моєї бабусі.|Дома я готовлю по рецепту моей бабушки.'])
+T['a2_freizeit'] = dict(title='Meine Freizeit', note='Зворотні дієслова: ich freue mich. Präteritum: spielte, war.', s=[
+ 'Ich interessiere mich für Sport und Musik.|Я цікавлюся спортом і музикою.|Я интересуюсь спортом и музыкой.',
+ 'Zweimal pro Woche gehe ich ins Fitnessstudio.|Двічі на тиждень я ходжу у фітнес-зал.|Два раза в неделю я хожу в фитнес-зал.',
+ 'Am Wochenende treffe ich mich mit Freunden.|На вихідних я зустрічаюся з друзями.|В выходные я встречаюсь с друзьями.',
+ 'Wir gehen ins Kino oder in ein Konzert.|Ми йдемо в кіно або на концерт.|Мы идём в кино или на концерт.',
+ 'Letzten Sonntag waren wir im Museum.|Минулої неділі ми були в музеї.|В прошлое воскресенье мы были в музее.',
+ 'Die Ausstellung war sehr interessant.|Виставка була дуже цікавою.|Выставка была очень интересной.',
+ 'Früher spielte ich Gitarre in einer Band.|Раніше я грав на гітарі в гурті.|Раньше я играл на гитаре в группе.',
+ 'Im Sommer machen wir oft eine Wanderung.|Влітку ми часто ходимо в похід.|Летом мы часто ходим в поход.',
+ 'Ich freue mich schon auf das nächste Spiel.|Я вже радію наступній грі.|Я уже радуюсь следующей игре.',
+ 'Am liebsten ruhe ich mich zu Hause aus.|Найбільше я люблю відпочивати вдома.|Больше всего я люблю отдыхать дома.',
+ 'Erholung ist wichtig für die Gesundheit.|Відпочинок важливий для здоровʼя.|Отдых важен для здоровья.'])
