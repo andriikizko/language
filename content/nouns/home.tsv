@@ -138,3 +138,55 @@ f|Möbel|-|меблі|мебель|0
 m|Müll|-|сміття|мусор|0
 m|Eimer|Eimer|відро|ведро|0
 m|Besen|Besen|мітла|метла|0
+n|Esszimmer|Esszimmer|їдальня (кімната)|столовая (комната)|0
+n|Arbeitszimmer|Arbeitszimmer|кабінет|кабинет|0
+n|Gästezimmer|Gästezimmer|гостьова кімната|гостевая комната|0
+m|Abstellraum|Abstellräume|комора|кладовка|0
+f|Terrasse|Terrassen|тераса|терраса|0
+m|Hof|Höfe|двір|двор|0
+m|Zaun|Zäune|паркан|забор|0
+m|Eingang|Eingänge|вхід|вход|0
+m|Ausgang|Ausgänge|вихід|выход|0
+m|Hausflur|Hausflure|під'їзд; коридор будинку|подъезд; коридор дома|0
+n|Stockwerk|Stockwerke|поверх|этаж|0
+n|Mehrfamilienhaus|Mehrfamilienhäuser|багатоквартирний будинок|многоквартирный дом|0
+n|Reihenhaus|Reihenhäuser|таунхаус|таунхаус|0
+n|Hochhaus|Hochhäuser|висотка|высотка|0
+n|Einfamilienhaus|Einfamilienhäuser|будинок на одну сімʼю|дом на одну семью|0
+m|Neubau|Neubauten|нова забудова|новостройка|0
+m|Altbau|Altbauten|стара забудова|старый дом|0
+m|Schornstein|Schornsteine|димар|дымоход|0
+m|Kamin|Kamine|камін|камин|0
+m|Ofen|Öfen|піч|печь|0
+m|Wasserhahn|Wasserhähne|кран|кран|0
+n|Rohr|Rohre|труба|труба|0
+m|Abfluss|Abflüsse|злив|слив|0
+f|Spüle|Spülen|мийка (кухонна)|мойка (кухонная)|0
+f|Mülltonne|Mülltonnen|сміттєвий бак|мусорный бак|0
+m|Abfall|Abfälle|відходи|отходы|0
+m|Papierkorb|Papierkörbe|корзина для паперу|корзина для бумаги|0
+f|Garderobe|Garderoben|гардероб; передпокій|гардероб; прихожая|0
+m|Nachttisch|Nachttische|тумбочка|тумбочка|0
+f|Matratze|Matratzen|матрац|матрас|0
+f|Bettwäsche|-|постільна білизна|постельное бельё|0
+n|Laken|Laken|простирадло|простыня|0
+m|Hocker|Hocker|табурет|табурет|0
+m|Couchtisch|Couchtische|журнальний столик|журнальный столик|0
+f|Tischdecke|Tischdecken|скатертина|скатерть|0
+f|Serviette|Servietten|серветка|салфетка|0
+m|Bilderrahmen|Bilderrahmen|рамка для картини|рамка для картины|0
+f|Wanduhr|Wanduhren|настінний годинник|настенные часы|0
+n|Toilettenpapier|-|туалетний папір|туалетная бумага|0
+n|Spülmittel|Spülmittel|засіб для миття посуду|средство для мытья посуды|0
+m|Schwamm|Schwämme|губка|губка|0
+m|Lappen|Lappen|ганчірка|тряпка|0
+m|Wischmopp|Wischmopps|швабра (мопа)|швабра (моп)|0
+n|Bügelbrett|Bügelbretter|прасувальна дошка|гладильная доска|0
+m|Werkzeugkasten|Werkzeugkästen|ящик з інструментами|ящик с инструментами|0
+f|Glühbirne|Glühbirnen|лампочка|лампочка|0
+m|Lichtschalter|Lichtschalter|вимикач світла|выключатель света|0
+m|Rauchmelder|Rauchmelder|датчик диму|датчик дыма|0
+m|Hausmeister|Hausmeister|двірник; завгосп|дворник; завхоз|0
+m|Mietvertrag|Mietverträge|договір оренди|договор аренды|0
+f|Kündigung|Kündigungen|розірвання; звільнення|расторжение; увольнение|0
+f|Nachbarschaft|-|сусідство|соседство|0

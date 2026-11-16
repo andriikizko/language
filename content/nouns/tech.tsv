@@ -115,3 +115,55 @@ n|Signal|Signale|сигнал|сигнал|0
 n|Display|Displays|дисплей|дисплей|0
 f|Software|Softwares|програмне забезпечення|программное обеспечение|0
 n|Update|Updates|оновлення|обновление|0
+m|Router|Router|роутер|роутер|0
+m|Server|Server|сервер|сервер|0
+f|Cloud|Clouds|хмара (сховище)|облако (хранилище)|0
+m|Screenshot|Screenshots|скріншот|скриншот|0
+m|Download|Downloads|завантаження|загрузка|0
+m|Anhang|Anhänge|вкладення|вложение|0
+m|Absender|Absender|відправник|отправитель|0
+m|Empfänger|Empfänger|одержувач|получатель|0
+m|Betreff|Betreffe|тема (листа)|тема (письма)|0
+m|Browser|Browser|браузер|браузер|0
+f|Suchmaschine|Suchmaschinen|пошукова система|поисковая система|0
+m|Nutzer|Nutzer|користувач|пользователь|0
+m|Benutzer|Benutzer|користувач|пользователь|0
+n|Profil|Profile|профіль|профиль|0
+f|Einstellung|Einstellungen|налаштування|настройка|0
+m|Speicher|Speicher|памʼять; сховище|память; хранилище|0
+f|Festplatte|Festplatten|жорсткий диск|жёсткий диск|0
+m|USB-Stick|USB-Sticks|флешка|флешка|0
+m|Scanner|Scanner|сканер|сканер|0
+m|Schalter|Schalter|вимикач; віконце|выключатель; окошко|0
+f|Sicherung|Sicherungen|запобіжник|предохранитель|0
+m|Zähler|Zähler|лічильник|счётчик|0
+f|Antenne|Antennen|антена|антенна|0
+m|Roboter|Roboter|робот|робот|0
+m|Motor|Motoren|двигун|двигатель|0
+n|Werkzeug|Werkzeuge|інструмент (робочий)|инструмент (рабочий)|0
+m|Hammer|Hämmer|молоток|молоток|0
+f|Schraube|Schrauben|гвинт; шуруп|винт; шуруп|0
+m|Schraubenzieher|Schraubenzieher|викрутка|отвёртка|0
+f|Zange|Zangen|плоскогубці; кліщі|плоскогубцы; клещи|0
+f|Bohrmaschine|Bohrmaschinen|дриль|дрель|0
+f|Leiter|Leitern|драбина|лестница (стремянка)|0
+n|Klebeband|Klebebänder|скотч|скотч|0
+f|Schere|Scheren|ножиці|ножницы|0
+f|Taschenlampe|Taschenlampen|кишеньковий ліхтарик|карманный фонарик|0
+n|Computerspiel|Computerspiele|комп'ютерна гра|компьютерная игра|0
+f|Spielkonsole|Spielkonsolen|ігрова приставка|игровая приставка|0
+f|Funktion|Funktionen|функція|функция|0
+m|Fehler|Fehler|помилка|ошибка|0
+m|Absturz|Abstürze|збій; крах|сбой; крах|0
+m|Neustart|Neustarts|перезапуск|перезапуск|0
+m|Virus|Viren|вірус|вирус|0
+f|Sicherheit|-|безпека|безопасность|0
+m|Datenschutz|-|захист даних|защита данных|0
+p|Daten|-|дані|данные|0
+f|Lautstärke|Lautstärken|гучність|громкость|0
+f|Helligkeit|-|яскравість|яркость|0
+n|Gespräch|Gespräche|розмова|разговор|0
+f|Mailbox|Mailboxen|голосова скринька|голосовая почта|0
+m|Klingelton|Klingeltöne|мелодія дзвінка|мелодия звонка|0
+n|Hintergrundbild|Hintergrundbilder|шпалери (на екрані)|обои (на экране)|0
+f|Anwendung|Anwendungen|застосування; програма|применение; приложение|0

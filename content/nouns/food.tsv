@@ -167,3 +167,60 @@ f|Dose|Dosen|консервна банка|консервная банка|0
 f|Packung|Packungen|пачка; упаковка|пачка; упаковка|0
 m|Hunger|-|голод|голод|0
 m|Durst|-|спрага|жажда|0
+f|Hefe|-|дріжджі|дрожжи|0
+n|Butterbrot|Butterbrote|бутерброд з маслом|бутерброд с маслом|0
+f|Petersilie|-|петрушка|петрушка|0
+n|Basilikum|-|базилік|базилик|0
+m|Zimt|-|кориця|корица|0
+f|Vanille|-|ваніль|ваниль|0
+n|Backpulver|-|розпушувач|разрыхлитель|0
+f|Rosine|Rosinen|ізюм|изюм|0
+f|Erdnuss|Erdnüsse|арахіс|арахис|0
+f|Haselnuss|Haselnüsse|лісовий горіх|фундук|0
+f|Walnuss|Walnüsse|волоський горіх|грецкий орех|0
+m|Kürbis|Kürbisse|гарбуз|тыква|0
+f|Aubergine|Auberginen|баклажан|баклажан|0
+f|Zucchini|Zucchini|кабачок|кабачок|0
+m|Brokkoli|-|броколі|брокколи|0
+m|Lauch|-|цибуля-порей|лук-порей|0
+n|Radieschen|Radieschen|редиска|редис|0
+m|Champignon|Champignons|шампіньйон|шампиньон|0
+m|Tofu|-|тофу|тофу|0
+n|Steak|Steaks|стейк|стейк|0
+n|Kotelett|Koteletts|відбивна|отбивная|0
+f|Bratwurst|Bratwürste|смажена ковбаска|жареная колбаска|0
+f|Salami|Salamis|салямі|салями|0
+f|Forelle|Forellen|форель|форель|0
+m|Hering|Heringe|оселедець|сельдь|0
+f|Muschel|Muscheln|мушля; мідія|ракушка; мидия|0
+f|Brezel|Brezeln|брецель|брецель|0
+f|Semmel|Semmeln|булочка (південна)|булочка (южная)|0
+m|Toast|Toasts|тост|тост|0
+n|Croissant|Croissants|круасан|круассан|0
+m|Knödel|Knödel|кльоцки; галушка|кнёдель|0
+p|Spätzle|-|шпецле (німецькі галушки)|шпецле (немецкие клёцки)|0
+m|Pfannkuchen|Pfannkuchen|млинець|блин|0
+f|Waffel|Waffeln|вафля|вафля|0
+m|Pudding|Puddinge|пудинг|пудинг|0
+m|Kaugummi|Kaugummis|жуйка|жвачка|0
+n|Marzipan|-|марципан|марципан|0
+m|Lebkuchen|Lebkuchen|пряник|пряник|0
+n|Plätzchen|Plätzchen|печиво (різдвяне)|печенье (рождественское)|0
+f|Praline|Pralinen|праліне; цукерка|пралине; конфета|0
+m|Sekt|Sekte|ігристе вино|игристое вино|0
+m|Schnaps|Schnäpse|шнапс|шнапс|0
+m|Whisky|Whiskys|віскі|виски|0
+m|Cocktail|Cocktails|коктейль|коктейль|0
+m|Eistee|-|холодний чай|холодный чай|0
+f|Apfelschorle|Apfelschorlen|яблучний сік з газованою водою|яблочный сок с газировкой|0
+m|Espresso|Espressi|еспресо|эспрессо|0
+m|Cappuccino|Cappuccinos|капучино|капучино|0
+m|Sirup|Sirupe|сироп|сироп|0
+f|Schlagsahne|-|збиті вершки|взбитые сливки|0
+f|Mayonnaise|-|майонез|майонез|0
+n|Dressing|Dressings|соус (заправка)|соус (заправка)|0
+n|Gewürz|Gewürze|приправа; спеція|приправа; специя|0
+f|Zutat|Zutaten|інгредієнт|ингредиент|0
+f|Portion|Portionen|порція|порция|0
+f|Scheibe|Scheiben|скибка|ломтик|0
+m|Krümel|Krümel|крихта|крошка|0

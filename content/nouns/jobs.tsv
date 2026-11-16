@@ -67,3 +67,95 @@ m|Reiseleiter|Reiseleiter|гід|гид|0
 m|Busfahrer|Busfahrer|водій автобуса|водитель автобуса|0
 m|Lagerarbeiter|Lagerarbeiter|складський працівник|складской рабочий|0
 f|Reinigungskraft|Reinigungskräfte|прибиральник/-ця|уборщик/-ца|0
+m|Bäcker|Bäcker|пекар|пекарь|0
+m|Metzger|Metzger|різник|мясник|0
+m|Koch|Köche|кухар|повар|0
+f|Köchin|Köchinnen|кухарка|повариха|0
+m|Kellner|Kellner|офіціант|официант|0
+f|Kellnerin|Kellnerinnen|офіціантка|официантка|0
+m|Friseur|Friseure|перукар|парикмахер|0
+f|Friseurin|Friseurinnen|перукарка|парикмахерша|0
+m|Elektriker|Elektriker|електрик|электрик|0
+m|Klempner|Klempner|сантехнік|сантехник|0
+m|Maler|Maler|маляр; художник|маляр; художник|0
+m|Tischler|Tischler|столяр|столяр|0
+m|Schlosser|Schlosser|слюсар|слесарь|0
+m|Mechaniker|Mechaniker|механік|механик|0
+m|Maurer|Maurer|муляр|каменщик|0
+m|Dachdecker|Dachdecker|покрівельник|кровельщик|0
+m|Gärtner|Gärtner|садівник|садовник|0
+m|Landwirt|Landwirte|фермер|фермер|0
+m|Fahrer|Fahrer|водій|водитель|0
+m|Busfahrer|Busfahrer|водій автобуса|водитель автобуса|0
+m|Lkw-Fahrer|Lkw-Fahrer|водій вантажівки|водитель грузовика|0
+m|Pilot|Piloten|пілот|пилот|0
+m|Polizist|Polizisten|поліцейський|полицейский|0
+m|Soldat|Soldaten|солдат|солдат|0
+m|Richter|Richter|суддя|судья|0
+m|Anwalt|Anwälte|адвокат|адвокат|0
+f|Anwältin|Anwältinnen|адвокатка|адвокатка|0
+m|Journalist|Journalisten|журналіст|журналист|0
+m|Schauspieler|Schauspieler|актор|актёр|0
+m|Sänger|Sänger|співак|певец|0
+m|Musiker|Musiker|музикант|музыкант|0
+m|Künstler|Künstler|митець|художник (артист)|0
+m|Fotograf|Fotografen|фотограф|фотограф|0
+m|Architekt|Architekten|архітектор|архитектор|0
+m|Ingenieur|Ingenieure|інженер|инженер|0
+m|Informatiker|Informatiker|програміст; інформатик|программист; информатик|0
+m|Wissenschaftler|Wissenschaftler|науковець|учёный|0
+m|Professor|Professoren|професор|профессор|0
+m|Student|Studenten|студент|студент|0
+f|Studentin|Studentinnen|студентка|студентка|0
+m|Schüler|Schüler|школяр|школьник|0
+m|Azubi|Azubis|учень (на виробництві)|ученик (на производстве)|0
+m|Praktikant|Praktikanten|стажист|стажёр|0
+m|Chef|Chefs|начальник|начальник|0
+f|Chefin|Chefinnen|начальниця|начальница|0
+m|Kollege|Kollegen|колега|коллега|0
+f|Kollegin|Kolleginnen|колега (жін.)|коллега (жен.)|0
+m|Mitarbeiter|Mitarbeiter|працівник|сотрудник|0
+m|Arbeitgeber|Arbeitgeber|роботодавець|работодатель|0
+m|Arbeitnehmer|Arbeitnehmer|працівник (найманий)|работник (наёмный)|0
+m|Kunde|Kunden|клієнт|клиент|0
+f|Kundin|Kundinnen|клієнтка|клиентка|0
+m|Berater|Berater|консультант|консультант|0
+m|Sekretär|Sekretäre|секретар|секретарь|0
+f|Sekretärin|Sekretärinnen|секретарка|секретарша|0
+m|Buchhalter|Buchhalter|бухгалтер|бухгалтер|0
+m|Banker|Banker|банкір|банкир|0
+m|Makler|Makler|ріелтор|риелтор|0
+f|Reinigungskraft|Reinigungskräfte|прибиральник|уборщик|0
+m|Putzmann|Putzmänner|прибиральник (розм.)|уборщик (разг.)|0
+m|Wachmann|Wachleute|охоронець|охранник|0
+m|Lagerarbeiter|Lagerarbeiter|складський робітник|складской рабочий|0
+m|Bauarbeiter|Bauarbeiter|будівельник|строитель|0
+m|Schweißer|Schweißer|зварювальник|сварщик|0
+m|Pfleger|Pfleger|санітар; доглядач|санитар; сиделка|0
+f|Krankenschwester|Krankenschwestern|медсестра|медсестра|0
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|0
+m|Apotheker|Apotheker|аптекар|аптекарь|0
+m|Tierarzt|Tierärzte|ветеринар|ветеринар|0
+m|Psychologe|Psychologen|психолог|психолог|0
+m|Dolmetscher|Dolmetscher|усний перекладач|устный переводчик|0
+m|Übersetzer|Übersetzer|перекладач|переводчик|0
+m|Erzieher|Erzieher|вихователь|воспитатель|0
+f|Erzieherin|Erzieherinnen|вихователька|воспитательница|0
+m|Trainer|Trainer|тренер|тренер|0
+m|Verkäufer|Verkäufer|продавець|продавец|0
+f|Verkäuferin|Verkäuferinnen|продавчиня|продавщица|0
+m|Kassierer|Kassierer|касир|кассир|0
+m|Händler|Händler|торговець|торговец|0
+m|Unternehmer|Unternehmer|підприємець|предприниматель|0
+m|Selbstständiger|Selbstständige|самозайнятий|самозанятый|0
+m|Arbeitsloser|Arbeitslose|безробітний|безработный|0
+m|Beruf|Berufe|професія|профессия|0
+f|Stelle|Stellen|робоче місце; вакансія|рабочее место; вакансия|0
+f|Bewerbung|Bewerbungen|заявка на роботу|заявка на работу|0
+m|Lebenslauf|Lebensläufe|резюме|резюме|0
+n|Vorstellungsgespräch|Vorstellungsgespräche|співбесіда|собеседование|0
+m|Lohn|Löhne|заробітна плата (погодинна)|заработная плата (почасовая)|0
+f|Überstunde|Überstunden|понаднормова година|сверхурочный час|0
+f|Schicht|Schichten|зміна (робоча)|смена (рабочая)|0
+f|Pause|Pausen|перерва|перерыв|0
+m|Feierabend|Feierabende|кінець робочого дня|конец рабочего дня|0

@@ -92,3 +92,41 @@ m|Durchschnitt|Durchschnitte|середнє значення|среднее зн
 f|Mehrheit|Mehrheiten|більшість|большинство|0
 f|Reihenfolge|Reihenfolgen|черга; послідовність|очерёдность; последовательность|0
 m|Rest|Reste|залишок|остаток|0
+f|Addition|Additionen|додавання|сложение|0
+f|Subtraktion|Subtraktionen|віднімання|вычитание|0
+f|Multiplikation|Multiplikationen|множення|умножение|0
+f|Division|Divisionen|ділення|деление|0
+m|Bruch|Brüche|дріб|дробь|0
+f|Mathe|-|математика (розм.)|математика (разг.)|0
+m|Taschenrechner|Taschenrechner|калькулятор|калькулятор|0
+m|Wert|Werte|значення; цінність|значение; ценность|0
+n|Maß|Maße|міра; розмір|мера; размер|0
+f|Einheit|Einheiten|одиниця (виміру)|единица (измерения)|0
+f|Fläche|Flächen|площа; поверхня|площадь; поверхность|0
+n|Volumen|Volumen|обʼєм|объём|0
+f|Tonne|Tonnen|тонна; бак|тонна; бак|0
+m|Millimeter|Millimeter|міліметр|миллиметр|0
+n|Portemonnaie|Portemonnaies|гаманець|кошелёк|0
+m|Geldbeutel|Geldbeutel|гаманець (розм.)|кошелёк (разг.)|0
+n|Bargeld|-|готівка|наличные|0
+f|Kreditkarte|Kreditkarten|кредитна картка|кредитная карта|0
+f|Überweisung|Überweisungen|переказ|перевод|0
+m|Kontostand|Kontostände|стан рахунку|состояние счёта|0
+f|Gebühr|Gebühren|збір; плата|сбор; плата|0
+m|Zins|Zinsen|відсоток (за кредитом)|процент (по кредиту)|0
+p|Schulden|-|борги|долги|0
+n|Preisschild|Preisschilder|цінник|ценник|0
+n|Angebot|Angebote|пропозиція; акція|предложение; акция|0
+n|Wechselgeld|-|решта (гроші)|сдача|0
+n|Trinkgeld|Trinkgelder|чайові|чаевые|0
+f|Mehrwertsteuer|-|ПДВ|НДС|0
+n|Maximum|Maxima|максимум|максимум|0
+n|Minimum|Minima|мінімум|минимум|0
+m|Punkt|Punkte|точка; бал|точка; балл|0
+f|Anzahl|-|кількість (число)|количество (число)|0
+f|Hausnummer|Hausnummern|номер будинку|номер дома|0
+f|Postleitzahl|Postleitzahlen|поштовий індекс|почтовый индекс|0
+f|Vorwahl|Vorwahlen|код (телефонний)|код (телефонный)|0
+f|Jahreszahl|Jahreszahlen|рік (цифрами)|год (цифрами)|0
+f|Geschwindigkeit|Geschwindigkeiten|швидкість|скорость|0
+m|Betrag|Beträge|сума (платежу)|сумма (платежа)|0

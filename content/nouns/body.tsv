@@ -144,3 +144,59 @@ f|Ruhe|-|спокій; відпочинок|покой; отдых|0
 f|Kraft|Kräfte|сила|сила|0
 n|Gewicht|Gewichte|вага|вес|0
 f|Größe|Größen|зріст; розмір|рост; размер|0
+m|Sinn|Sinne|почуття (орган чуття); сенс|чувство (орган чувств); смысл|0
+m|Geruch|Gerüche|запах|запах|0
+n|Gefühl|Gefühle|почуття|чувство|0
+m|Puls|-|пульс|пульс|0
+m|Blutdruck|-|кров'яний тиск|кровяное давление|0
+f|Figur|Figuren|фігура|фигура|0
+m|Hausarzt|Hausärzte|сімейний лікар|семейный врач|0
+m|Kinderarzt|Kinderärzte|педіатр|педиатр|0
+m|Augenarzt|Augenärzte|окуліст|окулист|0
+m|Frauenarzt|Frauenärzte|гінеколог|гинеколог|0
+m|Facharzt|Fachärzte|лікар-спеціаліст|врач-специалист|0
+f|Operation|Operationen|операція|операция|0
+m|Gips|Gipse|гіпс|гипс|0
+n|Röntgenbild|Röntgenbilder|рентген (знімок)|рентген (снимок)|0
+f|Impfung|Impfungen|щеплення|прививка|0
+m|Test|Tests|тест|тест|0
+f|Diagnose|Diagnosen|діагноз|диагноз|0
+n|Symptom|Symptome|симптом|симптом|0
+f|Nebenwirkung|Nebenwirkungen|побічна дія|побочное действие|0
+f|Dosis|Dosen|доза|доза|0
+m|Tropfen|Tropfen|крапля|капля|0
+n|Vitamin|Vitamine|вітамін|витамин|0
+f|Diät|Diäten|дієта|диета|0
+f|Pflege|-|догляд|уход|0
+f|Sprechstunde|Sprechstunden|години прийому|часы приёма|0
+n|Wartezimmer|Wartezimmer|зала очікування|зал ожидания|0
+f|Krankschreibung|Krankschreibungen|лікарняний (довідка)|больничный (справка)|0
+n|Kopfweh|-|головний біль (розм.)|головная боль (разг.)|0
+f|Übelkeit|-|нудота|тошнота|0
+m|Schwindel|-|запаморочення|головокружение|0
+m|Durchfall|-|пронос|диарея|0
+m|Schnitt|Schnitte|поріз|порез|0
+f|Beule|Beulen|гуля|шишка|0
+f|Blase|Blasen|пухир; міхур|пузырь; мочевой пузырь|0
+m|Insektenstich|Insektenstiche|укус комахи|укус насекомого|0
+m|Sonnenbrand|Sonnenbrände|сонячний опік|солнечный ожог|0
+f|Sonnencreme|Sonnencremes|сонцезахисний крем|солнцезащитный крем|0
+m|Schweiß|-|піт|пот|0
+f|Träne|Tränen|сльоза|слеза|0
+m|Körperteil|Körperteile|частина тіла|часть тела|0
+m|Bauchnabel|Bauchnabel|пупок|пупок|0
+f|Rippe|Rippen|ребро|ребро|0
+f|Wirbelsäule|Wirbelsäulen|хребет|позвоночник|0
+f|Sehne|Sehnen|сухожилля|сухожилие|0
+m|Zeigefinger|Zeigefinger|вказівний палець|указательный палец|0
+f|Fußsohle|Fußsohlen|підошва ноги|подошва ноги|0
+f|Ferse|Fersen|п'ята|пятка|0
+m|Knöchel|Knöchel|щиколотка|лодыжка|0
+f|Wade|Waden|литка|икра (ноги)|0
+m|Kiefer|Kiefer|щелепа|челюсть|0
+m|Rachen|Rachen|глотка|глотка|0
+f|Mandel|Mandeln|мигдалина; мигдаль|миндалина; миндаль|0
+p|Halsschmerzen|-|біль у горлі|боль в горле|0
+p|Bauchschmerzen|-|біль у животі|боль в животе|0
+p|Rückenschmerzen|-|біль у спині|боль в спине|0
+m|Zahnschmerz|Zahnschmerzen|зубний біль|зубная боль|0

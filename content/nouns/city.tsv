@@ -140,3 +140,51 @@ f|Richtung|Richtungen|напрямок|направление|0
 f|Ecke|Ecken|ріг; кут|угол|0
 m|Stadtplan|Stadtpläne|план міста|план города|0
 f|Sehenswürdigkeit|Sehenswürdigkeiten|памʼятка; визначне місце|достопримечательность|0
+f|Innenstadt|Innenstädte|центр міста|центр города|0
+f|Altstadt|Altstädte|старе місто|старый город|0
+m|Vorort|Vororte|передмістя|пригород|0
+f|Fußgängerzone|Fußgängerzonen|пішохідна зона|пешеходная зона|0
+m|Gehweg|Gehwege|тротуар|тротуар|0
+m|Radweg|Radwege|велодоріжка|велодорожка|0
+f|Fahrbahn|Fahrbahnen|проїжджа частина|проезжая часть|0
+m|Verkehr|-|рух (транспорт)|движение (транспорт)|0
+n|Verkehrsschild|Verkehrsschilder|дорожній знак|дорожный знак|0
+f|Einbahnstraße|Einbahnstraßen|вулиця з одностороннім рухом|улица с односторонним движением|0
+m|Kreisverkehr|Kreisverkehre|кільцевий рух|кольцевое движение|0
+m|Tunnel|Tunnel|тунель|тоннель|0
+f|Schranke|Schranken|шлагбаум|шлагбаум|0
+f|Tiefgarage|Tiefgaragen|підземний паркінг|подземный паркинг|0
+m|Bahnsteig|Bahnsteige|перон|перрон|0
+m|Fahrkartenautomat|Fahrkartenautomaten|автомат для квитків|автомат для билетов|0
+m|Automat|Automaten|автомат|автомат|0
+m|Geldautomat|Geldautomaten|банкомат|банкомат|0
+m|Wegweiser|Wegweiser|дороговказ; покажчик|указатель|0
+f|Landkarte|Landkarten|географічна карта|географическая карта|0
+n|Navi|Navis|навігатор|навигатор|0
+f|Stadtrundfahrt|Stadtrundfahrten|оглядова екскурсія містом|обзорная экскурсия по городу|0
+n|Reisebüro|Reisebüros|туристичне бюро|бюро путешествий|0
+m|Brunnen|Brunnen|фонтан; колодязь|фонтан; колодец|0
+n|Denkmal|Denkmäler|памʼятник|памятник|0
+n|Schloss|Schlösser|замок (палац)|замок (дворец)|0
+f|Burg|Burgen|фортеця; замок|крепость; замок|0
+m|Dom|Dome|собор|собор|0
+m|Turm|Türme|вежа|башня|0
+n|Stadion|Stadien|стадіон|стадион|0
+m|Zoo|Zoos|зоопарк|зоопарк|0
+m|Friedhof|Friedhöfe|кладовище|кладбище|0
+n|Gericht|Gerichte|суд; страва|суд; блюдо|0
+f|Feuerwehr|Feuerwehren|пожежна служба|пожарная служба|0
+m|Rettungswagen|Rettungswagen|швидка допомога (машина)|скорая помощь (машина)|0
+m|Friseursalon|Friseursalons|перукарня|парикмахерская|0
+m|Waschsalon|Waschsalons|пральня самообслуговування|прачечная самообслуживания|0
+f|Reinigung|Reinigungen|хімчистка|химчистка|0
+f|Eisdiele|Eisdielen|морозивня|кафе-мороженое|0
+m|Imbiss|Imbisse|закусочна|закусочная|0
+m|Kiosk|Kioske|кіоск|киоск|0
+f|Bar|Bars|бар|бар|0
+f|Disco|Discos|дискотека|дискотека|0
+f|Jugendherberge|Jugendherbergen|молодіжний хостел|молодёжный хостел|0
+f|Pension|Pensionen|пансіон; пенсія|пансион; пенсия|0
+n|Gasthaus|Gasthäuser|корчма; заїзд|трактир; постоялый двор|0
+f|Mensa|Mensen|студентська їдальня|студенческая столовая|0
+f|Kantine|Kantinen|їдальня (на роботі)|столовая (на работе)|0

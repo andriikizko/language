@@ -108,3 +108,41 @@ m|Wind|Winde|вітер|ветер|0
 f|Wolke|Wolken|хмара|облако|0
 f|Temperatur|Temperaturen|температура|температура|0
 m|Grad|Grade|градус|градус|0
+f|Dämmerung|Dämmerungen|сутінки|сумерки|0
+m|Sonnenaufgang|Sonnenaufgänge|схід сонця|восход солнца|0
+m|Sonnenuntergang|Sonnenuntergänge|захід сонця|закат|0
+m|Wochentag|Wochentage|день тижня|день недели|0
+m|Werktag|Werktage|будній день|рабочий день|0
+m|Arbeitstag|Arbeitstage|робочий день|рабочий день|0
+m|Ruhetag|Ruhetage|вихідний (закриття)|выходной (закрыто)|0
+n|Geburtsdatum|Geburtsdaten|дата народження|дата рождения|0
+n|Jahrzehnt|Jahrzehnte|десятиліття|десятилетие|0
+f|Frist|Fristen|строк; термін|срок|0
+f|Verabredung|Verabredungen|домовленість; зустріч|договорённость; встреча|0
+m|Zeitraum|Zeiträume|період|период|0
+m|Zeitpunkt|Zeitpunkte|момент (час)|момент (время)|0
+m|Augenblick|Augenblicke|мить|миг|0
+f|Weile|-|деякий час|некоторое время|0
+f|Gewohnheit|Gewohnheiten|звичка|привычка|0
+m|Alltag|-|будні; повсякдення|будни; повседневность|0
+m|Tagesablauf|Tagesabläufe|розпорядок дня|распорядок дня|0
+m|Sonnenschein|-|сонячне світло|солнечный свет|0
+m|Nebel|Nebel|туман|туман|0
+m|Hagel|-|град|град|0
+m|Frost|Fröste|мороз|мороз|0
+f|Hitze|-|спека|жара|0
+f|Kälte|-|холод|холод|0
+f|Wärme|-|тепло|тепло|0
+m|Blitz|Blitze|блискавка|молния|0
+m|Donner|Donner|грім|гром|0
+m|Sturm|Stürme|буря|буря|0
+f|Luft|Lüfte|повітря|воздух|0
+m|Wetterbericht|Wetterberichte|прогноз погоди|прогноз погоды|0
+f|Vorhersage|Vorhersagen|прогноз|прогноз|0
+m|Nikolaus|-|День святого Миколая|День святого Николая|0
+m|Heiligabend|Heiligabende|святвечір|сочельник|0
+m|Muttertag|-|День матері|День матери|0
+m|Vatertag|-|День батька|День отца|0
+m|Valentinstag|-|День закоханих|День влюблённых|0
+f|Tageszeit|Tageszeiten|пора доби|время суток|0
+f|Zeitzone|Zeitzonen|часовий пояс|часовой пояс|0
