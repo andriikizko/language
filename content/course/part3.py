@@ -9,7 +9,7 @@ blk(id='jobs', title='Професії', sub='ким працювати, офі�
  ('В офісі', 'der Chef (керівник), der Kollege / die Kollegin (колега), das Gehalt (зарплата), der Vertrag (договір), die Besprechung (нарада), der Urlaub (відпустка), die Schicht (зміна), der Feierabend (кінець робочого дня).'),
  ],
  gaps=[
- 'Ein ___ arbeitet im Krankenhaus.|Arzt|Bäcker,Koch,Lehrer|Лікар працює в лікарні.|Врач работает в больнице.',
+ 'Ein ___ arbeitet im Krankenhaus.|Arzt|Bäcker,Friseur,Pilot|Лікар працює в лікарні.|Врач работает в больнице.',
  'Ein ___ backt Brot.|Bäcker|Arzt,Lehrer,Polizist|Пекар пече хліб.|Пекарь печёт хлеб.',
  'Eine ___ arbeitet im Restaurant und kocht.|Köchin|Lehrerin,Ärztin,Studentin|Кухарка працює в ресторані й готує.|Повар работает в ресторане и готовит.',
  'Ich arbeite ___ Ingenieur.|als|bei,mit,für|Я працюю інженером.|Я работаю инженером.',
@@ -71,12 +71,12 @@ blk(id='body', title='Тіло', sub='частини тіла, лікар, са�
  gaps=[
  'Mit den ___ sehe ich.|Augen|Ohren,Händen,Füßen|Очима я бачу.|Глазами я вижу.',
  'Mit den ___ höre ich.|Ohren|Augen,Zähnen,Beinen|Вухами я чую.|Ушами я слышу.',
- 'Ich putze mir die ___.|Zähne|Hände,Haare,Augen|Я чищу зуби.|Я чищу зубы.',
+ 'Ich putze mir die ___.|Zähne|Haare,Tür,Brot|Я чищу зуби.|Я чищу зубы.',
  'Mein Kopf ist heiß. Ich habe ___.|Fieber|Hunger,Durst,Zeit|Моя голова гаряча. У мене температура.|Моя голова горячая. У меня температура.',
- 'Ich bin krank. Ich muss zum ___.|Arzt|Bäcker,Koch,Lehrer|Я хворий. Мені треба до лікаря.|Я болен. Мне нужно к врачу.',
+ 'Ich bin krank. Ich muss zum ___.|Arzt|Bäcker,Koch,Bahnhof|Я хворий. Мені треба до лікаря.|Я болен. Мне нужно к врачу.',
  'Der Arzt gibt mir ein ___ für die Apotheke.|Rezept|Fenster,Kissen,Auto|Лікар дає мені рецепт для аптеки.|Врач даёт мне рецепт для аптеки.',
  'Mein ___ tut weh. Ich brauche eine Tablette.|Kopf|Haus,Bild,Buch|Моя голова болить. Мені потрібна таблетка.|Моя голова болит. Мне нужна таблетка.',
- 'Ich bin krank. Ich bleibe im ___.|Bett|Park,Büro,Flugzeug|Я хворий. Я залишаюся в ліжку.|Я болен. Я остаюсь в постели.',
+ 'Ich bin krank. Ich bleibe im ___.|Bett|Tisch,Fenster,Flugzeug|Я хворий. Я залишаюся в ліжку.|Я болен. Я остаюсь в постели.',
  ],
  dialogs=[
  dict(title='У лікаря', lines=[

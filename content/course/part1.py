@@ -18,7 +18,7 @@ blk(id='numbers', title='Цифри й числа', sub='0–100, сотні, г
  'Zehn minus vier ist ___.|sechs|fünf,sieben,acht|Десять мінус чотири — ___.|Десять минус четыре — ___.',
  'Ein Dutzend hat ___ Stück.|zwölf|zehn,elf,zwanzig|У дюжині ___ штук.|В дюжине ___ штук.',
  'Die Zahl 21 heißt ___.|einundzwanzig|zweiundzwanzig,einszwanzig,zwanzigeins|Число 21 називається ___.|Число 21 называется ___.',
- 'Das Brot kostet drei Euro ___.|fünfzig|fünf,fünfzehn,fünfunddreißig|Хліб коштує 3,50 євро.|Хлеб стоит 3,50 евро.',
+ 'Das Brot kostet 3,50 Euro, also drei Euro ___.|fünfzig|fünfunddreißig,zehn,zwanzig|Хліб коштує 3,50 € (три євро п\'ятдесят).|Хлеб стоит 3,50 € (три евро пятьдесят).',
  'Mein Bruder ist ___ Jahre alt.|sechzehn|sechzig,sechszehn,sechzen|Моєму брату 16 років.|Моему брату 16 лет.',
  'Ein Euro hat hundert ___.|Cent|Euro,Meter,Gramm|В одному євро сто ___.|В одном евро сто ___.',
  'Dreißig plus vierzig ist ___.|siebzig|sechzig,achtzig,fünfzig|Тридцять плюс сорок — ___.|Тридцать плюс сорок — ___.',

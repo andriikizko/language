@@ -149,20 +149,20 @@ X['g2_komparativ'] = [
 ]
 X['g2_nebensatz'] = [
  'Ich lerne Deutsch, ___ ich in Deutschland wohne.|weil|denn,aber,deshalb|Я вчу німецьку, бо живу в Німеччині.|Я учу немецкий, потому что живу в Германии.',
- 'Er sagt, ___ er krank ist.|dass|ob,weil,wenn|Він каже, що він хворий.|Он говорит, что он болен.',
- 'Ich weiß nicht, ___ sie kommt.|ob|dass,weil,und|Я не знаю, чи вона прийде.|Я не знаю, придёт ли она.',
+ 'Er sagt, ___ er krank ist.|dass|und,aber,oder|Він каже, що він хворий.|Он говорит, что он болен.',
+ 'Ich weiß nicht, ___ sie kommt.|ob|und,aber,oder|Я не знаю, чи вона прийде.|Я не знаю, придёт ли она.',
  '___ ich Zeit habe, rufe ich dich an.|Wenn|Dass,Ob,Aber|Якщо в мене буде час, я тобі зателефоную.|Если у меня будет время, я тебе позвоню.',
  'Ich bleibe zu Hause, weil ich müde ___.|bin|ich bin,sein,war bin|Я залишаюся вдома, бо втомлений.|Я остаюсь дома, потому что устал.',
  'Er glaubt, dass das Wetter morgen ___ wird.|schön|schönes,schöne,sehr|Він вірить, що завтра буде гарна погода.|Он верит, что завтра погода будет хорошей.',
- 'Ich frage, ___ der Bus hier hält.|ob|dass,weil,wenn|Я питаю, чи зупиняється тут автобус.|Я спрашиваю, останавливается ли здесь автобус.',
+ 'Ich frage, ___ der Bus hier hält.|ob|dass,und,aber|Я питаю, чи зупиняється тут автобус.|Я спрашиваю, останавливается ли здесь автобус.',
  'Wir gehen spazieren, wenn die Sonne ___.|scheint|scheinen,schien,scheinst|Ми йдемо гуляти, коли світить сонце.|Мы идём гулять, когда светит солнце.',
- 'Ich weiß, ___ du viel arbeitest.|dass|ob,weil,wenn|Я знаю, що ти багато працюєш.|Я знаю, что ты много работаешь.',
+ 'Ich weiß, ___ du viel arbeitest.|dass|und,aber,oder|Я знаю, що ти багато працюєш.|Я знаю, что ты много работаешь.',
  'Sie ist traurig, weil sie ihren Hund ___ hat.|verloren|verlieren,verlor,verloren ist|Вона сумна, бо загубила собаку.|Она грустит, потому что потеряла собаку.',
- 'Ich möchte wissen, ___ du wohnst.|wo|ob,dass,weil|Я хочу знати, де ти живеш.|Я хочу знать, где ты живёшь.',
- 'Er fragt, ___ ich komme.|wann|ob,dass,weil|Він питає, коли я прийду.|Он спрашивает, когда я приду.',
+ 'Ich möchte wissen, ___ du wohnst.|wo|wohin,dass,weil|Я хочу знати, де ти живеш.|Я хочу знать, где ты живёшь.',
+ 'Er fragt, ___ ich komme.|wann|dass,weil,wenn|Він питає, коли я прийду.|Он спрашивает, когда я приду.',
  'Ich lerne, weil ich die Prüfung bestehen ___.|will|wollen,wollt,wille|Я вчуся, бо хочу скласти іспит.|Я учусь, потому что хочу сдать экзамен.',
  'Wenn es regnet, ___ ich zu Hause.|bleibe|ich bleibe,bleiben,bleibt|Коли йде дощ, я залишаюся вдома.|Когда идёт дождь, я остаюсь дома.',
- 'Es ist wichtig, ___ man jeden Tag übt.|dass|ob,weil,wenn|Важливо, щоб людина щодня вправлялася.|Важно, чтобы человек каждый день тренировался.',
+ 'Es ist wichtig, ___ man jeden Tag übt.|dass|und,aber,oder|Важливо, щоб людина щодня вправлялася.|Важно, чтобы человек каждый день тренировался.',
  'Ich weiß nicht, ob er schon ___ ist.|angekommen|ankommen,angekommt,kommen an|Я не знаю, чи він уже приїхав.|Я не знаю, приехал ли он уже.',
  'Wir bleiben hier, weil wir keinen Schlüssel ___.|haben|hat,habe,habt|Ми залишаємося тут, бо в нас немає ключа.|Мы остаёмся здесь, потому что у нас нет ключа.',
  'Er sagt, dass er morgen nicht ___ kann.|kommen|kommt,gekommen,komme|Він каже, що завтра не зможе прийти.|Он говорит, что завтра не сможет прийти.',
@@ -271,7 +271,7 @@ X['g2_futur'] = [
  'Ich möchte nach Berlin, ___ ich habe kein Geld.|aber|weil,dass,deshalb|Я хочу до Берліна, але в мене немає грошей.|Я хочу в Берлин, но у меня нет денег.',
  'Wir ___ euch bald besuchen.|werden|wird,wirst,würdet|Ми скоро вас відвідаємо.|Мы скоро вас навестим.',
  'Willst du Tee ___ Kaffee?|oder|aber,denn,deshalb|Хочеш чаю чи кави?|Хочешь чаю или кофе?',
- 'Sie ist nett ___ hilfsbereit.|und|aber,oder,denn|Вона мила й готова допомогти.|Она милая и готова помочь.',
+ 'Sie ist nett ___ hilfsbereit.|und|weil,dass,ob|Вона мила й готова допомогти.|Она милая и готова помочь.',
 ]
 
 X['g2_reflexiv'] += [
@@ -289,7 +289,7 @@ X['g2_futur'] += [
  'Wir ___ euch morgen anrufen.|werden|wird,werdet,wirst|Ми зателефонуємо вам завтра.|Мы позвоним вам завтра.',
  'Es ist spät, ___ gehe ich nach Hause.|deshalb|aber,denn,weil|Вже пізно, тому я йду додому.|Уже поздно, поэтому я иду домой.',
  'Ich bin krank, ___ gehe ich zur Arbeit.|trotzdem|deshalb,denn,und|Я хворий, але все одно йду на роботу.|Я болен, но всё равно иду на работу.',
- 'Ich bleibe hier, ___ es regnet.|denn|deshalb,trotzdem,aber|Я залишаюся тут, бо йде дощ.|Я остаюсь здесь, потому что идёт дождь.',
+ 'Ich bleibe hier, ___ es regnet.|denn|deshalb,trotzdem,dass|Я залишаюся тут, бо йде дощ.|Я остаюсь здесь, потому что идёт дождь.',
 ]
 
 X['g2_zu'] += [

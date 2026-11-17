@@ -40,7 +40,7 @@ gr(id='g2_praeteritum', title='Präteritum: sein, haben, модальні', titl
  ('Інші дієслова', 'Решту дієслів у розмові ставлять у Perfekt, у тексті й розповіді — Präteritum: spielen → spielte, gehen → ging. Для A2 достатньо впевнено вживати war, hatte й модальні, а решту розпізнавати.', 'Остальные глаголы', 'Остальные глаголы в разговоре ставят в Perfekt, в тексте и рассказе — Präteritum: spielen → spielte, gehen → ging. Для A2 достаточно уверенно употреблять war, hatte и модальные, а остальные узнавать.'),
  ],
  gaps=[
- 'Gestern ___ ich krank.|war|bin,wurde,hatte|Вчора я був хворий.|Вчера я был болен.',
+ 'Gestern ___ ich krank.|war|bin,wart,hatte|Вчора я був хворий.|Вчера я был болен.',
  'Wir ___ letztes Jahr in Wien.|waren|sind,war,wart|Торік ми були у Відні.|В прошлом году мы были в Вене.',
  'Gestern ___ er keine Zeit.|hatte|war,haben,hatten|Вчора в нього не було часу.|Вчера у него не было времени.',
  'Als Kind ___ ich nicht schwimmen.|konnte|kann,gekonnt,können|У дитинстві я не вмів плавати.|В детстве я не умел плавать.',
@@ -102,7 +102,7 @@ gr(id='g2_komparativ', title='Компаратив і суперлатив', tit
  gaps=[
  'Berlin ist ___ als Köln.|größer|groß,am größten,großer|Берлін більший за Кельн.|Берлин больше Кёльна.',
  'Das Auto ist ___ als das Fahrrad.|schneller|schnell,am schnellsten,schnellere|Машина швидша за велосипед.|Машина быстрее велосипеда.',
- 'Ich esse ___ Pizza als Pasta.|lieber|gern,mehr,besser|Піцу я їм охочіше, ніж пасту.|Пиццу я ем охотнее, чем пасту.',
+ 'Ich esse ___ Pizza als Pasta.|lieber|gern,besser,am liebsten|Піцу я їм охочіше, ніж пасту.|Пиццу я ем охотнее, чем пасту.',
  'Das ist der ___ Berg.|höchste|hoch,höher,am höchsten|Це найвища гора.|Это самая высокая гора.',
  'Sie spricht ___ Deutsch als ich.|besser|gut,am besten,guter|Вона говорить німецькою краще за мене.|Она говорит по-немецки лучше меня.',
  'Mein Bruder ist so ___ wie ich.|alt|älter,älteste,am ältesten|Мій брат такий самий за віком, як я.|Мой брат такого же возраста, как я.',
@@ -150,7 +150,7 @@ gr(id='g2_imperativ', title='Imperativ', title_ru='Imperativ', sub='Komm! Kommt!
  '___ mir bitte das Salz! (du)|Gib|Gibst,Gebe,Gebt|Подай мені, будь ласка, сіль!|Передай мне, пожалуйста, соль!',
  '___ Sie bitte Platz!|Nehmen|Nimm,Nehmt,Nimmt|Сідайте, будь ласка!|Садитесь, пожалуйста!',
  '___ ihr bitte die Hausaufgaben!|Macht|Mach,Machen,Machst|Зробіть, будь ласка, домашнє завдання!|Сделайте, пожалуйста, домашнее задание!',
- 'Ruf mich ___!|an|auf,ab,zu|Зателефонуй мені!|Позвони мне!',
+ 'Ruf mich ___!|an|mit,zu,fern|Зателефонуй мені!|Позвони мне!',
  ])
 
 gr(id='g2_konjunktiv', title='Ввічливо: Konjunktiv II', title_ru='Вежливо: Konjunktiv II', sub='ich hätte gern, könnten Sie',

@@ -130,10 +130,10 @@ gr(id='g_separable', title='Відокремлювані дієслова', titl
  ('Часті дієслова', 'aufstehen (вставати), anrufen (телефонувати), einkaufen (купувати), mitkommen (йти разом), fernsehen (дивитися телевізор), aufmachen (відкривати), zumachen (закривати).', 'Частые глаголы', 'aufstehen (вставать), anrufen (звонить), einkaufen (покупать), mitkommen (идти вместе), fernsehen (смотреть телевизор), aufmachen (открывать), zumachen (закрывать).'),
  ],
  gaps=[
- 'Ich stehe um sieben Uhr ___.|auf|an,ein,mit|Я встаю о сьомій.|Я встаю в семь.',
+ 'Ich stehe um sieben Uhr ___.|auf|mit,zu,fern|Я встаю о сьомій.|Я встаю в семь.',
  'Wir kaufen heute ___.|ein|auf,an,mit|Ми сьогодні робимо покупки.|Мы сегодня делаем покупки.',
- 'Er ruft mich ___.|an|auf,ein,zu|Він мені телефонує.|Он мне звонит.',
- 'Kommst du ___?|mit|an,auf,ein|Ти йдеш з нами?|Ты идёшь с нами?',
+ 'Er ruft mich ___.|an|mit,zu,fern|Він мені телефонує.|Он мне звонит.',
+ 'Kommst du ___?|mit|zu,fern,um|Ти йдеш з нами?|Ты идёшь с нами?',
  'Ich muss früh ___.|aufstehen|aufstehe,steht auf,stehen auf|Я мушу рано вставати.|Я должен рано вставать.',
  'Mach bitte die Tür ___.|zu|an,mit,ein|Зачини, будь ласка, двері.|Закрой, пожалуйста, дверь.',
  ])
@@ -149,7 +149,7 @@ gr(id='g_possessive', title='Присвійні займенники', title_ru=
  'Das ist ___ Schwester.|meine|mein,meinen,meiner|Це моя сестра.|Это моя сестра.',
  'Wo ist ___ Handy?|dein|deine,deinen,deiner|Де твій телефон?|Где твой телефон?',
  'Anna und ___ Mann kommen.|ihr|sein,seine,ihre|Анна і її чоловік приходять.|Анна и её муж приходят.',
- 'Peter und ___ Frau wohnen hier.|seine|sein,seinen,ihre|Петер і його дружина живуть тут.|Петер и его жена живут здесь.',
+ 'Peter und ___ Frau wohnen hier. (Peter = er)|seine|ihre,sein|Петро і його дружина живуть тут.|Пётр и его жена живут здесь.',
  'Ich liebe ___ Eltern.|meine|mein,meinen,meiner|Я люблю своїх батьків.|Я люблю своих родителей.',
  ])
 
@@ -191,9 +191,9 @@ gr(id='g_questions', title='Питальні слова', title_ru='Вопрос
  ],
  gaps=[
  '___ heißt du?|Wie|Wer,Wo,Wann|Як тебе звати?|Как тебя зовут?',
- '___ wohnst du?|Wo|Wer,Wann,Warum|Де ти живеш?|Где ты живёшь?',
- '___ kommst du?|Woher|Wohin,Wo,Wann|Звідки ти?|Откуда ты?',
- '___ fährst du?|Wohin|Woher,Wo,Wie|Куди ти їдеш?|Куда ты едешь?',
+ '___ wohnst du?|Wo|Wohin,Woher,Wer|Де ти живеш?|Где ты живёшь?',
+ '___ kommst du?|Woher|Wer,Wo,Wie viel|Звідки ти?|Откуда ты?',
+ '___ fährst du?|Wohin|Wer,Wessen,Wo|Куди ти їдеш?|Куда ты едешь?',
  '___ kostet das Brot?|Wie viel|Wer,Wo,Wann|Скільки коштує хліб?|Сколько стоит хлеб?',
- '___ lernst du Deutsch?|Warum|Wer,Woher,Wie viel|Чому ти вчиш німецьку?|Почему ты учишь немецкий?',
+ '___ lernst du Deutsch?|Warum|Wohin,Woher,Wer|Чому ти вчиш німецьку?|Почему ты учишь немецкий?',
  ])

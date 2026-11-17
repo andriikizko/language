@@ -10,10 +10,10 @@ blk(id='food', title='Їжа й напої', sub='замовлення, прий
  ('Посуд', 'der Teller (тарілка), das Glas (склянка), die Tasse (чашка), der Löffel (ложка), die Gabel (виделка), das Messer (ніж), die Flasche (пляшка). Суп їдять ложкою — mit dem Löffel. Прийменник mit завжди вимагає Dativ: mit dem, mit der, mit dem.'),
  ],
  gaps=[
- 'Ich trinke Kaffee ___ Milch.|mit|ohne,für,bei|Я п\'ю каву з молоком.|Я пью кофе с молоком.',
- 'Zum Frühstück esse ich ein ___.|Brötchen|Apfel,Kuchen,Salat|На сніданок я їм булочку.|На завтрак я ем булочку.',
- 'Ich habe Hunger. Ich möchte etwas ___.|essen|trinken,schlafen,lesen|Я голодний. Я хочу щось з\'їсти.|Я голоден. Я хочу что-нибудь поесть.',
- 'Ich habe Durst. Ich möchte etwas ___.|trinken|essen,schlafen,tanzen|Мені хочеться пити. Я хочу щось випити.|Мне хочется пить. Я хочу что-нибудь выпить.',
+ 'Mein Kaffee ist hell. Ich trinke Kaffee ___ Milch.|mit|ohne,für,bei|Моя кава світла. Я п\'ю каву з молоком.|Мой кофе светлый. Я пью кофе с молоком.',
+ 'Zum Frühstück esse ich ein ___.|Brötchen|Löffel,Tisch,Messer|На сніданок я їм булочку.|На завтрак я ем булочку.',
+ 'Ich habe Hunger. Ich möchte etwas ___.|essen|singen,tanzen,schlafen|Я голодний. Я хочу щось з\'їсти.|Я голоден. Я хочу что-нибудь поесть.',
+ 'Ich habe Durst. Ich möchte etwas ___.|trinken|tanzen,schlafen,singen|Мені хочеться пити. Я хочу щось випити.|Мне хочется пить. Я хочу что-нибудь выпить.',
  'Suppe isst man mit dem ___.|Löffel|Messer,Glas,Teller|Суп їдять ложкою.|Суп едят ложкой.',
  'Wasser trinkt man aus einem ___.|Glas|Teller,Gabel,Messer|Воду п\'ють зі склянки.|Воду пьют из стакана.',
  'Der Kuchen ist sehr ___.|lecker|laut,kurz,blau|Пиріг дуже смачний.|Пирог очень вкусный.',
@@ -47,7 +47,7 @@ blk(id='clothes', title='Одяг', sub='що носити, розмір, маг
  'Eine Brille trägt man auf der ___.|Nase|Hand,Hose,Tür|Окуляри носять на носі.|Очки носят на носу.',
  'Socken trägt man an den ___.|Füßen|Händen,Ohren,Augen|Шкарпетки вдягають на ноги.|Носки надевают на ноги.',
  'Das Kleid ___ mir sehr gut.|gefällt|gefallen,gefällst,gefallt|Сукня мені дуже подобається.|Платье мне очень нравится.',
- 'Ich ziehe die Jacke ___.|an|auf,ab,zu|Я вдягаю куртку.|Я надеваю куртку.',
+ 'Ich ziehe die Jacke ___.|an|ein,mit,fern|Я вдягаю куртку.|Я надеваю куртку.',
  ],
  dialogs=[
  dict(title='Приміряння штанів', lines=[
@@ -71,9 +71,9 @@ blk(id='home', title='Дім і меблі', sub='кімнати, де і куд
  ],
  gaps=[
  'Wir essen in der ___.|Küche|Garage,Keller,Flur|Ми їмо на кухні.|Мы едим на кухне.',
- 'Ich schlafe im ___.|Schlafzimmer|Bad,Keller,Garten|Я сплю в спальні.|Я сплю в спальне.',
+ 'Ich schlafe im ___.|Schlafzimmer|Bad,Keller,Kühlschrank|Я сплю в спальні.|Я сплю в спальне.',
  'Zum Duschen gehe ich ins ___.|Bad|Schlafzimmer,Wohnzimmer,Kinderzimmer|Щоб прийняти душ, я йду у ванну.|Чтобы принять душ, я иду в ванную.',
- 'Die Lampe hängt an der ___.|Decke|Boden,Tisch,Treppe|Лампа висить на стелі.|Лампа висит на потолке.',
+ 'Die Lampe hängt an der ___.|Decke|Boden,Tisch,Garten|Лампа висить на стелі.|Лампа висит на потолке.',
  'Das Buch liegt auf dem ___.|Tisch|Tür,Lampe,Küche|Книга лежить на столі.|Книга лежит на столе.',
  'Wir parken das Auto in der ___.|Garage|Küche,Bad,Treppe|Ми паркуємо авто в гаражі.|Мы паркуем машину в гараже.',
  'Es gibt ___ Balkon.|einen|ein,eine,einer|Є балкон.|Есть балкон.',
@@ -101,7 +101,7 @@ blk(id='city', title='Місто й транспорт', sub='дорога, тр
  ('Міста й країни', 'До міста — nach: Ich fahre nach Berlin. До країни жіночого роду — in die: Ich fahre in die Ukraine, in die Slowakei. Мешкати: in der Stadt (у місті), auf dem Land (в селі, за містом).'),
  ],
  gaps=[
- 'Ich fahre ___ dem Bus.|mit|bei,nach,aus|Я їду автобусом.|Я еду на автобусе.',
+ 'Ich fahre ___ dem Bus.|mit|für,nach,aus|Я їду автобусом.|Я еду на автобусе.',
  'Wie komme ich ___ Bahnhof?|zum|zur,im,am|Як мені дістатися до вокзалу?|Как мне добраться до вокзала?',
  'Ich warte an der ___ auf den Bus.|Haltestelle|Tasche,Wand,Jacke|Я чекаю автобус на зупинці.|Я жду автобус на остановке.',
  'Das Flugzeug startet am ___.|Flughafen|Hafen,Park,Garten|Літак злітає з аеропорту.|Самолёт взлетает из аэропорта.',
@@ -109,7 +109,7 @@ blk(id='city', title='Місто й транспорт', sub='дорога, тр
  'Ich fahre mit der ___ zur Arbeit.|U-Bahn|Bus,Auto,Taxi|Я їду на роботу метро.|Я еду на работу на метро.',
  'Die Ampel ist rot. Ich muss ___.|warten|tanzen,lesen,singen|Світлофор червоний. Я мушу чекати.|Светофор красный. Я должен ждать.',
  'Die Bank ist ___ dem Bahnhof.|gegenüber|durch,ohne,für|Банк навпроти вокзалу.|Банк напротив вокзала.',
- 'Ich fahre ___ Berlin.|nach|aus,bei,von|Я їду до Берліна.|Я еду в Берлин.',
+ 'Ich fahre ___ Berlin.|nach|bei,mit,ohne|Я їду до Берліна.|Я еду в Берлин.',
  ],
  dialogs=[
  dict(title='Як пройти до вокзалу', lines=[
