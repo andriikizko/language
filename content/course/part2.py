@@ -45,7 +45,7 @@ blk(id='clothes', title='Одяг', sub='що носити, розмір, маг
  'Die Schuhe sind zu ___. Ich brauche Größe 42.|klein|laut,kalt,süß|Туфлі замалі. Мені потрібен розмір 42.|Туфли малы. Мне нужен размер 42.',
  'Handschuhe sind für die ___.|Hände|Füße,Augen,Ohren|Рукавички — для рук.|Перчатки — для рук.',
  'Eine Brille trägt man auf der ___.|Nase|Hand,Hose,Tür|Окуляри носять на носі.|Очки носят на носу.',
- 'Socken zieht man an die ___ an.|Füße|Hände,Ohren,Augen|Шкарпетки вдягають на ноги.|Носки надевают на ноги.',
+ 'Socken trägt man an den ___.|Füßen|Händen,Ohren,Augen|Шкарпетки вдягають на ноги.|Носки надевают на ноги.',
  'Das Kleid ___ mir sehr gut.|gefällt|gefallen,gefällst,gefallt|Сукня мені дуже подобається.|Платье мне очень нравится.',
  'Ich ziehe die Jacke ___.|an|auf,ab,zu|Я вдягаю куртку.|Я надеваю куртку.',
  ],

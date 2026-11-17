@@ -29,6 +29,7 @@ for b in B:
         wr=w.split(',')
         assert a not in wr, g
         gaps.append({'s':s,'a':a,'w':wr,'uk':uk,'ru':ru})
+    _seen=set(); gaps=[x for x in gaps if not (x['s'] in _seen or _seen.add(x['s']))]
     dl=[]
     for d in b['dialogs']:
         lines=[dict(zip(('who','de','uk','ru'),l.split('|'))) for l in d['lines']]

@@ -221,7 +221,7 @@ X['g2_konjunktiv'] = [
  '___ ich Sie etwas fragen?|Dürfte|Darf,Durfte,Dürften|Чи можна було б мені вас дещо спитати?|Мог бы я вас кое о чём спросить?',
  'Ich ___ gern mit Ihnen sprechen.|möchte|möchtest,möchten,mochte|Я хотів би поговорити з вами.|Я хотел бы поговорить с вами.',
  '___ du mir bitte das Salz geben?|Könntest|Könntet,Könnten,Gekonnt|Чи не міг би ти подати мені сіль?|Не мог бы ты передать мне соль?',
- 'Es ___ schön, wenn du kommst.|wäre|wären,wärt,waren|Було б чудово, якби ти прийшов.|Было бы здорово, если бы ты пришёл.',
+ 'Es ___ schön, wenn du kommen würdest.|wäre|wären,wärt,waren|Було б чудово, якби ти прийшов.|Было бы здорово, если бы ты пришёл.',
  'Wenn ich du ___, würde ich mehr schlafen.|wäre|bin,wärst,war|На твоєму місці я б більше спав.|На твоём месте я бы больше спал.',
  'Wir ___ gern einen Tisch für vier Personen.|hätten|hätte,hattet,gehabt|Ми б хотіли столик на чотирьох.|Мы бы хотели столик на четверых.',
  'Ich ___ gern wissen, wie spät es ist.|würde|werde,wurde,wird|Я б хотів знати, котра година.|Я бы хотел знать, который час.',
@@ -246,7 +246,7 @@ X['g2_zu'] = [
  'Sie hat keine Zeit, einkaufen ___ gehen.|zu|um,für,an|Вона не має часу йти за покупками.|У неё нет времени идти за покупками.',
  'Ich helfe dir, das Formular ___.|auszufüllen|auszufüllt,ausfüllen zu,zu ausfüllen|Я допоможу тобі заповнити бланк.|Я помогу тебе заполнить бланк.',
  'Ich rufe an, ___ einen Termin zu vereinbaren.|um|für,damit,weil|Я телефоную, щоб домовитися про прийом.|Я звоню, чтобы договориться о приёме.',
- 'Ich kann gut schwimmen. — Ich kann gut ___.|schwimmen|zu schwimmen,schwamm,geschwimmt|Я вмію плавати.|Я умею плавать.',
+ 'Ich kann gut ___.|schwimmen|zu schwimmen,schwamm,geschwimmt|Я вмію плавати.|Я умею плавать.',
  'Es macht Spaß, Fahrrad ___ fahren.|zu|um,für,an|Приємно їздити на велосипеді.|Приятно ездить на велосипеде.',
  'Vergiss nicht, die Tür ___.|zuzumachen|zumachen zu,zu zumachen,zugemacht|Не забудь зачинити двері.|Не забудь закрыть дверь.',
  'Er geht ins Café, ___ einen Kaffee zu trinken.|um|für,damit,weil|Він іде в кафе, щоб випити каву.|Он идёт в кафе, чтобы выпить кофе.',
@@ -272,4 +272,26 @@ X['g2_futur'] = [
  'Wir ___ euch bald besuchen.|werden|wird,wirst,würdet|Ми скоро вас відвідаємо.|Мы скоро вас навестим.',
  'Willst du Tee ___ Kaffee?|oder|aber,denn,deshalb|Хочеш чаю чи кави?|Хочешь чаю или кофе?',
  'Sie ist nett ___ hilfsbereit.|und|aber,oder,denn|Вона мила й готова допомогти.|Она милая и готова помочь.',
+]
+
+X['g2_reflexiv'] += [
+ 'Ich ___ mich jeden Morgen.|dusche|duschst,duscht,duschen|Я приймаю душ щоранку.|Я принимаю душ каждое утро.',
+ 'Das Kind zieht ___ allein an.|sich|mich,dich,ihm|Дитина одягається сама.|Ребёнок одевается сам.',
+]
+X['g2_konjunktiv'] += [
+ 'Ich ___ gern ein Glas Wasser.|hätte|hat,hast,habt|Я б хотів склянку води.|Я бы хотел стакан воды.',
+ 'Wenn ich Urlaub hätte, ___ ich nach Spanien fahren.|würde|werde,wurde,wird|Якби в мене була відпустка, я б поїхав в Іспанію.|Если бы у меня был отпуск, я бы поехал в Испанию.',
+ '___ du mir bitte helfen?|Könntest|Könnte,Konntest,Kannst|Чи не міг би ти мені допомогти?|Не мог бы ты мне помочь?',
+]
+X['g2_futur'] += [
+ 'Nächste Woche ___ ich nach Berlin fahren.|werde|wird,wirst,werden|Наступного тижня я поїду до Берліна.|На следующей неделе я поеду в Берлин.',
+ 'Er ___ bald Vater.|wird|werde,wirst,werden|Він скоро стане батьком.|Он скоро станет отцом.',
+ 'Wir ___ euch morgen anrufen.|werden|wird,werdet,wirst|Ми зателефонуємо вам завтра.|Мы позвоним вам завтра.',
+ 'Es ist spät, ___ gehe ich nach Hause.|deshalb|aber,denn,weil|Вже пізно, тому я йду додому.|Уже поздно, поэтому я иду домой.',
+ 'Ich bin krank, ___ gehe ich zur Arbeit.|trotzdem|deshalb,denn,und|Я хворий, але все одно йду на роботу.|Я болен, но всё равно иду на работу.',
+ 'Ich bleibe hier, ___ es regnet.|denn|deshalb,trotzdem,aber|Я залишаюся тут, бо йде дощ.|Я остаюсь здесь, потому что идёт дождь.',
+]
+
+X['g2_zu'] += [
+ 'Ich habe Lust, ins Kino ___ gehen.|zu|um,dass,ob|Я хочу піти в кіно.|Я хочу пойти в кино.',
 ]

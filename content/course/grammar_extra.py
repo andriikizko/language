@@ -48,7 +48,7 @@ X['g_sein_haben'] = [
  'Du ___ nett.|bist|bin,ist,seid|Ти милий.|Ты милый.',
  'Er ___ in der Schule.|ist|bin,bist,sind|Він у школі.|Он в школе.',
  'Wir ___ Freunde.|sind|ist,seid,bin|Ми друзі.|Мы друзья.',
- 'Ihr ___ spät.|seid|sind,bist,ist|Ви запізнилися.|Вы опоздали.',
+ 'Ihr seid zu ___.|spät|früh,nett,krank|Ви запізнилися.|Вы опоздали.',
  'Die Kinder ___ zu Hause.|sind|ist,seid,bin|Діти вдома.|Дети дома.',
  'Ich ___ einen Bruder.|habe|hat,hast,haben|У мене є брат.|У меня есть брат.',
  'Du ___ ein Auto.|hast|habe,hat,habt|У тебе є машина.|У тебя есть машина.',
@@ -86,7 +86,7 @@ X['g_present'] = [
  'Wir ___ Musik.|hören|hört,höre,hörst|Ми слухаємо музику.|Мы слушаем музыку.',
 ]
 X['g_wordorder'] = [
- 'Ich lerne heute Deutsch. Heute ___ ich Deutsch.|lerne|lernen,lernst,lernt|Сьогодні я вчу німецьку.|Сегодня я учу немецкий.',
+ 'Am Montag ___ ich Deutsch.|lerne|lernen,lernst,lernt|У понеділок я вчу німецьку.|В понедельник я учу немецкий.',
  'Am Montag ___ wir ins Kino.|gehen|gehst,geht,gehe|У понеділок ми йдемо в кіно.|В понедельник мы идём в кино.',
  'Wo ___ du?|wohnst|wohne,wohnt,wohnen|Де ти живеш?|Где ты живёшь?',
  'Was ___ du?|machst|mache,macht,machen|Що ти робиш?|Что ты делаешь?',
@@ -96,7 +96,7 @@ X['g_wordorder'] = [
  'Morgen ___ er nach Wien.|fährt|fahre,fahren,fahrt|Завтра він їде до Відня.|Завтра он едет в Вену.',
  'Um acht Uhr ___ ich auf.|stehe|stehst,steht,stehen|О восьмій годині я встаю.|В восемь часов я встаю.',
  'Im Sommer ___ wir am See.|sind|ist,seid,bin|Влітку ми на озері.|Летом мы на озере.',
- 'Ich bin müde, ___ ich gehe ins Bett.|deshalb|weil,dass,ob|Я втомлений, тому йду спати.|Я устал, поэтому иду спать.',
+ 'Ich bin müde, ___ gehe ich ins Bett.|deshalb|weil,dass,ob|Я втомлений, тому йду спати.|Я устал, поэтому иду спать.',
  'Ich mag Tee, ___ ich trinke lieber Kaffee.|aber|oder,weil,wenn|Я люблю чай, але кава мені більше до смаку.|Я люблю чай, но кофе люблю больше.',
  'Ich esse Brot ___ Butter.|und|aber,oder,dass|Я їм хліб і масло.|Я ем хлеб и масло.',
  'Trinkst du Tee ___ Kaffee?|oder|und,aber,weil|Ти п\'єш чай чи каву?|Ты пьёшь чай или кофе?',
@@ -144,7 +144,7 @@ X['g_akkusativ'] = [
  'Ich habe ___ Bruder.|einen|ein,eine,einem|У мене є брат.|У меня есть брат.',
  'Wir kaufen ___ Tisch.|einen|ein,eine,einem|Ми купуємо стіл.|Мы покупаем стол.',
  'Hast du ___ Stift?|einen|ein,eine,einem|Чи є в тебе ручка?|Есть ли у тебя ручка?',
- 'Ich brauche ___ Hilfe.|eine|ein,einen,einem|Мені потрібна допомога.|Мне нужна помощь.',
+ 'Ich brauche ___ Jacke.|eine|ein,einen,einem|Мені потрібна куртка.|Мне нужна куртка.',
  'Sie liest ___ Buch.|ein|einen,eine,einem|Вона читає книгу.|Она читает книгу.',
  'Ich nehme ___ Apfel.|den|der,dem,das|Я беру яблуко.|Я беру яблоко.',
 ]
@@ -273,4 +273,39 @@ X['g_questions'] = [
  '___ ist der Bahnhof? — Dort links.|Wo|Wohin,Woher,Wer|Де вокзал? — Там ліворуч.|Где вокзал? — Там налево.',
  '___ spielt Fußball? — Mein Bruder.|Wer|Was,Wo,Wann|Хто грає у футбол? — Мій брат.|Кто играет в футбол? — Мой брат.',
  '___ spät ist es?|Wie|Was,Wo,Wer|Котра година?|Который час?',
+]
+
+X['g_articles'] += [
+ 'Ich sehe ___ Lehrerin.|die|der,das,ein|Я бачу вчительку.|Я вижу учительницу.',
+ '___ Brot ist teuer.|Das|Der,Die,Eine|Хліб дорогий.|Хлеб дорогой.',
+]
+X['g_wordorder'] += [
+ 'Am Abend ___ wir Fußball.|spielen|spielt,spielst,spiele|Ввечері ми граємо у футбол.|Вечером мы играем в футбол.',
+ 'Im Winter ___ es oft.|schneit|schneien,schneist,schneie|Узимку часто йде сніг.|Зимой часто идёт снег.',
+]
+X['g_akkusativ'] += [
+ 'Ich kaufe ___ Brötchen.|ein|einen,eine,einem|Я купую булочку.|Я покупаю булочку.',
+ 'Er hat ___ Schwester.|eine|einen,ein,einem|У нього є сестра.|У него есть сестра.',
+]
+X['g_modal'] += [
+ 'Ich ___ heute nicht kommen.|kann|kannst,können,kannt|Я не можу прийти сьогодні.|Я не могу прийти сегодня.',
+ 'Hier ___ man nicht rauchen.|darf|dürfen,darfst,dürft|Тут не можна курити.|Здесь нельзя курить.',
+]
+X['g_separable'] += [
+ 'Wann stehst du heute ___?|auf|an,ab,aus|Коли ти сьогодні встаєш?|Когда ты сегодня встаёшь?',
+ 'Der Film fängt um acht Uhr ___.|an|auf,ab,aus|Фільм починається о восьмій.|Фильм начинается в восемь.',
+ 'Wir fahren morgen früh ___.|ab|an,auf,aus|Ми завтра рано виїжджаємо.|Мы завтра рано выезжаем.',
+ 'Ich rufe meine Oma jeden Sonntag ___.|an|ab,auf,aus|Я телефоную бабусі щонеділі.|Я звоню бабушке каждое воскресенье.',
+]
+X['g_questions'] += [
+ '___ kostet die Jacke?|Was|Wer,Wo,Wann|Скільки коштує куртка?|Сколько стоит куртка?',
+ '___ kommt der Bus? — Um zehn Uhr.|Wann|Wo,Wer,Wie|Коли приходить автобус? — О десятій.|Когда приходит автобус? — В десять.',
+ '___ ist dein Chef? — Das ist Herr Braun.|Wer|Was,Wo,Wann|Хто твій начальник? — Це пан Браун.|Кто твой начальник? — Это господин Браун.',
+]
+
+X['g_sein_haben'] += [
+ 'Mein Vater ___ Lehrer.|ist|bin,bist,sind|Мій батько вчитель.|Мой отец учитель.',
+]
+X['g_separable'] += [
+ 'Der Bus kommt um neun Uhr ___.|an|ab,auf,aus|Автобус приїжджає о дев\'ятій.|Автобус приезжает в девять.',
 ]

@@ -4,7 +4,7 @@ RF = ['richtig', 'falsch']
 T1 = 'Liebe Sandra, ich habe gestern eine neue Wohnung gefunden! Sie liegt im Zentrum, im dritten Stock, und hat zwei Zimmer und einen kleinen Balkon. Die Miete ist 650 Euro, aber ich muss noch eine Kaution zahlen. Nächsten Monat ziehe ich um. Hilfst du mir? Dein Marco'
 T2 = 'Lieber Herr Becker, vielen Dank für Ihre Einladung zum Fest am Samstag. Leider kann ich nicht kommen, weil ich mit meiner Familie zu meinen Eltern fahre. Ich wünsche Ihnen einen schönen Abend. Mit freundlichen Grüßen, Julia Hoffmann'
 T3 = 'Schwimmbad Sonnenbad\nÖffnungszeiten: Mo geschlossen, Di–Fr 9–20 Uhr, Sa–So 10–18 Uhr\nEintritt: Erwachsene 5 Euro, Kinder bis 6 Jahre frei\nKinder von 7 bis 14 Jahren: 3 Euro'
-T4 = 'Wegen Bauarbeiten fährt die Buslinie 12 vom 3. bis 14. Mai nicht bis zum Hauptbahnhof. Bitte nehmen Sie die Linie 5 oder gehen Sie zu Fuß. Die Haltestelle Rathaus ist ab dem 15. Mai wieder geöffnet.'
+T4 = 'Wegen Bauarbeiten fährt die Buslinie 12 vom 3. bis 14. Mai nicht bis zum Hauptbahnhof. Bitte nehmen Sie die Linie 5 oder gehen Sie zu Fuß. Ab dem 15. Mai fährt die Linie 12 wieder bis zum Hauptbahnhof.'
 T5 = 'Mein Name ist Dana. Ich bin vor zwei Jahren aus der Ukraine nach Deutschland gekommen. Am Anfang war es schwer, weil ich kaum Deutsch gesprochen habe. Jetzt besuche ich einen Kurs, und ich habe schon viele Freunde. Nächstes Jahr möchte ich eine Ausbildung als Krankenschwester machen.'
 LESEN = [
  (T1, 'Marco hat schon eine neue Wohnung gefunden.', RF, 0),

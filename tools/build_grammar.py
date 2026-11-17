@@ -19,6 +19,7 @@ for g in G:
         s,a,w,uk,ru=x.split('|'); wr=w.split(',')
         assert '___' in s and a not in wr and uk and ru, x
         gaps.append({'s':s,'a':a,'w':wr,'uk':uk,'ru':ru})
+    _seen=set(); gaps=[x for x in gaps if not (x['s'] in _seen or _seen.add(x['s']))]
     assert len(gaps)>=6 and len(g['explain'])==3
     out.append({'id':g['id'],'title':g['title'],'title_ru':g['title_ru'],'sub':g['sub'],'kind':'grammar',
       'explain':[{'h':h,'p':p} for h,p,_,_ in g['explain']],'explain_ru':[{'h':h,'p':p} for _,_,h,p in g['explain']],'gaps':gaps})
