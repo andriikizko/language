@@ -48,7 +48,7 @@ X['g_sein_haben'] = [
  'Du ___ nett.|bist|bin,ist,seid|Ти милий.|Ты милый.',
  'Er ___ in der Schule.|ist|bin,bist,sind|Він у школі.|Он в школе.',
  'Wir ___ Freunde.|sind|ist,seid,bin|Ми друзі.|Мы друзья.',
- 'Ihr seid zu ___.|spät|früh,nett,krank|Ви запізнилися.|Вы опоздали.',
+ 'Der Zug ist schon weg. Ihr seid zu ___.|spät|früh,nett,krank|Потяг уже поїхав. Ви запізнилися.|Поезд уже ушёл. Вы опоздали.',
  'Die Kinder ___ zu Hause.|sind|ist,seid,bin|Діти вдома.|Дети дома.',
  'Ich ___ einen Bruder.|habe|hat,hast,haben|У мене є брат.|У меня есть брат.',
  'Du ___ ein Auto.|hast|habe,hat,habt|У тебе є машина.|У тебя есть машина.',

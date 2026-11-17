@@ -72,7 +72,7 @@ gr(id='g2_wechsel', title='Wechselpräpositionen', title_ru='Wechselpräposition
  gaps=[
  'Ich lege das Buch auf ___ Tisch.|den|dem,der,das|Я кладу книгу на стіл.|Я кладу книгу на стол.',
  'Das Buch liegt auf ___ Tisch.|dem|den,der,das|Книга лежить на столі.|Книга лежит на столе.',
- 'Wir gehen in ___ Küche.|die|der,dem,das|Ми йдемо на кухню.|Мы идём на кухню.',
+ 'Wir bringen den Tisch in ___ Küche.|die|der,dem,das|Ми несемо стіл на кухню.|Мы несём стол на кухню.',
  'Die Katze sitzt unter ___ Bett.|dem|das,den,der|Кішка сидить під ліжком.|Кошка сидит под кроватью.',
  'Er hängt das Bild an ___ Wand.|die|der,dem,den|Він вішає картину на стіну.|Он вешает картину на стену.',
  'Mein Handy liegt neben ___ Lampe.|der|die,dem,den|Мій телефон лежить біля лампи.|Мой телефон лежит рядом с лампой.',
@@ -162,10 +162,10 @@ gr(id='g2_konjunktiv', title='Ввічливо: Konjunktiv II', title_ru='Веж
  gaps=[
  '___ Sie mir bitte helfen?|Könnten|Könnte,Kannten,Gekonnt|Чи не могли б ви мені допомогти?|Не могли бы вы мне помочь?',
  'Ich ___ gern einen Kaffee.|hätte|hätten,hattet,gehabt|Я б хотів каву.|Я бы хотел кофе.',
- 'An deiner Stelle ___ ich das nicht machen.|würde|werde,wurde,wird|На твоєму місці я б цього не робив.|На твоём месте я бы этого не делал.',
+ 'An deiner Stelle ___ ich das nicht machen.|würde|werden,wurde,wird|На твоєму місці я б цього не робив.|На твоём месте я бы этого не делал.',
  'Wenn ich Zeit ___, würde ich kommen.|hätte|hätten,hattet,haben|Якби в мене був час, я б прийшов.|Если бы у меня было время, я бы пришёл.',
  'Ich ___ gern mit Ihnen sprechen.|möchte|möchtest,möchten,mochten|Я б хотів поговорити з вами.|Я хотел бы поговорить с вами.',
- 'Wenn ich reich ___, würde ich reisen.|wäre|bin,wärst,wart|Якби я був багатим, я б подорожував.|Если бы я был богат, я бы путешествовал.',
+ 'Wenn ich reich ___, würde ich reisen.|wäre|bist,wärst,wart|Якби я був багатим, я б подорожував.|Если бы я был богат, я бы путешествовал.',
  ])
 
 gr(id='g2_zu', title='Інфінітив з zu, um ... zu', title_ru='Инфинитив с zu, um ... zu', sub='keine Lust zu arbeiten',

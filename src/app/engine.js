@@ -91,15 +91,17 @@ export const makeQuestion = (id, lang) => {
   if (t === 'g') {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]
     const opts = shuffle([g.a, ...g.w])
+    const wmap = {}; if (g.y) g.w.forEach((w, k) => { if (g.y[k]) wmap[w] = g.y[k][lang === 'ru' ? 1 : 0] })
     return { id, de: true, type: 'choice', hint: 'Встав пропущене слово', prompt: g.s, sub: g[lang], opts, correct: opts.indexOf(g.a),
-      explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, tpl: g.s, block: b.id }
+      explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, tpl: g.s, wmap, block: b.id }
   }
   if (t === 'e') {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]
     const fill = (x) => g.s.replace('___', x).replace(/\s*\([^)]*\)/g, '').trim()
     const opts = shuffle([fill(g.a), ...g.w.map(fill)])
+    const wmap = {}; if (g.y) g.w.forEach((w, k) => { if (g.y[k]) wmap[fill(w)] = g.y[k][lang === 'ru' ? 1 : 0] })
     return { id, type: 'choice', hint: 'Яке речення правильне?', prompt: g[lang].replace('___', '…'), opts, correct: opts.indexOf(fill(g.a)),
-      explain: `${fill(g.a)} — ${g[lang]}`, block: b.id }
+      explain: `${fill(g.a)} — ${g[lang]}`, wmap, block: b.id }
   }
   if (t === 'd') {
     const b = blockById(r[0]); const sn = b.topic.s[+r[1]]; const clean = cleanDe(sn.de)

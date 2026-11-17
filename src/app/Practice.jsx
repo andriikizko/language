@@ -65,7 +65,7 @@ export default function Practice({ ids, lang, tr = 'off', title, onAnswer, onDon
       )}
       {answered && (
         <>
-          <div className={'de-expl' + (ok ? ' ok' : ' no')}>{ok ? '✓ Правильно. ' : '✗ Неправильно. '}{!ok && q.tpl && q.type === 'choice' && q.opts[sel] != null && <div>Твій варіант: «{q.tpl.replace('___', q.opts[sel])}» — тут він не підходить.</div>}{!ok && q.type === 'choice' && !q.tpl && q.opts[sel] != null && <div>Ти вибрав: «{q.opts[sel]}».</div>}{q.explain}</div>
+          <div className={'de-expl' + (ok ? ' ok' : ' no')}>{ok ? '✓ Правильно. ' : '✗ Неправильно. '}{!ok && q.tpl && q.type === 'choice' && q.opts[sel] != null && <div>Твій варіант: «{q.tpl.replace('___', q.opts[sel])}» — тут він не підходить.</div>}{!ok && q.type === 'choice' && !q.tpl && q.opts[sel] != null && <div>Ти вибрав: «{q.opts[sel]}».</div>}{!ok && q.wmap && q.opts[sel] != null && q.wmap[q.opts[sel]] && <div>Чому не так: {q.wmap[q.opts[sel]]}.</div>}{q.explain}</div>
           <button className="de-btn" onClick={next}>{i + 1 >= qs.length ? 'Завершити' : 'Далі'}</button>
         </>
       )}
