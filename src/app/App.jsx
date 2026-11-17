@@ -7,6 +7,7 @@ import { Course, Errors, Calendar } from './Course.jsx'
 import { srsUpdate } from './engine.js'
 import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
 
+import Placement from './Placement.jsx'
 const SKEY = 'languages.session'
 const ERR = {
   exists: 'Такий логін уже зайнятий', wrong: 'Невірний логін або пароль', locked: 'Забагато спроб. Зачекайте хвилину',
@@ -14,21 +15,26 @@ const ERR = {
   bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний', google_failed: 'Не вдалося увійти через Google', no_google: 'Вхід через Google ще не налаштований', bad_name: 'Вкажіть імʼя',
 }
 
-const SLIDES = [
-  ['Привіт! Заговоріть німецькою', 'Німецька з нуля до впевненої розмови. Без нудної зубрки: живі діалоги про те, що справді трапляється в Німеччині: лікар, робота, квартира, магазин.'],
-  ['За 12 тижнів ви заговорите на рівні A1', 'Три короткі заняття на тиждень у вашому темпі. Уже знаєте A1? Тоді за наступні 12 тижнів підтягнете A2. Обирайте свій рівень, ми підлаштуємось.'],
-  ['Навчання, яке працює', 'Пояснення рідною мовою, тест після кожної теми. Слова повертаються саме тоді, коли ви їх майже забули, а помилки розбираються: ви бачите, чому саме так.'],
-]
-const Intro = ({ onDone }) => {
-  const [i, setI] = useState(0)
-  const last = i + 1 >= SLIDES.length
+const LV = [['a1', 'A1', 'З нуля: базові фрази, числа, родина, їжа, місто'], ['a2', 'A2', 'Знаєш основи: розмови про здоров’я, роботу, житло, подорожі'], ['b1', 'B1', 'Скоро'], ['b2', 'B2', 'Скоро']]
+const Start = ({ onTest, onPick }) => {
+  const [pick, setPick] = useState(false)
   return (
-    <div className="de-intro">
-      <h2>{SLIDES[i][0]}</h2><p>{SLIDES[i][1]}</p>
-      <div className="de-dots">{SLIDES.map((_, k) => <span key={k} className={k === i ? 'on' : ''} />)}</div>
-      <button className="de-btn" onClick={() => (last ? onDone() : setI(i + 1))}>{last ? 'Почати' : 'Далі'}</button>
-      {i > 0 && <button className="de-btn ghost" onClick={() => setI(i - 1)}>Назад</button>}
-      {!last && <button className="de-btn ghost" onClick={onDone}>Пропустити</button>}
+    <div className="de-auth">
+      <h1>{pick ? 'Обери рівень' : 'Який у тебе рівень німецької?'}</h1>
+      {!pick ? (
+        <>
+          <p>Пройди короткий тест: покажемо, з чого почати, і одразу спробуєш навчання. Без реєстрації й оплати.</p>
+          <button className="de-btn" onClick={onTest}>Пройти тест</button>
+          <button className="de-btn ghost" onClick={() => setPick(true)}>Пропустити, вибрати рівень самому</button>
+        </>
+      ) : (
+        <>
+          {LV.map(([k, n, d]) => (
+            <button key={k} className="de-btn ghost" disabled={k[0] === 'b'} style={{ textAlign: 'left', opacity: k[0] === 'b' ? 0.55 : 1 }} onClick={() => onPick(k)}><b>{n}</b> · {d}</button>
+          ))}
+          <button className="de-btn ghost" onClick={() => setPick(false)}>Назад</button>
+        </>
+      )}
     </div>
   )
 }
@@ -131,6 +137,7 @@ export default function App() {
   const [needProfile, setNeedProfile] = useState(false)
   const [tab, setTab] = useState('home')
   const [screen, setScreen] = useState(null)
+  const [testing, setTesting] = useState(false)
   const timer = useRef(null)
 
   const update = (patch) => setSt((s) => ({ ...s, ...patch }))
@@ -165,6 +172,12 @@ export default function App() {
   if (!sess && !guest) return <div className="de-app"><div className="de-main"><Auth onAuth={onAuth} onGuest={startGuest} /></div></div>
   if (sess && needProfile) return <div className="de-app"><div className="de-main"><ProfileSetup sess={sess} onDone={(name, c) => { update({ consent: !!c }); const n = { ...sess, name }; localStorage.setItem(SKEY, JSON.stringify(n)); setSess(n); setNeedProfile(false) }} /></div></div>
   const isGuest = !sess
+  if (testing) return <div className="de-app"><Placement lang={st.lang || 'uk'} tr={st.trans || st.lang || 'uk'} guest={isGuest}
+    onDone={(lv) => { update({ level: lv, placed: 1, intro: 1 }); setTesting(false); setTab('learn'); setScreen(null) }}
+    onSkip={() => { setTesting(false); update({ placed: 0 }) }}
+    onAuth={(lv) => { update({ level: lv }); setTesting(false); toAuth() }} /></div>
+  if (!st.placed && !st.intro) return <div className="de-app"><div className="de-main"><Start onTest={() => setTesting(true)}
+    onPick={(lv) => update({ level: lv, placed: 1, intro: 1 })} /></div></div>
   const Gate = () => (
     <div className="de-empty">
       <b>Тільки для зареєстрованих</b>
@@ -173,13 +186,11 @@ export default function App() {
     </div>
   )
 
-  const showIntro = !st.intro
   const nav = [['home', 'Головна', 'home'], ['learn', 'Поточне навчання', 'learn'], ['errors', 'Робота над помилками', 'alert'], ['profile', 'Профіль', 'person']]
   const go = (t) => { setTab(t); setScreen(null) }
 
   return (
     <div className="de-app">
-      {showIntro && <Intro onDone={() => update({ intro: 1 })} />}
       <div className="de-main">
         {tab === 'home' && !screen && (
           <>
@@ -212,6 +223,11 @@ export default function App() {
           <>
             <div className="de-hello">{sess.name}</div>
             <div className="de-card"><b>Вивчено слів: {knownCount} / 500</b><div className="de-bar" style={{ marginTop: 8, marginBottom: 0 }}><div style={{ width: Math.min(100, knownCount / 5) + '%' }} /></div><div className="de-dim" style={{ marginTop: 6 }}>Слово зараховується, коли ти правильно відповів на нього у вправі.</div></div>
+            <div className="de-h2">Мій рівень</div>
+            <div className="de-card"><b>{(st.level || 'a1').toUpperCase()}</b>
+              <div className="de-seg" style={{ width: 'fit-content', margin: '8px 0' }}>{['a1', 'a2'].map((k) => <button key={k} className={(st.level || 'a1') === k ? 'on' : ''} onClick={() => update({ level: k })}>{k.toUpperCase()}</button>)}</div>
+              <div className="de-dim">B1 і B2 скоро.</div>
+              <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => setTesting(true)}>Пройти тест рівня ще раз</button></div>
             <div className="de-h2">Мова перекладу</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>
               <button className={lang === 'uk' ? 'on' : ''} onClick={() => update({ lang: 'uk' })}>UA</button>
