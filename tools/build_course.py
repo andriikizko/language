@@ -19,6 +19,10 @@ if os.path.exists(_wp):
         ln=ln.rstrip('\n')
         if not ln.strip(): continue
         bid,idx,a,uk,ru=ln.split('|'); WHY[(bid,int(idx))]=(a,uk.split(';'),ru.split(';'))
+DLG={}
+for ln in open('content/why/dlg.txt',encoding='utf8'):
+    if ln.strip():
+        _b,_d,_q,_u,_r=ln.rstrip('\n').split('|'); DLG[(_b,int(_d),int(_q))]=(_u,_r)
 out=[]
 def a2words(tid):
     return [l.split('|')[1] for l in open(f'content/nouns/a2/{tid[3:]}.tsv',encoding='utf8') if l.strip()]
@@ -45,16 +49,20 @@ for b in B:
             for w_,u_,r_ in zip(x['w'],uk_,ru_): assert u_.startswith('«'+w_+'»') and r_.startswith('«'+w_+'»'),(k,w_,u_[:40])
             x['y']=[[u,r] for u,r in zip(uk_,ru_)]
     dl=[]
-    for d in b['dialogs']:
+    for di,d in enumerate(b['dialogs']):
         lines=[dict(zip(('who','de','uk','ru'),l.split('|'))) for l in d['lines']]
         qs=[]
-        for quk,qru,opts,ci in d['qs']:
+        for qi,(quk,qru,opts,ci) in enumerate(d['qs']):
             o=[{'uk':x.split('|')[0],'ru':x.split('|')[-1]} for x in opts]
-            qs.append({'uk':quk,'ru':qru,'o':o,'c':ci})
+            qq={'uk':quk,'ru':qru,'o':o,'c':ci}
+            if (b['id'],di,qi) in DLG: qq['y']=list(DLG.pop((b['id'],di,qi)))
+            qs.append(qq)
         dl.append({'title':d['title'],'lines':lines,'qs':qs})
     assert len(RU[b['id']])==len(b['explain']),b['id']
     out.append({'id':b['id'],'title':b['title'],'sub':b['sub'],'nouns':b['nouns'],'adjs':b.get('adjs') or [],'adjlist':b.get('adjlist') or [],
       'verbs':b['verbs'],'topic':{'title':T[b['id']]['title'],'note':T[b['id']]['note'],'s':[dict(zip(('de','uk','ru'),x.split('|'))) for x in T[b['id']]['s']]},'numq':b.get('numq',False),'explain':[{'h':h,'p':p} for h,p in b['explain']],'explain_ru':[{'h':h,'p':p} for h,p in RU[b['id']]],'gaps':gaps,'dialogs':dl})
+_ids={b['id'] for b in B}
+assert not [k for k in DLG if k[0] in _ids],('dlg без питання',[k for k in DLG if k[0] in _ids][:3])
 assert not WHY,('why без речення',list(WHY)[:3])
 print('why:',sum(1 for b in out for x in b['gaps'] if 'y' in x),'з',sum(len(b['gaps']) for b in out))
 json.dump(out,open(f'src/app/data/course{SUF}.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))

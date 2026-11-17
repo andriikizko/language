@@ -1,0 +1,61 @@
+x|0|Anna пише «ich komme heute um 18 Uhr nach Hause»|Анна пишет «ich komme heute um 18 Uhr nach Hause»
+x|1|Анна просить Тома зварити суп («Kochst du bitte Suppe?»), сама вона не готує|Анна просит Тома сварить суп («Kochst du bitte Suppe?»), сама она не готовит
+x|2|Пітер пише «Ich bin krank und gehe zum Arzt»|Петер пишет «Ich bin krank und gehe zum Arzt»
+x|3|він пише «Ich komme am Mittwoch wieder» — у середу, не у вівторок|он пишет «Ich komme am Mittwoch wieder» — в среду, не во вторник
+x|4|Лена пише «Ich wohne jetzt in der Gartenstraße 12» — нова квартира|Лена пишет «Ich wohne jetzt in der Gartenstraße 12» — новая квартира
+x|5|у тексті є «einen Balkon» — балкон є|в тексте есть «einen Balkon» — балкон есть
+x|6|у суботу «Sa: 6.30–13.00 Uhr» — до 13:00|в субботу «Sa: 6.30–13.00 Uhr» — до 13:00
+x|7|оголошення: «kein Wasser im Haus von 9 bis 14 Uhr» — води немає|объявление: «kein Wasser im Haus von 9 bis 14 Uhr» — воды нет
+x|8|«Montag und Mittwoch» — два рази на тиждень|«Montag und Mittwoch» — два раза в неделю
+x|9|«ab 17 Uhr» — після 17:00|«ab 17 Uhr» — после 17:00
+x|10|«Rauchen verboten» — палити заборонено («nicht rauchen»)|«Rauchen verboten» — курить запрещено («nicht rauchen»)
+x|11|«Ausgang» — вихід, тобто туди виходять («hinaus»)|«Ausgang» — выход, то есть туда выходят («hinaus»)
+x|12|«leise sein» — бути тихо|«leise sein» — вести себя тихо
+x|13|«Pause» — перерва, у цей час зачинено|«Pause» — перерыв, в это время закрыто
+x|14|«entwerten» — закомпостувати квиток|«entwerten» — прокомпостировать билет
+x|15|у тексті «Ich heiße Olena Koval»: ім’я — Olena, Koval — прізвище|в тексте «Ich heiße Olena Koval»: имя — Olena, Koval — фамилия
+x|16|у тексті «Ich heiße Olena Koval»: Koval — прізвище, Olena — ім’я|в тексте «Ich heiße Olena Koval»: Koval — фамилия, Olena — имя
+x|17|«Ich wohne in Köln» — місце проживання; Lwiw — звідки вона родом|«Ich wohne in Köln» — место жительства; Lwiw — откуда она родом
+x|18|«arbeite als Verkäuferin» — працює продавчинею|«arbeite als Verkäuferin» — работает продавщицей
+x|19|правильне речення має правильний порядок слів: дієвідмінене дієслово на 2-му місці («Ich komme heute später…»)|в правильном предложении порядок слов верный: спрягаемый глагол на 2-м месте («Ich komme heute später…»)
+x|20|потрібне ввічливе й граматично правильне речення: «ich bin krank und komme…», дієслово на 2-му місці|нужно вежливое и грамматически верное предложение: «ich bin krank und komme…», глагол на 2-м месте
+x|21|правильно: «Ich möchte bitte einen Termin…» — ввічливо і дієслово на 2-му місці|правильно: «Ich möchte bitte einen Termin…» — вежливо и глагол на 2-м месте
+x|22|правильно: дієслово на 2-му місці, форма «ich bin», «wohne» (не «wohnen»)|правильно: глагол на 2-м месте, форма «ich bin», «wohne» (не «wohnen»)
+x|23|жінка каже «zwei Brötchen und ein Brot» — булочки й хліб|женщина говорит «zwei Brötchen und ein Brot» — булочки и хлеб
+x|24|«Das macht drei Euro fünfzig» — 3,50 €|«Das macht drei Euro fünfzig» — 3,50 €
+x|25|чоловік питає «wie komme ich zum Bahnhof?» — йому треба на вокзал|мужчина спрашивает «wie komme ich zum Bahnhof?» — ему нужен вокзал
+x|26|«Der Bahnhof ist neben der Post» — поряд із поштою|«Der Bahnhof ist neben der Post» — рядом с почтой
+x|27|«Wir gehen schwimmen» — підуть плавати|«Wir gehen schwimmen» — пойдут плавать
+x|28|«Um zehn Uhr am Schwimmbad» — о десятій|«Um zehn Uhr am Schwimmbad» — в десять
+x|29|пан Шмідт каже «Ich habe Fieber und Husten» — температура й кашель|господин Шмидт говорит «Ich habe Fieber und Husten» — температура и кашель
+x|30|«Kommen Sie heute um 15 Uhr» — сьогодні о 15:00|«Kommen Sie heute um 15 Uhr» — сегодня в 15:00
+y|0|Марко пише «ich habe gestern eine neue Wohnung gefunden»|Марко пишет «ich habe gestern eine neue Wohnung gefunden»
+y|1|у тексті «zwei Zimmer» — дві кімнати, не три|в тексте «zwei Zimmer» — две комнаты, не три
+y|2|«ich muss noch eine Kaution zahlen» — іще заплатити заставу|«ich muss noch eine Kaution zahlen» — ещё заплатить залог
+y|3|Юлія пише «Leider kann ich nicht kommen» — прийти не може|Юлия пишет «Leider kann ich nicht kommen» — прийти не может
+y|4|причина: «weil ich … zu meinen Eltern fahre» — їде до батьків|причина: «weil ich … zu meinen Eltern fahre» — едет к родителям
+y|5|«Mo geschlossen» — у понеділок зачинено|«Mo geschlossen» — в понедельник закрыто
+y|6|«Kinder bis 6 Jahre frei» — до 6 років безкоштовно|«Kinder bis 6 Jahre frei» — до 6 лет бесплатно
+y|7|«Kinder von 7 bis 14 Jahren: 3 Euro» — 3 €|«Kinder von 7 bis 14 Jahren: 3 Euro» — 3 €
+y|8|«vom 3. bis 14. Mai nicht bis zum Hauptbahnhof» — у травні буває, що не їздить до вокзалу|«vom 3. bis 14. Mai nicht bis zum Hauptbahnhof» — в мае бывает, что не ходит до вокзала
+y|9|«Bitte nehmen Sie die Linie 5» — лінія 5|«Bitte nehmen Sie die Linie 5» — линия 5
+y|10|«vor zwei Jahren … nach Deutschland gekommen» — два роки тому|«vor zwei Jahren … nach Deutschland gekommen» — два года назад
+y|11|«ich habe schon viele Freunde» — друзі вже є|«ich habe schon viele Freunde» — друзья уже есть
+y|12|«Nächstes Jahr möchte ich eine Ausbildung … machen» — навчання за професією|«Nächstes Jahr möchte ich eine Ausbildung … machen» — профессиональное обучение
+y|13|«Besichtigung: täglich ab 18 Uhr» — щодня після 18:00|«Besichtigung: täglich ab 18 Uhr» — ежедневно после 18:00
+y|14|«Ich wohne … in Hamburg» — живе в Гамбурзі; Charkiw — звідки родом|«Ich wohne … in Hamburg» — живёт в Гамбурге; Charkiw — откуда родом
+y|15|«Ich arbeite als Elektriker» — електрик|«Ich arbeite als Elektriker» — электрик
+y|16|«wohne seit einem Jahr in Hamburg» — один рік|«wohne seit einem Jahr in Hamburg» — один год
+y|17|правильне речення ввічливе й граматично коректне: «Sehr geehrter Herr Braun, …», дієслово на 2-му місці|правильное предложение вежливое и грамматически верное: «Sehr geehrter Herr Braun, …», глагол на 2-м месте
+y|18|правильно: «Könnten Sie … verschieben?» — ввічливе прохання з правильним порядком слів|правильно: «Könnten Sie … verschieben?» — вежливая просьба с верным порядком слов
+y|19|після «weil» дієслово йде в кінець: «…, weil ich … arbeiten möchte»|после «weil» глагол уходит в конец: «…, weil ich … arbeiten möchte»
+y|20|Perfekt: «bin … gegangen» + «habe … gesehen» — партицип стоїть в кінці|Perfekt: «bin … gegangen» + «habe … gesehen» — причастие стоит в конце
+y|21|правильно: повні речення, дієслово на 2-му місці («Ich möchte … einladen. Hast du … Zeit?»)|правильно: полные предложения, глагол на 2-м месте («Ich möchte … einladen. Hast du … Zeit?»)
+y|22|«Ich möchte einen Termin beim Zahnarzt … Es tut sehr weh» — зубний біль|«Ich möchte einen Termin beim Zahnarzt … Es tut sehr weh» — зубная боль
+y|23|«heute um 16 Uhr» — сьогодні о 16:00|«heute um 16 Uhr» — сегодня в 16:00
+y|24|«Am Samstag fahre ich mit Freunden zum See» — їде до озера|«Am Samstag fahre ich mit Freunden zum See» — едет к озеру
+y|25|«Dann treffen wir uns am Sonntag» — у неділю|«Dann treffen wir uns am Sonntag» — в воскресенье
+y|26|жінка каже «ich suche das Rathaus» — їй треба ратуша|женщина говорит «ich suche das Rathaus» — ей нужна ратуша
+y|27|«nur zehn Minuten zu Fuß» — десять хвилин пішки|«nur zehn Minuten zu Fuß» — десять минут пешком
+y|28|«einen Tisch für drei Personen» — для трьох|«einen Tisch für drei Personen» — на троих
+y|29|«Ein Wasser, bitte» — воду|«Ein Wasser, bitte» — воду

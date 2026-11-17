@@ -1,0 +1,74 @@
+numbers|0|0|«vier Euro fünfzig» — 4,50 €|«vier Euro fünfzig» — 4,50 €
+numbers|0|1|покупець дав 5 €, а коштує 4,50 € — решта «fünfzig Cent» (0,50 €)|покупатель дал 5 €, а стоит 4,50 € — сдача «fünfzig Cent» (0,50 €)
+numbers|1|0|Бен каже «Ich bin dreiundzwanzig» — 23|Бен говорит «Ich bin dreiundzwanzig» — 23
+numbers|1|1|Анна каже «Ich bin zweiundzwanzig» — 22|Анна говорит «Ich bin zweiundzwanzig» — 22
+days|0|0|у вівторок часу немає, домовилися на середу («am Mittwoch»)|во вторник времени нет, договорились на среду («am Mittwoch»)
+days|0|1|«halb elf» — це 10:30|«halb elf» — это 10:30
+colors|0|0|вона називає «Schwarz oder dunkelblau» — чорний або темно-синій|она называет «Schwarz oder dunkelblau» — чёрный или тёмно-синий
+colors|0|1|вона каже «Dann nehme ich Grau» — бере сіру|она говорит «Dann nehme ich Grau» — берёт серую
+family|0|0|сказано «Sie ist zwölf Jahre alt» — 12 років|сказано «Sie ist zwölf Jahre alt» — 12 лет
+family|0|1|відповідь «Nein, ich habe nur eine Schwester» — брата немає|ответ «Nein, ich habe nur eine Schwester» — брата нет
+food|0|0|замовлено «Ein Wasser und einen Kaffee» — воду й каву|заказано «Ein Wasser und einen Kaffee» — воду и кофе
+food|0|1|замовлено «Eine Suppe und einen Salat» — суп і салат|заказано «Eine Suppe und einen Salat» — суп и салат
+clothes|0|0|покупець питає про штани «in Größe 40»|покупатель спрашивает про брюки «in Größe 40»
+clothes|0|1|сказано «Sie ist zu klein» — замалі|сказано «Sie ist zu klein» — маловаты
+home|0|0|сказано «Sie hat drei Zimmer» — три кімнати|сказано «Sie hat drei Zimmer» — три комнаты
+home|0|1|відповідь «Sechshundert Euro» — 600 €|ответ «Sechshundert Euro» — 600 €
+city|0|0|«Dort rechts» — праворуч біля світлофора|«Dort rechts» — направо у светофора
+city|0|1|сказано «nur zehn Minuten zu Fuß» — 10 хвилин|сказано «nur zehn Minuten zu Fuß» — 10 минут
+jobs|0|0|він каже «Ich bin Ingenieur» — інженер|он говорит «Ich bin Ingenieur» — инженер
+jobs|0|1|вона відповідає «In einer Schule in Köln» — у школі в Кельні|она отвечает «In einer Schule in Köln» — в школе в Кёльне
+tech|0|0|він представляється «Hier ist Tom» — дзвонив Том|он представляется «Hier ist Tom» — звонил Том
+tech|0|1|сказано «Ja, sie hat meine Handynummer» — номер у неї є|сказано «Ja, sie hat meine Handynummer» — номер у неё есть
+body|0|0|сказано «Seit zwei Tagen» — два дні|сказано «Seit zwei Tagen» — два дня
+body|0|1|лікар радить «Bleiben Sie im Bett und trinken Sie viel Tee» — лишатися в ліжку й пити чай|врач советует «Bleiben Sie im Bett und trinken Sie viel Tee» — оставаться в постели и пить чай
+hobby|0|0|він каже «Ich spiele Fußball und gehe oft schwimmen» — футбол і плавання|он говорит «Ich spiele Fußball und gehe oft schwimmen» — футбол и плавание
+hobby|0|1|він каже «Am Wochenende wandere ich mit meiner Familie» — ходить у похід із родиною|он говорит «Am Wochenende wandere ich mit meiner Familie» — ходит в поход с семьёй
+a2_health|0|0|сказано «seit drei Tagen Fieber» — температура|сказано «seit drei Tagen Fieber» — температура
+a2_health|0|1|«Können Sie heute um 15 Uhr kommen? — Ja» — сьогодні о 15:00|«Können Sie heute um 15 Uhr kommen? — Ja» — сегодня в 15:00
+a2_health|1|0|аптекарка каже «Dann gebe ich Ihnen Tropfen» — краплі|аптекарь говорит «Dann gebe ich Ihnen Tropfen» — капли
+a2_health|1|1|сказано «Das macht 8,50 Euro»|сказано «Das macht 8,50 Euro»
+a2_travel|0|0|«ein Einzelzimmer für drei Nächte» — на три ночі|«ein Einzelzimmer für drei Nächte» — на три ночи
+a2_travel|0|1|«im Erdgeschoss» — на першому (нижньому) поверсі|«im Erdgeschoss» — на первом (нижнем) этаже
+a2_travel|1|0|«eine Woche in Spanien» — тиждень|«eine Woche in Spanien» — неделя
+a2_travel|1|1|«wir haben Barcelona besichtigt» — Барселону|«wir haben Barcelona besichtigt» — Барселону
+a2_shopping|0|0|клієнтка шукає куртку «in Größe 38»|клиентка ищет куртку «in Größe 38»
+a2_shopping|0|1|«heute im Angebot, nur 69 Euro» — 69 €|«heute im Angebot, nur 69 Euro» — 69 €
+a2_shopping|1|0|сказано «Der Bildschirm ist kaputt» — зламаний екран|сказано «Der Bildschirm ist kaputt» — сломан экран
+a2_shopping|1|1|«Haben Sie den Kassenbon dabei? — Ja, hier bitte» — чек|«Haben Sie den Kassenbon dabei? — Ja, hier bitte» — чек
+a2_feste|0|0|«ich habe am Samstag Geburtstag» — у суботу|«ich habe am Samstag Geburtstag» — в субботу
+a2_feste|0|1|«bring bitte etwas zu trinken mit» — щось випити|«bring bitte etwas zu trinken mit» — что-нибудь выпить
+a2_feste|1|0|«Wir schenken ihr ein Fahrrad» — велосипед|«Wir schenken ihr ein Fahrrad» — велосипед
+a2_feste|1|1|«ich backe eine Torte» — торт|«ich backe eine Torte» — торт
+a2_arbeit|0|0|«wohne seit zwei Jahren in Köln» — два роки|«wohne seit zwei Jahren in Köln» — два года
+a2_arbeit|0|1|«Ab dem ersten Mai» — з першого травня|«Ab dem ersten Mai» — с первого мая
+a2_arbeit|1|0|«musste immer lange arbeiten und hatte wenig Geld» — багато роботи й мало грошей|«musste immer lange arbeiten und hatte wenig Geld» — много работы и мало денег
+a2_arbeit|1|1|«weil die Arbeitszeit dort besser ist» — робочий час|«weil die Arbeitszeit dort besser ist» — рабочее время
+a2_wohnen|0|0|750 € Kaltmiete + 150 € Nebenkosten = 900 €|750 € Kaltmiete + 150 € Nebenkosten = 900 €
+a2_wohnen|0|1|«Nein» — ліфта немає, квартира на другому поверсі|«Nein» — лифта нет, квартира на втором этаже
+a2_wohnen|1|0|«ich bin umgezogen und möchte mich anmelden» — зареєструватися|«ich bin umgezogen und möchte mich anmelden» — зарегистрироваться
+a2_wohnen|1|1|«füllen Sie dieses Formular aus und unterschreiben Sie» — заповнити й підписати|«füllen Sie dieses Formular aus und unterschreiben Sie» — заполнить и подписать
+a2_schule|0|0|«die Grammatik ist schwer» — граматика|«die Grammatik ist schwer» — грамматика
+a2_schule|0|1|«Ich übe eine Stunde» — годину|«Ich übe eine Stunde» — час
+a2_schule|1|0|«im Lesen 90 Prozent» — 90|«im Lesen 90 Prozent» — 90
+a2_schule|1|1|«In zwei Wochen per Post» — поштою|«In zwei Wochen per Post» — почтой
+a2_medien|0|0|«Eine Komödie» — комедія|«Eine Komödie» — комедия
+a2_medien|0|1|«Sie beginnt um 20.15 Uhr»|«Sie beginnt um 20.15 Uhr»
+a2_medien|1|0|«ich kann die Datei nicht öffnen» — файл не відкривається|«ich kann die Datei nicht öffnen» — файл не открывается
+a2_medien|1|1|«Ich schicke sie dir noch einmal als PDF» — PDF|«Ich schicke sie dir noch einmal als PDF» — PDF
+a2_natur|0|0|«Im Norden regnet es und es ist windig» — дощ і вітер|«Im Norden regnet es und es ist windig» — дождь и ветер
+a2_natur|0|1|«Im Süden scheint die Sonne, bis 22 Grad» — до 22 градусів|«Im Süden scheint die Sonne, bis 22 Grad» — до 22 градусов
+a2_natur|1|0|«Wenn die Sonne scheint, gehen wir wandern» — йдуть у похід|«Wenn die Sonne scheint, gehen wir wandern» — идут в поход
+a2_natur|1|1|«Dann gehen wir ins Kino» — йдуть у кіно|«Dann gehen wir ins Kino» — идут в кино
+a2_amt|0|0|«ich möchte eine Bescheinigung beantragen» — довідку|«ich möchte eine Bescheinigung beantragen» — справку
+a2_amt|0|1|«füllen Sie dieses Formular aus» — заповнити бланк|«füllen Sie dieses Formular aus» — заполнить бланк
+a2_amt|1|0|«Das kostet 24 Euro»|«Das kostet 24 Euro»
+a2_amt|1|1|«dauert fünf Tage» — п’ять днів|«dauert fünf Tage» — пять дней
+a2_restaurant|0|0|«für zwei Personen» — для двох|«für zwei Personen» — для двоих
+a2_restaurant|0|1|«Dann nehme ich das Schnitzel und ein Wasser»|«Dann nehme ich das Schnitzel und ein Wasser»
+a2_restaurant|1|0|«Das macht 42,60 Euro»|«Das macht 42,60 Euro»
+a2_restaurant|1|1|«Machen Sie 45 Euro. Stimmt so» — решту залишити собі|«Machen Sie 45 Euro. Stimmt so» — сдачу оставить себе
+a2_freizeit|0|0|«Wollen wir ins Kino gehen?» — у кіно|«Wollen wir ins Kino gehen?» — в кино
+a2_freizeit|0|1|«Um 18 Uhr vor dem Kino» — о 18:00|«Um 18 Uhr vor dem Kino» — в 18:00
+a2_freizeit|1|0|«Das Training ist zweimal pro Woche» — двічі на тиждень|«Das Training ist zweimal pro Woche» — дважды в неделю
+a2_freizeit|1|1|«Ich interessiere mich mehr für Konzerte und Bücher» — концерти й книжки|«Ich interessiere mich mehr für Konzerte und Bücher» — концерты и книги

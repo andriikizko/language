@@ -121,18 +121,21 @@ export const makeQuestion = (id, lang) => {
     const cands = new Set([n + 1, n - 1, n + 10, n - 10, +String(n).split('').reverse().join('')])
     const wrong = shuffle([...cands].filter((x) => x !== n && x > 0 && x <= 100)).slice(0, 3)
     const opts = shuffle([card(n), ...wrong.map(card)])
-    return { id, type: 'choice', hint: 'Як це німецькою?', prompt: String(n), opts, correct: opts.indexOf(card(n)), explain: `${n} = ${card(n)}` }
+    const wmap = {}; wrong.forEach((x) => { wmap[card(x)] = lang === 'ru' ? `«${card(x)}» — это ${x}, а нужно ${n}` : `«${card(x)}» — це ${x}, а треба ${n}` })
+    return { id, type: 'choice', hint: 'Як це німецькою?', prompt: String(n), opts, correct: opts.indexOf(card(n)), explain: `${n} = ${card(n)}`, wmap }
   }
   if (t === 'l') {
     const b = blockById(r[0]); const d = b.dialogs[+r[1]]; const q = d.qs[+r[2]]
     const idx = shuffle(q.o.map((_, i) => i))
-    return { id, type: 'choice', hint: 'Діалог: «' + d.title + '»', prompt: q[lang], opts: idx.map((i) => q.o[i][lang]), correct: idx.indexOf(q.c),
+    const wmap = {}; if (q.y) q.o.forEach((o, k) => { if (k !== q.c) wmap[o[lang]] = (lang === 'ru' ? 'по диалогу: ' : 'за діалогом: ') + q.y[lang === 'ru' ? 1 : 0] })
+    return { id, type: 'choice', hint: 'Діалог: «' + d.title + '»', prompt: q[lang], opts: idx.map((i) => q.o[i][lang]), correct: idx.indexOf(q.c), wmap,
       explain: `Правильна відповідь: ${q.o[q.c][lang]}.`, block: b.id, dialog: +r[1] }
   }
   if (t === 'x' || t === 'y') {
     const x = (t === 'x' ? exam : exam2)[+r[0]]
     const idx = x.o.length === 3 ? shuffle(x.o.map((_, i) => i)) : x.o.map((_, i) => i)
-    return { id, type: 'choice', hint: { lesen: 'Lesen', schreiben: 'Schreiben', hoeren: 'Hören' }[x.sec], prompt: x.q, text: x.text, audio: x.audio,
+    const wmap = {}; if (x.y) x.o.forEach((o, k) => { if (k !== x.c) wmap[o] = (lang === 'ru' ? 'по тексту: ' : 'за текстом: ') + x.y[lang === 'ru' ? 1 : 0] })
+    return { id, type: 'choice', wmap, hint: { lesen: 'Lesen', schreiben: 'Schreiben', hoeren: 'Hören' }[x.sec], prompt: x.q, text: x.text, audio: x.audio,
       opts: idx.map((i) => x.o[i]), correct: idx.indexOf(x.c), explain: `Правильна відповідь: ${x.o[x.c]}.` }
   }
   return null
