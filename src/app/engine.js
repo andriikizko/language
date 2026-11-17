@@ -92,7 +92,7 @@ export const makeQuestion = (id, lang) => {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]
     const opts = shuffle([g.a, ...g.w])
     return { id, de: true, type: 'choice', hint: 'Встав пропущене слово', prompt: g.s, sub: g[lang], opts, correct: opts.indexOf(g.a),
-      explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, block: b.id }
+      explain: `${g.s.replace('___', g.a)} — ${g[lang].replace('___', g.a)}`, tpl: g.s, block: b.id }
   }
   if (t === 'e') {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]
