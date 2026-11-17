@@ -70,7 +70,10 @@ export const makeQuestion = (id, lang) => {
     const [kind, ...rest] = key.split(':')
     const it = itemOf(kind, rest.join(':'))
     if (mode === 'art') {
-      return { id, de: true, type: 'choice', hint: 'Який артикль?', prompt: it.de, sub: it[lang], opts: ['der', 'die', 'das'], correct: ['m', 'f', 'n'].indexOf(it.g),
+      const GN = lang === 'ru' ? { m: 'мужского рода', f: 'женского рода', n: 'среднего рода', p: 'множественное число' } : { m: 'чоловічого роду', f: 'жіночого роду', n: 'середнього роду', p: 'множина' }
+      const AD = lang === 'ru' ? { der: 'мужского рода', die: 'женского рода и множественного числа', das: 'среднего рода' } : { der: 'чоловічого роду', die: 'жіночого роду та множини', das: 'середнього роду' }
+      const wmap = {}; ;['der', 'die', 'das'].forEach((a, k) => { if (k !== ['m', 'f', 'n'].indexOf(it.g)) wmap[a] = lang === 'ru' ? `«${a}» — артикль ${AD[a]}, а «${it.de}» — ${GN[it.g]}` : `«${a}» — артикль ${AD[a]}, а «${it.de}» — слово ${GN[it.g]}` })
+      return { id, de: true, type: 'choice', hint: 'Який артикль?', prompt: it.de, sub: it[lang], opts: ['der', 'die', 'das'], correct: ['m', 'f', 'n'].indexOf(it.g), wmap,
         explain: `${withArt(it)} — ${it[lang]}.${it.pl ? ' Множина: die ' + it.pl + '.' : ''}` }
     }
     if (mode === 'pl') {
@@ -81,12 +84,14 @@ export const makeQuestion = (id, lang) => {
     const seen = new Set([it[lang]]); const others = shuffle(pool.filter((x) => x.de !== it.de && x[lang] !== it[lang])).filter((x) => { if (seen.has(x[lang])) return false; seen.add(x[lang]); return true }).slice(0, 3)
     if (mode === 'tr') {
       const opts = shuffle([it[lang], ...others.map((o) => o[lang])])
-      return { id, de: true, type: 'choice', hint: 'Обери переклад', prompt: labelDe(it), opts, correct: opts.indexOf(it[lang]),
+      const wmap = {}; others.forEach((o) => { wmap[o[lang]] = `«${o[lang]}» — це ${labelDe({ kind, ...o })}` })
+      return { id, de: true, type: 'choice', hint: 'Обери переклад', prompt: labelDe(it), opts, correct: opts.indexOf(it[lang]), wmap,
         explain: `${labelDe(it)} — ${it[lang]}.${it.f ? ' ' + it.f[0] + ', ' + it.f[1] + ', ' + it.f[2] + '…' : ''}` }
     }
     const lab = (x) => labelDe({ kind, ...x })
     const opts = shuffle([labelDe(it), ...others.map(lab)])
-    return { id, type: 'choice', hint: 'Як це німецькою?', prompt: it[lang], opts, correct: opts.indexOf(labelDe(it)), explain: `${it[lang]} — ${labelDe(it)}.` }
+    const wmap = {}; others.forEach((o) => { wmap[lab(o)] = `«${lab(o)}» — це «${o[lang]}»` })
+    return { id, type: 'choice', hint: 'Як це німецькою?', prompt: it[lang], opts, correct: opts.indexOf(labelDe(it)), wmap, explain: `${it[lang]} — ${labelDe(it)}.` }
   }
   if (t === 'g') {
     const b = blockById(r[0]); const g = b.gaps[+r[1]]

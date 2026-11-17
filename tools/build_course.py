@@ -12,6 +12,13 @@ exec(open(CD+'explain_ru.py',encoding='utf8').read())
 EXTRA={}
 import os
 if os.path.exists(CD+'gaps_extra.py'): exec(open(CD+'gaps_extra.py',encoding='utf8').read())
+WHY={}
+_wp='content/why/course_'+LV+'.txt'
+if os.path.exists(_wp):
+    for ln in open(_wp,encoding='utf8'):
+        ln=ln.rstrip('\n')
+        if not ln.strip(): continue
+        bid,idx,a,uk,ru=ln.split('|'); WHY[(bid,int(idx))]=(a,uk.split(';'),ru.split(';'))
 out=[]
 def a2words(tid):
     return [l.split('|')[1] for l in open(f'content/nouns/a2/{tid[3:]}.tsv',encoding='utf8') if l.strip()]
@@ -30,6 +37,13 @@ for b in B:
         assert a not in wr, g
         gaps.append({'s':s,'a':a,'w':wr,'uk':uk,'ru':ru})
     _seen=set(); gaps=[x for x in gaps if not (x['s'] in _seen or _seen.add(x['s']))]
+    for i,x in enumerate(gaps):
+        k=(b['id'],i)
+        if k in WHY:
+            a,uk_,ru_=WHY.pop(k)
+            assert a==x['a'] and len(uk_)==len(ru_)==len(x['w']),(k,a,x['a'],len(uk_),len(ru_))
+            for w_,u_,r_ in zip(x['w'],uk_,ru_): assert u_.startswith('«'+w_+'»') and r_.startswith('«'+w_+'»'),(k,w_,u_[:40])
+            x['y']=[[u,r] for u,r in zip(uk_,ru_)]
     dl=[]
     for d in b['dialogs']:
         lines=[dict(zip(('who','de','uk','ru'),l.split('|'))) for l in d['lines']]
@@ -41,5 +55,7 @@ for b in B:
     assert len(RU[b['id']])==len(b['explain']),b['id']
     out.append({'id':b['id'],'title':b['title'],'sub':b['sub'],'nouns':b['nouns'],'adjs':b.get('adjs') or [],'adjlist':b.get('adjlist') or [],
       'verbs':b['verbs'],'topic':{'title':T[b['id']]['title'],'note':T[b['id']]['note'],'s':[dict(zip(('de','uk','ru'),x.split('|'))) for x in T[b['id']]['s']]},'numq':b.get('numq',False),'explain':[{'h':h,'p':p} for h,p in b['explain']],'explain_ru':[{'h':h,'p':p} for h,p in RU[b['id']]],'gaps':gaps,'dialogs':dl})
+assert not WHY,('why без речення',list(WHY)[:3])
+print('why:',sum(1 for b in out for x in b['gaps'] if 'y' in x),'з',sum(len(b['gaps']) for b in out))
 json.dump(out,open(f'src/app/data/course{SUF}.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 print(len(out),'блоків',sum(len(b['gaps']) for b in out),'речень')
