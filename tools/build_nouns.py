@@ -30,6 +30,7 @@ for f in sorted(glob.glob('content/nouns/*.tsv'))+sorted(glob.glob('content/noun
         if de in ALT: rec['alt']=ALT[de]
         words[key]=rec
 out=sorted(words.values(),key=lambda r:r['de'].lower())
-json.dump({'topics':BL,'words':out},open('src/app/data/nouns.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
+_used={r['topic'] for r in out}
+json.dump({'topics':{k:v for k,v in BL.items() if k in _used},'words':out},open('src/app/data/nouns.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 open('content/review_auto.txt','w',encoding='utf8').write('\n'.join(f'{a} — {b}' for a,b in review))
 print(len(out),'слів;',len(review),'на перевірку')
