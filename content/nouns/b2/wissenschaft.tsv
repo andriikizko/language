@@ -1,0 +1,57 @@
+f|Wissenschaft|Wissenschaften|наука|наука|1
+m|Forscher|Forscher|дослідник|исследователь|1
+f|Forschung|Forschungen|дослідження (діяльність)|исследование (деятельность)|1
+f|Studie|Studien|дослідження (робота)|исследование (работа)|1
+f|Untersuchung|Untersuchungen|обстеження, дослідження|обследование, исследование|1
+n|Ergebnis|Ergebnisse|результат|результат|1
+f|Erkenntnis|Erkenntnisse|пізнання, висновок|познание, вывод|1
+f|Entdeckung|Entdeckungen|відкриття|открытие|1
+f|Erfindung|Erfindungen|винахід|изобретение|1
+f|Entwicklung|Entwicklungen|розвиток, розробка|развитие, разработка|1
+m|Fortschritt|Fortschritte|прогрес|прогресс|1
+f|Technik|Techniken|техніка, технологія|техника, технология|1
+f|Technologie|Technologien|технологія|технология|1
+n|Experiment|Experimente|експеримент|эксперимент|1
+f|Hypothese|Hypothesen|гіпотеза|гипотеза|1
+f|Theorie|Theorien|теорія|теория|1
+m|Beweis|Beweise|доказ|доказательство|1
+f|Annahme|Annahmen|припущення|предположение|1
+f|Behauptung|Behauptungen|твердження|утверждение|1
+f|Messung|Messungen|вимірювання|измерение|1
+f|Auswertung|Auswertungen|аналіз, обробка (даних)|анализ, обработка (данных)|0
+f|Methode|Methoden|метод|метод|1
+n|Verfahren|Verfahren|процедура, метод|процедура, метод|1
+m|Versuch|Versuche|спроба, дослід|попытка, опыт|1
+n|Labor|Labore|лабораторія|лаборатория|1
+f|Wirkung|Wirkungen|дія, вплив|действие, влияние|1
+f|Ursache|Ursachen|причина|причина|1
+f|Folge|Folgen|наслідок|следствие|1
+m|Zusammenhang|Zusammenhänge|зв'язок, контекст|связь, контекст|1
+m|Einfluss|Einflüsse|вплив|влияние|1
+f|Gefahr|Gefahren|небезпека|опасность|1
+n|Risiko|Risiken|ризик|риск|1
+f|Chance|Chancen|шанс|шанс|1
+f|Lösung|Lösungen|рішення|решение|1
+n|Problem|Probleme|проблема|проблема|1
+f|Energie|Energien|енергія|энергия|1
+m|Strom|Ströme|електрострум|электричество|1
+f|Quelle|Quellen|джерело|источник|1
+m|Rohstoff|Rohstoffe|сировина|сырьё|1
+f|Maschine|Maschinen|машина, верстат|машина, станок|1
+m|Roboter|Roboter|робот|робот|1
+f|Künstliche Intelligenz|-|штучний інтелект|искусственный интеллект|1
+m|Algorithmus|Algorithmen|алгоритм|алгоритм|1
+f|Datenbank|Datenbanken|база даних|база данных|1
+m|Satellit|Satelliten|супутник|спутник|0
+f|Raumfahrt|-|космонавтика|космонавтика|0
+n|Weltall|-|космос, всесвіт|космос, вселенная|0
+f|Medizin|-|медицина|медицина|1
+m|Impfstoff|Impfstoffe|вакцина|вакцина|1
+f|Genetik|-|генетика|генетика|0
+n|Erbgut|-|геном, спадковий матеріал|геном, наследственный материал|0
+f|Nanotechnologie|-|нанотехнологія|нанотехнология|0
+m|Wissenschaftler|Wissenschaftler|науковець|учёный|1
+f|Veröffentlichung|Veröffentlichungen|публікація|публикация|1
+f|Fachzeitschrift|Fachzeitschriften|фаховий журнал|специализированный журнал|0
+m|Nachweis|Nachweise|доказ, підтвердження|доказательство, подтверждение|1
+f|Genauigkeit|-|точність|точность|1

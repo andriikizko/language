@@ -1,0 +1,57 @@
+f|Gesundheit|-|здоров'я|здоровье|1
+n|Gesundheitswesen|-|система охорони здоров'я|система здравоохранения|1
+f|Krankenversicherung|Krankenversicherungen|медичне страхування|медицинская страховка|1
+f|Behandlung|Behandlungen|лікування|лечение|1
+f|Therapie|Therapien|терапія|терапия|1
+f|Diagnose|Diagnosen|діагноз|диагноз|1
+n|Symptom|Symptome|симптом|симптом|1
+f|Krankheit|Krankheiten|хвороба|болезнь|1
+f|Erkrankung|Erkrankungen|захворювання|заболевание|1
+f|Infektion|Infektionen|інфекція|инфекция|1
+n|Virus|Viren|вірус|вирус|1
+f|Epidemie|Epidemien|епідемія|эпидемия|1
+f|Pandemie|Pandemien|пандемія|пандемия|1
+f|Ansteckung|Ansteckungen|зараження|заражение|1
+f|Impfung|Impfungen|щеплення|прививка|1
+f|Vorbeugung|-|профілактика|профилактика|0
+f|Vorsorge|-|профілактичний огляд, превенція|профилактический осмотр, превенция|1
+f|Operation|Operationen|операція|операция|1
+m|Eingriff|Eingriffe|втручання|вмешательство|1
+f|Narkose|Narkosen|наркоз|наркоз|0
+f|Nebenwirkung|Nebenwirkungen|побічна дія|побочное действие|1
+f|Dosis|Dosen|доза|доза|1
+m|Wirkstoff|Wirkstoffe|діюча речовина|действующее вещество|0
+f|Beschwerde|Beschwerden|скарга, недуга|жалоба, недуг|1
+m|Schmerz|Schmerzen|біль|боль|1
+f|Entzündung|Entzündungen|запалення|воспаление|1
+f|Allergie|Allergien|алергія|аллергия|1
+m|Kreislauf|Kreisläufe|кровообіг|кровообращение|0
+n|Herz|Herzen|серце|сердце|1
+m|Blutdruck|-|кров'яний тиск|кровяное давление|1
+m|Stoffwechsel|-|обмін речовин|обмен веществ|0
+f|Ernährung|-|харчування|питание|1
+n|Übergewicht|-|надмірна вага|избыточный вес|1
+f|Bewegung|Bewegungen|рух|движение|1
+n|Training|Trainings|тренування|тренировка|1
+f|Erholung|-|відпочинок, відновлення|отдых, восстановление|1
+m|Stress|-|стрес|стресс|1
+f|Belastung|Belastungen|навантаження|нагрузка|1
+f|Überlastung|Überlastungen|перевантаження|перегрузка|0
+n|Burn-out|-|вигорання|выгорание|1
+f|Depression|Depressionen|депресія|депрессия|1
+f|Psyche|Psychen|психіка|психика|1
+f|Pflege|-|догляд|уход|1
+m|Pfleger|Pfleger|санітар, доглядальник|санитар, сиделка|1
+f|Pflegekraft|Pflegekräfte|медичний працівник (доглядальник)|медработник (по уходу)|1
+n|Krankenhaus|Krankenhäuser|лікарня|больница|1
+f|Notaufnahme|Notaufnahmen|приймальне відділення|приёмное отделение|1
+m|Rettungsdienst|Rettungsdienste|швидка допомога|скорая помощь|0
+f|Rehabilitation|-|реабілітація|реабилитация|1
+f|Genesung|-|одужання|выздоровление|1
+f|Heilung|Heilungen|зцілення|исцеление|1
+f|Lebenserwartung|-|тривалість життя|продолжительность жизни|1
+f|Alterung|-|старіння|старение|0
+f|Vorerkrankung|Vorerkrankungen|попереднє захворювання|предшествующее заболевание|0
+n|Gutachten|Gutachten|експертний висновок|экспертное заключение|0
+f|Einwilligung|Einwilligungen|згода (пацієнта)|согласие (пациента)|0
+f|Schweigepflicht|-|лікарська таємниця|врачебная тайна|0

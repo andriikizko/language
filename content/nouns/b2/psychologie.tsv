@@ -1,0 +1,60 @@
+f|Psychologie|-|психологія|психология|1
+f|Persönlichkeit|Persönlichkeiten|особистість|личность|1
+m|Charakter|Charaktere|характер|характер|1
+f|Eigenschaft|Eigenschaften|властивість, риса|свойство, черта|1
+f|Stärke|Stärken|сильна сторона|сильная сторона|1
+f|Schwäche|Schwächen|слабкість|слабость|1
+n|Selbstbewusstsein|-|впевненість у собі|уверенность в себе|1
+n|Selbstvertrauen|-|довіра до себе|доверие к себе|1
+n|Selbstwertgefühl|-|самооцінка|самооценка|0
+f|Erwartung|Erwartungen|очікування|ожидание|1
+f|Enttäuschung|Enttäuschungen|розчарування|разочарование|1
+f|Angst|Ängste|страх|страх|1
+f|Sorge|Sorgen|турбота, тривога|забота, тревога|1
+f|Unsicherheit|Unsicherheiten|невпевненість|неуверенность|1
+f|Hemmung|Hemmungen|скутість, гальмування|скованность, торможение|0
+f|Scham|-|сором|стыд|1
+n|Schuldgefühl|Schuldgefühle|почуття провини|чувство вины|1
+f|Eifersucht|-|ревнощі|ревность|1
+m|Neid|-|заздрість|зависть|1
+f|Dankbarkeit|-|вдячність|благодарность|1
+f|Zufriedenheit|-|задоволення|удовлетворённость|1
+n|Glück|-|щастя, удача|счастье, удача|1
+f|Trauer|-|смуток, жалоба|печаль, траур|1
+f|Wut|-|гнів|ярость|1
+f|Ruhe|-|спокій|спокойствие|1
+f|Gelassenheit|-|незворушність|невозмутимость|0
+f|Geduld|-|терпіння|терпение|1
+f|Disziplin|-|дисципліна|дисциплина|1
+m|Wille|Willen|воля|воля|1
+f|Entscheidung|Entscheidungen|рішення|решение|1
+f|Überzeugung|Überzeugungen|переконання|убеждение|1
+f|Einstellung|-|ставлення, погляд|отношение, взгляд|0
+f|Haltung|Haltungen|позиція, постава|позиция, осанка|1
+f|Gewohnheit|-|звичка|привычка|0
+n|Verhalten|-|поведінка|поведение|1
+f|Reaktion|Reaktionen|реакція|реакция|1
+f|Wahrnehmung|Wahrnehmungen|сприйняття|восприятие|1
+f|Erinnerung|Erinnerungen|спогад, пам'ять|воспоминание, память|1
+n|Gedächtnis|-|пам'ять|память|1
+f|Aufmerksamkeit|-|увага|внимание|0
+f|Vorstellung|Vorstellungen|уявлення|представление|1
+f|Absicht|Absichten|намір|намерение|1
+n|Ziel|Ziele|мета|цель|1
+f|Motivation|-|мотивація|мотивация|0
+f|Beziehung|Beziehungen|стосунки|отношения|1
+f|Freundschaft|Freundschaften|дружба|дружба|1
+n|Vertrauen|-|довіра|доверие|1
+f|Verantwortung|-|відповідальність|ответственность|0
+m|Konflikt|-|конфлікт|конфликт|0
+n|Missverständnis|Missverständnisse|непорозуміння|недоразумение|1
+f|Kommunikation|Kommunikationen|комунікація|коммуникация|1
+f|Rücksicht|-|увага до інших, делікатність|внимание к другим, деликатность|1
+n|Mitgefühl|-|співчуття|сочувствие|1
+n|Verständnis|-|розуміння|понимание|1
+f|Grenze|-|межа (особиста)|граница (личная)|0
+f|Entspannung|-|розслаблення|расслабление|1
+f|Achtsamkeit|-|усвідомленість|осознанность|0
+f|Lebensqualität|-|якість життя|качество жизни|1
+f|Veränderung|Veränderungen|зміна|изменение|1
+f|Krise|-|криза (особиста)|кризис (личный)|0

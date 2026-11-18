@@ -1,0 +1,55 @@
+f|Digitalisierung|-|цифровізація|цифровизация|0
+n|Internet|-|інтернет|интернет|1
+n|Netz|Netze|мережа|сеть|1
+f|Plattform|-|платформа|платформа|0
+f|Software|Softwares|програмне забезпечення|программное обеспечение|1
+f|Hardware|-|апаратне забезпечення|аппаратное обеспечение|1
+f|Anwendung|Anwendungen|застосунок, застосування|приложение, применение|1
+f|App|Apps|застосунок|приложение|1
+n|Betriebssystem|Betriebssysteme|операційна система|операционная система|1
+f|Datei|Dateien|файл|файл|1
+n|Dokument|Dokumente|документ|документ|1
+m|Ordner|Ordner|папка|папка|1
+f|Speicherung|Speicherungen|збереження|хранение|0
+m|Speicher|Speicher|пам'ять, сховище|память, хранилище|1
+f|Cloud|Clouds|хмара (сховище)|облако (хранилище)|1
+f|Datensicherung|Datensicherungen|резервне копіювання|резервное копирование|1
+m|Nutzer|Nutzer|користувач|пользователь|1
+n|Konto|Konten|обліковий запис, рахунок|учётная запись, счёт|1
+n|Passwort|Passwörter|пароль|пароль|1
+f|Anmeldung|Anmeldungen|вхід, реєстрація|вход, регистрация|1
+f|Verschlüsselung|Verschlüsselungen|шифрування|шифрование|1
+f|Sicherheitslücke|Sicherheitslücken|вразливість|уязвимость|1
+m|Hacker|Hacker|хакер|хакер|1
+m|Angriff|Angriffe|атака|атака|1
+n|Schadprogramm|Schadprogramme|шкідлива програма|вредоносная программа|0
+n|Phishing|-|фішинг|фишинг|1
+m|Betrüger|Betrüger|шахрай|мошенник|1
+f|Überwachung|Überwachungen|стеження|слежка|1
+f|Privatsphäre|-|приватність|приватность|1
+m|Datenschutz|-|захист даних|защита данных|1
+f|Datenschutzgrundverordnung|-|Загальний регламент захисту даних (GDPR)|Общий регламент по защите данных (GDPR)|0
+p|Daten|Daten|дані|данные|1
+f|Erhebung|Erhebungen|збір (даних), опитування|сбор (данных), опрос|1
+f|Weitergabe|-|передача (третім особам)|передача (третьим лицам)|1
+f|Zustimmung|Zustimmungen|згода|согласие|1
+f|Werbeanzeige|Werbeanzeigen|рекламне оголошення|рекламное объявление|0
+n|Profil|Profile|профіль|профиль|1
+f|Suchmaschine|Suchmaschinen|пошукова система|поисковая система|1
+m|Algorithmus|-|алгоритм|алгоритм|0
+f|Empfehlung|Empfehlungen|рекомендація|рекомендация|1
+f|Abhängigkeit|Abhängigkeiten|залежність|зависимость|1
+f|Sucht|Süchte|залежність (шкідлива)|зависимость (вредная)|1
+f|Bildschirmzeit|-|екранний час|экранное время|0
+f|Erreichbarkeit|-|доступність (на зв'язку)|доступность (на связи)|1
+f|Arbeit|-|робота|работа|0
+n|Homeoffice|Homeoffices|віддалена робота вдома|удалённая работа из дома|1
+f|Videokonferenz|Videokonferenzen|відеоконференція|видеоконференция|1
+f|Automatisierung|Automatisierungen|автоматизація|автоматизация|1
+f|Vernetzung|Vernetzungen|об'єднання в мережу|объединение в сеть|1
+n|Smartphone|Smartphones|смартфон|смартфон|1
+f|Verbindung|Verbindungen|з'єднання|соединение|1
+f|Störung|Störungen|збій, перешкода|сбой, помеха|1
+n|Update|Updates|оновлення|обновление|1
+f|Funktion|Funktionen|функція|функция|1
+f|Einstellung|Einstellungen|налаштування|настройка|1

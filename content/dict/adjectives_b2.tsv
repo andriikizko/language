@@ -1,0 +1,47 @@
+rentabel|рентабельний|рентабельный|b2_wirtschaft|0|||
+finanziell|фінансовий|финансовый|b2_wirtschaft|1|||
+effizient|ефективний|эффективный|b2_wirtschaft|1|ineffizient||
+konkurrenzfähig|конкурентоспроможний|конкурентоспособный|b2_wirtschaft|0|||
+verbindlich|обов'язковий, зобов'язальний|обязательный, обязывающий|b2_recht|1|unverbindlich||
+gesetzlich|законний, встановлений законом|законный, установленный законом|b2_recht|1|||
+rechtswidrig|протиправний|противоправный|b2_recht|0|rechtmäßig||
+zulässig|допустимий|допустимый|b2_recht|0|unzulässig||
+schuldig|винний|виновный|b2_recht|1|unschuldig||
+haftbar|відповідальний (юридично)|ответственный (юридически)|b2_recht|0|||
+wissenschaftlich|науковий|научный|b2_wissenschaft|1|||
+technisch|технічний|технический|b2_wissenschaft|1|||
+experimentell|експериментальний|экспериментальный|b2_wissenschaft|0|||
+nachweisbar|доказовий|доказуемый|b2_wissenschaft|0|||
+messbar|вимірюваний|измеримый|b2_wissenschaft|0|||
+umstritten|спірний|спорный|b2_politik|1|unumstritten||
+demokratisch|демократичний|демократический|b2_politik|1|undemokratisch||
+ehrenamtlich|добровільний (безоплатний)|добровольный (безвозмездный)|b2_migration|0|||
+fremdenfeindlich|ксенофобський|ксенофобский|b2_migration|0|||
+integriert|інтегрований|интегрированный|b2_migration|0|||
+vielfältig|різноманітний|разнообразный|b2_migration|1|einseitig||
+offensichtlich|очевидний|очевидный|b2_medien|1|||
+fragwürdig|сумнівний|сомнительный|b2_medien|0|||
+einseitig|однобічний|односторонний|b2_medien|0|vielseitig||
+subjektiv|суб'єктивний|субъективный|b2_medien|1|objektiv||
+vernetzt|під'єднаний до мережі|связанный в сеть|b2_digital|0|||
+anonym|анонімний|анонимный|b2_digital|0|||
+verschlüsselt|зашифрований|зашифрованный|b2_digital|0|||
+abhängig|залежний|зависимый|b2_digital|1|unabhängig||
+unabhängig|незалежний|независимый|b2_digital|1|abhängig||
+erblich|спадковий|наследственный|b2_gesundheit|0|||
+psychisch|психічний|психический|b2_psychologie|1|||
+seelisch|душевний|душевный|b2_psychologie|0|||
+belastbar|витривалий|выносливый|b2_psychologie|0|||
+gelassen|незворушний|невозмутимый|b2_psychologie|0|aufgeregt||
+verunsichert|збентежений, невпевнений|обеспокоенный, неуверенный|b2_psychologie|0|||
+zuversichtlich|сповнений надії|полный надежды|b2_psychologie|1|pessimistisch||
+praxisnah|наближений до практики|приближенный к практике|b2_bildung|0|||
+anerkannt|визнаний|признанный|b2_bildung|0|||
+künstlerisch|мистецький|художественный|b2_kultur|1|||
+anspruchslos|невибагливий|непритязательный|b2_kultur|0|anspruchsvoll||
+knapp|нестатній, обмежений|недостаточный, ограниченный|b2_umwelt|1|||
+dringend|терміновий|срочный|b2_umwelt|1|||
+erheblich|значний|значительный|b2_wirtschaft|1|geringfügig||
+geringfügig|незначний|незначительный|b2_wirtschaft|0|erheblich||
+zunehmend|дедалі більший|всё больший|b2_wirtschaft|0|abnehmend||
+umfangreich|обширний|обширный|b2_wissenschaft|0|||

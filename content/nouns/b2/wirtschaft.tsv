@@ -1,0 +1,60 @@
+f|Wirtschaft|-|економіка, господарство|экономика, хозяйство|1
+m|Markt|Märkte|ринок|рынок|1
+m|Konzern|Konzerne|концерн, корпорація|концерн, корпорация|1
+n|Unternehmen|Unternehmen|підприємство|предприятие|1
+m|Gewinn|Gewinne|прибуток|прибыль|1
+m|Verlust|Verluste|збиток, втрата|убыток, потеря|1
+m|Umsatz|Umsätze|оборот, виручка|оборот, выручка|1
+f|Investition|Investitionen|інвестиція|инвестиция|1
+m|Anleger|Anleger|інвестор|инвестор|0
+f|Aktie|Aktien|акція|акция|1
+f|Bilanz|Bilanzen|баланс, підсумок|баланс, итог|0
+n|Wachstum|-|зростання|рост|1
+f|Krise|Krisen|криза|кризис|1
+f|Inflation|Inflationen|інфляція|инфляция|1
+m|Haushalt|Haushalte|бюджет, домогосподарство|бюджет, домохозяйство|0
+f|Steuer|Steuern|податок|налог|1
+f|Abgabe|Abgaben|збір, відрахування|сбор, отчисление|0
+n|Einkommen|Einkommen|дохід|доход|1
+m|Lohn|Löhne|заробітна плата (робітника)|заработная плата (рабочего)|1
+n|Gehalt|Gehälter|оклад|оклад|1
+f|Gewerkschaft|Gewerkschaften|профспілка|профсоюз|1
+m|Tarifvertrag|Tarifverträge|колективний договір|коллективный договор|0
+f|Kündigung|Kündigungen|звільнення, розірвання договору|увольнение, расторжение договора|1
+f|Arbeitslosigkeit|-|безробіття|безработица|1
+m|Fachkräftemangel|-|дефіцит кваліфікованих кадрів|дефицит квалифицированных кадров|1
+f|Branche|Branchen|галузь|отрасль|1
+m|Wettbewerb|Wettbewerbe|конкуренція, змагання|конкуренция, соревнование|1
+f|Konkurrenz|-|конкуренція, конкуренти|конкуренция, конкуренты|1
+m|Lieferant|Lieferanten|постачальник|поставщик|1
+f|Lieferkette|Lieferketten|ланцюг поставок|цепочка поставок|0
+m|Verbraucher|Verbraucher|споживач|потребитель|1
+f|Nachfrage|Nachfragen|попит|спрос|1
+n|Angebot|Angebote|пропозиція|предложение|1
+m|Preisanstieg|Preisanstiege|зростання цін|рост цен|0
+f|Rezession|Rezessionen|рецесія|рецессия|0
+f|Förderung|Förderungen|підтримка, дотація|поддержка, дотация|0
+f|Subvention|Subventionen|субсидія|субсидия|0
+m|Mittelstand|-|середній бізнес|средний бизнес|0
+n|Start-up|Start-ups|стартап|стартап|1
+f|Gründung|Gründungen|заснування|основание|1
+m|Gründer|Gründer|засновник|основатель|1
+f|Geschäftsführung|Geschäftsführungen|керівництво, дирекція|руководство, дирекция|0
+m|Vorstand|Vorstände|правління|правление|0
+f|Belegschaft|Belegschaften|колектив працівників|коллектив работников|0
+f|Überstunde|Überstunden|понаднормова година|сверхурочный час|1
+f|Teilzeit|-|неповний робочий день|неполный рабочий день|1
+f|Vollzeit|-|повний робочий день|полный рабочий день|1
+f|Weiterbildung|Weiterbildungen|підвищення кваліфікації|повышение квалификации|1
+f|Karriereleiter|Karriereleitern|кар'єрні сходи|карьерная лестница|0
+f|Verantwortung|Verantwortungen|відповідальність|ответственность|1
+f|Leistung|Leistungen|досягнення, послуга|достижение, услуга|1
+m|Erfolg|Erfolge|успіх|успех|1
+f|Herausforderung|Herausforderungen|виклик, складне завдання|вызов, сложная задача|1
+f|Zusammenarbeit|-|співпраця|сотрудничество|1
+f|Verhandlung|Verhandlungen|переговори|переговоры|1
+f|Vereinbarung|Vereinbarungen|домовленість|договорённость|1
+m|Vertrag|Verträge|договір|договор|1
+f|Frist|Fristen|строк|срок|1
+f|Haftung|Haftungen|відповідальність (юридична)|ответственность (юридическая)|0
+f|Rendite|Renditen|прибутковість|доходность|0

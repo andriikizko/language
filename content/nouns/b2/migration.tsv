@@ -1,0 +1,61 @@
+f|Migration|Migrationen|міграція|миграция|1
+m|Migrant|Migranten|мігрант|мигрант|1
+m|Flüchtling|Flüchtlinge|біженець|беженец|1
+f|Flucht|-|втеча|бегство|1
+n|Asyl|-|притулок, азил|убежище, асил|1
+m|Asylbewerber|Asylbewerber|шукач притулку|проситель убежища|1
+m|Asylantrag|Asylanträge|заява про надання притулку|заявление о предоставлении убежища|1
+f|Aufenthaltserlaubnis|Aufenthaltserlaubnisse|дозвіл на проживання|вид на жительство|1
+f|Staatsangehörigkeit|Staatsangehörigkeiten|громадянство|гражданство|1
+f|Einbürgerung|Einbürgerungen|натуралізація|натурализация|1
+f|Einwanderung|-|імміграція|иммиграция|1
+f|Auswanderung|-|еміграція|эмиграция|1
+m|Zuwanderer|Zuwanderer|іммігрант|иммигрант|1
+f|Heimat|-|батьківщина|родина|1
+f|Herkunft|-|походження|происхождение|1
+f|Identität|Identitäten|ідентичність|идентичность|1
+f|Zugehörigkeit|-|приналежність|принадлежность|1
+f|Sprachbarriere|Sprachbarrieren|мовний бар'єр|языковой барьер|1
+m|Integrationskurs|Integrationskurse|інтеграційний курс|интеграционный курс|1
+f|Eingliederung|-|інтеграція, включення|интеграция, включение|0
+f|Anpassung|Anpassungen|адаптація|адаптация|1
+n|Vorurteil|Vorurteile|упередження|предрассудок|1
+f|Diskriminierung|Diskriminierungen|дискримінація|дискриминация|1
+m|Rassismus|-|расизм|расизм|1
+f|Fremdenfeindlichkeit|-|ксенофобія|ксенофобия|0
+f|Toleranz|-|толерантність|толерантность|1
+f|Vielfalt|-|різноманіття|разнообразие|1
+f|Bereicherung|Bereicherungen|збагачення|обогащение|1
+f|Parallelgesellschaft|Parallelgesellschaften|паралельне суспільство|параллельное общество|0
+f|Einwanderungsgesellschaft|Einwanderungsgesellschaften|суспільство іммігрантів|общество иммигрантов|0
+m|Arbeitsmarkt|Arbeitsmärkte|ринок праці|рынок труда|1
+f|Arbeitserlaubnis|Arbeitserlaubnisse|дозвіл на роботу|разрешение на работу|1
+f|Anerkennung|-|визнання (кваліфікацій)|признание (квалификаций)|0
+f|Unterkunft|Unterkünfte|житло, розміщення|жильё, размещение|1
+n|Aufnahmelager|Aufnahmelager|табір для прийому|лагерь для приёма|0
+f|Gemeinschaftsunterkunft|Gemeinschaftsunterkünfte|спільне помешкання|общее жильё|0
+f|Willkommenskultur|-|культура привітності|культура гостеприимства|0
+f|Hilfsbereitschaft|-|готовність допомогти|готовность помочь|1
+n|Ehrenamt|Ehrenämter|волонтерство, почесна посада|волонтёрство, почётная должность|1
+m|Freiwillige|Freiwillige|волонтер|волонтёр|1
+f|Beratung|Beratungen|консультація|консультация|1
+f|Beratungsstelle|Beratungsstellen|консультаційний пункт|консультационный пункт|1
+f|Traumatisierung|Traumatisierungen|травмування|травмирование|0
+n|Trauma|Traumata|травма (психічна)|травма (психическая)|1
+f|Familienzusammenführung|Familienzusammenführungen|возз'єднання сім'ї|воссоединение семьи|0
+n|Aufenthaltsrecht|-|право на проживання|право на проживание|0
+f|Duldung|Duldungen|тимчасове призупинення депортації|временная приостановка депортации|0
+f|Abschiebung|Abschiebungen|депортація|депортация|1
+f|Grenze|Grenzen|кордон|граница|1
+f|Grenzkontrolle|Grenzkontrollen|прикордонний контроль|пограничный контроль|1
+f|Einreise|Einreisen|в'їзд|въезд|1
+f|Ausreise|Ausreisen|виїзд|выезд|1
+n|Visum|Visa|віза|виза|1
+f|Quote|Quoten|квота|квота|1
+f|Kultur|Kulturen|культура|культура|1
+f|Tradition|Traditionen|традиція|традиция|1
+m|Brauch|Bräuche|звичай|обычай|1
+f|Religion|Religionen|релігія|религия|1
+f|Weltanschauung|Weltanschauungen|світогляд|мировоззрение|0
+n|Miteinander|-|співіснування|сосуществование|1
+f|Verständigung|-|порозуміння|взаимопонимание|1

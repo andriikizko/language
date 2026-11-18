@@ -1,0 +1,56 @@
+f|Bildung|-|освіта|образование|1
+n|Bildungssystem|Bildungssysteme|система освіти|система образования|1
+f|Schulpflicht|-|обов'язкова шкільна освіта|обязательное школьное образование|1
+f|Grundschule|Grundschulen|початкова школа|начальная школа|1
+f|Gesamtschule|Gesamtschulen|загальна школа|общая школа|0
+n|Gymnasium|Gymnasien|гімназія|гимназия|1
+f|Hochschule|Hochschulen|вищий навчальний заклад|высшее учебное заведение|1
+f|Universität|Universitäten|університет|университет|1
+n|Studium|Studien|навчання (в ВНЗ)|учёба (в вузе)|1
+m|Studiengang|Studiengänge|напрям навчання|направление обучения|1
+n|Fach|Fächer|предмет, галузь|предмет, область|1
+f|Vorlesung|Vorlesungen|лекція|лекция|1
+n|Seminar|Seminare|семінар|семинар|1
+f|Abschlussarbeit|Abschlussarbeiten|дипломна робота|дипломная работа|1
+n|Stipendium|Stipendien|стипендія|стипендия|1
+f|Studiengebühr|Studiengebühren|плата за навчання|плата за обучение|0
+n|Praktikum|Praktika|практика, стажування|практика, стажировка|1
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|1
+m|Auszubildende|Auszubildende|учень (на професійному навчанні)|ученик (на профобучении)|1
+f|Lehre|Lehren|навчання ремеслу, вчення|обучение ремеслу, учение|1
+m|Abschluss|Abschlüsse|диплом, завершення|диплом, завершение|1
+n|Zeugnis|Zeugnisse|свідоцтво, табель|свидетельство, табель|1
+f|Qualifikation|Qualifikationen|кваліфікація|квалификация|1
+f|Anerkennung|Anerkennungen|визнання (диплома)|признание (диплома)|1
+f|Kompetenz|Kompetenzen|компетенція|компетенция|1
+f|Fähigkeit|Fähigkeiten|здатність, вміння|способность, умение|1
+f|Fertigkeit|Fertigkeiten|навичка|навык|1
+n|Wissen|-|знання|знание|1
+f|Erfahrung|Erfahrungen|досвід|опыт|1
+f|Prüfung|Prüfungen|іспит|экзамен|1
+f|Note|Noten|оцінка|оценка|1
+m|Leistungsdruck|-|тиск успішності|давление успеваемости|0
+f|Chancengleichheit|-|рівні можливості|равные возможности|1
+f|Förderung|-|підтримка (розвитку)|поддержка (развития)|0
+m|Lehrer|Lehrer|вчитель|учитель|1
+m|Dozent|Dozenten|викладач ВНЗ|преподаватель вуза|1
+m|Professor|Professoren|професор|профессор|1
+m|Unterricht|-|урок, навчання|урок, обучение|1
+m|Lehrplan|Lehrpläne|навчальна програма|учебный план|1
+n|Lernen|-|навчання (процес)|обучение (процесс)|0
+f|Motivation|Motivationen|мотивація|мотивация|1
+f|Konzentration|Konzentrationen|концентрація|концентрация|1
+f|Hausaufgabe|Hausaufgaben|домашнє завдання|домашнее задание|1
+n|Nachschlagewerk|Nachschlagewerke|довідник|справочник|0
+f|Bibliothek|Bibliotheken|бібліотека|библиотека|1
+f|Weiterbildung|-|підвищення кваліфікації|повышение квалификации|0
+m|Quereinsteiger|Quereinsteiger|той, хто змінює сферу|тот, кто меняет сферу|0
+f|Berufserfahrung|Berufserfahrungen|професійний досвід|профессиональный опыт|1
+f|Bewerbungsunterlagen|-|документи для подачі заявки|документы для подачи заявки|0
+n|Vorstellungsgespräch|-|співбесіда|собеседование|0
+m|Lebenslauf|-|резюме|резюме|0
+n|Anschreiben|Anschreiben|супровідний лист|сопроводительное письмо|1
+f|Zusatzqualifikation|Zusatzqualifikationen|додаткова кваліфікація|дополнительная квалификация|0
+f|Digitalisierung|-|цифровізація|цифровизация|1
+f|Schlüsselqualifikation|Schlüsselqualifikationen|ключова кваліфікація|ключевая квалификация|0
+f|Selbstständigkeit|-|самостійність, самозайнятість|самостоятельность, самозанятость|1

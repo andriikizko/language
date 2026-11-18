@@ -1,0 +1,55 @@
+n|Medium|Medien|засіб, медіа|средство, медиа|1
+f|Presse|-|преса|пресса|1
+f|Berichterstattung|-|висвітлення (подій)|освещение (событий)|1
+m|Journalist|Journalisten|журналіст|журналист|1
+f|Redaktion|Redaktionen|редакція|редакция|1
+m|Leitartikel|Leitartikel|редакційна стаття|передовая статья|0
+m|Kommentar|Kommentare|коментар|комментарий|1
+f|Schlagzeile|Schlagzeilen|заголовок|заголовок|1
+f|Meldung|Meldungen|повідомлення|сообщение|1
+f|Nachrichtensendung|Nachrichtensendungen|випуск новин|выпуск новостей|0
+f|Dokumentation|Dokumentationen|документальний фільм|документальный фильм|1
+f|Sendung|Sendungen|передача, відправлення|передача, отправление|1
+m|Zuschauer|Zuschauer|глядач|зритель|1
+m|Leser|Leser|читач|читатель|1
+f|Auflage|Auflagen|наклад|тираж|0
+n|Abonnement|Abonnements|передплата|подписка|1
+f|Werbung|Werbungen|реклама|реклама|1
+f|Anzeige|Anzeigen|оголошення, реклама|объявление, реклама|1
+f|Reichweite|Reichweiten|охоплення|охват|0
+m|Einfluss|-|вплив (на аудиторію)|влияние (на аудиторию)|0
+f|Meinung|Meinungen|думка|мнение|1
+f|Öffentlichkeit|-|громадськість|общественность|1
+f|Glaubwürdigkeit|-|достовірність|достоверность|1
+f|Quelle|-|джерело інформації|источник информации|0
+f|Falschmeldung|Falschmeldungen|фейкова новина|фейковая новость|1
+f|Manipulation|Manipulationen|маніпуляція|манипуляция|1
+f|Propaganda|-|пропаганда|пропаганда|1
+f|Zensur|Zensuren|цензура|цензура|1
+f|Überprüfung|Überprüfungen|перевірка|проверка|1
+f|Recherche|Recherchen|журналістське розслідування, пошук|журналистское расследование, поиск|1
+n|Interview|Interviews|інтерв'ю|интервью|1
+f|Pressekonferenz|Pressekonferenzen|прес-конференція|пресс-конференция|1
+f|Umfrage|Umfragen|опитування|опрос|1
+f|Statistik|Statistiken|статистика|статистика|1
+f|Reportage|Reportagen|репортаж|репортаж|1
+f|Kritik|-|рецензія|рецензия|0
+f|Rezension|Rezensionen|рецензія|рецензия|1
+f|Plattform|Plattformen|платформа|платформа|1
+n|Netzwerk|Netzwerke|мережа|сеть|1
+m|Beitrag|Beiträge|допис, внесок|пост, вклад|1
+m|Follower|Follower|підписник|подписчик|0
+m|Influencer|Influencer|інфлюенсер|инфлюенсер|1
+f|Aufmerksamkeit|-|увага|внимание|1
+n|Gerücht|Gerüchte|чутка|слух|1
+f|Verleumdung|Verleumdungen|наклеп|клевета|0
+f|Gegendarstellung|Gegendarstellungen|спростування, право на відповідь|опровержение, право на ответ|0
+n|Urheberrecht|-|авторське право|авторское право|1
+f|Kampagne|Kampagnen|кампанія|кампания|1
+n|Image|Images|імідж|имидж|1
+f|Darstellung|Darstellungen|зображення, подання|изображение, представление|1
+f|Wirkung|-|вплив, ефект|воздействие, эффект|0
+f|Gewohnheit|Gewohnheiten|звичка|привычка|1
+m|Konsum|-|споживання|потребление|1
+f|Unterhaltung|Unterhaltungen|розвага, розмова|развлечение, разговор|1
+f|Bildung|-|освіта|образование|0

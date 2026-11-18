@@ -1,0 +1,56 @@
+n|Recht|Rechte|право|право|1
+f|Rechtsordnung|Rechtsordnungen|правопорядок|правопорядок|0
+n|Gesetzbuch|Gesetzbücher|кодекс|кодекс|0
+m|Paragraf|Paragrafen|параграф|параграф|1
+f|Vorschrift|Vorschriften|припис, норма|предписание, норма|1
+f|Regelung|Regelungen|регулювання, положення|регулирование, положение|1
+f|Pflicht|Pflichten|обов'язок|обязанность|1
+m|Anspruch|Ansprüche|право вимоги, претензія|право требования, претензия|1
+f|Haftung|-|відповідальність|ответственность|0
+f|Schuld|Schulden|вина, борг|вина, долг|1
+f|Strafe|Strafen|покарання|наказание|1
+f|Geldstrafe|Geldstrafen|штраф|штраф|1
+f|Freiheitsstrafe|Freiheitsstrafen|позбавлення волі|лишение свободы|0
+n|Gericht|Gerichte|суд|суд|1
+n|Urteil|Urteile|вирок, рішення|приговор, решение|1
+f|Klage|Klagen|позов|иск|1
+m|Kläger|Kläger|позивач|истец|1
+m|Beklagte|Beklagte|відповідач|ответчик|0
+m|Anwalt|Anwälte|адвокат|адвокат|1
+m|Richter|Richter|суддя|судья|1
+m|Zeuge|Zeugen|свідок|свидетель|1
+f|Aussage|Aussagen|свідчення, твердження|показание, утверждение|1
+m|Beweis|-|доказ|доказательство|0
+m|Verdacht|-|підозра|подозрение|1
+m|Verstoß|Verstöße|порушення|нарушение|1
+f|Straftat|Straftaten|злочин|преступление|1
+m|Betrug|-|шахрайство|мошенничество|1
+m|Diebstahl|Diebstähle|крадіжка|кража|1
+f|Anzeige|-|заява до поліції|заявление в полицию|0
+f|Ermittlung|Ermittlungen|розслідування|расследование|1
+f|Polizei|-|поліція|полиция|1
+m|Vertragspartner|Vertragspartner|сторона договору|сторона договора|0
+f|Kündigungsfrist|Kündigungsfristen|термін попередження про розірвання|срок уведомления о расторжении|1
+f|Widerrufsrecht|-|право відмови (від договору)|право отказа (от договора)|0
+f|Gewährleistung|Gewährleistungen|гарантійна відповідальність|гарантийная ответственность|0
+f|Garantie|Garantien|гарантія|гарантия|1
+m|Mangel|Mängel|недолік, дефект|недостаток, дефект|1
+f|Reklamation|Reklamationen|рекламація|рекламация|1
+f|Entschädigung|Entschädigungen|відшкодування|возмещение|1
+m|Schaden|Schäden|шкода, збиток|вред, ущерб|1
+m|Schadensersatz|-|відшкодування збитків|возмещение убытков|0
+f|Versicherung|Versicherungen|страхування|страхование|1
+f|Datenschutzerklärung|Datenschutzerklärungen|заява про захист даних|заявление о защите данных|0
+f|Einwilligung|-|згода|согласие|0
+f|Genehmigung|Genehmigungen|дозвіл, ліцензія|разрешение, лицензия|1
+f|Erlaubnis|Erlaubnisse|дозвіл|разрешение|1
+n|Verbot|Verbote|заборона|запрет|1
+f|Ausnahme|Ausnahmen|виняток|исключение|1
+f|Bedingung|Bedingungen|умова|условие|1
+f|Voraussetzung|Voraussetzungen|передумова|предпосылка|1
+m|Antragsteller|Antragsteller|заявник|заявитель|0
+m|Widerspruch|Widersprüche|заперечення|возражение|1
+f|Berufung|Berufungen|апеляція|апелляция|0
+f|Verjährung|Verjährungen|давність|давность|0
+f|Zuständigkeit|Zuständigkeiten|компетенція, підвідомчість|компетенция, подведомственность|1
+f|Gleichbehandlung|-|рівне ставлення|равное обращение|0

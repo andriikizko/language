@@ -1,0 +1,58 @@
+f|Politik|-|політика|политика|1
+f|Demokratie|Demokratien|демократія|демократия|1
+f|Diktatur|Diktaturen|диктатура|диктатура|1
+f|Verfassung|Verfassungen|конституція|конституция|1
+n|Grundgesetz|-|Основний закон (конституція ФРН)|Основной закон (конституция ФРГ)|1
+m|Bundestag|-|Бундестаг|бундестаг|1
+m|Bundesrat|-|Бундесрат|бундесрат|1
+f|Regierung|Regierungen|уряд|правительство|1
+f|Opposition|Oppositionen|опозиція|оппозиция|1
+f|Koalition|Koalitionen|коаліція|коалиция|1
+f|Mehrheit|Mehrheiten|більшість|большинство|1
+f|Minderheit|Minderheiten|меншість|меньшинство|1
+f|Wahl|Wahlen|вибори, вибір|выборы, выбор|1
+m|Wähler|Wähler|виборець|избиратель|1
+f|Wahlbeteiligung|-|явка виборців|явка избирателей|0
+m|Kandidat|Kandidaten|кандидат|кандидат|1
+f|Partei|Parteien|партія|партия|1
+n|Programm|Programme|програма|программа|1
+m|Abgeordnete|Abgeordnete|депутат|депутат|1
+m|Minister|Minister|міністр|министр|1
+m|Bundeskanzler|Bundeskanzler|федеральний канцлер|федеральный канцлер|1
+m|Bundespräsident|Bundespräsidenten|федеральний президент|федеральный президент|1
+n|Gesetz|Gesetze|закон|закон|1
+m|Entwurf|Entwürfe|проєкт (закону), ескіз|проект (закона), эскиз|1
+f|Abstimmung|Abstimmungen|голосування|голосование|1
+m|Beschluss|Beschlüsse|рішення, постанова|решение, постановление|1
+f|Reform|Reformen|реформа|реформа|1
+f|Debatte|Debatten|дебати|дебаты|1
+f|Kritik|Kritiken|критика|критика|1
+m|Kompromiss|Kompromisse|компроміс|компромисс|1
+m|Konflikt|Konflikte|конфлікт|конфликт|1
+m|Krieg|Kriege|війна|война|1
+m|Frieden|-|мир|мир|1
+f|Sicherheit|-|безпека|безопасность|1
+f|Verteidigung|Verteidigungen|оборона|оборона|1
+f|Sanktion|Sanktionen|санкція|санкция|1
+n|Bündnis|Bündnisse|союз, альянс|союз, альянс|1
+f|Verhandlungen|-|переговори (мн.)|переговоры (мн.)|0
+m|Staat|Staaten|держава|государство|1
+f|Gemeinde|Gemeinden|громада, муніципалітет|община, муниципалитет|1
+n|Bundesland|Bundesländer|федеральна земля|федеральная земля|1
+f|Behörde|Behörden|орган влади, відомство|орган власти, ведомство|1
+f|Gewalt|-|насильство, влада|насилие, власть|1
+f|Freiheit|Freiheiten|свобода|свобода|1
+f|Gerechtigkeit|-|справедливість|справедливость|1
+f|Gleichheit|-|рівність|равенство|1
+f|Meinungsfreiheit|-|свобода слова|свобода слова|1
+f|Pressefreiheit|-|свобода преси|свобода прессы|1
+f|Demonstration|Demonstrationen|демонстрація|демонстрация|1
+m|Protest|Proteste|протест|протест|1
+f|Bürgerinitiative|Bürgerinitiativen|громадянська ініціатива|гражданская инициатива|0
+m|Volksentscheid|Volksentscheide|референдум|референдум|0
+f|Zivilgesellschaft|-|громадянське суспільство|гражданское общество|0
+f|Korruption|-|корупція|коррупция|1
+m|Skandal|Skandale|скандал|скандал|1
+f|Außenpolitik|-|зовнішня політика|внешняя политика|1
+f|Amtszeit|Amtszeiten|термін повноважень|срок полномочий|0
+f|Haushaltspolitik|-|бюджетна політика|бюджетная политика|0

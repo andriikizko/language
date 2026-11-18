@@ -1,0 +1,57 @@
+f|Nachhaltigkeit|-|сталий розвиток|устойчивое развитие|1
+m|Klimaschutz|-|захист клімату|защита климата|1
+m|Treibhauseffekt|-|парниковий ефект|парниковый эффект|1
+n|Treibhausgas|Treibhausgase|парниковий газ|парниковый газ|1
+m|Ausstoß|Ausstöße|викид|выброс|0
+f|Emission|Emissionen|викид (шкідливих речовин)|выброс (вредных веществ)|1
+n|Kohlendioxid|-|вуглекислий газ|углекислый газ|1
+f|Erderwärmung|-|глобальне потепління|глобальное потепление|1
+m|Meeresspiegel|-|рівень моря|уровень моря|1
+f|Dürre|Dürren|посуха|засуха|1
+n|Hochwasser|-|повінь|наводнение|1
+f|Überschwemmung|Überschwemmungen|затоплення|затопление|1
+f|Naturkatastrophe|Naturkatastrophen|стихійне лихо|стихийное бедствие|1
+f|Artenvielfalt|-|біорізноманіття|биоразнообразие|1
+n|Ökosystem|Ökosysteme|екосистема|экосистема|1
+m|Lebensraum|Lebensräume|середовище існування|среда обитания|1
+n|Aussterben|-|вимирання|вымирание|0
+m|Wald|Wälder|ліс|лес|1
+f|Abholzung|Abholzungen|вирубка лісів|вырубка лесов|0
+m|Boden|Böden|ґрунт, підлога|почва, пол|1
+n|Grundwasser|-|ґрунтові води|грунтовые воды|1
+f|Verschmutzung|Verschmutzungen|забруднення|загрязнение|1
+f|Belastung|-|навантаження (на довкілля)|нагрузка (на окружающую среду)|0
+m|Schadstoff|Schadstoffe|шкідлива речовина|вредное вещество|1
+m|Feinstaub|-|дрібний пил|мелкая пыль|1
+n|Abgas|Abgase|вихлопний газ|выхлопной газ|1
+m|Verbrauch|-|споживання|потребление|1
+f|Ressource|Ressourcen|ресурс|ресурс|1
+f|Rohstoffknappheit|-|дефіцит сировини|дефицит сырья|0
+f|Erneuerbare Energie|-|відновлювана енергія|возобновляемая энергия|1
+f|Windkraft|-|вітрова енергія|ветровая энергия|1
+f|Solaranlage|Solaranlagen|сонячна установка|солнечная установка|1
+n|Atomkraftwerk|Atomkraftwerke|атомна електростанція|атомная электростанция|1
+m|Atommüll|-|ядерні відходи|ядерные отходы|0
+f|Kohle|-|вугілля|уголь|1
+n|Erdgas|-|природний газ|природный газ|1
+f|Energiewende|-|енергетичний перехід|энергетический переход|1
+m|Wasserstoff|-|водень|водород|1
+n|Elektroauto|Elektroautos|електромобіль|электромобиль|1
+m|Nahverkehr|-|місцевий (міський) транспорт|местный (городской) транспорт|1
+f|Mülltrennung|-|сортування сміття|сортировка мусора|1
+f|Wiederverwertung|-|повторне використання|повторное использование|0
+n|Recycling|-|переробка|переработка|1
+f|Verpackung|Verpackungen|упаковка|упаковка|1
+m|Plastikmüll|-|пластикове сміття|пластиковый мусор|1
+f|Wegwerfgesellschaft|-|суспільство одноразового споживання|общество одноразового потребления|0
+m|Verzicht|-|відмова (від чогось)|отказ (от чего-то)|1
+m|Verbraucher|-|споживач|потребитель|0
+f|Verantwortung|-|відповідальність (за довкілля)|ответственность (за окружающую среду)|0
+n|Umweltbewusstsein|-|екологічна свідомість|экологическое сознание|1
+f|Umweltschutzorganisation|Umweltschutzorganisationen|екологічна організація|экологическая организация|0
+m|Naturschutz|-|охорона природи|охрана природы|1
+n|Schutzgebiet|Schutzgebiete|заповідна зона|заповедная зона|0
+m|Eingriff|-|втручання (в природу)|вмешательство (в природу)|0
+f|Folge|-|наслідок|следствие|0
+f|Maßnahme|Maßnahmen|захід, міра|мера, мероприятие|1
+f|Klimakonferenz|Klimakonferenzen|кліматична конференція|климатическая конференция|0

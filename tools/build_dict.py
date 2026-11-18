@@ -25,9 +25,10 @@ PERF={r[0]:r[1:] for r in rows('perfekt.tsv')}
 REFL=['mich','dich','sich','uns','euch','sich']
 ALLV=[(*r,'a1') for r in rows('verbs.tsv')]+[(r[0],r[1],r[2],r[3],r[4],r[5],'a2',r[6],r[7],r[8]) for r in rows('verbs_a2.tsv')]
 if os.environ.get('B0') is None: ALLV+=[(r[0],r[1],r[2],r[3],r[4],r[5],'b1',r[6],r[7],r[8]) for r in rows('verbs_b1.tsv')]
+if os.environ.get('B2'): ALLV+=[(r[0],r[1],r[2],r[3],r[4],r[5],'b2',r[6],r[7],r[8]) for r in rows('verbs_b2.tsv')]
 CORE_A2=set('sich freuen,sich treffen,bekommen,erzählen,erklären,verdienen,verlieren,versuchen,mieten,umziehen,anmelden,kündigen,unterschreiben,ausfüllen,schicken,schenken,feiern,reservieren,passen,sparen,untersuchen,wehtun,buchen,packen,besichtigen,fotografieren,üben,wiederholen,übersetzen,bestehen,regnen,schneien,planen,informieren,sich vorstellen,sich bewerben,sich interessieren,sich fühlen,sich entscheiden,sich verabreden'.split(','))
 for rec in ALLV:
-    if rec[6] in('a2','b1'): inf,kind,uk,ru,extra,core,lvl,p2,pr,aux=rec; core=('1' if inf in CORE_A2 else '0') if lvl=='a2' else core
+    if rec[6] in('a2','b1','b2'): inf,kind,uk,ru,extra,core,lvl,p2,pr,aux=rec; core=('1' if inf in CORE_A2 else '0') if lvl=='a2' else core
     else: inf,kind,uk,ru,extra,core,lvl=rec; p2=pr=aux=None
     refl=inf.startswith('sich '); orig=inf
     if refl: inf=inf[5:]
@@ -67,6 +68,9 @@ for a,u,r,t,c,o,k,su in rows('adjectives_a2.tsv'):
 if os.environ.get('B0') is None:
     for a,u,r,t,c,o,k,su in rows('adjectives_b1.tsv'):
         adj.append({'de':a,'uk':u,'ru':r,'topic':t,'core':c=='1','opp':o,'komp':k or None,'sup':su or None,'lvl':'b1'})
+if os.environ.get('B2'):
+    for a,u,r,t,c,o,k,su in rows('adjectives_b2.tsv'):
+        adj.append({'de':a,'uk':u,'ru':r,'topic':t,'core':c=='1','opp':o,'komp':k or None,'sup':su or None,'lvl':'b2'})
 adj.sort(key=lambda x:x['de'].lower())
 # ---- pronouns ----
 pron=[{'cat':c,'de':d,'uk':u,'ru':r,'note':n} for c,d,u,r,n in rows('pronouns.tsv')]

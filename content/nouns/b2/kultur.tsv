@@ -1,0 +1,59 @@
+f|Kunst|Künste|мистецтво|искусство|1
+m|Künstler|Künstler|художник, митець|художник, деятель искусства|1
+n|Gemälde|Gemälde|картина (живопис)|картина (живопись)|1
+f|Skulptur|Skulpturen|скульптура|скульптура|1
+f|Ausstellung|Ausstellungen|виставка|выставка|1
+n|Museum|Museen|музей|музей|1
+f|Galerie|Galerien|галерея|галерея|1
+f|Epoche|Epochen|епоха|эпоха|1
+m|Stil|Stile|стиль|стиль|1
+m|Entwurf|-|ескіз, задум|эскиз, замысел|0
+f|Literatur|Literaturen|література|литература|1
+m|Roman|Romane|роман|роман|1
+f|Erzählung|Erzählungen|розповідь, повість|рассказ, повесть|1
+f|Novelle|Novellen|новела|новелла|0
+n|Gedicht|Gedichte|вірш|стихотворение|1
+n|Drama|Dramen|драма|драма|1
+n|Theaterstück|Theaterstücke|театральна п'єса|театральная пьеса|1
+f|Aufführung|Aufführungen|вистава, виконання|представление, исполнение|1
+f|Inszenierung|Inszenierungen|постановка|постановка|1
+f|Bühne|Bühnen|сцена|сцена|1
+m|Schauspieler|Schauspieler|актор|актёр|1
+m|Regisseur|Regisseure|режисер|режиссёр|1
+m|Autor|Autoren|автор|автор|1
+m|Schriftsteller|Schriftsteller|письменник|писатель|1
+f|Handlung|Handlungen|сюжет, дія|сюжет, действие|1
+f|Figur|Figuren|персонаж, фігура|персонаж, фигура|1
+f|Hauptfigur|Hauptfiguren|головний герой|главный герой|1
+n|Thema|Themen|тема|тема|1
+f|Botschaft|Botschaften|послання, посольство|послание, посольство|1
+f|Deutung|Deutungen|тлумачення|толкование|1
+f|Interpretation|Interpretationen|інтерпретація|интерпретация|1
+f|Wirkung|-|ефект, враження|эффект, впечатление|0
+n|Publikum|-|публіка|публика|1
+f|Kritik|-|критика, рецензія|критика, рецензия|0
+n|Meisterwerk|Meisterwerke|шедевр|шедевр|1
+n|Werk|Werke|твір, завод|произведение, завод|1
+f|Komposition|Kompositionen|композиція|композиция|1
+n|Orchester|Orchester|оркестр|оркестр|1
+n|Konzert|Konzerte|концерт|концерт|1
+f|Oper|Opern|опера|опера|1
+n|Musical|Musicals|мюзикл|мюзикл|1
+m|Dirigent|Dirigenten|диригент|дирижёр|1
+f|Filmindustrie|-|кіноіндустрія|киноиндустрия|0
+m|Spielfilm|Spielfilme|художній фільм|художественный фильм|1
+n|Drehbuch|Drehbücher|сценарій|сценарий|1
+f|Kulisse|Kulissen|декорації|декорации|1
+p|Festspiele|Festspiele|фестиваль (театральний чи музичний)|фестиваль (театральный или музыкальный)|0
+n|Festival|Festivals|фестиваль|фестиваль|1
+n|Erbe|-|спадщина|наследие|1
+n|Kulturerbe|-|культурна спадщина|культурное наследие|1
+n|Denkmal|Denkmäler|пам'ятник|памятник|1
+f|Sehenswürdigkeit|Sehenswürdigkeiten|пам'ятка, визначне місце|достопримечательность|1
+f|Architektur|Architekturen|архітектура|архитектура|1
+n|Bauwerk|Bauwerke|споруда|сооружение|1
+f|Geschichte|Geschichten|історія|история|1
+f|Epik|-|епос|эпос|0
+f|Fantasie|Fantasien|фантазія|фантазия|1
+f|Kreativität|-|креативність|креативность|1
+f|Ausdrucksweise|Ausdrucksweisen|спосіб вираження|способ выражения|0
