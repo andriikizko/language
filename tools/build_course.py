@@ -25,11 +25,11 @@ for ln in open('content/why/dlg.txt',encoding='utf8'):
         _b,_d,_q,_u,_r=ln.rstrip('\n').split('|'); DLG[(_b,int(_d),int(_q))]=(_u,_r)
 out=[]
 def a2words(tid):
-    return [l.split('|')[1] for l in open(f'content/nouns/a2/{tid[3:]}.tsv',encoding='utf8') if l.strip()]
+    return [l.split('|')[1] for l in open(f'content/nouns/{LV}/{tid[3:]}.tsv',encoding='utf8') if l.strip()]
 def a2adjs(tid):
-    return [l.split('|')[0] for l in open('content/dict/adjectives_a2.tsv',encoding='utf8') if l.strip() and l.split('|')[3]==tid]
+    return [l.split('|')[0] for l in open(f'content/dict/adjectives_{LV}.tsv',encoding='utf8') if l.strip() and l.split('|')[3]==tid]
 for b in B:
-    if LV=='a2':
+    if LV in('a2','b1'):
         b['nouns']=a2words(b['id']); b['adjlist']=a2adjs(b['id']); b['adjs']=[]
     gaps=[]
     for g in b['gaps']+EXTRA.get(b['id'],[]):

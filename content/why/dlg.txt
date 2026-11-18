@@ -72,3 +72,15 @@ a2_freizeit|0|0|«Wollen wir ins Kino gehen?» — у кіно|«Wollen wir ins 
 a2_freizeit|0|1|«Um 18 Uhr vor dem Kino» — о 18:00|«Um 18 Uhr vor dem Kino» — в 18:00
 a2_freizeit|1|0|«Das Training ist zweimal pro Woche» — двічі на тиждень|«Das Training ist zweimal pro Woche» — дважды в неделю
 a2_freizeit|1|1|«Ich interessiere mich mehr für Konzerte und Bücher» — концерти й книжки|«Ich interessiere mich mehr für Konzerte und Bücher» — концерты и книги
+b1_beruf|0|0|він каже «drei Jahre als Elektriker» — електриком|он говорит «drei Jahre als Elektriker» — электриком
+b1_beruf|0|1|він каже «Wenn alles klappt, schon im Januar» — у січні|он говорит «Wenn alles klappt, schon im Januar» — в январе
+b1_beruf|1|0|начальник каже «Sie dauert sechs Monate» — шість місяців|начальник говорит «Sie dauert sechs Monate» — шесть месяцев
+b1_beruf|1|1|«Sie bekommen dafür freie Tage» — за понаднормові дають вільні дні|«Sie bekommen dafür freie Tage» — за сверхурочные дают свободные дни
+b1_bildung|0|0|«Der Kurs beginnt am 3. März» — 3 березня|«Der Kurs beginnt am 3. März» — 3 марта
+b1_bildung|0|1|«Der Kurs kostet 240 Euro» — 240 €|«Der Kurs kostet 240 Euro» — 240 €
+b1_bildung|1|0|Лена каже «Ich habe Angst vor dem Schreiben» — письмової частини|Лена говорит «Ich habe Angst vor dem Schreiben» — письменной части
+b1_bildung|1|1|«Morgen nach der Arbeit» — завтра після роботи|«Morgen nach der Arbeit» — завтра после работы
+b1_gesundheit|0|0|пацієнтка просить «einen Termin beim Hautarzt» — до дерматолога|пациентка просит «einen Termin beim Hautarzt» — к дерматологу
+b1_gesundheit|0|1|«Der nächste freie Termin ist in drei Wochen» — через три тижні|«Der nächste freie Termin ist in drei Wochen» — через три недели
+b1_gesundheit|1|0|пацієнт каже «Seit ungefähr zwei Wochen» — близько двох тижнів|пациент говорит «Seit ungefähr zwei Wochen» — около двух недель
+b1_gesundheit|1|1|лікар радить «lieber Sport machen» — займатися спортом|врач советует «lieber Sport machen» — заниматься спортом
