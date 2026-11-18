@@ -1,0 +1,68 @@
+erfolgreich|успішний|успешный|b1_beruf|1|erfolglos|erfolgreicher|am erfolgreichsten
+erfolglos|безуспішний|безуспешный|b1_beruf|0|erfolgreich||
+zuständig|відповідальний (за справу), компетентний|ответственный (за дело), компетентный|b1_behoerden|1|||
+unerfahren|недосвідчений|неопытный|b1_beruf|0|erfahren||
+unzuverlässig|ненадійний|ненадёжный|b1_beruf|0|zuverlässig||
+befristet|терміновий (договір)|срочный (договор)|b1_beruf|1|unbefristet||
+unbefristet|безстроковий|бессрочный|b1_beruf|0|befristet||
+anspruchsvoll|вимогливий, складний|требовательный, сложный|b1_beruf|0||anspruchsvoller|am anspruchsvollsten
+berufstätig|працюючий|работающий|b1_beruf|0|||
+defekt|несправний, зламаний|неисправный, сломанный|b1_konsum|1|funktionsfähig||
+funktionsfähig|справний|исправный|b1_konsum|0|defekt||
+bargeldlos|безготівковий|безналичный|b1_konsum|0|||
+verschuldet|у боргах|в долгах|b1_konsum|0|||
+ansteckend|заразний|заразный|b1_gesundheit|1|||
+chronisch|хронічний|хронический|b1_gesundheit|1|akut||
+akut|гострий, терміновий|острый, срочный|b1_gesundheit|0|chronisch||
+gesundheitsschädlich|шкідливий для здоров'я|вредный для здоровья|b1_gesundheit|0|||
+versichert|застрахований|застрахованный|b1_gesundheit|1|unversichert||
+unversichert|незастрахований|незастрахованный|b1_gesundheit|0|versichert||
+überwiegend|переважний|преобладающий|b1_gesellschaft|0|||
+gleichberechtigt|рівноправний|равноправный|b1_gesellschaft|0|||
+gesellschaftlich|суспільний|общественный|b1_gesellschaft|0|||
+politisch|політичний|политический|b1_gesellschaft|1|||
+wirtschaftlich|економічний|экономический|b1_gesellschaft|0|||
+sozial|соціальний|социальный|b1_gesellschaft|1|||
+kulturell|культурний|культурный|b1_gesellschaft|1|||
+international|міжнародний|международный|b1_gesellschaft|0|||
+ungültig|недійсний|недействительный|b1_behoerden|0|gültig||
+erforderlich|необхідний|необходимый|b1_behoerden|1|||
+vorgeschrieben|обов'язковий (за приписом)|обязательный (по предписанию)|b1_behoerden|0|||
+rechtlich|правовий|правовой|b1_behoerden|0|||
+schriftlich|письмовий|письменный|b1_behoerden|1|mündlich||
+mündlich|усний|устный|b1_behoerden|0|schriftlich||
+zumutbar|прийнятний, розумний (вимога)|приемлемый, разумный (требование)|b1_behoerden|0|unzumutbar||
+umweltschädlich|шкідливий для довкілля|вредный для окружающей среды|b1_umwelt|0|umweltfreundlich||
+erneuerbar|відновлюваний|возобновляемый|b1_umwelt|1|||
+nachhaltig|сталий|устойчивый|b1_umwelt|1|||
+verschmutzt|забруднений|загрязнённый|b1_umwelt|0|||
+giftig|отруйний|ядовитый|b1_umwelt|0|||
+feucht|вологий|влажный|b1_umwelt|0|trocken|feuchter|am feuchtesten
+verspätet|запізнілий|опоздавший|b1_reisen|1|pünktlich||
+überfüllt|переповнений|переполненный|b1_reisen|1|leer||
+gebucht|забронований|забронированный|b1_reisen|0|||
+ausgebucht|повністю заброньований|полностью забронирован|b1_reisen|0|||
+direkt|прямий|прямой|b1_reisen|1|indirekt||
+unbequem|незручний|неудобный|b1_reisen|0|bequem||
+beeindruckend|вражаючий|впечатляющий|b1_kultur|0|||
+historisch|історичний|исторический|b1_kultur|0|||
+eifersüchtig|ревнивий|ревнивый|b1_beziehungen|0|||
+enttäuscht|розчарований|разочарованный|b1_beziehungen|1|||
+besorgt|стурбований|обеспокоенный|b1_beziehungen|1|||
+verärgert|роздратований|раздражённый|b1_beziehungen|0|||
+erleichtert|заспокоєний, з полегшенням|с облегчением|b1_beziehungen|0|||
+einsam|самотній|одинокий|b1_beziehungen|1|||
+selbstbewusst|упевнений у собі|уверенный в себе|b1_beziehungen|1|||
+unhöflich|нечемний|невежливый|b1_beziehungen|0|höflich||
+ehrlich|чесний|честный|b1_beziehungen|1|unehrlich|ehrlicher|am ehrlichsten
+geduldig|терплячий|терпеливый|b1_beziehungen|1|ungeduldig|geduldiger|am geduldigsten
+ungeduldig|нетерплячий|нетерпеливый|b1_beziehungen|0|geduldig||
+sympathisch|симпатичний (приємний)|симпатичный (приятный)|b1_beziehungen|1|unsympathisch|sympathischer|am sympathischsten
+geschieden|розлучений|разведённый|b1_beziehungen|0|||
+verwandt|споріднений|родственный|b1_beziehungen|0|||
+gemeinsam|спільний|совместный|b1_beziehungen|1|||
+wohnungssuchend|той, хто шукає житло|ищущий жильё|b1_wohnen|0|||
+hellhörig|з поганою звукоізоляцією|с плохой звукоизоляцией|b1_wohnen|0|||
+veraltet|застарілий|устаревший|b1_medien|0|aktuell||
+seriös|серйозний, надійний (джерело)|серьёзный, надёжный (источник)|b1_medien|1|unseriös||
+kritisch|критичний|критичный|b1_medien|0|||
