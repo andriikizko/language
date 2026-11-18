@@ -120,3 +120,39 @@ b1_kultur|0|0|«Wir haben Glühwein getrunken» — глінтвейн|«Wir hab
 b1_kultur|0|1|«Wir haben weder einen Tisch noch einen Parkplatz gefunden» — столика й парковки|«Wir haben weder einen Tisch noch einen Parkplatz gefunden» — столика и парковки
 b1_kultur|1|0|«Die Karten kosten 25 Euro» — 25 €|«Die Karten kosten 25 Euro» — 25 €
 b1_kultur|1|1|«Im Theater läuft ein neues Stück… kaufe ich zwei Karten» — у театр|«Im Theater läuft ein neues Stück… kaufe ich zwei Karten» — в театр
+b2_wirtschaft|0|0|«Er ist um acht Prozent gestiegen» — на 8 %|«Er ist um acht Prozent gestiegen» — на 8 %
+b2_wirtschaft|0|1|«wegen der hohen Rohstoffpreise… nur um zwei Prozent gewachsen» — через ціни на сировину|«wegen der hohen Rohstoffpreise… nur um zwei Prozent gewachsen» — из-за цен на сырьё
+b2_wirtschaft|1|0|«Fünf Prozent ab dem nächsten Quartal» — 5 %|«Fünf Prozent ab dem nächsten Quartal» — 5 %
+b2_wirtschaft|1|1|«Dann bräuchte ich noch zwei Tage mehr Urlaub» — два дні відпустки|«Dann bräuchte ich noch zwei Tage mehr Urlaub» — два дня отпуска
+b2_wissenschaft|0|0|«Insgesamt 240 Teilnehmer» — 240|«Insgesamt 240 Teilnehmer» — 240
+b2_wissenschaft|0|1|«sieben bis acht Stunden schläft» — 7–8 годин|«sieben bis acht Stunden schläft» — 7–8 часов
+b2_wissenschaft|1|0|«in 90 Prozent der Fälle» — 90 %|«in 90 Prozent der Fälle» — 90 %
+b2_wissenschaft|1|1|Анна каже «ich warte auf weitere Studien» — чекати на інші дослідження|Анна говорит «ich warte auf weitere Studien» — ждать других исследований
+b2_politik|0|0|«bei 76 Prozent» — 76 %|«bei 76 Prozent» — 76 %
+b2_politik|0|1|«sie werde jeden Gesetzentwurf genau prüfen» — уважно перевіряти кожен законопроєкт|«sie werde jeden Gesetzentwurf genau prüfen» — внимательно проверять каждый законопроект
+b2_politik|1|0|Б каже «zuerst die Lehrpläne modernisieren und Lehrer besser ausbilden» — модернізувати плани й готувати вчителів|Б говорит «zuerst die Lehrpläne modernisieren und Lehrer besser ausbilden» — модернизировать планы и готовить учителей
+b2_politik|1|1|«stimmen im Herbst ab» — восени|«stimmen im Herbst ab» — осенью
+b2_medien|0|0|«Von einem Leser» — від читача|«Von einem Leser» — от читателя
+b2_medien|0|1|«Ich rufe im Rathaus an» — зателефонувати до ратуші|«Ich rufe im Rathaus an» — позвонить в ратушу
+b2_medien|1|0|«stammt aus einem anderen Jahr» — з іншого року|«stammt aus einem anderen Jahr» — из другого года
+b2_medien|1|1|«Löschen wir den Beitrag und schreiben eine Berichtigung» — видалити й спростувати|«Löschen wir den Beitrag und schreiben eine Berichtigung» — удалить и опровергнуть
+b2_gesundheit|0|0|«seit zwei Wochen» — два тижні|«seit zwei Wochen» — две недели
+b2_gesundheit|0|1|«Ich überweise Sie zum Orthopäden» — до ортопеда|«Ich überweise Sie zum Orthopäden» — к ортопеду
+b2_gesundheit|1|0|«erst nach zwei Wochen» — через два тижні|«erst nach zwei Wochen» — через две недели
+b2_gesundheit|1|1|«ab 35» — з 35 років|«ab 35» — с 35 лет
+b2_umwelt|0|0|«bis 2035 klimaneutral» — до 2035|«bis 2035 klimaneutral» — к 2035
+b2_umwelt|0|1|«Etwa die Hälfte kommt vom Land» — приблизно половина|«Etwa die Hälfte kommt vom Land» — примерно половина
+b2_umwelt|1|0|«um CO₂ zu sparen» — щоб заощадити CO₂|«um CO₂ zu sparen» — чтобы сэкономить CO₂
+b2_umwelt|1|1|«klare Regeln schaffen, zum Beispiel eine CO₂-Steuer» — чіткі правила, податок на CO₂|«klare Regeln schaffen, zum Beispiel eine CO₂-Steuer» — чёткие правила, налог на CO₂
+b2_bildung|0|0|«seit fünf Jahren im Vertrieb» — п'ять років|«seit fünf Jahren im Vertrieb» — пять лет
+b2_bildung|0|1|«Ich suche mehr Verantwortung» — більшої відповідальності|«Ich suche mehr Verantwortung» — большей ответственности
+b2_bildung|1|0|«Ich werde ein Praktikum machen» — стажування|«Ich werde ein Praktikum machen» — стажировка
+b2_bildung|1|1|«verdient man früh Geld» — рано отримуєш гроші|«verdient man früh Geld» — рано получаешь деньги
+b2_migration|0|0|«Aufenthaltstitel verlängern» — продовжити дозвіл|«Aufenthaltstitel verlängern» — продлить разрешение
+b2_migration|0|1|«etwa vier Wochen» — близько чотирьох тижнів|«etwa vier Wochen» — около четырёх недель
+b2_migration|1|0|«Fast ein Jahr» — майже рік|«Fast ein Jahr» — почти год
+b2_migration|1|1|«als Ingenieurin arbeiten» — інженеркою|«als Ingenieurin arbeiten» — инженером
+b2_kultur|0|0|«der zweite Akt war zu lang» — другий акт задовгий|«der zweite Akt war zu lang» — второй акт слишком длинный
+b2_kultur|0|1|«die Hauptdarstellerin» — головна акторка|«die Hauptdarstellerin» — главная актриса
+b2_kultur|1|0|«drei Generationen einer Familie» — три покоління родини|«drei Generationen einer Familie» — три поколения семьи
+b2_kultur|1|1|«Sehr poetisch, wenn auch manchmal etwas schwerfällig» — поетична, інколи важка|«Sehr poetisch, wenn auch manchmal etwas schwerfällig» — поэтичный, иногда тяжеловесный

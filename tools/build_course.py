@@ -29,7 +29,7 @@ def a2words(tid):
 def a2adjs(tid):
     return [l.split('|')[0] for l in open(f'content/dict/adjectives_{LV}.tsv',encoding='utf8') if l.strip() and l.split('|')[3]==tid]
 for b in B:
-    if LV in('a2','b1'):
+    if LV in('a2','b1','b2'):
         b['nouns']=a2words(b['id']); b['adjlist']=a2adjs(b['id']); b['adjs']=[]
     gaps=[]
     for g in b['gaps']+EXTRA.get(b['id'],[]):
