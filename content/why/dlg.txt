@@ -84,3 +84,15 @@ b1_gesundheit|0|0|пацієнтка просить «einen Termin beim Hautarzt
 b1_gesundheit|0|1|«Der nächste freie Termin ist in drei Wochen» — через три тижні|«Der nächste freie Termin ist in drei Wochen» — через три недели
 b1_gesundheit|1|0|пацієнт каже «Seit ungefähr zwei Wochen» — близько двох тижнів|пациент говорит «Seit ungefähr zwei Wochen» — около двух недель
 b1_gesundheit|1|1|лікар радить «lieber Sport machen» — займатися спортом|врач советует «lieber Sport machen» — заниматься спортом
+b1_wohnen|0|0|«Die Kaltmiete beträgt 650 Euro» — 650 €|«Die Kaltmiete beträgt 650 Euro» — 650 €
+b1_wohnen|0|1|«Drei Kaltmieten, also 1950 Euro» — 1950 €|«Drei Kaltmieten, also 1950 Euro» — 1950 €
+b1_wohnen|1|0|«Gestern war die Musik bis Mitternacht sehr laut» — гучна музика|«Gestern war die Musik bis Mitternacht sehr laut» — громкая музыка
+b1_wohnen|1|1|«Könnten Sie nach 22 Uhr bitte leiser sein? — Natürlich, das verspreche ich» — бути тихіше після 22:00|«Könnten Sie nach 22 Uhr bitte leiser sein? — Natürlich, das verspreche ich» — вести себя тише после 22:00
+b1_reisen|0|0|«Er hat leider neunzig Minuten Verspätung» — 90 хвилин|«Er hat leider neunzig Minuten Verspätung» — 90 минут
+b1_reisen|0|1|«Ab sechzig Minuten Verspätung bekommen Sie einen Teil des Preises zurück» — частину ціни назад|«Ab sechzig Minuten Verspätung bekommen Sie einen Teil des Preises zurück» — часть цены обратно
+b1_reisen|1|0|«Das kostet 90 Euro pro Nacht» — 90 €|«Das kostet 90 Euro pro Nacht» — 90 €
+b1_reisen|1|1|гість каже «Dann buche ich ohne Frühstück» — без сніданку|гость говорит «Dann buche ich ohne Frühstück» — без завтрака
+b1_medien|0|0|клієнт каже «mein Internet funktioniert seit gestern nicht mehr» — інтернет не працює|клиент говорит «mein Internet funktioniert seit gestern nicht mehr» — интернет не работает
+b1_medien|0|1|«Er kommt zwischen 9 und 12 Uhr» — завтра між 9 і 12|«Er kommt zwischen 9 und 12 Uhr» — завтра между 9 и 12
+b1_medien|1|0|Тім каже «Ich habe sie nur auf Instagram gesehen» — в Instagram|Тим говорит «Ich habe sie nur auf Instagram gesehen» — в Instagram
+b1_medien|1|1|Анна радить «Achte auch auf die Quelle» — перевірити джерело|Анна советует «Achte auch auf die Quelle» — проверить источник

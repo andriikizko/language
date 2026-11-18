@@ -39,3 +39,42 @@ T['b1_gesundheit'] = dict(title='Beim Facharzt', note='Тут: пасив (werde
  'Die Zuzahlung in der Apotheke beträgt fünf Euro.|Доплата в аптеці становить п\'ять євро.|Доплата в аптеке составляет пять евро.',
  'Nach vier Wochen werde ich noch einmal untersucht.|Через чотири тижні мене обстежать ще раз.|Через четыре недели меня обследуют ещё раз.',
  'Gute Besserung!|Одужуйте!|Выздоравливайте!'])
+T['b1_wohnen'] = dict(title='Die neue Wohnung', note='Тут: Konjunktiv II (hätte, wäre, würde) і закінчення прикметників.', s=[
+ 'Wir suchen seit drei Monaten eine neue Wohnung.|Ми вже три місяці шукаємо нову квартиру.|Мы уже три месяца ищем новую квартиру.',
+ 'Wenn wir mehr Geld hätten, würden wir ein Haus kaufen.|Якби ми мали більше грошей, ми б купили будинок.|Если бы у нас было больше денег, мы бы купили дом.',
+ 'Gestern haben wir eine schöne Wohnung besichtigt.|Учора ми оглянули гарну квартиру.|Вчера мы осмотрели красивую квартиру.',
+ 'Sie hat drei Zimmer, einen kleinen Balkon und eine moderne Küche.|У ній три кімнати, невеликий балкон і сучасна кухня.|В ней три комнаты, небольшой балкон и современная кухня.',
+ 'Die Kaltmiete beträgt 650 Euro, dazu kommen die Nebenkosten.|Холодна оренда становить 650 євро, плюс комунальні.|Холодная аренда составляет 650 евро, плюс коммунальные.',
+ 'Der Vermieter verlangt eine Kaution von drei Monatsmieten.|Орендодавець вимагає заставу в три місячні оренди.|Арендодатель требует залог в три месячные аренды.',
+ 'Ich wünschte, die Wohnung wäre etwas näher am Bahnhof.|Шкода, що квартира не трохи ближче до вокзалу.|Жаль, что квартира не немного ближе к вокзалу.',
+ 'Trotzdem haben wir den Mietvertrag unterschrieben.|Проте ми підписали договір оренди.|Тем не менее мы подписали договор аренды.',
+ 'Nächsten Monat ziehen wir um und müssen uns ummelden.|Наступного місяця ми переїжджаємо й маємо перереєструватися.|В следующем месяце мы переезжаем и должны перерегистрироваться.',
+ 'Die Nachbarn sind freundlich, und das Haus ist ruhig.|Сусіди привітні, а будинок тихий.|Соседи дружелюбные, а дом тихий.',
+ 'Könnten Sie uns bitte beim Umzug helfen?|Чи могли б ви допомогти нам із переїздом?|Не могли бы вы помочь нам с переездом?',
+ 'Wir freuen uns auf das neue Zuhause!|Ми радіємо новому дому!|Мы радуемся новому дому!'])
+T['b1_reisen'] = dict(title='Eine Reise mit Hindernissen', note='Тут: Präteritum (war, hatte, stand) і als / wenn / bevor / nachdem.', s=[
+ 'Letzten Sommer waren wir eine Woche in Österreich.|Минулого літа ми були тиждень в Австрії.|Прошлым летом мы были неделю в Австрии.',
+ 'Wir hatten die Unterkunft schon im Februar gebucht.|Ми забронювали житло ще в лютому.|Мы забронировали жильё ещё в феврале.',
+ 'Bevor wir abfuhren, kontrollierten wir noch einmal das Gepäck.|Перш ніж ми поїхали, ми ще раз перевірили багаж.|Прежде чем мы поехали, мы ещё раз проверили багаж.',
+ 'Als wir auf der Autobahn waren, standen wir zwei Stunden im Stau.|Коли ми були на автобані, ми дві години стояли в заторі.|Когда мы были на автобане, мы два часа стояли в пробке.',
+ 'Wenn man im Sommer reist, gibt es oft viel Verkehr.|Коли подорожуєш улітку, часто багато руху.|Когда путешествуешь летом, часто много движения.',
+ 'Nachdem wir angekommen waren, suchten wir das Hotel.|Після того як ми приїхали, ми шукали готель.|После того как мы приехали, мы искали отель.',
+ 'Das Zimmer war sauber, aber ein bisschen laut.|Кімната була чиста, але трохи гучна.|Комната была чистой, но немного шумной.',
+ 'Am nächsten Tag machten wir eine Führung durch die Altstadt.|Наступного дня ми пройшли екскурсію старим містом.|На следующий день мы прошли экскурсию по старому городу.',
+ 'Wegen des Regens fiel die Wanderung leider aus.|Через дощ прогулянка, на жаль, не відбулася.|Из-за дождя поход, к сожалению, не состоялся.',
+ 'Wir haben uns beim Hotel über die Heizung beschwert.|Ми поскаржилися в готелі на опалення.|Мы пожаловались в отеле на отопление.',
+ 'Am Ende bekamen wir eine kleine Erstattung.|Зрештою ми отримали невелике відшкодування.|В итоге мы получили небольшое возмещение.',
+ 'Trotzdem war es eine schöne Reise.|І все ж це була гарна подорож.|И всё же это была хорошая поездка.'])
+T['b1_medien'] = dict(title='Was stimmt im Internet?', note='Тут: непрямі питання (ob, wie, wann) і deshalb / trotzdem / obwohl.', s=[
+ 'Jeden Morgen lese ich die Nachrichten auf meinem Handy.|Щоранку я читаю новини на телефоні.|Каждое утро я читаю новости на телефоне.',
+ 'Gestern habe ich eine Schlagzeile gesehen, die mich überrascht hat.|Вчора я побачив заголовок, який мене здивував.|Вчера я увидел заголовок, который меня удивил.',
+ 'Ich wusste nicht, ob die Nachricht stimmt.|Я не знав, чи правдива ця новина.|Я не знал, правдива ли эта новость.',
+ 'Deshalb habe ich nach der Quelle gesucht.|Тому я шукав джерело.|Поэтому я искал источник.',
+ 'Die Seite war unbekannt, trotzdem hatten viele Menschen den Beitrag geteilt.|Сторінка була невідома, проте багато людей поділилися дописом.|Страница была неизвестной, тем не менее многие поделились постом.',
+ 'Obwohl das Foto echt aussah, war es eine Fälschung.|Хоча фото виглядало справжнім, воно було підробкою.|Хотя фото выглядело настоящим, оно было подделкой.',
+ 'Im Internet gibt es viel Betrug, deshalb sollte man vorsichtig sein.|В інтернеті багато шахрайства, тому слід бути обережним.|В интернете много мошенничества, поэтому нужно быть осторожным.',
+ 'Ich gebe mein Passwort niemandem weiter.|Я нікому не передаю свій пароль.|Я никому не передаю свой пароль.',
+ 'Man kann die Einstellungen ändern, damit die Daten sicher bleiben.|Можна змінити налаштування, щоб дані лишалися в безпеці.|Можно изменить настройки, чтобы данные оставались в безопасности.',
+ 'Ich lade die Datei herunter, um sie später zu lesen.|Я завантажую файл, щоб прочитати його пізніше.|Я скачиваю файл, чтобы прочитать его позже.',
+ 'Kannst du mir sagen, wie die Seite heißt?|Ти можеш сказати мені, як називається сторінка?|Ты можешь сказать мне, как называется страница?',
+ 'Gute Quellen sind seriös und glaubwürdig.|Хороші джерела серйозні й достовірні.|Хорошие источники серьёзные и достоверные.'])
