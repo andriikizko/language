@@ -1,29 +1,32 @@
 import { useMemo, useRef, useState } from 'react'
 import { LEVELS, poolFor, pick, makeQuestion, examIds, speakAll } from './engine.js'
 
-// Ступені складності: 1-2 = A1, 3-5 = A2
+// Ступені складності: 1-2 = A1, 3-5 = A2, 6-7 = B1
 const poolStep = (s) => {
-  const A1 = LEVELS.a1, A2 = LEVELS.a2
+  const A1 = LEVELS.a1, A2 = LEVELS.a2, B1 = LEVELS.b1
   if (s === 1) return A1.blocks.flatMap((b) => [...poolFor(b, 'art'), ...poolFor(b, 'tr')])
   if (s === 2) return A1.grammar.flatMap((g) => poolFor(g, 'gap'))
   if (s === 3) return A2.blocks.flatMap((b) => [...poolFor(b, 'tr'), ...poolFor(b, 'gap')])
   if (s === 4) return A2.grammar.flatMap((g) => poolFor(g, 'gap'))
-  return ['lesen', 'schreiben', 'hoeren'].flatMap((k) => examIds(k, 'a2'))
+  if (s === 5) return ['lesen', 'schreiben', 'hoeren'].flatMap((k) => examIds(k, 'a2'))
+  if (s === 6) return B1.blocks.flatMap((b) => [...poolFor(b, 'tr'), ...poolFor(b, 'gap')])
+  return [...B1.grammar.flatMap((g) => poolFor(g, 'gap')), ...['lesen', 'schreiben', 'hoeren'].flatMap((k) => examIds(k, 'b1'))]
 }
 const MIN = 12, MAX = 24
 
 export const recommend = (steps) => {
   const w = steps.slice(-8); const ab = w.reduce((a, b) => a + b, 0) / w.length
   if (ab < 2.5) return { level: 'a1', ab }
-  return { level: 'a2', ab, more: ab >= 4.3 }
+  if (ab < 5.3) return { level: 'a2', ab, more: ab >= 4.3 }
+  return { level: 'b1', ab }
 }
 
 export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
   const used = useRef(new Set())
-  const pools = useMemo(() => [0, 1, 2, 3, 4, 5].map((s) => (s ? poolStep(s) : [])), [])
+  const pools = useMemo(() => [0, 1, 2, 3, 4, 5, 6, 7].map((s) => (s ? poolStep(s) : [])), [])
   const draw = (step) => {
     for (let d = 0; d < 5; d++) for (const s of [step - d, step + d]) {
-      if (s < 1 || s > 5) continue
+      if (s < 1 || s > 7) continue
       const free = pools[s].filter((id) => !used.current.has(id))
       for (const id of pick(free, 6)) { const q = makeQuestion(id, lang); if (q && q.type === 'choice') { used.current.add(id); return { q, s } } }
     }
@@ -35,13 +38,13 @@ export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
   const [sel, setSel] = useState(null)
   const [res, setRes] = useState(null)
   if (res) {
-    const L = res.level === 'a1' ? 'A1' : 'A2'
+    const L = res.level.toUpperCase()
     const wrong = hist.filter((h) => !h.ok)
     return (
       <div className="de-main">
         <div className="de-hello">Твій рівень: {L}{res.more ? '+' : ''}</div>
         <div className="de-card">
-          Судячи з відповідей, радимо почати з рівня <b>{L}</b>.{res.more ? ' Ти впевнено пройшов A2, тож згодом тобі підійде B1 (він скоро з’явиться).' : ''}
+          Судячи з відповідей, радимо почати з рівня <b>{L}</b>.{res.more ? ' Ти впевнено пройшов A2 — спробуй і B1, він уже доступний.' : ''}
           <div className="de-dim" style={{ marginTop: 6 }}>Це орієнтовна оцінка за {hist.length} питань. Рівень можна змінити будь-коли.</div>
         </div>
         {wrong.length > 0 && <div className="de-h2">Розбір помилок</div>}
@@ -71,7 +74,7 @@ export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
     const ok = sel === q.correct
     const nh = [...hist, { q, sel, ok, s: cur.s }]
     const steps = nh.map((h) => h.s)
-    const ns = Math.max(1, Math.min(5, cur.s + (ok ? 1 : -1)))
+    const ns = Math.max(1, Math.min(7, cur.s + (ok ? 1 : -1)))
     const last = steps.slice(-6)
     const stable = nh.length >= MIN && Math.max(...last) - Math.min(...last) <= 1
     const lowFail = nh.length >= 8 && nh.slice(-4).filter((h) => !h.ok).length >= 3 && cur.s === 1

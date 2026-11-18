@@ -7,6 +7,9 @@ import exam from './data/exam.json'
 import course2 from './data/course_a2.json'
 import grammar2 from './data/grammar_a2.json'
 import exam2 from './data/exam_a2.json'
+import course3 from './data/course_b1.json'
+import grammar3 from './data/grammar_b1.json'
+import exam3 from './data/exam_b1.json'
 
 export const EXAM = exam
 
@@ -16,6 +19,7 @@ export const FREE_GRAMMAR = 4
 export const LEVELS = {
   a1: { name: 'A1', blocks: course, grammar, exam, xp: 'x', free: 3, freeG: 4 },
   a2: { name: 'A2', blocks: course2, grammar: grammar2, exam: exam2, xp: 'y', free: 0, freeG: 0 },
+  b1: { name: 'B1', blocks: course3, grammar: grammar3, exam: exam3, xp: 'z', free: 0, freeG: 0 },
 }
 export const cleanDe = (s) => s.replace(/\d[\d,.\s]*[€%]?\s*\(([^)]+)\)/g, '$1').replace(/\s+/g, ' ').trim()
 export const FREE_BLOCKS = 3
@@ -131,8 +135,8 @@ export const makeQuestion = (id, lang) => {
     return { id, type: 'choice', hint: 'Діалог: «' + d.title + '»', prompt: q[lang], opts: idx.map((i) => q.o[i][lang]), correct: idx.indexOf(q.c), wmap,
       explain: `Правильна відповідь: ${q.o[q.c][lang]}.`, block: b.id, dialog: +r[1] }
   }
-  if (t === 'x' || t === 'y') {
-    const x = (t === 'x' ? exam : exam2)[+r[0]]
+  if (t === 'x' || t === 'y' || t === 'z') {
+    const x = (t === 'x' ? exam : t === 'y' ? exam2 : exam3)[+r[0]]
     const idx = x.o.length === 3 ? shuffle(x.o.map((_, i) => i)) : x.o.map((_, i) => i)
     const wmap = {}; if (x.y) x.o.forEach((o, k) => { if (k !== x.c) wmap[o] = (lang === 'ru' ? 'по тексту: ' : 'за текстом: ') + x.y[lang === 'ru' ? 1 : 0] })
     return { id, type: 'choice', wmap, hint: { lesen: 'Lesen', schreiben: 'Schreiben', hoeren: 'Hören' }[x.sec], prompt: x.q, text: x.text, audio: x.audio,
