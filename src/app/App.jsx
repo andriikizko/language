@@ -15,7 +15,7 @@ const ERR = {
   bad_email: 'Вкажіть правильну email-адресу', bad_phone: 'Телефон вказано неправильно', no_db: 'Сервер тимчасово недоступний', google_failed: 'Не вдалося увійти через Google', no_google: 'Вхід через Google ще не налаштований', bad_name: 'Вкажіть імʼя',
 }
 
-const LV = [['a1', 'A1', 'З нуля: базові фрази, числа, родина, їжа, місто'], ['a2', 'A2', 'Знаєш основи: розмови про здоров’я, роботу, житло, подорожі'], ['b1', 'B1', 'Середній рівень: робота, житло, довкілля, суспільство, офіційні справи'], ['b2', 'B2', 'Скоро']]
+const LV = [['a1', 'A1', 'З нуля: базові фрази, числа, родина, їжа, місто'], ['a2', 'A2', 'Знаєш основи: розмови про здоров’я, роботу, житло, подорожі'], ['b1', 'B1', 'Середній рівень: робота, житло, довкілля, суспільство, офіційні справи'], ['b2', 'B2', 'Вище середнього: політика, наука, право, медіа, психологія']]
 const Start = ({ onTest, onPick }) => {
   const [pick, setPick] = useState(false)
   return (
@@ -225,8 +225,7 @@ export default function App() {
             <div className="de-card"><b>Вивчено слів: {knownCount} / 500</b><div className="de-bar" style={{ marginTop: 8, marginBottom: 0 }}><div style={{ width: Math.min(100, knownCount / 5) + '%' }} /></div><div className="de-dim" style={{ marginTop: 6 }}>Слово зараховується, коли ти правильно відповів на нього у вправі.</div></div>
             <div className="de-h2">Мій рівень</div>
             <div className="de-card"><b>{(st.level || 'a1').toUpperCase()}</b>
-              <div className="de-seg" style={{ width: 'fit-content', margin: '8px 0' }}>{['a1', 'a2', 'b1'].map((k) => <button key={k} className={(st.level || 'a1') === k ? 'on' : ''} onClick={() => update({ level: k })}>{k.toUpperCase()}</button>)}</div>
-              <div className="de-dim">B2 скоро.</div>
+              <div className="de-seg" style={{ width: 'fit-content', margin: '8px 0' }}>{['a1', 'a2', 'b1', 'b2'].map((k) => <button key={k} className={(st.level || 'a1') === k ? 'on' : ''} onClick={() => update({ level: k })}>{k.toUpperCase()}</button>)}</div>
               <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => setTesting(true)}>Пройти тест рівня ще раз</button></div>
             <div className="de-h2">Мова перекладу</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>

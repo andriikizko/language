@@ -89,3 +89,33 @@ z|26|«Sie ist leider zu klein» — замала|«Sie ist leider zu klein» �
 z|27|«vor drei Tagen gekauft» — три дні тому|«vor drei Tagen gekauft» — три дня назад
 z|28|«Es fehlt nur noch eine Kopie vom Ausweis» — копія посвідчення|«Es fehlt nur noch eine Kopie vom Ausweis» — копия удостоверения
 z|29|«Der Termin ist um zehn Uhr» — о десятій|«Der Termin ist um zehn Uhr» — в десять
+w|0|«sinkt nicht» — продуктивність не знижується|«sinkt nicht» — производительность не снижается
+w|1|«weniger gestresst» — менш напружені|«weniger gestresst» — менее напряжены
+w|2|«fehlen die Arbeitskräfte» — не вистачає робітників|«fehlen die Arbeitskräfte» — не хватает работников
+w|3|«der Staat die Einführung finanziell unterstützt» — держава фінансує впровадження|«der Staat die Einführung finanziell unterstützt» — государство финансирует внедрение
+w|4|«wurde nun beschlossen» — рішення ухвалено|«wurde nun beschlossen» — решение принято
+w|5|«Händler hingegen warnen» — торговці застерігають|«Händler hingegen warnen» — торговцы предостерегают
+w|6|«nach einem Jahr zu überprüfen» — через рік перевірити наслідки|«nach einem Jahr zu überprüfen» — через год проверить последствия
+w|7|«die Luft zu verbessern und den Aufenthalt attraktiver zu machen» — краще повітря й привабливіше місто|«die Luft zu verbessern und den Aufenthalt attraktiver zu machen» — лучше воздух и привлекательнее город
+w|8|«grundlegend verändert» — докорінно змінили|«grundlegend verändert» — коренным образом изменили
+w|9|«ohne den Umweg über Journalisten» — без посередників-журналістів|«ohne den Umweg über Journalisten» — без посредников-журналистов
+w|10|«mehr Aufmerksamkeit erzeugen» — привертають більше уваги|«mehr Aufmerksamkeit erzeugen» — привлекают больше внимания
+w|11|«wenn die Nutzer Quellen kritisch prüften» — якщо користувачі критично перевіряють джерела|«wenn die Nutzer Quellen kritisch prüften» — если пользователи критически проверяют источники
+w|12|«zum 31. März» — до 31 березня|«zum 31. März» — к 31 марта
+w|13|«schriftlich» — письмове підтвердження|«schriftlich» — письменное подтверждение
+w|14|«werde ich rechtliche Schritte einleiten» — розпочне юридичні кроки|«werde ich rechtliche Schritte einleiten» — начнёт юридические шаги
+w|15|«48 Euro» — 48 євро|«48 Euro» — 48 евро
+w|16|«Hiermit beschwere ich mich» — офіційна форма, без розмовних слів|«Hiermit beschwere ich mich» — официальная форма, без разговорных слов
+w|17|Konjunktiv I: «er sei» — одна проста форма|Konjunktiv I: «er sei» — одна простая форма
+w|18|Нереальне минуле: «Hätte ich … reagiert, wäre … gewesen»|Нереальное прошлое: «Hätte ich … reagiert, wäre … gewesen»
+w|19|Номінальний стиль: «Bei Nichtzahlung … wird … versandt»|Номинальный стиль: «Bei Nichtzahlung … wird … versandt»
+w|20|Passiv з модальним: «hat … abgeschlossen werden können»|Пассив с модальным: «hat … abgeschlossen werden können»
+w|21|«indem man … ausschaltet» — дієслово в кінці підрядного|«indem man … ausschaltet» — глагол в конце придаточного
+w|22|«wegen der Stellenanzeige» — про оголошення про вакансію|«wegen der Stellenanzeige» — об объявлении о вакансии
+w|23|«bis Freitag schicken» — до п'ятниці|«bis Freitag schicken» — до пятницы
+w|24|«etwas einseitig» — однобічна|«etwas einseitig» — односторонняя
+w|25|«Die Risiken für den Arbeitsmarkt kamen zu kurz» — ризики для ринку праці|«Die Risiken für den Arbeitsmarkt kamen zu kurz» — риски для рынка труда
+w|26|«70 Prozent» — 70 %|«70 Prozent» — 70 %
+w|27|«mehrere Quellen zu vergleichen» — порівнювати джерела|«mehrere Quellen zu vergleichen» — сравнивать источники
+w|28|«zu teuer geworden» — надто дорогий|«zu teuer geworden» — слишком дорогой
+w|29|«sonst verlängert er sich automatisch» — автоматично продовжується|«sonst verlängert er sich automatisch» — автоматически продлевается

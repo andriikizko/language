@@ -9,7 +9,7 @@ const topics = Object.keys(nounsData.topics).filter((t) => !t.startsWith('a2_') 
 const nouns = topics.flatMap((t, i) => every(nounsData.words.filter((w) => w.topic === t && w.core && w.g !== 'p').sort(byDe), i < 3 ? 3 : 2))
 export const GUEST = {
   nouns: new Set(nouns.map((w) => w.de + '|' + w.g)),
-  verbs: new Set(every(verbs.filter((v) => v.lvl !== 'a2' && v.lvl !== 'b1' && v.core && v.type !== 'aux').sort(byDe), 12).map((v) => v.de)),
-  adj: new Set(every(dict.adj.filter((a) => a.lvl !== 'a2' && a.lvl !== 'b1' && a.core).sort(byDe), 13).map((a) => a.de)),
+  verbs: new Set(every(verbs.filter((v) => v.lvl !== 'a2' && v.lvl !== 'b1' && v.lvl !== 'b2' && v.core && v.type !== 'aux').sort(byDe), 12).map((v) => v.de)),
+  adj: new Set(every(dict.adj.filter((a) => a.lvl !== 'a2' && a.lvl !== 'b1' && a.lvl !== 'b2' && a.core).sort(byDe), 13).map((a) => a.de)),
 }
 export const GUEST_TEXT = 'Щоб бачити весь словник і користуватися всіма перевагами застосунку, зареєструйтесь.'

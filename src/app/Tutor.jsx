@@ -10,6 +10,7 @@ const SCHED = {
   a2: [['g2_perfekt_haben', 'g2_perfekt_sein'], ['g2_praeteritum'], ['g2_dativ'], ['g2_wechsel'], ['g2_adjektiv'], ['g2_komparativ'], ['g2_nebensatz'], ['g2_reflexiv'], ['g2_imperativ'], ['g2_konjunktiv'], ['g2_zu'], ['g2_futur']],
 }
 SCHED.b1 = [['g3_praeteritum'], ['g3_zweck'], ['g3_relativ'], ['g3_konj2'], ['g3_temporal'], ['g3_indirekt', 'g3_konzessiv'], ['g3_genitiv'], ['g3_passiv_modal'], ['g3_passiv'], ['g3_verben_praep'], ['g3_hoeflich'], ['g3_plusquam', 'g3_doppelkonj']]
+SCHED.b2 = [['g4_nominal'], ['g4_passiv_perf', 'g4_partizip'], ['g4_konj1'], ['g4_konj2_verg'], ['g4_lassen'], ['g4_konnektoren'], ['g4_infinitiv'], ['g4_konzessiv'], ['g4_relativ'], ['g4_verben_praep'], ['g4_futur2'], ['g4_modalpart']]
 const PASS = 70
 const KINDS = ['Слова й топік', 'Граматика й вправи', 'Діалоги й тест']
 const FREE_WEEKS = 1

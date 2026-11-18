@@ -12,7 +12,7 @@ _W={}
 for _l in open('content/why/exam.txt',encoding='utf8'):
     if _l.strip():
         _k,_i,_u,_r=_l.rstrip('\n').split('|'); _W[(_k,int(_i))]=(_u,_r)
-_K={'a1':'x','a2':'y','b1':'z'}[LV]
+_K={'a1':'x','a2':'y','b1':'z','b2':'w'}[LV]
 assert len(out)==sum(1 for k in _W if k[0]==_K),'exam why count'
 for i,x in enumerate(out): x['y']=list(_W[(_K,i)])
 for x in out: assert len(set(x['o']))==len(x['o']) and 0<=x['c']<len(x['o'])

@@ -22,10 +22,10 @@ export const Verbs = ({ lang, want, setWant, onBack, guest, onGate }) => {
   const [open, setOpen] = useState(null)
   const list = useMemo(() => {
     const s = q.trim().toLowerCase()
-    return verbs.filter((v) => (!guest || GUEST.verbs.has(v.de)) && (type === 'all' || (type === 'refl' ? v.refl : type === 'a2' ? v.lvl === 'a2' : type === 'b1' ? v.lvl === 'b1' : v.type === type)) &&
+    return verbs.filter((v) => (!guest || GUEST.verbs.has(v.de)) && (type === 'all' || (type === 'refl' ? v.refl : type === 'a2' ? v.lvl === 'a2' : type === 'b1' ? v.lvl === 'b1' : type === 'b2' ? v.lvl === 'b2' : v.type === type)) &&
       (only === 'all' || want['v:' + v.de]) && (!s || v.de.includes(s) || v.uk.toLowerCase().includes(s) || v.ru.toLowerCase().includes(s)))
   }, [type, only, q, want])
-  const T = [['regular', 'Звичайні'], ['modal', 'Модальні'], ['sep', 'Відокремлювані'], ['refl', 'Зворотні'], ['a2', 'Рівень A2'], ['b1', 'Рівень B1'], ['all', 'Усі']]
+  const T = [['regular', 'Звичайні'], ['modal', 'Модальні'], ['sep', 'Відокремлювані'], ['refl', 'Зворотні'], ['a2', 'Рівень A2'], ['b1', 'Рівень B1'], ['b2', 'Рівень B2'], ['all', 'Усі']]
   return (
     <>
       <Back title="Дієслова" onBack={onBack} extra={list.length + ' слів'} />
