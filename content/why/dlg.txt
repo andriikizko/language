@@ -96,3 +96,15 @@ b1_medien|0|0|клієнт каже «mein Internet funktioniert seit gestern ni
 b1_medien|0|1|«Er kommt zwischen 9 und 12 Uhr» — завтра між 9 і 12|«Er kommt zwischen 9 und 12 Uhr» — завтра между 9 и 12
 b1_medien|1|0|Тім каже «Ich habe sie nur auf Instagram gesehen» — в Instagram|Тим говорит «Ich habe sie nur auf Instagram gesehen» — в Instagram
 b1_medien|1|1|Анна радить «Achte auch auf die Quelle» — перевірити джерело|Анна советует «Achte auch auf die Quelle» — проверить источник
+b1_umwelt|0|0|«Ohne Pfand… dann kommt sie in den gelben Sack» — жовтий мішок|«Ohne Pfand… dann kommt sie in den gelben Sack» — жёлтый мешок
+b1_umwelt|0|1|«Das Papier gehört in den blauen Container» — синій контейнер|«Das Papier gehört in den blauen Container» — синий контейнер
+b1_umwelt|1|0|«wegen der Hitze… Probleme mit dem Wasser» — вода|«wegen der Hitze… Probleme mit dem Wasser» — вода
+b1_umwelt|1|1|Пауль каже «Ich fahre jetzt mit dem Fahrrad zur Arbeit» — на велосипеді|Пауль говорит «Ich fahre jetzt mit dem Fahrrad zur Arbeit» — на велосипеде
+b1_gesellschaft|0|0|«Seit sechs Jahren» — шість років|«Seit sechs Jahren» — шесть лет
+b1_gesellschaft|0|1|«Ich habe das Zertifikat B1» — B1|«Ich habe das Zertifikat B1» — B1
+b1_gesellschaft|1|0|Йонас каже «Meiner Meinung nach helfen gemeinsame Feste dabei» — спільні свята|Йонас говорит «Meiner Meinung nach helfen gemeinsame Feste dabei» — общие праздники
+b1_gesellschaft|1|1|«Dann organisieren wir im Sommer ein Straßenfest» — вуличне свято|«Dann organisieren wir im Sommer ein Straßenfest» — уличный праздник
+b1_behoerden|0|0|клієнт каже «möchte mich ummelden» — перереєструватися|клиент говорит «möchte mich ummelden» — перерегистрироваться
+b1_behoerden|0|1|«Die Anmeldung kostet nichts» — безкоштовно|«Die Anmeldung kostet nichts» — бесплатно
+b1_behoerden|1|0|«Es fehlt noch eine Bescheinigung» — довідки|«Es fehlt noch eine Bescheinigung» — справки
+b1_behoerden|1|1|«am besten per Einschreiben» — рекомендованим листом|«am besten per Einschreiben» — заказным письмом

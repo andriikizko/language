@@ -78,3 +78,42 @@ T['b1_medien'] = dict(title='Was stimmt im Internet?', note='Тут: непря�
  'Ich lade die Datei herunter, um sie später zu lesen.|Я завантажую файл, щоб прочитати його пізніше.|Я скачиваю файл, чтобы прочитать его позже.',
  'Kannst du mir sagen, wie die Seite heißt?|Ти можеш сказати мені, як називається сторінка?|Ты можешь сказать мне, как называется страница?',
  'Gute Quellen sind seriös und glaubwürdig.|Хороші джерела серйозні й достовірні.|Хорошие источники серьёзные и достоверные.'])
+T['b1_umwelt'] = dict(title='Wir schützen die Umwelt', note='Тут: Konjunktiv II (würde, wäre, hätte) і Genitiv (wegen, trotz).', s=[
+ 'Der Klimawandel ist eines der größten Probleme unserer Zeit.|Зміна клімату — одна з найбільших проблем нашого часу.|Изменение климата — одна из крупнейших проблем нашего времени.',
+ 'Die Temperaturen steigen, und die Gletscher schmelzen.|Температури зростають, а льодовики тануть.|Температуры растут, а ледники тают.',
+ 'Wegen der Hitze gab es im Sommer oft Probleme mit dem Wasser.|Через спеку влітку часто були проблеми з водою.|Из-за жары летом часто были проблемы с водой.',
+ 'Wenn alle weniger Auto fahren würden, wäre die Luft sauberer.|Якби всі рідше їздили автомобілем, повітря було б чистішим.|Если бы все реже ездили на машине, воздух был бы чище.',
+ 'Ich fahre jetzt mit dem Fahrrad zur Arbeit.|Тепер я їжджу на роботу на велосипеді.|Теперь я езжу на работу на велосипеде.',
+ 'Zu Hause trenne ich den Müll: Papier, Plastik und Bioabfall.|Удома я сортую сміття: папір, пластик і біовідходи.|Дома я сортирую мусор: бумагу, пластик и биоотходы.',
+ 'Pfandflaschen bringe ich zurück in den Supermarkt.|Пляшки із заставою я повертаю в супермаркет.|Бутылки с залогом я возвращаю в супермаркет.',
+ 'Man sollte Plastikmüll vermeiden und Mehrwegflaschen benutzen.|Слід уникати пластикового сміття й користуватися багаторазовими пляшками.|Следует избегать пластикового мусора и пользоваться многоразовыми бутылками.',
+ 'Solar- und Windenergie sind erneuerbar und umweltfreundlich.|Сонячна й вітрова енергія відновлювані та екологічні.|Солнечная и ветровая энергия возобновляемы и экологичны.',
+ 'Trotz der hohen Kosten kaufen immer mehr Leute Solaranlagen.|Попри високу вартість дедалі більше людей купують сонячні панелі.|Несмотря на высокую стоимость, всё больше людей покупают солнечные панели.',
+ 'Wenn ich mehr Zeit hätte, würde ich mich ehrenamtlich engagieren.|Якби я мав більше часу, я б став волонтером.|Если бы у меня было больше времени, я бы стал волонтёром.',
+ 'Jeder kann etwas für die Umwelt tun.|Кожен може щось зробити для довкілля.|Каждый может что-то сделать для окружающей среды.'])
+T['b1_gesellschaft'] = dict(title='Leben in Deutschland', note='Тут: пасив із модальними дієсловами, obwohl / trotzdem, висловлення думки.', s=[
+ 'Deutschland besteht aus sechzehn Bundesländern.|Німеччина складається з шістнадцяти федеральних земель.|Германия состоит из шестнадцати федеральных земель.',
+ 'Jeder Bürger hat Rechte, aber auch Pflichten.|Кожен громадянин має права, але й обов\'язки.|Каждый гражданин имеет права, но и обязанности.',
+ 'Das Gesetz muss geändert werden, finden viele Menschen.|Закон потрібно змінити, вважають багато людей.|Закон нужно изменить, считают многие люди.',
+ 'Die Regeln können nicht einfach ignoriert werden.|Правила не можна просто ігнорувати.|Правила нельзя просто игнорировать.',
+ 'Es soll mehr für die Integration getan werden.|Слід більше робити для інтеграції.|Нужно больше делать для интеграции.',
+ 'Obwohl er erst kurz hier lebt, spricht er schon gut Deutsch.|Хоча він живе тут недовго, він уже добре говорить німецькою.|Хотя он живёт здесь недолго, он уже хорошо говорит по-немецки.',
+ 'Er lernt jeden Tag. Trotzdem hat er manchmal Probleme mit dem Artikel.|Він учить щодня. Проте іноді має проблеми з артиклем.|Он учит каждый день. Тем не менее иногда у него проблемы с артиклем.',
+ 'Meiner Meinung nach ist Bildung am wichtigsten.|На мою думку, освіта найважливіша.|По моему мнению, образование важнее всего.',
+ 'Alle Menschen sollten die gleichen Chancen haben.|Усі люди мали б мати однакові можливості.|Все люди должны иметь одинаковые возможности.',
+ 'Die Vielfalt der Kulturen ist eine Bereicherung für die Gesellschaft.|Різноманіття культур — збагачення для суспільства.|Разнообразие культур — обогащение для общества.',
+ 'Da stimme ich dir zu, aber es gibt auch Vorurteile.|Тут я з тобою згоден, але є й упередження.|Тут я с тобой согласен, но есть и предрассудки.',
+ 'Zusammenfassend kann man sagen, dass Toleranz sehr wichtig ist.|Підсумовуючи, можна сказати, що толерантність дуже важлива.|Подводя итог, можно сказать, что толерантность очень важна.'])
+T['b1_behoerden'] = dict(title='Beim Amt', note='Тут: пасив у діловому стилі, формальний лист, прийменники.', s=[
+ 'Nach dem Umzug muss man sich beim Bürgeramt ummelden.|Після переїзду треба перереєструватися в бюро для громадян.|После переезда нужно перерегистрироваться в бюро для граждан.',
+ 'Dafür braucht man einen Termin, den man meistens online vereinbaren kann.|Для цього потрібен запис, який найчастіше можна зробити онлайн.|Для этого нужна запись, которую чаще всего можно сделать онлайн.',
+ 'Füllen Sie bitte das Formular aus und unterschreiben Sie es.|Заповніть, будь ласка, бланк і підпишіть його.|Заполните, пожалуйста, бланк и подпишите его.',
+ 'Bitte legen Sie eine Kopie Ihres Ausweises bei.|Додайте, будь ласка, копію вашого посвідчення особи.|Приложите, пожалуйста, копию вашего удостоверения личности.',
+ 'Der Antrag wird innerhalb von vier Wochen bearbeitet.|Заяву розглядають протягом чотирьох тижнів.|Заявление рассматривается в течение четырёх недель.',
+ 'Die Frist für den Antrag endet am 30. Juni.|Строк подачі заяви закінчується 30 червня.|Срок подачи заявления заканчивается 30 июня.',
+ 'Wichtige Briefe schickt man am besten als Einschreiben.|Важливі листи найкраще надсилати рекомендованою поштою.|Важные письма лучше всего отправлять заказным письмом.',
+ 'Ihr Antrag wurde bewilligt, der Bescheid kommt per Post.|Вашу заяву схвалено, рішення прийде поштою.|Ваше заявление одобрено, решение придёт по почте.',
+ 'Gegen den Bescheid kann man Widerspruch einlegen.|Проти рішення можна подати заперечення.|Против решения можно подать возражение.',
+ 'Sehr geehrte Damen und Herren, ich möchte einen Antrag stellen.|Шановні пані та панове, я хочу подати заяву.|Уважаемые дамы и господа, я хочу подать заявление.',
+ 'Ich bitte um Bestätigung des Eingangs.|Прошу підтвердити отримання.|Прошу подтвердить получение.',
+ 'Mit freundlichen Grüßen, Olena Petrenko|З повагою, Олена Петренко|С уважением, Олена Петренко'])
