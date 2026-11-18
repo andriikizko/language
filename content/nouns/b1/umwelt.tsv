@@ -1,0 +1,61 @@
+f|Umwelt|-|довкілля|окружающая среда|1
+m|Umweltschutz|-|охорона довкілля|охрана окружающей среды|1
+n|Klima|-|клімат|климат|0
+m|Klimawandel|-|зміна клімату|изменение климата|1
+f|Erderwärmung|-|глобальне потепління|глобальное потепление|1
+n|Wetter|-|погода|погода|0
+f|Temperatur|Temperaturen|температура (повітря)|температура (воздуха)|0
+m|Regen|-|дощ|дождь|0
+m|Sturm|Stürme|буря|буря|0
+n|Gewitter|Gewitter|гроза|гроза|0
+n|Hochwasser|Hochwasser|повінь|наводнение|1
+f|Dürre|Dürren|посуха|засуха|0
+f|Hitze|-|спека|жара|0
+f|Kälte|-|холод|холод|0
+f|Natur|-|природа|природа|0
+f|Landschaft|Landschaften|ландшафт, краєвид|ландшафт, пейзаж|1
+m|Wald|Wälder|ліс|лес|0
+m|Fluss|Flüsse|річка|река|0
+m|See|Seen|озеро|озеро|0
+n|Meer|Meere|море|море|0
+f|Küste|Küsten|узбережжя|побережье|0
+n|Gebirge|Gebirge|гори, гірський масив|горы, горный массив|0
+f|Tierwelt|-|тваринний світ|животный мир|0
+f|Pflanze|Pflanzen|рослина|растение|0
+f|Art|Arten|вид (біологічний)|вид (биологический)|1
+n|Lebewesen|Lebewesen|жива істота|живое существо|0
+f|Energie|Energien|енергія|энергия|1
+f|Sonnenenergie|-|сонячна енергія|солнечная энергия|0
+f|Windkraft|-|енергія вітру|энергия ветра|0
+f|Kernkraft|-|атомна енергія|атомная энергия|0
+f|Kohle|Kohlen|вугілля|уголь|0
+n|Öl|Öle|нафта, олія|нефть, масло|0
+m|Verbrauch|-|споживання|потребление|1
+f|Ressource|Ressourcen|ресурс|ресурс|1
+m|Rohstoff|Rohstoffe|сировина|сырьё|0
+m|Abfall|Abfälle|відходи|отходы|1
+m|Plastikmüll|-|пластикові відходи|пластиковые отходы|0
+f|Verpackung|Verpackungen|упаковка|упаковка|1
+n|Recycling|-|переробка (рециклінг)|переработка (рециклинг)|1
+f|Mehrwegflasche|Mehrwegflaschen|багаторазова пляшка|многоразовая бутылка|0
+n|Pfand|-|застава (за тару)|залог (за тару)|1
+f|Verschmutzung|Verschmutzungen|забруднення|загрязнение|1
+f|Luft|-|повітря|воздух|0
+p|Abgase|-|вихлопні гази|выхлопные газы|0
+m|Verkehr|-|рух, транспорт|движение, транспорт|0
+n|Elektroauto|Elektroautos|електромобіль|электромобиль|0
+m|Fahrradweg|Fahrradwege|велодоріжка|велодорожка|0
+m|Nahverkehr|-|місцевий транспорт|местный транспорт|1
+f|Lösung|Lösungen|рішення|решение|1
+n|Problem|Probleme|проблема|проблема|0
+f|Folge|Folgen|наслідок|последствие|1
+f|Ursache|Ursachen|причина|причина|1
+m|Schutz|-|захист|защита|1
+f|Zukunft|-|майбутнє|будущее|0
+f|Verantwortung|-|відповідальність|ответственность|0
+f|Maßnahme|Maßnahmen|захід, заходи|мера, меры|1
+n|Gesetz|Gesetze|закон|закон|1
+f|Initiative|Initiativen|ініціатива|инициатива|0
+f|Spende|Spenden|пожертва|пожертвование|0
+n|Ehrenamt|Ehrenämter|волонтерство|волонтёрство|1
+m|Freiwillige|Freiwilligen|волонтер|волонтёр|0

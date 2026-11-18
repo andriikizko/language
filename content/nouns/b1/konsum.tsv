@@ -1,0 +1,63 @@
+m|Einkauf|Einkäufe|покупка|покупка|0
+m|Kauf|Käufe|купівля|покупка|0
+m|Verkauf|Verkäufe|продаж|продажа|0
+n|Angebot|Angebote|пропозиція, акція|предложение, акция|1
+f|Aktion|Aktionen|акція|акция|0
+m|Rabatt|Rabatte|знижка|скидка|1
+m|Preis|Preise|ціна|цена|0
+n|Preisschild|Preisschilder|цінник|ценник|0
+m|Vergleich|Vergleiche|порівняння|сравнение|1
+f|Qualität|Qualitäten|якість|качество|1
+f|Marke|Marken|бренд|бренд|0
+f|Ware|Waren|товар|товар|1
+n|Produkt|Produkte|продукт|продукт|0
+f|Auswahl|-|вибір (асортимент)|выбор (ассортимент)|1
+m|Kunde|Kunden|клієнт|клиент|0
+m|Verkäufer|Verkäufer|продавець|продавец|0
+m|Kundenservice|-|сервіс для клієнтів|сервис для клиентов|0
+f|Bestellung|Bestellungen|замовлення|заказ|1
+f|Lieferung|Lieferungen|доставка|доставка|1
+f|Lieferzeit|Lieferzeiten|термін доставки|срок доставки|0
+p|Versandkosten|-|вартість доставки|стоимость доставки|0
+n|Paket|Pakete|посилка|посылка|0
+f|Sendung|Sendungen|відправлення|отправление|0
+f|Rechnung|Rechnungen|рахунок|счёт|1
+m|Kassenbon|Kassenbons|касовий чек|кассовый чек|0
+f|Quittung|Quittungen|квитанція|квитанция|0
+f|Zahlung|Zahlungen|оплата|оплата|1
+f|Überweisung|Überweisungen|переказ|перевод|0
+f|Kreditkarte|Kreditkarten|кредитна картка|кредитная карта|0
+f|EC-Karte|EC-Karten|картка EC|карта EC|0
+n|Bargeld|-|готівка|наличные|0
+f|Ratenzahlung|Ratenzahlungen|оплата частинами|оплата частями|0
+f|Reklamation|Reklamationen|рекламація, претензія|рекламация, претензия|1
+f|Garantie|Garantien|гарантія|гарантия|1
+m|Mangel|Mängel|недолік, дефект|недостаток, дефект|1
+m|Umtausch|-|обмін|обмен|1
+f|Rückgabe|Rückgaben|повернення (товару)|возврат (товара)|1
+n|Rückgaberecht|-|право на повернення|право на возврат|0
+f|Erstattung|Erstattungen|відшкодування|возмещение|0
+n|Widerrufsrecht|-|право на відмову від покупки|право на отказ от покупки|0
+f|Bank|Banken|банк|банк|0
+n|Girokonto|Girokonten|поточний рахунок|текущий счёт|1
+n|Sparkonto|Sparkonten|ощадний рахунок|сберегательный счёт|0
+n|Konto|Konten|рахунок|счёт|0
+m|Kontostand|-|залишок на рахунку|остаток на счёте|1
+f|Kontonummer|Kontonummern|номер рахунку|номер счёта|0
+f|Überziehung|Überziehungen|овердрафт|овердрафт|0
+m|Kredit|Kredite|кредит|кредит|1
+m|Zins|Zinsen|відсоток|процент|1
+f|Schuld|Schulden|борг, провина|долг, вина|1
+f|Rate|Raten|внесок, частина платежу|взнос, часть платежа|0
+n|Budget|Budgets|бюджет|бюджет|1
+f|Ausgabe|Ausgaben|витрата|расход|1
+f|Einnahme|Einnahmen|дохід, надходження|доход, поступление|1
+n|Einkommen|Einkommen|дохід|доход|1
+n|Vermögen|-|майно, капітал|имущество, капитал|0
+n|Geschäft|Geschäfte|магазин, справа|магазин, дело|0
+n|Kaufhaus|Kaufhäuser|універмаг|универмаг|0
+m|Supermarkt|Supermärkte|супермаркет|супермаркет|0
+m|Wochenmarkt|Wochenmärkte|тижневий ринок|еженедельный рынок|0
+m|Flohmarkt|Flohmärkte|блошиний ринок|барахолка|0
+m|Onlinehandel|-|інтернет-торгівля|интернет-торговля|0
+f|Gebrauchtware|Gebrauchtwaren|вживані речі|подержанные вещи|0

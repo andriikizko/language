@@ -1,0 +1,64 @@
+f|Gesellschaft|Gesellschaften|суспільство|общество|1
+f|Politik|-|політика|политика|1
+f|Regierung|Regierungen|уряд|правительство|1
+m|Staat|Staaten|держава|государство|0
+f|Demokratie|Demokratien|демократія|демократия|1
+f|Wahl|Wahlen|вибори, вибір|выборы, выбор|1
+f|Partei|Parteien|партія|партия|0
+m|Bürger|Bürger|громадянин|гражданин|1
+f|Bürgerin|Bürgerinnen|громадянка|гражданка|0
+f|Staatsbürgerschaft|Staatsbürgerschaften|громадянство|гражданство|1
+f|Einbürgerung|Einbürgerungen|натуралізація|натурализация|1
+f|Aufenthaltserlaubnis|Aufenthaltserlaubnisse|дозвіл на проживання|вид на жительство|1
+f|Integration|-|інтеграція|интеграция|1
+m|Migrant|Migranten|мігрант|мигрант|0
+m|Flüchtling|Flüchtlinge|біженець|беженец|1
+f|Herkunft|-|походження|происхождение|0
+f|Heimat|-|батьківщина, рідний край|родина, родной край|1
+f|Kultur|Kulturen|культура|культура|0
+f|Tradition|Traditionen|традиція|традиция|1
+m|Brauch|Bräuche|звичай|обычай|1
+f|Religion|Religionen|релігія|религия|0
+f|Sprache|Sprachen|мова|язык|0
+f|Muttersprache|Muttersprachen|рідна мова|родной язык|0
+f|Mehrheit|Mehrheiten|більшість|большинство|1
+f|Minderheit|Minderheiten|меншість|меньшинство|1
+m|Unterschied|Unterschiede|різниця|разница|0
+f|Gemeinsamkeit|Gemeinsamkeiten|спільне|общее|1
+f|Vielfalt|-|різноманіття|разнообразие|1
+f|Toleranz|-|толерантність|толерантность|1
+n|Vorurteil|Vorurteile|упередження|предубеждение|1
+f|Diskriminierung|Diskriminierungen|дискримінація|дискриминация|1
+f|Gleichberechtigung|-|рівноправність|равноправие|1
+n|Recht|Rechte|право|право|1
+f|Pflicht|Pflichten|обов'язок|обязанность|1
+f|Freiheit|Freiheiten|свобода|свобода|0
+f|Gerechtigkeit|-|справедливість|справедливость|0
+f|Meinungsfreiheit|-|свобода слова|свобода слова|0
+f|Demonstration|Demonstrationen|демонстрація, мітинг|демонстрация, митинг|0
+f|Abstimmung|Abstimmungen|голосування|голосование|0
+m|Bundestag|-|Бундестаг|Бундестаг|0
+m|Bundeskanzler|Bundeskanzler|федеральний канцлер|федеральный канцлер|0
+n|Bundesland|Bundesländer|федеральна земля|федеральная земля|1
+f|Gemeinde|Gemeinden|громада, община|община|0
+f|Verwaltung|Verwaltungen|адміністрація|администрация|0
+n|Gericht|Gerichte|суд|суд|0
+m|Richter|Richter|суддя|судья|0
+m|Anwalt|Anwälte|адвокат|адвокат|0
+f|Polizei|-|поліція|полиция|0
+f|Strafe|Strafen|покарання, штраф|наказание, штраф|1
+f|Gewalt|-|насильство|насилие|0
+m|Frieden|-|мир|мир|0
+m|Krieg|Kriege|війна|война|0
+f|Hilfe|Hilfen|допомога|помощь|0
+f|Unterstützung|Unterstützungen|підтримка|поддержка|1
+f|Wirtschaft|-|економіка|экономика|1
+f|Arbeitslosigkeit|-|безробіття|безработица|0
+f|Armut|-|бідність|бедность|0
+m|Reichtum|Reichtümer|багатство|богатство|0
+f|Steuer|Steuern|податок|налог|1
+f|Rente|Renten|пенсія|пенсия|1
+f|Sozialversicherung|Sozialversicherungen|соціальне страхування|социальное страхование|1
+m|Sozialstaat|-|соціальна держава|социальное государство|0
+f|Bevölkerung|Bevölkerungen|населення|население|1
+f|Generation|Generationen|покоління|поколение|1

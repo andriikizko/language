@@ -1,0 +1,60 @@
+f|Wohnungssuche|-|пошук житла|поиск жилья|1
+f|Wohnungsanzeige|Wohnungsanzeigen|оголошення про квартиру|объявление о квартире|0
+m|Vermieter|Vermieter|орендодавець|арендодатель|1
+m|Mieter|Mieter|орендар|арендатор|1
+m|Mietvertrag|Mietverträge|договір оренди|договор аренды|1
+f|Kaltmiete|Kaltmieten|оренда без комунальних|аренда без коммунальных|1
+f|Warmmiete|Warmmieten|оренда з комунальними|аренда с коммунальными|1
+p|Nebenkosten|-|додаткові витрати (комунальні)|дополнительные расходы (коммунальные)|1
+f|Kaution|Kautionen|застава|залог|1
+f|Nebenkostenabrechnung|Nebenkostenabrechnungen|розрахунок комунальних|расчёт коммунальных|0
+f|Mieterhöhung|Mieterhöhungen|підвищення оренди|повышение арендной платы|0
+f|Kündigungsfrist|Kündigungsfristen|термін попередження про розірвання|срок предупреждения о расторжении|1
+f|Besichtigung|Besichtigungen|огляд (квартири)|осмотр (квартиры)|1
+f|Wohnfläche|Wohnflächen|житлова площа|жилая площадь|1
+n|Erdgeschoss|Erdgeschosse|перший поверх|первый этаж|0
+n|Obergeschoss|Obergeschosse|верхній поверх|верхний этаж|0
+m|Stock|Stockwerke|поверх|этаж|0
+m|Aufzug|Aufzüge|ліфт|лифт|0
+m|Keller|Keller|підвал|подвал|0
+m|Dachboden|Dachböden|горище|чердак|0
+f|Garage|Garagen|гараж|гараж|0
+m|Stellplatz|Stellplätze|паркомісце|парковочное место|1
+n|Treppenhaus|Treppenhäuser|сходова клітка|лестничная клетка|0
+m|Flur|Flure|коридор|коридор|0
+f|Abstellkammer|Abstellkammern|комора|кладовка|0
+f|Einbauküche|Einbauküchen|вбудована кухня|встроенная кухня|1
+f|Heizung|Heizungen|опалення|отопление|1
+f|Klimaanlage|Klimaanlagen|кондиціонер|кондиционер|0
+m|Strom|-|електроенергія|электроэнергия|1
+n|Gas|-|газ|газ|0
+n|Wasser|-|вода|вода|0
+m|Zähler|Zähler|лічильник|счётчик|1
+f|Reparatur|Reparaturen|ремонт|ремонт|1
+m|Schaden|Schäden|шкода, пошкодження|ущерб, повреждение|1
+m|Hausmeister|Hausmeister|двірник, завгосп|дворник, завхоз|0
+f|Nachbarschaft|-|сусідство|соседство|1
+f|Hausordnung|Hausordnungen|правила проживання в будинку|правила проживания в доме|1
+f|Ruhezeit|Ruhezeiten|час тиші|время тишины|1
+m|Lärm|-|шум|шум|0
+m|Müll|-|сміття|мусор|0
+f|Mülltrennung|-|сортування сміття|сортировка мусора|1
+f|Mülltonne|Mülltonnen|сміттєвий бак|мусорный бак|0
+m|Umzug|Umzüge|переїзд|переезд|1
+m|Umzugswagen|Umzugswagen|вантажівка для переїзду|грузовик для переезда|0
+m|Karton|Kartons|картонна коробка|картонная коробка|0
+f|Ummeldung|Ummeldungen|перереєстрація за новою адресою|перерегистрация по новому адресу|1
+f|Wohnungsübergabe|Wohnungsübergaben|передача квартири|передача квартиры|0
+n|Übergabeprotokoll|Übergabeprotokolle|акт передачі|акт передачи|1
+f|Untermiete|-|піднайм|субаренда|0
+f|Wohngemeinschaft|Wohngemeinschaften|спільна оренда (WG)|совместная аренда (WG)|1
+f|Eigentumswohnung|Eigentumswohnungen|квартира у власності|квартира в собственности|0
+n|Eigentum|-|власність|собственность|1
+m|Makler|Makler|ріелтор|риелтор|1
+f|Provision|Provisionen|комісія|комиссия|0
+f|Lage|Lagen|розташування|расположение|1
+f|Umgebung|Umgebungen|околиці, оточення|окрестности, окружение|0
+f|Einrichtung|Einrichtungen|обстановка|обстановка|0
+f|Renovierung|Renovierungen|ремонт (оновлення)|ремонт (обновление)|0
+f|Tapete|Tapeten|шпалери|обои|0
+m|Teppich|Teppiche|килим|ковёр|0

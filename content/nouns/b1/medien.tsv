@@ -1,0 +1,62 @@
+p|Medien|-|медіа, ЗМІ|медиа, СМИ|1
+f|Nachricht|Nachrichten|новина, повідомлення|новость, сообщение|0
+f|Meldung|Meldungen|повідомлення, звістка|сообщение, известие|1
+f|Zeitung|Zeitungen|газета|газета|0
+f|Zeitschrift|Zeitschriften|журнал|журнал|0
+m|Artikel|Artikel|стаття|статья|0
+m|Bericht|Berichte|репортаж, звіт|репортаж, отчёт|1
+f|Reportage|Reportagen|репортаж|репортаж|0
+n|Interview|Interviews|інтерв'ю|интервью|0
+f|Schlagzeile|Schlagzeilen|заголовок новини|заголовок новости|1
+m|Journalist|Journalisten|журналіст|журналист|0
+f|Redaktion|Redaktionen|редакція|редакция|0
+f|Meinung|Meinungen|думка|мнение|1
+f|Pressefreiheit|-|свобода преси|свобода печати|0
+f|Werbung|Werbungen|реклама|реклама|0
+f|Anzeige|Anzeigen|оголошення, реклама|объявление, реклама|0
+m|Sender|Sender|телеканал, радіостанція|телеканал, радиостанция|1
+f|Sendung|Sendungen|передача|передача|1
+f|Serie|Serien|серіал|сериал|0
+m|Zuschauer|Zuschauer|глядач|зритель|0
+m|Hörer|Hörer|слухач|слушатель|0
+m|Leser|Leser|читач|читатель|0
+n|Programm|Programme|програма (ТБ), застосунок|программа (ТВ), приложение|0
+f|Mediathek|Mediatheken|медіатека|медиатека|0
+m|Podcast|Podcasts|подкаст|подкаст|0
+m|Livestream|Livestreams|пряма трансляція|прямая трансляция|0
+n|Netzwerk|Netzwerke|мережа|сеть|1
+n|Internet|-|інтернет|интернет|0
+f|Verbindung|Verbindungen|з'єднання|соединение|0
+n|WLAN|-|Wi-Fi|Wi-Fi|0
+f|Website|Websites|вебсайт|веб-сайт|0
+f|Seite|Seiten|сторінка|страница|0
+m|Link|Links|посилання|ссылка|0
+m|Browser|Browser|браузер|браузер|0
+f|Suchmaschine|Suchmaschinen|пошукова система|поисковая система|1
+f|App|Apps|застосунок|приложение|0
+n|Konto|Konten|акаунт, рахунок|аккаунт, счёт|0
+n|Passwort|Passwörter|пароль|пароль|0
+m|Nutzer|Nutzer|користувач|пользователь|0
+m|Benutzername|Benutzernamen|ім'я користувача|имя пользователя|0
+n|Profil|Profile|профіль|профиль|0
+m|Beitrag|Beiträge|допис, внесок|пост, вклад|1
+m|Kommentar|Kommentare|коментар|комментарий|0
+n|Video|Videos|відео|видео|0
+f|Datei|Dateien|файл|файл|0
+m|Anhang|Anhänge|вкладення|вложение|1
+m|Datenschutz|-|захист даних|защита данных|1
+p|Daten|-|дані|данные|0
+f|Sicherheit|Sicherheiten|безпека|безопасность|1
+n|Virus|Viren|вірус|вирус|0
+m|Betrug|-|шахрайство|мошенничество|1
+f|Fälschung|Fälschungen|підробка|подделка|0
+f|Quelle|Quellen|джерело|источник|1
+f|Information|Informationen|інформація|информация|0
+f|Wahrheit|Wahrheiten|правда|правда|0
+f|Lüge|Lügen|брехня|ложь|0
+f|Behauptung|Behauptungen|твердження|утверждение|1
+m|Einfluss|Einflüsse|вплив|влияние|1
+f|Wirkung|Wirkungen|дія, ефект|действие, эффект|0
+f|Gefahr|Gefahren|небезпека|опасность|1
+m|Nachteil|Nachteile|недолік|недостаток|1
+m|Vorteil|Vorteile|перевага|преимущество|1

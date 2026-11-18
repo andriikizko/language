@@ -1,0 +1,59 @@
+f|Universität|Universitäten|університет|университет|1
+f|Hochschule|Hochschulen|вищий навчальний заклад|высшее учебное заведение|1
+n|Studium|Studien|навчання у виші|учёба в вузе|1
+m|Student|Studenten|студент|студент|0
+f|Studentin|Studentinnen|студентка|студентка|0
+n|Semester|Semester|семестр|семестр|1
+f|Vorlesung|Vorlesungen|лекція|лекция|1
+n|Seminar|Seminare|семінар|семинар|1
+f|Prüfung|Prüfungen|іспит|экзамен|0
+f|Klausur|Klausuren|письмова контрольна|письменная контрольная|1
+f|Note|Noten|оцінка (бал)|оценка (балл)|0
+n|Fach|Fächer|предмет|предмет|0
+n|Hauptfach|Hauptfächer|основна спеціальність|основной предмет|0
+m|Studiengang|Studiengänge|напрям навчання|направление обучения|1
+m|Bachelor|-|бакалавр|бакалавр|1
+m|Master|Master|магістр|магистр|1
+f|Bibliothek|Bibliotheken|бібліотека|библиотека|0
+f|Mensa|Mensen|студентська їдальня|студенческая столовая|1
+n|Stipendium|Stipendien|стипендія|стипендия|1
+f|Gebühr|Gebühren|збір, плата|сбор, плата|1
+m|Studienplatz|Studienplätze|місце у виші|место в вузе|0
+f|Zulassung|Zulassungen|допуск, зарахування|допуск, зачисление|1
+f|Einschreibung|Einschreibungen|реєстрація, зарахування|запись, зачисление|0
+f|Hausarbeit|Hausarbeiten|курсова робота|курсовая работа|1
+f|Abschlussarbeit|Abschlussarbeiten|випускна робота|выпускная работа|0
+n|Referat|Referate|доповідь|доклад|1
+n|Thema|Themen|тема|тема|0
+f|Forschung|Forschungen|дослідження (наука)|исследование (наука)|0
+m|Professor|Professoren|професор|профессор|0
+m|Dozent|Dozenten|викладач вишу|преподаватель вуза|0
+m|Lehrer|Lehrer|вчитель|учитель|0
+f|Lehrerin|Lehrerinnen|вчителька|учительница|0
+f|Schulpflicht|-|обов'язкове навчання|обязательное обучение|1
+m|Schulabschluss|Schulabschlüsse|шкільний атестат|школьный аттестат|1
+n|Abitur|-|атестат зрілості (Abitur)|аттестат зрелости (Abitur)|1
+f|Realschule|Realschulen|реальна школа|реальная школа|0
+n|Gymnasium|Gymnasien|гімназія|гимназия|0
+f|Grundschule|Grundschulen|початкова школа|начальная школа|0
+m|Kindergarten|Kindergärten|дитячий садок|детский сад|0
+f|Kita|Kitas|дитячий заклад (Kita)|детское учреждение (Kita)|1
+m|Unterricht|-|урок, заняття|урок, занятие|0
+n|Lernen|-|навчання, вивчення|обучение, изучение|0
+f|Motivation|Motivationen|мотивація|мотивация|1
+f|Konzentration|-|концентрація|концентрация|0
+n|Gedächtnis|Gedächtnisse|пам'ять|память|0
+f|Methode|Methoden|метод|метод|1
+f|Übung|Übungen|вправа|упражнение|0
+f|Wiederholung|Wiederholungen|повторення|повторение|0
+n|Wissen|-|знання|знания|1
+f|Bildung|-|освіта|образование|1
+f|Fortbildung|Fortbildungen|курси підвищення кваліфікації|курсы повышения квалификации|0
+m|Integrationskurs|Integrationskurse|інтеграційний курс|интеграционный курс|1
+m|Sprachkurs|Sprachkurse|мовний курс|языковой курс|0
+f|Sprachprüfung|Sprachprüfungen|мовний іспит|языковой экзамен|1
+n|Niveau|Niveaus|рівень|уровень|1
+f|Anmeldung|Anmeldungen|реєстрація, запис|регистрация, запись|0
+f|Teilnahme|-|участь|участие|1
+m|Teilnehmer|Teilnehmer|учасник|участник|0
+f|Teilnehmerin|Teilnehmerinnen|учасниця|участница|0

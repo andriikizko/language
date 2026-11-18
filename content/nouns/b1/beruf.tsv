@@ -1,0 +1,70 @@
+f|Bewerbung|Bewerbungen|заява на роботу, резюме|заявка на работу, резюме|1
+m|Lebenslauf|Lebensläufe|резюме (CV)|резюме (CV)|1
+n|Vorstellungsgespräch|Vorstellungsgespräche|співбесіда|собеседование|1
+f|Stelle|Stellen|посада, вакансія|должность, вакансия|1
+f|Stellenanzeige|Stellenanzeigen|оголошення про вакансію|объявление о вакансии|1
+m|Arbeitgeber|Arbeitgeber|роботодавець|работодатель|1
+m|Arbeitnehmer|Arbeitnehmer|працівник (найманий)|работник (наёмный)|1
+m|Arbeitsvertrag|Arbeitsverträge|трудовий договір|трудовой договор|1
+f|Kündigung|Kündigungen|звільнення, розірвання договору|увольнение, расторжение договора|1
+f|Probezeit|Probezeiten|випробувальний термін|испытательный срок|1
+m|Lohn|Löhne|заробітна плата (погодинна)|заработная плата (почасовая)|0
+f|Gehaltserhöhung|Gehaltserhöhungen|підвищення зарплати|повышение зарплаты|0
+f|Überstunde|Überstunden|понаднормова година|сверхурочный час|1
+f|Teilzeit|-|часткова зайнятість|неполная занятость|1
+f|Vollzeit|-|повна зайнятість|полная занятость|1
+f|Schicht|Schichten|зміна (робоча)|смена (рабочая)|0
+n|Praktikum|Praktika|практика, стажування|практика, стажировка|1
+m|Praktikant|Praktikanten|практикант|практикант|0
+f|Ausbildung|Ausbildungen|професійне навчання|профессиональное обучение|1
+f|Erfahrung|Erfahrungen|досвід|опыт|1
+f|Berufserfahrung|Berufserfahrungen|професійний досвід|профессиональный опыт|1
+f|Qualifikation|Qualifikationen|кваліфікація|квалификация|1
+f|Fähigkeit|Fähigkeiten|здібність, навичка|способность, навык|1
+f|Kenntnis|Kenntnisse|знання|знание|1
+n|Zeugnis|Zeugnisse|свідоцтво, характеристика|свидетельство, характеристика|1
+n|Zertifikat|Zertifikate|сертифікат|сертификат|1
+f|Anerkennung|Anerkennungen|визнання (диплома)|признание (диплома)|1
+m|Abschluss|Abschlüsse|диплом, закінчення навчання|диплом, окончание учёбы|1
+f|Karriere|Karrieren|кар'єра|карьера|1
+f|Beförderung|Beförderungen|підвищення по службі|повышение по службе|0
+m|Vorgesetzte|Vorgesetzten|керівник, начальник|руководитель, начальник|1
+m|Kollege|Kollegen|колега|коллега|0
+f|Kollegin|Kolleginnen|колега (жін.)|коллега (жен.)|0
+n|Team|Teams|команда|команда|1
+f|Abteilung|Abteilungen|відділ|отдел|1
+n|Unternehmen|Unternehmen|підприємство, компанія|предприятие, компания|1
+f|Firma|Firmen|фірма|фирма|0
+m|Betrieb|Betriebe|підприємство, виробництво|предприятие, производство|0
+m|Beruf|Berufe|професія|профессия|0
+m|Handwerker|Handwerker|майстер, ремісник|мастер, ремесленник|0
+m|Angestellte|Angestellten|службовець|служащий|0
+m|Selbstständige|Selbstständigen|самозайнята особа|самозанятый|1
+f|Selbstständigkeit|-|самозайнятість|самозанятость|0
+n|Gewerbe|Gewerbe|підприємницька діяльність|предпринимательская деятельность|1
+f|Arbeitslosigkeit|-|безробіття|безработица|1
+n|Arbeitslosengeld|-|допомога по безробіттю|пособие по безработице|1
+f|Arbeitsagentur|Arbeitsagenturen|агентство зайнятості|агентство занятости|1
+n|Jobcenter|Jobcenter|центр зайнятості (Jobcenter)|центр занятости (Jobcenter)|1
+f|Umschulung|Umschulungen|перекваліфікація|переквалификация|0
+f|Weiterbildung|Weiterbildungen|підвищення кваліфікації|повышение квалификации|1
+f|Arbeitszeit|Arbeitszeiten|робочий час|рабочее время|0
+f|Gleitzeit|-|гнучкий графік|гибкий график|0
+n|Homeoffice|Homeoffices|робота вдома, віддалено|работа из дома, удалённо|1
+f|Besprechung|Besprechungen|нарада|совещание|1
+f|Sitzung|Sitzungen|засідання|заседание|0
+m|Termin|Termine|термін, зустріч|срок, встреча|0
+f|Frist|Fristen|кінцевий строк|крайний срок|1
+f|Aufgabe|Aufgaben|завдання|задача|0
+f|Verantwortung|Verantwortungen|відповідальність|ответственность|1
+n|Projekt|Projekte|проєкт|проект|0
+n|Ziel|Ziele|мета|цель|0
+n|Ergebnis|Ergebnisse|результат|результат|1
+m|Erfolg|Erfolge|успіх|успех|1
+f|Leistung|Leistungen|досягнення, продуктивність|достижение, производительность|1
+f|Bewertung|Bewertungen|оцінка|оценка|0
+f|Referenz|Referenzen|рекомендація, відгук|рекомендация, отзыв|1
+f|Bewerbungsmappe|Bewerbungsmappen|пакет документів на роботу|пакет документов на работу|0
+n|Anschreiben|Anschreiben|супровідний лист|сопроводительное письмо|1
+f|Absage|Absagen|відмова|отказ|1
+f|Zusage|Zusagen|згода, підтвердження|согласие, подтверждение|1

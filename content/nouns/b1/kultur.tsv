@@ -1,0 +1,59 @@
+f|Kultur|Kulturen|культура (мистецтво)|культура (искусство)|0
+f|Veranstaltung|Veranstaltungen|захід, подія|мероприятие, событие|1
+n|Konzert|Konzerte|концерт|концерт|0
+n|Theater|Theater|театр|театр|0
+f|Aufführung|Aufführungen|вистава|спектакль|1
+f|Oper|Opern|опера|опера|0
+n|Museum|Museen|музей|музей|0
+f|Ausstellung|Ausstellungen|виставка|выставка|1
+f|Galerie|Galerien|галерея|галерея|0
+n|Kunstwerk|Kunstwerke|твір мистецтва|произведение искусства|0
+m|Künstler|Künstler|художник, артист|художник, артист|1
+f|Kunst|Künste|мистецтво|искусство|0
+n|Gemälde|Gemälde|картина (жив.)|картина (жив.)|0
+f|Literatur|Literaturen|література|литература|1
+m|Roman|Romane|роман|роман|0
+n|Gedicht|Gedichte|вірш|стихотворение|0
+m|Autor|Autoren|автор|автор|0
+m|Schriftsteller|Schriftsteller|письменник|писатель|0
+n|Buch|Bücher|книга|книга|0
+f|Geschichte|Geschichten|історія, розповідь|история, рассказ|0
+n|Märchen|Märchen|казка|сказка|0
+n|Kino|Kinos|кіно|кино|0
+m|Film|Filme|фільм|фильм|0
+m|Regisseur|Regisseure|режисер|режиссёр|0
+m|Schauspieler|Schauspieler|актор|актёр|0
+f|Handlung|Handlungen|сюжет, дія|сюжет, действие|1
+f|Hauptrolle|Hauptrollen|головна роль|главная роль|0
+f|Musik|-|музика|музыка|0
+f|Band|Bands|гурт|группа|0
+f|Sängerin|Sängerinnen|співачка|певица|0
+n|Lied|Lieder|пісня|песня|0
+n|Instrument|Instrumente|інструмент (муз.)|инструмент (муз.)|0
+n|Festival|Festivals|фестиваль|фестиваль|0
+n|Fest|Feste|свято|праздник|0
+m|Feiertag|Feiertage|святковий день|праздничный день|1
+n|Weihnachten|-|Різдво|Рождество|0
+n|Ostern|-|Великдень|Пасха|0
+m|Karneval|-|карнавал|карнавал|0
+m|Brauch|Bräuche|звичай|обычай|0
+f|Sitte|Sitten|звичай, традиція|обычай, традиция|0
+f|Tradition|Traditionen|традиція|традиция|0
+n|Denkmal|Denkmäler|пам'ятник|памятник|1
+n|Schloss|Schlösser|замок, палац|замок, дворец|0
+f|Burg|Burgen|фортеця, замок|крепость, замок|0
+f|Kirche|Kirchen|церква|церковь|0
+f|Geschichte|-|історія (наука)|история (наука)|0
+f|Epoche|Epochen|епоха|эпоха|1
+n|Hobby|Hobbys|хобі|хобби|0
+n|Ehrenamt|Ehrenämter|громадська діяльність|общественная деятельность|0
+m|Verein|Vereine|клуб, об'єднання|клуб, объединение|1
+f|Mitgliedschaft|Mitgliedschaften|членство|членство|1
+n|Mitglied|Mitglieder|член|член|0
+m|Wettbewerb|Wettbewerbe|конкурс, змагання|конкурс, соревнование|1
+n|Turnier|Turniere|турнір|турнир|0
+f|Mannschaft|Mannschaften|команда (спорт.)|команда (спорт.)|0
+n|Training|Trainings|тренування|тренировка|0
+f|Fitness|-|фітнес|фитнес|0
+f|Wanderung|Wanderungen|похід|поход|0
+m|Ausflug|Ausflüge|екскурсія, вилазка|экскурсия, вылазка|0

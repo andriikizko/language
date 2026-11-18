@@ -1,0 +1,65 @@
+f|Krankenkasse|Krankenkassen|лікарняна каса|больничная касса|1
+f|Krankenversicherung|Krankenversicherungen|медичне страхування|медицинское страхование|1
+f|Versichertenkarte|Versichertenkarten|страхова картка|страховая карта|0
+f|Überweisung|Überweisungen|направлення (до лікаря)|направление (к врачу)|1
+f|Krankschreibung|Krankschreibungen|лікарняний лист|больничный лист|1
+f|Untersuchung|Untersuchungen|обстеження|обследование|1
+f|Diagnose|Diagnosen|діагноз|диагноз|1
+f|Behandlung|Behandlungen|лікування|лечение|1
+f|Therapie|Therapien|терапія|терапия|0
+f|Operation|Operationen|операція|операция|1
+n|Krankenhaus|Krankenhäuser|лікарня|больница|0
+f|Notaufnahme|Notaufnahmen|приймальне відділення|приёмное отделение|1
+m|Notfall|Notfälle|невідкладний випадок|неотложный случай|1
+m|Krankenwagen|Krankenwagen|швидка допомога (авто)|скорая помощь (машина)|0
+m|Rettungsdienst|-|рятувальна служба|спасательная служба|0
+m|Facharzt|Fachärzte|лікар-спеціаліст|врач-специалист|1
+m|Hausarzt|Hausärzte|сімейний лікар|семейный врач|0
+m|Zahnarzt|Zahnärzte|стоматолог|стоматолог|0
+m|Chirurg|Chirurgen|хірург|хирург|0
+f|Krankenschwester|Krankenschwestern|медсестра|медсестра|0
+m|Pfleger|Pfleger|санітар, доглядальник|санитар, сиделка|0
+f|Pflege|-|догляд|уход|1
+f|Apotheke|Apotheken|аптека|аптека|0
+n|Medikament|Medikamente|ліки|лекарство|1
+n|Rezept|Rezepte|рецепт|рецепт|0
+f|Tablette|Tabletten|таблетка|таблетка|0
+f|Nebenwirkung|Nebenwirkungen|побічна дія|побочное действие|1
+f|Dosis|Dosen|доза|доза|1
+f|Spritze|Spritzen|укол, шприц|укол, шприц|0
+f|Impfung|Impfungen|щеплення|прививка|1
+m|Impfpass|Impfpässe|паспорт щеплень|прививочный паспорт|0
+f|Vorsorge|-|профілактика|профилактика|1
+f|Vorsorgeuntersuchung|Vorsorgeuntersuchungen|профілактичний огляд|профилактический осмотр|0
+f|Allergie|Allergien|алергія|аллергия|0
+f|Erkältung|Erkältungen|застуда|простуда|0
+f|Grippe|Grippen|грип|грипп|0
+f|Entzündung|Entzündungen|запалення|воспаление|1
+f|Infektion|Infektionen|інфекція|инфекция|1
+n|Fieber|-|температура|температура|0
+m|Schmerz|Schmerzen|біль|боль|0
+m|Husten|-|кашель|кашель|0
+m|Schnupfen|-|нежить|насморк|0
+m|Blutdruck|-|кров'яний тиск|кровяное давление|1
+n|Blut|-|кров|кровь|0
+n|Röntgenbild|Röntgenbilder|рентген-знімок|рентген-снимок|0
+n|Ergebnis|Ergebnisse|результат (аналізу)|результат (анализа)|0
+f|Verletzung|Verletzungen|травма|травма|1
+m|Unfall|Unfälle|нещасний випадок, ДТП|несчастный случай, ДТП|1
+m|Bruch|Brüche|перелом|перелом|0
+f|Wunde|Wunden|рана|рана|0
+m|Verband|Verbände|пов'язка|повязка|0
+n|Pflaster|Pflaster|пластир|пластырь|0
+f|Gesundheit|-|здоров'я|здоровье|0
+f|Ernährung|-|харчування|питание|1
+f|Bewegung|-|рух, фізична активність|движение, физическая активность|1
+m|Stress|-|стрес|стресс|1
+f|Erholung|-|відпочинок, відновлення|отдых, восстановление|0
+m|Schlaf|-|сон|сон|0
+f|Psyche|Psychen|психіка|психика|0
+f|Depression|Depressionen|депресія|депрессия|0
+m|Termin|Termine|прийом, запис (до лікаря)|приём, запись (к врачу)|0
+f|Sprechstunde|Sprechstunden|години прийому|часы приёма|1
+n|Wartezimmer|Wartezimmer|зала очікування|комната ожидания|0
+f|Zuzahlung|Zuzahlungen|доплата пацієнта|доплата пациента|1
+f|Praxisgebühr|Praxisgebühren|плата за візит|плата за визит|0

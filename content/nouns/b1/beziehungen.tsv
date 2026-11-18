@@ -1,0 +1,59 @@
+f|Beziehung|Beziehungen|стосунки|отношения|1
+f|Freundschaft|Freundschaften|дружба|дружба|1
+f|Liebe|-|кохання|любовь|0
+f|Hochzeit|Hochzeiten|весілля|свадьба|0
+f|Ehe|Ehen|шлюб|брак|1
+m|Ehepartner|Ehepartner|чоловік/дружина (подружжя)|супруг/супруга|0
+m|Partner|Partner|партнер|партнёр|0
+f|Scheidung|Scheidungen|розлучення|развод|1
+f|Trennung|Trennungen|розрив, розлука|разрыв, разлука|0
+n|Ehepaar|Ehepaare|подружжя|супружеская пара|0
+m|Verwandte|Verwandten|родич|родственник|1
+f|Verwandtschaft|-|рідня|родня|0
+p|Eltern|-|батьки|родители|0
+n|Kind|Kinder|дитина|ребёнок|0
+f|Erziehung|-|виховання|воспитание|1
+m|Erwachsene|Erwachsenen|дорослий|взрослый|0
+m|Jugendliche|Jugendlichen|підліток|подросток|0
+f|Jugend|-|молодість, юність|молодость, юность|0
+f|Kindheit|-|дитинство|детство|0
+n|Alter|-|вік, старість|возраст, старость|0
+f|Großfamilie|Großfamilien|велика родина|большая семья|0
+m|Haushalt|Haushalte|домогосподарство|домохозяйство|1
+f|Alleinerziehende|Alleinerziehenden|самотня мати/батько|мать/отец-одиночка|0
+n|Gefühl|Gefühle|почуття|чувство|1
+f|Freude|Freuden|радість|радость|0
+f|Trauer|-|смуток, жалоба|грусть, печаль|0
+f|Angst|Ängste|страх|страх|0
+f|Sorge|Sorgen|турбота, занепокоєння|забота, беспокойство|1
+f|Wut|-|гнів|гнев|0
+f|Eifersucht|-|ревнощі|ревность|0
+f|Hoffnung|Hoffnungen|надія|надежда|1
+f|Enttäuschung|Enttäuschungen|розчарування|разочарование|1
+f|Überraschung|Überraschungen|сюрприз|сюрприз|0
+f|Sehnsucht|Sehnsüchte|туга|тоска|0
+f|Einsamkeit|-|самотність|одиночество|0
+n|Vertrauen|-|довіра|доверие|1
+f|Ehrlichkeit|-|чесність|честность|0
+f|Geduld|-|терпіння|терпение|1
+f|Höflichkeit|-|ввічливість|вежливость|0
+f|Freundlichkeit|-|привітність|дружелюбие|0
+m|Charakter|Charaktere|характер|характер|1
+f|Eigenschaft|Eigenschaften|властивість, риса|свойство, черта|1
+f|Stärke|Stärken|сильна сторона|сильная сторона|0
+f|Schwäche|Schwächen|слабкість|слабость|0
+f|Persönlichkeit|Persönlichkeiten|особистість|личность|1
+f|Laune|Launen|настрій|настроение|0
+n|Verhalten|-|поведінка|поведение|1
+f|Meinungsverschiedenheit|Meinungsverschiedenheiten|розбіжність у поглядах|разногласие|0
+m|Streit|Streite|сварка|ссора|0
+m|Konflikt|Konflikte|конфлікт|конфликт|1
+f|Entschuldigung|Entschuldigungen|вибачення|извинение|0
+f|Versöhnung|Versöhnungen|примирення|примирение|0
+m|Ratschlag|Ratschläge|порада|совет|1
+f|Verabredung|Verabredungen|домовленість, побачення|договорённость, свидание|1
+f|Einladung|Einladungen|запрошення|приглашение|0
+m|Gast|Gäste|гість|гость|0
+m|Gastgeber|Gastgeber|господар (на святі)|хозяин (на празднике)|0
+n|Geschenk|Geschenke|подарунок|подарок|0
+f|Überraschungsparty|Überraschungspartys|вечірка-сюрприз|вечеринка-сюрприз|0

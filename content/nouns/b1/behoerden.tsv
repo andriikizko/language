@@ -1,0 +1,61 @@
+n|Amt|Ämter|відомство, установа|ведомство, учреждение|0
+f|Behörde|Behörden|орган влади|орган власти|1
+n|Bürgeramt|Bürgerämter|бюро для громадян|бюро для граждан|0
+n|Standesamt|Standesämter|ЗАГС|ЗАГС|1
+n|Finanzamt|Finanzämter|податкова інспекція|налоговая инспекция|1
+n|Ausländeramt|Ausländerämter|відомство у справах іноземців|ведомство по делам иностранцев|1
+n|Rathaus|Rathäuser|ратуша|ратуша|0
+m|Antrag|Anträge|заява, клопотання|заявление, ходатайство|1
+n|Formular|Formulare|бланк, форма|бланк, форма|0
+f|Unterschrift|Unterschriften|підпис|подпись|0
+f|Bescheinigung|Bescheinigungen|довідка|справка|1
+f|Bestätigung|Bestätigungen|підтвердження|подтверждение|0
+f|Genehmigung|Genehmigungen|дозвіл|разрешение|1
+f|Erlaubnis|Erlaubnisse|дозвіл|разрешение|0
+m|Bescheid|Bescheide|рішення (офіційне), повідомлення|решение (официальное), уведомление|1
+m|Widerspruch|Widersprüche|заперечення, оскарження|возражение, обжалование|1
+f|Frist|Fristen|строк|срок|0
+f|Gebühr|Gebühren|збір|сбор|0
+f|Beglaubigung|Beglaubigungen|засвідчення, нотаріальне завірення|заверение, нотариальное удостоверение|1
+f|Übersetzung|Übersetzungen|переклад|перевод|0
+f|Kopie|Kopien|копія|копия|0
+n|Dokument|Dokumente|документ|документ|0
+f|Urkunde|Urkunden|свідоцтво, грамота|свидетельство, грамота|1
+f|Geburtsurkunde|Geburtsurkunden|свідоцтво про народження|свидетельство о рождении|0
+f|Heiratsurkunde|Heiratsurkunden|свідоцтво про шлюб|свидетельство о браке|0
+m|Ausweis|Ausweise|посвідчення особи|удостоверение личности|0
+m|Personalausweis|Personalausweise|посвідчення особи (ID)|удостоверение личности (ID)|0
+m|Wohnsitz|Wohnsitze|місце проживання|место жительства|1
+f|Meldebescheinigung|Meldebescheinigungen|довідка про реєстрацію|справка о регистрации|0
+f|Steuernummer|Steuernummern|податковий номер|налоговый номер|1
+f|Steuererklärung|Steuererklärungen|податкова декларація|налоговая декларация|1
+f|Steuerklasse|Steuerklassen|податковий клас|налоговый класс|1
+f|Lohnsteuer|-|податок із зарплати|налог с зарплаты|0
+f|Rückzahlung|Rückzahlungen|повернення коштів|возврат средств|0
+f|Nachzahlung|Nachzahlungen|доплата|доплата|0
+f|Versicherung|Versicherungen|страхування|страхование|1
+f|Haftpflichtversicherung|Haftpflichtversicherungen|страхування відповідальності|страхование ответственности|1
+f|Rentenversicherung|Rentenversicherungen|пенсійне страхування|пенсионное страхование|0
+f|Police|Policen|поліс|полис|0
+m|Beitrag|Beiträge|внесок, страховий платіж|взнос, страховой платёж|0
+m|Schadensfall|Schadensfälle|страховий випадок|страховой случай|0
+m|Vertrag|Verträge|договір|договор|1
+f|Laufzeit|Laufzeiten|термін дії|срок действия|1
+f|Verlängerung|Verlängerungen|продовження|продление|0
+f|Kündigung|Kündigungen|розірвання договору|расторжение договора|0
+f|Bedingung|Bedingungen|умова|условие|1
+f|Vollmacht|Vollmachten|довіреність|доверенность|0
+f|Einwilligung|Einwilligungen|згода|согласие|0
+f|Auskunft|Auskünfte|довідка, інформація|справка, информация|1
+f|Beratung|Beratungen|консультація|консультация|1
+f|Beratungsstelle|Beratungsstellen|консультаційний пункт|консультационный пункт|0
+m|Sachbearbeiter|Sachbearbeiter|співробітник відомства|сотрудник ведомства|1
+f|Öffnungszeit|Öffnungszeiten|години роботи|часы работы|0
+f|Wartezeit|Wartezeiten|час очікування|время ожидания|0
+f|Warteschlange|Warteschlangen|черга|очередь|0
+f|Bearbeitung|Bearbeitungen|опрацювання|обработка|1
+f|Bearbeitungszeit|Bearbeitungszeiten|термін розгляду|срок рассмотрения|0
+f|Zustellung|Zustellungen|вручення, доставка|вручение, доставка|0
+n|Einschreiben|Einschreiben|рекомендований лист|заказное письмо|1
+f|Adresse|Adressen|адреса|адрес|0
+f|Postleitzahl|Postleitzahlen|поштовий індекс|почтовый индекс|0

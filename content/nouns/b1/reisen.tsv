@@ -1,0 +1,64 @@
+f|Reise|Reisen|подорож|путешествие|0
+f|Reiseplanung|-|планування подорожі|планирование поездки|0
+f|Pauschalreise|Pauschalreisen|пакетний тур|пакетный тур|1
+f|Buchung|Buchungen|бронювання|бронирование|1
+f|Stornierung|Stornierungen|скасування (бронювання)|отмена (бронирования)|1
+f|Reiseversicherung|Reiseversicherungen|туристичне страхування|туристическая страховка|1
+n|Visum|Visa|віза|виза|1
+m|Reisepass|Reisepässe|закордонний паспорт|загранпаспорт|0
+f|Grenze|Grenzen|кордон|граница|1
+m|Zoll|-|митниця|таможня|1
+f|Kontrolle|Kontrollen|контроль, перевірка|контроль, проверка|1
+n|Gepäck|-|багаж|багаж|0
+m|Koffer|Koffer|валіза|чемодан|0
+m|Rucksack|Rucksäcke|рюкзак|рюкзак|0
+f|Verspätung|Verspätungen|запізнення, затримка|опоздание, задержка|1
+f|Verbindung|Verbindungen|рейс, сполучення|рейс, сообщение|1
+n|Umsteigen|-|пересадка|пересадка|0
+m|Anschluss|Anschlüsse|пересадка (зв'язок рейсу)|стыковка (рейса)|1
+m|Bahnsteig|Bahnsteige|платформа|платформа|0
+n|Gleis|Gleise|колія, платформа|путь, платформа|0
+m|Fahrplan|Fahrpläne|розклад руху|расписание движения|0
+f|Fahrkarte|Fahrkarten|квиток на проїзд|билет на проезд|0
+f|Fahrkartenkontrolle|Fahrkartenkontrollen|контроль квитків|контроль билетов|0
+f|Ermäßigung|Ermäßigungen|знижка|скидка|1
+n|Abo|Abos|абонемент, підписка|абонемент, подписка|1
+f|Monatskarte|Monatskarten|місячний проїзний|месячный проездной|0
+f|Haltestelle|Haltestellen|зупинка|остановка|0
+f|Strecke|Strecken|маршрут, відстань|маршрут, расстояние|1
+f|Richtung|Richtungen|напрямок|направление|0
+m|Stau|Staus|затор|пробка|1
+f|Baustelle|Baustellen|будівельний майданчик, ремонт дороги|стройплощадка, ремонт дороги|1
+f|Autobahn|Autobahnen|автобан|автобан|0
+f|Raststätte|Raststätten|придорожній комплекс|придорожный комплекс|0
+f|Tankstelle|Tankstellen|заправка|заправка|0
+n|Benzin|-|бензин|бензин|0
+f|Panne|Pannen|поломка|поломка|1
+f|Werkstatt|Werkstätten|майстерня, СТО|мастерская, СТО|1
+m|Führerschein|Führerscheine|водійське посвідчення|водительские права|1
+f|Zulassung|Zulassungen|реєстрація авто|регистрация авто|0
+f|Parkgebühr|Parkgebühren|плата за паркування|плата за парковку|0
+m|Parkplatz|Parkplätze|парковка|парковка|0
+m|Flughafen|Flughäfen|аеропорт|аэропорт|0
+m|Flug|Flüge|рейс (авіа)|рейс (авиа)|0
+f|Landung|Landungen|посадка (літака)|посадка (самолёта)|0
+n|Boarding|-|посадка (на рейс)|посадка (на рейс)|0
+n|Handgepäck|-|ручна поклажа|ручная кладь|1
+f|Sicherheitskontrolle|Sicherheitskontrollen|перевірка безпеки|проверка безопасности|0
+f|Unterkunft|Unterkünfte|житло (на час поїздки)|жильё (на время поездки)|1
+f|Übernachtung|Übernachtungen|ночівля|ночёвка|1
+n|Gästezimmer|Gästezimmer|кімната для гостей|комната для гостей|0
+f|Jugendherberge|Jugendherbergen|хостел|хостел|0
+m|Campingplatz|Campingplätze|кемпінг|кемпинг|0
+f|Sehenswürdigkeit|Sehenswürdigkeiten|пам'ятка|достопримечательность|1
+f|Besichtigung|Besichtigungen|екскурсія, огляд|экскурсия, осмотр|0
+f|Führung|Führungen|екскурсія з гідом|экскурсия с гидом|1
+m|Reiseführer|Reiseführer|путівник, гід|путеводитель, гид|0
+f|Karte|Karten|карта|карта|0
+m|Stadtplan|Stadtpläne|план міста|план города|0
+f|Beschwerde|Beschwerden|скарга|жалоба|1
+f|Entschädigung|Entschädigungen|компенсація|компенсация|1
+f|Erstattung|Erstattungen|відшкодування|возмещение|1
+n|Erlebnis|Erlebnisse|пригода, враження|приключение, впечатление|1
+m|Eindruck|Eindrücke|враження|впечатление|0
+f|Erinnerung|Erinnerungen|спогад|воспоминание|0
