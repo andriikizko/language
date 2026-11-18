@@ -117,3 +117,42 @@ T['b2_kultur'] = dict(title='Kultur und Kritik', note='Тут: розширен�
  'Im Mittelpunkt des Films steht eine Familie.|У центрі фільму — родина.|В центре фильма — семья.',
  'Besonders gelungen ist die Musik.|Особливо вдала музика.|Особенно удачна музыка.',
  'Insgesamt ist das Werk absolut sehenswert.|Загалом твір цілком вартий перегляду.|В целом произведение вполне стоит просмотра.'])
+T['b2_recht'] = dict(title='Rechte und Pflichten', note='Тут: номінальний стиль, Konjunktiv II без wenn, дієслова з прийменниками.', s=[
+ 'Der Hersteller haftet für alle Schäden, die durch Fehler entstehen.|Виробник відповідає за всі збитки, що виникли через дефекти.|Производитель отвечает за весь ущерб, возникший из-за дефектов.',
+ 'Verbraucher haben ein vierzehntägiges Widerrufsrecht.|Споживачі мають чотирнадцятиденне право на відмову.|Потребители имеют четырнадцатидневное право на отказ.',
+ 'Bei Kündigung des Vertrags gilt eine Frist von vier Wochen.|У разі розірвання договору діє термін чотири тижні.|При расторжении договора действует срок четыре недели.',
+ 'Bei Nichtzahlung droht zunächst eine Mahnung.|У разі несплати спершу загрожує нагадування про борг.|При неуплате сначала грозит напоминание о долге.',
+ 'Wäre der Vertrag gültig, könnte er klagen.|Якби договір був чинним, він міг би подати позов.|Если бы договор был действителен, он мог бы подать иск.',
+ 'Hätte ich das gewusst, hätte ich nicht unterschrieben.|Якби я це знав, я б не підписував.|Если бы я это знал, я бы не подписал.',
+ 'Sollte das Gerät defekt sein, erhalten Sie Ersatz.|Якщо пристрій раптом виявиться дефектним, ви отримаєте заміну.|Если устройство окажется дефектным, вы получите замену.',
+ 'Das verstößt gegen das Gesetz.|Це порушує закон.|Это нарушает закон.',
+ 'Er hat Anspruch auf Schadensersatz.|Він має право на відшкодування збитків.|Он имеет право на возмещение ущерба.',
+ 'Viele Kunden beschweren sich über den langsamen Service.|Багато клієнтів скаржаться на повільне обслуговування.|Многие клиенты жалуются на медленное обслуживание.',
+ 'Ich fordere Sie auf, den Mangel zu beheben.|Я вимагаю від вас усунути дефект.|Я требую от вас устранить дефект.',
+ 'Andernfalls behalte ich mir rechtliche Schritte vor.|В іншому разі залишаю за собою право на юридичні кроки.|В противном случае оставляю за собой право на юридические шаги.'])
+T['b2_digital'] = dict(title='Digitale Welt', note='Тут: пасив із модальними, дієслова з прийменниками, Futur I, аргументація.', s=[
+ 'Persönliche Daten müssen gut geschützt werden.|Особисті дані мають бути добре захищені.|Личные данные должны быть хорошо защищены.',
+ 'Das Passwort kann jederzeit geändert werden.|Пароль можна змінити будь-коли.|Пароль можно изменить в любое время.',
+ 'Alle Daten sollten verschlüsselt werden.|Усі дані слід було б шифрувати.|Все данные следовало бы шифровать.',
+ 'Früher mussten die Dateien manuell gespeichert werden.|Раніше файли доводилося зберігати вручну.|Раньше файлы приходилось сохранять вручную.',
+ 'Viele verlassen sich blind auf die Technik.|Багато хто сліпо покладається на техніку.|Многие слепо полагаются на технику.',
+ 'Man schützt sich vor Hackern mit starken Passwörtern.|Від хакерів захищаються сильними паролями.|От хакеров защищаются сильными паролями.',
+ 'Es hängt vom Passwort ab, wie sicher ein Konto ist.|Від пароля залежить, наскільки безпечний акаунт.|От пароля зависит, насколько безопасен аккаунт.',
+ 'Die Firma beschäftigt sich mit künstlicher Intelligenz.|Фірма займається штучним інтелектом.|Фирма занимается искусственным интеллектом.',
+ 'Die KI wird viele Berufe verändern.|ШІ змінить багато професій.|ИИ изменит многие профессии.',
+ 'Einerseits ist die Technik praktisch, andererseits gibt es Risiken.|З одного боку, техніка зручна, з іншого — є ризики.|С одной стороны, техника удобна, с другой — есть риски.',
+ 'Zum einen spart man Zeit, zum anderen sinken die Kosten.|По-перше, заощаджується час, по-друге, знижуються витрати.|Во-первых, экономится время, во-вторых, снижаются расходы.',
+ 'Entscheidend ist, wie die Technik genutzt wird.|Вирішальне — як використовують технологію.|Решающее — как используется технология.'])
+T['b2_psychologie'] = dict(title='Psyche und Beziehungen', note='Тут: Konjunktiv II, sollte/dürfte/müsste як припущення, зворотні дієслова.', s=[
+ 'Viele Menschen haben Angst vor Prüfungen.|Багато людей бояться іспитів.|Многие люди боятся экзаменов.',
+ 'Dauerhafter Stress kann krank machen.|Постійний стрес може призвести до хвороби.|Постоянный стресс может привести к болезни.',
+ 'Das könnte an der Arbeitsbelastung liegen.|Це може бути через навантаження на роботі.|Это может быть из-за рабочей нагрузки.',
+ 'Er müsste mehr schlafen, wenn er gesund bleiben will.|Йому слід би спати більше, якщо він хоче лишатися здоровим.|Ему следовало бы спать больше, если он хочет оставаться здоровым.',
+ 'Könnten Sie mir bitte helfen?|Чи не могли б ви мені допомогти?|Не могли бы вы мне помочь?',
+ 'Es wäre gut, wenn wir darüber reden würden.|Було б добре, якби ми про це поговорили.|Было бы хорошо, если бы мы об этом поговорили.',
+ 'Er hätte es merken müssen.|Він мав би це помітити.|Он должен был бы это заметить.',
+ 'Er dürfte schon zu Hause sein.|Він, імовірно, вже вдома.|Он, вероятно, уже дома.',
+ 'Das sollte eigentlich reichen.|Цього, мабуть, вистачить.|Этого, вероятно, хватит.',
+ 'Ich setze mich intensiv mit dem Problem auseinander.|Я докладно розбираюся з цією проблемою.|Я подробно разбираюсь с этой проблемой.',
+ 'Sie wirkt ausgesprochen gelassen.|Вона здається напрочуд спокійною.|Она кажется на удивление спокойной.',
+ 'Er ist in letzter Zeit ziemlich gereizt.|Останнім часом він доволі дратівливий.|В последнее время он довольно раздражителен.'])

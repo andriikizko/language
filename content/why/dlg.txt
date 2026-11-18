@@ -156,3 +156,15 @@ b2_kultur|0|0|«der zweite Akt war zu lang» — другий акт задов�
 b2_kultur|0|1|«die Hauptdarstellerin» — головна акторка|«die Hauptdarstellerin» — главная актриса
 b2_kultur|1|0|«drei Generationen einer Familie» — три покоління родини|«drei Generationen einer Familie» — три поколения семьи
 b2_kultur|1|1|«Sehr poetisch, wenn auch manchmal etwas schwerfällig» — поетична, інколи важка|«Sehr poetisch, wenn auch manchmal etwas schwerfällig» — поэтичный, иногда тяжеловесный
+b2_recht|0|0|«Der Akku hält nur zwei Stunden» — акумулятор лише дві години|«Der Akku hält nur zwei Stunden» — аккумулятор только два часа
+b2_recht|0|1|«Ich würde einen Ersatz bevorzugen» — заміну|«Ich würde einen Ersatz bevorzugen» — замену
+b2_recht|1|0|«Mindestlaufzeit beträgt 24 Monate» — 24 місяці|«Mindestlaufzeit beträgt 24 Monate» — 24 месяца
+b2_recht|1|1|«Ich ziehe im Mai nach München» — переїжджає до Мюнхена|«Ich ziehe im Mai nach München» — переезжает в Мюнхен
+b2_digital|0|0|«ein Phishing-Versuch erkannt» — спроба фішингу|«ein Phishing-Versuch erkannt» — попытка фишинга
+b2_digital|0|1|«die App auf Ihrem Handy» — застосунок на телефоні|«die App auf Ihrem Handy» — приложение на телефоне
+b2_digital|1|0|«entstehen auch neue Jobs» — нові робочі місця|«entstehen auch neue Jobs» — новые рабочие места
+b2_digital|1|1|«Entscheidend ist, wie die Technik genutzt wird» — як використовують|«Entscheidend ist, wie die Technik genutzt wird» — как используется
+b2_psychologie|0|0|«viel Stress und schlafe schlecht» — стрес і поганий сон|«viel Stress und schlafe schlecht» — стресс и плохой сон
+b2_psychologie|0|1|«Hast du mit deinem Chef gesprochen?» — поговорити з шефом|«Hast du mit deinem Chef gesprochen?» — поговорить с начальником
+b2_psychologie|1|0|«über Kleinigkeiten» — через дрібниці|«über Kleinigkeiten» — из-за мелочей
+b2_psychologie|1|1|«sag ihm, wie es dir geht, ohne Vorwürfe» — без докорів|«sag ihm, wie es dir geht, ohne Vorwürfe» — без упрёков
