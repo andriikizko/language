@@ -59,3 +59,33 @@ y|26|жінка каже «ich suche das Rathaus» — їй треба рату�
 y|27|«nur zehn Minuten zu Fuß» — десять хвилин пішки|«nur zehn Minuten zu Fuß» — десять минут пешком
 y|28|«einen Tisch für drei Personen» — для трьох|«einen Tisch für drei Personen» — на троих
 y|29|«Ein Wasser, bitte» — воду|«Ein Wasser, bitte» — воду
+z|0|«Die Heizung ist seit zwei Wochen kaputt» — так, дві тижні|«Die Heizung ist seit zwei Wochen kaputt» — да, две недели
+z|1|«obwohl ich Sie schon zweimal angerufen habe» — уже дзвонив двічі|«obwohl ich Sie schon zweimal angerufen habe» — уже звонил дважды
+z|2|«werde ich die Miete kürzen» — зменшить оренду|«werde ich die Miete kürzen» — уменьшит аренду
+z|3|«bis Freitag gelöst wird» — до п'ятниці|«bis Freitag gelöst wird» — до пятницы
+z|4|«mehr Radwege zu bauen» — так, більше велодоріжок|«mehr Radwege zu bauen» — да, больше велодорожек
+z|5|«Viele Geschäftsleute befürchten…» — не всі задоволені|«Viele Geschäftsleute befürchten…» — не все довольны
+z|6|«in anderen Städten der Umsatz… gestiegen» — прибуток зріс|«in anderen Städten der Umsatz… gestiegen» — оборот вырос
+z|7|«im Herbst fertig sein» — восени|«im Herbst fertig sein» — осенью
+z|8|«Ich hatte mich für Medizin und für Informatik interessiert» — два предмети|«Ich hatte mich für Medizin und für Informatik interessiert» — два предмета
+z|9|«entschied ich mich für Informatik» — не медицина|«entschied ich mich für Informatik» — не медицина
+z|10|«wie anstrengend der Alltag dort ist» — будні в лікарні надто виснажливі|«wie anstrengend der Alltag dort ist» — будни в больнице слишком изматывающие
+z|11|«montags und mittwochs» — двічі на тиждень|«montags und mittwochs» — дважды в неделю
+z|12|«12 Wochen» — 12 тижнів|«12 Wochen» — 12 недель
+z|13|«Ermäßigung… für Arbeitslose und Studenten» — безробітні й студенти|«Ermäßigung… für Arbeitslose und Studenten» — безработные и студенты
+z|14|«kann ich erst am Samstagnachmittag kommen» — зранку не може|«kann ich erst am Samstagnachmittag kommen» — утром не может
+z|15|«Ich würde gern ein Geschenk mitbringen» — подарунок|«Ich würde gern ein Geschenk mitbringen» — подарок
+z|16|«in Wien studiert» — у Відні|«in Wien studiert» — в Вене
+z|17|«seit drei Jahren» — три роки|«seit drei Jahren» — три года
+z|18|повний ввічливий лист: Sehr geehrte Damen und Herren + um … zu|полное вежливое письмо: Sehr geehrte Damen und Herren + um … zu
+z|19|«sich beschweren über + Akk» і після denn прямий порядок слів|«sich beschweren über + Akk» и после denn прямой порядок слов
+z|20|у підрядному з weil дієслово в кінці: «Verspätung hat»|в придаточном с weil глагол в конце: «Verspätung hat»
+z|21|«Meiner Meinung nach sollte man…» — дієслово на другому місці після «nach»|«Meiner Meinung nach sollte man…» — глагол на втором месте после «nach»
+z|22|«Mein Internet funktioniert seit gestern nicht mehr» — інтернет не працює|«Mein Internet funktioniert seit gestern nicht mehr» — интернет не работает
+z|23|«Passt Ihnen morgen Vormittag? — Ja» — завтра до обіду|«Passt Ihnen morgen Vormittag? — Ja» — завтра до обеда
+z|24|«Ab Januar» — тарифи на квитки зростають|«Ab Januar» — цены на билеты растут
+z|25|«Deshalb fahre ich lieber mit dem Fahrrad zur Arbeit» — велосипедом|«Deshalb fahre ich lieber mit dem Fahrrad zur Arbeit» — на велосипеде
+z|26|«Sie ist leider zu klein» — замала|«Sie ist leider zu klein» — слишком мала
+z|27|«vor drei Tagen gekauft» — три дні тому|«vor drei Tagen gekauft» — три дня назад
+z|28|«Es fehlt nur noch eine Kopie vom Ausweis» — копія посвідчення|«Es fehlt nur noch eine Kopie vom Ausweis» — копия удостоверения
+z|29|«Der Termin ist um zehn Uhr» — о десятій|«Der Termin ist um zehn Uhr» — в десять
