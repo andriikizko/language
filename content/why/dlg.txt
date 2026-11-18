@@ -108,3 +108,15 @@ b1_behoerden|0|0|клієнт каже «möchte mich ummelden» — перер�
 b1_behoerden|0|1|«Die Anmeldung kostet nichts» — безкоштовно|«Die Anmeldung kostet nichts» — бесплатно
 b1_behoerden|1|0|«Es fehlt noch eine Bescheinigung» — довідки|«Es fehlt noch eine Bescheinigung» — справки
 b1_behoerden|1|1|«am besten per Einschreiben» — рекомендованим листом|«am besten per Einschreiben» — заказным письмом
+b1_beziehungen|0|0|«Ich habe zwei Stunden gewartet» — дві години|«Ich habe zwei Stunden gewartet» — два часа
+b1_beziehungen|0|1|Ян каже «Mein Zug hatte Verspätung» — потяг запізнився|Ян говорит «Mein Zug hatte Verspätung» — поезд опоздал
+b1_beziehungen|1|0|«Um sieben Uhr abends» — о 19:00|«Um sieben Uhr abends» — в 19:00
+b1_beziehungen|1|1|«Ich bringe einen Salat mit» — салат|«Ich bringe einen Salat mit» — салат
+b1_konsum|0|0|«Der linke Kopfhörer funktioniert nicht» — лівий навушник|«Der linke Kopfhörer funktioniert nicht» — левый наушник
+b1_konsum|0|1|«Ich habe sie vor einer Woche gekauft» — тиждень тому|«Ich habe sie vor einer Woche gekauft» — неделю назад
+b1_konsum|1|0|«Ich habe vor zehn Tagen bestellt» — 10 днів тому|«Ich habe vor zehn Tagen bestellt» — 10 дней назад
+b1_konsum|1|1|«Es kommt in zwei Tagen» — за два дні|«Es kommt in zwei Tagen» — через два дня
+b1_kultur|0|0|«Wir haben Glühwein getrunken» — глінтвейн|«Wir haben Glühwein getrunken» — глинтвейн
+b1_kultur|0|1|«Wir haben weder einen Tisch noch einen Parkplatz gefunden» — столика й парковки|«Wir haben weder einen Tisch noch einen Parkplatz gefunden» — столика и парковки
+b1_kultur|1|0|«Die Karten kosten 25 Euro» — 25 €|«Die Karten kosten 25 Euro» — 25 €
+b1_kultur|1|1|«Im Theater läuft ein neues Stück… kaufe ich zwei Karten» — у театр|«Im Theater läuft ein neues Stück… kaufe ich zwei Karten» — в театр

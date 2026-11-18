@@ -117,3 +117,42 @@ T['b1_behoerden'] = dict(title='Beim Amt', note='Тут: пасив у діло�
  'Sehr geehrte Damen und Herren, ich möchte einen Antrag stellen.|Шановні пані та панове, я хочу подати заяву.|Уважаемые дамы и господа, я хочу подать заявление.',
  'Ich bitte um Bestätigung des Eingangs.|Прошу підтвердити отримання.|Прошу подтвердить получение.',
  'Mit freundlichen Grüßen, Olena Petrenko|З повагою, Олена Петренко|С уважением, Олена Петренко'])
+T['b1_beziehungen'] = dict(title='Freunde und Gefühle', note='Тут: зворотні дієслова з прийменником (sich freuen auf/über) і da-/wo-слова.', s=[
+ 'Ich verstehe mich sehr gut mit meinen Kollegen.|Я дуже добре ладнаю з колегами.|Я очень хорошо лажу с коллегами.',
+ 'Wir treffen uns jede Woche und sprechen über alles.|Ми зустрічаємося щотижня й говоримо про все.|Мы встречаемся каждую неделю и говорим обо всём.',
+ 'Gestern habe ich mich über den Lärm geärgert.|Вчора мене розсердив шум.|Вчера меня рассердил шум.',
+ 'Ich interessiere mich für Fotografie und freue mich auf den Kurs.|Я цікавлюся фотографією й з радістю чекаю курсу.|Я интересуюсь фотографией и с радостью жду курса.',
+ 'Worauf freust du dich? — Ich freue mich auf den Urlaub.|На що ти радієш? — Я з радістю чекаю відпустку.|Чему ты радуешься? — Я с радостью жду отпуск.',
+ 'Mein Bruder hat sich in eine Kollegin verliebt.|Мій брат закохався в колегу.|Мой брат влюбился в коллегу.',
+ 'Wir haben uns gestritten, aber wir haben uns wieder versöhnt.|Ми посварилися, але знову помирилися.|Мы поссорились, но снова помирились.',
+ 'Ich möchte mich für meine Worte entschuldigen.|Я хочу вибачитися за свої слова.|Я хочу извиниться за свои слова.',
+ 'Ich vermisse meine Familie, aber wir telefonieren oft.|Я сумую за родиною, але ми часто телефонуємо.|Я скучаю по семье, но мы часто созваниваемся.',
+ 'Herzlichen Glückwunsch zum Geburtstag, alles Gute!|Щиро вітаю з днем народження, всього найкращого!|Сердечно поздравляю с днём рождения, всего хорошего!',
+ 'Vielen Dank für deine Hilfe, das war sehr nett.|Дуже дякую за твою допомогу, це було дуже мило.|Большое спасибо за твою помощь, это было очень мило.',
+ 'Gute Freunde kann man nicht kaufen.|Хороших друзів не можна купити.|Хороших друзей нельзя купить.'])
+T['b1_konsum'] = dict(title='Einkaufen und Service', note='Тут: порівняння, закінчення прикметників (Dativ/Genitiv), ввічливе Konjunktiv II.', s=[
+ 'Ich suche ein neues Handy und vergleiche die Angebote.|Я шукаю новий телефон і порівнюю пропозиції.|Я ищу новый телефон и сравниваю предложения.',
+ 'Dieses Modell ist teurer als das alte, aber auch besser.|Ця модель дорожча за стару, але й краща.|Эта модель дороже старой, но и лучше.',
+ 'Das ist das beste Angebot von allen.|Це найкраща пропозиція з усіх.|Это лучшее предложение из всех.',
+ 'Könnten Sie mir bitte helfen?|Чи не могли б ви мені допомогти?|Не могли бы вы мне помочь?',
+ 'Hätten Sie vielleicht eine andere Größe?|Чи не було б у вас іншого розміру?|Нет ли у вас другого размера?',
+ 'Mit dem neuen Handy bin ich sehr zufrieden.|Я дуже задоволений новим телефоном.|Я очень доволен новым телефоном.',
+ 'Leider funktioniert der linke Kopfhörer nicht.|На жаль, лівий навушник не працює.|К сожалению, левый наушник не работает.',
+ 'Ich möchte ihn reklamieren und habe den Kassenbon noch.|Я хочу подати рекламацію, і чек у мене ще є.|Я хочу подать рекламацию, и чек у меня ещё есть.',
+ 'Auf das Gerät gibt es zwei Jahre Garantie.|На пристрій діє два роки гарантії.|На устройство действует два года гарантии.',
+ 'Bei Online-Bestellungen kann man die Ware zurückschicken.|Товар, замовлений онлайн, можна повернути.|Товар, заказанный онлайн, можно вернуть.',
+ 'Die Versandkosten sind wegen der Entfernung höher.|Вартість доставки вища через відстань.|Стоимость доставки выше из-за расстояния.',
+ 'Zum Schluss habe ich lieber mit Karte bezahlt.|Зрештою я вирішив заплатити карткою.|В итоге я решил заплатить картой.'])
+T['b1_kultur'] = dict(title='Feste und Kultur', note='Тут: Plusquamperfekt (hatte/war + Partizip II) і подвійні сполучники.', s=[
+ 'In Deutschland feiert man im Dezember Weihnachten.|У Німеччині в грудні святкують Різдво.|В Германии в декабре празднуют Рождество.',
+ 'Der Weihnachtsmarkt findet jedes Jahr in der Innenstadt statt.|Різдвяний ярмарок щороку відбувається в центрі міста.|Рождественская ярмарка каждый год проходит в центре города.',
+ 'Nachdem wir Glühwein getrunken hatten, gingen wir weiter.|Після того як ми випили глінтвейн, ми пішли далі.|После того как мы выпили глинтвейн, мы пошли дальше.',
+ 'Als wir ankamen, war das Konzert schon vorbei.|Коли ми прийшли, концерт уже закінчився.|Когда мы пришли, концерт уже закончился.',
+ 'Sie spricht sowohl Deutsch als auch Englisch.|Вона говорить і німецькою, і англійською.|Она говорит и по-немецки, и по-английски.',
+ 'Wir gehen entweder ins Kino oder ins Theater.|Ми підемо або в кіно, або в театр.|Мы пойдём или в кино, или в театр.',
+ 'Er hat weder Zeit noch Lust, mitzukommen.|Він не має ні часу, ні бажання йти з нами.|У него нет ни времени, ни желания идти с нами.',
+ 'Der Film hat mir sehr gut gefallen, er war spannend.|Фільм мені дуже сподобався, він був захопливий.|Фильм мне очень понравился, он был захватывающим.',
+ 'Ich empfehle dir das Museum in der Altstadt.|Я раджу тобі музей у старому місті.|Я рекомендую тебе музей в старом городе.',
+ 'Zuerst haben wir gegessen, danach haben wir getanzt.|Спочатку ми поїли, потім танцювали.|Сначала мы поели, потом танцевали.',
+ 'Er hat nicht nur gesungen, sondern auch getanzt.|Він не лише співав, а й танцював.|Он не только пел, но и танцевал.',
+ 'Am Ende waren wir müde, aber glücklich.|Зрештою ми були втомлені, але щасливі.|В итоге мы были усталыми, но счастливыми.'])
