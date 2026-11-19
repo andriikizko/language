@@ -146,6 +146,16 @@ export default function App() {
   const [tour, setTour] = useState(false)
   const timer = useRef(null)
 
+  const theme = st.theme || 'auto'
+  useEffect(() => {
+    const mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null
+    const ap = () => {
+      const d = theme === 'dark' || (theme === 'auto' && mq && mq.matches)
+      document.documentElement.dataset.theme = d ? 'dark' : 'light'
+      const m = document.querySelector('meta[name=theme-color]'); if (m) m.setAttribute('content', d ? '#16100b' : '#FFFFFF')
+    }
+    ap(); if (mq && mq.addEventListener) { mq.addEventListener('change', ap); return () => mq.removeEventListener('change', ap) }
+  }, [theme])
   const update = (patch) => setSt((s) => ({ ...s, ...patch }))
   useEffect(() => {
     localStorage.setItem('languages.state', JSON.stringify(st))
@@ -307,6 +317,10 @@ export default function App() {
             </div>
             <button className="de-btn ghost" style={{ marginTop: 14 }} onClick={() => { go('home'); setTimeout(() => setTour(true), 200) }}>Пройти тур по застосунку</button>
             {st.aboutHide && <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => update({ aboutHide: 0 })}>Показати опис на головній</button>}
+            <div className="de-h2">Тема застосунку</div>
+            <div className="de-seg" style={{ width: 'fit-content' }}>
+              {[['auto', 'Як у телефона'], ['light', 'Світла'], ['dark', 'Темна']].map(([k, l]) => <button key={k} className={theme === k ? 'on' : ''} onClick={() => update({ theme: k })}>{l}</button>)}
+            </div>
             <div className="de-h2">Вигляд головної</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>
               <button className={st.home !== 'a' ? 'on' : ''} onClick={() => update({ home: 'b' })}>Темний</button>

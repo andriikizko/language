@@ -57,7 +57,7 @@ export function Course({ st, update, lang, tr, onAns }) {
     return (
       <>
         <div className="de-hello">Курс німецької {L.name}</div>
-        {LEVELS.a2.blocks.length > 0 && <div className="de-seg" style={{ width: 'fit-content', marginBottom: 10 }}>{Object.entries(LEVELS).filter(([, v]) => v.blocks.length).map(([k, v]) => <button key={k} className={level === k ? 'on' : ''} onClick={() => update({ level: k })}>{v.name}</button>)}<button disabled style={{ opacity: 0.5 }}>B2 · скоро</button></div>}
+        {LEVELS.a2.blocks.length > 0 && <div className="de-seg" style={{ width: 'fit-content', marginBottom: 10 }}>{Object.entries(LEVELS).filter(([, v]) => v.blocks.length).map(([k, v]) => <button key={k} className={level === k ? 'on' : ''} onClick={() => update({ level: k })}>{v.name}</button>)}</div>}
         <div className="de-dim" style={{ marginBottom: 12 }}>{L.free ? `Перші ${L.free} блоки безкоштовні, решта — за підпискою.` : 'Рівень доступний за підпискою.'}</div>
         <button className="de-btn" style={{ marginBottom: 12 }} onClick={() => setTutor(true)}>▶ Курс-репетитор {L.name}: урок за уроком</button>
         {L.blocks.map((b, i) => {
