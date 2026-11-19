@@ -4,9 +4,13 @@ import Ic from './Icons.jsx'
 import { post, BASE } from './api.js'
 import Nouns from './Nouns.jsx'
 import { Course, Errors, Calendar } from './Course.jsx'
-import { srsUpdate, srsDue, LEVELS } from './engine.js'
+import { srsUpdate, srsDue, LEVELS, speak } from './engine.js'
 import Tour from './Tour.jsx'
 import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
+import nounsData from './data/nouns.json'
+import verbsData from './data/verbs.json'
+import dictData from './data/dict.json'
+import { GUEST } from './guest.js'
 
 import Placement from './Placement.jsx'
 const SKEY = 'languages.session'
@@ -130,6 +134,32 @@ const Auth = ({ onAuth, onGuest }) => {
   )
 }
 
+const ART = { m: 'der', f: 'die', n: 'das', p: 'die' }
+function DictSearch({ lang, guest }) {
+  const [q, setQ] = useState('')
+  const res = useMemo(() => {
+    const t = q.trim().toLowerCase()
+    if (t.length < 2) return []
+    const tr = (w) => (lang === 'ru' ? w.ru : w.uk) || w.uk
+    const hit = (w) => (w.de || '').toLowerCase().includes(t) || (tr(w) || '').toLowerCase().includes(t)
+    const out = []
+    nounsData.words.forEach((w) => { if (out.length < 40 && hit(w) && (!guest || GUEST.nouns.has(w.de + '|' + w.g))) out.push({ k: 'n' + w.de + w.g, de: (ART[w.g] ? ART[w.g] + ' ' : '') + w.de, tr: tr(w), tag: 'іменник' }) })
+    verbsData.forEach((w) => { if (out.length < 40 && hit(w) && (!guest || GUEST.verbs.has(w.de))) out.push({ k: 'v' + w.de, de: w.de, tr: tr(w), tag: 'дієслово' }) })
+    ;(dictData.adj || []).forEach((w) => { if (out.length < 40 && hit(w) && (!guest || GUEST.adj.has(w.de))) out.push({ k: 'a' + w.de, de: w.de, tr: tr(w), tag: 'прикметник' }) })
+    return out
+  }, [q, lang, guest])
+  return (
+    <>
+      <input className="de-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Пошук: німецькою або рідною" />
+      {q.trim().length >= 2 && (
+        <div className="de-sres">
+          {res.length ? res.map((r) => <button key={r.k} className="de-sr" onClick={() => speak(r.de)}><b>{r.de}</b><span>{r.tr}</span><small>{r.tag}</small></button>) : <div className="de-dim" style={{ padding: 10 }}>Нічого не знайдено{guest ? ' серед безкоштовних слів' : ''}.</div>}
+        </div>
+      )}
+    </>
+  )
+}
+
 export default function App() {
   const [splash, setSplash] = useState(true)
   const [sess, setSess] = useState(() => { try { return JSON.parse(localStorage.getItem(SKEY)) } catch { return null } })
@@ -212,7 +242,7 @@ export default function App() {
     </div>
   )
 
-  const nav = [['home', 'Головна', 'home'], ['learn', 'Навчання', 'learn'], ['dict', 'Словник', 'book'], ['errors', 'Помилки', 'alert'], ['profile', 'Профіль', 'person']]
+  const nav = [['home', 'Головна', 'home'], ['learn', 'Навчання', 'learn'], ['trans', 'Перекладач', 'mic'], ['errors', 'Помилки', 'alert'], ['profile', 'Профіль', 'person']]
   const dictView = (scr, setScr) => {
     const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScr(null), guest: isGuest, onGate: () => setScr('gate'), unl: st.unl || {}, setUnl: (u) => update({ unl: u }), full: !!st.dev || !!st.fullDict }
     if (scr === 'gate') return <Gate />
@@ -221,6 +251,7 @@ export default function App() {
     return (
       <>
         <div className="de-hello">Словник{isGuest ? ' · 50 слів' : ' · ' + wantCount + ' до вивчення'}</div>
+        <DictSearch lang={lang} guest={isGuest} />
         <div className="de-grid">
           <button className="de-tile" onClick={gt('nouns')}><span className="de-tile-ic">📘</span><b>Іменники</b><small>з артиклями</small></button>
           <button className="de-tile" onClick={gt('verbs')}><span className="de-tile-ic">⚡</span><b>Дієслова</b><small>6 форм</small></button>
@@ -300,7 +331,7 @@ export default function App() {
           const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null), guest: isGuest, onGate: () => setScreen('gate'), unl: st.unl || {}, setUnl: (u) => update({ unl: u }), full: !!st.dev || !!st.fullDict }
           return <Calendar st={st} update={update} onBack={p.onBack} />
         })()}
-        {tab === 'dict' && dictView(dScreen, setDScreen)}
+        {tab === 'trans' && <iframe title="Перекладач" className="de-frame" allow="microphone; autoplay" src={BASE + '/translator/?theme=' + (document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light')} />}
                 {tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
         {tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
         {tab === 'profile' && (
@@ -349,7 +380,7 @@ export default function App() {
           </>
         )}
       </div>
-      {tab !== 'dict' && !pop && <button className="de-fab" data-tour="fab" aria-label="Словник" onClick={() => { setPScreen(null); setPop(true) }}><Ic id="book" size={26} /></button>}
+      {!pop && <button className="de-fab" data-tour="fab" aria-label="Словник" onClick={() => { setPScreen(null); setPop(true) }}><Ic id="book" size={26} /></button>}
       {pop && (
         <div className="de-pop" onClick={() => setPop(false)}>
           <div className="de-pop-in" onClick={(e) => e.stopPropagation()}>

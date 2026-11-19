@@ -3,6 +3,7 @@ import { LEVELS, blockById, poolFor, session, testSet, pick, shuffle, speak, spe
 import Practice from './Practice.jsx'
 import Tap from './Tap.jsx'
 import Words from './Words.jsx'
+import Lesson1 from './Lesson1.jsx'
 
 // Граматика за тижнями (урок 2 кожного тижня)
 const SCHED = {
@@ -77,6 +78,11 @@ export default function Tutor({ st, update, lang, tr, onAns, level, onBack, onPr
   const grams = gids.map((id) => blockById(id)).filter(Boolean)
   const prev = n > 1 ? get(n - 1) : null
   const exit = () => { set(n, { sec }); setCur(null); setStage(null); setRun(null) }
+  if (level === 'a1' && n === 1) {
+    return <Lesson1 lang={lang} st={st} update={update} saved={get(1)} onSave={(p) => set(1, p)}
+      onExit={(s2) => { set(1, { sec: s2 }); setCur(null) }}
+      onFinish={(pct, s2) => { set(1, { done: 1, hwPct: pct, sec: s2, weak: pct < 50 ? 1 : 0 }); setCur(null) }} />
+  }
 
   // ---------- тест по домашці (без пауз, без виходу) ----------
   if (run && stage === 'test') {
