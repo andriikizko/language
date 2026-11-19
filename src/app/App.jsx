@@ -16,8 +16,8 @@ const ERR = {
 }
 
 const LV = [['a1', 'A1', 'З нуля: базові фрази, числа, родина, їжа, місто'], ['a2', 'A2', 'Знаєш основи: розмови про здоров’я, роботу, житло, подорожі'], ['b1', 'B1', 'Середній рівень: робота, житло, довкілля, суспільство, офіційні справи'], ['b2', 'B2', 'Вище середнього: політика, наука, право, медіа, психологія']]
-const Start = ({ onTest, onPick }) => {
-  const [pick, setPick] = useState(false)
+const Start = ({ onTest, onPick, initPick }) => {
+  const [pick, setPick] = useState(!!initPick)
   return (
     <div className="de-auth">
       <h1>{pick ? 'Обери рівень' : 'Який у тебе рівень німецької?'}</h1>
@@ -30,7 +30,7 @@ const Start = ({ onTest, onPick }) => {
       ) : (
         <>
           {LV.map(([k, n, d]) => (
-            <button key={k} className="de-btn ghost" disabled={k === 'b2'} style={{ textAlign: 'left', opacity: k === 'b2' ? 0.55 : 1 }} onClick={() => onPick(k)}><b>{n}</b> · {d}</button>
+            <button key={k} className="de-btn ghost" style={{ textAlign: 'left' }} onClick={() => onPick(k)}><b>{n}</b> · {d}</button>
           ))}
           <button className="de-btn ghost" onClick={() => setPick(false)}>Назад</button>
         </>
@@ -133,12 +133,13 @@ export default function App() {
   const [splash, setSplash] = useState(true)
   const [sess, setSess] = useState(() => { try { return JSON.parse(localStorage.getItem(SKEY)) } catch { return null } })
   const [st, setSt] = useState(() => { try { return JSON.parse(localStorage.getItem('languages.state')) || {} } catch { return {} } })
-  const [guest, setGuest] = useState(() => localStorage.getItem('languages.guest') === '1')
+  const [guest, setGuest] = useState(() => localStorage.getItem('languages.guest') !== '0')
   const [needProfile, setNeedProfile] = useState(false)
   const [tab, setTab] = useState('home')
   const [screen, setScreen] = useState(null)
   const [dScreen, setDScreen] = useState(null)
   const [pop, setPop] = useState(false)
+  const [startPick, setStartPick] = useState(false)
   const [pScreen, setPScreen] = useState(null)
   const [testing, setTesting] = useState(false)
   const timer = useRef(null)
@@ -154,11 +155,11 @@ export default function App() {
   const onAuth = (s, remote, np, consent) => {
     localStorage.setItem(SKEY, JSON.stringify(s)); setSess(s)
     localStorage.removeItem('languages.guest'); setGuest(false)
-    setSt({ ...(remote || {}), consent: !!consent })
+    setSt((prev) => ({ ...prev, ...(remote || {}), consent: !!consent }))
     setNeedProfile(!!np)
   }
   const startGuest = () => { localStorage.setItem('languages.guest', '1'); setGuest(true) }
-  const toAuth = () => { localStorage.removeItem('languages.guest'); setGuest(false); setTab('home'); setScreen(null) }
+  const toAuth = () => { localStorage.setItem('languages.guest', '0'); setGuest(false); setTab('home'); setScreen(null) }
   const logout = () => { localStorage.removeItem(SKEY); setSess(null) }
   const lang = st.lang || 'uk'
   const tr = st.trans || lang
@@ -176,10 +177,10 @@ export default function App() {
   if (sess && needProfile) return <div className="de-app"><div className="de-main"><ProfileSetup sess={sess} onDone={(name, c) => { update({ consent: !!c }); const n = { ...sess, name }; localStorage.setItem(SKEY, JSON.stringify(n)); setSess(n); setNeedProfile(false) }} /></div></div>
   const isGuest = !sess
   if (testing) return <div className="de-app"><Placement lang={st.lang || 'uk'} tr={st.trans || st.lang || 'uk'} guest={isGuest}
-    onDone={(lv) => { update({ level: lv, placed: 1, intro: 1 }); setTesting(false); setTab('learn'); setScreen(null) }}
-    onSkip={() => { setTesting(false); update({ placed: 0 }) }}
+    onDone={(lv) => { update({ level: lv, placed: 1, intro: 1 }); setTesting(false); setStartPick(false); setTab('learn'); setScreen(null) }}
+    onSkip={() => { setTesting(false); setStartPick(true); update({ placed: 0 }) }}
     onAuth={(lv) => { update({ level: lv }); setTesting(false); toAuth() }} /></div>
-  if (!st.placed && !st.intro) return <div className="de-app"><div className="de-main"><Start onTest={() => setTesting(true)}
+  if (!st.placed && !st.intro) return <div className="de-app"><div className="de-main"><Start initPick={startPick} onTest={() => setTesting(true)}
     onPick={(lv) => update({ level: lv, placed: 1, intro: 1 })} /></div></div>
   const Gate = () => (
     <div className="de-empty">
@@ -227,10 +228,11 @@ export default function App() {
                     <circle cx="110" cy="110" r="94" stroke="url(#dgr)" strokeWidth="14" fill="none" strokeLinecap="round" strokeDasharray="590" strokeDashoffset={590 * (1 - pct / 100)} transform="rotate(-90 110 110)" /></svg>
                   <div className="de-ring-t"><b>{pct}%</b><small>рівень {lv}</small></div>
                 </div>
-                <button className="de-go" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}>Продовжити навчання</button>
+                <button className="de-go" onClick={() => go('learn')}>Продовжити навчання</button>
               </div>
+              {isGuest && <div className="de-card" style={{ marginTop: 12 }}><b>Збережи прогрес</b><div className="de-dim" style={{ margin: '4px 0 10px' }}>Зараз усе зберігається лише на цьому пристрої. Зареєструйся — і прогрес буде на будь-якому.</div><button className="de-btn ghost" onClick={toAuth}>Зареєструватися</button></div>}
               <div className="de-grid" style={{ marginTop: 12 }}>
-                <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
+                <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
                 <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('cal'))}><span className="de-tile-ic">📅</span><b>Календар</b><small>13 тижнів</small></button>
               </div>
             </div>
@@ -242,12 +244,11 @@ export default function App() {
           return <Calendar st={st} update={update} onBack={p.onBack} />
         })()}
         {tab === 'dict' && dictView(dScreen, setDScreen)}
-        {isGuest && tab !== 'home' && tab !== 'dict' && <Gate />}
-        {!isGuest && tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
-        {!isGuest && tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
-        {!isGuest && tab === 'profile' && (
+                {tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
+        {tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
+        {tab === 'profile' && (
           <>
-            <div className="de-hello">{sess.name}</div>
+            <div className="de-hello">{sess ? sess.name : 'Гість'}</div>
             <div className="de-card"><b>Вивчено слів: {knownCount} / 500</b><div className="de-bar" style={{ marginTop: 8, marginBottom: 0 }}><div style={{ width: Math.min(100, knownCount / 5) + '%' }} /></div><div className="de-dim" style={{ marginTop: 6 }}>Слово зараховується, коли ти правильно відповів на нього у вправі.</div></div>
             <div className="de-h2">Мій рівень</div>
             <div className="de-card"><b>{(st.level || 'a1').toUpperCase()}</b>
@@ -269,15 +270,15 @@ export default function App() {
               {[['off', 'Вимкнена'], ['uk', 'Українськими'], ['ru', 'Російськими']].map(([k, l]) => <button key={k} className={tr === k ? 'on' : ''} onClick={() => update({ trans: k })}>{l}</button>)}
             </div>
             <div className="de-dim" style={{ marginTop: 6 }}>Транскрипція наближена й не замінює озвучення.</div>
-            <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.consent} onChange={(e) => { update({ consent: e.target.checked }); post('/api/auth', { action: 'consent', login: sess.login, token: sess.token, consent: e.target.checked }) }} /><span>Отримувати повідомлення, листи та пропозиції</span></label>
-            <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button>
+            {sess && <label className="de-chk" style={{ marginTop: 20 }}><input type="checkbox" checked={!!st.consent} onChange={(e) => { update({ consent: e.target.checked }); post('/api/auth', { action: 'consent', login: sess.login, token: sess.token, consent: e.target.checked }) }} /><span>Отримувати повідомлення, листи та пропозиції</span></label>}
+            {sess ? <button className="de-btn ghost" style={{ marginTop: 24 }} onClick={logout}>Вийти</button> : <button className="de-btn" style={{ marginTop: 24 }} onClick={toAuth}>Увійти або зареєструватися</button>}
             <a className="de-dim" style={{ display: 'block', marginTop: 16 }} href={BASE + '/privacy.html'} target="_blank" rel="noreferrer">Політика конфіденційності</a>
-            <button className="de-btn ghost" style={{ marginTop: 12, color: '#c0392b' }} onClick={async () => {
+            {sess && <button className="de-btn ghost" style={{ marginTop: 12, color: '#c0392b' }} onClick={async () => {
               if (!window.confirm('Видалити акаунт і весь прогрес? Це безповоротно.')) return
               const r = await post('/api/auth', { action: 'delete', login: sess.login, token: sess.token })
               if (!r.ok) return window.alert('Не вдалося видалити. Спробуйте ще раз')
               localStorage.removeItem('languages.state'); setSt({}); logout()
-            }}>Видалити акаунт</button>
+            }}>Видалити акаунт</button>}
           </>
         )}
       </div>

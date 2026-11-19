@@ -59,9 +59,9 @@ export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
             {h.q.wmap && h.q.wmap[h.q.opts[h.sel]] && <div className="de-dim">Чому не так: {h.q.wmap[h.q.opts[h.sel]]}.</div>}
           </div>
         ))}
-        {guest
-          ? <><div className="de-dim" style={{ margin: '10px 0' }}>Щоб зберегти результат і почати навчання, зареєструйся.</div><button className="de-btn" onClick={() => onAuth(res.level)}>Зареєструватися</button></>
-          : <button className="de-btn" onClick={() => onDone(res.level)}>Розпочати навчання на {L}</button>}
+        <button className="de-btn" onClick={() => onDone(res.level)}>Розпочати навчання на {L}</button>
+        {guest && <div className="de-dim" style={{ margin: '10px 0' }}>Рівень збережено на цьому пристрої. Зареєструйся, щоб прогрес був на будь-якому.</div>}
+        {guest && <button className="de-btn ghost" onClick={() => onAuth(res.level)}>Зареєструватися</button>}
         <button className="de-btn ghost" onClick={onSkip}>Вибрати рівень самому</button>
       </div>
     )
@@ -100,6 +100,7 @@ export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
       <div style={{ display: 'grid', gap: 8 }}>
         {q.opts.map((o, k) => <button key={k} className={'de-opt' + (answered ? (k === q.correct ? ' right' : k === sel ? ' bad' : '') : '')} disabled={answered} onClick={() => answer(k)}>{o}</button>)}
       </div>
+      {!answered && <button className="de-btn ghost" style={{ marginTop: 14 }} onClick={onSkip}>Пропустити тест</button>}
       {answered && (
         <>
           <div className={'de-expl' + (ok ? ' ok' : ' no')}>{ok ? '✓ Правильно. ' : '✗ Неправильно. '}{q.explain}{!ok && q.wmap && q.wmap[q.opts[sel]] && <div>Чому не так: {q.wmap[q.opts[sel]]}.</div>}</div>
