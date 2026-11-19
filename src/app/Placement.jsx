@@ -88,7 +88,7 @@ export default function Placement({ lang, tr, guest, onDone, onSkip, onAuth }) {
   }
   const ok = answered && sel === q.correct
   return (
-    <div className="de-main">
+    <div className="de-main de-qpage">
       <div className="de-row"><button className="de-back" onClick={onSkip}>‹</button><b>Тест рівня</b><span className="de-dim">{hist.length + 1}</span></div>
       <div className="de-bar"><div style={{ width: Math.min(100, (hist.length + (answered ? 1 : 0)) / MIN * 100) + '%' }} /></div>
       <div className="de-q-card">

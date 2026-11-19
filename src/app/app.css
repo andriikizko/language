@@ -138,3 +138,14 @@
 .de-intro p{font-size:16px;line-height:1.5;margin:0 0 10px}
 .de-dots{display:flex;gap:6px;margin:14px 0}
 .de-dots span{width:8px;height:8px;border-radius:99px;background:var(--o-200)}.de-dots span.on{background:var(--o-500)}
+
+/* розкладка питань: без горизонтального виїзду, контент по центру з відступами */
+html,body{overflow-x:hidden;max-width:100%}
+.de-app{width:100%;overflow-x:hidden}
+.de-main{overflow-x:hidden;min-width:0}
+.de-main>*,.de-main .de-q-card,.de-main .de-card{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.de-main div[style*="display: grid"]{grid-template-columns:minmax(0,1fr)}
+.de-opt{max-width:100%;overflow-wrap:anywhere;white-space:normal;margin:0}
+.de-q-card{padding:22px 18px;margin:8px 4px 16px}
+.de-main.de-qpage{padding:18px 22px 120px;display:flex;flex-direction:column;justify-content:flex-start}
+.de-main.de-qpage .de-q-card{margin-top:6vh}
