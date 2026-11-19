@@ -4,7 +4,8 @@ import Ic from './Icons.jsx'
 import { post, BASE } from './api.js'
 import Nouns from './Nouns.jsx'
 import { Course, Errors, Calendar } from './Course.jsx'
-import { srsUpdate } from './engine.js'
+import { srsUpdate, srsDue, LEVELS } from './engine.js'
+import Tour from './Tour.jsx'
 import { Verbs, Adjectives, Pronouns, Numerals, Preps } from './Dict.jsx'
 
 import Placement from './Placement.jsx'
@@ -142,6 +143,7 @@ export default function App() {
   const [startPick, setStartPick] = useState(false)
   const [pScreen, setPScreen] = useState(null)
   const [testing, setTesting] = useState(false)
+  const [tour, setTour] = useState(false)
   const timer = useRef(null)
 
   const update = (patch) => setSt((s) => ({ ...s, ...patch }))
@@ -165,7 +167,8 @@ export default function App() {
   const tr = st.trans || lang
   const knownCount = Object.keys(st.known || {}).length
   const onAns = (id, ok) => setSt((s0) => {
-    const s = { ...s0, srs: srsUpdate(s0.srs, id, ok) }
+    const dk = new Date().toISOString().slice(0, 10)
+    const s = { ...s0, srs: srsUpdate(s0.srs, id, ok), days: { ...(s0.days || {}), [dk]: ((s0.days || {})[dk] || 0) + 1 } }
     return ok
       ? (id.startsWith('w|') ? { ...s, known: { ...(s.known || {}), [id.split('|')[2]]: 1 } } : s)
       : { ...s, err: { ...(s.err || {}), [id]: 0 } }
@@ -182,6 +185,15 @@ export default function App() {
     onAuth={(lv) => { update({ level: lv }); setTesting(false); toAuth() }} /></div>
   if (!st.placed && !st.intro) return <div className="de-app"><div className="de-main"><Start initPick={startPick} onTest={() => setTesting(true)}
     onPick={(lv) => update({ level: lv, placed: 1, intro: 1 })} /></div></div>
+  const GOALS = [['work', '💼', 'Робота в Німеччині'], ['move', '🏠', 'Переїзд і життя'], ['exam', '📝', 'Іспит (Goethe, TELC)'], ['travel', '✈️', 'Подорожі й спілкування']]
+  if (st.goal === undefined) return (
+    <div className="de-app"><div className="de-main"><div className="de-auth">
+      <h1>Навіщо тобі німецька?</h1>
+      <p>Це допоможе підказувати, з чого починати. Можна змінити в профілі.</p>
+      {GOALS.map(([k, e, l]) => <button key={k} className="de-btn ghost" style={{ textAlign: 'left' }} onClick={() => { update({ goal: k }); setTab('home'); setScreen(null); if (!st.tourDone) setTimeout(() => setTour(true), 400) }}>{e}  {l}</button>)}
+      <button className="de-btn ghost" onClick={() => { update({ goal: '' }); setTab('home'); setScreen(null); if (!st.tourDone) setTimeout(() => setTour(true), 400) }}>Пропустити</button>
+    </div></div></div>
+  )
   const Gate = () => (
     <div className="de-empty">
       <b>Тільки для зареєстрованих</b>
@@ -216,25 +228,60 @@ export default function App() {
     <div className="de-app">
       <div className="de-main">
         {tab === 'home' && !screen && (() => {
-          const pct = Math.min(100, Math.round(knownCount / 5))
-          const lv = (st.level || 'a1').toUpperCase()
+          const lk = st.level || 'a1'
+          const lv = lk.toUpperCase()
+          const L = LEVELS[lk]
+          const total = (L.blocks.length || 0) * 3
+          const tut = st.tutor || {}
+          let doneN = 0, next = 1
+          for (let n = 1; n <= total; n++) { if ((tut[lk + n] || {}).done) doneN++ }
+          for (let n = 1; n <= total; n++) { if (!(tut[lk + n] || {}).done) { next = n; break } if (n === total) next = total }
+          const pct = total ? Math.round(doneN / total * 100) : 0
+          const topic = total ? (L.blocks[Math.floor((next - 1) / 3)] || {}).title : ''
+          const dueN = srsDue(st.srs).length
+          const errN = Object.keys(st.err || {}).length
+          const days = st.days || {}
+          let streak = 0
+          for (let i = 0; i < 400; i++) { const d = new Date(Date.now() - i * 864e5).toISOString().slice(0, 10); if (days[d]) streak++; else if (i > 0) break }
+          const GL = { work: 'робота в Німеччині', move: 'переїзд і життя', exam: 'іспит', travel: 'подорожі' }
+          const name = sess && sess.name && sess.name !== sess.login ? sess.name : ''
           return (
             <div className={'de-home ' + (st.home === 'a' ? 'ha' : 'hb')}>
-              <div className="de-hello">{isGuest ? 'Привіт!' : 'Привіт, ' + sess.name + '!'}</div>
-              <div className="de-hero">
+              <div className="de-hello">{name ? 'Привіт, ' + name + '!' : 'Привіт!'}{streak > 0 && <span className="de-streak">🔥 {streak} {streak === 1 ? 'день' : 'дн.'}</span>}</div>
+              <div className="de-hero" data-tour="hero">
                 <div className="de-ring">
                   <svg viewBox="0 0 220 220"><defs><linearGradient id="dgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FDBA74" /><stop offset="1" stopColor="#EA580C" /></linearGradient></defs>
                     <circle cx="110" cy="110" r="94" stroke="rgba(255,255,255,.1)" strokeWidth="14" fill="none" />
                     <circle cx="110" cy="110" r="94" stroke="url(#dgr)" strokeWidth="14" fill="none" strokeLinecap="round" strokeDasharray="590" strokeDashoffset={590 * (1 - pct / 100)} transform="rotate(-90 110 110)" /></svg>
-                  <div className="de-ring-t"><b>{pct}%</b><small>рівень {lv}</small></div>
+                  <div className="de-ring-t"><b>{lv}</b><small>{total ? 'уроків ' + doneN + ' із ' + total : 'рівень'}</small></div>
                 </div>
-                <button className="de-go" onClick={() => go('learn')}>Продовжити навчання</button>
+                {total > 0 && <div className="de-next"><small>{doneN ? 'Наступний крок' : 'Твій перший крок'}</small><b>Урок {next}{topic ? ' · ' + topic : ''}</b></div>}
+                <button className="de-go" onClick={() => go('learn')}>{doneN ? 'Продовжити' : 'Почати навчання'}</button>
+              </div>
+              <div className="de-grid" style={{ marginTop: 12 }} data-tour="today">
+                <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🔁</span><b>{dueN}</b><small>слів на повторення</small></button>
+                <button className="de-tile" onClick={() => go('errors')}><span className="de-tile-ic">⚠️</span><b>{errN}</b><small>помилок до розбору</small></button>
+              </div>
+              <div className="de-card" style={{ marginTop: 12 }}>
+                <b>Про тебе</b>
+                <div className="de-about">
+                  <span>Рівень<b>{lv}</b></span>
+                  <span>Переклад<b>{lang === 'ru' ? 'RU' : 'UA'}</b></span>
+                  <span>Слів вивчено<b>{knownCount}</b></span>
+                  <span>Мета<b>{GL[st.goal] || '—'}</b></span>
+                </div>
               </div>
               {isGuest && <div className="de-card" style={{ marginTop: 12 }}><b>Збережи прогрес</b><div className="de-dim" style={{ margin: '4px 0 10px' }}>Зараз усе зберігається лише на цьому пристрої. Зареєструйся — і прогрес буде на будь-якому.</div><button className="de-btn ghost" onClick={toAuth}>Зареєструватися</button></div>}
               <div className="de-grid" style={{ marginTop: 12 }}>
-                <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
+                <button className="de-tile" onClick={() => go('learn')}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 тижнів, 36 уроків</small></button>
                 <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('cal'))}><span className="de-tile-ic">📅</span><b>Календар</b><small>13 тижнів</small></button>
               </div>
+              {!st.aboutHide && <div className="de-card de-about-prod" style={{ marginTop: 12 }}>
+                <button className="de-x" aria-label="Закрити" onClick={() => update({ aboutHide: 1 })}>✕</button>
+                <b>Що це за застосунок</b>
+                <div className="de-dim" style={{ margin: '6px 0 10px' }}>Німецька від нуля до B2: уроки з репетитором, граматика, словник на 3 300 слів і тести у форматі Goethe. Українською та російською. Для тих, хто вчить мову для роботи, переїзду чи іспиту.</div>
+                <button className="de-btn ghost" onClick={() => setTour(true)}>Як це працює</button>
+              </div>}
             </div>
           )
         })()}
@@ -254,6 +301,12 @@ export default function App() {
             <div className="de-card"><b>{(st.level || 'a1').toUpperCase()}</b>
               <div className="de-seg" style={{ width: 'fit-content', margin: '8px 0' }}>{['a1', 'a2', 'b1', 'b2'].map((k) => <button key={k} className={(st.level || 'a1') === k ? 'on' : ''} onClick={() => update({ level: k })}>{k.toUpperCase()}</button>)}</div>
               <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => setTesting(true)}>Пройти тест рівня ще раз</button></div>
+            <div className="de-h2">Мета</div>
+            <div className="de-seg" style={{ width: 'fit-content', flexWrap: 'wrap' }}>
+              {GOALS.map(([k, , l]) => <button key={k} className={st.goal === k ? 'on' : ''} onClick={() => update({ goal: k })}>{l}</button>)}
+            </div>
+            <button className="de-btn ghost" style={{ marginTop: 14 }} onClick={() => { go('home'); setTimeout(() => setTour(true), 200) }}>Пройти тур по застосунку</button>
+            {st.aboutHide && <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => update({ aboutHide: 0 })}>Показати опис на головній</button>}
             <div className="de-h2">Вигляд головної</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>
               <button className={st.home !== 'a' ? 'on' : ''} onClick={() => update({ home: 'b' })}>Темний</button>
@@ -282,7 +335,7 @@ export default function App() {
           </>
         )}
       </div>
-      {tab !== 'dict' && !pop && <button className="de-fab" aria-label="Словник" onClick={() => { setPScreen(null); setPop(true) }}><Ic id="book" size={26} /></button>}
+      {tab !== 'dict' && !pop && <button className="de-fab" data-tour="fab" aria-label="Словник" onClick={() => { setPScreen(null); setPop(true) }}><Ic id="book" size={26} /></button>}
       {pop && (
         <div className="de-pop" onClick={() => setPop(false)}>
           <div className="de-pop-in" onClick={(e) => e.stopPropagation()}>
@@ -291,9 +344,10 @@ export default function App() {
           </div>
         </div>
       )}
+      {tour && <Tour onTab={go} onClose={() => { setTour(false); update({ tourDone: 1 }); go('home') }} />}
       <nav className="de-nav">
         {nav.map(([id, label, ic]) => (
-          <button key={id} className={tab === id ? 'on' : ''} onClick={() => go(id)}>
+          <button key={id} data-tour={'nav-' + id} className={tab === id ? 'on' : ''} onClick={() => go(id)}>
             <span className="de-navic"><Ic id={ic} size={24} /></span><small>{label}</small>
           </button>
         ))}
