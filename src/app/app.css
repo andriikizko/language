@@ -190,8 +190,8 @@ html,body{overflow-x:hidden;max-width:100%}
 [data-theme=dark] input,[data-theme=dark] select,[data-theme=dark] textarea{background:#1e150e;color:var(--ink);border-color:var(--line)}
 [data-theme=dark] .de-home.ha .de-hero{background:#1e150e}
 /* адаптивність */
-.de-app{overflow-wrap:break-word;word-break:normal;hyphens:auto}
-.de-btn,.de-tile b,.de-tile small,.de-opt,.de-blk b,.de-blk small{overflow-wrap:break-word;hyphens:auto;line-height:1.25}
+.de-app{overflow-wrap:break-word;word-break:normal;hyphens:manual}
+.de-btn,.de-tile b,.de-tile small,.de-opt,.de-blk b,.de-blk small{overflow-wrap:break-word;hyphens:manual;line-height:1.25}
 .de-btn{min-height:46px;height:auto;white-space:normal}
 .de-blk>span:nth-child(2){flex:1 1 0;min-width:0}.de-blk .de-pill{flex:0 0 auto}
 .de-blk b,.de-blk small{display:block}
