@@ -137,6 +137,9 @@ export default function App() {
   const [needProfile, setNeedProfile] = useState(false)
   const [tab, setTab] = useState('home')
   const [screen, setScreen] = useState(null)
+  const [dScreen, setDScreen] = useState(null)
+  const [pop, setPop] = useState(false)
+  const [pScreen, setPScreen] = useState(null)
   const [testing, setTesting] = useState(false)
   const timer = useRef(null)
 
@@ -186,37 +189,60 @@ export default function App() {
     </div>
   )
 
-  const nav = [['home', 'Головна', 'home'], ['learn', 'Поточне навчання', 'learn'], ['errors', 'Робота над помилками', 'alert'], ['profile', 'Профіль', 'person']]
+  const nav = [['home', 'Головна', 'home'], ['learn', 'Навчання', 'learn'], ['dict', 'Словник', 'book'], ['errors', 'Помилки', 'alert'], ['profile', 'Профіль', 'person']]
+  const dictView = (scr, setScr) => {
+    const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScr(null), guest: isGuest, onGate: () => setScr('gate'), unl: st.unl || {}, setUnl: (u) => update({ unl: u }), full: !!st.dev || !!st.fullDict }
+    if (scr === 'gate') return <Gate />
+    if (scr) { const M = { nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[scr]; return <M {...p} /> }
+    const gt = (k) => () => (isGuest && ['pron', 'nums', 'preps'].includes(k) ? setScr('gate') : setScr(k))
+    return (
+      <>
+        <div className="de-hello">Словник{isGuest ? ' · 50 слів' : ' · ' + wantCount + ' до вивчення'}</div>
+        <div className="de-grid">
+          <button className="de-tile" onClick={gt('nouns')}><span className="de-tile-ic">📘</span><b>Іменники</b><small>з артиклями</small></button>
+          <button className="de-tile" onClick={gt('verbs')}><span className="de-tile-ic">⚡</span><b>Дієслова</b><small>6 форм</small></button>
+          <button className="de-tile" onClick={gt('adj')}><span className="de-tile-ic">🎨</span><b>Прикметники</b><small>і кольори</small></button>
+          <button className="de-tile" onClick={gt('pron')}><span className="de-tile-ic">👤</span><b>Займенники</b><small>і питання</small></button>
+          <button className="de-tile" onClick={gt('nums')}><span className="de-tile-ic">🔢</span><b>Числівники</b><small>0–100, порядкові</small></button>
+          <button className="de-tile" onClick={gt('preps')}><span className="de-tile-ic">🧭</span><b>Прийменники</b><small>з відмінками</small></button>
+        </div>
+      </>
+    )
+  }
   const go = (t) => { setTab(t); setScreen(null) }
 
   return (
     <div className="de-app">
       <div className="de-main">
-        {tab === 'home' && !screen && (
-          <>
-            <div className="de-hello">{isGuest ? 'Привіт!' : 'Привіт, ' + sess.name + '!'}</div>
-            <div className="de-grid" style={{ marginBottom: 6 }}>
-              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
-              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('cal'))}><span className="de-tile-ic">📅</span><b>Календар</b><small>13 тижнів</small></button>
+        {tab === 'home' && !screen && (() => {
+          const pct = Math.min(100, Math.round(knownCount / 5))
+          const lv = (st.level || 'a1').toUpperCase()
+          return (
+            <div className={'de-home ' + (st.home === 'a' ? 'ha' : 'hb')}>
+              <div className="de-hello">{isGuest ? 'Привіт!' : 'Привіт, ' + sess.name + '!'}</div>
+              <div className="de-hero">
+                <div className="de-ring">
+                  <svg viewBox="0 0 220 220"><defs><linearGradient id="dgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FDBA74" /><stop offset="1" stopColor="#EA580C" /></linearGradient></defs>
+                    <circle cx="110" cy="110" r="94" stroke="rgba(255,255,255,.1)" strokeWidth="14" fill="none" />
+                    <circle cx="110" cy="110" r="94" stroke="url(#dgr)" strokeWidth="14" fill="none" strokeLinecap="round" strokeDasharray="590" strokeDashoffset={590 * (1 - pct / 100)} transform="rotate(-90 110 110)" /></svg>
+                  <div className="de-ring-t"><b>{pct}%</b><small>рівень {lv}</small></div>
+                </div>
+                <button className="de-go" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}>Продовжити навчання</button>
+              </div>
+              <div className="de-grid" style={{ marginTop: 12 }}>
+                <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : go('learn'))}><span className="de-tile-ic">🎓</span><b>Курс</b><small>12 блоків</small></button>
+                <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('cal'))}><span className="de-tile-ic">📅</span><b>Календар</b><small>13 тижнів</small></button>
+              </div>
             </div>
-            <div className="de-h2">Словник{isGuest ? ' · 50 слів' : ' · ' + wantCount + ' до вивчення'}</div>
-            <div className="de-grid">
-              <button className="de-tile" onClick={() => setScreen('nouns')}><span className="de-tile-ic">📘</span><b>Іменники</b><small>з артиклями</small></button>
-              <button className="de-tile" onClick={() => setScreen('verbs')}><span className="de-tile-ic">⚡</span><b>Дієслова</b><small>6 форм</small></button>
-              <button className="de-tile" onClick={() => setScreen('adj')}><span className="de-tile-ic">🎨</span><b>Прикметники</b><small>і кольори</small></button>
-              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('pron'))}><span className="de-tile-ic">👤</span><b>Займенники</b><small>і питання</small></button>
-              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('nums'))}><span className="de-tile-ic">🔢</span><b>Числівники</b><small>0–100, порядкові</small></button>
-              <button className="de-tile" onClick={() => (isGuest ? setScreen('gate') : setScreen('preps'))}><span className="de-tile-ic">🧭</span><b>Прийменники</b><small>з відмінками</small></button>
-            </div>
-          </>
-        )}
+          )
+        })()}
         {tab === 'home' && screen && (() => {
           if (screen === 'gate') return <Gate />
           const p = { lang, want: st.want || {}, setWant: (w) => update({ want: w }), onBack: () => setScreen(null), guest: isGuest, onGate: () => setScreen('gate'), unl: st.unl || {}, setUnl: (u) => update({ unl: u }), full: !!st.dev || !!st.fullDict }
-          const M = { cal: (q) => <Calendar st={st} update={update} onBack={q.onBack} />, nouns: Nouns, verbs: Verbs, adj: Adjectives, pron: Pronouns, nums: Numerals, preps: Preps }[screen]
-          return screen === 'cal' ? M(p) : <M {...p} />
+          return <Calendar st={st} update={update} onBack={p.onBack} />
         })()}
-        {isGuest && tab !== 'home' && <Gate />}
+        {tab === 'dict' && dictView(dScreen, setDScreen)}
+        {isGuest && tab !== 'home' && tab !== 'dict' && <Gate />}
         {!isGuest && tab === 'learn' && <Course st={st} update={update} lang={lang} tr={tr} onAns={onAns} />}
         {!isGuest && tab === 'errors' && <Errors st={st} update={update} lang={lang} tr={tr} />}
         {!isGuest && tab === 'profile' && (
@@ -227,6 +253,11 @@ export default function App() {
             <div className="de-card"><b>{(st.level || 'a1').toUpperCase()}</b>
               <div className="de-seg" style={{ width: 'fit-content', margin: '8px 0' }}>{['a1', 'a2', 'b1', 'b2'].map((k) => <button key={k} className={(st.level || 'a1') === k ? 'on' : ''} onClick={() => update({ level: k })}>{k.toUpperCase()}</button>)}</div>
               <button className="de-btn ghost" style={{ marginTop: 8 }} onClick={() => setTesting(true)}>Пройти тест рівня ще раз</button></div>
+            <div className="de-h2">Вигляд головної</div>
+            <div className="de-seg" style={{ width: 'fit-content' }}>
+              <button className={st.home !== 'a' ? 'on' : ''} onClick={() => update({ home: 'b' })}>Темний</button>
+              <button className={st.home === 'a' ? 'on' : ''} onClick={() => update({ home: 'a' })}>Світлий</button>
+            </div>
             <div className="de-h2">Мова перекладу</div>
             <div className="de-seg" style={{ width: 'fit-content' }}>
               <button className={lang === 'uk' ? 'on' : ''} onClick={() => update({ lang: 'uk' })}>UA</button>
@@ -250,6 +281,15 @@ export default function App() {
           </>
         )}
       </div>
+      {tab !== 'dict' && !pop && <button className="de-fab" aria-label="Словник" onClick={() => { setPScreen(null); setPop(true) }}><Ic id="book" size={26} /></button>}
+      {pop && (
+        <div className="de-pop" onClick={() => setPop(false)}>
+          <div className="de-pop-in" onClick={(e) => e.stopPropagation()}>
+            <div className="de-pop-bar"><b>Словник</b><button onClick={() => setPop(false)} aria-label="Закрити">✕</button></div>
+            <div className="de-pop-body">{dictView(pScreen, setPScreen)}</div>
+          </div>
+        </div>
+      )}
       <nav className="de-nav">
         {nav.map(([id, label, ic]) => (
           <button key={id} className={tab === id ? 'on' : ''} onClick={() => go(id)}>

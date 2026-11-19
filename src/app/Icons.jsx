@@ -10,6 +10,7 @@ const P = {
   home: <><path d="M4 11.5L12 4l8 7.5" /><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9" /></>,
   person: <><circle cx="12" cy="8" r="3.4" /><path d="M5 20c0-3.6 3.1-6.5 7-6.5s7 2.9 7 6.5" /></>,
   learn: <><path d="M3 7.5L12 4l9 3.5-9 3.5-9-3.5z" /><path d="M7 10v5c0 1.4 2.2 2.6 5 2.6s5-1.2 5-2.6v-5" /><path d="M21 8v6" /></>,
+  book: <><path d="M5 4.5h10.5A2.5 2.5 0 0 1 18 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5z" /><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H18" /></>,
   alert: <><path d="M12 3.5l9.5 16.5h-19L12 3.5z" /><path d="M12 10v4.5" /><circle cx="12" cy="17.2" r=".6" /></>,
   exam: <><path d="M6 3h12v4a6 6 0 0 1-12 0V3z" /><path d="M6 5H3.5v1.5A3 3 0 0 0 6.5 9.5" /><path d="M18 5h2.5v1.5a3 3 0 0 1-3 3" /><path d="M12 13v4" /><path d="M8.5 21h7" /><path d="M9.5 17h5v4h-5z" /></>,
   timer: <><circle cx="12" cy="13.5" r="7" /><path d="M12 10v3.8l2.4 1.4" /><path d="M9.5 3h5" /></>,
